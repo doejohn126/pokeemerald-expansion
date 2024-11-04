@@ -4084,12 +4084,12 @@ struct TrainerSlide
     const u8 *msgDynamax;
 };
 
-static const u8 sText_May1stBattleHpLow[] = _("Uh oh! Getting pretty low here!");
-static const u8 sText_May1stBattleCrit[] = _("Ouch! Alright, that was a lot of damage!");
-static const u8 sText_May1stBattleIntro[] = _("This is our first battle but don't\nexpect me to go easy!");
-static const u8 sText_Brendan1stBattleIntro[] = _("Heh, let me show you how it's done.");
-static const u8 sText_Brendan1stBattleCrit[] = _("Wow, you crit me! Okay your not bad.");
-static const u8 sText_Brendan1stBattleHpLow[] = _("Hmm, okay well this isn't good.");
+static const u8 sText_May1stBattleHpLow[] = _("Uh oh! Getting pretty low here!\p");
+static const u8 sText_May1stBattleCrit[] = _("Ouch! Alright, that was a lot of damage!\p");
+static const u8 sText_May1stBattleIntro[] = _("This is our first battle but don't\nexpect me to go easy!\p");
+static const u8 sText_Brendan1stBattleIntro[] = _("Heh, let me show you how it's done.\p");
+static const u8 sText_Brendan1stBattleCrit[] = _("Wow, you crit me! Okay your not bad.\p");
+static const u8 sText_Brendan1stBattleHpLow[] = _("Hmm, okay well this isn't good.\p");
 
 static const struct TrainerSlide sTrainerSlides[] =
 {

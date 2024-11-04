@@ -1052,7 +1052,7 @@ script Scientist_GotoPlayer2 {
 script StarterRegion {
     msgbox(WhatStarter)
     waitmessage
-    dynmultichoice(0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, "Kanto", "Johto", "Hoenn", "Sinnoh", "Unova", "Kalos", "Alola", "Galar", "Paldea")
+    dynmultichoice(0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, "Kanto", "Johto", "Hoenn", "Sinnoh", "Unova", "Kalos", "Alola", "Galar", "Paldea")
     switch(var(VAR_RESULT)){
         case 0:
             setvar(VAR_STARTER_GEN, 1)
