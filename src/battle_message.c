@@ -4084,27 +4084,57 @@ struct TrainerSlide
     const u8 *msgDynamax;
 };
 
+static const u8 sText_May1stBattleHpLow[] = _("Uh oh! Getting pretty low here!");
+static const u8 sText_May1stBattleCrit[] = _("Ouch! Alright, that was a lot of damage!");
+static const u8 sText_May1stBattleIntro[] = _("This is our first battle but don't\nexpect me to go easy!");
+static const u8 sText_Brendan1stBattleIntro[] = _("Heh, let me show you how it's done.");
+static const u8 sText_Brendan1stBattleCrit[] = _("Wow, you crit me! Okay your not bad.");
+static const u8 sText_Brendan1stBattleHpLow[] = _("Hmm, okay well this isn't good.");
+
 static const struct TrainerSlide sTrainerSlides[] =
 {
-    /* Put any trainer slide-in messages inside this array.
-    Example:
     {
-        .trainerId = TRAINER_WALLY_VR_2,
+        .trainerId = TRAINER_MAY_ROUTE_103_MUDKIP,
         .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_AarghAlmostHadIt,
-        .msgLastLowHp = sText_BoxIsFull,
-        .msgFirstDown = sText_123Poof,
-        .msgLastHalfHp = sText_ShootSoClose,
-        .msgFirstCriticalHit = sText_CriticalHit,
-        .msgFirstSuperEffectiveHit = sText_SuperEffective,
-        .msgFirstSTABMove = sText_ABoosted,
-        .msgPlayerMonUnaffected = sText_ButNoEffect,
-        .msgMegaEvolution = sText_PowderExplodes,
-        .msgZMove = sText_Electromagnetism,
-        .msgBeforeFirstTurn = sText_GravityIntensified,
-        .msgDynamax = sText_TargetWokeUp,
+        .msgLastLowHp = sText_May1stBattleHpLow,
+        .msgFirstCriticalHit = sText_May1stBattleCrit,
+        .msgBeforeFirstTurn = sText_May1stBattleIntro,
     },
-    */
+    {
+        .trainerId = TRAINER_MAY_ROUTE_103_TREECKO,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sText_May1stBattleHpLow,
+        .msgFirstCriticalHit = sText_May1stBattleCrit,
+        .msgBeforeFirstTurn = sText_May1stBattleIntro,
+    },
+    {
+        .trainerId = TRAINER_MAY_ROUTE_103_TORCHIC,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sText_May1stBattleHpLow,
+        .msgFirstCriticalHit = sText_May1stBattleCrit,
+        .msgBeforeFirstTurn = sText_May1stBattleIntro,
+    },
+    {
+        .trainerId = TRAINER_BRENDAN_ROUTE_103_TORCHIC,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sText_Brendan1stBattleHpLow,
+        .msgFirstCriticalHit = sText_Brendan1stBattleCrit,
+        .msgBeforeFirstTurn = sText_Brendan1stBattleIntro,
+    },
+    {
+        .trainerId = TRAINER_BRENDAN_ROUTE_103_TREECKO,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sText_Brendan1stBattleHpLow,
+        .msgFirstCriticalHit = sText_Brendan1stBattleCrit,
+        .msgBeforeFirstTurn = sText_Brendan1stBattleIntro,
+    },
+    {
+        .trainerId = TRAINER_BRENDAN_ROUTE_103_MUDKIP,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sText_Brendan1stBattleHpLow,
+        .msgFirstCriticalHit = sText_Brendan1stBattleCrit,
+        .msgBeforeFirstTurn = sText_Brendan1stBattleIntro,
+    },
 };
 
 static u32 GetEnemyMonCount(u32 firstId, u32 lastId, bool32 onlyAlive)
