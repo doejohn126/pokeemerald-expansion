@@ -13,7 +13,7 @@ FortreeCity_House5_EventScript_Zigzagoon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_ZIGZAGOON, CRY_MODE_NORMAL
+	playmoncry SPECIES_SNIVY, CRY_MODE_NORMAL
 	msgbox FortreeCity_House5_Text_Zigzagoon, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -31,5 +31,5 @@ FortreeCity_House5_Text_AdaptedToNature:
 	.string "conform to the way we want to live.$"
 
 FortreeCity_House5_Text_Zigzagoon:
-	.string "ZIGZAGOON: Bufuu!$"
+	.string "SNIVY: Snee!$"
 

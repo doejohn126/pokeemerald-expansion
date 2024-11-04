@@ -9,16 +9,30 @@ RustboroCity_Flat2_1F_EventScript_Skitty::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
+	playmoncry SPECIES_DELCATTY, CRY_MODE_NORMAL
 	msgbox RustboroCity_Flat2_1F_Text_Skitty, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
+
+
+RustboroCity_Flat2_1F_EventScript_Glameow::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_GLAMEOW, CRY_MODE_NORMAL
+	msgbox RustboroCity_Flat2_1F_Text_Glameow, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+RustboroCity_Flat2_1F_Text_Glameow:
+	.string "GLAMEOW: Ehaheee!$"
 
 RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere:
 	.string "DEVON CORPORATION's workers live in\n"
 	.string "this building.$"
 
 RustboroCity_Flat2_1F_Text_Skitty:
-	.string "SKITTY: Gyaaaah!$"
+	.string "DELCATTY: Gyaaaah!$"
 

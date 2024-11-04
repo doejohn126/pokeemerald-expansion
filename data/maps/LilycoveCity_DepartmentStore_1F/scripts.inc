@@ -130,7 +130,7 @@ LilycoveCity_DepartmentStore_1F_EventScript_Azumarill::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_AZUMARILL, CRY_MODE_NORMAL
+	playmoncry SPECIES_TOXEL, CRY_MODE_NORMAL
 	msgbox LilycoveCity_DepartmentStore_1F_Text_Azumarill, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -153,11 +153,11 @@ LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture:
 	.string "nice furniture.$"
 
 LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill:
-	.string "I'm buying something for my AZUMARILL\n"
+	.string "I'm buying something for my TOXEL\n"
 	.string "as a reward for winning a CONTEST.$"
 
 LilycoveCity_DepartmentStore_1F_Text_Azumarill:
-	.string "AZUMARILL: Maririroo!$"
+	.string "TOXEL: Toxxx!$"
 
 LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign:
 	.string "1F: SERVICE COUNTER\n"

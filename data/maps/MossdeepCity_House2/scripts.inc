@@ -15,7 +15,7 @@ MossdeepCity_House2_EventScript_Wingull::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_WINGULL, CRY_MODE_NORMAL
+	playmoncry SPECIES_FARFETCHD, CRY_MODE_NORMAL
 	msgbox MossdeepCity_House2_Text_Wingull, MSGBOX_DEFAULT
 	waitmoncry
 	closemessage
@@ -66,5 +66,5 @@ MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth:
 	.string "apart.$"
 
 MossdeepCity_House2_Text_Wingull:
-	.string "WINGULL: Pihyoh!$"
+	.string "FARFETCHD: Fetchd!$"
 
