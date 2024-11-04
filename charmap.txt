@@ -61,6 +61,16 @@ UP_ARROW    = 79
 DOWN_ARROW  = 7A
 LEFT_ARROW  = 7B
 RIGHT_ARROW = 7C
+
+@ Case-fixing/unfixing chars
+@ These are 1-2 pixel spaces in vanilla.
+@ 7D collides with 'ヲ' in JP,
+@ but that kana is practically unused in JP text.
+FIXED_CASE  = 7D
+UNFIX_CASE  = 7E
+@ Zero-width when decap enabled, normal space otherwise
+ZW_SPACE    = 7F
+
 SUPER_E     = 84
 '<'         = 85
 '>'         = 86
