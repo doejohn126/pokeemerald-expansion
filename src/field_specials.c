@@ -4286,15 +4286,15 @@ void EnterMysteryGiftCode(void)
 void GetMysteryGiftFeedback(void)
 {
     // The codes.
-    static const u8 sText_CodeCelebi[]    = _("POKEGIFT01");
-    static const u8 sText_CodeJirachi[]   = _("POKEGIFT02");
-    static const u8 sText_CodeManaphy[]   = _("POKEGIFT03");
-    static const u8 sText_CodeShaymin[]   = _("POKEGIFT04");
-    static const u8 sText_CodeVictini[]   = _("POKEGIFT05");
-    static const u8 sText_CodeMeloetta[]  = _("POKEGIFT06");
-    static const u8 sText_CodeHoopa[]     = _("POKEGIFT07");
-    static const u8 sText_CodeMarshadow[] = _("POKEGIFT08");
-    static const u8 sText_CodePecharunt[] = _("POKEGIFT09");
+    static const u8 sText_CodeCelebi[]    = _("Chronicles");
+    static const u8 sText_CodeJirachi[]   = _("Wereback");
+    static const u8 sText_CodeManaphy[]   = _("imachangethis");
+    static const u8 sText_CodeShaymin[]   = _("Skyhigh");
+    static const u8 sText_CodeVictini[]   = _("1");
+    static const u8 sText_CodeMeloetta[]  = _("Merom");
+    static const u8 sText_CodeHoopa[]     = _("PGCPS");
+    static const u8 sText_CodeMarshadow[] = _("LAUSD");
+    static const u8 sText_CodePecharunt[] = _("RHH");
 
     // Code 1
     if (!StringCompare(gStringVar2, sText_CodeCelebi))

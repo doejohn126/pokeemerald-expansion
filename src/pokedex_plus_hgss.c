@@ -6545,7 +6545,7 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, u16 species, u8 dept
         switch (evolutions[i].method)
         {
         case EVO_FRIENDSHIP:
-            ConvertIntToDecimalStringN(gStringVar2, 220, STR_CONV_MODE_LEADING_ZEROS, 3); //friendship value
+            ConvertIntToDecimalStringN(gStringVar2, 150, STR_CONV_MODE_LEADING_ZEROS, 3); //friendship value
             StringExpandPlaceholders(gStringVar4, sText_EVO_FRIENDSHIP );
             break;
         case EVO_FRIENDSHIP_DAY:

@@ -49,3 +49,6 @@ gText_ThankYouForWaiting::
 
 gText_WeHopeToSeeYouAgain2::
 	.string "We hope to see you again!$"
+
+gText_DoYouNeedSomething::
+    .string "Hi there! What do you need?$"

@@ -15,6 +15,16 @@ Route119_House_EventScript_Wingull::
 	release
 	end
 
+Route119_House_EventScript_Wattrel::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_WATTREL, CRY_MODE_NORMAL
+	msgbox Route119_House_Text_Wattrel, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
 Route119_House_Text_RumorAboutCaveOfOrigin:
 	.string "I heard about a cave called the CAVE\n"
 	.string "OF ORIGIN.\p"
@@ -24,4 +34,7 @@ Route119_House_Text_RumorAboutCaveOfOrigin:
 
 Route119_House_Text_Wingull:
 	.string "WINGULL: Pihyoh!$"
+
+Route119_House_Text_Wattrel:
+	.string "WATTREL: Weeaa!$"
 

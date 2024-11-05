@@ -135,5 +135,10 @@ EventScript_PkmnCenterNurse_PlayerTurn::
 Common_EventScript_ExtraThingsReceptionist::
    lock
    faceplayer
+   msgbox gText_DoYouNeedSomething, MSGBOX_DEFAULT
+   dynmultichoice 0, 0, FALS,E 3, DYN_MULTICHOICE_CB_NONE, "Mystery Gifts"
+   call_if_eq VAR_RESULT, 0, Common_EventScript_MysteryGift
+   release
    end
+
 

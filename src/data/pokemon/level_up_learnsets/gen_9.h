@@ -47,6 +47,7 @@ static const struct LevelUpMove sIvysaurLevelUpLearnset[] = {
 
 static const struct LevelUpMove sVenusaurLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_PETAL_BLIZZARD),
+    LEVEL_UP_MOVE( 0, MOVE_SLUDGE_BOMB),
     LEVEL_UP_MOVE( 1, MOVE_GROWTH),
     LEVEL_UP_MOVE( 1, MOVE_PETAL_DANCE),
     LEVEL_UP_MOVE( 1, MOVE_VINE_WHIP),
@@ -861,6 +862,7 @@ static const struct LevelUpMove sVulpixLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sNinetalesLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_DAZZLING_GLEAM),
     LEVEL_UP_MOVE( 1, MOVE_DISABLE),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE( 1, MOVE_FIRE_SPIN),
@@ -877,6 +879,7 @@ static const struct LevelUpMove sNinetalesLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
+    LEVEL_UP_MOVE( 50, MOVE_MOONBLAST),
     LEVEL_UP_END
 };
 
@@ -1471,7 +1474,7 @@ static const struct LevelUpMove sPrimeapeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(22, MOVE_CROSS_CHOP),
     LEVEL_UP_MOVE(26, MOVE_ASSURANCE),
     LEVEL_UP_MOVE(30, MOVE_THRASH),
-    LEVEL_UP_MOVE(35, MOVE_RAGE_FIST),
+    LEVEL_UP_MOVE(38, MOVE_RAGE_FIST),
     LEVEL_UP_MOVE(39, MOVE_CLOSE_COMBAT),
     LEVEL_UP_MOVE(44, MOVE_SCREECH),
     LEVEL_UP_MOVE(48, MOVE_STOMPING_TANTRUM),
@@ -2280,9 +2283,10 @@ static const struct LevelUpMove sFarfetchdLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 5, MOVE_LEER),
+    LEVEL_UP_MOVE( 7, MOVE_AERIAL_ACE),
     LEVEL_UP_MOVE(10, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE(15, MOVE_CUT),
-    LEVEL_UP_MOVE(20, MOVE_AERIAL_ACE),
+    LEVEL_UP_MOVE(21, MOVE_DUAL_WINGBEAT),
     LEVEL_UP_MOVE(25, MOVE_AIR_CUTTER),
     LEVEL_UP_MOVE(30, MOVE_KNOCK_OFF),
     LEVEL_UP_MOVE(35, MOVE_FALSE_SWIPE),
@@ -3428,6 +3432,7 @@ static const struct LevelUpMove sSeakingLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SOAK),
     LEVEL_UP_MOVE(51, MOVE_MEGAHORN),
     LEVEL_UP_MOVE(58, MOVE_HORN_DRILL),
+    LEVEL_UP_MOVE(60, MOVE_FISHIOUS_REND),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GOLDEEN
@@ -4075,6 +4080,7 @@ static const struct LevelUpMove sFlareonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
     LEVEL_UP_MOVE(55, MOVE_LAST_RESORT),
+    LEVEL_UP_MOVE(60, MOVE_SACRED_FIRE),
     LEVEL_UP_END
 };
 
