@@ -52,3 +52,6 @@ gText_WeHopeToSeeYouAgain2::
 
 gText_DoYouNeedSomething::
     .string "Hi there! What do you need?$"
+
+gText_MysteryGiftOption::
+    .string "Mystery Gifts$"
