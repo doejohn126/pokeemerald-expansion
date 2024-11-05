@@ -538,6 +538,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     #ifdef ITEM_STRANGE_BALL
     {gObjectEventPal_StrangeBall,           OBJ_EVENT_PAL_TAG_BALL_STRANGE},
     #endif //ITEM_STRANGE_BALL
+    {gObjectEventPal_Dawn,                  OBJ_EVENT_PAL_TAG_DAWN},
+    {gObjectEventPal_Wally,                 OBJ_EVENT_PAL_TAG_WALLY},
 #endif //OW_FOLLOWERS_POKEBALLS
     {gObjectEventPal_Substitute,            OBJ_EVENT_PAL_TAG_SUBSTITUTE},
     {gObjectEventPaletteEmotes,             OBJ_EVENT_PAL_TAG_EMOTES},

@@ -556,7 +556,7 @@ const struct TrainerBacksprite gTrainerBacksprites[] =
     TRAINER_BACK_SPRITE(LEAF, 5, Leaf, BackPicPalette_Leaf, Kanto),
     TRAINER_BACK_SPRITE(RUBY_SAPPHIRE_BRENDAN, 4, RubySapphireBrendan, Palette_RubySapphireBrendan, Hoenn),
     TRAINER_BACK_SPRITE(RUBY_SAPPHIRE_MAY, 4, RubySapphireMay, Palette_RubySapphireMay, Hoenn),
-    TRAINER_BACK_SPRITE(WALLY, 7, Wally, Palette_Wally, Hoenn),
+    TRAINER_BACK_SPRITE(WALLY, 4, Wally, Palette_Wally, Hoenn),
     TRAINER_BACK_SPRITE(STEVEN, 4, Steven, Palette_Steven, Hoenn),
-    TRAINER_BACK_SPRITE(DAWN, 8, Dawn, Palette_Dawn, Hoenn),
+    TRAINER_BACK_SPRITE(DAWN, 0, Dawn, Palette_Dawn, Hoenn),
 };

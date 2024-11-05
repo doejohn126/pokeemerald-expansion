@@ -415,6 +415,8 @@
 // Gen VIII
 #define OBJ_EVENT_PAL_TAG_BALL_STRANGE            0x116A
 #endif //OW_FOLLOWERS_POKEBALLS
+#define OBJ_EVENT_PAL_TAG_DAWN                    0x116B
+#define OBJ_EVENT_PAL_TAG_WALLY                   0x116C
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_EMOTES                  0x8002
