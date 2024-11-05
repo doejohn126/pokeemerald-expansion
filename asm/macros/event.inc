@@ -1941,6 +1941,24 @@
 	delay 16
 	.endm
 
+	.macro showdescription
+	.byte 0xeb
+	.endm
+
+	.macro showitemdesc
+	setvar VAR_0x8009, 0
+	showdescription
+	.endm
+
+	.macro showberrydesc
+	setvar VAR_0x8009, 1
+	showdescription
+	.endm
+
+	.macro hideitemdesc
+	.byte 0xec
+	.endm
+
 
 @ Supplementary
 
