@@ -103,3 +103,58 @@
             },
         },
     },
+#line 45
+    [PARTNER_DAWN] =
+    {
+#line 46
+        .trainerName = _("DAWN"),
+#line 47
+        .trainerClass = TRAINER_CLASS_RIVAL,
+#line 48
+        .trainerPic = TRAINER_BACK_PIC_DAWN,
+        .encounterMusic_gender = 
+#line 49
+F_TRAINER_FEMALE | 
+#line 50
+            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .partySize = 3,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 52
+            .species = SPECIES_PIPLUP,
+#line 52
+            .gender = TRAINER_MON_FEMALE,
+#line 54
+            .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
+#line 53
+            .lvl = 7,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 56
+            .species = SPECIES_CLEFAIRY,
+#line 56
+            .gender = TRAINER_MON_FEMALE,
+#line 58
+            .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
+#line 57
+            .lvl = 6,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 60
+            .species = SPECIES_SWINUB,
+#line 60
+            .gender = TRAINER_MON_MALE,
+#line 62
+            .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
+#line 61
+            .lvl = 5,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+        },
+    },

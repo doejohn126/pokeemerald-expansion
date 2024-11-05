@@ -2095,7 +2095,7 @@ StarterRegion::
 # 1054 "data/maps/LittlerootTown/scripts.pory"
 	waitmessage
 # 1055 "data/maps/LittlerootTown/scripts.pory"
-	dynmultichoice 0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, StarterRegion_Text_0, StarterRegion_Text_1, StarterRegion_Text_2, StarterRegion_Text_3, StarterRegion_Text_4, StarterRegion_Text_5, StarterRegion_Text_6, StarterRegion_Text_7, StarterRegion_Text_8
+	dynmultichoice 0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, StarterRegion_Text_0, StarterRegion_Text_1, StarterRegion_Text_2, StarterRegion_Text_3, StarterRegion_Text_4, StarterRegion_Text_5, StarterRegion_Text_6, StarterRegion_Text_7, StarterRegion_Text_8
 # 1056 "data/maps/LittlerootTown/scripts.pory"
 	switch VAR_RESULT
 # 1057 "data/maps/LittlerootTown/scripts.pory"

@@ -41,3 +41,23 @@ EVs: 252 Atk / 252 SpA / 6 SpD
 - Protect
 - Solar Beam
 - Dragon Claw
+
+=== PARTNER_DAWN ===
+Name: DAWN
+Class: Rival
+Pic: Dawn
+Gender: Female
+Music: Female
+
+Piplup (F)
+Level: 7
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Clefairy (F)
+Level: 6
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Swinub (M)
+Level: 5
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+

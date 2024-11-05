@@ -232,6 +232,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Leaf;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Deoxys;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BirthIslandStone;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Brandon;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dawn;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireBrendan;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireMay;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lugia;
@@ -484,6 +485,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DEOXYS] =                   &gObjectEventGraphicsInfo_Deoxys,
     [OBJ_EVENT_GFX_DEOXYS_TRIANGLE] =          &gObjectEventGraphicsInfo_BirthIslandStone,
     [OBJ_EVENT_GFX_BRANDON] =                  &gObjectEventGraphicsInfo_Brandon,
+    [OBJ_EVENT_GFX_DAWN] =                     &gObjectEventGraphicsInfo_Dawn,
     [OBJ_EVENT_GFX_LINK_RS_BRENDAN] =          &gObjectEventGraphicsInfo_RubySapphireBrendan,
     [OBJ_EVENT_GFX_LINK_RS_MAY] =              &gObjectEventGraphicsInfo_RubySapphireMay,
     [OBJ_EVENT_GFX_LUGIA] =                    &gObjectEventGraphicsInfo_Lugia,
