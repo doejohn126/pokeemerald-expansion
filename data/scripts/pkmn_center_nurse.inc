@@ -8,7 +8,6 @@ Common_EventScript_PkmnCenterNurse::
 	end
 
 EventScript_PkmnCenterNurse_Goodbye::
-	message gText_WeHopeToSeeYouAgain
 	return
 
 @ VAR_0x8004 is 1 when player has Gold Card; jumps are identical
@@ -132,3 +131,9 @@ EventScript_PkmnCenterNurse_PlayerTurn::
    waitmovement 0
    release
    end
+
+Common_EventScript_ExtraThingsReceptionist::
+   lock
+   faceplayer
+   end
+
