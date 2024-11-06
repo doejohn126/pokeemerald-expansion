@@ -2123,9 +2123,17 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon @ Nugget
+Igglybuff @ Nugget
 Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gossifleur @ Nugget
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 5 SpA / 0 SpD / 0 Spe
+
+Minccino @ Nugget
+Level: 9
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DAPHNE ===
 Name: DAPHNE
@@ -2527,9 +2535,17 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon @ Nugget
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Buneary @ Nugget
+Level: 10
+IVs: 0 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Skwovet @ Nugget
+Level: 9
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Tandemaus @ Nugget
+Level: 10
+IVs: 0 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MOLLIE ===
 Name: MOLLIE
@@ -8829,13 +8845,13 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Seedot
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Chikorita
+Level: 11
+IVs: 5 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Lotad
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Snivy
+Level: 11
+IVs: 5 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIU_AND_YUKI ===
 Name: MIU & YUKI
@@ -11112,12 +11128,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Lotad
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 10
+IVs: 0 HP / 0 Atk / 5 Def / 0 SpA / 0 SpD / 0 Spe
 
-Shroomish
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sunkern
+Level: 11
+IVs: 0 HP / 5 Atk / 0 Def / 0 SpA / 5 SpD / 0 Spe
+
+Smoliv
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 5 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JANICE ===
 Name: JANICE
@@ -13018,8 +13038,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Magikarp
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 5 Spe
+
+Finneon
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 5 Spe
+
+Psyduck
 Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HAILEY ===
 Name: HAILEY
