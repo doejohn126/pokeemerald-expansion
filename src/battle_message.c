@@ -4090,6 +4090,9 @@ static const u8 sText_May1stBattleIntro[] = _("This is our first battle but don'
 static const u8 sText_Brendan1stBattleIntro[] = _("Heh, let me show you how it's done.\p");
 static const u8 sText_Brendan1stBattleCrit[] = _("Wow, you crit me! Okay your not bad.\p");
 static const u8 sText_Brendan1stBattleHpLow[] = _("Hmm, okay well this isn't good.\p");
+static const u8 sText_RoxanneCrit[] = _("That was a pretty tough critical hit,\nbut me and my Pokémon can recover.");
+static const u8 sText_RoxanneFirstDown[] = _("You're battle style really does\ntell me what kind of trainer you are.\p");
+static const u8 sText_RoxanneLastMon[] = _("You're a pretty good opponent!\nI may even lose here...\p");
 
 static const struct TrainerSlide sTrainerSlides[] =
 {
@@ -4134,6 +4137,13 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgLastLowHp = sText_Brendan1stBattleHpLow,
         .msgFirstCriticalHit = sText_Brendan1stBattleCrit,
         .msgBeforeFirstTurn = sText_Brendan1stBattleIntro,
+    },
+    {
+        .trainerId = TRAINER_ROXANNE_1,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_RoxanneLastMon,
+        .msgFirstCriticalHit = sText_RoxanneCrit,
+        .msgFirstDown = sText_RoxanneFirstDown,
     },
 };
 
