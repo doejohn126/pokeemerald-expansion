@@ -5977,13 +5977,17 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bidoof
+Level: 7
+IVs: 0 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Yamper
+Level: 7
+IVs: 0 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 5 Spe
 
 Seedot
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 5 SpD / 0 Spe
 
 === TRAINER_JOSH ===
 Name: JOSH

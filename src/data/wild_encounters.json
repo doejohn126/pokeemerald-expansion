@@ -9029,6 +9029,71 @@
         {
           "map": "MAP_PETALBURG_CITY",
           "base_label": "gPetalburgCity",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 3,
+                "max_level": 6,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 3,
+                "max_level": 6,
+                "species": "SPECIES_POLIWAG"
+              },
+              {
+                "min_level": 3,
+                "max_level": 6,
+                "species": "SPECIES_PICHU"
+              },
+              {
+                "min_level": 3,
+                "max_level": 6,
+                "species": "SPECIES_PAWMI"
+              },
+              {
+                "min_level": 3,
+                "max_level": 6,
+                "species": "SPECIES_SEWADDLE"
+              },
+              {
+                "min_level": 3,
+                "max_level": 6,
+                "species": "SPECIES_WATTREL"
+              },
+              {
+                "min_level": 3,
+                "max_level": 6,
+                "species": "SPECIES_PANSAGE"
+              },
+              {
+                "min_level": 3,
+                "max_level": 6,
+                "species": "SPECIES_CHERUBI"
+              },
+              {
+                "min_level": 3,
+                "max_level": 6,
+                "species": "SPECIES_COTTONEE"
+              },
+              {
+                "min_level": 3,
+                "max_level": 6,
+                "species": "SPECIES_JOLTIK"
+              },
+              {
+                "min_level": 3,
+                "max_level": 6,
+                "species": "SPECIES_SNOM"
+              },
+              {
+                "min_level": 3,
+                "max_level": 6,
+                "species": "SPECIES_SNOM"
+              }
+            ]
+          },
           "water_mons": {
             "encounter_rate": 1,
             "mons": [
@@ -9111,71 +9176,6 @@
                 "min_level": 40,
                 "max_level": 45,
                 "species": "SPECIES_KINGLER"
-              }
-            ]
-          },
-          "land_mons": {
-            "encounter_rate": 10,
-            "mons": [
-              {
-                "min_level": 3,
-                "max_level": 6,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 3,
-                "max_level": 6,
-                "species": "SPECIES_POLIWAG"
-              },
-              {
-                "min_level": 3,
-                "max_level": 6,
-                "species": "SPECIES_PICHU"
-              },
-              {
-                "min_level": 3,
-                "max_level": 6,
-                "species": "SPECIES_PAWMI"
-              },
-              {
-                "min_level": 3,
-                "max_level": 6,
-                "species": "SPECIES_SEWADDLE"
-              },
-              {
-                "min_level": 3,
-                "max_level": 6,
-                "species": "SPECIES_WATTREL"
-              },
-              {
-                "min_level": 3,
-                "max_level": 6,
-                "species": "SPECIES_PANSAGE"
-              },
-              {
-                "min_level": 3,
-                "max_level": 6,
-                "species": "SPECIES_CHERUBI"
-              },
-              {
-                "min_level": 3,
-                "max_level": 6,
-                "species": "SPECIES_COTTONEE"
-              },
-              {
-                "min_level": 3,
-                "max_level": 6,
-                "species": "SPECIES_JOLTIK"
-              },
-              {
-                "min_level": 3,
-                "max_level": 6,
-                "species": "SPECIES_SNOM"
-              },
-              {
-                "min_level": 3,
-                "max_level": 6,
-                "species": "SPECIES_SNOM"
               }
             ]
           }

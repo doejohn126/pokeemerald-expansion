@@ -49,8 +49,8 @@
 #define FLAG_COLLISION       0x23 // Unused Flag
 #define FLAG_SCIENTIST       0x24 // Unused Flag
 #define FLAG_EXP_SHARE       0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
+#define FLAG_SKY_BATTLE      0x26 // Unused Flag
+#define FLAG_TERRA_ORB       0x27 // Unused Flag
 #define FLAG_UNUSED_0x028    0x28 // Unused Flag
 #define FLAG_UNUSED_0x029    0x29 // Unused Flag
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag
