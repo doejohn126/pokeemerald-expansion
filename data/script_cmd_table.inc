@@ -237,6 +237,7 @@ gScriptCmdTable::
 	.4byte ScrCmd_ballfollowingmon					@ 0xea
 	.4byte ScrCmd_showitemdesc              			@ 0xeb
 	.4byte ScrCmd_hideitemdesc              			@ 0xec
+    .4byte ScrCmd_pokevial                          @ 0xed //Pokevial Branch
 
 gScriptCmdTableEnd::
 	.4byte ScrCmd_nop

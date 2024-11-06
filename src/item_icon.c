@@ -7,6 +7,7 @@
 #include "constants/items.h"
 #include "item.h"
 #include "battle_main.h"
+#include "pokevial.h" // Pokevial Branch
 
 // EWRAM vars
 EWRAM_DATA u8 *gItemIconDecompressionBuffer = NULL;
@@ -163,6 +164,10 @@ const void *GetItemIconPic(u16 itemId)
 {
     if (itemId == ITEM_LIST_END)
         return gItemIcon_ReturnToFieldArrow; // Use last icon, the "return to field" arrow
+    // Start Pokevial Branch
+    if (itemId == ITEM_POKEVIAL)
+        return PokevialGetDoseIcon();
+    // End Pokevial Branch
     if (itemId >= ITEMS_COUNT)
         return gItemsInfo[0].iconPic;
     if (itemId >= ITEM_TM01 && itemId < ITEM_HM01 + NUM_HIDDEN_MACHINES)
