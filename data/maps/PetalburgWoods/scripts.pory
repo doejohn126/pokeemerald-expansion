@@ -498,6 +498,7 @@ script JaydenWalkToPlr2 {
 script JaydenWalkToPlr3 {
     lock
     ballfollowingmon
+	addobject(14)
     applymovement(14, JaydenHeadDown3)
     waitmovement(0)
     goto(JaydenWoodsStartBattle)
@@ -506,6 +507,7 @@ script JaydenWalkToPlr3 {
 script JaydenWalkToPlr4 {
     lock
     ballfollowingmon
+	addobject(14)
     applymovement(14, JaydenHeadDown4)
     waitmovement(0)
     goto(JaydenWoodsStartBattle)
@@ -575,6 +577,7 @@ movement JaydenHeadDown4 {
     delay_16
 	delay_16
 	delay_16
+	delay_16
     walk_down * 3
     walk_right
 }
@@ -585,6 +588,7 @@ movement JaydenHeadDown3 {
 	delay_16
     face_up
     delay_16
+	delay_16
 	delay_16
 	delay_16
     walk_down * 3
@@ -599,6 +603,7 @@ movement JaydenHeadDown2 {
     delay_16
 	delay_16
 	delay_16
+	delay_16
     walk_down * 3
     walk_right
 }
@@ -609,6 +614,7 @@ movement JaydenHeadDown1 {
 	delay_16
     face_up
     delay_16
+	delay_16
 	delay_16
 	delay_16
     walk_down * 2

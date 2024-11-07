@@ -55,3 +55,15 @@ gText_DoYouNeedSomething::
 
 gText_MysteryGiftOption::
     .string "Mystery Gifts$"
+
+gText_LevelCap::
+    .string "My Level Cap$"
+
+gText_TheBrawlyCap::
+	.string "The current level cap is 22.$"
+
+gText_UnknownCap::
+	.string "The current level cap is undetermined.$"
+
+gText_TheRoxanneCap::
+	.string "The current level cap is 17.$"

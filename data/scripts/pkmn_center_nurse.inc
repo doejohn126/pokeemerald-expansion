@@ -132,12 +132,30 @@ EventScript_PkmnCenterNurse_PlayerTurn::
    release
    end
 
+BrawlyLevelCap::
+   msgbox gText_TheBrawlyCap, MSGBOX_DEFAULT
+   release
+   end
+
+UnknownLevelCap::
+   msgbox gText_UnknownCap, MSGBOX_DEFAULT
+   release
+   end
+
+
 Common_EventScript_ExtraThingsReceptionist::
    lock
    faceplayer
    msgbox gText_DoYouNeedSomething, MSGBOX_DEFAULT
-   dynmultichoice 0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, gText_MysteryGiftOption
+   dynmultichoice 0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, gText_MysteryGiftOption, gText_LevelCap
    call_if_eq VAR_RESULT, 0, Common_EventScript_MysteryGift
+   call_if_eq VAR_RESULT, 1, Common_EventScript_LevelCap
    release
    end
 
+Common_EventScript_LevelCap::
+   goto_if_set FLAG_BADGE01_GET, BrawlyLevelCap
+   goto_if_set FLAG_BADGE02_GET, UnknownLevelCap
+   msgbox gText_TheRoxanneCap, MSGBOX_DEFAULT
+   release
+   end

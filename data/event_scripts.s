@@ -1022,9 +1022,11 @@ EventScript_VsSeekerChargingDone::
 
 @ Call this script anywhere to access the Mystery Gift Code System
 Common_EventScript_MysteryGift::
+	release
 	lockall
 	@ goto_if_unset FLAG_SYS_GAME_CLEAR, MysteryGift_EventScript_CurrentlyUnavailable
 MysteryGift_EventScript_StartMysteryGift::
+	playbgm MUS_RG_MYSTERY_GIFT, FALSE
 	msgbox MysteryGift_Text_WelcomeToMysteryGiftSystem, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, MysteryGift_EventScript_Exit
 MysteryGift_EventScript_DoMysteryGift::
@@ -1048,22 +1050,26 @@ MysteryGift_Failed::
 	msgbox MysteryGift_Text_FailedText, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, MysteryGift_EventScript_Exit
 	goto MysteryGift_EventScript_DoMysteryGift
+	fadedefaultbgm
 	end
 
 MysteryGift_EventScript_Redeemed::
 	msgbox MysteryGift_Text_RedeemedText, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, MysteryGift_EventScript_Exit
 	goto MysteryGift_EventScript_DoMysteryGift
+	fadedefaultbgm
 	end
 
 MysteryGift_EventScript_CurrentlyUnavailable::
 	msgbox MysteryGift_Text_CurrentlyUnavailable, MSGBOX_DEFAULT
 	releaseall
+	fadedefaultbgm
 	end
 
 MysteryGift_EventScript_Exit::
 	msgbox MysteryGift_Text_PleaseVisitAgain, MSGBOX_DEFAULT
 	releaseall
+	fadedefaultbgm
 	end
 
 MysteryGift_EventScript_ReceivedMon::
@@ -1075,6 +1081,7 @@ MysteryGift_EventScript_ReceivedMon::
     goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, MysteryGift_EventScript_NicknamePCMon
 	goto Common_EventScript_NoMoreRoomForPokemon
 	msgbox MysteryGift_Text_PleaseVisitAgain, MSGBOX_DEFAULT
+	fadedefaultbgm
 	end
 
 MysteryGift_EventScript_NicknamePartyMon::
@@ -1103,7 +1110,7 @@ MysteryGift_EventScript_Celebi::
 	goto_if_set FLAG_MYSTERY_GIFT_1, MysteryGift_EventScript_Redeemed
 	bufferspeciesname STR_VAR_1, SPECIES_CELEBI
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CELEBI
-	givemon SPECIES_CELEBI, 5, ITEM_LIFE_ORB, ITEM_CHERISH_BALL, NATURE_TIMID, 0, MON_GENDERLESS, 0, 0, 4, 252, 252, 0, 31, 31, 31, 30, 31, 31, MOVE_ENERGY_BALL, MOVE_PSYCHIC, MOVE_NASTY_PLOT, MOVE_CELEBRATE, TRUE, FALSE, TYPE_PSYCHIC
+	givemon SPECIES_CELEBI, 5, ITEM_LIFE_ORB, ITEM_CHERISH_BALL, NATURE_TIMID, 0, MON_GENDERLESS, 0, 0, 4, 252, 252, 0, 31, 31, 31, 30, 31, 31, MOVE_ENERGY_BALL, MOVE_PSYCHIC, MOVE_NASTY_PLOT, MOVE_CELEBRATE, FALSE, FALSE, TYPE_PSYCHIC
 	setflag FLAG_MYSTERY_GIFT_1
 	call MysteryGift_EventScript_ReceivedMon
 	releaseall
@@ -1123,7 +1130,7 @@ MysteryGift_EventScript_Manaphy::
 	goto_if_set FLAG_MYSTERY_GIFT_3, MysteryGift_EventScript_Redeemed
 	bufferspeciesname STR_VAR_1, SPECIES_MANAPHY
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MANAPHY
-	givemon SPECIES_MANAPHY, 5, ITEM_LEFTOVERS, ITEM_CHERISH_BALL, NATURE_MODEST, 0, MON_GENDERLESS, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_TAIL_GLOW, MOVE_SCALD, MOVE_STORED_POWER, MOVE_CELEBRATE, TRUE, FALSE, TYPE_WATER
+	givemon SPECIES_MANAPHY, 5, ITEM_LEFTOVERS, ITEM_CHERISH_BALL, NATURE_MODEST, 0, MON_GENDERLESS, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_TAIL_GLOW, MOVE_SCALD, MOVE_STORED_POWER, MOVE_CELEBRATE, FALSE, FALSE, TYPE_WATER
 	setflag FLAG_MYSTERY_GIFT_3
 	call MysteryGift_EventScript_ReceivedMon
 	releaseall
@@ -1133,7 +1140,7 @@ MysteryGift_EventScript_Shaymin::
 	goto_if_set FLAG_MYSTERY_GIFT_4, MysteryGift_EventScript_Redeemed
 	bufferspeciesname STR_VAR_1, SPECIES_SHAYMIN
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SHAYMIN
-	givemon SPECIES_SHAYMIN_LAND, 5, ITEM_CHOICE_SCARF, ITEM_CHERISH_BALL, NATURE_MODEST, 0, MON_GENDERLESS, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_SEED_FLARE, MOVE_PSYCHIC, MOVE_HEALING_WISH, MOVE_CELEBRATE, TRUE, FALSE, TYPE_GRASS
+	givemon SPECIES_SHAYMIN_LAND, 5, ITEM_CHOICE_SCARF, ITEM_CHERISH_BALL, NATURE_MODEST, 0, MON_GENDERLESS, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_SEED_FLARE, MOVE_PSYCHIC, MOVE_HEALING_WISH, MOVE_CELEBRATE, FALSE, FALSE, TYPE_GRASS
 	setflag FLAG_MYSTERY_GIFT_4
 	call MysteryGift_EventScript_ReceivedMon
 	releaseall
@@ -1143,7 +1150,7 @@ MysteryGift_EventScript_Victini::
 	goto_if_set FLAG_MYSTERY_GIFT_5, MysteryGift_EventScript_Redeemed
 	bufferspeciesname STR_VAR_1, SPECIES_VICTINI
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_VICTINI
-	givemon SPECIES_VICTINI, 5, ITEM_CHOICE_SCARF, ITEM_CHERISH_BALL, NATURE_ADAMANT, 0, MON_GENDERLESS, 0, 252, 4, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_V_CREATE, MOVE_FUSION_FLARE, MOVE_FUSION_BOLT, MOVE_CELEBRATE, TRUE, FALSE, TYPE_FIRE
+	givemon SPECIES_VICTINI, 5, ITEM_CHOICE_SCARF, ITEM_CHERISH_BALL, NATURE_ADAMANT, 0, MON_GENDERLESS, 0, 252, 4, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_V_CREATE, MOVE_FUSION_FLARE, MOVE_FUSION_BOLT, MOVE_CELEBRATE, FALSE, FALSE, TYPE_FIRE
 	setflag FLAG_MYSTERY_GIFT_5
 	call MysteryGift_EventScript_ReceivedMon
 	releaseall
@@ -1153,7 +1160,7 @@ MysteryGift_EventScript_Meloetta::
 	goto_if_set FLAG_MYSTERY_GIFT_6, MysteryGift_EventScript_Redeemed
 	bufferspeciesname STR_VAR_1, SPECIES_MELOETTA_ARIA
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MELOETTA_ARIA
-	givemon SPECIES_MELOETTA_ARIA, 5, ITEM_CHOICE_SCARF, ITEM_CHERISH_BALL, NATURE_MODEST, 0, MON_GENDERLESS, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_HYPER_VOICE, MOVE_AURA_SPHERE, MOVE_PSYSHOCK, MOVE_CELEBRATE, TRUE, FALSE, TYPE_NORMAL
+	givemon SPECIES_MELOETTA_ARIA, 5, ITEM_CHOICE_SCARF, ITEM_CHERISH_BALL, NATURE_MODEST, 0, MON_GENDERLESS, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_HYPER_VOICE, MOVE_AURA_SPHERE, MOVE_PSYSHOCK, MOVE_CELEBRATE, FALSE, FALSE, TYPE_NORMAL
 	setflag FLAG_MYSTERY_GIFT_6
 	call MysteryGift_EventScript_ReceivedMon
 	releaseall
@@ -1163,7 +1170,7 @@ MysteryGift_EventScript_Hoopa::
 	goto_if_set FLAG_MYSTERY_GIFT_7, MysteryGift_EventScript_Redeemed
 	bufferspeciesname STR_VAR_1, SPECIES_HOOPA_CONFINED
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_HOOPA_CONFINED
-	givemon SPECIES_HOOPA_CONFINED, 5, ITEM_CHOICE_SPECS, ITEM_CHERISH_BALL, NATURE_TIMID, 0, MON_GENDERLESS, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_SHADOW_BALL, MOVE_PSYSHOCK, MOVE_HYPERSPACE_HOLE, MOVE_CELEBRATE, TRUE, FALSE, TYPE_PSYCHIC
+	givemon SPECIES_HOOPA_CONFINED, 5, ITEM_CHOICE_SPECS, ITEM_CHERISH_BALL, NATURE_TIMID, 0, MON_GENDERLESS, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_SHADOW_BALL, MOVE_PSYSHOCK, MOVE_HYPERSPACE_HOLE, MOVE_CELEBRATE, FALSE, FALSE, TYPE_PSYCHIC
 	setflag FLAG_MYSTERY_GIFT_7
 	call MysteryGift_EventScript_ReceivedMon
 	releaseall
@@ -1173,7 +1180,7 @@ MysteryGift_EventScript_Marshadow::
 	goto_if_set FLAG_MYSTERY_GIFT_8, MysteryGift_EventScript_Redeemed
 	bufferspeciesname STR_VAR_1, SPECIES_MARSHADOW
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MARSHADOW
-	givemon SPECIES_MARSHADOW, 5, ITEM_LIFE_ORB, ITEM_CHERISH_BALL, NATURE_JOLLY, 0, MON_GENDERLESS, 0, 252, 4, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_SPECTRAL_THIEF, MOVE_ROCK_TOMB, MOVE_CLOSE_COMBAT, MOVE_CELEBRATE, TRUE, FALSE, TYPE_GHOST
+	givemon SPECIES_MARSHADOW, 5, ITEM_LIFE_ORB, ITEM_CHERISH_BALL, NATURE_JOLLY, 0, MON_GENDERLESS, 0, 252, 4, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_SPECTRAL_THIEF, MOVE_ROCK_TOMB, MOVE_CLOSE_COMBAT, MOVE_CELEBRATE, FALSE, FALSE, TYPE_GHOST
 	setflag FLAG_MYSTERY_GIFT_8
 	call MysteryGift_EventScript_ReceivedMon
 	releaseall
@@ -1183,7 +1190,7 @@ MysteryGift_EventScript_Pecharunt::
 	goto_if_set FLAG_MYSTERY_GIFT_9, MysteryGift_EventScript_Redeemed
 	bufferspeciesname STR_VAR_1, SPECIES_PECHARUNT
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PECHARUNT
-	givemon SPECIES_PECHARUNT, 5, ITEM_LIFE_ORB, ITEM_CHERISH_BALL, NATURE_MODEST, 0, MON_GENDERLESS, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_MALIGNANT_CHAIN, MOVE_HEX, MOVE_RECOVER, MOVE_CELEBRATE, TRUE, FALSE, TYPE_POISON
+	givemon SPECIES_PECHARUNT, 5, ITEM_LIFE_ORB, ITEM_CHERISH_BALL, NATURE_MODEST, 0, MON_GENDERLESS, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_ASTONISH, MOVE_MEMENTO, MOVE_SMOG, MOVE_CELEBRATE, FALSE, FALSE, TYPE_POISON
 	setflag FLAG_MYSTERY_GIFT_9
 	call MysteryGift_EventScript_ReceivedMon
 	releaseall
