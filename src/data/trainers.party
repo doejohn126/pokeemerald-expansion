@@ -231,9 +231,29 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Staryu
+Level: 10
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+- Water Gun
+- Confuse Ray
+- Harden
+- Rapid Spin
+
+Venonat (F)
+Level: 11
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+- Confusion
+- Disable
+- Struggle Bug
+- Supersonic
+
+Dratini (M)
+Level: 12
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+- Twister
+- Thunder Wave
+- Wrap
+- Leer
 
 === TRAINER_MARCEL ===
 Name: MARCEL
@@ -11336,19 +11356,23 @@ Double Battle: No
 AI: Check Bad Move
 
 Wurmple
-Level: 3
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wurmple
-Level: 3
+Pineco
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wurmple
-Level: 3
+Caterpie
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wurmple
-Level: 3
+Weedle
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ledyba
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSE ===
@@ -11425,12 +11449,20 @@ Double Battle: No
 AI: Check Bad Move
 
 Nincada
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 9
+IVs: 0 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nincada
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Venipede
+Level: 8
+IVs: 0 HP / 0 Atk / 5 Def / 0 SpA / 0 SpD / 0 Spe
+
+Tarountula
+Level: 8
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Burmy
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 5 SpD / 0 Spe
 
 === TRAINER_JAMES_2 ===
 Name: JAMES
@@ -16919,17 +16951,31 @@ Bulbasaur
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_PLACEHOLDER ===
-Name: BRENDAN
-Class: RS Protag
+=== TRAINER_JAYDEN ===
+Name: JAYDEN
+Class: Rival
 Pic: RS Brendan
 Gender: Male
 Music: Male
 Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Green
 
-Groudon
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Eevee (F)
+Level: 12
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Covet
+- Sand Attack
+- Quick Attack
+- Tail Whip
+
+Totodile (M)
+Level: 13
+IVs: 10 HP / 11 Atk / 10 Def / 11 SpA / 10 SpD / 10 Spe
+- Water Gun
+- Bite
+- Leer
+- Scratch
 
 === TRAINER_MAY_PLACEHOLDER ===
 Name: MAY

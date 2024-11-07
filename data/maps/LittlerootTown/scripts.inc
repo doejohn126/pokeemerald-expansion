@@ -2045,245 +2045,257 @@ Scientist_GotoPlayer1::
 # 1027 "data/maps/LittlerootTown/scripts.pory"
 	lockall
 # 1028 "data/maps/LittlerootTown/scripts.pory"
-	setvar VAR_SCIENTIST_STARTER, 1
+	msgbox WaitUp
 # 1029 "data/maps/LittlerootTown/scripts.pory"
-	clearflag FLAG_SCIENTIST
+	waitmessage
 # 1030 "data/maps/LittlerootTown/scripts.pory"
-	addobject 9
+	setvar VAR_SCIENTIST_STARTER, 1
 # 1031 "data/maps/LittlerootTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerPeerDown
+	clearflag FLAG_SCIENTIST
 # 1032 "data/maps/LittlerootTown/scripts.pory"
-	waitmovement 0
+	addobject 9
 # 1033 "data/maps/LittlerootTown/scripts.pory"
-	applymovement 9, ScientistWalk1
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerPeerDown
 # 1034 "data/maps/LittlerootTown/scripts.pory"
 	waitmovement 0
 # 1035 "data/maps/LittlerootTown/scripts.pory"
+	applymovement 9, ScientistWalk1
+# 1036 "data/maps/LittlerootTown/scripts.pory"
+	waitmovement 0
+# 1037 "data/maps/LittlerootTown/scripts.pory"
 	goto StarterRegion
 	return
 
 
 Scientist_GotoPlayer2::
-# 1039 "data/maps/LittlerootTown/scripts.pory"
-	lockall
-# 1040 "data/maps/LittlerootTown/scripts.pory"
-	setvar VAR_SCIENTIST_STARTER, 1
 # 1041 "data/maps/LittlerootTown/scripts.pory"
-	clearflag FLAG_SCIENTIST
+	lockall
 # 1042 "data/maps/LittlerootTown/scripts.pory"
-	addobject 9
+	msgbox WaitUp
 # 1043 "data/maps/LittlerootTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerPeerDown
+	waitmessage
 # 1044 "data/maps/LittlerootTown/scripts.pory"
-	waitmovement 0
+	setvar VAR_SCIENTIST_STARTER, 1
 # 1045 "data/maps/LittlerootTown/scripts.pory"
-	applymovement 9, ScientistWalk2
+	clearflag FLAG_SCIENTIST
 # 1046 "data/maps/LittlerootTown/scripts.pory"
-	waitmovement 0
+	addobject 9
 # 1047 "data/maps/LittlerootTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, FaceScientist
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerPeerDown
 # 1048 "data/maps/LittlerootTown/scripts.pory"
 	waitmovement 0
 # 1049 "data/maps/LittlerootTown/scripts.pory"
+	applymovement 9, ScientistWalk2
+# 1050 "data/maps/LittlerootTown/scripts.pory"
+	waitmovement 0
+# 1051 "data/maps/LittlerootTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, FaceScientist
+# 1052 "data/maps/LittlerootTown/scripts.pory"
+	waitmovement 0
+# 1053 "data/maps/LittlerootTown/scripts.pory"
 	goto StarterRegion
 	return
 
 
 StarterRegion::
-# 1053 "data/maps/LittlerootTown/scripts.pory"
-	msgbox WhatStarter
-# 1054 "data/maps/LittlerootTown/scripts.pory"
-	waitmessage
-# 1055 "data/maps/LittlerootTown/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, StarterRegion_Text_0, StarterRegion_Text_1, StarterRegion_Text_2, StarterRegion_Text_3, StarterRegion_Text_4, StarterRegion_Text_5, StarterRegion_Text_6, StarterRegion_Text_7, StarterRegion_Text_8
-# 1056 "data/maps/LittlerootTown/scripts.pory"
-	switch VAR_RESULT
 # 1057 "data/maps/LittlerootTown/scripts.pory"
-	case 0, StarterRegion_3
+	msgbox WhatStarter
+# 1058 "data/maps/LittlerootTown/scripts.pory"
+	waitmessage
 # 1059 "data/maps/LittlerootTown/scripts.pory"
-	case 1, StarterRegion_4
+	dynmultichoice 0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, StarterRegion_Text_0, StarterRegion_Text_1, StarterRegion_Text_2, StarterRegion_Text_3, StarterRegion_Text_4, StarterRegion_Text_5, StarterRegion_Text_6, StarterRegion_Text_7, StarterRegion_Text_8
+# 1060 "data/maps/LittlerootTown/scripts.pory"
+	switch VAR_RESULT
 # 1061 "data/maps/LittlerootTown/scripts.pory"
-	case 2, StarterRegion_5
+	case 0, StarterRegion_3
 # 1063 "data/maps/LittlerootTown/scripts.pory"
-	case 3, StarterRegion_6
+	case 1, StarterRegion_4
 # 1065 "data/maps/LittlerootTown/scripts.pory"
-	case 4, StarterRegion_7
+	case 2, StarterRegion_5
 # 1067 "data/maps/LittlerootTown/scripts.pory"
-	case 5, StarterRegion_8
+	case 3, StarterRegion_6
 # 1069 "data/maps/LittlerootTown/scripts.pory"
-	case 6, StarterRegion_9
+	case 4, StarterRegion_7
 # 1071 "data/maps/LittlerootTown/scripts.pory"
-	case 7, StarterRegion_10
+	case 5, StarterRegion_8
 # 1073 "data/maps/LittlerootTown/scripts.pory"
+	case 6, StarterRegion_9
+# 1075 "data/maps/LittlerootTown/scripts.pory"
+	case 7, StarterRegion_10
+# 1077 "data/maps/LittlerootTown/scripts.pory"
 	case 8, StarterRegion_11
 StarterRegion_1:
-# 1076 "data/maps/LittlerootTown/scripts.pory"
-	msgbox GoodChoice
-# 1077 "data/maps/LittlerootTown/scripts.pory"
-	waitmessage
-# 1078 "data/maps/LittlerootTown/scripts.pory"
-	applymovement 9, ScientistLeave
-# 1079 "data/maps/LittlerootTown/scripts.pory"
-	waitmovement 0
 # 1080 "data/maps/LittlerootTown/scripts.pory"
-	setflag FLAG_SCIENTIST
+	msgbox GoodChoice
 # 1081 "data/maps/LittlerootTown/scripts.pory"
-	removeobject 9
+	waitmessage
 # 1082 "data/maps/LittlerootTown/scripts.pory"
+	applymovement 9, ScientistLeave
+# 1083 "data/maps/LittlerootTown/scripts.pory"
+	waitmovement 0
+# 1084 "data/maps/LittlerootTown/scripts.pory"
+	setflag FLAG_SCIENTIST
+# 1085 "data/maps/LittlerootTown/scripts.pory"
+	removeobject 9
+# 1086 "data/maps/LittlerootTown/scripts.pory"
 	releaseall
 	end
 
 StarterRegion_3:
-# 1058 "data/maps/LittlerootTown/scripts.pory"
+# 1062 "data/maps/LittlerootTown/scripts.pory"
 	setvar VAR_STARTER_GEN, 1
 	goto StarterRegion_1
 
 StarterRegion_4:
-# 1060 "data/maps/LittlerootTown/scripts.pory"
+# 1064 "data/maps/LittlerootTown/scripts.pory"
 	setvar VAR_STARTER_GEN, 2
 	goto StarterRegion_1
 
 StarterRegion_5:
-# 1062 "data/maps/LittlerootTown/scripts.pory"
+# 1066 "data/maps/LittlerootTown/scripts.pory"
 	setvar VAR_STARTER_GEN, 3
 	goto StarterRegion_1
 
 StarterRegion_6:
-# 1064 "data/maps/LittlerootTown/scripts.pory"
+# 1068 "data/maps/LittlerootTown/scripts.pory"
 	setvar VAR_STARTER_GEN, 4
 	goto StarterRegion_1
 
 StarterRegion_7:
-# 1066 "data/maps/LittlerootTown/scripts.pory"
+# 1070 "data/maps/LittlerootTown/scripts.pory"
 	setvar VAR_STARTER_GEN, 5
 	goto StarterRegion_1
 
 StarterRegion_8:
-# 1068 "data/maps/LittlerootTown/scripts.pory"
+# 1072 "data/maps/LittlerootTown/scripts.pory"
 	setvar VAR_STARTER_GEN, 6
 	goto StarterRegion_1
 
 StarterRegion_9:
-# 1070 "data/maps/LittlerootTown/scripts.pory"
+# 1074 "data/maps/LittlerootTown/scripts.pory"
 	setvar VAR_STARTER_GEN, 7
 	goto StarterRegion_1
 
 StarterRegion_10:
-# 1072 "data/maps/LittlerootTown/scripts.pory"
+# 1076 "data/maps/LittlerootTown/scripts.pory"
 	setvar VAR_STARTER_GEN, 8
 	goto StarterRegion_1
 
 StarterRegion_11:
-# 1074 "data/maps/LittlerootTown/scripts.pory"
+# 1078 "data/maps/LittlerootTown/scripts.pory"
 	setvar VAR_STARTER_GEN, 9
 	goto StarterRegion_1
 
 
-# 1097 "data/maps/LittlerootTown/scripts.pory"
+# 1105 "data/maps/LittlerootTown/scripts.pory"
 ScientistLeave:
-# 1098 "data/maps/LittlerootTown/scripts.pory"
+# 1106 "data/maps/LittlerootTown/scripts.pory"
 	walk_down
-# 1098 "data/maps/LittlerootTown/scripts.pory"
+# 1106 "data/maps/LittlerootTown/scripts.pory"
 	walk_down
-# 1098 "data/maps/LittlerootTown/scripts.pory"
+# 1106 "data/maps/LittlerootTown/scripts.pory"
 	walk_down
-# 1098 "data/maps/LittlerootTown/scripts.pory"
+# 1106 "data/maps/LittlerootTown/scripts.pory"
 	walk_down
-# 1098 "data/maps/LittlerootTown/scripts.pory"
+# 1106 "data/maps/LittlerootTown/scripts.pory"
 	walk_down
-# 1098 "data/maps/LittlerootTown/scripts.pory"
+# 1106 "data/maps/LittlerootTown/scripts.pory"
 	walk_down
-# 1098 "data/maps/LittlerootTown/scripts.pory"
+# 1106 "data/maps/LittlerootTown/scripts.pory"
 	walk_down
 	step_end
 
-# 1101 "data/maps/LittlerootTown/scripts.pory"
+# 1109 "data/maps/LittlerootTown/scripts.pory"
 FaceScientist:
-# 1102 "data/maps/LittlerootTown/scripts.pory"
+# 1110 "data/maps/LittlerootTown/scripts.pory"
 	face_right
 	step_end
 
-# 1105 "data/maps/LittlerootTown/scripts.pory"
+# 1113 "data/maps/LittlerootTown/scripts.pory"
 ScientistWalk2:
-# 1106 "data/maps/LittlerootTown/scripts.pory"
+# 1114 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1106 "data/maps/LittlerootTown/scripts.pory"
+# 1114 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1106 "data/maps/LittlerootTown/scripts.pory"
+# 1114 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1106 "data/maps/LittlerootTown/scripts.pory"
+# 1114 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1106 "data/maps/LittlerootTown/scripts.pory"
+# 1114 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1106 "data/maps/LittlerootTown/scripts.pory"
+# 1114 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1107 "data/maps/LittlerootTown/scripts.pory"
+# 1115 "data/maps/LittlerootTown/scripts.pory"
 	face_left
 	step_end
 
-# 1110 "data/maps/LittlerootTown/scripts.pory"
+# 1118 "data/maps/LittlerootTown/scripts.pory"
 ScientistWalk1:
-# 1111 "data/maps/LittlerootTown/scripts.pory"
+# 1119 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1111 "data/maps/LittlerootTown/scripts.pory"
+# 1119 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1111 "data/maps/LittlerootTown/scripts.pory"
+# 1119 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1111 "data/maps/LittlerootTown/scripts.pory"
+# 1119 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1111 "data/maps/LittlerootTown/scripts.pory"
+# 1119 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
 	step_end
 
-# 1114 "data/maps/LittlerootTown/scripts.pory"
+# 1122 "data/maps/LittlerootTown/scripts.pory"
 PlayerPeerDown:
-# 1115 "data/maps/LittlerootTown/scripts.pory"
+# 1123 "data/maps/LittlerootTown/scripts.pory"
 	face_down
 	step_end
 
 StarterRegion_Text_0:
-# 1055 "data/maps/LittlerootTown/scripts.pory"
+# 1059 "data/maps/LittlerootTown/scripts.pory"
 	.string "Kanto$"
 
 StarterRegion_Text_1:
-# 1055 "data/maps/LittlerootTown/scripts.pory"
+# 1059 "data/maps/LittlerootTown/scripts.pory"
 	.string "Johto$"
 
 StarterRegion_Text_2:
-# 1055 "data/maps/LittlerootTown/scripts.pory"
+# 1059 "data/maps/LittlerootTown/scripts.pory"
 	.string "Hoenn$"
 
 StarterRegion_Text_3:
-# 1055 "data/maps/LittlerootTown/scripts.pory"
+# 1059 "data/maps/LittlerootTown/scripts.pory"
 	.string "Sinnoh$"
 
 StarterRegion_Text_4:
-# 1055 "data/maps/LittlerootTown/scripts.pory"
+# 1059 "data/maps/LittlerootTown/scripts.pory"
 	.string "Unova$"
 
 StarterRegion_Text_5:
-# 1055 "data/maps/LittlerootTown/scripts.pory"
+# 1059 "data/maps/LittlerootTown/scripts.pory"
 	.string "Kalos$"
 
 StarterRegion_Text_6:
-# 1055 "data/maps/LittlerootTown/scripts.pory"
+# 1059 "data/maps/LittlerootTown/scripts.pory"
 	.string "Alola$"
 
 StarterRegion_Text_7:
-# 1055 "data/maps/LittlerootTown/scripts.pory"
+# 1059 "data/maps/LittlerootTown/scripts.pory"
 	.string "Galar$"
 
 StarterRegion_Text_8:
-# 1055 "data/maps/LittlerootTown/scripts.pory"
+# 1059 "data/maps/LittlerootTown/scripts.pory"
 	.string "Paldea$"
 
+WaitUp::
+# 1090 "data/maps/LittlerootTown/scripts.pory"
+	.string "Hey! Wait up {PLAYER}!$"
+
 GoodChoice::
-# 1086 "data/maps/LittlerootTown/scripts.pory"
+# 1094 "data/maps/LittlerootTown/scripts.pory"
 	.string "Good choice! Okay, thank you {PLAYER}.$"
 
 WhatStarter::
-# 1090 "data/maps/LittlerootTown/scripts.pory"
-	.string "Hey wait! I'm the Professor's aid. He\n"
+# 1098 "data/maps/LittlerootTown/scripts.pory"
+	.string "Hey there! I'm the Professor's aid. He\n"
 	.string "told me to ask you what region you\l"
 	.string "wanted your starter to be from.\p"
 	.string "Go ahead and choose from the list!$"

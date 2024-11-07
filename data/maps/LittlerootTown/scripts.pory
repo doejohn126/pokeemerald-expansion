@@ -1025,6 +1025,8 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 
 script Scientist_GotoPlayer1 {
     lockall
+	msgbox(WaitUp)
+	waitmessage
     setvar(VAR_SCIENTIST_STARTER, 1)
     clearflag(FLAG_SCIENTIST)
     addobject(9)
@@ -1037,6 +1039,8 @@ script Scientist_GotoPlayer1 {
 
 script Scientist_GotoPlayer2 {
     lockall
+	msgbox(WaitUp)
+	waitmessage
     setvar(VAR_SCIENTIST_STARTER, 1)
     clearflag(FLAG_SCIENTIST)
     addobject(9)
@@ -1083,12 +1087,16 @@ script StarterRegion {
     end
 }
 
+text WaitUp {
+	"Hey! Wait up {PLAYER}!"
+}
+
 text GoodChoice {
     "Good choice! Okay, thank you {PLAYER}."
 }
 
 text WhatStarter {
-    "Hey wait! I'm the Professor's aid. He\n"
+    "Hey there! I'm the Professor's aid. He\n"
     "told me to ask you what region you\l"
     "wanted your starter to be from.\p"
     "Go ahead and choose from the list!"
