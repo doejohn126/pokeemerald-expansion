@@ -568,38 +568,50 @@ movement JaydenLeave {
 }
 
 movement JaydenHeadDown4 {
-    walk_down * 8
+    walk_down * 6
     delay_16
+	delay_16
     face_up
     delay_16
+	delay_16
+	delay_16
     walk_down * 3
-    walk_left
+    walk_right
 }
 
 movement JaydenHeadDown3 {
-    walk_down * 7
+    walk_down * 5
     delay_16
+	delay_16
     face_up
     delay_16
+	delay_16
+	delay_16
     walk_down * 3
-    walk_left
+    walk_right
 }
 
 movement JaydenHeadDown2 {
-    walk_down * 6
+    walk_down * 4
     delay_16
+	delay_16
     face_up
     delay_16
+	delay_16
+	delay_16
     walk_down * 3
-    walk_left
+    walk_right
 }
 
 movement JaydenHeadDown1 {
-    walk_down * 6
+    walk_down * 4
     delay_16
+	delay_16
     face_up
     delay_16
+	delay_16
+	delay_16
     walk_down * 2
-    walk_left
+    walk_right
 }
 

@@ -1083,10 +1083,6 @@ JaydenHeadDown4:
 	walk_down
 # 571 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
-# 571 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
-# 571 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
 # 572 "data/maps/PetalburgWoods/scripts.pory"
 	delay_16
 # 573 "data/maps/PetalburgWoods/scripts.pory"
@@ -1105,10 +1101,6 @@ JaydenHeadDown4:
 
 # 579 "data/maps/PetalburgWoods/scripts.pory"
 JaydenHeadDown3:
-# 580 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
-# 580 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
 # 580 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
 # 580 "data/maps/PetalburgWoods/scripts.pory"
@@ -1145,10 +1137,6 @@ JaydenHeadDown2:
 	walk_down
 # 589 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
-# 589 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
-# 589 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
 # 590 "data/maps/PetalburgWoods/scripts.pory"
 	delay_16
 # 591 "data/maps/PetalburgWoods/scripts.pory"
@@ -1167,10 +1155,6 @@ JaydenHeadDown2:
 
 # 597 "data/maps/PetalburgWoods/scripts.pory"
 JaydenHeadDown1:
-# 598 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
-# 598 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
 # 598 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
 # 598 "data/maps/PetalburgWoods/scripts.pory"

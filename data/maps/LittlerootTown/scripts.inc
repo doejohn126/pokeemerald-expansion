@@ -2045,7 +2045,7 @@ Scientist_GotoPlayer1::
 # 1027 "data/maps/LittlerootTown/scripts.pory"
 	lockall
 # 1028 "data/maps/LittlerootTown/scripts.pory"
-	msgbox WaitUp
+	msgbox WaitUp, MSGBOX_AUTOCLOSE
 # 1029 "data/maps/LittlerootTown/scripts.pory"
 	waitmessage
 # 1030 "data/maps/LittlerootTown/scripts.pory"
@@ -2071,7 +2071,7 @@ Scientist_GotoPlayer2::
 # 1041 "data/maps/LittlerootTown/scripts.pory"
 	lockall
 # 1042 "data/maps/LittlerootTown/scripts.pory"
-	msgbox WaitUp
+	msgbox WaitUp, MSGBOX_AUTOCLOSE
 # 1043 "data/maps/LittlerootTown/scripts.pory"
 	waitmessage
 # 1044 "data/maps/LittlerootTown/scripts.pory"

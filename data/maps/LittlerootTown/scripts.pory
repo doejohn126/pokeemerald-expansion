@@ -1025,7 +1025,7 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 
 script Scientist_GotoPlayer1 {
     lockall
-	msgbox(WaitUp)
+	msgbox(WaitUp, MSGBOX_AUTOCLOSE)
 	waitmessage
     setvar(VAR_SCIENTIST_STARTER, 1)
     clearflag(FLAG_SCIENTIST)
@@ -1039,7 +1039,7 @@ script Scientist_GotoPlayer1 {
 
 script Scientist_GotoPlayer2 {
     lockall
-	msgbox(WaitUp)
+	msgbox(WaitUp, MSGBOX_AUTOCLOSE)
 	waitmessage
     setvar(VAR_SCIENTIST_STARTER, 1)
     clearflag(FLAG_SCIENTIST)
