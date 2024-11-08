@@ -7656,7 +7656,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Attacks with thorny arms.\n"
             "May cause flinching."),
         .effect = EFFECT_HIT,
-        .power = 60,
+        .power = 75,
         .type = TYPE_GRASS,
         .accuracy = 100,
         .pp = 15,
@@ -8701,10 +8701,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "A life-risking tackle that\n"
             "slightly hurts the user."),
         .effect = EFFECT_HIT,
-        .power = 120,
+        .power = 110,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
-        .recoil = 33,
+        .recoil = 12,
         .pp = 15,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
