@@ -483,7 +483,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_BROCK_ROUTE104"
     }
   ],
   "warp_events": [
@@ -553,6 +553,24 @@
       "var": "VAR_ROUTE104_STATE",
       "var_value": "1",
       "script": "Route104_EventScript_RivalTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_BROCK_FIRST_FIGHT",
+      "var_value": "0",
+      "script": "BrockWalkUp1"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_BROCK_FIRST_FIGHT",
+      "var_value": "0",
+      "script": "BrockWalkUp2"
     }
   ],
   "bg_events": [

@@ -4833,6 +4833,7 @@ Music: Female
 Items: Potion / Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Yellow
 
 Amaura (F)
 Level: 15
@@ -16977,14 +16978,47 @@ IVs: 10 HP / 11 Atk / 10 Def / 11 SpA / 10 SpD / 10 Spe
 - Leer
 - Scratch
 
-=== TRAINER_MAY_PLACEHOLDER ===
-Name: MAY
-Class: RS Protag
-Pic: RS May
-Gender: Female
+=== TRAINER_BROCK ===
+Name: BROCK
+Class: Pkmn Trainer 1
+Pic: Brock
+Gender: Male
 Music: Male
 Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Green
 
-Kyogre
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Geodude (M)
+Level: 12
+Ability: Sturdy
+IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
+- Bulldoze
+- Defense Curl
+- Rock Polish
+- Rollout
+
+Sandshrew (F)
+Level: 13
+IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
+- Fury Cutter
+- Rollout
+- Sand Attack
+- Poison Sting
+
+Archen (M)
+Level: 13
+IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
+- Wing Attack
+- Rock Throw
+- Leer
+- Quick Attack
+
+Onix (M)
+Level: 14
+Ability: Sturdy
+IVs: 11 HP / 16 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
+- Rock Polish
+- Smack Down
+- Curse
+- Bind

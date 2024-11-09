@@ -4091,6 +4091,10 @@ static const u8 sText_RoxanneLastMon[] = _("You're a pretty good opponent!\nI ma
 static const u8 sText_JaydenFirstDown[] = _("You may have got through one of my\nPokémon but don't expect to win.\p");
 static const u8 sText_JaydenCrit[] = _("Sheesh.. my Pokémon did not take that\ncrit very well.\p");
 static const u8 sText_JaydenLastLow[] = _("Wow, you're actually pretty good.\p");
+static const u8 sText_BrockLast[] = _("Pretty impressive, you got me to my\nlast Pokémon!\p");
+static const u8 sText_BrockCrit[] = _("Wow! Nice critical hit!\p");
+static const u8 sText_BrockBeforeTurn[] = _("I may not be as good as the Rustboro\nGym Leader but I'll still be a tough\lopponent.\p");
+
 
 static const struct TrainerSlide sTrainerSlides[] =
 {
@@ -4149,6 +4153,13 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgLastLowHp = sText_JaydenLastLow,
         .msgFirstCriticalHit = sText_JaydenCrit,
         .msgFirstDown = sText_JaydenFirstDown,
+    },
+    {
+        .trainerId = TRAINER_BROCK,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_BrockLast,
+        .msgFirstCriticalHit = sText_BrockCrit,
+        .msgBeforeFirstTurn = sText_BrockBeforeTurn,
     },
 };
 
