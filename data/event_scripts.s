@@ -1026,7 +1026,7 @@ Common_EventScript_MysteryGift::
 	lockall
 	@ goto_if_unset FLAG_SYS_GAME_CLEAR, MysteryGift_EventScript_CurrentlyUnavailable
 MysteryGift_EventScript_StartMysteryGift::
-	playbgm MUS_RG_MYSTERY_GIFT, FALSE
+	playbgm MUS_HG_MYSTERY_GIFT, FALSE
 	msgbox MysteryGift_Text_WelcomeToMysteryGiftSystem, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, MysteryGift_EventScript_Exit
 MysteryGift_EventScript_DoMysteryGift::
