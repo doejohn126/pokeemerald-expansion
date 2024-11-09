@@ -855,7 +855,7 @@
 #define TRAINER_ALVARO                      849
 #define TRAINER_EVERETT                     850
 #define TRAINER_RED                         851
-#define TRAINER_LEAF                        852
+#define TRAINER_SKY_KID                     852
 #define TRAINER_JAYDEN                      853
 #define TRAINER_BROCK                       854
 

@@ -4094,6 +4094,7 @@ static const u8 sText_JaydenLastLow[] = _("Wow, you're actually pretty good.\p")
 static const u8 sText_BrockLast[] = _("Pretty impressive, you got me to my\nlast Pokémon!\p");
 static const u8 sText_BrockCrit[] = _("Wow! Nice critical hit!\p");
 static const u8 sText_BrockBeforeTurn[] = _("I may not be as good as the Rustboro\nGym Leader but I'll still be a tough\lopponent.\p");
+static const u8 sText_SkyKidLastSwitch[] = _("woa ur pretty good bro\p");
 
 
 static const struct TrainerSlide sTrainerSlides[] =
@@ -4160,6 +4161,11 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgLastSwitchIn = sText_BrockLast,
         .msgFirstCriticalHit = sText_BrockCrit,
         .msgBeforeFirstTurn = sText_BrockBeforeTurn,
+    },
+    {
+        .trainerId = TRAINER_SKY_KID,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_SkyKidLastSwitch,
     },
 };
 

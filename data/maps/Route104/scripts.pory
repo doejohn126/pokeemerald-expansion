@@ -1191,6 +1191,7 @@ script BrockBattle {
     msgbox(BrockIntro)
     trainerbattle_no_intro(TRAINER_BROCK, BrockLose)
     msgbox(BrockOutro)
+    giveitem(ITEM_PEWTER_CRUNCHIES, 6)
     setvar(VAR_BROCK_FIRST_FIGHT, 1)
     applymovement(35, BrockLeave)
     waitmovement(0)
@@ -1207,7 +1208,9 @@ text BrockOutro {
     "I'm going to take a detour to Lavaridge\n"
     "for uh, no particular reason.\p"
     "I'll see you eventually though, good\n"
-    "luck with you're badge collecting!"
+    "luck with you're badge collecting!\p"
+    "Oh, also take these.\n"
+    "It's our town snack!"
 }
 
 text BrockLose {

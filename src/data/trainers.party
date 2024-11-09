@@ -16940,17 +16940,45 @@ Charmander
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LEAF ===
-Name: LEAF
-Class: Rival
-Pic: Leaf
-Gender: Female
+=== TRAINER_SKY_KID ===
+Name: sky kid
+Class: Pkmn Trainer 2
+Pic: Tuber M
+Gender: Male
 Music: Male
 Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Red
 
-Bulbasaur
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Yanma
+Level: 13
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 69 Spe
+- Air Cutter
+- Double Team
+- Whirlwind
+- Protect
+
+
+Wingull
+Level: 13
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 69 Spe
+- Wing Attack
+- Chilling Water
+- Growl
+- Quick Attack
+
+Duskull
+Level: 13
+Ability: Levitate
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 69 Spe
+- Shadow Sneak
+- Haze
+- Disable
+- Confuse Ray
 
 === TRAINER_JAYDEN ===
 Name: JAYDEN
@@ -16959,6 +16987,7 @@ Pic: RS Brendan
 Gender: Male
 Music: Male
 Double Battle: No
+Items: Potion
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Green
 
@@ -16985,6 +17014,7 @@ Pic: Brock
 Gender: Male
 Music: Male
 Double Battle: No
+Items: Pewter Crunchies
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Green
 

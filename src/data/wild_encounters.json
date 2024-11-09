@@ -11625,6 +11625,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_RUSTBORO_CITY",
+          "base_label": "gRustboroCity0",
+          "land_mons": {
+            "encounter_rate": 35,
+            "mons": [
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_BUNNELBY"
+              },
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_STUNKY"
+              },
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_EXEGGCUTE"
+              },
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_DRIFLOON"
+              },
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_PANSEAR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_CROAGUNK"
+              },
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_ARON"
+              },
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_DRILBUR"
+              },
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_MINCCINO"
+              },
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_SIZZLIPEDE"
+              },
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_ZORUA"
+              },
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_SOLOSIS"
+              }
+            ]
+          }
         }
       ]
     },
