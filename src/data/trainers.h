@@ -15134,7 +15134,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6101
-            .species = SPECIES_RATATTA,
+            .species = SPECIES_RATTATA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6103
             .iv = TRAINER_PARTY_IVS(0, 10, 0, 0, 0, 0),

@@ -4095,7 +4095,12 @@ static const u8 sText_BrockLast[] = _("Pretty impressive, you got me to my\nlast
 static const u8 sText_BrockCrit[] = _("Wow! Nice critical hit!\p");
 static const u8 sText_BrockBeforeTurn[] = _("I may not be as good as the Rustboro\nGym Leader but I'll still be a tough\lopponent.\p");
 static const u8 sText_SkyKidLastSwitch[] = _("woa ur pretty good bro\p");
-
+static const u8 sText_May2ndBattleHpLow[] = _("Woah, you got pretty strong {PLAYER}!\p");
+static const u8 sText_May2ndBattleCrit[] = _("Uh oh, that was a pretty powerful\ncritical hit!\p");
+static const u8 sText_May2ndBattleIntro[] = _("Don't underestimate my new Pokémon\n{PLAYER}.\p");
+static const u8 sText_Brendan2ndBattleHpLow[] = _("Seems like you got better too {PLAYER}.\p");
+static const u8 sText_Brendan2ndBattleCrit[] = _("Well alright then...\p");
+static const u8 sText_Brendan2ndBattleIntro[] = _("Check out my new mons {PLAYER}!\nThis time, don't expect to win.\p");
 
 static const struct TrainerSlide sTrainerSlides[] =
 {
@@ -4166,6 +4171,48 @@ static const struct TrainerSlide sTrainerSlides[] =
         .trainerId = TRAINER_SKY_KID,
         .isFrontierTrainer = FALSE,
         .msgLastSwitchIn = sText_SkyKidLastSwitch,
+    },
+    {
+        .trainerId = TRAINER_MAY_RUSTBORO_MUDKIP,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sText_May2ndBattleHpLow,
+        .msgFirstCriticalHit = sText_May2ndBattleCrit,
+        .msgBeforeFirstTurn = sText_May2ndBattleIntro,
+    },
+    {
+        .trainerId = TRAINER_MAY_RUSTBORO_TORCHIC,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sText_May2ndBattleHpLow,
+        .msgFirstCriticalHit = sText_May2ndBattleCrit,
+        .msgBeforeFirstTurn = sText_May2ndBattleIntro,
+    },
+    {
+        .trainerId = TRAINER_MAY_RUSTBORO_TREECKO,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sText_May2ndBattleHpLow,
+        .msgFirstCriticalHit = sText_May2ndBattleCrit,
+        .msgBeforeFirstTurn = sText_May2ndBattleIntro,
+    },
+    {
+        .trainerId = TRAINER_BRENDAN_RUSTBORO_MUDKIP,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sText_Brendan2ndBattleHpLow,
+        .msgFirstCriticalHit = sText_Brendan2ndBattleCrit,
+        .msgBeforeFirstTurn = sText_Brendan2ndBattleIntro,
+    },
+    {
+        .trainerId = TRAINER_BRENDAN_RUSTBORO_TORCHIC,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sText_Brendan2ndBattleHpLow,
+        .msgFirstCriticalHit = sText_Brendan2ndBattleCrit,
+        .msgBeforeFirstTurn = sText_Brendan2ndBattleIntro,
+    },
+    {
+        .trainerId = TRAINER_BRENDAN_RUSTBORO_TREECKO,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sText_Brendan2ndBattleHpLow,
+        .msgFirstCriticalHit = sText_Brendan2ndBattleCrit,
+        .msgBeforeFirstTurn = sText_Brendan2ndBattleIntro,
     },
 };
 
