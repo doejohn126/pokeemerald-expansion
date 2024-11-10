@@ -340,11 +340,19 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Smart Mon Choices
+
+Horsea
+Level: 14
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Poochyena
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 14
+IVs: 10 HP / 11 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Skrelp
+Level: 15
+IVs: 10 HP / 10 Atk / 10 Def / 11 SpA / 10 SpD / 10 Spe
 
 === TRAINER_GRUNT_WEATHER_INST_1 ===
 Name: GRUNT
@@ -4832,7 +4840,7 @@ Gender: Female
 Music: Female
 Items: Potion / Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Mon Choices
 Mugshot: Yellow
 
 Amaura (F)
@@ -5181,9 +5189,13 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Ralts
-Level: 9
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Solosis
+Level: 14
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Sinistea
+Level: 14
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_TED ===
 Name: TED
@@ -5300,8 +5312,16 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 9
+Deerling
+Level: 12
+IVs: 1 HP / 7 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+Oddish
+Level: 11
+IVs: 1 HP / 1 Atk / 7 Def / 1 SpA / 1 SpD / 1 Spe
+
+Purrloin
+Level: 11
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_GEORGIA ===
@@ -6036,9 +6056,17 @@ Double Battle: No
 AI: Check Bad Move
 
 Geodude
-Level: 10
+Level: 11
+IVs: 12 HP / 12 Atk / 16 Def / 12 SpA / 12 SpD / 12 Spe
+
+Nacli
+Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
+
+Kabuto
+Level: 12
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
 
 === TRAINER_TOMMY ===
 Name: TOMMY
@@ -6049,12 +6077,12 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 8
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Bonsly
+Level: 12
+IVs: 13 HP / 16 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Geodude
-Level: 8
+Omanyte
+Level: 13
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_JOEY ===
@@ -6067,8 +6095,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Machop
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 12
+IVs: 10 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ratatta
+Level: 13
+IVs: 0 HP / 10 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Hoothoot
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 10 SpD / 0 Spe
 
 === TRAINER_BEN ===
 Name: BEN
@@ -6389,17 +6425,17 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Feebas
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 6 Spe
 
-Magikarp
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mareanie
+Level: 10
+IVs: 0 HP / 0 Atk / 6 Def / 0 SpA / 0 SpD / 0 Spe
 
-Magikarp
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Buizel
+Level: 10
+IVs: 0 HP / 6 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CLAUDE ===
 Name: CLAUDE
@@ -10638,13 +10674,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 8
+Rolycoly
+Level: 12
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-Geodude
-Level: 8
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tyrunt
+Level: 12
+IVs: 16 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_BRENDEN ===
 Name: BRENDEN
@@ -10927,15 +10963,33 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+Items: Super Potion
+AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Blue
 
-Lotad
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Finizen (M)
+Level: 16
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+- Aqua Jet
+- Focus Energy
+- Tickle
+- Supersonic
 
-Torchic
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Bulbasaur (M)
+Level: 17
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+- Razor Leaf
+- Sleep Powder
+- Leech Seed
+- Growth
+
+Combusken (F)
+Level: 18
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Flame Charge
+- Detect
+- Double Kick
+- Quick Attack
 
 === TRAINER_BRENDAN_RUSTBORO_MUDKIP ===
 Name: BRENDAN
@@ -10944,15 +10998,33 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+Items: Super Potion
+AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Blue
 
-Wingull
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Growlithe (M)
+Level: 16
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+- Flame Wheel
+- Bite
+- Howl
+- Covet
 
-Treecko
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Froakie (M)
+Level: 17
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+- Water Pulse
+- Lick
+- Growl
+- Smokescreen
+
+Grovyle (F)
+Level: 18
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Mega Drain
+- Quick Guard
+- Cut
+- Leer
 
 === TRAINER_PAXTON ===
 Name: PAXTON
@@ -11051,15 +11123,33 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
+Items: Super Potion
 AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Blue
 
-Slugma
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Shroomish (F)
+Level: 16
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+- Headbutt
+- Mega Drain
+- Leech Seed
+- Stun Spore
 
-Mudkip
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Fuecoco (M)
+Level: 17
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+- Incinerate
+- Bite
+- Round
+- Leer
+
+Marshtomp (F)
+Level: 18
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Rock Throw
+- Water Gun
+- Mud Shot
+- Rock Smash
 
 === TRAINER_MAY_RUSTBORO_MUDKIP ===
 Name: MAY
@@ -11068,15 +11158,33 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
+Items: Super Potion
 AI: Check Bad Move / Try To Faint / Setup First Turn
+Mugshot: Pink
 
-Wingull
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ponyta (M)
+Level: 16
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+- Flame Charge
+- Tail Whip
+- Tackle
+- Double Kick
 
-Treecko
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Popplio (F)
+Level: 17
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+- Icy Wind
+- Disarming Voice
+- Aqua Jet
+- Baby Doll Eyes
+
+Grovyle (F)
+Level: 18
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Mega Drain
+- Quick Guard
+- Cut
+- Leer
 
 === TRAINER_MAXIE_MAGMA_HIDEOUT ===
 Name: MAXIE
@@ -11170,8 +11278,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Marill
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 14
+IVs: 0 HP / 0 Atk / 10 Def / 0 SpA / 0 SpD / 0 Spe
+
+Milcery
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 10 SpA / 0 SpD / 0 Spe
 
 === TRAINER_VIVI ===
 Name: VIVI
@@ -11385,12 +11497,16 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wurmple
-Level: 8
+Combee
+Level: 11
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Nincada
-Level: 8
+Grubbin
+Level: 12
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Sewaddle
+Level: 12
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_DOUG ===
@@ -11643,9 +11759,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Geodude Alolan
+Level: 12
+IVs: 0 HP / 0 Atk / 7 Def / 0 SpA / 0 SpD / 0 Spe
+
+Growlithe Hisuian
+Level: 12
+IVs: 0 HP / 7 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ERIC ===
 Name: ERIC
@@ -13035,12 +13155,12 @@ Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon @ Nugget
-Level: 8
+Mime Jr @ Nugget
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Poochyena
-Level: 8
+Flittle
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SARAH ===
@@ -13053,13 +13173,13 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Lotad
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cottonee
+Level: 14
+IVs: 0 HP / 0 Atk / 6 Def / 6 SpA / 0 SpD / 0 Spe
 
-Zigzagoon @ Nugget
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Meowth @ Nugget
+Level: 14
+IVs: 6 HP / 6 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DARIAN ===
 Name: DARIAN
@@ -13961,13 +14081,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Aron
+Level: 12
+IVs: 0 HP / 0 Atk / 8 Def / 0 SpA / 0 SpD / 0 Spe
 
-Geodude
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Onix
+Level: 12
+IVs: 0 HP / 0 Atk / 8 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOHNSON ===
 Name: JOHNSON
@@ -13978,13 +14098,13 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sentret
+Level: 12
+IVs: 0 HP / 8 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Lotad
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Fletchling
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 8 Spe
 
 === TRAINER_MELINA ===
 Name: MELINA
@@ -14228,15 +14348,33 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
+Items: Super Potion
 AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Pink
 
-Lotad
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Staryu
+Level: 16
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+- Minimize
+- Water Gun
+- Rapid Spin
+- Confuse Ray
 
-Torchic
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Chikorita (F)
+Level: 17
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+- Reflect
+- Razor Leaf
+- Synthesis
+- Poison Powder
+
+Combusken (M)
+Level: 18
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Flame Charge
+- Detect
+- Double Kick
+- Quick Attack
 
 === TRAINER_MAY_RUSTBORO_TORCHIC ===
 Name: MAY
@@ -14245,15 +14383,33 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+Items: Super Potion
+AI: Check Bad Move / Try To Faint / Smart Mon Choices
+Mugshot: Pink
 
-Torkoal
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Bounsweet
+Level: 16
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+- Razor Leaf
+- Rapid Spin
+- Play Nice
+- Synthesis
 
-Mudkip
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Fennekin (F)
+Level: 17
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+- Flame Charge
+- Psybeam
+- Howl
+- Tail Whip
+
+Marshtomp (M)
+Level: 18
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Rock Throw
+- Water Gun
+- Mud Shot
+- Rock Smash
 
 === TRAINER_ROXANNE_2 ===
 Name: ROXANNE

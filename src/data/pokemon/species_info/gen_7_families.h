@@ -3292,12 +3292,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_BOUNSWEET
     [SPECIES_BOUNSWEET] =
     {
-        .baseHP        = 42,
-        .baseAttack    = 30,
-        .baseDefense   = 38,
-        .baseSpeed     = 32,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 38,
+        .baseHP        = 52,
+        .baseAttack    = 40,
+        .baseDefense   = 48,
+        .baseSpeed     = 42,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 48,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = 235,
         .expYield = 42,
@@ -3356,10 +3356,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_STEENEE] =
     {
         .baseHP        = 52,
-        .baseAttack    = 40,
+        .baseAttack    = 70,
         .baseDefense   = 48,
         .baseSpeed     = 62,
-        .baseSpAttack  = 40,
+        .baseSpAttack  = 70,
         .baseSpDefense = 48,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = 120,

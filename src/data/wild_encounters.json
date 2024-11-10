@@ -461,62 +461,62 @@
             "mons": [
               {
                 "min_level": 4,
-                "max_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_BUIZEL"
               },
               {
                 "min_level": 4,
-                "max_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_DUCKLETT"
               },
               {
                 "min_level": 5,
-                "max_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_ROOKIDEE"
               },
               {
                 "min_level": 5,
-                "max_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_MARILL"
               },
               {
                 "min_level": 4,
-                "max_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_CHEWTLE"
               },
               {
                 "min_level": 5,
-                "max_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_SLOWPOKE"
               },
               {
                 "min_level": 4,
-                "max_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_TAILLOW"
               },
               {
                 "min_level": 5,
-                "max_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_HOPPIP"
               },
               {
                 "min_level": 4,
-                "max_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_FLETCHLING"
               },
               {
                 "min_level": 4,
-                "max_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_PIKIPEK"
               },
               {
                 "min_level": 3,
-                "max_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_HAPPINY"
               },
               {
                 "min_level": 5,
-                "max_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_KOMALA"
               }
             ]
