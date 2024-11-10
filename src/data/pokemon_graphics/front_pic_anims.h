@@ -386,7 +386,14 @@ static const union AnimCmd sAnim_Raichu_1[] =
 };
 
 #if P_ALOLAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(RaichuAlolan);
+static const union AnimCmd sAnim_RaichuAlolan_1[] =
+{
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 40),
+    ANIMCMD_END,
+};
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_PIKACHU
 
@@ -8912,7 +8919,15 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(DecidueyeHisuian);
 #endif //P_FAMILY_ROWLET
 
 #if P_FAMILY_LITTEN
-PLACEHOLDER_ANIM_SINGLE_FRAME(Litten);
+static const union AnimCmd sAnim_Litten_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 8),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 13),
+    ANIMCMD_FRAME(0, 7),
+    ANIMCMD_END,
+};
 PLACEHOLDER_ANIM_SINGLE_FRAME(Torracat);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Incineroar);
 #endif //P_FAMILY_LITTEN
