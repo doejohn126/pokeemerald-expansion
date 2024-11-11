@@ -4101,6 +4101,9 @@ static const u8 sText_May2ndBattleIntro[] = _("Don't underestimate my new Pokém
 static const u8 sText_Brendan2ndBattleHpLow[] = _("Seems like you got better too {B_PLAYER_NAME}.\p");
 static const u8 sText_Brendan2ndBattleCrit[] = _("Well alright then...\p");
 static const u8 sText_Brendan2ndBattleIntro[] = _("Check out my new mons {B_PLAYER_NAME}!\nThis time, don't expect to win.\p");
+static const u8 sText_BrawlyLastSwitch[] = _("You're pretty tough but the battle\nisn't over yet.\p");
+static const u8 sText_BrawlyCrit[] = _("Oof, slick crit bro!\p");
+static const u8 sText_BrawlyIntro[] = _("Alright, let's get this started!\p");
 
 static const struct TrainerSlide sTrainerSlides[] =
 {
@@ -4213,6 +4216,13 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgLastLowHp = sText_Brendan2ndBattleHpLow,
         .msgFirstCriticalHit = sText_Brendan2ndBattleCrit,
         .msgBeforeFirstTurn = sText_Brendan2ndBattleIntro,
+    },
+    {
+        .trainerId = TRAINER_BRAWLY_1,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_BrawlyLastSwitch,
+        .msgFirstCriticalHit = sText_BrawlyCrit,
+        .msgBeforeFirstTurn = sText_BrawlyIntro,
     },
 };
 
