@@ -159,9 +159,9 @@ Common_EventScript_ExtraThingsReceptionist::
    end
 
 Common_EventScript_LevelCap::
-   goto_if_set FLAG_BADGE01_GET, BrawlyLevelCap
-   goto_if_set FLAG_BADGE02_GET, WattsonLevelCap
    goto_if_set FLAG_BADGE03_GET, UnknownLevelCap
+   goto_if_set FLAG_BADGE02_GET, WattsonLevelCap
+   goto_if_set FLAG_BADGE01_GET, BrawlyLevelCap
    msgbox gText_TheRoxanneCap, MSGBOX_DEFAULT
    release
    end

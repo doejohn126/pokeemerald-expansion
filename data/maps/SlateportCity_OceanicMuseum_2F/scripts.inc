@@ -348,7 +348,7 @@ SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
 	.string "If I'm being honest, just children like\n"
 	.string "you I will have to deal with myself.\p"
 	.string "This is why you shouldn't hinder Team\n"
-	.string "Aqua$"
+	.string "Aqua!$"
 
 SlateportCity_OceanicMuseum_2F_Text_ArchieWarningContinued:
 	.string "Wow, I will say I'm impressed.\p"
