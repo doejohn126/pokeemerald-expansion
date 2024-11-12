@@ -1133,15 +1133,89 @@ BugsyMain::
 # 570 "data/maps/Route109/scripts.pory"
 	lock
 # 571 "data/maps/Route109/scripts.pory"
-	faceplayer
+	goto_if_defeated TRAINER_BUGSY, NiceFight
 # 572 "data/maps/Route109/scripts.pory"
-	trainerbattle_no_intro TRAINER_BUGSY, BugsyLose
+	msgbox BugsyIntro
 # 573 "data/maps/Route109/scripts.pory"
+	faceplayer
+# 574 "data/maps/Route109/scripts.pory"
+	playse SE_PIN
+# 575 "data/maps/Route109/scripts.pory"
+	applymovement 25, Common_Movement_ExclamationMark
+# 576 "data/maps/Route109/scripts.pory"
+	waitmovement 0
+# 577 "data/maps/Route109/scripts.pory"
+	applymovement 25, Common_Movement_Delay48
+# 578 "data/maps/Route109/scripts.pory"
+	waitmovement 0
+# 579 "data/maps/Route109/scripts.pory"
+	msgbox BugsyHeyThere
+# 580 "data/maps/Route109/scripts.pory"
+	trainerbattle_no_intro TRAINER_BUGSY, BugsyLose
+# 581 "data/maps/Route109/scripts.pory"
+	msgbox PrettyGreat
+# 582 "data/maps/Route109/scripts.pory"
+	giveitem ITEM_BLACK_AUGURITE, 1
+# 583 "data/maps/Route109/scripts.pory"
+	giveitem ITEM_METAL_COAT, 1
+# 584 "data/maps/Route109/scripts.pory"
+	msgbox JustDoNthng
+# 585 "data/maps/Route109/scripts.pory"
+	applymovement 25, Common_Movement_FaceDown
+# 586 "data/maps/Route109/scripts.pory"
+	waitmovement 0
+# 587 "data/maps/Route109/scripts.pory"
 	release
 	end
 
 
+NiceFight::
+# 592 "data/maps/Route109/scripts.pory"
+	faceplayer
+# 593 "data/maps/Route109/scripts.pory"
+	msgbox OhISee
+# 594 "data/maps/Route109/scripts.pory"
+	release
+	end
+
+
+OhISee::
+# 598 "data/maps/Route109/scripts.pory"
+	.string "Oh okay, so you're going after the\n"
+	.string "Hoenn Gym Leaders.\p"
+	.string "I can see why you're so good.$"
+
+JustDoNthng::
+# 604 "data/maps/Route109/scripts.pory"
+	.string "Welp anyways, sadly I'm back to doing\n"
+	.string "nothing.$"
+
+PrettyGreat::
+# 609 "data/maps/Route109/scripts.pory"
+	.string "You're a pretty great battler, it's been\n"
+	.string "a minute since I've had a match like\l"
+	.string "that.\p"
+	.string "Here's a cool reward. I have a whole\n"
+	.string "bunch of these!$"
+
+BugsyHeyThere::
+# 617 "data/maps/Route109/scripts.pory"
+	.string "Oh hey there, uh ignore what I said\n"
+	.string "earlier.\p"
+	.string "My name is Bugsy, and I've traveled here\n"
+	.string "from the Johto Region to find and train\l"
+	.string "my Bug Pokémon.\p"
+	.string "Hey, you look like you're pretty good.\n"
+	.string "How about we have a little battle?$"
+
+BugsyIntro::
+# 627 "data/maps/Route109/scripts.pory"
+	.string "Sigh, I'm still waiting on the beach\n"
+	.string "for someone to talk to me.\p"
+	.string "Whether it's a female, a cool trainer, or\n"
+	.string "even some salesperson.$"
+
 BugsyLose::
-# 577 "data/maps/Route109/scripts.pory"
+# 634 "data/maps/Route109/scripts.pory"
 	.string "Wow, you're pretty impressive, I know\n"
 	.string "you're gonna an amazing trainer!$"

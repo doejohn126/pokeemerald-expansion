@@ -419,8 +419,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Carvanha
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 16 Spe
+
+Misdreavus
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 16 SpA / 0 SpD / 0 Spe
+
+Binacle
+Level: 19
+IVs: 0 HP / 0 Atk / 16 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MUSEUM_2 ===
 Name: GRUNT
@@ -432,12 +440,20 @@ Double Battle: No
 AI: Check Bad Move
 
 Zubat
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 16 SpD / 0 Spe
 
-Carvanha
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Murkrow
+Level: 18
+IVs: 16 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Stunky
+Level: 19
+IVs: 16 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Croagunk
+Level: 18
+IVs: 1 HP / 16 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_1 ===
 Name: GRUNT
@@ -1069,13 +1085,13 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Azurill
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Cutiefly
+Level: 18
+IVs: 1 HP / 1 Atk / 1 Def / 11 SpA / 1 SpD / 10 Spe
 
-Azurill
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Slowpoke
+Level: 18
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 11 SpD / 1 Spe
 
 === TRAINER_AUSTINA ===
 Name: AUSTINA
@@ -1112,13 +1128,17 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Ribombee
+Level: 40
+IVs: 1 HP / 1 Atk / 1 Def / 11 SpA / 1 SpD / 10 Spe
 
-Marill
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Slowking
+Level: 41
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 11 SpD / 1 Spe
+
+Corsola
+Level: 40
+IVs: 1 HP / 1 Atk / 11 Def / 1 SpA / 11 SpD / 1 Spe
 
 === TRAINER_LOLA_3 ===
 Name: LOLA
@@ -1180,13 +1200,21 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 13
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-- Sand Attack
+Herdier
+Level: 18
+IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
+- Bite
 - Headbutt
 - Tail Whip
 - Surf
+
+Clauncher
+Level: 18
+IVs: 1 HP / 1 Atk / 1 Def / 15 SpA / 1 SpD / 1 Spe
+
+Wiglett
+Level: 18
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 16 Spe
 
 === TRAINER_SIMON ===
 Name: SIMON
@@ -1197,13 +1225,17 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Azurill
-Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Buizel
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 17 SpA / 0 SpD / 0 Spe
 
-Marill
-Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wooper
+Level: 18
+IVs: 0 HP / 0 Atk / 17 Def / 0 SpA / 0 SpD / 0 Spe
+
+Dewpider
+Level: 18
+IVs: 0 HP / 0 Atk / 17 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHARLIE ===
 Name: CHARLIE
@@ -1227,13 +1259,21 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Linoone
-Level: 27
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-- Sand Attack
-- Pin Missile
-- Tail Whip
+Stoutland
+Level: 40
+IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
+- Bite
+- Take Down
+- Fire Fang
 - Surf
+
+Clawitzer
+Level: 40
+IVs: 1 HP / 1 Atk / 1 Def / 15 SpA / 1 SpD / 1 Spe
+
+Wugtrio
+Level: 40
+IVs: 1 HP / 1 Atk / 1 Def / 16 SpA / 1 SpD / 16 Spe
 
 === TRAINER_RICKY_3 ===
 Name: RICKY
@@ -5268,12 +5308,12 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Ralts
-Level: 26
+Duosion
+Level: 40
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Meditite
-Level: 26
+Polteageist
+Level: 40
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_JERRY_3 ===
@@ -6622,17 +6662,25 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
-Level: 24
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Ducklett
+Level: 40
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+
+Cloyster
+Level: 40
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+
+Seaking
+Level: 40
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+
+Kingler
+Level: 40
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 Gyarados
-Level: 27
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-Gyarados
-Level: 27
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Level: 40
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 === TRAINER_ELLIOT_3 ===
 Name: ELLIOT
@@ -9090,12 +9138,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Wingull
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Level: 18
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 17 Spe
 
-Machop
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Poliwag
+Level: 17
+IVs: 1 HP / 1 Atk / 1 Def / 17 SpA / 1 SpD / 1 Spe
+
+Finizen
+Level: 18
+IVs: 1 HP / 1 Atk / 1 Def / 17 SpA / 1 SpD / 1 Spe
 
 === TRAINER_EDMOND ===
 Name: EDMOND
@@ -9106,9 +9158,17 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
-Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mantyke
+Level: 18
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 15 Spe
+
+Mankey
+Level: 18
+IVs: 0 HP / 15 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Oshawott
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 15 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ERNEST_1 ===
 Name: ERNEST
@@ -9136,16 +9196,16 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Shellos East Sea
+Level: 18
+IVs: 0 HP / 0 Atk / 17 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machop
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Remoraid
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 17 SpD / 0 Spe
 
-Tentacool
-Level: 11
+Scraggy
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PHILLIP ===
@@ -10740,11 +10800,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Timburr
-Level: 13
+Level: 15
 IVs: 12 HP / 13 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Clobbopus
-Level: 13
+Level: 16
 IVs: 13 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_LILITH ===
@@ -12134,8 +12194,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Goldeen
-Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 17 SpA / 0 SpD / 0 Spe
+
+Quaxly
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 17 SpA / 0 SpD / 0 Spe
+
+Steenee
+Level: 18
+IVs: 0 HP / 17 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GERALD ===
 Name: GERALD
@@ -13276,8 +13344,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Marill
-Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 18
+IVs: 15 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Panpour
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 16 SpA / 0 SpD / 0 Spe
+
+Spheal
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 16 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANDLER ===
 Name: CHANDLER
@@ -13288,13 +13364,17 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
-Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Chewtle
+Level: 18
+IVs: 11 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Tentacool
-Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 11 SpA / 0 SpD / 0 Spe
+
+Barboach
+Level: 18
+IVs: 0 HP / 0 Atk / 5 Def / 11 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KALEB ===
 Name: KALEB
@@ -17374,3 +17454,48 @@ Ball: Net Ball
 - Fury Cutter
 - Double Team
 - Quick Attack
+
+=== TRAINER_ARCHIE_MUSEUM ===
+Name: ARCHIE
+Class: Aqua Leader
+Pic: Aqua Leader Archie
+Gender: Male
+Music: Aqua
+Items: Super Potion / Super Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Qwilfish Hisuian
+Level: 23
+Ability: Intimidate
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Minimize
+- Spikes
+- Barb Barrage
+- Aqua Jet
+
+Carvanha
+Level: 24
+IVs: 18 HP / 28 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Aqua Jet
+- Poison Fang
+- Ice Fang
+- Bite
+
+Drizzile (M)
+Level: 24
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Sucker Punch
+- Tearful Look
+- Water Pulse
+- Fell Stinger
+
+Mightyena
+Level: 25
+Ability: Strong Jaw
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+EVs: 15 Atk / 15 Spe
+- Crunch
+- Howl
+- Ice Fang
+- Thunder Fang

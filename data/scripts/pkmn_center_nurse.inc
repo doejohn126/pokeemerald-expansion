@@ -132,6 +132,11 @@ EventScript_PkmnCenterNurse_PlayerTurn::
    release
    end
 
+WattsonLevelCap::
+   msgbox gText_TheWattsonCap, MSGBOX_DEFAULT
+   release
+   end
+
 BrawlyLevelCap::
    msgbox gText_TheBrawlyCap, MSGBOX_DEFAULT
    release
@@ -155,7 +160,8 @@ Common_EventScript_ExtraThingsReceptionist::
 
 Common_EventScript_LevelCap::
    goto_if_set FLAG_BADGE01_GET, BrawlyLevelCap
-   goto_if_set FLAG_BADGE02_GET, UnknownLevelCap
+   goto_if_set FLAG_BADGE02_GET, WattsonLevelCap
+   goto_if_set FLAG_BADGE03_GET, UnknownLevelCap
    msgbox gText_TheRoxanneCap, MSGBOX_DEFAULT
    release
    end

@@ -4107,6 +4107,12 @@ static const u8 sText_BrawlyIntro[] = _("Alright, let's get this started!\p");
 static const u8 sText_JaydenLastMon[] = _("Hey, don't think this is over yet\nbecause there's still room for me to win.\p");
 static const u8 sText_Jayden2Crit[] = _("Well I guess today is not my day.\p");
 static const u8 sText_Jayden2FirstDown[] = _("Okay you sure did improve, but will you\nwin?\p");
+static const u8 sText_BugsyLast[] = _("Uh oh, down to my last bug Pokémon!\p");
+static const u8 sText_BugsyCrit[] = _("Well that was pretty impressive!\p");
+static const u8 sText_BugsyBeforeTurn[] = _("Forgot to mention it but I'm also a Gym\nLeader in Johto, so don't expect an\leasy fight just because I use bugs.\p");
+static const u8 sText_ArchieLast[] = _("My last Pokémon...\p");
+static const u8 sText_ArchieFirstDown[] = _("Grr... you're a stubborn one I see.\p");
+
 
 static const struct TrainerSlide sTrainerSlides[] =
 {
@@ -4233,6 +4239,19 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgLastSwitchIn = sText_JaydenLastMon,
         .msgFirstCriticalHit = sText_Jayden2Crit,
         .msgFirstDown = sText_Jayden2FirstDown,
+    },
+    {
+        .trainerId = TRAINER_BUGSY,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_BugsyLast,
+        .msgFirstCriticalHit = sText_BugsyCrit,
+        .msgBeforeFirstTurn = sText_BugsyBeforeTurn,
+    },
+    {
+        .trainerId = TRAINER_ARCHIE_MUSEUM,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_ArchieLast,
+        .msgFirstDown = sText_ArchieFirstDown,
     },
 };
 

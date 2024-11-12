@@ -568,10 +568,67 @@ Route109_Text_TrainerTipsSign:
 
 script BugsyMain {
     lock
-    faceplayer
+	goto_if_defeated(TRAINER_BUGSY, NiceFight)
+	msgbox(BugsyIntro)
+	faceplayer
+	playse(SE_PIN)
+	applymovement(25, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	applymovement(25, Common_Movement_Delay48)
+	waitmovement(0)
+	msgbox(BugsyHeyThere)
     trainerbattle_no_intro(TRAINER_BUGSY, BugsyLose)
+	msgbox(PrettyGreat)
+	giveitem(ITEM_BLACK_AUGURITE, 1)
+	giveitem(ITEM_METAL_COAT, 1)
+	msgbox(JustDoNthng)
+	applymovement(25, Common_Movement_FaceDown)
+	waitmovement(0)
     release
     end
+}
+
+script NiceFight {
+	faceplayer
+	msgbox(OhISee)
+	release
+	end
+}
+
+text OhISee {
+	"Oh okay, so you're going after the\n"
+	"Hoenn Gym Leaders.\p"
+	"I can see why you're so good."
+}
+
+text JustDoNthng {
+	"Welp anyways, sadly I'm back to doing\n"
+	"nothing."
+}
+
+text PrettyGreat {
+	"You're a pretty great battler, it's been\n"
+	"a minute since I've had a match like\l"
+	"that.\p"
+	"Here's a cool reward. I have a whole\n"
+	"bunch of these!"
+}
+
+text BugsyHeyThere {
+	"Oh hey there, uh ignore what I said\n"
+	"earlier.\p"
+	"My name is Bugsy, and I've traveled here\n"
+	"from the Johto Region to find and train\l"
+	"my Bug Pokémon.\p"
+	"Hey, you look like you're pretty good.\n"
+	"How about we have a little battle?"
+}
+
+text BugsyIntro {
+	"Sigh, I'm still waiting on the beach\n"
+	"for someone to talk to me.\p"
+	"Whether it's a female, a cool trainer, or\n"
+	"even some salesperson."
 }
 
 text BugsyLose {

@@ -59,6 +59,9 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	waitmovement 0
 	msgbox SlateportCity_OceanicMuseum_2F_Text_ArchieWarning, MSGBOX_DEFAULT
 	closemessage
+	trainerbattle_no_intro TRAINER_ARCHIE_MUSEUM, ArchieDefeat
+	msgbox SlateportCity_OceanicMuseum_2F_Text_ArchieWarningContinued, MSGBOX_DEFAULT
+	closemessage
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	fadescreen FADE_TO_BLACK
@@ -342,11 +345,19 @@ SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
 	.string "Ah, fine…\n"
 	.string "You're still too young to understand\l"
 	.string "our noble objective.\p"
+	.string "If I'm being honest, just children like\n"
+	.string "you I will have to deal with myself.\p"
+	.string "This is why you shouldn't hinder Team\n"
+	.string "Aqua$"
+
+SlateportCity_OceanicMuseum_2F_Text_ArchieWarningContinued:
+	.string "Wow, I will say I'm impressed.\p"
 	.string "But, I warn you, don't even consider\n"
 	.string "interfering with our plans again.\p"
 	.string "The consequences will cost you\n"
 	.string "dearly!\p"
 	.string "And don't you forget it!$"
+
 
 SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs:
 	.string "CAPT. STERN: You're…\n"
@@ -439,3 +450,5 @@ SlateportCity_OceanicMuseum_2F_Text_SSAnneReplica:
 	.string "“A replica of the luxury liner that\n"
 	.string "circles the globe.”$"
 
+ArchieDefeat:
+	.string "Hmm, this kid's kinda tough.$"

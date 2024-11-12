@@ -286,8 +286,8 @@ const u32 gTrainerPalette_Dawn[] = INCBIN_U32("graphics/trainers/palettes/dawn.g
 const u32 gTrainerFrontPic_Brock[] = INCBIN_U32("graphics/trainers/front_pics/brock.4bpp.lz");
 const u32 gTrainerPalette_Brock[] = INCBIN_U32("graphics/trainers/front_pics/brock.gbapal.lz");
 
-const u32 gTrainerFrontPic_Bugsy[] = INCBIN_U32("graphics/trainers/front_pics/brock.4bpp.lz");
-const u32 gTrainerPalette_Bugsy[] = INCBIN_U32("graphics/trainers/front_pics/brock.gbapal.lz");
+const u32 gTrainerFrontPic_Bugsy[] = INCBIN_U32("graphics/trainers/front_pics/bugsy.4bpp.lz");
+const u32 gTrainerPalette_Bugsy[] = INCBIN_U32("graphics/trainers/front_pics/bugsy.gbapal.lz");
 
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");

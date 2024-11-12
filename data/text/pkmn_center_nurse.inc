@@ -59,6 +59,9 @@ gText_MysteryGiftOption::
 gText_LevelCap::
     .string "My Level Cap$"
 
+gText_TheWattsonCap::
+	.string "The current level cap is 29.$"
+
 gText_TheBrawlyCap::
 	.string "The current level cap is 22.$"
 

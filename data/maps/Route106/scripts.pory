@@ -58,9 +58,10 @@ script Jayden1061 {
     applymovement(6, JaydenMoveUp)
     waitmovement(0)
     playse(SE_PIN)
-    waitse
     applymovement(6, JaydenGoToPlayer1)
     waitmovement(0)
+    msgbox(JaydenHiAgain)
+    trainerbattle_no_intro(TRAINER_JAYDEN_2, JaydenYouGotBetter)
     setvar(VAR_JAYDEN_106, 1)
     msgbox(PrettyGood)
     giveitem(ITEM_VS_SEEKER, 1)
@@ -81,9 +82,10 @@ script Jayden1062 {
     applymovement(6, JaydenMoveUp)
     waitmovement(0)
     playse(SE_PIN)
-    waitse
     applymovement(6, JaydenGoToPlayer2)
     waitmovement(0)
+    msgbox(JaydenHiAgain)
+    trainerbattle_no_intro(TRAINER_JAYDEN_2, JaydenYouGotBetter)
     setvar(VAR_JAYDEN_106, 1)
     msgbox(PrettyGood)
     giveitem(ITEM_VS_SEEKER, 1)
@@ -105,7 +107,6 @@ script Jayden1063 {
     applymovement(6, JaydenMoveUp2)
     waitmovement(0)
     playse(SE_PIN)
-    waitse
     applymovement(6, JaydenGoToPlayer3)
     waitmovement(0)
     msgbox(JaydenHiAgain)
