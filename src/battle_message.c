@@ -4104,6 +4104,9 @@ static const u8 sText_Brendan2ndBattleIntro[] = _("Check out my new mons {B_PLAY
 static const u8 sText_BrawlyLastSwitch[] = _("You're pretty tough but the battle\nisn't over yet.\p");
 static const u8 sText_BrawlyCrit[] = _("Oof, slick crit bro!\p");
 static const u8 sText_BrawlyIntro[] = _("Alright, let's get this started!\p");
+static const u8 sText_JaydenLastMon[] = _("Hey, don't think this is over yet\nbecause there's still room for me to win.\p");
+static const u8 sText_Jayden2Crit[] = _("Well I guess today is not my day.\p");
+static const u8 sText_Jayden2FirstDown[] = _("Okay you sure did improve, but will you\nwin?\p");
 
 static const struct TrainerSlide sTrainerSlides[] =
 {
@@ -4223,6 +4226,13 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgLastSwitchIn = sText_BrawlyLastSwitch,
         .msgFirstCriticalHit = sText_BrawlyCrit,
         .msgBeforeFirstTurn = sText_BrawlyIntro,
+    },
+    {
+        .trainerId = TRAINER_JAYDEN_2,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_JaydenLastMon,
+        .msgFirstCriticalHit = sText_Jayden2Crit,
+        .msgFirstDown = sText_Jayden2FirstDown,
     },
 };
 

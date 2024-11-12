@@ -1,0 +1,210 @@
+raw `
+Route106_MapScripts::
+	.byte 0
+
+Route106_EventScript_TrainerTipsSign::
+	msgbox Route106_Text_TrainerTips, MSGBOX_SIGN
+	end
+
+Route106_EventScript_Douglas::
+	trainerbattle_single TRAINER_DOUGLAS, Route106_Text_DouglasIntro, Route106_Text_DouglasDefeated
+	msgbox Route106_Text_DouglasPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route106_EventScript_Kyla::
+	trainerbattle_single TRAINER_KYLA, Route106_Text_KylaIntro, Route106_Text_KylaDefeated
+	msgbox Route106_Text_KylaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route106_EventScript_Elliot::
+	trainerbattle_single TRAINER_ELLIOT_1, Route106_Text_ElliotIntro, Route106_Text_ElliotDefeated, Route106_EventScript_ElliotRegisterMatchCallAfterBattle
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route106_EventScript_ElliotRematch
+	msgbox Route106_Text_ElliotPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route106_EventScript_ElliotRegisterMatchCallAfterBattle::
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
+	msgbox Route106_Text_ElliotRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_ELLIOT_1
+	release
+	end
+
+Route106_EventScript_ElliotRematch::
+	trainerbattle_rematch TRAINER_ELLIOT_1, Route106_Text_ElliotRematchIntro, Route106_Text_ElliotRematchDefeated
+	msgbox Route106_Text_ElliotRematchPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route106_EventScript_Ned::
+	trainerbattle_single TRAINER_NED, Route106_Text_NedIntro, Route106_Text_NedDefeated
+	msgbox Route106_Text_NedPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route106_Text_TrainerTips:
+	.string "TRAINER TIPS\p"
+	.string "Advice on catching POKéMON with a ROD:\n"
+	.string "Press the A Button if you get a bite.$"
+
+
+`
+
+script Jayden1061 {
+    lock
+    clearflag(FLAG_JAYDEN_ROUTE106)
+    addobject(6)
+    playse(SE_EXIT)
+    applymovement(6, JaydenMoveUp)
+    waitmovement(0)
+    playse(SE_PIN)
+    waitse
+    applymovement(6, JaydenGoToPlayer1)
+    waitmovement(0)
+    setvar(VAR_JAYDEN_106, 1)
+    msgbox(PrettyGood)
+    giveitem(ITEM_VS_SEEKER, 1)
+    msgbox(Jayden106Outro)
+    applymovement(6, JaydenLeave1)
+    waitmovement(0)
+    setflag(FLAG_JAYDEN_ROUTE106)
+    removeobject(6)
+    release
+    end
+}
+
+script Jayden1062 {
+    lock
+    clearflag(FLAG_JAYDEN_ROUTE106)
+    addobject(6)
+    playse(SE_EXIT)
+    applymovement(6, JaydenMoveUp)
+    waitmovement(0)
+    playse(SE_PIN)
+    waitse
+    applymovement(6, JaydenGoToPlayer2)
+    waitmovement(0)
+    setvar(VAR_JAYDEN_106, 1)
+    msgbox(PrettyGood)
+    giveitem(ITEM_VS_SEEKER, 1)
+    msgbox(Jayden106Outro)
+    applymovement(6, JaydenLeave2)
+    waitmovement(0)
+    setflag(FLAG_JAYDEN_ROUTE106)
+    removeobject(6)
+    release
+    end
+}
+
+
+script Jayden1063 {
+    lock
+    clearflag(FLAG_JAYDEN_ROUTE106)
+    addobject(6)
+    playse(SE_EXIT)
+    applymovement(6, JaydenMoveUp2)
+    waitmovement(0)
+    playse(SE_PIN)
+    waitse
+    applymovement(6, JaydenGoToPlayer3)
+    waitmovement(0)
+    msgbox(JaydenHiAgain)
+    trainerbattle_no_intro(TRAINER_JAYDEN_2, JaydenYouGotBetter)
+    setvar(VAR_JAYDEN_106, 1)
+    msgbox(PrettyGood)
+    giveitem(ITEM_VS_SEEKER, 1)
+    msgbox(Jayden106Outro)
+    applymovement(6, JaydenLeave3)
+    waitmovement(0)
+    setflag(FLAG_JAYDEN_ROUTE106)
+    removeobject(6)
+    release
+    end
+}
+
+text Jayden106Outro {
+    "Once it charges, use it to rematch any\n"
+    "trainer you fought!\p"
+    "Anyways though, I'll catch ya later\n"
+    "{PLAYER}."
+}
+
+text PrettyGood {
+    "Alright well I'm planning on going to\n"
+    "Mauville City for my third badge.\p"
+    "But before I go, I got a cool item you\n"
+    "might like {PLAYER}."
+}
+
+text JaydenYouGotBetter {
+    "Ouch, yeah okay, you definitely got\n"
+    "better too."
+}
+
+text JaydenHiAgain {
+    "Oh hey, it's you again!\p"
+    "Since our last battle I've gotten some\n"
+    "more Pokémon and my second badge.\p"
+    "Hey, let's battle and see how much we\n"
+    "improved."
+}
+
+movement JaydenLeave3 {
+    walk_up
+    walk_right * 4
+    walk_up * 2
+    walk_right * 6
+}
+
+movement JaydenLeave2 {
+    walk_up
+    walk_right * 4
+    walk_up * 2
+    walk_right * 5
+}
+
+movement JaydenLeave1 {
+    walk_down
+    walk_right * 4
+    walk_up * 2
+    walk_right * 6
+}
+
+movement JaydenGoToPlayer3 {
+    emote_exclamation_mark
+    delay_16
+    delay_16
+    delay_16
+    walk_down * 2
+    walk_right
+}
+
+movement JaydenGoToPlayer2 {
+    emote_exclamation_mark
+    delay_16
+    delay_16
+    delay_16
+    walk_down
+    walk_right
+}
+
+movement JaydenGoToPlayer1 {
+    emote_exclamation_mark
+    delay_16
+    delay_16
+    delay_16
+    walk_right
+}
+
+movement JaydenMoveUp {
+    walk_down
+    delay_16
+    delay_16
+    face_right
+}
+
+movement JaydenMoveUp2 {
+    walk_down
+    delay_16
+    delay_16
+}

@@ -3216,7 +3216,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Machop
-Level: 13
+Level: 16
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Tyrogue
+Level: 16
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Sneasel Hisuian
+Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_HITOSHI ===
@@ -4925,6 +4933,8 @@ IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Combusken (M) @ Sitrus Berry
 Level: 22
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+EVs: 15 Atk / 15 Spe
+Ball: Fast Ball
 - Flame Charge
 - Double Kick
 - Aerial Ace
@@ -6485,17 +6495,21 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
-Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ducklett
+Level: 14
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
-Tentacool
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Shellder
+Level: 14
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
-Magikarp
-Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Goldeen
+Level: 15
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+
+Krabby
+Level: 15
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 === TRAINER_NED ===
 Name: NED
@@ -7958,8 +7972,12 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Meditite
-Level: 13
+Mienfoo
+Level: 16
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Crabrawler
+Level: 15
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_LAURA ===
@@ -7971,8 +7989,16 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Meditite
-Level: 13
+Croagunk
+Level: 15
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Pancham
+Level: 15
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Stufful
+Level: 16
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_CYNDY_1 ===
@@ -10713,9 +10739,13 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Machop
+Timburr
 Level: 13
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 12 HP / 13 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Clobbopus
+Level: 13
+IVs: 13 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_LILITH ===
 Name: LILITH
@@ -10727,7 +10757,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Meditite
-Level: 13
+Level: 16
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Farfetchd Galarian
+Level: 15
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_CRISTIAN ===
@@ -10739,8 +10773,16 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Makuhita
-Level: 13
+Riolu
+Level: 15
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+
+Chimchar
+Level: 16
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+
+Scraggy
+Level: 16
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_SYLVIA ===
@@ -17194,7 +17236,7 @@ Music: Male
 Double Battle: No
 Items: Pewter Crunchies
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Green
+Mugshot: Yellow
 
 
 Geodude (M)
@@ -17226,7 +17268,109 @@ Onix (M)
 Level: 14
 Ability: Sturdy
 IVs: 11 HP / 16 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
+Ball: Friend Ball
 - Rock Polish
 - Smack Down
 - Curse
 - Bind
+
+=== TRAINER_JAYDEN_2 ===
+Name: JAYDEN
+Class: Rival
+Pic: RS Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+Items: Super Potion
+AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Green
+
+Eevee (F)
+Level: 18
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Covet
+- Sand Attack
+- Quick Attack
+- Tail Whip
+
+Charmander (M)
+Level: 17
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Dragon Breath
+- Fire Fang
+- Smokescreen
+- Growl
+
+Shuckle (F)
+Level: 17
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Rock Tomb
+- Struggle Bug
+- Wrap
+- Withdraw
+
+Croconaw (M)
+Level: 19
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Aqua Jet
+- Bite
+- Leer
+- Scary Face
+
+=== TRAINER_BUGSY ===
+Name: BUGSY
+Class: Pkmn Trainer 1
+Pic: Bugsy
+Gender: Male
+Music: Male
+Double Battle: No
+Items: Super Potion / Super Potion
+AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Green
+
+
+Ariados (F)
+Level: 21
+Ability: Toxic Debris
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Shadow Sneak
+- Bug Bite
+- Fell Stinger
+- String Shot
+
+Beedrill (M)
+Level: 21
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Ball: Sport Ball
+- Bug Bite
+- Venoshock
+- Poison Sting
+- Rock Smash
+
+Ledian (F)
+Level: 22
+Ability: Swarm
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Mach Punch
+- Roost
+- Reflect
+- Bug Bite
+
+Spidops (M)
+Level: 21
+Ability: Stakeout
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Silk Trap
+- Bug Bite
+- Assurance
+- Rock Tomb
+
+Scyther (M) @ Sitrus Berry
+Level: 23
+Ability: Technician
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Ball: Net Ball
+- Wing Attack
+- Fury Cutter
+- Double Team
+- Quick Attack

@@ -5766,6 +5766,8 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PYRAMID_KING:
             return MUS_VS_FRONTIER_BRAIN;
         case TRAINER_CLASS_PKMN_TRAINER_1:
+            if (gTrainerBattleOpponent_A == TRAINER_BUGSY)
+                return MUS_HG_VS_GYM_LEADER;
             return MUS_RG_VS_GYM_LEADER;
         case TRAINER_CLASS_PKMN_TRAINER_2:
             return MUS_PL_VS_FRONTIER_BRAIN;
