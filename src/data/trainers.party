@@ -676,13 +676,17 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Fomantis
+Level: 22
+IVs: 0 HP / 0 Atk / 18 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pansage
+Level: 22
+IVs: 0 HP / 18 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Roselia
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROSE_1 ===
 Name: ROSE
@@ -4199,10 +4203,17 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Abra
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Hidden Power
+Gothita
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
+
+Kadabra
+Level: 25
+IVs: 18 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Exeggcute
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PRESTON ===
 Name: PRESTON
@@ -4371,10 +4382,13 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Abra
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Hidden Power
+Natu
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 18 SpD / 0 Spe
+
+Drowzee
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 18 SpD / 0 Spe
 
 === TRAINER_HANNAH ===
 Name: HANNAH
@@ -5649,8 +5663,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Skitty @ Oran Berry
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 23
+IVs: 0 HP / 18 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Glameow @ Oran Berry
+Level: 22
+IVs: 18 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Litten @ Oran Berry
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
 
 === TRAINER_COLTON ===
 Name: COLTON
@@ -5818,12 +5840,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Plusle @ Oran Berry
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
 
 Minun @ Oran Berry
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 18 SpD / 0 Spe
 
 === TRAINER_ISABEL_2 ===
 Name: ISABEL
@@ -5835,12 +5857,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Plusle @ Oran Berry
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Level: 40
+IVs: 1 HP / 1 Atk / 1 Def / 18 SpA / 18 SpD / 1 Spe
 
 Minun @ Oran Berry
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Level: 40
+IVs: 1 HP / 1 Atk / 1 Def / 18 SpA / 18 SpD / 1 Spe
+
+Togedemaru @ Oran Berry
+Level: 40
+IVs: 1 HP / 1 Atk / 18 Def / 18 SpA / 1 SpD / 1 Spe
 
 === TRAINER_ISABEL_3 ===
 Name: ISABEL
@@ -6396,13 +6422,17 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Aron
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Aipom
+Level: 23
+IVs: 0 HP / 18 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Maschiff
+Level: 23
+IVs: 0 HP / 18 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Electrike
-Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WALLACE ===
 Name: WALLACE
@@ -6577,21 +6607,21 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Totodile
+Level: 23
+IVs: 0 HP / 18 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wailmer
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 24
+IVs: 18 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Qwilfish
+Level: 26
+IVs: 0 HP / 18 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wailmer
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Palpitoad
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 18 SpD / 0 Spe
 
 === TRAINER_NOLAN ===
 Name: NOLAN
@@ -8964,13 +8994,13 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Plusle
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Impidimp
+Level: 22
+IVs: 0 HP / 0 Atk / 18 Def / 0 SpA / 0 SpD / 0 Spe
 
-Minun
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Hatenna
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 18 SpD / 0 Spe
 
 === TRAINER_AMY_AND_LIV_2 ===
 Name: AMY & LIV
@@ -9541,13 +9571,17 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Lombre
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wormadam 
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 18 SpD / 0 Spe
 
-Nuzleaf
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sprigatito
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 18 Spe
+
+Oranguru
+Level: 24
+IVs: 0 HP / 0 Atk / 18 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HECTOR ===
 Name: HECTOR
@@ -9596,13 +9630,21 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Lombre
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wormadam
+Level: 40
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 22 SpD / 0 Spe
 
-Nuzleaf
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Floragato
+Level: 40
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 22 Spe
+
+Oranguru
+Level: 40
+IVs: 0 HP / 0 Atk / 22 Def / 0 SpA / 0 SpD / 0 Spe
+
+Passimian
+Level: 40
+IVs: 0 HP / 22 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_EDWIN_3 ===
 Name: EDWIN
@@ -9613,13 +9655,25 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Lombre
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wormadam
+Level: 55
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 22 SpD / 0 Spe
 
-Nuzleaf
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mothim
+Level: 55
+IVs: 0 HP / 0 Atk / 0 Def / 22 SpA / 0 SpD / 0 Spe
+
+Meowscarada
+Level: 55
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 22 Spe
+
+Oranguru
+Level: 55
+IVs: 0 HP / 0 Atk / 22 Def / 0 SpA / 0 SpD / 0 Spe
+
+Passimian
+Level: 55
+IVs: 0 HP / 22 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_EDWIN_4 ===
 Name: EDWIN
@@ -9726,20 +9780,52 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
+Items: Super Potion / Super Potion
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Blue
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Swellow (F)
+Level: 26
+Ability: Aerilate
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Air Slash
+- Double Team
+- Quick Attack
+- Whirlwind
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Blitzle (M)
+Level: 25
+Ability: Flare Boost
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Flame Charge
+- Thunder Wave
+- Spark
+- Double Kick
 
-Grovyle
-Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Growlithe (M)
+Level: 26
+Ability: Intimidate
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Bite
+- Fire Fang
+- Howl
+- Double Kick
+
+Frogadier (M)
+Level: 26
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Incinerate
+- Snarl
+- Yawn
+- Round
+
+Grovyle (F)
+Level: 28
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Giga Drain
+- Cut
+- Detect
+- Assurance
 
 === TRAINER_BRENDAN_ROUTE_119_MUDKIP ===
 Name: BRENDAN
@@ -9784,20 +9870,52 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
+Items: Super Potion / Super Potion
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Blue
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Swellow (F)
+Level: 26
+Ability: Aerilate
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Air Slash
+- Double Team
+- Quick Attack
+- Whirlwind
 
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Blitzle (M)
+Level: 25
+Ability: Flare Boost
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Flame Charge
+- Thunder Wave
+- Spark
+- Double Kick
 
-Combusken
-Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Tatsugiri Droopy (F)
+Level: 26
+Ability: Storm Drain
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Water Pulse
+- Dragon Breath
+- Harden
+- Soak
+
+Ivysaur (M)
+Level: 26
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Magical Leaf
+- Sleep Powder
+- Leech Seed
+- Sludge
+
+Combusken (F)
+Level: 28
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Aerial Ace
+- Double Kick
+- Flamethrower
+- Detect
 
 === TRAINER_BRENDAN_ROUTE_119_TREECKO ===
 Name: BRENDAN
@@ -9842,20 +9960,52 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
+Items: Super Potion / Super Potion
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Blue
 
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Swellow (F)
+Level: 26
+Ability: Aerilate
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Air Slash
+- Double Team
+- Quick Attack
+- Whirlwind
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Blitzle (M)
+Level: 25
+Ability: Flare Boost
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Flame Charge
+- Thunder Wave
+- Spark
+- Double Kick
 
-Marshtomp
-Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Breloom (F)
+Level: 26
+Ability: Effect Spore
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Mach Punch
+- Leech Seed
+- Spore
+- Mega Drain
+
+Crocalor (M)
+Level: 26
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Incinerate
+- Snarl
+- Yawn
+- Round
+
+Marshtomp (F)
+Level: 28
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Bulldoze
+- Water Pulse
+- Rock Slide
+- Rock Smash
 
 === TRAINER_BRENDAN_ROUTE_119_TORCHIC ===
 Name: BRENDAN
@@ -9887,7 +10037,7 @@ Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Purple
+Mugshot: Pink
 
 Treecko (M)
 Level: 5
@@ -9900,20 +10050,52 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
+Items: Super Potion / Super Potion
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Purple
+Mugshot: Pink
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Swellow (F)
+Level: 26
+Ability: Aerilate
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Air Slash
+- Double Team
+- Quick Attack
+- Whirlwind
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Pikachu (F)
+Level: 25
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Electro Ball
+- Nasty Plot
+- Charm
+- Quick Attack
 
-Grovyle
-Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ponyta (M)
+Level: 26
+Ability: Flash Fire
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Double Kick
+- Will O Wisp
+- FLame Wheel
+- Wild Charge
+
+Brionne (F)
+Level: 26
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Bubble Beam
+- Icy Wind
+- Disarming Voice
+- Sing
+
+Grovyle (M)
+Level: 28
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Giga Drain
+- Cut
+- Detect
+- Assurance
+
 
 === TRAINER_MAY_ROUTE_119_MUDKIP ===
 Name: MAY
@@ -9923,7 +10105,7 @@ Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Purple
+Mugshot: Pink
 
 Slugma
 Level: 29
@@ -9945,7 +10127,7 @@ Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Purple
+Mugshot: Pink
 
 Torchic (M)
 Level: 5
@@ -9958,20 +10140,51 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
+Items: Super Potion / Super Potion
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Purple
+Mugshot: Pink
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Swellow (F)
+Level: 26
+Ability: Aerilate
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Air Slash
+- Double Team
+- Quick Attack
+- Whirlwind
 
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Pikachu (F)
+Level: 25
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Electro Ball
+- Nasty Plot
+- Charm
+- Quick Attack
 
-Combusken
-Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Staryu
+Level: 26
+Ability: Natural Cure
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Psybeam
+- Brine
+- Light Screen
+- Power Gem
+
+Bayleef (F)
+Level: 26
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Leech Seed
+- Magical Leaf
+- Reflect
+- Synthesis
+
+Combusken (M)
+Level: 28
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Aerial Ace
+- Double Kick
+- Flamethrower
+- Detect
 
 === TRAINER_MAY_ROUTE_119_TREECKO ===
 Name: MAY
@@ -9981,7 +10194,7 @@ Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Purple
+Mugshot: Pink
 
 Pelipper
 Level: 29
@@ -10003,7 +10216,7 @@ Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Purple
+Mugshot: Pink
 
 Mudkip (M)
 Level: 5
@@ -10016,20 +10229,51 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
+Items: Super Potion / Super Potion
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Purple
+Mugshot: Pink
 
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Swellow (F)
+Level: 26
+Ability: Aerilate
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Air Slash
+- Double Team
+- Quick Attack
+- Whirlwind
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Pikachu (F)
+Level: 25
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Electro Ball
+- Nasty Plot
+- Charm
+- Quick Attack
 
-Marshtomp
-Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Steenee
+Level: 26
+Ability: Sweet Veil
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Seed Bomb
+- Synthesis
+- Bounce
+- Teeter Dance
+
+Braixen (F)
+Level: 26
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Incinerate
+- Psybeam
+- Copycat
+- Lucky Chant
+
+Marshtomp (M)
+Level: 28
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Bulldoze
+- Water Pulse
+- Rock Slide
+- Rock Smash
 
 === TRAINER_MAY_ROUTE_119_TORCHIC ===
 Name: MAY
@@ -10039,7 +10283,7 @@ Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Purple
+Mugshot: Pink
 
 Lombre
 Level: 29
@@ -11302,7 +11546,7 @@ IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 - Aqua Jet
 - Baby Doll Eyes
 
-Grovyle (F)
+Grovyle (M)
 Level: 18
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Mega Drain
@@ -13385,13 +13629,13 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Minun @ Oran Berry
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Pachirisu @ Oran Berry
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 18 Spe
 
-Plusle @ Oran Berry
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dedenne @ Oran Berry
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSEPH ===
 Name: JOSEPH
@@ -13402,13 +13646,17 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Electrike
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Noibat
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 18 Spe
 
 Voltorb
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 18 Spe
+
+Squawkabilly
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 18 Spe
 
 === TRAINER_ALYSSA ===
 Name: ALYSSA
@@ -13420,8 +13668,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Magnemite
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
+
+Espurr
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
+
+Shuppet
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MARCOS ===
 Name: MARCOS
@@ -13432,8 +13688,12 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Voltorb
-Level: 15
+Whirlipede
+Level: 22
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Grookey
+Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RHETT ===
@@ -13446,7 +13706,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Makuhita
-Level: 15
+Level: 22
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Teddiursa
+Level: 22
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Sawk
+Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_TYRON ===
@@ -17466,7 +17734,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Qwilfish Hisuian
-Level: 23
+Level: 24
 Ability: Intimidate
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Minimize
@@ -17491,7 +17759,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Fell Stinger
 
 Mightyena
-Level: 25
+Level: 26
 Ability: Strong Jaw
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 EVs: 15 Atk / 15 Spe

@@ -4112,6 +4112,13 @@ static const u8 sText_BugsyCrit[] = _("Well that was pretty impressive!\p");
 static const u8 sText_BugsyBeforeTurn[] = _("Forgot to mention it but I'm also a Gym\nLeader in Johto, so don't expect an\leasy fight just because I use bugs.\p");
 static const u8 sText_ArchieLast[] = _("My last Pokémon...\p");
 static const u8 sText_ArchieFirstDown[] = _("Grr... you're a stubborn one I see.\p");
+static const u8 sText_Brendan3rdBattleIntro[] = _("You're not gonna believe how much\nbetter I've got.\p");
+static const u8 sText_Brendan3Last[] = _("Hah, seems like I'm not the only one who\ngot better.\p");
+static const u8 sText_BrendanFirstDown[] = _("We're only getting started, don't get\nyour hopes up {B_PLAYER_NAME}.\p");
+static const u8 sText_May3rdBattleIntro[] = _("My Pokémon got stronger, so I hope\nyou're prepared for a good battle!\p");
+static const u8 sText_May3Last[] = _("You have a pretty good battle style\nseeing how you're team holds up.\p");
+static const u8 sText_MayCrit[] = _("Ah, that critical hit wasn't pleasant!\p");
+
 
 
 static const struct TrainerSlide sTrainerSlides[] =
@@ -4252,6 +4259,48 @@ static const struct TrainerSlide sTrainerSlides[] =
         .isFrontierTrainer = FALSE,
         .msgLastSwitchIn = sText_ArchieLast,
         .msgFirstDown = sText_ArchieFirstDown,
+    },
+    {
+        .trainerId = TRAINER_BRENDAN_ROUTE_110_TORCHIC,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_Brendan3Last,
+        .msgFirstDown = sText_BrendanFirstDown,
+        .msgBeforeFirstTurn = sText_Brendan3rdBattleIntro,
+    },
+    {
+        .trainerId = TRAINER_BRENDAN_ROUTE_110_TREECKO,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_Brendan3Last,
+        .msgFirstDown = sText_BrendanFirstDown,
+        .msgBeforeFirstTurn = sText_Brendan3rdBattleIntro,
+    },
+    {
+        .trainerId = TRAINER_BRENDAN_ROUTE_110_MUDKIP,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_Brendan3Last,
+        .msgFirstDown = sText_BrendanFirstDown,
+        .msgBeforeFirstTurn = sText_Brendan3rdBattleIntro,
+    },
+    {
+        .trainerId = TRAINER_MAY_ROUTE_110_TORCHIC,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_May3Last,
+        .msgFirstCriticalHit = sText_MayCrit,
+        .msgBeforeFirstTurn = sText_May3rdBattleIntro,
+    },
+    {
+        .trainerId = TRAINER_MAY_ROUTE_110_TREECKO,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_May3Last,
+        .msgFirstCriticalHit = sText_MayCrit,
+        .msgBeforeFirstTurn = sText_May3rdBattleIntro,
+    },
+    {
+        .trainerId = TRAINER_MAY_ROUTE_110_MUDKIP,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_May3Last,
+        .msgFirstCriticalHit = sText_MayCrit,
+        .msgBeforeFirstTurn = sText_May3rdBattleIntro,
     },
 };
 

@@ -21,10 +21,10 @@ MauvilleCity_BikeShop_EventScript_SkipGreeting::
 MauvilleCity_BikeShop_EventScript_ChooseBike::
 	message MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne
 	waitmessage
-	multichoice 21, 8, MULTI_BIKE, TRUE
-	switch VAR_RESULT
-	case 0, MauvilleCity_BikeShop_EventScript_GetMachBike
-	case 1, MauvilleCity_BikeShop_EventScript_GetAcroBike
+	//multichoice 21, 8, MULTI_BIKE, TRUE
+	//switch VAR_RESULT
+	//case 0, MauvilleCity_BikeShop_EventScript_GetMachBike
+	goto MauvilleCity_BikeShop_EventScript_GetAcroBike
 	end
 
 MauvilleCity_BikeShop_EventScript_NotFar::
@@ -38,12 +38,12 @@ MauvilleCity_BikeShop_EventScript_YesFar::
 	goto MauvilleCity_BikeShop_EventScript_ChooseBike
 	end
 
-MauvilleCity_BikeShop_EventScript_GetMachBike::
-	msgbox MauvilleCity_BikeShop_Text_ChoseMachBike, MSGBOX_DEFAULT
-	giveitem ITEM_MACH_BIKE
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	goto MauvilleCity_BikeShop_EventScript_ComeBackToSwitchBikes
-	end
+//MauvilleCity_BikeShop_EventScript_GetMachBike::
+	//msgbox MauvilleCity_BikeShop_Text_ChoseMachBike, MSGBOX_DEFAULT
+	//giveitem ITEM_MACH_BIKE
+	//goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	//goto MauvilleCity_BikeShop_EventScript_ComeBackToSwitchBikes
+	//end
 
 MauvilleCity_BikeShop_EventScript_GetAcroBike::
 	msgbox MauvilleCity_BikeShop_Text_ChoseAcroBike, MSGBOX_DEFAULT
@@ -214,13 +214,15 @@ MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne:
 	.string "prefer technical rides!\p"
 	.string "I'm a real sweetheart, so you can\n"
 	.string "have whichever one you like!\p"
-	.string "Which one will you choose?$"
+	.string "Which one will you choose?\p"
+	.string "Oh shoot. I actually forgot. They gave\n"
+	.string "me some with both systems in one!$"
 
 MauvilleCity_BikeShop_Text_ChoseMachBike:
 	.string "{PLAYER} chose the MACH BIKE.$"
 
 MauvilleCity_BikeShop_Text_ChoseAcroBike:
-	.string "{PLAYER} chose the ACRO BIKE.$"
+	.string "{PLAYER} got the 2 in 1 BIKE.$"
 
 MauvilleCity_BikeShop_Text_ComeBackToSwitchBikes:
 	.string "RYDEL: If you get the urge to switch\n"

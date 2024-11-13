@@ -91282,7 +91282,9 @@
   "PONYTA_GALARIAN": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_WILD_CHARGE"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
