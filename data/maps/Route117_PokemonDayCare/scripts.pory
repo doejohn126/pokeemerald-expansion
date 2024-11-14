@@ -1,0 +1,90 @@
+raw `
+Route117_PokemonDayCare_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route117_PokemonDayCare_OnTransition
+	.byte 0
+
+Route117_PokemonDayCare_OnTransition:
+	setflag FLAG_LANDMARK_POKEMON_DAYCARE
+	end
+
+
+`
+
+script OldTogepiGuy {
+    lock
+    faceplayer
+    goto_if_set(FLAG_TOGEPI, OldTogepiGuy2)
+    msgbox(CouldYouHelpMe, MSGBOX_YESNO)
+    goto_if_eq(VAR_RESULT, NO, TogepiEggDecline)
+    getpartysize
+    goto_if_eq(VAR_RESULT, PARTY_SIZE, FullParty)
+    message(PlayerGotEgg)
+	playfanfare(MUS_OBTAIN_ITEM)
+    waitfanfare
+    setflag(FLAG_TOGEPI)
+    giveegg(SPECIES_TOGEPI)
+    msgbox(TyForTakingIt)
+    release
+    end
+}
+
+script OldTogepiGuy2 {
+    msgbox(HowsTheEgg)
+    release
+    end
+}
+
+script FullParty {
+    msgbox(UhOhLol)
+    release
+    end
+}
+
+script TogepiEggDecline {
+    msgbox(MaybeIllFindSomeoneElse)
+    release
+    end
+}
+
+script Togetic {
+    lock
+    faceplayer
+    playmoncry(SPECIES_TOGETIC, CRY_MODE_NORMAL)
+    waitmoncry
+    release
+    end
+}
+
+text HowsTheEgg {
+    "How's the Togepi egg?"
+}
+
+text TyForTakingIt {
+    "Thank you for taking the egg for me\n"
+    "young one. Please take care of it."
+}
+
+text PlayerGotEgg {
+    "{PLAYER} received the Egg."
+}
+
+text UhOhLol {
+    "Seems like you naturally have a full\n"
+    "team. Come back with at least 5."
+}
+
+text MaybeIllFindSomeoneElse {
+    "Oh ok, maybe I will just look for\n"
+    "someone else then."
+}
+
+text CouldYouHelpMe {
+    "Oh, Hello there young one.\n"
+    "I can tell by your looks that you're a\l"
+    "trainer.\p"
+    "My Togetic mysteriously left an egg\n"
+    "here while I was gone so could you do me\l"
+    "little favor?\p"
+    "Could you take care of this egg for me?\n"
+    "I'm too old to take care of it."
+}

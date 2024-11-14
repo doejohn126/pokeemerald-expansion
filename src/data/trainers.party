@@ -698,15 +698,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Roselia
-Level: 14
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
+
+Clefairy
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Shroomish
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Roselia
-Level: 14
+Floette
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FELIX ===
@@ -3460,19 +3460,29 @@ Double Battle: No
 AI: Check Bad Move
 
 Electrike
-Level: 17
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Quick Attack
+- Bite
 - Thunder Wave
-- Spark
+- Thunder Fang
 - Leer
 
-Voltorb
-Level: 17
+Luxio
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Charge
 - Shock Wave
 - Screech
+- Bite
+
+Pincurchin
+Level: 26
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Charge
+- Shock Wave
+- Bubble Beam
+- Spark
+
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_7 ===
 Name: GRUNT
@@ -3514,11 +3524,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Voltorb
-Level: 17
+Level: 26
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Voltorb Hisuian
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Magnemite
-Level: 17
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_FERNANDO_1 ===
@@ -3547,13 +3561,13 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Kricketune
+Level: 26
+IVs: 0 HP / 17 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Whismur
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Loudred
+Level: 25
+IVs: 0 HP / 17 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DALTON_2 ===
 Name: DALTON
@@ -5002,37 +5016,51 @@ Gender: Male
 Music: Male
 Items: Super Potion / Super Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Mon Choices
+Mugshot: Yellow
 
-Voltorb
-Level: 20
+Emolga
+Level: 27
+Ability: Motor Drive
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rollout
+- Air Slash
+- Shock Wave
+- U Turn
+- Nuzzle
+
+Pawmo
+Level: 27
+Ability: Natural Cure
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Thunder Wave
 - Spark
-- Self Destruct
-- Shock Wave
+- Arm Thrust
+- Dig
 
-Electrike
-Level: 20
+Rotom
+Level: 28
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Shock Wave
-- Leer
-- Quick Attack
-- Howl
+- Hex
+- Thunder Wave
+- Confuse Ray
 
 Magneton
-Level: 22
+Level: 28
+Ability: Sturdy
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
-- Supersonic
+- Mirror Shot
 - Shock Wave
 - Thunder Wave
-- Sonic Boom
+- Electric Terrain
 
 Manectric @ Sitrus Berry
-Level: 24
+Level: 29
+Ability: Intimidate
+Ball: Ultra Ball
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Quick Attack
-- Thunder Wave
+- Bite
+- Fire Fang
 - Shock Wave
 - Howl
 
@@ -6209,21 +6237,29 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 17
+Pikachu
+Level: 26
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Headbutt
-- Sand Attack
-- Growl
+- Sweet Kiss
+- Thunder Wave
+- Nasty Plot
 - Thunderbolt
 
-Gulpin
-Level: 17
+Toxel
+Level: 26
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Amnesia
+- Nuzzle
 - Sludge
 - Yawn
-- Pound
+- Tearful Look
+
+Chinchou
+Level: 26
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Charge
+- Thunderbolt
+- Bubble Beam
+- Confuse Ray
 
 === TRAINER_QUINCY ===
 Name: QUINCY
@@ -6662,9 +6698,9 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Basculin
+Level: 26
+IVs: 18 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CARTER ===
 Name: CARTER
@@ -6829,16 +6865,16 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Voltorb
-Level: 6
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Helioptile
+Level: 26
+IVs: 2 HP / 16 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Voltorb
-Level: 6
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Blitzle
+Level: 26
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 16 Spe
 
-Magnemite
-Level: 14
+Luxio
+Level: 27
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_ANTHONY ===
@@ -6850,12 +6886,16 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ferroseed
+Level: 26
+IVs: 0 HP / 0 Atk / 18 Def / 0 SpA / 0 SpD / 0 Spe
 
-Magnemite
-Level: 14
+Togedemaru
+Level: 26
+IVs: 0 HP / 0 Atk / 18 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ponyta
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BENJAMIN_1 ===
@@ -6867,9 +6907,17 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cyndaquil
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
+
+Drifloon
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 18 SpD / 0 Spe
+
+Boltund
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 18 Spe
 
 === TRAINER_BENJAMIN_2 ===
 Name: BENJAMIN
@@ -6880,9 +6928,17 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 30
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Quilava
+Level: 40
+IVs: 0 HP / 18 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
+
+Drifblim
+Level: 40
+IVs: 0 HP / 0 Atk / 18 Def / 0 SpA / 18 SpD / 0 Spe
+
+Boltund
+Level: 40
+IVs: 0 HP / 18 Atk / 0 Def / 0 SpA / 0 SpD / 18 Spe
 
 === TRAINER_BENJAMIN_3 ===
 Name: BENJAMIN
@@ -6932,9 +6988,17 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Honedge
+Level: 26
+IVs: 0 HP / 0 Atk / 18 Def / 0 SpA / 0 SpD / 0 Spe
+
+Wattrel
+Level: 26
+IVs: 0 HP / 0 Atk / 18 Def / 0 SpA / 0 SpD / 18 Spe
+
+Minior
+Level: 26
+IVs: 0 HP / 0 Atk / 18 Def / 0 SpA / 0 SpD / 18 Spe
 
 === TRAINER_JASMINE ===
 Name: JASMINE
@@ -6945,17 +7009,17 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 14
+Yanma
+Level: 26
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 Magnemite
-Level: 14
+Level: 26
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 Voltorb
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 26
+IVs: 30 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ABIGAIL_2 ===
 Name: ABIGAIL
@@ -6966,9 +7030,18 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 28
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Yanmega
+Level: 40
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+
+Magneton
+Level: 40
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+
+Electrode
+Level: 40
+IVs: 30 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 
 === TRAINER_ABIGAIL_3 ===
 Name: ABIGAIL
@@ -12476,21 +12549,21 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Meditite
-Level: 17
+Pawmi
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Bide
-- Detect
-- Confusion
+- Bite
+- Dig
+- Mach Punch
 - Thunder Punch
 
-Meditite
-Level: 17
+Electabuzz
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Thunder Punch
-- Detect
-- Confusion
-- Meditate
+- Screech
+- Thunder Wave
+- Brick Break
 
 === TRAINER_DANIELLE ===
 Name: DANIELLE
@@ -12630,10 +12703,23 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Green
 
-Ralts
-Level: 16
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Roselia
+Level: 26
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+
+Magnemite
+Level: 26
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Fletchinder
+Level: 26
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+
+Kirlia
+Level: 27
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_WALLY_VR_2 ===
 Name: WALLY
@@ -13889,16 +13975,16 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Linoone
+Level: 25
+IVs: 0 HP / 10 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Aron
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Corvisquire
+Level: 26
+IVs: 0 HP / 0 Atk / 10 Def / 0 SpA / 0 SpD / 0 Spe
 
-Electrike
-Level: 14
+Elekid
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_1 ===
@@ -16496,19 +16582,29 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Illumise
-Level: 17
+Charjabug
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Shock Wave
-- Quick Attack
-- Charm
+- Spark
+- String Shot
+- Bite
+- Bug Bite
 
 Volbeat
-Level: 17
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Moonlight
 - Shock Wave
-- Quick Attack
 - Confuse Ray
+- Tail Glow
+
+Joltik
+Level: 27
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Electro Ball
+- Bug Bite
+- Agility
+- Thunder Wave
 
 === TRAINER_DARIUS ===
 Name: DARIUS

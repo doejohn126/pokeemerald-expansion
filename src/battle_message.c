@@ -4118,6 +4118,11 @@ static const u8 sText_BrendanFirstDown[] = _("We're only getting started, don't 
 static const u8 sText_May3rdBattleIntro[] = _("My Pokémon got stronger, so I hope\nyou're prepared for a good battle!\p");
 static const u8 sText_May3Last[] = _("You have a pretty good battle style\nseeing how you're team holds up.\p");
 static const u8 sText_MayCrit[] = _("Ah, that critical hit wasn't pleasant!\p");
+static const u8 sText_WallyBattleIntro[] = _("I still might be new but don't\nunderestimate me.\p");
+static const u8 sText_WallyLast[] = _("Oh geez, you're pretty good...\p");
+static const u8 sText_WallyCrit[] = _("Woah!! that was a critical hit...\p");
+static const u8 sText_WattsonCrit[] = _("Wahaha! That was a pretty nice Crit!");
+static const u8 sText_WattsonLast[] = _("Wahahaha! Looks like I'm down to my\nlast Pokémon!");
 
 
 
@@ -4301,6 +4306,19 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgLastSwitchIn = sText_May3Last,
         .msgFirstCriticalHit = sText_MayCrit,
         .msgBeforeFirstTurn = sText_May3rdBattleIntro,
+    },
+    {
+        .trainerId = TRAINER_WALLY_MAUVILLE,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_WallyLast,
+        .msgFirstCriticalHit = sText_WallyCrit,
+        .msgBeforeFirstTurn = sText_WallyBattleIntro,
+    },
+    {
+        .trainerId = TRAINER_WATTSON_1,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_WattsonLast,
+        .msgFirstCriticalHit = sText_WattsonCrit,
     },
 };
 
