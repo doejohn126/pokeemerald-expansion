@@ -111,7 +111,8 @@
 #define TRAINER_PIC_DAWN                  93
 #define TRAINER_PIC_BROCK                 94
 #define TRAINER_PIC_BUGSY                 95
-#define TRAINER_PIC_COUNT                 96
+#define TRAINER_PIC_FANTINA               96
+#define TRAINER_PIC_COUNT                 97
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

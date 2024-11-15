@@ -49,6 +49,7 @@ script TogepiEggDecline {
 script Togetic {
     lock
     faceplayer
+    msgbox(TogeticTalk)
     playmoncry(SPECIES_TOGETIC, CRY_MODE_NORMAL)
     waitmoncry
     release
@@ -57,6 +58,10 @@ script Togetic {
 
 text HowsTheEgg {
     "How's the Togepi egg?"
+}
+
+text TogeticTalk {
+   "Togetic: Toge toge!" 
 }
 
 text TyForTakingIt {

@@ -77,39 +77,45 @@ Togetic::
 # 51 "data/maps/Route117_PokemonDayCare/scripts.pory"
 	faceplayer
 # 52 "data/maps/Route117_PokemonDayCare/scripts.pory"
-	playmoncry SPECIES_TOGETIC, CRY_MODE_NORMAL
+	msgbox TogeticTalk
 # 53 "data/maps/Route117_PokemonDayCare/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_TOGETIC, CRY_MODE_NORMAL
 # 54 "data/maps/Route117_PokemonDayCare/scripts.pory"
+	waitmoncry
+# 55 "data/maps/Route117_PokemonDayCare/scripts.pory"
 	release
 	end
 
 
 HowsTheEgg::
-# 58 "data/maps/Route117_PokemonDayCare/scripts.pory"
+# 59 "data/maps/Route117_PokemonDayCare/scripts.pory"
 	.string "How's the Togepi egg?$"
 
+TogeticTalk::
+# 63 "data/maps/Route117_PokemonDayCare/scripts.pory"
+	.string "Togetic: Toge toge!$"
+
 TyForTakingIt::
-# 62 "data/maps/Route117_PokemonDayCare/scripts.pory"
+# 67 "data/maps/Route117_PokemonDayCare/scripts.pory"
 	.string "Thank you for taking the egg for me\n"
 	.string "young one. Please take care of it.$"
 
 PlayerGotEgg::
-# 67 "data/maps/Route117_PokemonDayCare/scripts.pory"
+# 72 "data/maps/Route117_PokemonDayCare/scripts.pory"
 	.string "{PLAYER} received the Egg.$"
 
 UhOhLol::
-# 71 "data/maps/Route117_PokemonDayCare/scripts.pory"
+# 76 "data/maps/Route117_PokemonDayCare/scripts.pory"
 	.string "Seems like you naturally have a full\n"
 	.string "team. Come back with at least 5.$"
 
 MaybeIllFindSomeoneElse::
-# 76 "data/maps/Route117_PokemonDayCare/scripts.pory"
+# 81 "data/maps/Route117_PokemonDayCare/scripts.pory"
 	.string "Oh ok, maybe I will just look for\n"
 	.string "someone else then.$"
 
 CouldYouHelpMe::
-# 81 "data/maps/Route117_PokemonDayCare/scripts.pory"
+# 86 "data/maps/Route117_PokemonDayCare/scripts.pory"
 	.string "Oh, Hello there young one.\n"
 	.string "I can tell by your looks that you're a\l"
 	.string "trainer.\p"

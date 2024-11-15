@@ -949,8 +949,9 @@
 #define MUS_HG_OBTAIN_CASTLE_POINTS       896 // Received Castle Points!
 #define MUS_HG_OBTAIN_B_POINTS            897 // Received Battle Points!
 #define MUS_HG_WIN_MINIGAME               898 // Cleared Wobbuffet Pop!
+#define MUS_VS_IRIS                       899 // Iris
 
-#define HG_MUSIC_END                      MUS_HG_WIN_MINIGAME
+#define HG_MUSIC_END                      MUS_VS_IRIS
 
 #define SONGS_END                         HG_MUSIC_END
 #define END_MUS                           SONGS_END

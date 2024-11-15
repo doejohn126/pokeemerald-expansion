@@ -4320,6 +4320,11 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgLastSwitchIn = sText_WattsonLast,
         .msgFirstCriticalHit = sText_WattsonCrit,
     },
+    {
+        .trainerId = TRAINER_SKY_KID_2,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_SkyKidLastSwitch,
+    },
 };
 
 static u32 GetEnemyMonCount(u32 firstId, u32 lastId, bool32 onlyAlive)

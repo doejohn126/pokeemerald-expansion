@@ -83,9 +83,54 @@ script VsSkyKid1 {
 }
 
 script WSkyBattle {
+    goto_if_defeated(TRAINER_SKY_KID_2, LetsRematchOnceAgain)
+    goto_if_set(FLAG_BADGE03_GET, TryDoSkybattle2)
     msgbox(Woohoo)
     release
     end
+}
+
+script LetsRematchOnceAgain {
+    msgbox(BeatNorman)
+    release
+    end
+}
+
+script TryDoSkybattle2 {
+    special(TrySkyBattle)
+    compare(VAR_RESULT, TRUE)
+    goto_if_eq(skykidrematch)
+    msgbox(WrongMons)
+    release
+    end
+}
+
+script skykidrematch {
+    msgbox(NiceBadges)
+    call(TryDoSkybattle2)
+    trainerbattle_no_intro(TRAINER_SKY_KID_2, DangIt)
+    msgbox(AlrightYouEarned)
+    giveitem(ITEM_EXP_CANDY_S, 10)
+    giveitem(ITEM_EXP_CANDY_M, 3)
+    release
+    end
+}
+
+text BeatNorman {
+    "how about we rematch once again once u\n"
+    "beat norman"
+}
+
+text DangIt {
+    "dam it"
+}
+
+text NiceBadges {
+    "woaa those are some nice badges there\n"
+    "brody.\p"
+    "as you can see ive been training too so\n"
+    "i think its time for our first rematch\p"
+    "devs yall arleady know what song to play"
 }
 
 text Woohoo {
