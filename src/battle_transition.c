@@ -867,7 +867,7 @@ static const u16 *const sOpponentMugshotsPals[MUGSHOT_COLOR_COUNT] =
     [MUGSHOT_COLOR_GREEN]  = sMugshotPal_Green,
     [MUGSHOT_COLOR_PINK]   = sMugshotPal_Pink,
     [MUGSHOT_COLOR_BLUE]   = sMugshotPal_Blue,
-    [MUGSHOT_COLOR_RED]   = sMugshotPal_Blue,
+    [MUGSHOT_COLOR_RED]   = sMugshotPal_Red,
     [MUGSHOT_COLOR_YELLOW] = sMugshotPal_Yellow
 };
 

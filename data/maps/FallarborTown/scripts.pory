@@ -105,6 +105,20 @@ script FantinaMain {
     end
 }
 
+script Mismagius {
+    lock
+    faceplayer
+    playmoncry(SPECIES_MISMAGIUS, CRY_MODE_NORMAL)
+    msgbox(MismagiusCry)
+    waitmoncry
+    release
+    end
+}
+
+text MismagiusCry {
+    "Mismagius: Wuuuawaee"
+}
+
 text FantinaLose {
     "Very impressive! You, your Pokémon, so\n"
     "strong!"

@@ -65,6 +65,9 @@ gText_TheWattsonCap::
 gText_TheBrawlyCap::
 	.string "The current level cap is 22.$"
 
+gText_TheFlanCap::
+	.string "The current level cap is 45.$"
+
 gText_UnknownCap::
 	.string "The current level cap is undetermined.$"
 

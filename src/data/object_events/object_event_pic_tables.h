@@ -1121,15 +1121,15 @@ static const struct SpriteFrameImage sPicTable_Bugsy[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_Fantina[] = {
-    overworld_frame(gObjectEventPic_Fantina, 2, 4, 0),
-    overworld_frame(gObjectEventPic_Fantina, 2, 4, 1),
-    overworld_frame(gObjectEventPic_Fantina, 2, 4, 2),
-    overworld_frame(gObjectEventPic_Fantina, 2, 4, 0),
-    overworld_frame(gObjectEventPic_Fantina, 2, 4, 0),
-    overworld_frame(gObjectEventPic_Fantina, 2, 4, 1),
-    overworld_frame(gObjectEventPic_Fantina, 2, 4, 1),
-    overworld_frame(gObjectEventPic_Fantina, 2, 4, 2),
-    overworld_frame(gObjectEventPic_Fantina, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Fantina, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Fantina, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Fantina, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Fantina, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Fantina, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Fantina, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Fantina, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Fantina, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Fantina, 4, 4, 2),
 };
 
 static const struct SpriteFrameImage sPicTable_PokeBall[] = {

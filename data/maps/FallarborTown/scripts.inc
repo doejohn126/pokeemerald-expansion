@@ -201,7 +201,27 @@ FantinaMain::
 	end
 
 
+Mismagius::
+# 109 "data/maps/FallarborTown/scripts.pory"
+	lock
+# 110 "data/maps/FallarborTown/scripts.pory"
+	faceplayer
+# 111 "data/maps/FallarborTown/scripts.pory"
+	playmoncry SPECIES_MISMAGIUS, CRY_MODE_NORMAL
+# 112 "data/maps/FallarborTown/scripts.pory"
+	msgbox MismagiusCry
+# 113 "data/maps/FallarborTown/scripts.pory"
+	waitmoncry
+# 114 "data/maps/FallarborTown/scripts.pory"
+	release
+	end
+
+
+MismagiusCry::
+# 118 "data/maps/FallarborTown/scripts.pory"
+	.string "Mismagius: Wuuuawaee$"
+
 FantinaLose::
-# 108 "data/maps/FallarborTown/scripts.pory"
+# 122 "data/maps/FallarborTown/scripts.pory"
 	.string "Very impressive! You, your Pokémon, so\n"
 	.string "strong!$"

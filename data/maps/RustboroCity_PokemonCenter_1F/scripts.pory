@@ -107,7 +107,6 @@ script TryDoSkybattle2 {
 
 script skykidrematch {
     msgbox(NiceBadges)
-    call(TryDoSkybattle2)
     trainerbattle_no_intro(TRAINER_SKY_KID_2, DangIt)
     msgbox(AlrightYouEarned)
     giveitem(ITEM_EXP_CANDY_S, 10)

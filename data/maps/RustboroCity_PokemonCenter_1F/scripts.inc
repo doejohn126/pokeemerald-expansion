@@ -188,31 +188,29 @@ skykidrematch::
 # 109 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	msgbox NiceBadges
 # 110 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
-	call TryDoSkybattle2
-# 111 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	trainerbattle_no_intro TRAINER_SKY_KID_2, DangIt
-# 112 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
+# 111 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	msgbox AlrightYouEarned
-# 113 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
+# 112 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	giveitem ITEM_EXP_CANDY_S, 10
-# 114 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
+# 113 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	giveitem ITEM_EXP_CANDY_M, 3
-# 115 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
+# 114 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	release
 	end
 
 
 BeatNorman::
-# 119 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
+# 118 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	.string "how about we rematch once again once u\n"
 	.string "beat norman$"
 
 DangIt::
-# 124 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
+# 123 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	.string "dam it$"
 
 NiceBadges::
-# 128 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
+# 127 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	.string "woaa those are some nice badges there\n"
 	.string "brody.\p"
 	.string "as you can see ive been training too so\n"
@@ -220,37 +218,37 @@ NiceBadges::
 	.string "devs yall arleady know what song to play$"
 
 Woohoo::
-# 136 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
+# 135 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	.string "ngl that was a w sky battle$"
 
 AlrightYouEarned::
-# 140 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
+# 139 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	.string "alright a deals a deal here you go\n"
 	.string "also lets rematch again once u get more\l"
 	.string "badges$"
 
 CrapILost::
-# 146 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
+# 145 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	.string "ah shoot$"
 
 WrongMons::
-# 150 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
+# 149 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	.string "wait nope u got the wrong mons brody\n"
 	.string "id say bring some flying or levitating mons$"
 
 LetsFrickingGo::
-# 155 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
+# 154 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	.string "alright lets get this show on the road\n"
 	.string "Oh also devs give me that sick frontier\l"
 	.string "song pretty please$"
 
 GoodSeeingYou::
-# 161 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
+# 160 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	.string "dang ok then good seeing you again tho\n"
 	.string "bro$"
 
 XpKidReturns::
-# 166 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
+# 165 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	.string "woah hey howve you been bru!!!\n"
 	.string "its me xp kid you remember me!!!??\p"
 	.string "but im retired from being the xp kid now\n"
