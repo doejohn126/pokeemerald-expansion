@@ -15866,6 +15866,7 @@ static const struct LevelUpMove sHelioptileLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sHelioliskLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_DRAGON_BREATH),
     LEVEL_UP_MOVE( 1, MOVE_EERIE_IMPULSE),
     LEVEL_UP_MOVE( 1, MOVE_DISCHARGE),
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
@@ -15881,6 +15882,7 @@ static const struct LevelUpMove sHelioliskLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
+    LEVEL_UP_MOVE( 45, MOVE_DRAGON_PULSE),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_HELIOPTILE

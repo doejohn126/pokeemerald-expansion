@@ -979,12 +979,20 @@ Music: Interviewer
 Double Battle: Yes
 AI: Check Bad Move
 
-Magnemite
-Level: 17
+Noibat
+Level: 27
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Whismur
-Level: 17
+Klink
+Level: 27
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Magnemite
+Level: 27
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Loudred
+Level: 27
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_GABBY_AND_TY_2 ===
@@ -3433,8 +3441,12 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Machop
-Level: 19
+Machoke
+Level: 30
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Pignite
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ATSUSHI ===
@@ -3866,9 +3878,9 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Nuzleaf
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Farfetchd
+Level: 29
+IVs: 0 HP / 10 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHANE ===
 Name: SHANE
@@ -3939,9 +3951,13 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nidorino
+Level: 28
+IVs: 0 HP / 19 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Dunsparce
+Level: 28
+IVs: 0 HP / 19 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ETHAN_2 ===
 Name: ETHAN
@@ -5562,7 +5578,7 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Carkol
+Torracat
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
 
@@ -5590,7 +5606,7 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Coalossal
+Torracat
 Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
 
@@ -5689,12 +5705,12 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Taillow @ Oran Berry
-Level: 16
+Pidgeotto @ Oran Berry
+Level: 27
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Zigzagoon @ Oran Berry
-Level: 16
+Aipom @ Oran Berry
+Level: 27
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_MIGUEL_1 ===
@@ -5836,8 +5852,12 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move / Try To Faint
 
-Roselia @ Oran Berry
-Level: 17
+Weepinbell @ Oran Berry
+Level: 28
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Oinkologne @ Oran Berry
+Level: 27
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_VANESSA ===
@@ -6053,13 +6073,10 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Meditite
-Level: 18
+Hawlucha
+Level: 29
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- High Jump Kick
-- Meditate
-- Confusion
-- Detect
+
 
 === TRAINER_SHELBY_1 ===
 Name: SHELBY
@@ -8905,13 +8922,13 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Taillow
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Trainquill
+Level: 29
+IVs: 0 HP / 0 Atk / 18 Def / 0 SpA / 0 SpD / 0 Spe
 
 Lombre
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
 
 === TRAINER_NANCY ===
 Name: NANCY
@@ -8994,13 +9011,17 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cherrim
+Level: 28
+IVs: 18 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Marill
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nidorina
+Level: 27
+IVs: 18 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Wimpod
+Level: 28
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_DIANA_2 ===
 Name: DIANA
@@ -11763,16 +11784,16 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Marill
-Level: 15
+Azumarill
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Shroomish
-Level: 15
+Litleo
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Numel
-Level: 15
+Parasect
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_HALEY_2 ===
@@ -12135,13 +12156,17 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Numel
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mudbray
+Level: 30
+IVs: 0 HP / 0 Atk / 18 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machop
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Drilbur
+Level: 30
+IVs: 0 HP / 18 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe\
+
+Carbink
+Level: 30
+IVs: 0 HP / 18 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TRENT_1 ===
 Name: TRENT
@@ -12152,17 +12177,17 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Rhyhorn
+Level: 29
+IVs: 18 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Geodude
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Swinub
+Level: 30
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 18 SpD / 0 Spe
 
-Geodude
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cranidos
+Level: 30
+IVs: 0 HP / 18 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LENNY ===
 Name: LENNY
@@ -13870,9 +13895,13 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gumshoos
+Level: 26
+IVs: 18 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Sandslash
+Level: 26
+IVs: 18 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CELINA ===
 Name: CELINA
@@ -13883,9 +13912,13 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Roselia
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Swirlix
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 18 SpD / 0 Spe
+
+Shiinotic
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 18 SpD / 0 Spe
 
 === TRAINER_BIANCA ===
 Name: BIANCA
@@ -13896,9 +13929,13 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Grotle
+Level: 27
+IVs: 0 HP / 0 Atk / 18 Def / 0 SpA / 0 SpD / 0 Spe
+
+Jigglypuff
+Level: 27
+IVs: 0 HP / 0 Atk / 18 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HAYDEN ===
 Name: HAYDEN
@@ -13910,8 +13947,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Numel
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
+
+Carkol
+Level: 27
+IVs: 18 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SOPHIE ===
 Name: SOPHIE
@@ -14518,13 +14559,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Numel
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Darumaka
+Level: 30
+IVs: 0 HP / 18 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Slugma
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Magcargo
+Level: 30
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHAYLA ===
 Name: SHAYLA
@@ -14535,13 +14576,17 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tangela
+Level: 29
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 18 SpD / 0 Spe
 
-Roselia
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Carnivine
+Level: 30
+IVs: 0 HP / 18 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Skiploom
+Level: 30
+IVs: 18 HP / 18 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KYRA ===
 Name: KYRA
