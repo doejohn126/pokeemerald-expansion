@@ -4123,6 +4123,10 @@ static const u8 sText_WallyLast[] = _("Oh geez, you're pretty good...\p");
 static const u8 sText_WallyCrit[] = _("Woah!! that was a critical hit...\p");
 static const u8 sText_WattsonCrit[] = _("Wahaha! That was a pretty nice Crit!");
 static const u8 sText_WattsonLast[] = _("Wahahaha! Looks like I'm down to my\nlast Pokémon!");
+static const u8 sText_FantinaLast[] = _("Oh, heavens. What is this? Is this my\nfinal Pokémon?\p");
+static const u8 sText_FantinaCrit[] = _("Oh no. Pas bon at all.\p");
+static const u8 sText_FantinaLow[] = _("Never give up, never surrender!\p");
+static const u8 sText_FantinaUnaffected[] = _("Ohohoho! Don't forget now that all my\nPokémon is ghosts. And never forget\labout the Levitate ability!\p");
 
 
 
@@ -4324,6 +4328,14 @@ static const struct TrainerSlide sTrainerSlides[] =
         .trainerId = TRAINER_SKY_KID_2,
         .isFrontierTrainer = FALSE,
         .msgLastSwitchIn = sText_SkyKidLastSwitch,
+    },
+    {
+        .trainerId = TRAINER_FANTINA,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_FantinaLast,
+        .msgFirstCriticalHit = sText_FantinaCrit,
+        .msgLastLowHp = sText_FantinaLow,
+        .msgPlayerMonUnaffected = sText_FantinaUnaffected,
     },
 };
 

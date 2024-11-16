@@ -100,9 +100,32 @@ FallarborTown_Text_MoveTutorSign:
 script FantinaMain {
     lock
     faceplayer
+	goto_if_defeated(TRAINER_FANTINA, BeatFantina)
+    playse(SE_PIN)
+    applymovement(5, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    applymovement(5, Common_Movement_Delay32)
+    waitmovement(0)
+	applymovement(5, FantinaSpin)
+	waitmovement(0)
+	msgbox(FantinaIntro, MSGBOX_YESNO)
+	goto_if_eq(VAR_RESULT, NO, DeclineFantinaFight)
+	msgbox(LetsStart)
     trainerbattle_no_intro(TRAINER_FANTINA, FantinaLose)
+	msgbox(YoureStrong)
+	giveitem(ITEM_TM_SHADOW_BALL)
     release
     end
+}
+
+script BeatFantina {
+	msgbox(FightOthers)
+}
+
+script DeclineFantinaFight {
+	msgbox(MaybeIWasMistaken)
+	release
+	end
 }
 
 script Mismagius {
@@ -113,6 +136,60 @@ script Mismagius {
     waitmoncry
     release
     end
+}
+
+movement FantinaSpin {
+	face_up
+	face_left
+	face_down
+	face_right
+	face_up
+	face_left
+	face_down
+	face_right
+	face_player
+}
+
+text FightOthers {
+	"You must not forget our fight. There\n"
+	"are many other Trainers.\p"
+	"Strong Trainers, too.\n"
+	"I know lots in Hoenn and Sinnoh.\p"
+	"You must become stronger, one at a time."
+}
+
+text YoureStrong {
+	"I know why I have lost! Your power is\n"
+	"admirable!\p"
+	"I would give you a Gym Badge if we were\n"
+	"in Sinnoh but I have alternative.\p"
+	"I shall honor it with my favorite\n"
+	"Technical Machine, Shadow Ball!\p"
+}
+
+text MaybeIWasMistaken {
+	"Oops! I may have been mistaken then.\n"
+	"You might be coordinator or something\l"
+	"like that.\p"
+	"désolée!"
+}
+
+text LetsStart {
+	"So you challenge me then. I am a Gym\n"
+	"Leader non? So, I shall win!"
+}
+
+text FantinaIntro {
+	"Salut trainer! You may be wondering who\n"
+	"am I.\p"
+	"Well, I am Fantina. I have came to be Gym\n"
+	"Leader in Sinnoh and I even do some\l"
+	"contests there.\p"
+	"I have been traveling here with mon\n"
+	"cher, Mismagius. Mostly because I\l"
+	"always want to see new things!\p"
+	"I can tell you are trainer so\n"
+	"do you want to challenge yours truly?"
 }
 
 text MismagiusCry {
