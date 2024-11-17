@@ -120,6 +120,8 @@ script FantinaMain {
 
 script BeatFantina {
 	msgbox(FightOthers)
+	release
+	end
 }
 
 script DeclineFantinaFight {
@@ -140,13 +142,21 @@ script Mismagius {
 
 movement FantinaSpin {
 	face_up
+	delay_16
 	face_left
+	delay_16
 	face_down
+	delay_16
 	face_right
+	delay_16
 	face_up
+	delay_16
 	face_left
+	delay_16
 	face_down
+	delay_16
 	face_right
+	delay_16
 	face_player
 }
 

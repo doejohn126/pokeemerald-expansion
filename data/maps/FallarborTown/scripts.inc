@@ -195,33 +195,137 @@ FantinaMain::
 # 102 "data/maps/FallarborTown/scripts.pory"
 	faceplayer
 # 103 "data/maps/FallarborTown/scripts.pory"
-	trainerbattle_no_intro TRAINER_FANTINA, FantinaLose
+	goto_if_defeated TRAINER_FANTINA, BeatFantina
 # 104 "data/maps/FallarborTown/scripts.pory"
+	playse SE_PIN
+# 105 "data/maps/FallarborTown/scripts.pory"
+	applymovement 5, Common_Movement_ExclamationMark
+# 106 "data/maps/FallarborTown/scripts.pory"
+	waitmovement 0
+# 107 "data/maps/FallarborTown/scripts.pory"
+	applymovement 5, Common_Movement_Delay32
+# 108 "data/maps/FallarborTown/scripts.pory"
+	waitmovement 0
+# 109 "data/maps/FallarborTown/scripts.pory"
+	applymovement 5, FantinaSpin
+# 110 "data/maps/FallarborTown/scripts.pory"
+	waitmovement 0
+# 111 "data/maps/FallarborTown/scripts.pory"
+	msgbox FantinaIntro, MSGBOX_YESNO
+# 112 "data/maps/FallarborTown/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, DeclineFantinaFight
+# 113 "data/maps/FallarborTown/scripts.pory"
+	msgbox LetsStart
+# 114 "data/maps/FallarborTown/scripts.pory"
+	trainerbattle_no_intro TRAINER_FANTINA, FantinaLose
+# 115 "data/maps/FallarborTown/scripts.pory"
+	msgbox YoureStrong
+# 116 "data/maps/FallarborTown/scripts.pory"
+	giveitem ITEM_TM_SHADOW_BALL
+# 117 "data/maps/FallarborTown/scripts.pory"
+	release
+	end
+
+
+BeatFantina::
+# 122 "data/maps/FallarborTown/scripts.pory"
+	msgbox FightOthers
+	return
+
+
+DeclineFantinaFight::
+# 126 "data/maps/FallarborTown/scripts.pory"
+	msgbox MaybeIWasMistaken
+# 127 "data/maps/FallarborTown/scripts.pory"
 	release
 	end
 
 
 Mismagius::
-# 109 "data/maps/FallarborTown/scripts.pory"
+# 132 "data/maps/FallarborTown/scripts.pory"
 	lock
-# 110 "data/maps/FallarborTown/scripts.pory"
+# 133 "data/maps/FallarborTown/scripts.pory"
 	faceplayer
-# 111 "data/maps/FallarborTown/scripts.pory"
+# 134 "data/maps/FallarborTown/scripts.pory"
 	playmoncry SPECIES_MISMAGIUS, CRY_MODE_NORMAL
-# 112 "data/maps/FallarborTown/scripts.pory"
+# 135 "data/maps/FallarborTown/scripts.pory"
 	msgbox MismagiusCry
-# 113 "data/maps/FallarborTown/scripts.pory"
+# 136 "data/maps/FallarborTown/scripts.pory"
 	waitmoncry
-# 114 "data/maps/FallarborTown/scripts.pory"
+# 137 "data/maps/FallarborTown/scripts.pory"
 	release
 	end
 
 
+# 141 "data/maps/FallarborTown/scripts.pory"
+FantinaSpin:
+# 142 "data/maps/FallarborTown/scripts.pory"
+	face_up
+# 143 "data/maps/FallarborTown/scripts.pory"
+	face_left
+# 144 "data/maps/FallarborTown/scripts.pory"
+	face_down
+# 145 "data/maps/FallarborTown/scripts.pory"
+	face_right
+# 146 "data/maps/FallarborTown/scripts.pory"
+	face_up
+# 147 "data/maps/FallarborTown/scripts.pory"
+	face_left
+# 148 "data/maps/FallarborTown/scripts.pory"
+	face_down
+# 149 "data/maps/FallarborTown/scripts.pory"
+	face_right
+# 150 "data/maps/FallarborTown/scripts.pory"
+	face_player
+	step_end
+
+FightOthers::
+# 153 "data/maps/FallarborTown/scripts.pory"
+	.string "You must not forget our fight. There\n"
+	.string "are many other Trainers.\p"
+	.string "Strong Trainers, too.\n"
+	.string "I know lots in Hoenn and Sinnoh.\p"
+	.string "You must become stronger, one at a time.$"
+
+YoureStrong::
+# 161 "data/maps/FallarborTown/scripts.pory"
+	.string "I know why I have lost! Your power is\n"
+	.string "admirable!\p"
+	.string "I would give you a Gym Badge if we were\n"
+	.string "in Sinnoh but I have alternative.\p"
+	.string "I shall honor it with my favorite\n"
+	.string "Technical Machine, Shadow Ball!\p$"
+
+MaybeIWasMistaken::
+# 170 "data/maps/FallarborTown/scripts.pory"
+	.string "Oops! I may have been mistaken then.\n"
+	.string "You might be coordinator or something\l"
+	.string "like that.\p"
+	.string "désolée!$"
+
+LetsStart::
+# 177 "data/maps/FallarborTown/scripts.pory"
+	.string "So you challenge me then. I am a Gym\n"
+	.string "Leader non? So, I shall win!$"
+
+FantinaIntro::
+# 182 "data/maps/FallarborTown/scripts.pory"
+	.string "Salut trainer! You may be wondering who\n"
+	.string "am I.\p"
+	.string "Well, I am Fantina. I have came to be Gym\n"
+	.string "Leader in Sinnoh and I even do some\l"
+	.string "contests there.\p"
+	.string "I have been traveling here with mon\n"
+	.string "cher, Mismagius. Mostly because I\l"
+	.string "always want to see new things!\p"
+	.string "I can tell you are trainer so\n"
+	.string "do you want to challenge yours truly?$"
+
 MismagiusCry::
-# 118 "data/maps/FallarborTown/scripts.pory"
+# 195 "data/maps/FallarborTown/scripts.pory"
 	.string "Mismagius: Wuuuawaee$"
 
 FantinaLose::
-# 122 "data/maps/FallarborTown/scripts.pory"
+# 199 "data/maps/FallarborTown/scripts.pory"
 	.string "Very impressive! You, your Pokémon, so\n"
 	.string "strong!$"
