@@ -1180,63 +1180,63 @@
             "mons": [
               {
                 "min_level": 16,
-                "max_level": 16,
+                "max_level": 35,
                 "species": "SPECIES_SWABLU"
               },
               {
                 "min_level": 16,
-                "max_level": 16,
-                "species": "SPECIES_LOTAD"
+                "max_level": 35,
+                "species": "SPECIES_PETILIL"
               },
               {
                 "min_level": 17,
-                "max_level": 17,
-                "species": "SPECIES_SWABLU"
+                "max_level": 35,
+                "species": "SPECIES_DEERLING"
               },
               {
                 "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_SWABLU"
+                "max_level": 35,
+                "species": "SPECIES_VULLABY"
               },
               {
                 "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_LOTAD"
+                "max_level": 35,
+                "species": "SPECIES_RUFFLET"
               },
               {
                 "min_level": 16,
-                "max_level": 16,
-                "species": "SPECIES_LOMBRE"
+                "max_level": 35,
+                "species": "SPECIES_EKANS"
               },
               {
                 "min_level": 16,
-                "max_level": 16,
-                "species": "SPECIES_LOMBRE"
+                "max_level": 35,
+                "species": "SPECIES_CRABRAWLER"
               },
               {
                 "min_level": 18,
-                "max_level": 18,
-                "species": "SPECIES_LOMBRE"
+                "max_level": 35,
+                "species": "SPECIES_PONYTA"
               },
               {
                 "min_level": 17,
-                "max_level": 17,
-                "species": "SPECIES_SEVIPER"
+                "max_level": 35,
+                "species": "SPECIES_ZANGOOSE"
               },
               {
                 "min_level": 15,
-                "max_level": 15,
+                "max_level": 35,
                 "species": "SPECIES_SEVIPER"
               },
               {
                 "min_level": 17,
-                "max_level": 17,
-                "species": "SPECIES_SEVIPER"
+                "max_level": 35,
+                "species": "SPECIES_AUDINO"
               },
               {
                 "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_NUZLEAF"
+                "max_level": 35,
+                "species": "SPECIES_CARNIVINE"
               }
             ]
           },
@@ -1246,27 +1246,27 @@
               {
                 "min_level": 20,
                 "max_level": 30,
-                "species": "SPECIES_MARILL"
+                "species": "SPECIES_MANTYKE"
               },
               {
                 "min_level": 10,
                 "max_level": 20,
-                "species": "SPECIES_MARILL"
+                "species": "SPECIES_DUCKLETT"
               },
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_MARILL"
+                "species": "SPECIES_DUCKLETT"
               },
               {
                 "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_MARILL"
+                "max_level": 50,
+                "species": "SPECIES_WHISCASH"
               },
               {
                 "min_level": 20,
                 "max_level": 30,
-                "species": "SPECIES_GOLDEEN"
+                "species": "SPECIES_WHISCASH"
               }
             ]
           },
@@ -1276,27 +1276,27 @@
               {
                 "min_level": 10,
                 "max_level": 15,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_GEODUDE_ALOLAN"
               },
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_GEODUDE_ALOLAN"
               },
               {
                 "min_level": 15,
                 "max_level": 20,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_GEODUDE_ALOLAN"
               },
               {
                 "min_level": 15,
                 "max_level": 20,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_GEODUDE_ALOLAN"
               },
               {
                 "min_level": 15,
                 "max_level": 20,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_GEODUDE_ALOLAN"
               }
             ]
           },

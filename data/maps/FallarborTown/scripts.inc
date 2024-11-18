@@ -230,57 +230,75 @@ FantinaMain::
 BeatFantina::
 # 122 "data/maps/FallarborTown/scripts.pory"
 	msgbox FightOthers
-	return
+# 123 "data/maps/FallarborTown/scripts.pory"
+	release
+	end
 
 
 DeclineFantinaFight::
-# 126 "data/maps/FallarborTown/scripts.pory"
+# 128 "data/maps/FallarborTown/scripts.pory"
 	msgbox MaybeIWasMistaken
-# 127 "data/maps/FallarborTown/scripts.pory"
+# 129 "data/maps/FallarborTown/scripts.pory"
 	release
 	end
 
 
 Mismagius::
-# 132 "data/maps/FallarborTown/scripts.pory"
-	lock
-# 133 "data/maps/FallarborTown/scripts.pory"
-	faceplayer
 # 134 "data/maps/FallarborTown/scripts.pory"
-	playmoncry SPECIES_MISMAGIUS, CRY_MODE_NORMAL
+	lock
 # 135 "data/maps/FallarborTown/scripts.pory"
-	msgbox MismagiusCry
+	faceplayer
 # 136 "data/maps/FallarborTown/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_MISMAGIUS, CRY_MODE_NORMAL
 # 137 "data/maps/FallarborTown/scripts.pory"
+	msgbox MismagiusCry
+# 138 "data/maps/FallarborTown/scripts.pory"
+	waitmoncry
+# 139 "data/maps/FallarborTown/scripts.pory"
 	release
 	end
 
 
-# 141 "data/maps/FallarborTown/scripts.pory"
-FantinaSpin:
-# 142 "data/maps/FallarborTown/scripts.pory"
-	face_up
 # 143 "data/maps/FallarborTown/scripts.pory"
-	face_left
+FantinaSpin:
 # 144 "data/maps/FallarborTown/scripts.pory"
-	face_down
-# 145 "data/maps/FallarborTown/scripts.pory"
-	face_right
-# 146 "data/maps/FallarborTown/scripts.pory"
 	face_up
-# 147 "data/maps/FallarborTown/scripts.pory"
+# 145 "data/maps/FallarborTown/scripts.pory"
+	delay_16
+# 146 "data/maps/FallarborTown/scripts.pory"
 	face_left
+# 147 "data/maps/FallarborTown/scripts.pory"
+	delay_16
 # 148 "data/maps/FallarborTown/scripts.pory"
 	face_down
 # 149 "data/maps/FallarborTown/scripts.pory"
-	face_right
+	delay_16
 # 150 "data/maps/FallarborTown/scripts.pory"
+	face_right
+# 151 "data/maps/FallarborTown/scripts.pory"
+	delay_16
+# 152 "data/maps/FallarborTown/scripts.pory"
+	face_up
+# 153 "data/maps/FallarborTown/scripts.pory"
+	delay_16
+# 154 "data/maps/FallarborTown/scripts.pory"
+	face_left
+# 155 "data/maps/FallarborTown/scripts.pory"
+	delay_16
+# 156 "data/maps/FallarborTown/scripts.pory"
+	face_down
+# 157 "data/maps/FallarborTown/scripts.pory"
+	delay_16
+# 158 "data/maps/FallarborTown/scripts.pory"
+	face_right
+# 159 "data/maps/FallarborTown/scripts.pory"
+	delay_16
+# 160 "data/maps/FallarborTown/scripts.pory"
 	face_player
 	step_end
 
 FightOthers::
-# 153 "data/maps/FallarborTown/scripts.pory"
+# 163 "data/maps/FallarborTown/scripts.pory"
 	.string "You must not forget our fight. There\n"
 	.string "are many other Trainers.\p"
 	.string "Strong Trainers, too.\n"
@@ -288,7 +306,7 @@ FightOthers::
 	.string "You must become stronger, one at a time.$"
 
 YoureStrong::
-# 161 "data/maps/FallarborTown/scripts.pory"
+# 171 "data/maps/FallarborTown/scripts.pory"
 	.string "I know why I have lost! Your power is\n"
 	.string "admirable!\p"
 	.string "I would give you a Gym Badge if we were\n"
@@ -297,19 +315,19 @@ YoureStrong::
 	.string "Technical Machine, Shadow Ball!\p$"
 
 MaybeIWasMistaken::
-# 170 "data/maps/FallarborTown/scripts.pory"
+# 180 "data/maps/FallarborTown/scripts.pory"
 	.string "Oops! I may have been mistaken then.\n"
 	.string "You might be coordinator or something\l"
 	.string "like that.\p"
 	.string "désolée!$"
 
 LetsStart::
-# 177 "data/maps/FallarborTown/scripts.pory"
+# 187 "data/maps/FallarborTown/scripts.pory"
 	.string "So you challenge me then. I am a Gym\n"
 	.string "Leader non? So, I shall win!$"
 
 FantinaIntro::
-# 182 "data/maps/FallarborTown/scripts.pory"
+# 192 "data/maps/FallarborTown/scripts.pory"
 	.string "Salut trainer! You may be wondering who\n"
 	.string "am I.\p"
 	.string "Well, I am Fantina. I have came to be Gym\n"
@@ -322,10 +340,10 @@ FantinaIntro::
 	.string "do you want to challenge yours truly?$"
 
 MismagiusCry::
-# 195 "data/maps/FallarborTown/scripts.pory"
+# 205 "data/maps/FallarborTown/scripts.pory"
 	.string "Mismagius: Wuuuawaee$"
 
 FantinaLose::
-# 199 "data/maps/FallarborTown/scripts.pory"
+# 209 "data/maps/FallarborTown/scripts.pory"
 	.string "Very impressive! You, your Pokémon, so\n"
 	.string "strong!$"

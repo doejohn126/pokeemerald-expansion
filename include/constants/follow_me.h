@@ -32,7 +32,7 @@
 #define FOLLOWER_WILD_BATTLE_VS_2           TRUE
 
 // If set to TRUE, a preview of the player's and partner's teams will be shown before every trainer battle.
-#define FOLLOWER_PARTY_PREVIEW              TRUE
+#define FOLLOWER_PARTY_PREVIEW              FALSE
 
 // If set to TRUE, the player will turn to face the follower when they exit a doorway.
 #define FACE_FOLLOWER_ON_DOOR_EXIT          TRUE

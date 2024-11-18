@@ -571,7 +571,7 @@
 #define TRAINER_CATHERINE_5                 565
 #define TRAINER_JULIO                       566
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_5     567
-#define TRAINER_GRUNT_UNUSED                568
+#define TRAINER_GRUNT_114                   568
 #define TRAINER_GRUNT_MT_PYRE_4             569
 #define TRAINER_GRUNT_JAGGED_PASS           570
 #define TRAINER_MARC                        571
@@ -854,7 +854,7 @@
 #define TRAINER_MARIELA                     848
 #define TRAINER_ALVARO                      849
 #define TRAINER_EVERETT                     850
-#define TRAINER_RED                         851
+#define TRAINER_COURTNEY                    851
 #define TRAINER_SKY_KID                     852
 #define TRAINER_JAYDEN                      853
 #define TRAINER_BROCK                       854

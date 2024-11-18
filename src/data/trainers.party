@@ -2727,9 +2727,13 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Aron
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Lairon
+Level: 35
+IVs: 0 HP / 19 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Frigibax
+Level: 34
+IVs: 0 HP / 19 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_THALIA_1 ===
 Name: THALIA
@@ -3743,13 +3747,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Slugma
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Simisear
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 19 SpA / 0 SpD / 0 Spe
 
-Wingull
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Quagsire
+Level: 34
+IVs: 19 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BERNIE_2 ===
 Name: BERNIE
@@ -3891,13 +3895,13 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gible
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 18 SpD / 0 Spe
 
-Nuzleaf
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Flapple
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JUSTIN ===
 Name: JUSTIN
@@ -6621,17 +6625,17 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gyarados
+Level: 33
+IVs: 18 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Goldeen
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Clamperl
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
 
-Barboach
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wartortle
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ELLIOT_1 ===
 Name: ELLIOT
@@ -6709,9 +6713,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Barboach
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Drednaw
+Level: 34
+IVs: 0 HP / 0 Atk / 18 Def / 0 SpA / 0 SpD / 0 Spe
+
+Sealeo
+Level: 34
+IVs: 0 HP / 0 Atk / 18 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BARNY ===
 Name: BARNY
@@ -8946,13 +8954,13 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Azumarill
+Level: 34
+IVs: 20 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Lombre
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gloom
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 19 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MARTHA ===
 Name: MARTHA
@@ -11095,22 +11103,27 @@ Golbat
 Level: 35
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_GRUNT_UNUSED ===
+=== TRAINER_GRUNT_114 ===
 Name: GRUNT
 Class: Team Magma
-Pic: Aqua Grunt F
-Gender: Female
-Music: Aqua
+Pic: Magma Grunt M
+Gender: Male
+Music: Magma
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Wailmer
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Scovillain
+Level: 35
+Ability: Moody
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Zubat
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Primeape
+Level: 36
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Muk
+Level: 37
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 === TRAINER_GRUNT_MT_PYRE_4 ===
 Name: GRUNT
@@ -12205,13 +12218,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Lycanroc
+Level: 35
+IVs: 0 HP / 19 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machop
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Klawf
+Level: 34
+IVs: 0 HP / 19 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LUCAS_1 ===
 Name: LUCAS
@@ -12222,13 +12235,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 18
+Donphan
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Numel
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Graveler
+Level: 34
+IVs: 20 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALAN ===
 Name: ALAN
@@ -13388,21 +13401,17 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Roselia
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Growth
-- Stun Spore
-- Mega Drain
-- Leech Seed
+Maractus
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
 
-Graveler
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Boldore
+Level: 34
+IVs: 0 HP / 0 Atk / 19 Def / 0 SpA / 0 SpD / 0 Spe
 - Defense Curl
 - Rollout
-- Mud Sport
-- Rock Throw
+- Magnitude
+- Rock Tomb
 
 === TRAINER_MEL_AND_PAUL ===
 Name: MEL & PAUL
@@ -14046,12 +14055,12 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Lombre
-Level: 18
+Komala
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Marill
-Level: 18
+Persian
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KAI ===
@@ -14063,9 +14072,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Barboach
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Whiscash
+Level: 34
+IVs: 0 HP / 18 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Wugtrio
+Level: 34
+IVs: 0 HP / 18 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHARLOTTE ===
 Name: CHARLOTTE
@@ -14076,9 +14089,13 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Nuzleaf
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Eldegoss
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
+
+Liepard
+Level: 32
+IVs: 0 HP / 18 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DEANDRE ===
 Name: DEANDRE
@@ -17718,17 +17735,41 @@ Wobbuffet
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_RED ===
-Name: RED
-Class: Rival
-Pic: Red
-Gender: Male
-Music: Male
+=== TRAINER_COURTNEY ===
+Name: COURTNEY
+Class: Magma Admin
+Pic: Courtney
+Gender: Female
+Music: Magma
 Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Mon Choices
 
-Charmander
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Flareon (F)
+Level: 39
+Ability: Guts
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Temper Flare
+- Bite
+- Dig
+- Copycat
+
+Rhydon
+Level: 39
+Ability: Rock Head
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Drill Run
+- Rock Blast
+- Hammer Arm
+- Thunder Fang
+
+Houndoom
+Level: 41
+Ability: Rock Head
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Comeuppance
+- Incinerate
+- Nasty Plot
+- Sludge Bomb
 
 === TRAINER_SKY_KID ===
 Name: sky kid
