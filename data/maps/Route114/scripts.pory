@@ -251,14 +251,184 @@ script RivalMultiBattle {
 
 script BrendanBlazikenTeam {
     multi_2_vs_2(TRAINER_COURTNEY, CourtneyDefeat, TRAINER_GRUNT_114, GruntLose, PARTNER_BRENDAN_TREECKO)
+    goto(BrendanJoinParty1)
 }
 
 script BrendanSwampertTeam {
     multi_2_vs_2(TRAINER_COURTNEY, CourtneyDefeat, TRAINER_GRUNT_114, GruntLose, PARTNER_BRENDAN_TORCHIC)
+    goto(BrendanJoinParty2)
 }
 
 script BrendanSceptileTeam {
     multi_2_vs_2(TRAINER_COURTNEY, CourtneyDefeat, TRAINER_GRUNT_114, GruntLose, PARTNER_BRENDAN_MUDKIP)
+    goto(BrendanJoinParty3)
+}
+
+script BrendanJoinParty1 {
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, BothWhiteOut)
+    msgbox(WeGotMeteorite)
+    fadescreen(FADE_TO_BLACK)
+    setflag(FLAG_MAGMAS_114)
+    removeobject(28)
+    removeobject(29)
+    fadescreen(FADE_FROM_BLACK)
+    applymovement(30, Common_Movement_FacePlayer)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    msgbox(NglPrettyGood)
+    setfollower(30, FOLLOWER_ALL, BrendanChatRandom, PARTNER_BRENDAN_TREECKO)
+    setvar(VAR_FOLLOWER_WRONG_WAY, 1)
+    release
+    end
+}
+
+script BrendanJoinParty2 {
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, BothWhiteOut)
+    msgbox(WeGotMeteorite)
+    fadescreen(FADE_TO_BLACK)
+    setflag(FLAG_MAGMAS_114)
+    removeobject(28)
+    removeobject(29)
+    fadescreen(FADE_FROM_BLACK)
+    applymovement(30, Common_Movement_FacePlayer)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    msgbox(NglPrettyGood)
+    setfollower(30, FOLLOWER_ALL, BrendanChatRandom, PARTNER_BRENDAN_TORCHIC)
+    setvar(VAR_FOLLOWER_WRONG_WAY, 1)
+    release
+    end
+}
+
+script BrendanJoinParty3 {
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, BothWhiteOut)
+    msgbox(WeGotMeteorite)
+    fadescreen(FADE_TO_BLACK)
+    setflag(FLAG_MAGMAS_114)
+    removeobject(28)
+    removeobject(29)
+    fadescreen(FADE_FROM_BLACK)
+    applymovement(30, Common_Movement_FacePlayer)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    msgbox(NglPrettyGood)
+    setfollower(30, FOLLOWER_ALL, BrendanChatRandom, PARTNER_BRENDAN_MUDKIP)
+    setvar(VAR_FOLLOWER_WRONG_WAY, 1)
+    release
+    end
+}
+
+script BrendanChatRandom {
+    lock
+    faceplayer
+    random(2)
+    goto_if_eq(VAR_RESULT, 1, BrendanChatMagmas)
+    msgbox(WhatIMissed)
+    release
+    end
+}
+
+script MayChatRandom {
+    lock
+    faceplayer
+    random(2)
+    goto_if_eq(VAR_RESULT, 1, MayTraining)
+    msgbox(WhatIMissed)
+    release
+    end
+}
+
+script MayTraining {
+    msgbox(HowsItGoing)
+    release
+    end
+}
+
+script BrendanChatMagmas {
+    msgbox(ThoseMagmas)
+    release
+    end
+}
+
+script FollowerWrongWay {
+    lockall
+    msgbox(PlayerSenses)
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+    waitmovement(0)
+    releaseall
+    end
+}
+
+script MayJoinParty1 {
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, BothWhiteOut)
+    msgbox(WeGotMeteorite)
+    fadescreen(FADE_TO_BLACK)
+    setflag(FLAG_MAGMAS_114)
+    removeobject(28)
+    removeobject(29)
+    fadescreen(FADE_FROM_BLACK)
+    applymovement(30, Common_Movement_FacePlayer)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    msgbox(NiceJob)
+    setfollower(30, FOLLOWER_ALL, MayChatRandom, PARTNER_MAY_TREECKO)
+    setvar(VAR_FOLLOWER_WRONG_WAY, 1)
+    release
+    end
+}
+
+script MayJoinParty2 {
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, BothWhiteOut)
+    msgbox(WeGotMeteorite)
+    fadescreen(FADE_TO_BLACK)
+    setflag(FLAG_MAGMAS_114)
+    removeobject(28)
+    removeobject(29)
+    fadescreen(FADE_FROM_BLACK)
+    applymovement(30, Common_Movement_FacePlayer)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    msgbox(NiceJob)
+    setfollower(30, FOLLOWER_ALL, MayChatRandom, PARTNER_MAY_TORCHIC)
+    setvar(VAR_FOLLOWER_WRONG_WAY, 1)
+    release
+    end
+}
+
+script MayJoinParty3 {
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    goto_if_eq(VAR_RESULT, B_OUTCOME_LOST, BothWhiteOut)
+    msgbox(WeGotMeteorite)
+    fadescreen(FADE_TO_BLACK)
+    setflag(FLAG_MAGMAS_114)
+    removeobject(28)
+    removeobject(29)
+    fadescreen(FADE_FROM_BLACK)
+    applymovement(30, Common_Movement_FacePlayer)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    msgbox(NiceJob)
+    setfollower(30, FOLLOWER_ALL, MayChatRandom, PARTNER_MAY_MUDKIP)
+    setvar(VAR_FOLLOWER_WRONG_WAY, 1)
+    release
+    end
+}
+
+script BothWhiteOut {
+    msgbox(CourtneyTaunt)
+    goto(EventScript_FieldWhiteOut)
 }
 
 script AreYouScared {
@@ -299,20 +469,85 @@ script MayMulti {
 
 script MayBlazikenTeam {
     multi_2_vs_2(TRAINER_COURTNEY, CourtneyDefeat, TRAINER_GRUNT_114, GruntLose, PARTNER_MAY_TREECKO)
+    goto(MayJoinParty1)
 }
 
 script MaySwampertTeam {
     multi_2_vs_2(TRAINER_COURTNEY, CourtneyDefeat, TRAINER_GRUNT_114, GruntLose, PARTNER_MAY_TORCHIC)
+    goto(MayJoinParty2)
 }
 
 script MaySceptileTeam {
     multi_2_vs_2(TRAINER_COURTNEY, CourtneyDefeat, TRAINER_GRUNT_114, GruntLose, PARTNER_MAY_MUDKIP)
+    goto(MayJoinParty3)
 }
 
 script BrendanLetsFight {
     msgbox(BrendanMagmas)
     release
     end
+}
+
+text PlayerSenses {
+    "A part of me thinks it's not a good idea\n"
+    "to go this way right now."
+}
+
+text HowsItGoing {
+    "How's your training been going lately\n"
+    "{PLAYER}\p"
+    "I heard there's another Gym close by."
+}
+
+text NiceJob {
+    "Alright! we did it!\n"
+    "About time they finally left.\p"
+    "Hey, since we're kind of heading to the\n"
+    "same place, why don't we go with each\l"
+    "other {PLAYER}?"
+}
+
+text WhatIMissed {
+    "Route 115 has quite a few Pokémon Dex\n"
+    "entries I missed.\p"
+    "This side of the route past the exit\n"
+    "also is good for training."
+}
+
+text ThoseMagmas {
+    "Those Team Magma Grunts have been\n"
+    "really annoying lately.\p"
+    "I wonder what they're up to."
+}
+
+text NglPrettyGood {
+    "I'm not gonna lie, you did pretty good\n"
+    "out there.\p"
+    "So you're going to Meteors Falls then?\n"
+    "I guess we might as well go in together\l"
+    "because I'm going back to Route 115."
+}
+
+text WeGotMeteorite {
+    "Courtney: Hahah, you may have won the\n"
+    "battle, but you haven't won the war!\p"
+    "Little did you guys know is that we\n"
+    "already collected the meteorite."
+}
+
+text CourtneyTaunt {
+    "Courtney: Hahaha, how pathetic!\p"
+    "This is why you never bother with Team\n"
+    "Magmas plans!"
+}
+
+text CourtneyDefeat {
+    "I cant believe I lost!\n"
+    "Okay, lets dip!"
+}
+
+text GruntLose {
+    "Ah, gosh dang it!"
 }
 
 text WeGotThis {
@@ -333,7 +568,8 @@ text GetReadyNow {
 }
 
 text HAHAHAH {
-    "Hahah, oh what? You're scared?"
+    "Courtney: Hahah, oh what? You're\n"
+    "scared?"
 }
 
 text PrettyFunny {

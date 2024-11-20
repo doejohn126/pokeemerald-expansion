@@ -7592,63 +7592,63 @@
             "mons": [
               {
                 "min_level": 16,
-                "max_level": 16,
-                "species": "SPECIES_ZUBAT"
+                "max_level": 36,
+                "species": "SPECIES_GLIMMET"
               },
               {
                 "min_level": 17,
-                "max_level": 17,
-                "species": "SPECIES_ZUBAT"
+                "max_level": 36,
+                "species": "SPECIES_ROCKRUFF"
               },
               {
                 "min_level": 18,
-                "max_level": 18,
-                "species": "SPECIES_ZUBAT"
+                "max_level": 36,
+                "species": "SPECIES_CUFANT"
               },
               {
                 "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_ZUBAT"
+                "max_level": 36,
+                "species": "SPECIES_MORELULL"
               },
               {
                 "min_level": 14,
-                "max_level": 14,
-                "species": "SPECIES_ZUBAT"
+                "max_level": 36,
+                "species": "SPECIES_CLEFAIRY"
               },
               {
                 "min_level": 16,
-                "max_level": 16,
+                "max_level": 36,
                 "species": "SPECIES_SOLROCK"
               },
               {
                 "min_level": 18,
-                "max_level": 18,
-                "species": "SPECIES_SOLROCK"
+                "max_level": 36,
+                "species": "SPECIES_LUNATONE"
               },
               {
                 "min_level": 14,
-                "max_level": 14,
-                "species": "SPECIES_SOLROCK"
+                "max_level": 36,
+                "species": "SPECIES_KLEFKI"
               },
               {
                 "min_level": 19,
-                "max_level": 19,
-                "species": "SPECIES_ZUBAT"
+                "max_level": 36,
+                "species": "SPECIES_KLINK"
               },
               {
                 "min_level": 20,
-                "max_level": 20,
-                "species": "SPECIES_ZUBAT"
+                "max_level": 36,
+                "species": "SPECIES_HONEDGE"
               },
               {
                 "min_level": 19,
-                "max_level": 19,
-                "species": "SPECIES_ZUBAT"
+                "max_level": 36,
+                "species": "SPECIES_DEINO"
               },
               {
                 "min_level": 20,
-                "max_level": 20,
-                "species": "SPECIES_ZUBAT"
+                "max_level": 36,
+                "species": "SPECIES_DURALUDON"
               }
             ]
           },
@@ -7673,7 +7673,7 @@
               {
                 "min_level": 15,
                 "max_level": 25,
-                "species": "SPECIES_SOLROCK"
+                "species": "SPECIES_LUNATONE"
               },
               {
                 "min_level": 5,
@@ -11665,7 +11665,7 @@
               {
                 "min_level": 6,
                 "max_level": 10,
-                "species": "SPECIES_ARON"
+                "species": "SPECIES_VENIPEDE"
               },
               {
                 "min_level": 6,

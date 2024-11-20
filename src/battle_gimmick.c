@@ -86,7 +86,7 @@ bool32 ShouldTrainerBattlerUseGimmick(u32 battler, enum Gimmick gimmick)
         if (gimmick == GIMMICK_TERA && mon->teraType != TYPE_NONE)
             return TRUE;
         if (gimmick == GIMMICK_DYNAMAX && mon->shouldUseDynamax)
-            return TRUE;
+            return FALSE;
     }
 
     return FALSE;

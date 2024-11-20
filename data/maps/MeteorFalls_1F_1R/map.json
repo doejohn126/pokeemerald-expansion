@@ -198,6 +198,24 @@
       "var": "VAR_METEOR_FALLS_STATE",
       "var_value": "0",
       "script": "MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_RIVAL_LEAVE_PARTY",
+      "var_value": "0",
+      "script": "RivalLeaveParty2"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_RIVAL_LEAVE_PARTY",
+      "var_value": "0",
+      "script": "RivalLeaveParty1"
     }
   ],
   "bg_events": [

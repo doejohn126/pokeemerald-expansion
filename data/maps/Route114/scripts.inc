@@ -497,180 +497,543 @@ RivalMultiBattle_4:
 BrendanBlazikenTeam::
 # 253 "data/maps/Route114/scripts.pory"
 	multi_2_vs_2 TRAINER_COURTNEY, CourtneyDefeat, TRAINER_GRUNT_114, GruntLose, PARTNER_BRENDAN_TREECKO
+# 254 "data/maps/Route114/scripts.pory"
+	goto BrendanJoinParty1
 	return
 
 
 BrendanSwampertTeam::
-# 257 "data/maps/Route114/scripts.pory"
+# 258 "data/maps/Route114/scripts.pory"
 	multi_2_vs_2 TRAINER_COURTNEY, CourtneyDefeat, TRAINER_GRUNT_114, GruntLose, PARTNER_BRENDAN_TORCHIC
+# 259 "data/maps/Route114/scripts.pory"
+	goto BrendanJoinParty2
 	return
 
 
 BrendanSceptileTeam::
-# 261 "data/maps/Route114/scripts.pory"
+# 263 "data/maps/Route114/scripts.pory"
 	multi_2_vs_2 TRAINER_COURTNEY, CourtneyDefeat, TRAINER_GRUNT_114, GruntLose, PARTNER_BRENDAN_MUDKIP
+# 264 "data/maps/Route114/scripts.pory"
+	goto BrendanJoinParty3
+	return
+
+
+BrendanJoinParty1::
+# 268 "data/maps/Route114/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 269 "data/maps/Route114/scripts.pory"
+	goto_if_eq VAR_RESULT, B_OUTCOME_LOST, BothWhiteOut
+# 270 "data/maps/Route114/scripts.pory"
+	msgbox WeGotMeteorite
+# 271 "data/maps/Route114/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 272 "data/maps/Route114/scripts.pory"
+	setflag FLAG_MAGMAS_114
+# 273 "data/maps/Route114/scripts.pory"
+	removeobject 28
+# 274 "data/maps/Route114/scripts.pory"
+	removeobject 29
+# 275 "data/maps/Route114/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 276 "data/maps/Route114/scripts.pory"
+	applymovement 30, Common_Movement_FacePlayer
+# 277 "data/maps/Route114/scripts.pory"
+	waitmovement 0
+# 278 "data/maps/Route114/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+# 279 "data/maps/Route114/scripts.pory"
+	waitmovement 0
+# 280 "data/maps/Route114/scripts.pory"
+	msgbox NglPrettyGood
+# 281 "data/maps/Route114/scripts.pory"
+	setfollower 30, FOLLOWER_ALL, BrendanChatRandom, PARTNER_BRENDAN_TREECKO
+# 282 "data/maps/Route114/scripts.pory"
+	setvar VAR_FOLLOWER_WRONG_WAY, 1
+# 283 "data/maps/Route114/scripts.pory"
+	release
+	end
+
+
+BrendanJoinParty2::
+# 288 "data/maps/Route114/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 289 "data/maps/Route114/scripts.pory"
+	goto_if_eq VAR_RESULT, B_OUTCOME_LOST, BothWhiteOut
+# 290 "data/maps/Route114/scripts.pory"
+	msgbox WeGotMeteorite
+# 291 "data/maps/Route114/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 292 "data/maps/Route114/scripts.pory"
+	setflag FLAG_MAGMAS_114
+# 293 "data/maps/Route114/scripts.pory"
+	removeobject 28
+# 294 "data/maps/Route114/scripts.pory"
+	removeobject 29
+# 295 "data/maps/Route114/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 296 "data/maps/Route114/scripts.pory"
+	applymovement 30, Common_Movement_FacePlayer
+# 297 "data/maps/Route114/scripts.pory"
+	waitmovement 0
+# 298 "data/maps/Route114/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+# 299 "data/maps/Route114/scripts.pory"
+	waitmovement 0
+# 300 "data/maps/Route114/scripts.pory"
+	msgbox NglPrettyGood
+# 301 "data/maps/Route114/scripts.pory"
+	setfollower 30, FOLLOWER_ALL, BrendanChatRandom, PARTNER_BRENDAN_TORCHIC
+# 302 "data/maps/Route114/scripts.pory"
+	setvar VAR_FOLLOWER_WRONG_WAY, 1
+# 303 "data/maps/Route114/scripts.pory"
+	release
+	end
+
+
+BrendanJoinParty3::
+# 308 "data/maps/Route114/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 309 "data/maps/Route114/scripts.pory"
+	goto_if_eq VAR_RESULT, B_OUTCOME_LOST, BothWhiteOut
+# 310 "data/maps/Route114/scripts.pory"
+	msgbox WeGotMeteorite
+# 311 "data/maps/Route114/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 312 "data/maps/Route114/scripts.pory"
+	setflag FLAG_MAGMAS_114
+# 313 "data/maps/Route114/scripts.pory"
+	removeobject 28
+# 314 "data/maps/Route114/scripts.pory"
+	removeobject 29
+# 315 "data/maps/Route114/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 316 "data/maps/Route114/scripts.pory"
+	applymovement 30, Common_Movement_FacePlayer
+# 317 "data/maps/Route114/scripts.pory"
+	waitmovement 0
+# 318 "data/maps/Route114/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+# 319 "data/maps/Route114/scripts.pory"
+	waitmovement 0
+# 320 "data/maps/Route114/scripts.pory"
+	msgbox NglPrettyGood
+# 321 "data/maps/Route114/scripts.pory"
+	setfollower 30, FOLLOWER_ALL, BrendanChatRandom, PARTNER_BRENDAN_MUDKIP
+# 322 "data/maps/Route114/scripts.pory"
+	setvar VAR_FOLLOWER_WRONG_WAY, 1
+# 323 "data/maps/Route114/scripts.pory"
+	release
+	end
+
+
+BrendanChatRandom::
+# 328 "data/maps/Route114/scripts.pory"
+	lock
+# 329 "data/maps/Route114/scripts.pory"
+	faceplayer
+# 330 "data/maps/Route114/scripts.pory"
+	random 2
+# 331 "data/maps/Route114/scripts.pory"
+	goto_if_eq VAR_RESULT, 1, BrendanChatMagmas
+# 332 "data/maps/Route114/scripts.pory"
+	msgbox WhatIMissed
+# 333 "data/maps/Route114/scripts.pory"
+	release
+	end
+
+
+MayChatRandom::
+# 338 "data/maps/Route114/scripts.pory"
+	lock
+# 339 "data/maps/Route114/scripts.pory"
+	faceplayer
+# 340 "data/maps/Route114/scripts.pory"
+	random 2
+# 341 "data/maps/Route114/scripts.pory"
+	goto_if_eq VAR_RESULT, 1, MayTraining
+# 342 "data/maps/Route114/scripts.pory"
+	msgbox WhatIMissed
+# 343 "data/maps/Route114/scripts.pory"
+	release
+	end
+
+
+MayTraining::
+# 348 "data/maps/Route114/scripts.pory"
+	msgbox HowsItGoing
+# 349 "data/maps/Route114/scripts.pory"
+	release
+	end
+
+
+BrendanChatMagmas::
+# 354 "data/maps/Route114/scripts.pory"
+	msgbox ThoseMagmas
+# 355 "data/maps/Route114/scripts.pory"
+	release
+	end
+
+
+FollowerWrongWay::
+# 360 "data/maps/Route114/scripts.pory"
+	lockall
+# 361 "data/maps/Route114/scripts.pory"
+	msgbox PlayerSenses
+# 362 "data/maps/Route114/scripts.pory"
+	closemessage
+# 363 "data/maps/Route114/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
+# 364 "data/maps/Route114/scripts.pory"
+	waitmovement 0
+# 365 "data/maps/Route114/scripts.pory"
+	releaseall
+	end
+
+
+MayJoinParty1::
+# 370 "data/maps/Route114/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 371 "data/maps/Route114/scripts.pory"
+	goto_if_eq VAR_RESULT, B_OUTCOME_LOST, BothWhiteOut
+# 372 "data/maps/Route114/scripts.pory"
+	msgbox WeGotMeteorite
+# 373 "data/maps/Route114/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 374 "data/maps/Route114/scripts.pory"
+	setflag FLAG_MAGMAS_114
+# 375 "data/maps/Route114/scripts.pory"
+	removeobject 28
+# 376 "data/maps/Route114/scripts.pory"
+	removeobject 29
+# 377 "data/maps/Route114/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 378 "data/maps/Route114/scripts.pory"
+	applymovement 30, Common_Movement_FacePlayer
+# 379 "data/maps/Route114/scripts.pory"
+	waitmovement 0
+# 380 "data/maps/Route114/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+# 381 "data/maps/Route114/scripts.pory"
+	waitmovement 0
+# 382 "data/maps/Route114/scripts.pory"
+	msgbox NiceJob
+# 383 "data/maps/Route114/scripts.pory"
+	setfollower 30, FOLLOWER_ALL, MayChatRandom, PARTNER_MAY_TREECKO
+# 384 "data/maps/Route114/scripts.pory"
+	setvar VAR_FOLLOWER_WRONG_WAY, 1
+# 385 "data/maps/Route114/scripts.pory"
+	release
+	end
+
+
+MayJoinParty2::
+# 390 "data/maps/Route114/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 391 "data/maps/Route114/scripts.pory"
+	goto_if_eq VAR_RESULT, B_OUTCOME_LOST, BothWhiteOut
+# 392 "data/maps/Route114/scripts.pory"
+	msgbox WeGotMeteorite
+# 393 "data/maps/Route114/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 394 "data/maps/Route114/scripts.pory"
+	setflag FLAG_MAGMAS_114
+# 395 "data/maps/Route114/scripts.pory"
+	removeobject 28
+# 396 "data/maps/Route114/scripts.pory"
+	removeobject 29
+# 397 "data/maps/Route114/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 398 "data/maps/Route114/scripts.pory"
+	applymovement 30, Common_Movement_FacePlayer
+# 399 "data/maps/Route114/scripts.pory"
+	waitmovement 0
+# 400 "data/maps/Route114/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+# 401 "data/maps/Route114/scripts.pory"
+	waitmovement 0
+# 402 "data/maps/Route114/scripts.pory"
+	msgbox NiceJob
+# 403 "data/maps/Route114/scripts.pory"
+	setfollower 30, FOLLOWER_ALL, MayChatRandom, PARTNER_MAY_TORCHIC
+# 404 "data/maps/Route114/scripts.pory"
+	setvar VAR_FOLLOWER_WRONG_WAY, 1
+# 405 "data/maps/Route114/scripts.pory"
+	release
+	end
+
+
+MayJoinParty3::
+# 410 "data/maps/Route114/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 411 "data/maps/Route114/scripts.pory"
+	goto_if_eq VAR_RESULT, B_OUTCOME_LOST, BothWhiteOut
+# 412 "data/maps/Route114/scripts.pory"
+	msgbox WeGotMeteorite
+# 413 "data/maps/Route114/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 414 "data/maps/Route114/scripts.pory"
+	setflag FLAG_MAGMAS_114
+# 415 "data/maps/Route114/scripts.pory"
+	removeobject 28
+# 416 "data/maps/Route114/scripts.pory"
+	removeobject 29
+# 417 "data/maps/Route114/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 418 "data/maps/Route114/scripts.pory"
+	applymovement 30, Common_Movement_FacePlayer
+# 419 "data/maps/Route114/scripts.pory"
+	waitmovement 0
+# 420 "data/maps/Route114/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+# 421 "data/maps/Route114/scripts.pory"
+	waitmovement 0
+# 422 "data/maps/Route114/scripts.pory"
+	msgbox NiceJob
+# 423 "data/maps/Route114/scripts.pory"
+	setfollower 30, FOLLOWER_ALL, MayChatRandom, PARTNER_MAY_MUDKIP
+# 424 "data/maps/Route114/scripts.pory"
+	setvar VAR_FOLLOWER_WRONG_WAY, 1
+# 425 "data/maps/Route114/scripts.pory"
+	release
+	end
+
+
+BothWhiteOut::
+# 430 "data/maps/Route114/scripts.pory"
+	msgbox CourtneyTaunt
+# 431 "data/maps/Route114/scripts.pory"
+	goto EventScript_FieldWhiteOut
 	return
 
 
 AreYouScared::
-# 265 "data/maps/Route114/scripts.pory"
+# 435 "data/maps/Route114/scripts.pory"
 	applymovement 28, CourtneyMove
-# 266 "data/maps/Route114/scripts.pory"
+# 436 "data/maps/Route114/scripts.pory"
 	applymovement 30, Common_Movement_FacePlayer
-# 267 "data/maps/Route114/scripts.pory"
+# 437 "data/maps/Route114/scripts.pory"
 	waitmovement 0
-# 268 "data/maps/Route114/scripts.pory"
+# 438 "data/maps/Route114/scripts.pory"
 	msgbox HAHAHAH
-# 269 "data/maps/Route114/scripts.pory"
+# 439 "data/maps/Route114/scripts.pory"
 	release
 	end
 
 
 MayMulti::
-# 274 "data/maps/Route114/scripts.pory"
+# 444 "data/maps/Route114/scripts.pory"
 	msgbox MayGiveItUp
-# 275 "data/maps/Route114/scripts.pory"
+# 445 "data/maps/Route114/scripts.pory"
 	applymovement 28, CourtneyMove
-# 276 "data/maps/Route114/scripts.pory"
+# 446 "data/maps/Route114/scripts.pory"
 	waitmovement 0
-# 277 "data/maps/Route114/scripts.pory"
+# 447 "data/maps/Route114/scripts.pory"
 	msgbox PrettyFunny
-# 278 "data/maps/Route114/scripts.pory"
+# 448 "data/maps/Route114/scripts.pory"
 	choose_mons
-# 279 "data/maps/Route114/scripts.pory"
+# 449 "data/maps/Route114/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, AreYouScared
-# 280 "data/maps/Route114/scripts.pory"
+# 450 "data/maps/Route114/scripts.pory"
 	msgbox GetReadyNow
-# 281 "data/maps/Route114/scripts.pory"
+# 451 "data/maps/Route114/scripts.pory"
 	applymovement 30, Common_Movement_FacePlayer
-# 282 "data/maps/Route114/scripts.pory"
+# 452 "data/maps/Route114/scripts.pory"
 	waitmovement 0
-# 283 "data/maps/Route114/scripts.pory"
+# 453 "data/maps/Route114/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
-# 284 "data/maps/Route114/scripts.pory"
+# 454 "data/maps/Route114/scripts.pory"
 	waitmovement 0
-# 285 "data/maps/Route114/scripts.pory"
+# 455 "data/maps/Route114/scripts.pory"
 	msgbox WeGotThis
-# 286 "data/maps/Route114/scripts.pory"
+# 456 "data/maps/Route114/scripts.pory"
 	applymovement 30, Common_Movement_FaceUp
-# 287 "data/maps/Route114/scripts.pory"
+# 457 "data/maps/Route114/scripts.pory"
 	waitmovement 0
-# 288 "data/maps/Route114/scripts.pory"
+# 458 "data/maps/Route114/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
-# 289 "data/maps/Route114/scripts.pory"
+# 459 "data/maps/Route114/scripts.pory"
 	waitmovement 0
-# 290 "data/maps/Route114/scripts.pory"
+# 460 "data/maps/Route114/scripts.pory"
 	switch VAR_STARTER_MON
-# 291 "data/maps/Route114/scripts.pory"
+# 461 "data/maps/Route114/scripts.pory"
 	case 0, MayMulti_2
-# 293 "data/maps/Route114/scripts.pory"
+# 463 "data/maps/Route114/scripts.pory"
 	case 1, MayMulti_3
-# 295 "data/maps/Route114/scripts.pory"
+# 465 "data/maps/Route114/scripts.pory"
 	case 2, MayMulti_4
 	return
 
 MayMulti_2:
-# 292 "data/maps/Route114/scripts.pory"
+# 462 "data/maps/Route114/scripts.pory"
 	call MayBlazikenTeam
 	return
 
 MayMulti_3:
-# 294 "data/maps/Route114/scripts.pory"
+# 464 "data/maps/Route114/scripts.pory"
 	call MaySwampertTeam
 	return
 
 MayMulti_4:
-# 296 "data/maps/Route114/scripts.pory"
+# 466 "data/maps/Route114/scripts.pory"
 	call MaySceptileTeam
 	return
 
 
 MayBlazikenTeam::
-# 301 "data/maps/Route114/scripts.pory"
+# 471 "data/maps/Route114/scripts.pory"
 	multi_2_vs_2 TRAINER_COURTNEY, CourtneyDefeat, TRAINER_GRUNT_114, GruntLose, PARTNER_MAY_TREECKO
+# 472 "data/maps/Route114/scripts.pory"
+	goto MayJoinParty1
 	return
 
 
 MaySwampertTeam::
-# 305 "data/maps/Route114/scripts.pory"
+# 476 "data/maps/Route114/scripts.pory"
 	multi_2_vs_2 TRAINER_COURTNEY, CourtneyDefeat, TRAINER_GRUNT_114, GruntLose, PARTNER_MAY_TORCHIC
+# 477 "data/maps/Route114/scripts.pory"
+	goto MayJoinParty2
 	return
 
 
 MaySceptileTeam::
-# 309 "data/maps/Route114/scripts.pory"
+# 481 "data/maps/Route114/scripts.pory"
 	multi_2_vs_2 TRAINER_COURTNEY, CourtneyDefeat, TRAINER_GRUNT_114, GruntLose, PARTNER_MAY_MUDKIP
+# 482 "data/maps/Route114/scripts.pory"
+	goto MayJoinParty3
 	return
 
 
 BrendanLetsFight::
-# 313 "data/maps/Route114/scripts.pory"
+# 486 "data/maps/Route114/scripts.pory"
 	msgbox BrendanMagmas
-# 314 "data/maps/Route114/scripts.pory"
+# 487 "data/maps/Route114/scripts.pory"
 	release
 	end
 
 
-# 373 "data/maps/Route114/scripts.pory"
+# 609 "data/maps/Route114/scripts.pory"
 CourtneyMove:
-# 374 "data/maps/Route114/scripts.pory"
+# 610 "data/maps/Route114/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 377 "data/maps/Route114/scripts.pory"
+# 613 "data/maps/Route114/scripts.pory"
 MayBrendanWalkInplace:
-# 378 "data/maps/Route114/scripts.pory"
+# 614 "data/maps/Route114/scripts.pory"
 	walk_in_place_up
 	step_end
 
+PlayerSenses::
+# 491 "data/maps/Route114/scripts.pory"
+	.string "A part of me thinks it's not a good idea\n"
+	.string "to go this way right now.$"
+
+HowsItGoing::
+# 496 "data/maps/Route114/scripts.pory"
+	.string "How's your training been going lately\n"
+	.string "{PLAYER}\p"
+	.string "I heard there's another Gym close by.$"
+
+NiceJob::
+# 502 "data/maps/Route114/scripts.pory"
+	.string "Alright! we did it!\n"
+	.string "About time they finally left.\p"
+	.string "Hey, since we're kind of heading to the\n"
+	.string "same place, why don't we go with each\l"
+	.string "other {PLAYER}?$"
+
+WhatIMissed::
+# 510 "data/maps/Route114/scripts.pory"
+	.string "Route 115 has quite a few Pokémon Dex\n"
+	.string "entries I missed.\p"
+	.string "This side of the route past the exit\n"
+	.string "also is good for training.$"
+
+ThoseMagmas::
+# 517 "data/maps/Route114/scripts.pory"
+	.string "Those Team Magma Grunts have been\n"
+	.string "really annoying lately.\p"
+	.string "I wonder what they're up to.$"
+
+NglPrettyGood::
+# 523 "data/maps/Route114/scripts.pory"
+	.string "I'm not gonna lie, you did pretty good\n"
+	.string "out there.\p"
+	.string "So you're going to Meteors Falls then?\n"
+	.string "I guess we might as well go in together\l"
+	.string "because I'm going back to Route 115.$"
+
+WeGotMeteorite::
+# 531 "data/maps/Route114/scripts.pory"
+	.string "Courtney: Hahah, you may have won the\n"
+	.string "battle, but you haven't won the war!\p"
+	.string "Little did you guys know is that we\n"
+	.string "already collected the meteorite.$"
+
+CourtneyTaunt::
+# 538 "data/maps/Route114/scripts.pory"
+	.string "Courtney: Hahaha, how pathetic!\p"
+	.string "This is why you never bother with Team\n"
+	.string "Magmas plans!$"
+
+CourtneyDefeat::
+# 544 "data/maps/Route114/scripts.pory"
+	.string "I cant believe I lost!\n"
+	.string "Okay, lets dip!$"
+
+GruntLose::
+# 549 "data/maps/Route114/scripts.pory"
+	.string "Ah, gosh dang it!$"
+
 WeGotThis::
-# 318 "data/maps/Route114/scripts.pory"
+# 553 "data/maps/Route114/scripts.pory"
 	.string "This'll be our first time battling\n"
 	.string "together {PLAYER}!\p"
 	.string "We've got to do our best!$"
 
 LockIn::
-# 324 "data/maps/Route114/scripts.pory"
+# 559 "data/maps/Route114/scripts.pory"
 	.string "Brendan: It's not gonna look pretty if\n"
 	.string "we lose this so we have to lock in {PLAYER}.$"
 
 GetReadyNow::
-# 329 "data/maps/Route114/scripts.pory"
+# 564 "data/maps/Route114/scripts.pory"
 	.string "Courtney: Heheh, I already know those\n"
 	.string "tears are gonna be dropping from both\l"
 	.string "of your faces after this.$"
 
 HAHAHAH::
-# 335 "data/maps/Route114/scripts.pory"
-	.string "Hahah, oh what? You're scared?$"
+# 570 "data/maps/Route114/scripts.pory"
+	.string "Courtney: Hahah, oh what? You're\n"
+	.string "scared?$"
 
 PrettyFunny::
-# 339 "data/maps/Route114/scripts.pory"
+# 575 "data/maps/Route114/scripts.pory"
 	.string "Courtney: You're pretty funny!\n"
 	.string "You think its fun to mess with us, huh?\p"
 	.string "Too bad we're going to destroy and\n"
 	.string "embarrass you both.$"
 
 MayGiveItUp::
-# 346 "data/maps/Route114/scripts.pory"
+# 582 "data/maps/Route114/scripts.pory"
 	.string "May: Give it up you bozos!\n"
 	.string "You're not getting anywhere blocking\l"
 	.string "the entrance!$"
 
 BrendanConfront::
-# 352 "data/maps/Route114/scripts.pory"
+# 588 "data/maps/Route114/scripts.pory"
 	.string "Brendan: Give it up already you weirdos!\n"
 	.string "I know you guys are from Team Magma!$"
 
 BrendanMagmas::
-# 357 "data/maps/Route114/scripts.pory"
+# 593 "data/maps/Route114/scripts.pory"
 	.string "Yo {PLAYER}, get a load of these losers.\p"
 	.string "I saw them blocking the entrance here\n"
 	.string "and they're pretty suspicious.\p"
 	.string "We've got to see what's up with them!$"
 
 MayMagmas::
-# 364 "data/maps/Route114/scripts.pory"
+# 600 "data/maps/Route114/scripts.pory"
 	.string "Hey {PLAYER}, good timing.\p"
 	.string "I wanted to revisit Route 115 again but\n"
 	.string "these strange people here thought it\l"

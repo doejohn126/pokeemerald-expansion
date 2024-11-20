@@ -386,7 +386,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "RivalMultiBattle",
       "flag": "FLAG_MAGMAS_114"
     },
     {
@@ -413,7 +413,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MayLetsFight",
-      "flag": "0"
+      "flag": "FLAG_RIVAL_114"
     }
   ],
   "warp_events": [
@@ -454,7 +454,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 67,
+      "elevation": 0,
+      "var": "VAR_FOLLOWER_WRONG_WAY",
+      "var_value": "1",
+      "script": "FollowerWrongWay"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 67,
+      "elevation": 0,
+      "var": "VAR_FOLLOWER_WRONG_WAY",
+      "var_value": "1",
+      "script": "FollowerWrongWay"
+    }
   ],
   "bg_events": [
     {

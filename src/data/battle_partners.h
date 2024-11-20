@@ -172,8 +172,6 @@ F_TRAINER_FEMALE |
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 70
         .items = { ITEM_HYPER_POTION, ITEM_HYPER_POTION },
-#line 71
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -252,8 +250,6 @@ F_TRAINER_FEMALE |
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 104
         .items = { ITEM_HYPER_POTION, ITEM_HYPER_POTION },
-#line 105
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -332,8 +328,6 @@ F_TRAINER_FEMALE |
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 138
         .items = { ITEM_HYPER_POTION, ITEM_HYPER_POTION },
-#line 139
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -414,8 +408,6 @@ F_TRAINER_FEMALE |
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 172
         .items = { ITEM_HYPER_POTION, ITEM_HYPER_POTION },
-#line 173
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -498,8 +490,6 @@ F_TRAINER_FEMALE |
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 207
         .items = { ITEM_HYPER_POTION, ITEM_HYPER_POTION },
-#line 208
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -578,8 +568,6 @@ F_TRAINER_FEMALE |
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 241
         .items = { ITEM_HYPER_POTION, ITEM_HYPER_POTION },
-#line 242
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
