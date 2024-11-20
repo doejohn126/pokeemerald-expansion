@@ -238,6 +238,7 @@ gScriptCmdTable::
 	.4byte ScrCmd_showitemdesc              			@ 0xeb
 	.4byte ScrCmd_hideitemdesc              			@ 0xec
     .4byte ScrCmd_pokevial                          @ 0xed //Pokevial Branch
+    .4byte ScrCmd_checkpartylearnknowsfieldmove     @ 0xee // qol_field_moves
 
 gScriptCmdTableEnd::
 	.4byte ScrCmd_nop

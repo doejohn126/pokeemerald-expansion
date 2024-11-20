@@ -7,6 +7,7 @@ GraniteCave_1F_EventScript_Hiker::
 	goto_if_set FLAG_RECEIVED_HM_FLASH, GraniteCave_1F_EventScript_ReceivedFlash
 	msgbox GraniteCave_1F_Text_GetsDarkAheadHereYouGo, MSGBOX_DEFAULT
 	giveitem ITEM_HM_FLASH
+	giveitem ITEM_FLASH_TOOL
 	setflag FLAG_RECEIVED_HM_FLASH
 	msgbox GraniteCave_1F_Text_ExplainFlash, MSGBOX_DEFAULT
 	release
@@ -27,7 +28,10 @@ GraniteCave_1F_Text_GetsDarkAheadHereYouGo:
 	.string "to be all right, but…\p"
 	.string "Well, for us HIKERS, helping out those\n"
 	.string "that we meet is our motto.\p"
-	.string "Here you go, I'll pass this on to you.$"
+	.string "Here you go, I'll pass this on to you.\p"
+	.string "On top of that, here's one of my spare\n"
+	.string "lanterns. Flash can be a pretty\l"
+	.string "unreliable move in battle.$"
 
 GraniteCave_1F_Text_ExplainFlash:
 	.string "Teach that hidden move FLASH to\n"

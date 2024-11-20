@@ -19,6 +19,7 @@
 #include "constants/songs.h"
 
 static void FieldCallback_SweetScent(void);
+//static void StartSweetScentFieldEffect(void); // qol_field_moves
 static void TrySweetScentEncounter(u8 taskId);
 static void FailSweetScentEncounter(u8 taskId);
 

@@ -631,6 +631,7 @@ Route110_EventScript_BirchScene::
 	setflag FLAG_ENABLE_PROF_BIRCH_MATCH_CALL
 	msgbox Route110_Text_KeepAnEyeOutForRival, MSGBOX_DEFAULT
 	closemessage
+	giveitem ITEM_FLY_TOOL
 	call_if_eq VAR_0x8008, 1, Route110_EventScript_BirchExit1
 	call_if_eq VAR_0x8008, 2, Route110_EventScript_BirchExit2
 	call_if_eq VAR_0x8008, 3, Route110_EventScript_BirchExit3
@@ -989,6 +990,9 @@ Route110_Text_KeepAnEyeOutForRival:
 	.string "PROF. BIRCH: {PLAYER}{KUN}…\p"
 	.string "Please keep an eye out for my {RIVAL}.\n"
 	.string "… … … … … …\p"
+	.string "Speaking of {RIVAL} I gave them this\n"
+	.string "cool flying tool earlier.\p"
+	.string "It's a pretty cool alternative to HM Fly.\p"
 	.string "Well, I had better get going.\n"
 	.string "See you again, {PLAYER}{KUN}!$"
 

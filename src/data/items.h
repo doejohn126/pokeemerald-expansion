@@ -14081,7 +14081,7 @@ const struct Item gItemsInfo[] =
     //Start Pokevial Branch
     [ITEM_POKEVIAL] =
     {
-        .name = _("POKéVIAL"),
+        .name = _("Pokévial"),
         .price = 0,
         .description = COMPOUND_STRING(
             "Restores all\n"
@@ -14094,6 +14094,168 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Pokevial,
         .iconPic = gItemIcon_Pokevial,
         .iconPalette = gItemIconPalette_Pokevial,
+    },
+
+    //Start qol_field_moves
+
+    [ITEM_CUT_TOOL] =
+    {
+        .name = _("Axe"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+	       "This tool\n"
+           "is used for\n"
+           "cutting trees."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_CutTool,
+        .iconPic = gItemIcon_Axe,
+        .iconPalette = gItemIconPalette_Axe,
+    },
+
+    [ITEM_FLY_TOOL] =
+    {
+        .name = _("Poké Rider"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+	       "This tool\n"
+           "is used for\n"
+           "going places."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_FlyTool,
+        .iconPic = gItemIcon_FameChecker,
+        .iconPalette = gItemIconPalette_FameChecker,
+    },
+
+    [ITEM_SURF_TOOL] =
+    {
+        .name = _("Surfboard"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+	       "This tool\n"
+           "is used for\n"
+           "riding waves."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_SurfTool,
+        .iconPic = gItemIcon_Surfboard,
+        .iconPalette = gItemIconPalette_Surfboard,
+    },
+
+    [ITEM_STRENGTH_TOOL] =
+    {
+        .name = _("Power Glove"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+	       "This tool\n"
+           "is used for\n"
+           "moving boulders."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_StrengthTool,
+        .iconPic = gItemIcon_PowerGlove,
+        .iconPalette = gItemIconPalette_PowerGlove,
+    },
+
+    [ITEM_FLASH_TOOL] =
+    {
+        .name = _("Lantern"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+	       "This tool\n"
+           "is used for\n"
+           "lighting caves."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_FlashTool,
+        .iconPic = gItemIcon_Lantern,
+        .iconPalette = gItemIconPalette_Lantern,
+    },
+
+    [ITEM_ROCKSMASH_TOOL] =
+    {
+        .name = _("Pickaxe"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+	       "This tool\n"
+           "is used for\n"
+           "smashing rocks."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_RockSmashTool,
+        .iconPic = gItemIcon_Pickaxe,
+        .iconPalette = gItemIconPalette_Pickaxe,
+    },
+
+    [ITEM_WATERFALL_TOOL] =
+    {
+        .name = _("Extreme Board"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+	       "This tool\n"
+           "is used for\n"
+           "climbing waterfalls."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_WaterfallTool,
+        .iconPic = gItemIcon_ExtremeBoard,
+        .iconPalette = gItemIconPalette_ExtremeBoard,
+    },
+
+    [ITEM_DIVE_TOOL] =
+    {
+        .name = _("Scuba Gear"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+	       "This tool\n"
+           "is used for\n"
+           "diving underwater."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_DiveTool,
+        .iconPic = gItemIcon_ScubaGear,
+        .iconPalette = gItemIconPalette_ScubaGear,
+    },
+
+    [ITEM_TELEPORT_TOOL] =
+    {
+        .name = _("Teleporter"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+	       "This tool\n"
+           "is used for\n"
+           "getting to safety."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_TeleportTool,
+        .iconPic = gItemIcon_PokemonBoxLink,
+        .iconPalette = gItemIconPalette_Teleporter,
+    },
+
+    [ITEM_SWEETSCENT_TOOL] =
+    {
+        .name = _("Candy Jar"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+	       "This tool\n"
+           "is used for\n"
+           "luring pokemon."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_SweetScentTool,
+        .iconPic = gItemIcon_CandyJar,
+        .iconPalette = gItemIconPalette_CandyJar,
     },
     //End Pokevial Branch
 };

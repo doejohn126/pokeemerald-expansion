@@ -58,9 +58,9 @@
 #define FLAG_TOGEPI          0x2C // Unused Flag
 #define FLAG_MAGMAS_114      0x2D // Unused Flag
 #define FLAG_RIVAL_114       0x2E // Unused Flag
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
+#define FLAG_PICKAXE         0x2F // Unused Flag
+#define FLAG_CANDY_JAR       0x30 // Unused Flag
+#define FLAG_TELEPORTER      0x31 // Unused Flag
 #define FLAG_UNUSED_0x032    0x32 // Unused Flag
 #define FLAG_UNUSED_0x033    0x33 // Unused Flag
 #define FLAG_UNUSED_0x034    0x34 // Unused Flag
@@ -1390,10 +1390,12 @@
 #define FLAG_UNUSED_0x881                           (SYSTEM_FLAGS + 0x21) // Unused Flag
 #define FLAG_UNUSED_0x882                           (SYSTEM_FLAGS + 0x22) // Unused Flag
 #define FLAG_UNUSED_0x883                           (SYSTEM_FLAGS + 0x23) // Unused Flag
-#define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag
-#define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
-#define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag
-#define FLAG_UNUSED_0x887                           (SYSTEM_FLAGS + 0x27) // Unused Flag
+// Start qol_field_moves
+#define FLAG_SYS_USE_CUT                            (SYSTEM_FLAGS + 0x24)
+#define FLAG_SYS_USE_SURF                           (SYSTEM_FLAGS + 0x25)
+#define FLAG_SYS_USE_ROCK_SMASH                     (SYSTEM_FLAGS + 0x26)
+#define FLAG_SYS_USE_WATERFALL                      (SYSTEM_FLAGS + 0x27)
+// End qol_field_moves
 
 #define FLAG_SYS_USE_FLASH                          (SYSTEM_FLAGS + 0x28)
 #define FLAG_SYS_USE_STRENGTH                       (SYSTEM_FLAGS + 0x29)

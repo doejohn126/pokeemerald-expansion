@@ -105,5 +105,16 @@ void MoveDeleterChooseMoveToForget(void);
 bool32 IsItemFlute(u16 item);
 void ItemUseCB_UsePokevial(u8 taskId, TaskFunc task); //Pokevial Branch
 void InitPartyMenuForPokevialFromField(u8 taskId); //Pokevial Branch
+// Start qol_field_moves
+// These are all moved from src/party_menu.c
+u8 CanTeachMove(struct Pokemon *, u16);
+
+enum {
+    CAN_LEARN_MOVE,
+    CANNOT_LEARN_MOVE,
+    ALREADY_KNOWS_MOVE,
+    CANNOT_LEARN_MOVE_IS_EGG
+};
+// End qol_field_moves
 
 #endif // GUARD_PARTY_MENU_H

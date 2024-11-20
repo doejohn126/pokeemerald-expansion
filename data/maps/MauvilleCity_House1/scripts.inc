@@ -4,6 +4,7 @@ MauvilleCity_House1_MapScripts::
 MauvilleCity_House1_EventScript_RockSmashDude::
 	lock
 	faceplayer
+	goto_if_set FLAG_PICKAXE, MauvilleCity_House1_EventScript_ReceivedPickaxe
 	goto_if_set FLAG_RECEIVED_HM_ROCK_SMASH, MauvilleCity_House1_EventScript_ReceivedRockSmash
 	msgbox MauvilleCity_House1_Text_ImRockSmashDudeTakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_HM_ROCK_SMASH
@@ -15,6 +16,13 @@ MauvilleCity_House1_EventScript_RockSmashDude::
 
 MauvilleCity_House1_EventScript_ReceivedRockSmash::
 	msgbox MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock, MSGBOX_DEFAULT
+	giveitem ITEM_ROCKSMASH_TOOL
+	setflag FLAG_PICKAXE
+	release
+	end
+
+MauvilleCity_House1_EventScript_ReceivedPickaxe::
+	msgbox MauvillePickaxeOrRockSmash, MSGBOX_DEFAULT
 	release
 	end
 
@@ -39,8 +47,21 @@ MauvilleCity_House1_Text_ExplainRockSmash:
 	.string "Yes, sir! Smash rocks aside, I say!\n"
 	.string "Woohoo!$"
 
+MauvillePickaxeOrRockSmash:
+	.string "Hmm, I might become Pickaxe Man again.\n"
+	.string "To be fair Pokémon did remove HM's.\p"
+	.string "Eh screw it, I'll be both! Woohoo!$"
+
 MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock:
-	.string "Oh, yes, if you smash a rock, a POKéMON\n"
-	.string "could come flying out of hiding.\p"
-	.string "Woohoo!$"
+	.string "....... .......\n"
+	.string "What??\p"
+	.string "Oh, I think I know!\n"
+	.string "You must not be satisfied with my HM!\p"
+	.string "I got you covered because back in the\n"
+	.string "day, I used to be Pickaxe Dude!\p"
+	.string "Okay well, maybe they called me Pickaxe\n"
+	.string "Guy but I never liked that name.\p"
+	.string "I'll tell ya what, you can have one of my\n"
+	.string "old trusty Pickaxes! Woohoo!$"
+
 

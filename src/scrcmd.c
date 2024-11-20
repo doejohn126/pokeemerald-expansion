@@ -54,6 +54,7 @@
 #include "constants/event_objects.h"
 #include "constants/map_types.h"
 #include "pokevial.h" //Pokevial Branch
+#include "qol_field_moves.h" // qol_field_moves
 
 typedef u16 (*SpecialFunc)(void);
 typedef void (*NativeFunc)(struct ScriptContext *ctx);
@@ -2601,3 +2602,13 @@ bool8 ScrCmd_pokevial(struct ScriptContext *ctx)
     return TRUE;
 }
 //End Pokevial Branch
+// Start qol_field_moves
+bool8 ScrCmd_checkpartylearnknowsfieldmove(struct ScriptContext *ctx)
+{
+    u16 machine = ScriptReadHalfword(ctx);
+
+    PartyHasMonLearnsKnowsFieldMove(machine);
+
+    return FALSE;
+}
+// End qol_field_moves

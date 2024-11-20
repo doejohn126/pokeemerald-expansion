@@ -51,6 +51,22 @@ RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor:
 
 `
 
+script ImDoneWithThis {
+    lock
+    faceplayer
+    goto_if_set(FLAG_CANDY_JAR, MightMissIt)
+    msgbox(NoMoreAddiction)
+    giveitem(ITEM_SWEETSCENT_TOOL)
+    release
+    end
+}
+
+script MightMissIt {
+    msgbox(HopeNot)
+    release
+    end
+}
+
 script SkyKid {
     lock
     faceplayer
@@ -113,6 +129,20 @@ script skykidrematch {
     giveitem(ITEM_EXP_CANDY_M, 3)
     release
     end
+}
+
+text HopeNot {
+    "Oh no. I'm already missing my candy.\n"
+    "Whatever it's too late I'm done with\l"
+    "candy until next year!"
+}
+
+text NoMoreAddiction {
+    "Oww... my teeth..\n"
+    "Alright that's it I'm done with this!\p"
+    "I'm about sick and tired of my candy\n"
+    "addiction!\p"
+    "Get rid of this for me please."
 }
 
 text BeatNorman {

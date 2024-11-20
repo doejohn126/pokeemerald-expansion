@@ -1310,6 +1310,7 @@ SootopolisCity_EventScript_Wallace::
 SootopolisCity_EventScript_GiveWaterfall::
 	msgbox SootopolisCity_Text_ThankYouForHelpAcceptThis, MSGBOX_DEFAULT
 	giveitem ITEM_HM_WATERFALL
+	giveitem ITEM_WATERFALL_TOOL
 	setflag FLAG_RECEIVED_HM_WATERFALL
 	msgbox SootopolisCity_Text_ExplainWaterfallGoToGym, MSGBOX_DEFAULT
 	closemessage
@@ -1705,7 +1706,7 @@ SootopolisCity_Text_ThankYouForHelpAcceptThis:
 	.string "Thanks to your help, SOOTOPOLIS…\n"
 	.string "No, all of HOENN was saved.\p"
 	.string "On behalf of the people, I thank you.\p"
-	.string "This is a gift from me.\n"
+	.string "These are some gifts from me.\n"
 	.string "Please accept it.$"
 
 SootopolisCity_Text_ExplainWaterfallGoToGym:

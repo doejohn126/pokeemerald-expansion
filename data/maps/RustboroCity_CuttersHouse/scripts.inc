@@ -7,6 +7,7 @@ RustboroCity_CuttersHouse_EventScript_Cutter::
 	goto_if_set FLAG_RECEIVED_HM_CUT, RustboroCity_CuttersHouse_EventScript_ExplainCut
 	msgbox RustboroCity_CuttersHouse_Text_YouCanPutThisHMToGoodUse, MSGBOX_DEFAULT
 	giveitem ITEM_HM_CUT
+	giveitem ITEM_CUT_TOOL
 	setflag FLAG_RECEIVED_HM_CUT
 	msgbox RustboroCity_CuttersHouse_Text_ExplainCut, MSGBOX_DEFAULT
 	release
@@ -31,7 +32,8 @@ RustboroCity_CuttersHouse_Text_YouCanPutThisHMToGoodUse:
 	.string "I'm sure that you can put this\n"
 	.string "HIDDEN MACHINE to good use.\p"
 	.string "No need to be modest or shy.\n"
-	.string "Go on, take it!$"
+	.string "Go on, take it!\n"
+	.string "Oh, and while you're at it, have this too!$"
 
 RustboroCity_CuttersHouse_Text_ExplainCut:
 	.string "That HIDDEN MACHINE, or HM for\n"

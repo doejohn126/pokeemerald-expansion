@@ -559,6 +559,7 @@ PetalburgCity_EventScript_Scott::
 	delay 30
 	msgbox PetalburgCity_Text_ImLookingForTalentedTrainers, MSGBOX_DEFAULT
 	closemessage
+	giveitem ITEM_POKEMON_BOX_LINK, 1
 	call_if_eq VAR_0x8008, 0, PetalburgCity_EventScript_ScottExit0
 	call_if_eq VAR_0x8008, 1, PetalburgCity_EventScript_ScottExit1
 	call_if_eq VAR_0x8008, 2, PetalburgCity_EventScript_ScottExit2
@@ -764,4 +765,7 @@ PetalburgCity_Text_WellMaybeNot:
 PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "I'm roaming the land in search of\n"
 	.string "talented TRAINERS.\p"
-	.string "I'm sorry to have taken your time.$"
+	.string "I'm sorry to have taken your time.\n"
+	.string "Here's my way to repay you.\p"
+	.string "This tool basically allows you to go\n"
+	.string "straight to your box.$"
