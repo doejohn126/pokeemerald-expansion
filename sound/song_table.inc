@@ -901,6 +901,8 @@ gSongTable::
 	song mus_hg_obtain_b_points, 2, 2
 	song mus_hg_win_minigame, 2, 2
 	song mus_vs_iris, 0, 0
+	song mus_vs_gym_leader_remix, 0, 0
+	song mus_vs_champion_nemona, 0, 0
 	.align 2
 dummy_song_header:
 	.byte 0, 0, 0, 0

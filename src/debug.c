@@ -4993,6 +4993,8 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_HG_OBTAIN_B_POINTS) \
     X(MUS_HG_WIN_MINIGAME) \
     X(MUS_VS_IRIS) \
+    X(MUS_VS_GYM_LEADER_REMIX) \
+    X(MUS_VS_CHAMPION_NEMONA) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

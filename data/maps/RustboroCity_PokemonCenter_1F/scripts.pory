@@ -57,6 +57,7 @@ script ImDoneWithThis {
     goto_if_set(FLAG_CANDY_JAR, MightMissIt)
     msgbox(NoMoreAddiction)
     giveitem(ITEM_SWEETSCENT_TOOL)
+    setflag(FLAG_CANDY_JAR)
     release
     end
 }

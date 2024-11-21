@@ -1629,6 +1629,8 @@ SECTIONS {
         sound/songs/midi/mus_hg_obtain_b_points.o(.rodata);
         sound/songs/midi/mus_hg_win_minigame.o(.rodata);
         sound/songs/midi/mus_vs_iris.o(.rodata);
+        sound/songs/midi/mus_vs_gym_leader_remix.o(.rodata);
+        sound/songs/midi/mus_vs_champion_nemona.o(.rodata);
     } > ROM =0
 
     lib_rodata :

@@ -3339,8 +3339,16 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Machop
-Level: 19
+Machoke
+Level: 37
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Throh
+Level: 37
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Tauros Paldean Combat Breed
+Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_NOB_2 ===
@@ -8216,12 +8224,16 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Meditite
-Level: 18
+Medicham
+Level: 38
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Makuhita
-Level: 18
+Hitmonchan
+Level: 37
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Pignite
+Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_CORA ===
@@ -8259,12 +8271,16 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Meditite
-Level: 26
+Medicham
+Level: 44
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Makuhita
-Level: 26
+Hitmonchan
+Level: 44
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+
+Emboar
+Level: 44
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 === TRAINER_CYNDY_3 ===
@@ -9729,13 +9745,17 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Zangoose
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Quilladin
+Level: 38
+IVs: 0 HP / 20 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Seviper
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Drizzile
+Level: 37
+IVs: 0 HP / 0 Atk / 0 Def / 20 SpA / 0 SpD / 0 Spe
+
+Torracat
+Level: 37
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 20 Spe
 
 === TRAINER_TABITHA_MOSSDEEP ===
 Name: TABITHA
@@ -14697,13 +14717,17 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Meditite
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Hattrem
+Level: 38
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 20 SpD / 0 Spe
 
-Spoink
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Grumpig
+Level: 38
+IVs: 0 HP / 0 Atk / 0 Def / 20 SpA / 0 SpD / 0 Spe
+
+Gothorita
+Level: 38
+IVs: 0 HP / 0 Atk / 0 Def / 20 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DEVAN ===
 Name: DEVAN
