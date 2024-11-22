@@ -125,8 +125,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         )
         .levelUpLearnset = sDartrixLevelUpLearnset,
         .teachableLearnset = sDartrixTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_DECIDUEYE},
-                                {EVO_NONE, 0, SPECIES_DECIDUEYE_HISUIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL_NIGHT, 34, SPECIES_DECIDUEYE},
+                                {EVO_LEVEL_DAY, 34, SPECIES_DECIDUEYE_HISUIAN}),
     },
 
     [SPECIES_DECIDUEYE] =
@@ -134,8 +134,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseHP        = 78,
         .baseAttack    = 107,
         .baseDefense   = 75,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 100,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 80,
         .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_GRASS, TYPE_GHOST),
         .catchRate = 45,
@@ -196,8 +196,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseHP        = 88,
         .baseAttack    = 112,
         .baseDefense   = 80,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 95,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 85,
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FIGHTING),
         .catchRate = 45,
@@ -753,7 +753,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_TOUCANNON] =
     {
-        .baseHP        = 80,
+        .baseHP        = 90,
         .baseAttack    = 120,
         .baseDefense   = 75,
         .baseSpeed     = 60,
@@ -874,12 +874,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sYungoosLevelUpLearnset,
         .teachableLearnset = sYungoosTeachableLearnset,
         .eggMoveLearnset = sYungoosEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 20, SPECIES_GUMSHOOS}),
+        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 18, SPECIES_GUMSHOOS}),
     },
 
     [SPECIES_GUMSHOOS] =
     {
-        .baseHP        = 88,
+        .baseHP        = 98,
         .baseAttack    = 110,
         .baseDefense   = 60,
         .baseSpeed     = 45,
@@ -1644,7 +1644,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_HONEY_GATHER, ABILITY_SHIELD_DUST, ABILITY_SWEET_VEIL },
+        .abilities = { ABILITY_SWARM, ABILITY_SHIELD_DUST, ABILITY_SWEET_VEIL },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Cutiefly"),
         .cryId = CRY_CUTIEFLY,
@@ -1709,7 +1709,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_HONEY_GATHER, ABILITY_SHIELD_DUST, ABILITY_SWEET_VEIL },
+        .abilities = { ABILITY_SWARM, ABILITY_SHIELD_DUST, ABILITY_SWEET_VEIL },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Ribombee"),
         .cryId = CRY_RIBOMBEE,
@@ -1869,6 +1869,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .eggMoveLearnset = sRockruffEggMoveLearnset,
         .formSpeciesIdTable = sRockruffFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL_DAY, 25, SPECIES_LYCANROC_MIDDAY},
+                                {EVO_DUSK, 25, SPECIES_LYCANROC_DUSK},
                                 {EVO_LEVEL_NIGHT, 25, SPECIES_LYCANROC_MIDNIGHT}),
     },
 
@@ -2118,7 +2119,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_WISHIWASHI
     [SPECIES_WISHIWASHI_SOLO] =
     {
-        .baseHP        = 45,
+        .baseHP        = 55,
         .baseAttack    = 20,
         .baseDefense   = 20,
         .baseSpeed     = 40,
@@ -2182,7 +2183,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_WISHIWASHI_SCHOOL] =
     {
-        .baseHP        = 45,
+        .baseHP        = 55,
         .baseAttack    = 140,
         .baseDefense   = 130,
         .baseSpeed     = 30,
@@ -2444,7 +2445,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_OWN_TEMPO, ABILITY_STAMINA, ABILITY_INNER_FOCUS },
+        .abilities = { ABILITY_OWN_TEMPO, ABILITY_STAMINA, ABILITY_TANGLING_HAIR },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Mudsdale"),
         .cryId = CRY_MUDSDALE,
@@ -2744,7 +2745,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpeed     = 45,
         .baseSpAttack  = 80,
         .baseSpDefense = 90,
-        .types = MON_TYPES(TYPE_GRASS),
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FIGHTING),
         .catchRate = 75,
         .expYield = 168,
         .evYield_Attack = 2,
@@ -2802,7 +2803,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpeed     = 45,
         .baseSpAttack  = 80,
         .baseSpDefense = 90,
-        .types = MON_TYPES(TYPE_GRASS),
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FIGHTING),
         .catchRate = 75,
         .expYield = 168,
         .evYield_Attack = 2,
@@ -2921,7 +2922,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_SHIINOTIC] =
     {
-        .baseHP        = 60,
+        .baseHP        = 75,
         .baseAttack    = 45,
         .baseDefense   = 80,
         .baseSpeed     = 30,
@@ -2996,7 +2997,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .expYield = 64,
         .evYield_Speed = 1,
         .itemRare = ITEM_SMOKE_BALL,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
@@ -3616,7 +3617,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseDefense   = 90,
         .baseSpeed     = 80,
         .baseSpAttack  = 40,
-        .baseSpDefense = 60,
+        .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 45,
         .expYield = 172,
@@ -3856,7 +3857,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sSandygastLevelUpLearnset,
         .teachableLearnset = sSandygastTeachableLearnset,
         .eggMoveLearnset = sSandygastEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_PALOSSAND}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_PALOSSAND}),
     },
 
     [SPECIES_PALOSSAND] =
@@ -4049,12 +4050,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
 #define SILVALLY_SPECIES_INFO(type, _palette)                               \
     {                                                                       \
-        .baseHP        = 95,                                                \
-        .baseAttack    = 95,                                                \
-        .baseDefense   = 95,                                                \
-        .baseSpeed     = 95,                                                \
-        .baseSpAttack  = 95,                                                \
-        .baseSpDefense = 95,                                                \
+        .baseHP        = 100,                                                \
+        .baseAttack    = 100,                                                \
+        .baseDefense   = 100,                                                \
+        .baseSpeed     = 100,                                                \
+        .baseSpAttack  = 100,                                                \
+        .baseSpDefense = 100,                                                \
         .types = MON_TYPES(type),                                           \
         .catchRate = 3,                                                     \
         .expYield = 257,                                                    \
@@ -4160,11 +4161,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
 #define MINIOR_METEOR_SPECIES_INFO(Form)                    \
     {                                                       \
-        .baseHP        = 60,                                \
-        .baseAttack    = 60,                                \
+        .baseHP        = 70,                                \
+        .baseAttack    = 70,                                \
         .baseDefense   = 100,                               \
-        .baseSpeed     = 60,                                \
-        .baseSpAttack  = 60,                                \
+        .baseSpeed     = 70,                                \
+        .baseSpAttack  = 70,                                \
         .baseSpDefense = 100,                               \
         .weight = 400,                                      \
         .description = gMiniorMeteorPokedexText,            \
@@ -4196,12 +4197,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
 #define MINIOR_CORE_SPECIES_INFO(Form, color, iconPal)          \
     {                                                           \
-        .baseHP        = 60,                                    \
+        .baseHP        = 70,                                    \
         .baseAttack    = 100,                                   \
-        .baseDefense   = 60,                                    \
+        .baseDefense   = 70,                                    \
         .baseSpeed     = 120,                                   \
         .baseSpAttack  = 100,                                   \
-        .baseSpDefense = 60,                                    \
+        .baseSpDefense = 70,                                    \
         .weight = 3,                                            \
         .description = gMiniorCorePokedexText,                  \
         .frontPic = gMonFrontPic_MiniorCore,                    \
@@ -4320,7 +4321,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_MAGMA_ARMOR, ABILITY_DAUNTLESS_SHIELD },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Turtonator"),
         .cryId = CRY_TURTONATOR,
@@ -4369,7 +4370,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_TOGEDEMARU] =
     {
         .baseHP        = 65,
-        .baseAttack    = 98,
+        .baseAttack    = 108,
         .baseDefense   = 63,
         .baseSpeed     = 96,
         .baseSpAttack  = 40,
@@ -4550,7 +4551,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_MIMIKYU_BUSTED] =
     {
         .baseHP        = 55,
-        .baseAttack    = 90,
+        .baseAttack    = 95,
         .baseDefense   = 80,
         .baseSpeed     = 96,
         .baseSpAttack  = 50,
@@ -4781,8 +4782,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_DRAMPA
     [SPECIES_DRAMPA] =
     {
-        .baseHP        = 78,
-        .baseAttack    = 60,
+        .baseHP        = 88,
+        .baseAttack    = 50,
         .baseDefense   = 85,
         .baseSpeed     = 36,
         .baseSpAttack  = 135,
@@ -4967,7 +4968,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sJangmoOLevelUpLearnset,
         .teachableLearnset = sJangmoOTeachableLearnset,
         .eggMoveLearnset = sJangmoOEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_HAKAMO_O}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_HAKAMO_O}),
     },
 
     [SPECIES_HAKAMO_O] =
@@ -6946,6 +6947,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .isFrontierBanned = TRUE,
         .levelUpLearnset = sMeltanLevelUpLearnset,
         .teachableLearnset = sMeltanTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 61, SPECIES_MELMETAL}),
     },
 
     [SPECIES_MELMETAL] =
