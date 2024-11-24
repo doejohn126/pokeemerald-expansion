@@ -23,6 +23,7 @@
 #include "window.h"
 #include "constants/songs.h"
 #include "constants/rgb.h"
+#include "tx_randomizer_and_challenges.h"
 
 #define STARTER_MON_COUNT   3
 
@@ -59,6 +60,8 @@ const u32 gBirchGrassTilemap[] = INCBIN_U32("graphics/starter_choose/birch_grass
 const u32 gBirchBagGrass_Gfx[] = INCBIN_U32("graphics/starter_choose/tiles.4bpp.lz");
 const u32 gPokeballSelection_Gfx[] = INCBIN_U32("graphics/starter_choose/pokeball_selection.4bpp.lz");
 static const u32 sStarterCircle_Gfx[] = INCBIN_U32("graphics/starter_choose/starter_circle.4bpp.lz");
+
+EWRAM_DATA static u16 sStarterList[3] = {0};
 
 static const struct WindowTemplate sWindowTemplates[] =
 {
@@ -406,33 +409,61 @@ static const struct SpriteTemplate sSpriteTemplate_StarterCircle =
 // .text
 u16 GetStarterPokemon(u16 chosenStarterId)
 {
+    //tx_randomizer_and_challenges
+    u16 mon = sStarterMonHoenn[chosenStarterId];
+
     if (chosenStarterId > STARTER_MON_COUNT)
         chosenStarterId = 0;
-    switch (gSpecialVar_0x800A)
+    
+        //tx_randomizer_and_challenges
+    if (IsOneTypeChallengeActive())
     {
-    case 0:
-        return sStarterMonHoenn[chosenStarterId];
-    case 1:
-        return sStarterMonKanto[chosenStarterId];
-    case 2:
-        return sStarterMonJohto[chosenStarterId];
-    case 3:
-        return sStarterMonHoenn[chosenStarterId];
-    case 4:
-        return sStarterMonSinnoh[chosenStarterId];
-    case 5:
-        return sStarterMonUnova[chosenStarterId];
-    case 6:
-        return sStarterMonKalos[chosenStarterId];
-    case 7:
-        return sStarterMonAlola[chosenStarterId];
-    case 8:
-        return sStarterMonGalar[chosenStarterId];
-    case 9:
-        return sStarterMonPaldea[chosenStarterId];
-    default:
-        return sStarterMonHoenn[chosenStarterId];
-    } 
+        if (sStarterList[chosenStarterId] == 0)
+            sStarterList[chosenStarterId] = PickRandomStarterForOneTypeChallenge(sStarterList, chosenStarterId);
+        mon = sStarterList[chosenStarterId];
+        return mon;
+    }
+    else if (gSaveBlock1Ptr->tx_Random_Starter || gSaveBlock1Ptr->tx_Random_Starter_Stage2)
+    {
+        if (sStarterList[chosenStarterId] == 0)
+            sStarterList[chosenStarterId] = PickRandomStarter(sStarterList, chosenStarterId);
+        mon = sStarterList[chosenStarterId];
+        return mon;
+    }
+    
+    #ifndef NDEBUG
+        MgbaPrintf(MGBA_LOG_DEBUG, "new species[%d]", mon);
+    #endif
+
+    if (!(IsOneTypeChallengeActive()) || gSaveBlock1Ptr->tx_Random_Starter || gSaveBlock1Ptr->tx_Random_Starter_Stage2)
+    {
+        switch (gSpecialVar_0x800A)
+        {
+        case 0:
+            return sStarterMonHoenn[chosenStarterId];
+        case 1:
+            return sStarterMonKanto[chosenStarterId];
+        case 2:
+            return sStarterMonJohto[chosenStarterId];
+        case 3:
+            return sStarterMonHoenn[chosenStarterId];
+        case 4:
+            return sStarterMonSinnoh[chosenStarterId];
+        case 5:
+            return sStarterMonUnova[chosenStarterId];
+        case 6:
+            return sStarterMonKalos[chosenStarterId];
+        case 7:
+            return sStarterMonAlola[chosenStarterId];
+        case 8:
+            return sStarterMonGalar[chosenStarterId];
+        case 9:
+            return sStarterMonPaldea[chosenStarterId];
+        default:
+            return sStarterMonHoenn[chosenStarterId];
+        }
+    }
+    return sStarterMonHoenn[chosenStarterId];
 }
 
 static void VblankCB_StarterChoose(void)

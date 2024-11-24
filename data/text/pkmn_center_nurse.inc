@@ -73,3 +73,8 @@ gText_UnknownCap::
 
 gText_TheRoxanneCap::
 	.string "The current level cap is 17.$"
+
+gText_PkmnCenterChallenge_NoVisitsLeft:: @ tx_difficulty_challenge
+    .string "Sorry, but you are playing with\n"
+    .string "the POKéCENTER challenge!\p"
+    .string "Good luck!{PAUSE_UNTIL_PRESS}$"

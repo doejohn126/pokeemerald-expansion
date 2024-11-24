@@ -363,6 +363,8 @@ SECTIONS {
         src/pokemon_sprite_visualizer.o(.text);
         src/expansion_intro.o(.text);
         src/sound_check_menu.o(.text);
+        src/tx_rac_menu.o(.text);
+        src/tx_randomizer_and_challenges.o(.text);
     } > ROM =0
 
     script_data :
@@ -623,6 +625,7 @@ SECTIONS {
 		src/battle_ai_util.o(.rodata);
         src/trader.o(.rodata);
         src/starter_choose.o(.rodata);
+        src/event_data.o(.rodata);
         src/wallclock.o(.rodata);
         src/pokeblock.o(.rodata);
         src/fldeff_flash.o(.rodata);
@@ -733,6 +736,8 @@ SECTIONS {
         src/pokemon_sprite_visualizer.o(.rodata);
         src/expansion_intro.o(.rodata);
         src/sound_check_menu.o(.rodata);
+        src/tx_rac_menu.o(.rodata);
+        src/tx_randomizer_and_challenges.o(.rodata);
     } > ROM =0
 
     song_data :

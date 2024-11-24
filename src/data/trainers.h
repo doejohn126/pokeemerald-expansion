@@ -16371,34 +16371,34 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6594
-            .species = SPECIES_MAGIKARP,
+            .species = SPECIES_PIPLUP,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6596
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 6595
-            .lvl = 5,
+            .lvl = 22,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 6598
-            .species = SPECIES_TENTACOOL,
+            .species = SPECIES_HORSEA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6600
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 6599
-            .lvl = 10,
+            .lvl = 22,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 6602
-            .species = SPECIES_MAGIKARP,
+            .species = SPECIES_TYMPOLE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6604
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 6603
-            .lvl = 15,
+            .lvl = 22,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

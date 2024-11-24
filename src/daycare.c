@@ -26,6 +26,7 @@
 #include "constants/hold_effects.h"
 #include "constants/moves.h"
 #include "constants/region_map_sections.h"
+#include "tx_randomizer_and_challenges.h"
 
 #define IS_DITTO(species) (gSpeciesInfo[species].eggGroups[0] == EGG_GROUP_DITTO || gSpeciesInfo[species].eggGroups[1] == EGG_GROUP_DITTO)
 
@@ -309,7 +310,7 @@ static void ApplyDaycareExperience(struct Pokemon *mon)
     bool8 firstMove;
     u16 learnedMove;
 
-    for (i = 0; i < MAX_LEVEL; i++)
+    for (i = 0; i < GetCurrentPartyLevelCap(); i++)
     {
         // Add the mon's gained daycare experience level by level until it can't level up anymore.
         if (TryIncrementMonLevel(mon))
@@ -1178,6 +1179,8 @@ static bool8 TryProduceOrHatchEgg(struct DayCare *daycare)
             }
             else
             {
+                if (IsNuzlockeActive() && NuzlockeFlagGet(NuzlockeGetCurrentRegionMapSectionId()))
+                    return FALSE;
                 gSpecialVar_0x8004 = i;
                 return TRUE;
             }

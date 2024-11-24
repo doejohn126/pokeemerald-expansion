@@ -78,6 +78,7 @@
 #include "constants/rgb.h"
 #include "constants/songs.h"
 #include "pokevial.h" //Pokevial Branch
+#include "tx_randomizer_and_challenges.h"
 
 enum {
     MENU_SUMMARY,
@@ -2820,6 +2821,7 @@ static void SetPartyMonSelectionActions(struct Pokemon *mons, u8 slotId, u8 acti
 static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
 {
     u8 i, j;
+    bool8 hasFlashAlready, hasFlyAlready = FALSE;
 
     sPartyMenuInternal->numActions = 0;
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUMMARY);
@@ -2831,10 +2833,24 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
         {
             if (GetMonData(&mons[slotId], i + MON_DATA_MOVE1) == sFieldMoves[j])
             {
+                //tx_randomizer_and_challenges
+                if (sFieldMoves[j] == MOVE_FLASH)
+                    hasFlashAlready = TRUE;
+                if (sFieldMoves[j] == MOVE_FLY)
+                    hasFlyAlready = TRUE;
+                
                 AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, j + MENU_FIELD_MOVES);
                 break;
             }
         }
+    }
+
+    if (HMsOverwriteOptionActive() && slotId == 0) //tx_randomizer_and_challenges
+    {
+        if (CheckBagHasItem(ITEM_HM05, 1) && !hasFlashAlready)
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 1 + MENU_FIELD_MOVES);
+        if (CheckBagHasItem(ITEM_HM02, 1) && !hasFlyAlready)
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 5 + MENU_FIELD_MOVES);
     }
 
     if (!InBattlePike())
@@ -5479,6 +5495,20 @@ void ItemUseCB_PPUp(u8 taskId, TaskFunc task)
 u16 ItemIdToBattleMoveId(u16 item)
 {
     return (ItemId_GetPocket(item) == POCKET_TM_HM) ? gItemsInfo[item].secondaryId : MOVE_NONE;
+}
+
+u16 BattleMoveIdToItemId(u16 moveId) //tx_randomizer_and_challenges
+{
+    u8 i;
+    u16 item = gSpecialVar_ItemId;
+    //u16 type = ItemId_GetType(gSpecialVar_ItemId);
+
+    for (i = 0; i < 100 + NUM_HIDDEN_MACHINES; i++)
+    {
+        if (gItemsInfo[item].secondaryId == moveId)
+            return ITEM_TM01 + i;
+    }
+    return ITEM_NONE;
 }
 
 bool8 MonKnowsMove(struct Pokemon *mon, u16 move)

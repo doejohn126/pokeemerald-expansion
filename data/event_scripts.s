@@ -1024,6 +1024,8 @@ EventScript_VsSeekerChargingDone::
 Common_EventScript_MysteryGift::
 	release
 	lockall
+	specialvar VAR_RESULT, IsNuzlockeChallengeActivated
+	goto_if_eq VAR_RESULT, TRUE, MysteryGift_EventScript_CurrentlyUnavailable
 	@ goto_if_unset FLAG_SYS_GAME_CLEAR, MysteryGift_EventScript_CurrentlyUnavailable
 MysteryGift_EventScript_StartMysteryGift::
 	playbgm MUS_HG_MYSTERY_GIFT, FALSE
