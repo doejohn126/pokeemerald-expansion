@@ -2758,63 +2758,63 @@
             "mons": [
               {
                 "min_level": 21,
-                "max_level": 21,
-                "species": "SPECIES_NUMEL"
+                "max_level": 40,
+                "species": "SPECIES_SANDSHREW"
               },
               {
                 "min_level": 21,
-                "max_level": 21,
-                "species": "SPECIES_NUMEL"
+                "max_level": 40,
+                "species": "SPECIES_NOSEPASS"
               },
               {
                 "min_level": 21,
-                "max_level": 21,
-                "species": "SPECIES_MACHOP"
+                "max_level": 40,
+                "species": "SPECIES_ROCKRUFF"
               },
               {
                 "min_level": 20,
-                "max_level": 20,
-                "species": "SPECIES_NUMEL"
+                "max_level": 40,
+                "species": "SPECIES_MUDBRAY"
               },
               {
                 "min_level": 20,
-                "max_level": 20,
+                "max_level": 40,
                 "species": "SPECIES_SPOINK"
               },
               {
                 "min_level": 20,
-                "max_level": 20,
-                "species": "SPECIES_MACHOP"
+                "max_level": 40,
+                "species": "SPECIES_STUFFUL"
               },
               {
                 "min_level": 21,
-                "max_level": 21,
-                "species": "SPECIES_SPOINK"
+                "max_level": 40,
+                "species": "SPECIES_JANGMO_O"
+              },
+              {
+                "min_level": 22,
+                "max_level": 40,
+                "species": "SPECIES_DWEBBLE"
+              },
+              {
+                "min_level": 22,
+                "max_level": 40,
+                "species": "SPECIES_AXEW"
+              },
+              {
+                "min_level": 22,
+                "max_level": 40,
+                "species": "SPECIES_PASSIMIAN"
+              },
+              {
+                "min_level": 22,
+                "max_level": 40,
+                "species": "SPECIES_HERACROSS"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_MACHOP"
-              },
-              {
-                "min_level": 22,
-                "max_level": 22,
-                "species": "SPECIES_NUMEL"
-              },
-              {
-                "min_level": 22,
-                "max_level": 22,
-                "species": "SPECIES_SPOINK"
-              },
-              {
-                "min_level": 22,
-                "max_level": 22,
-                "species": "SPECIES_NUMEL"
-              },
-              {
-                "min_level": 22,
-                "max_level": 22,
-                "species": "SPECIES_SPOINK"
+                "species": "SPECIES_FALINKS"
               }
             ]
           }

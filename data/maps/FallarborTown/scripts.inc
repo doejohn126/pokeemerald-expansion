@@ -264,35 +264,35 @@ FantinaSpin:
 # 144 "data/maps/FallarborTown/scripts.pory"
 	face_up
 # 145 "data/maps/FallarborTown/scripts.pory"
-	delay_16
+	delay_8
 # 146 "data/maps/FallarborTown/scripts.pory"
 	face_left
 # 147 "data/maps/FallarborTown/scripts.pory"
-	delay_16
+	delay_8
 # 148 "data/maps/FallarborTown/scripts.pory"
 	face_down
 # 149 "data/maps/FallarborTown/scripts.pory"
-	delay_16
+	delay_8
 # 150 "data/maps/FallarborTown/scripts.pory"
 	face_right
 # 151 "data/maps/FallarborTown/scripts.pory"
-	delay_16
+	delay_8
 # 152 "data/maps/FallarborTown/scripts.pory"
 	face_up
 # 153 "data/maps/FallarborTown/scripts.pory"
-	delay_16
+	delay_8
 # 154 "data/maps/FallarborTown/scripts.pory"
 	face_left
 # 155 "data/maps/FallarborTown/scripts.pory"
-	delay_16
+	delay_8
 # 156 "data/maps/FallarborTown/scripts.pory"
 	face_down
 # 157 "data/maps/FallarborTown/scripts.pory"
-	delay_16
+	delay_8
 # 158 "data/maps/FallarborTown/scripts.pory"
 	face_right
 # 159 "data/maps/FallarborTown/scripts.pory"
-	delay_16
+	delay_8
 # 160 "data/maps/FallarborTown/scripts.pory"
 	face_player
 	step_end

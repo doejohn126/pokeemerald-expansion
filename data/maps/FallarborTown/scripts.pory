@@ -142,21 +142,21 @@ script Mismagius {
 
 movement FantinaSpin {
 	face_up
-	delay_16
+	delay_8
 	face_left
-	delay_16
+	delay_8
 	face_down
-	delay_16
+	delay_8
 	face_right
-	delay_16
+	delay_8
 	face_up
-	delay_16
+	delay_8
 	face_left
-	delay_16
+	delay_8
 	face_down
-	delay_16
+	delay_8
 	face_right
-	delay_16
+	delay_8
 	face_player
 }
 

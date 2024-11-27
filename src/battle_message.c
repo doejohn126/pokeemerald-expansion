@@ -4132,6 +4132,8 @@ static const u8 sText_FantinaLast[] = _("Oh, heavens. What is this? Is this my\n
 static const u8 sText_FantinaCrit[] = _("Oh no. Pas bon at all.\p");
 static const u8 sText_FantinaLow[] = _("Never give up, never surrender!\p");
 static const u8 sText_FantinaUnaffected[] = _("Ohohoho! Don't forget now that all my\nPokémon is ghosts. And never forget\labout the Levitate ability!\p");
+static const u8 sText_MaxieStartMessage[] = _("This is the result for messing with our\nplans.\p");
+static const u8 sText_MaxieLast[] = _("How is this imbecile winning?\nThis is insane!\p");
 
 
 
@@ -4341,6 +4343,12 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgFirstCriticalHit = sText_FantinaCrit,
         .msgLastLowHp = sText_FantinaLow,
         .msgPlayerMonUnaffected = sText_FantinaUnaffected,
+    },
+    {
+        .trainerId = TRAINER_MAXIE_MT_CHIMNEY,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_MaxieLast,
+        .msgBeforeFirstTurn = sText_MaxieStartMessage,
     },
 };
 

@@ -90,9 +90,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Geodude
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Relicanth
+Level: 42
+IVs: 0 HP / 0 Atk / 20 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bastiodon
+Level: 42
+IVs: 0 HP / 0 Atk / 20 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
 Name: GRUNT
@@ -2375,9 +2379,13 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bruxish
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 20 SpA / 0 SpD / 0 Spe
+
+Seviper
+Level: 42
+IVs: 20 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHEILA ===
 Name: SHEILA
@@ -2388,8 +2396,16 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 21
+Delibird
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 20 SpA / 0 SpD / 0 Spe
+
+Ribombee
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 20 SpA / 0 SpD / 0 Spe
+
+Tinkatuff
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHIRLEY ===
@@ -2401,9 +2417,17 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Numel
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Oricorio Baile
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 20 Spe
+
+Frosmoth
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 20 SpA / 0 SpD / 0 Spe
+
+Purugly
+Level: 42
+IVs: 0 HP / 20 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JESSICA_1 ===
 Name: JESSICA
@@ -2775,8 +2799,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Numel
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 38
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 21 SpD / 0 Spe
+
+Clodsire
+Level: 38
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 21 SpD / 0 Spe
 
 === TRAINER_STEVE_2 ===
 Name: STEVE
@@ -6099,12 +6127,16 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Meditite
-Level: 21
+Sirfetchd
+Level: 43
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Makuhita
-Level: 21
+Flamigo
+Level: 43
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+
+Comfey
+Level: 43
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_SHELBY_2 ===
@@ -6116,12 +6148,20 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Meditite
-Level: 30
+Sirfetchd
+Level: 49
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-Makuhita
-Level: 30
+Flamigo
+Level: 49
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+Comfey
+Level: 49
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+Kleavor
+Level: 49
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_SHELBY_3 ===
@@ -11322,9 +11362,17 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Castform
+Level: 38
+IVs: 0 HP / 0 Atk / 0 Def / 20 SpA / 0 SpD / 0 Spe
+- Sunny Day
+- Flamethrower
+- Weather Ball
+- Substitute
+
+Sandaconda
+Level: 38
+IVs: 0 HP / 0 Atk / 20 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CLARENCE ===
 Name: CLARENCE
@@ -11610,23 +11658,39 @@ Pic: Magma Admin
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Mon Choices
 
-Numel
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Salazzle
+Level: 39
+IVs: 6 HP / 6 Atk / 6 Def / 18 SpA / 6 SpD / 18 Spe
+- Venoshock
+- Poison Gas
+- Will O Wisp
+- Burning Jealousy
 
-Poochyena
-Level: 20
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Golbat
+Level: 40
+IVs: 6 HP / 18 Atk / 6 Def / 6 SpA / 18 SpD / 6 Spe
+- Poison Fang
+- Bite
+- Leech Life
+- Dual Wingbeat
 
-Numel
-Level: 22
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Krokorok
+Level: 40
+IVs: 6 HP / 18 Atk / 6 Def / 6 SpA / 6 SpD / 18 Spe
+- Crunch
+- Swagger
+- Bulldoze
+- Hone Claws
 
-Zubat
-Level: 22
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Infernape
+Level: 41
+IVs: 6 HP / 20 Atk / 6 Def / 6 SpA / 6 SpD / 20 Spe
+- Mach Punch
+- Close Combat
+- Fire Punch
+- Torment
 
 === TRAINER_JONATHAN ===
 Name: JONATHAN
@@ -11722,9 +11786,9 @@ Class: Magma Leader
 Pic: Magma Leader Maxie
 Gender: Male
 Music: Magma
-Items: Super Potion / Super Potion
+Items: Hyper Potion / Super Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Mightyena
 Level: 37
@@ -11746,19 +11810,48 @@ Gender: Male
 Music: Magma
 Items: Super Potion / Super Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Mightyena
-Level: 24
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Zweilous
+Level: 43
+IVs: 18 HP / 24 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Crunch
+- Dragon Pulse
+- Roar
+- Work Up
 
-Zubat
-Level: 24
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Magmar
+Level: 42
+IVs: 18 HP / 18 Atk / 18 Def / 24 SpA / 18 SpD / 18 Spe
+- Lava Plume
+- Confuse Ray
+- Low Kick
+- Clear Smog
+
+Grimmsnarl
+Level: 42
+IVs: 18 HP / 18 Atk / 18 Def / 24 SpA / 18 SpD / 18 Spe
+- Spirit Break
+- False Surrender
+- Fake Out
+- Swagger
+
+Incineroar
+Level: 43
+IVs: 18 HP / 24 Atk / 24 Def / 24 SpA / 18 SpD / 18 Spe
+- Temper Flare
+- Darkest Lariat
+- Swagger
+- Cross Chop
 
 Camerupt
-Level: 25
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Level: 44
+Ability: Solid Rock
+IVs: 18 HP / 18 Atk / 18 Def / 24 SpA / 26 SpD / 18 Spe
+- Earth Power
+- Amnesia
+- Lava Plume
+- Rock Slide
 
 === TRAINER_TIANA ===
 Name: TIANA
