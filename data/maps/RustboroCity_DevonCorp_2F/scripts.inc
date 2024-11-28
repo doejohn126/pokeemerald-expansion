@@ -66,6 +66,8 @@ RustboroCity_DevonCorp_2F_EventScript_FossilScientist::
 	goto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_NoticeRootFossil
 	checkitem ITEM_CLAW_FOSSIL
 	goto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_NoticeClawFossil
+	checkitem ITEM_HELIX_FOSSIL
+	goto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_NoticeHelixFossil
 	release
 	end
 
@@ -82,6 +84,69 @@ RustboroCity_DevonCorp_2F_EventScript_NoticeRootFossil::
 	checkitem ITEM_CLAW_FOSSIL
 	goto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_ChooseFossil
 	goto RustboroCity_DevonCorp_2F_EventScript_GiveRootFossil
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_NoticeHelixFossil::
+	closemessage
+	playse SE_PIN
+	applymovement LOCALID_FOSSIL_SCIENTIST, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_FOSSIL_SCIENTIST, Common_Movement_Delay48
+	waitmovement 0
+	msgbox RustboroCity_DevonCorp_2F_Text_WantToBringFossilBackToLife, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, RustboroCity_DevonCorp_2F_EventScript_DeclineGiveFossil
+	goto RustboroCity_DevonCorp_2F_EventScript_GiveHelixFossil
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_NoticeOldAmber::
+	closemessage
+	playse SE_PIN
+	applymovement LOCALID_FOSSIL_SCIENTIST, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_FOSSIL_SCIENTIST, Common_Movement_Delay48
+	waitmovement 0
+	msgbox RustboroCity_DevonCorp_2F_Text_WantToBringFossilBackToLife, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, RustboroCity_DevonCorp_2F_EventScript_DeclineGiveFossil
+	goto RustboroCity_DevonCorp_2F_EventScript_GiveOldAmber
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_NoticeDomeFossil::
+	closemessage
+	playse SE_PIN
+	applymovement LOCALID_FOSSIL_SCIENTIST, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_FOSSIL_SCIENTIST, Common_Movement_Delay48
+	waitmovement 0
+	msgbox RustboroCity_DevonCorp_2F_Text_WantToBringFossilBackToLife, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, RustboroCity_DevonCorp_2F_EventScript_DeclineGiveFossil
+	goto RustboroCity_DevonCorp_2F_EventScript_GiveDomeFossil
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_GiveHelixFossil::
+	bufferitemname STR_VAR_1, ITEM_HELIX_FOSSIL
+	msgbox RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher, MSGBOX_DEFAULT
+	removeitem ITEM_HELIX_FOSSIL
+	setvar VAR_FOSSIL_RESURRECTION_STATE, 1
+	setvar VAR_WHICH_FOSSIL_REVIVED, 3
+	release
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_GiveDomeFossil::
+	bufferitemname STR_VAR_1, ITEM_DOME_FOSSIL
+	msgbox RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher, MSGBOX_DEFAULT
+	removeitem ITEM_DOME_FOSSIL
+	setvar VAR_FOSSIL_RESURRECTION_STATE, 1
+	setvar VAR_WHICH_FOSSIL_REVIVED, 4
+	release
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_GiveOldAmber::
+	bufferitemname STR_VAR_1, ITEM_OLD_AMBER
+	msgbox RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher, MSGBOX_DEFAULT
+	removeitem ITEM_OLD_AMBER
+	setvar VAR_FOSSIL_RESURRECTION_STATE, 1
+	setvar VAR_WHICH_FOSSIL_REVIVED, 5
+	release
 	end
 
 RustboroCity_DevonCorp_2F_EventScript_GiveRootFossil::
@@ -129,12 +194,35 @@ RustboroCity_DevonCorp_2F_EventScript_StillRegenerating::
 RustboroCity_DevonCorp_2F_EventScript_FossilMonReady::
 	goto_if_eq VAR_WHICH_FOSSIL_REVIVED, 1, RustboroCity_DevonCorp_2F_EventScript_LileepReady
 	goto_if_eq VAR_WHICH_FOSSIL_REVIVED, 2, RustboroCity_DevonCorp_2F_EventScript_AnorithReady
+	goto_if_eq VAR_WHICH_FOSSIL_REVIVED, 3, RustboroCity_DevonCorp_2F_EventScript_OmanyteReady
+	goto_if_eq VAR_WHICH_FOSSIL_REVIVED, 4, RustboroCity_DevonCorp_2F_EventScript_KabutoReady
+	goto_if_eq VAR_WHICH_FOSSIL_REVIVED, 5, RustboroCity_DevonCorp_2F_EventScript_AerodactylReady
 	end
 
 RustboroCity_DevonCorp_2F_EventScript_LileepReady::
 	bufferspeciesname STR_VAR_2, SPECIES_LILEEP
 	msgbox RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife, MSGBOX_DEFAULT
 	goto RustboroCity_DevonCorp_2F_EventScript_ReceiveLileep
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_OmanyteReady::
+	bufferspeciesname STR_VAR_2, SPECIES_OMANYTE
+	msgbox RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife, MSGBOX_DEFAULT
+	goto RustboroCity_DevonCorp_2F_EventScript_ReceiveOmanyte
+	end
+
+
+RustboroCity_DevonCorp_2F_EventScript_KabutoReady::
+	bufferspeciesname STR_VAR_2, SPECIES_KABUTO
+	msgbox RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife, MSGBOX_DEFAULT
+	goto RustboroCity_DevonCorp_2F_EventScript_ReceiveKabuto
+	end
+
+
+RustboroCity_DevonCorp_2F_EventScript_AerodactylReady::
+	bufferspeciesname STR_VAR_2, SPECIES_AERODACTYL
+	msgbox RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife, MSGBOX_DEFAULT
+	goto RustboroCity_DevonCorp_2F_EventScript_ReceiveAerodactyl
 	end
 
 RustboroCity_DevonCorp_2F_EventScript_AnorithReady::
@@ -151,6 +239,30 @@ RustboroCity_DevonCorp_2F_EventScript_ReceiveLileep::
 	goto Common_EventScript_NoMoreRoomForPokemon
 	end
 
+RustboroCity_DevonCorp_2F_EventScript_ReceiveOmanyte::
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_OMANYTE
+	givemon SPECIES_OMANYTE, 20
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, RustboroCity_DevonCorp_2F_EventScript_ReceiveOmanyteParty
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, RustboroCity_DevonCorp_2F_EventScript_ReceiveOmanytePC
+	goto Common_EventScript_NoMoreRoomForPokemon
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_ReceiveKabuto::
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_KABUTO
+	givemon SPECIES_OMANYTE, 20
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, RustboroCity_DevonCorp_2F_EventScript_ReceiveKabutoParty
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, RustboroCity_DevonCorp_2F_EventScript_ReceiveKabutoPC
+	goto Common_EventScript_NoMoreRoomForPokemon
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_ReceiveAerodactyl::
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_AERODACTYL
+	givemon SPECIES_OMANYTE, 20
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, RustboroCity_DevonCorp_2F_EventScript_ReceiveAerodactylParty
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, RustboroCity_DevonCorp_2F_EventScript_ReceiveKabutoPC
+	goto Common_EventScript_NoMoreRoomForPokemon
+	end
+
 RustboroCity_DevonCorp_2F_EventScript_ReceiveLileepParty::
 	call RustboroCity_DevonCorp_2F_EventScript_ReceivedLileepFanfare
 	specialvar VAR_RESULT, IsNuzlockeNicknamingActive
@@ -162,7 +274,46 @@ RustboroCity_DevonCorp_2F_EventScript_ReceiveLileepParty::
 	goto RustboroCity_DevonCorp_2F_EventScript_FinishReceivingLileep
 	end
 
+RustboroCity_DevonCorp_2F_EventScript_ReceiveOmanyteParty::
+	call RustboroCity_DevonCorp_2F_EventScript_ReceivedOmanyteFanfare
+	specialvar VAR_RESULT, IsNuzlockeNicknamingActive
+	goto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_ReceiveOmanyteParty_Nuzlocke
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, RustboroCity_DevonCorp_2F_EventScript_FinishReceivingLileep
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto RustboroCity_DevonCorp_2F_EventScript_FinishReceivingLileep
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_ReceiveKabutoParty::
+	call RustboroCity_DevonCorp_2F_EventScript_ReceivedKabutoFanfare
+	specialvar VAR_RESULT, IsNuzlockeNicknamingActive
+	goto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_ReceiveOmanyteParty_Nuzlocke
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, RustboroCity_DevonCorp_2F_EventScript_FinishReceivingLileep
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto RustboroCity_DevonCorp_2F_EventScript_FinishReceivingLileep
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_ReceiveAerodactylParty::
+	call RustboroCity_DevonCorp_2F_EventScript_ReceivedAerodactylFanfare
+	specialvar VAR_RESULT, IsNuzlockeNicknamingActive
+	goto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_ReceiveOmanyteParty_Nuzlocke
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, RustboroCity_DevonCorp_2F_EventScript_FinishReceivingLileep
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto RustboroCity_DevonCorp_2F_EventScript_FinishReceivingLileep
+	end
+
 RustboroCity_DevonCorp_2F_EventScript_ReceiveLileepParty_Nuzlocke::
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto RustboroCity_DevonCorp_2F_EventScript_FinishReceivingLileep
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_ReceiveOmanyteParty_Nuzlocke::
 	call Common_EventScript_GetGiftMonPartySlot
 	call Common_EventScript_NameReceivedPartyMon
 	goto RustboroCity_DevonCorp_2F_EventScript_FinishReceivingLileep
@@ -178,9 +329,39 @@ RustboroCity_DevonCorp_2F_EventScript_ReceiveLileepPC::
 	goto RustboroCity_DevonCorp_2F_EventScript_TransferLileepToPC
 	end
 
+RustboroCity_DevonCorp_2F_EventScript_ReceiveOmanytePC::
+	call RustboroCity_DevonCorp_2F_EventScript_ReceivedOmanyteFanfare
+	specialvar VAR_RESULT, IsNuzlockeNicknamingActive
+	goto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_ReceiveOmanytePC_Nuzlocke
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, RustboroCity_DevonCorp_2F_EventScript_TransferOmanyteToPC
+	call Common_EventScript_NameReceivedBoxMon
+	goto RustboroCity_DevonCorp_2F_EventScript_TransferLileepToPC
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_ReceiveKabutoPC::
+	call RustboroCity_DevonCorp_2F_EventScript_ReceivedKabutoFanfare
+	specialvar VAR_RESULT, IsNuzlockeNicknamingActive
+	goto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_ReceiveOmanytePC_Nuzlocke
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, RustboroCity_DevonCorp_2F_EventScript_TransferOmanyteToPC
+	call Common_EventScript_NameReceivedBoxMon
+	goto RustboroCity_DevonCorp_2F_EventScript_TransferLileepToPC
+	end
+
 RustboroCity_DevonCorp_2F_EventScript_ReceiveLileepPC_Nuzlocke::
 	call Common_EventScript_NameReceivedBoxMon
 	goto RustboroCity_DevonCorp_2F_EventScript_TransferLileepToPC
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_ReceiveOmanytePC_Nuzlocke::
+	call Common_EventScript_NameReceivedBoxMon
+	goto RustboroCity_DevonCorp_2F_EventScript_TransferOmanyteToPC
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_TransferOmanyteToPC::
+	call Common_EventScript_TransferredToPC
+	goto RustboroCity_DevonCorp_2F_EventScript_FinishReceivingLileep
 	end
 
 RustboroCity_DevonCorp_2F_EventScript_TransferLileepToPC::
@@ -195,6 +376,33 @@ RustboroCity_DevonCorp_2F_EventScript_ReceivedLileepFanfare::
 	waitmessage
 	waitfanfare
 	bufferspeciesname STR_VAR_1, SPECIES_LILEEP
+	return
+
+RustboroCity_DevonCorp_2F_EventScript_ReceivedOmanyteFanfare::
+	bufferspeciesname STR_VAR_2, SPECIES_OMANYTE
+	playfanfare MUS_OBTAIN_ITEM
+	message RustboroCity_DevonCorp_2F_Text_ReceivedMonFromResearcher
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_OMANYTE
+	return
+
+RustboroCity_DevonCorp_2F_EventScript_ReceivedKabutoFanfare::
+	bufferspeciesname STR_VAR_2, SPECIES_KABUTO
+	playfanfare MUS_OBTAIN_ITEM
+	message RustboroCity_DevonCorp_2F_Text_ReceivedMonFromResearcher
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_KABUTO
+	return
+
+RustboroCity_DevonCorp_2F_EventScript_ReceivedAerodactylFanfare::
+	bufferspeciesname STR_VAR_2, SPECIES_AERODACTYL
+	playfanfare MUS_OBTAIN_ITEM
+	message RustboroCity_DevonCorp_2F_Text_ReceivedMonFromResearcher
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_AERODACTYL
 	return
 
 RustboroCity_DevonCorp_2F_EventScript_FinishReceivingLileep::

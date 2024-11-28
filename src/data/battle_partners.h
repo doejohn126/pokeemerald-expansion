@@ -122,37 +122,37 @@ F_TRAINER_FEMALE |
         {
             {
 #line 52
-            .species = SPECIES_PRINPLUP,
+            .species = SPECIES_EMPOLEON,
 #line 52
             .gender = TRAINER_MON_FEMALE,
 #line 54
             .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
 #line 53
-            .lvl = 16,
+            .lvl = 45,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 56
-            .species = SPECIES_CLEFAIRY,
+            .species = SPECIES_CLEFABLE,
 #line 56
             .gender = TRAINER_MON_FEMALE,
 #line 58
             .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
 #line 57
-            .lvl = 15,
+            .lvl = 45,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 60
-            .species = SPECIES_SWINUB,
+            .species = SPECIES_PILOSWINE,
 #line 60
             .gender = TRAINER_MON_MALE,
 #line 62
             .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
 #line 61
-            .lvl = 14,
+            .lvl = 45,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

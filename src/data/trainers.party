@@ -3961,13 +3961,17 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Quilava
+Level: 41
+IVs: 0 HP / 0 Atk / 0 Def / 20 SpA / 0 SpD / 0 Spe
 
-Taillow
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Swellow
+Level: 41
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 20 Spe
+
+Grafaiai
+Level: 41
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 20 Spe
 
 === TRAINER_AUTUMN ===
 Name: AUTUMN
@@ -3978,9 +3982,13 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sawsbuck Autumn
+Level: 41
+IVs: 20 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Miltank
+Level: 41
+IVs: 20 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TRAVIS ===
 Name: TRAVIS
@@ -9044,17 +9052,17 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gloom
+Level: 41
+IVs: 0 HP / 0 Atk / 0 Def / 19 SpA / 0 SpD / 0 Spe
 
-Oddish
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Vileplume
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 19 SpA / 0 SpD / 0 Spe
 
 Swablu
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 41
+IVs: 30 HP / 30 Atk / 0 Def / 0 SpA / 0 SpD / 30 Spe
 
 === TRAINER_CEDRIC ===
 Name: CEDRIC
@@ -11142,9 +11150,13 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Glaceon
+Level: 41
+IVs: 0 HP / 0 Atk / 0 Def / 19 SpA / 0 SpD / 0 Spe
+
+Bombirdier
+Level: 41
+IVs: 0 HP / 0 Atk / 0 Def / 19 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_5 ===
 Name: GRUNT
@@ -11211,13 +11223,17 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 22
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Crustle
+Level: 41
+IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 6 SpD / 6 Spe
 
-Numel
-Level: 22
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Marowak
+Level: 41
+IVs: 6 HP / 18 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Sandslash Alolan
+Level: 41
+IVs: 6 HP / 18 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_MARC ===
 Name: MARC
@@ -12403,12 +12419,16 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Kabutops
+Level: 41
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 20 Spe
 
-Baltoy
-Level: 20
+Claydol
+Level: 41
+IVs: 0 HP / 0 Atk / 0 Def / 20 SpA / 0 SpD / 0 Spe
+
+Naclstack
+Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LUCAS_2 ===
