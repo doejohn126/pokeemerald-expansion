@@ -19211,6 +19211,7 @@ static const u16 sCherrimTeachableLearnset[] = {
     MOVE_FLASH,
     MOVE_GIGA_DRAIN,
     MOVE_HYPER_BEAM,
+    MOVE_OVERHEAT,
     MOVE_PROTECT,
     MOVE_REST,
     MOVE_SAFEGUARD,

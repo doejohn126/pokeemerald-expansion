@@ -4883,6 +4883,7 @@ static const struct LevelUpMove sCroconawLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sFeraligatrLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_AQUA_TAIL),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_AQUA_JET),
@@ -4896,7 +4897,7 @@ static const struct LevelUpMove sFeraligatrLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_SLASH),
     LEVEL_UP_MOVE(44, MOVE_SCREECH),
     LEVEL_UP_MOVE(51, MOVE_THRASH),
-    LEVEL_UP_MOVE(59, MOVE_AQUA_TAIL),
+    LEVEL_UP_MOVE(59, MOVE_TRIPLE_DIVE),
     LEVEL_UP_MOVE(65, MOVE_SUPERPOWER),
     LEVEL_UP_MOVE(70, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
@@ -5895,7 +5896,7 @@ static const struct LevelUpMove sGligarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE(19, MOVE_POISON_TAIL),
     LEVEL_UP_MOVE(22, MOVE_ACROBATICS),
-    LEVEL_UP_MOVE(27, MOVE_SLASH),
+    LEVEL_UP_MOVE(27, MOVE_BULLDOZE),
     LEVEL_UP_MOVE(30, MOVE_U_TURN),
     LEVEL_UP_MOVE(35, MOVE_SCREECH),
     LEVEL_UP_MOVE(40, MOVE_X_SCISSOR),
@@ -5906,6 +5907,7 @@ static const struct LevelUpMove sGligarLevelUpLearnset[] = {
 
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sGliscorLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_POISON_JAB),
@@ -12582,6 +12584,7 @@ static const struct LevelUpMove sLilligantLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_PETAL_DANCE),
     LEVEL_UP_MOVE( 1, MOVE_PETAL_BLIZZARD),
     LEVEL_UP_MOVE( 1, MOVE_ENTRAINMENT),
+    LEVEL_UP_MOVE( 1, MOVE_ALLURING_VOICE),
     LEVEL_UP_MOVE( 1, MOVE_QUIVER_DANCE),
     LEVEL_UP_MOVE( 1, MOVE_LEAF_STORM),
     LEVEL_UP_MOVE( 1, MOVE_ENERGY_BALL),

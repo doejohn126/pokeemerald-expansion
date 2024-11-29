@@ -855,6 +855,188 @@ GiveTeleport::
 	end
 
 
+JaydenExitGym1::
+# 447 "data/maps/LavaridgeTown/scripts.pory"
+	lockall
+# 448 "data/maps/LavaridgeTown/scripts.pory"
+	opendoor 5, 15
+# 449 "data/maps/LavaridgeTown/scripts.pory"
+	clearflag FLAG_JAYDEN_LAVARIDGE
+# 450 "data/maps/LavaridgeTown/scripts.pory"
+	addobject 11
+# 451 "data/maps/LavaridgeTown/scripts.pory"
+	playse SE_SLIDING_DOOR
+# 452 "data/maps/LavaridgeTown/scripts.pory"
+	closedoor 5, 15
+# 453 "data/maps/LavaridgeTown/scripts.pory"
+	applymovement 11, JaydenMoveDownThenNotice
+# 454 "data/maps/LavaridgeTown/scripts.pory"
+	waitmovement 0
+# 455 "data/maps/LavaridgeTown/scripts.pory"
+	closedoor 5, 15
+# 456 "data/maps/LavaridgeTown/scripts.pory"
+	waitdooranim
+# 457 "data/maps/LavaridgeTown/scripts.pory"
+	playse SE_PIN
+# 458 "data/maps/LavaridgeTown/scripts.pory"
+	waitse
+# 459 "data/maps/LavaridgeTown/scripts.pory"
+	delay 60
+# 460 "data/maps/LavaridgeTown/scripts.pory"
+	applymovement 11, JaydenApproach1
+# 461 "data/maps/LavaridgeTown/scripts.pory"
+	waitmovement 0
+# 462 "data/maps/LavaridgeTown/scripts.pory"
+	goto JaydenBattleAgain
+	return
+
+
+JaydenExitGym2::
+# 466 "data/maps/LavaridgeTown/scripts.pory"
+	lockall
+# 467 "data/maps/LavaridgeTown/scripts.pory"
+	opendoor 5, 15
+# 468 "data/maps/LavaridgeTown/scripts.pory"
+	clearflag FLAG_JAYDEN_LAVARIDGE
+# 469 "data/maps/LavaridgeTown/scripts.pory"
+	addobject 11
+# 470 "data/maps/LavaridgeTown/scripts.pory"
+	playse SE_SLIDING_DOOR
+# 471 "data/maps/LavaridgeTown/scripts.pory"
+	applymovement 11, JaydenMoveDownThenNotice
+# 472 "data/maps/LavaridgeTown/scripts.pory"
+	waitmovement 0
+# 473 "data/maps/LavaridgeTown/scripts.pory"
+	closedoor 5, 15
+# 474 "data/maps/LavaridgeTown/scripts.pory"
+	waitdooranim
+# 475 "data/maps/LavaridgeTown/scripts.pory"
+	playse SE_PIN
+# 476 "data/maps/LavaridgeTown/scripts.pory"
+	waitse
+# 477 "data/maps/LavaridgeTown/scripts.pory"
+	delay 60
+# 478 "data/maps/LavaridgeTown/scripts.pory"
+	applymovement 11, JaydenApproach2
+# 479 "data/maps/LavaridgeTown/scripts.pory"
+	waitmovement 0
+# 480 "data/maps/LavaridgeTown/scripts.pory"
+	goto JaydenBattleAgain
+	return
+
+
+JaydenExitGym3::
+# 484 "data/maps/LavaridgeTown/scripts.pory"
+	lockall
+# 485 "data/maps/LavaridgeTown/scripts.pory"
+	opendoor 5, 15
+# 486 "data/maps/LavaridgeTown/scripts.pory"
+	clearflag FLAG_JAYDEN_LAVARIDGE
+# 487 "data/maps/LavaridgeTown/scripts.pory"
+	addobject 11
+# 488 "data/maps/LavaridgeTown/scripts.pory"
+	playse SE_SLIDING_DOOR
+# 489 "data/maps/LavaridgeTown/scripts.pory"
+	applymovement 11, JaydenMoveDownThenNotice2
+# 490 "data/maps/LavaridgeTown/scripts.pory"
+	waitmovement 0
+# 491 "data/maps/LavaridgeTown/scripts.pory"
+	playse SE_PIN
+# 492 "data/maps/LavaridgeTown/scripts.pory"
+	closedoor 5, 15
+# 493 "data/maps/LavaridgeTown/scripts.pory"
+	waitdooranim
+# 494 "data/maps/LavaridgeTown/scripts.pory"
+	waitse
+# 495 "data/maps/LavaridgeTown/scripts.pory"
+	delay 60
+# 496 "data/maps/LavaridgeTown/scripts.pory"
+	applymovement 11, JaydenApproach3
+# 497 "data/maps/LavaridgeTown/scripts.pory"
+	waitmovement 0
+# 498 "data/maps/LavaridgeTown/scripts.pory"
+	goto JaydenBattleAgain
+	return
+
+
+JaydenBattleAgain::
+# 502 "data/maps/LavaridgeTown/scripts.pory"
+	msgbox JaydenHeya
+# 503 "data/maps/LavaridgeTown/scripts.pory"
+	trainerbattle_no_intro TRAINER_JAYDEN_3, Jayden3Lose
+# 504 "data/maps/LavaridgeTown/scripts.pory"
+	setflag FLAG_JAYDEN_LAVARIDGE
+# 505 "data/maps/LavaridgeTown/scripts.pory"
+	setvar VAR_JAYDEN_LAVARIDGE, 1
+# 506 "data/maps/LavaridgeTown/scripts.pory"
+	msgbox MegaRing
+# 507 "data/maps/LavaridgeTown/scripts.pory"
+	giveitem ITEM_MEGA_RING
+# 508 "data/maps/LavaridgeTown/scripts.pory"
+	msgbox FindAMegaStone
+# 509 "data/maps/LavaridgeTown/scripts.pory"
+	release
+	end
+
+
+JaydenBroke::
+# 514 "data/maps/LavaridgeTown/scripts.pory"
+	lock
+# 515 "data/maps/LavaridgeTown/scripts.pory"
+	faceplayer
+# 516 "data/maps/LavaridgeTown/scripts.pory"
+	msgbox YoureLucky
+# 517 "data/maps/LavaridgeTown/scripts.pory"
+	release
+	end
+
+
+# 560 "data/maps/LavaridgeTown/scripts.pory"
+JaydenApproach1:
+# 561 "data/maps/LavaridgeTown/scripts.pory"
+	walk_right
+	step_end
+
+# 564 "data/maps/LavaridgeTown/scripts.pory"
+JaydenApproach2:
+# 565 "data/maps/LavaridgeTown/scripts.pory"
+	walk_down
+# 566 "data/maps/LavaridgeTown/scripts.pory"
+	walk_right
+	step_end
+
+# 569 "data/maps/LavaridgeTown/scripts.pory"
+JaydenApproach3:
+# 570 "data/maps/LavaridgeTown/scripts.pory"
+	walk_down
+# 570 "data/maps/LavaridgeTown/scripts.pory"
+	walk_down
+# 571 "data/maps/LavaridgeTown/scripts.pory"
+	walk_right
+	step_end
+
+# 574 "data/maps/LavaridgeTown/scripts.pory"
+JaydenMoveDownThenNotice:
+# 575 "data/maps/LavaridgeTown/scripts.pory"
+	walk_down
+# 576 "data/maps/LavaridgeTown/scripts.pory"
+	delay_8
+# 577 "data/maps/LavaridgeTown/scripts.pory"
+	face_right
+# 578 "data/maps/LavaridgeTown/scripts.pory"
+	emote_exclamation_mark
+	step_end
+
+# 581 "data/maps/LavaridgeTown/scripts.pory"
+JaydenMoveDownThenNotice2:
+# 582 "data/maps/LavaridgeTown/scripts.pory"
+	walk_down
+# 583 "data/maps/LavaridgeTown/scripts.pory"
+	delay_8
+# 584 "data/maps/LavaridgeTown/scripts.pory"
+	emote_exclamation_mark
+	step_end
+
 AbraMain::
 # 437 "data/maps/LavaridgeTown/scripts.pory"
 	.string "Abra: Heeehhe$"
@@ -863,3 +1045,42 @@ WoaLook::
 # 441 "data/maps/LavaridgeTown/scripts.pory"
 	.string "Abra: Heeehhe\n"
 	.string "Woah, what is that next to it?$"
+
+YoureLucky::
+# 521 "data/maps/LavaridgeTown/scripts.pory"
+	.string "Heh, you're lucky I wasn't able to\n"
+	.string "afford that Charizard Mega Stone.\p"
+	.string "But the next time we battle, you should\n"
+	.string "expect to see me use a Mega.$"
+
+FindAMegaStone::
+# 528 "data/maps/LavaridgeTown/scripts.pory"
+	.string "Oh and don't worry, a lot of shops will\n"
+	.string "start having Mega Stones, like this one.$"
+
+MegaRing::
+# 533 "data/maps/LavaridgeTown/scripts.pory"
+	.string "{PLAYER}, there's something I have to\n"
+	.string "tell you about.\p"
+	.string "So I learned about a pretty sick\n"
+	.string "mechanic called Mega Evolution.\p"
+	.string "It basically turns a Pokémon into a\n"
+	.string "stronger form of themselves.\p"
+	.string "Downside is that you need a Mega Ring\n"
+	.string "and a separate Mega Stone to do it.\p"
+	.string "I know you'd probably want to use this\n"
+	.string "so I have a spare Mega Ring for you.$"
+
+Jayden3Lose::
+# 546 "data/maps/LavaridgeTown/scripts.pory"
+	.string "I lost again, even though I have more\n"
+	.string "badges...$"
+
+JaydenHeya::
+# 551 "data/maps/LavaridgeTown/scripts.pory"
+	.string "Oh hey {PLAYER}, it's been a while.\n"
+	.string "What have you been doing lately?\p"
+	.string "For me I've literally just beaten the\n"
+	.string "Gym here.\p"
+	.string "I want to see if you're prepared\n"
+	.string "because she's tough so let's do this!$"

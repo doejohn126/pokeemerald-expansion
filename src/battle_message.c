@@ -4134,6 +4134,9 @@ static const u8 sText_FantinaLow[] = _("Never give up, never surrender!\p");
 static const u8 sText_FantinaUnaffected[] = _("Ohohoho! Don't forget now that all my\nPokémon is ghosts. And never forget\labout the Levitate ability!\p");
 static const u8 sText_MaxieStartMessage[] = _("This is the result for messing with our\nplans.\p");
 static const u8 sText_MaxieLast[] = _("How is this imbecile winning?\nThis is insane!\p");
+static const u8 sText_JaydenLastMon3[] = _("Down to my last Pokémon again.\nStill doesn't mean I lost though.\p");
+static const u8 sText_FlanneryBeforeTurn[] = _("Okay so uh, let's see how you get past\nmy sun strategy.\p");
+static const u8 sText_FlanneryLastMon[] = _("Yikes... I'm down to my last Pokémon.\p");
 
 
 
@@ -4349,6 +4352,19 @@ static const struct TrainerSlide sTrainerSlides[] =
         .isFrontierTrainer = FALSE,
         .msgLastSwitchIn = sText_MaxieLast,
         .msgBeforeFirstTurn = sText_MaxieStartMessage,
+    },
+    {
+        .trainerId = TRAINER_JAYDEN_3,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_JaydenLastMon3,
+        .msgFirstCriticalHit = sText_JaydenCrit,
+        .msgFirstDown = sText_Jayden2FirstDown,
+    },
+    {
+        .trainerId = TRAINER_FLANNERY_1,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_FlanneryLastMon,
+        .msgBeforeFirstTurn = sText_FlanneryBeforeTurn,
     },
 };
 

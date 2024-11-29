@@ -2363,10 +2363,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_CHERRIM_OVERCAST] =
     {
         .baseHP        = 70,
-        .baseAttack    = 100,
+        .baseAttack    = 87,
         .baseDefense   = 70,
         .baseSpeed     = 85,
-        .baseSpAttack  = 60,
+        .baseSpAttack  = 87,
         .baseSpDefense = 78,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = 75,
@@ -2426,10 +2426,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_CHERRIM_SUNSHINE] =
     {
         .baseHP        = 70,
-        .baseAttack    = 100,
+        .baseAttack    = 87,
         .baseDefense   = 70,
         .baseSpeed     = 85,
-        .baseSpAttack  = 60,
+        .baseSpAttack  = 87,
         .baseSpDefense = 78,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FIRE),
         .catchRate = 75,

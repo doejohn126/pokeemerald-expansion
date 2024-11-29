@@ -442,3 +442,144 @@ text WoaLook {
     "Abra: Heeehhe\n"
     "Woah, what is that next to it?"
 }
+
+script JaydenExitGym1 {
+	lockall
+	opendoor(5, 15)
+	clearflag(FLAG_JAYDEN_LAVARIDGE)
+	addobject(11)
+	playse(SE_SLIDING_DOOR)
+	closedoor(5, 15)
+	applymovement(11, JaydenMoveDownThenNotice)
+	waitmovement(0)
+	closedoor(5, 15)
+	waitdooranim
+	playse(SE_PIN)
+	waitse
+	delay(60)
+	applymovement(11, JaydenApproach1)
+	waitmovement(0)
+	goto(JaydenBattleAgain)
+}
+
+script JaydenExitGym2 {
+	lockall
+	opendoor(5, 15)
+	clearflag(FLAG_JAYDEN_LAVARIDGE)
+	addobject(11)
+	playse(SE_SLIDING_DOOR)
+	applymovement(11, JaydenMoveDownThenNotice)
+	waitmovement(0)
+	closedoor(5, 15)
+	waitdooranim
+	playse(SE_PIN)
+	waitse
+	delay(60)
+	applymovement(11, JaydenApproach2)
+	waitmovement(0)
+	goto(JaydenBattleAgain)
+}
+
+script JaydenExitGym3  {
+	lockall
+	opendoor(5, 15)
+	clearflag(FLAG_JAYDEN_LAVARIDGE)
+	addobject(11)
+	playse(SE_SLIDING_DOOR)
+	applymovement(11, JaydenMoveDownThenNotice2)
+	waitmovement(0)
+	playse(SE_PIN)
+	closedoor(5, 15)
+	waitdooranim
+	waitse
+	delay(60)
+	applymovement(11, JaydenApproach3)
+	waitmovement(0)
+	goto(JaydenBattleAgain)
+}
+
+script JaydenBattleAgain {
+	msgbox(JaydenHeya)
+	trainerbattle_no_intro(TRAINER_JAYDEN_3, Jayden3Lose)
+	setflag(FLAG_JAYDEN_LAVARIDGE)
+	setvar(VAR_JAYDEN_LAVARIDGE, 1)
+	msgbox(MegaRing)
+	giveitem(ITEM_MEGA_RING)
+	msgbox(FindAMegaStone)
+	release
+	end
+}
+
+script JaydenBroke {
+	lock
+	faceplayer
+	msgbox(YoureLucky)
+	release
+	end
+}
+
+text YoureLucky {
+	"Heh, you're lucky I wasn't able to\n"
+	"afford that Charizard Mega Stone.\p"
+	"But the next time we battle, you should\n"
+	"expect to see me use a Mega."
+}
+
+text FindAMegaStone {
+	"Oh and don't worry, a lot of shops will\n"
+	"start having Mega Stones, like this one."
+}
+
+text MegaRing {
+	"{PLAYER}, there's something I have to\n"
+	"tell you about.\p"
+	"So I learned about a pretty sick\n"
+	"mechanic called Mega Evolution.\p"
+	"It basically turns a Pokémon into a\n"
+	"stronger form of themselves.\p"
+	"Downside is that you need a Mega Ring\n"
+	"and a separate Mega Stone to do it.\p"
+	"I know you'd probably want to use this\n"
+	"so I have a spare Mega Ring for you."
+}
+
+text Jayden3Lose {
+	"I lost again, even though I have more\n"
+	"badges..."
+}
+
+text JaydenHeya {
+	"Oh hey {PLAYER}, it's been a while.\n"
+	"What have you been doing lately?\p"
+	"For me I've literally just beaten the\n"
+	"Gym here.\p"
+	"I want to see if you're prepared\n"
+	"because she's tough so let's do this!"
+}
+
+movement JaydenApproach1 {
+	walk_right
+}
+
+movement JaydenApproach2 {
+	walk_down
+	walk_right
+}
+
+movement JaydenApproach3 {
+	walk_down * 2
+	walk_right
+}
+
+movement JaydenMoveDownThenNotice {
+	walk_down
+	delay_8
+	face_right
+	emote_exclamation_mark
+}
+
+movement JaydenMoveDownThenNotice2 {
+	walk_down
+	delay_8
+	emote_exclamation_mark
+}

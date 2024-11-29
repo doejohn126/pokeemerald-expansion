@@ -3714,8 +3714,12 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Numel
-Level: 23
+Camerupt
+Level: 43
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Talonflame
+Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_JEFF ===
@@ -3727,12 +3731,16 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Slugma
-Level: 22
+Rapidash
+Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Slugma
-Level: 22
+Pyroar
+Level: 43
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Centiskorch
+Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_AXLE ===
@@ -3744,8 +3752,24 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Numel
-Level: 23
+Larvesta
+Level: 43
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Salandit
+Level: 43
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Litten
+Level: 43
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Vulpix
+Level: 43
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Slugma
+Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_JACE ===
@@ -3757,8 +3781,12 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Slugma
-Level: 23
+Magcargo
+Level: 43
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Houndoom
+Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_KEEGAN ===
@@ -3770,8 +3798,16 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Slugma
-Level: 23
+Heatmor
+Level: 43
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Tauros Paldean Blaze Breed
+Level: 43
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Lampent
+Level: 43
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_BERNIE_1 ===
@@ -5145,38 +5181,60 @@ Gender: Female
 Music: Female
 Items: Hyper Potion / Hyper Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
+Mugshot: Red
 
-Numel
-Level: 24
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Overheat
-- Take Down
-- Magnitude
-- Sunny Day
-
-Slugma
-Level: 24
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Overheat
-- Smog
-- Light Screen
-- Sunny Day
-
-Camerupt
-Level: 26
+Torkoal (M) @ White Herb
+Level: 46
+Ability: Drought
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Overheat
-- Tackle
-- Sunny Day
-- Attract
-
-Torkoal @ White Herb
-Level: 29
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Overheat
-- Sunny Day
+- Solar Beam
 - Body Slam
+- Curse
+
+Ninetales (F)
+Level: 45
+Ability: Drought
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Dazzling Gleam
+- Overheat
+- Will O Wisp
+- Nasty Plot
+
+Cherrim (F)
+Level: 45
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Morning Sun
+- Nature Power
+- Solar Blade
+- Overheat
+
+Cinderace (M) @ Heat Rock
+Level: 45
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Pyro Ball
+- U Turn
+- Attract
+- Sunny Day
+
+Armarouge (M)
+Level: 45
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Psyshock
+- Overheat
+- Sunny Day
+- Calm Mind
+
+Charizard (F) @ White Herb
+Level: 46
+Ability: Solar Power
+Ball: Heal Ball
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+EVs: 5 Atk / 25 SpA / 25 Spe
+- Overheat
+- Sunny Day
+- Air Slash
 - Attract
 
 === TRAINER_NORMAN_1 ===
@@ -9587,8 +9645,12 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Numel
-Level: 23
+Darmanitan
+Level: 43
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Arcanine Hisuian
+Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ANNIKA ===
@@ -12768,13 +12830,17 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Kecleon
-Level: 23
+Charmeleon
+Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Flamethrower
-- Fury Swipes
-- Feint Attack
-- Bind
+
+Braixen
+Level: 43
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Ceruledge
+Level: 43
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_VIVIAN ===
 Name: VIVIAN
@@ -12810,13 +12876,18 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Meditite
-Level: 23
+Monferno
+Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Bide
-- Detect
-- Confusion
-- Fire Punch
+
+Emboar
+Level: 43
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Combusken
+Level: 43
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
 
 === TRAINER_HIDEO ===
 Name: HIDEO
@@ -18230,3 +18301,64 @@ Ball: Dream Ball
 - Shadow Ball
 - Mystical Fire
 - Power Gem
+
+=== TRAINER_JAYDEN_3 ===
+Name: JAYDEN
+Class: Rival
+Pic: RS Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+Items: Hyper Potion
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
+Mugshot: Green
+
+Jolteon (F)
+Level: 44
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Discharge
+- Pin Missile
+- Shadow Ball
+- Thunder Wave
+
+Gligar (M)
+Level: 44
+Ability: Sand Veil
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Sandstorm
+- Acrobatics
+- U Turn
+- Bulldoze
+
+Lilligant (F)
+Level: 44
+Ability: Seed Sower
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Giga Drain
+- Quiver Dance
+- Alluring Voice
+- Teeter Dance
+
+Cyclizar (F)
+Level: 44
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Shed Tail
+- Dragon Claw
+- U Turn
+- Taunt
+
+Charizard (M)
+Level: 45
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
+- Flamethrower
+- Air Slash
+- Dragon Claw
+- Scary Face
+
+Feraligatr (M)
+Level: 46
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Aqua Jet
+- Ice Fang
+- Crunch
+- Aqua Tail

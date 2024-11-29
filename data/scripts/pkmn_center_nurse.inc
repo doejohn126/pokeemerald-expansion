@@ -134,6 +134,11 @@ EventScript_PkmnCenterNurse_PlayerTurn::
    release
    end
 
+NormanLevelCap::
+   msgbox gText_TheNormanCap, MSGBOX_DEFAULT
+   release
+   end
+
 FlanLevelCap::
    msgbox gText_TheFlanCap, MSGBOX_DEFAULT
    release
@@ -166,7 +171,8 @@ Common_EventScript_ExtraThingsReceptionist::
    end
 
 Common_EventScript_LevelCap::
-   goto_if_set FLAG_BADGE04_GET, UnknownLevelCap
+   goto_if_set FLAG_BADGE05_GET, UnknownLevelCap
+   goto_if_set FLAG_BADGE04_GET, NormanLevelCap
    goto_if_set FLAG_BADGE03_GET, FlanLevelCap
    goto_if_set FLAG_BADGE02_GET, WattsonLevelCap
    goto_if_set FLAG_BADGE01_GET, BrawlyLevelCap

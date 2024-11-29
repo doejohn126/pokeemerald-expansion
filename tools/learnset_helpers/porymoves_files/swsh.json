@@ -32424,6 +32424,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_PLAY_ROUGH",
       "MOVE_DAZZLING_GLEAM",
+      "MOVE_OVERHEAT",
       "MOVE_POLLEN_PUFF"
     ],
     "EggMoves": [

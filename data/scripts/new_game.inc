@@ -274,5 +274,6 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL
 	setflag FLAG_SCIENTIST
 	setflag FLAG_JAYDEN_ROUTE106
+	setflag FLAG_JAYDEN_LAVARIDGE
 	call EventScript_ResetAllBerries
 	end
