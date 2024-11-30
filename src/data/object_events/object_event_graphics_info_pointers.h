@@ -236,6 +236,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dawn;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Brock;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bugsy;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Fantina;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Clay;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireBrendan;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireMay;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lugia;
@@ -492,6 +493,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_BROCK] =                    &gObjectEventGraphicsInfo_Brock,
     [OBJ_EVENT_GFX_BUGSY] =                    &gObjectEventGraphicsInfo_Bugsy,
     [OBJ_EVENT_GFX_FANTINA] =                  &gObjectEventGraphicsInfo_Fantina,
+    [OBJ_EVENT_GFX_CLAY] =                     &gObjectEventGraphicsInfo_Clay,
     [OBJ_EVENT_GFX_LINK_RS_BRENDAN] =          &gObjectEventGraphicsInfo_RubySapphireBrendan,
     [OBJ_EVENT_GFX_LINK_RS_MAY] =              &gObjectEventGraphicsInfo_RubySapphireMay,
     [OBJ_EVENT_GFX_LUGIA] =                    &gObjectEventGraphicsInfo_Lugia,

@@ -840,13 +840,17 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
-Level: 23
+Hippowdon
+Level: 42
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+
+Golurk
+Level: 42
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Cacturne
+Level: 42
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_CHIP ===
 Name: CHIP
@@ -915,13 +919,17 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
-Level: 27
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+Hippowdon
+Level: 48
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Golurk
+Level: 48
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Cacturne
+Level: 48
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_DUSTY_3 ===
 Name: DUSTY
@@ -3904,13 +3912,18 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
-Level: 23
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Dig
-- Sand Attack
-- Poison Sting
-- Slash
+Diggersby
+Level: 42
+IVs: 22 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Donphan
+Level: 42
+IVs: 22 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Orthworm
+Level: 42
+IVs: 22 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 
 === TRAINER_BEAU ===
 Name: BEAU
@@ -3921,29 +3934,18 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Baltoy
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rapid Spin
-- Mud Slap
-- Psybeam
-- Rock Tomb
+Dugtrio
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 20 Spe
 
-Sandshrew
-Level: 21
+Piloswine
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Poison Sting
-- Sand Attack
-- Scratch
-- Dig
 
-Baltoy
-Level: 21
+Sandslash
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rapid Spin
-- Mud Slap
-- Psybeam
-- Rock Tomb
+
 
 === TRAINER_LARRY ===
 Name: LARRY
@@ -9009,21 +9011,19 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Dig
-- Sand Attack
-- Poison Sting
-- Slash
+Quagsire
+Level: 42
+IVs: 0 HP / 0 Atk / 20 Def / 0 SpA / 0 SpD / 0 Spe
 
-Baltoy
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rapid Spin
-- Mud Slap
-- Psybeam
-- Rock Tomb
+
+Stunfisk
+Level: 42
+IVs: 0 HP / 0 Atk / 20 Def / 0 SpA / 0 SpD / 0 Spe
+
+Eiscue
+Level: 42
+IVs: 0 HP / 0 Atk / 20 Def / 0 SpA / 0 SpD / 0 Spe
+
 
 === TRAINER_BECKY ===
 Name: BECKY
@@ -9034,21 +9034,19 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Sand Attack
-- Poison Sting
-- Slash
-- Dig
+Appletun
+Level: 42
+IVs: 0 HP / 0 Atk / 22 Def / 0 SpA / 0 SpD / 0 Spe
 
-Marill
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rollout
-- Bubble Beam
-- Tail Whip
-- Defense Curl
+
+Gabite
+Level: 42
+IVs: 0 HP / 19 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gastrodon
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 21 SpA / 0 SpD / 0 Spe
+
 
 === TRAINER_CAROL ===
 Name: CAROL
@@ -14744,12 +14742,16 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 22
+Whiscash
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Lombre
-Level: 22
+Nidoqueen
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Sudowoodo
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRYAN ===
@@ -14761,12 +14763,16 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
-Level: 22
+Onix
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Sandslash
-Level: 22
+Runerigus
+Level: 42
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Steelix
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRANDEN ===
@@ -14778,13 +14784,17 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Taillow
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gligar
+Level: 42
+IVs: 0 HP / 0 Atk / 20 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nuzleaf
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Shiftry
+Level: 42
+IVs: 0 HP / 20 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Brambleghast
+Level: 42
+IVs: 0 HP / 20 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRYANT ===
 Name: BRYANT
@@ -18362,3 +18372,69 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Ice Fang
 - Crunch
 - Aqua Tail
+
+=== TRAINER_CLAY ===
+Name: CLAY
+Class: Pkmn Trainer 1
+Pic: Clay
+Gender: Male
+Music: Male
+Double Battle: No
+Items: Hyper Potion / Hyper Potion
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
+Mugshot: Yellow
+
+Nidoking
+Level: 48
+Ability: Rivalry
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
+- Stealth Rock
+- Poison Jab
+- Earthquake
+- Megahorn
+
+Mudsdale
+Level: 48
+Ability: Stamina
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
+- Earthquake
+- Heavy Slam
+- Body Press
+- Rock Slide
+
+Claydol
+Level: 48
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
+- Toxic
+- Scorching Sands
+- Psychic
+- Ice Beam
+
+Krookodile
+Level: 48
+Ability: Intimidate
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
+- Earthquake
+- Crunch
+- Rock Slide
+- Hone Claws
+
+Seismitoad
+Level: 48
+Ability: Poison Touch
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
+- Earthquake
+- Drain Punch
+- Ice Punch
+- Waterfall
+
+Excadrill
+Level: 49
+Ability: Sand Rush
+Ball: Heavy Ball
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Earthquake
+- Swords Dance
+- Smart Strike
+- X Scissor
+

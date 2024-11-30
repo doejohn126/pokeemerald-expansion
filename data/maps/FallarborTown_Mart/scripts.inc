@@ -205,15 +205,17 @@ FallarborSecondMart:
 # 108 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_GALARICA_CUFF
 # 109 "data/maps/FallarborTown_Mart/scripts.pory"
-	.2byte ITEM_MALICIOUS_ARMOR
+	.2byte ITEM_GALARICA_WREATH
 # 110 "data/maps/FallarborTown_Mart/scripts.pory"
-	.2byte ITEM_MASTERPIECE_TEACUP
+	.2byte ITEM_MALICIOUS_ARMOR
 # 111 "data/maps/FallarborTown_Mart/scripts.pory"
-	.2byte ITEM_SWEET_APPLE
+	.2byte ITEM_MASTERPIECE_TEACUP
 # 112 "data/maps/FallarborTown_Mart/scripts.pory"
-	.2byte ITEM_TART_APPLE
+	.2byte ITEM_SWEET_APPLE
 # 113 "data/maps/FallarborTown_Mart/scripts.pory"
-	.2byte ITEM_SYRUPY_APPLE
+	.2byte ITEM_TART_APPLE
 # 114 "data/maps/FallarborTown_Mart/scripts.pory"
+	.2byte ITEM_SYRUPY_APPLE
+# 115 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_UNREMARKABLE_TEACUP
 	.2byte ITEM_NONE

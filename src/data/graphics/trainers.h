@@ -292,6 +292,9 @@ const u32 gTrainerPalette_Bugsy[] = INCBIN_U32("graphics/trainers/front_pics/bug
 const u32 gTrainerFrontPic_Fantina[] = INCBIN_U32("graphics/trainers/front_pics/fantina.4bpp.lz");
 const u32 gTrainerPalette_Fantina[] = INCBIN_U32("graphics/trainers/front_pics/fantina.gbapal.lz");
 
+const u32 gTrainerFrontPic_Clay[] = INCBIN_U32("graphics/trainers/front_pics/clay.4bpp.lz");
+const u32 gTrainerPalette_Clay[] = INCBIN_U32("graphics/trainers/front_pics/clay.gbapal.lz");
+
 const u32 gTrainerFrontPic_Courtney[] = INCBIN_U32("graphics/trainers/front_pics/magma_admin_f.4bpp.lz");
 const u32 gTrainerPalette_Courtney[] = INCBIN_U32("graphics/trainers/front_pics/magma_admin_f.gbapal.lz");
 
@@ -422,6 +425,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(BUGSY, Bugsy),
     TRAINER_SPRITE(FANTINA, Fantina),
     TRAINER_SPRITE(COURTNEY, Courtney),
+    TRAINER_SPRITE(CLAY, Clay),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

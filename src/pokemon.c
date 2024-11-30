@@ -5899,6 +5899,8 @@ u16 GetBattleBGM(void)
                 return MUS_HG_VS_GYM_LEADER;
             if (gTrainerBattleOpponent_A == TRAINER_FANTINA)
                 return MUS_DP_VS_GYM_LEADER;
+            if (gTrainerBattleOpponent_A == TRAINER_CLAY)
+                return MUS_DP_VS_ELITE_FOUR;
             return MUS_RG_VS_GYM_LEADER;
         case TRAINER_CLASS_PKMN_TRAINER_2:
             return MUS_PL_VS_FRONTIER_BRAIN;

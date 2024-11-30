@@ -2849,7 +2849,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sBramblinLevelUpLearnset,
         .teachableLearnset = sBramblinTeachableLearnset,
         .eggMoveLearnset = sBramblinEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_OVERWORLD_STEPS, 1000, SPECIES_BRAMBLEGHAST}),
+        .evolutions = EVOLUTION({EVO_OVERWORLD_STEPS, 800, SPECIES_BRAMBLEGHAST}),
     },
 
     [SPECIES_BRAMBLEGHAST] =
@@ -4234,7 +4234,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .baseSpeed     = 65,
         .baseSpAttack  = 60,
         .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_STEEL),
+        .types = MON_TYPES(TYPE_STEEL, TYPE_GROUND),
         .catchRate = 25,
         .expYield = 240,
         .evYield_Defense = 2,

@@ -16904,10 +16904,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "half the damage inflicted."),
         #endif
         .effect = EFFECT_ABSORB,
-        .power = B_UPDATED_MOVE_DATA >= GEN_8 ? 60 : 90,
+        .power = B_UPDATED_MOVE_DATA >= GEN_8 ? 90 : 90,
         .type = TYPE_WATER,
         .accuracy = 100,
-        .pp = B_UPDATED_MOVE_DATA >= GEN_8 ? 20 : 15,
+        .pp = B_UPDATED_MOVE_DATA >= GEN_8 ? 15 : 15,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,

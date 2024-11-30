@@ -4137,6 +4137,9 @@ static const u8 sText_MaxieLast[] = _("How is this imbecile winning?\nThis is in
 static const u8 sText_JaydenLastMon3[] = _("Down to my last Pokémon again.\nStill doesn't mean I lost though.\p");
 static const u8 sText_FlanneryBeforeTurn[] = _("Okay so uh, let's see how you get past\nmy sun strategy.\p");
 static const u8 sText_FlanneryLastMon[] = _("Yikes... I'm down to my last Pokémon.\p");
+static const u8 sText_ClayCrit[] = _("Well I'll be! Sure didn't see that coming.\p");
+static const u8 sText_ClayFirstDown[] = _("Impressive! That's some strength\nyou've got!\p");
+static const u8 sText_ClayLast[] = _("No hard feelings, but I'm extremely\nstubborn.\p");
 
 
 
@@ -4365,6 +4368,13 @@ static const struct TrainerSlide sTrainerSlides[] =
         .isFrontierTrainer = FALSE,
         .msgLastSwitchIn = sText_FlanneryLastMon,
         .msgBeforeFirstTurn = sText_FlanneryBeforeTurn,
+    },
+    {
+        .trainerId = TRAINER_CLAY,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_ClayLast,
+        .msgFirstCriticalHit = sText_ClayCrit,
+        .msgFirstDown = sText_ClayFirstDown,
     },
 };
 
