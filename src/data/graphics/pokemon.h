@@ -19387,7 +19387,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Copperajah[] = INCBIN_U32("graphics/pokemon/copperajah/front.4bpp.lz");
+    const u32 gMonFrontPic_Copperajah[] = INCBIN_U32("graphics/pokemon/copperajah/anim_front.4bpp.lz");
     const u32 gMonPalette_Copperajah[] = INCBIN_U32("graphics/pokemon/copperajah/normal.gbapal.lz");
     const u32 gMonBackPic_Copperajah[] = INCBIN_U32("graphics/pokemon/copperajah/back.4bpp.lz");
     const u32 gMonShinyPalette_Copperajah[] = INCBIN_U32("graphics/pokemon/copperajah/shiny.gbapal.lz");
@@ -20511,7 +20511,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Bellibolt[] = INCBIN_U32("graphics/pokemon/bellibolt/front.4bpp.lz");
+    const u32 gMonFrontPic_Bellibolt[] = INCBIN_U32("graphics/pokemon/bellibolt/anim_front.4bpp.lz");
     const u32 gMonPalette_Bellibolt[] = INCBIN_U32("graphics/pokemon/bellibolt/normal.gbapal.lz");
     const u32 gMonBackPic_Bellibolt[] = INCBIN_U32("graphics/pokemon/bellibolt/back.4bpp.lz");
     const u32 gMonShinyPalette_Bellibolt[] = INCBIN_U32("graphics/pokemon/bellibolt/shiny.gbapal.lz");

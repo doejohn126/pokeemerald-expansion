@@ -3531,11 +3531,9 @@ static const union AnimCmd sAnim_Poochyena_1[] =
 
 static const union AnimCmd sAnim_Mightyena_1[] =
 {
-    ANIMCMD_FRAME(0, 27),
-    ANIMCMD_FRAME(1, 6),
-    ANIMCMD_FRAME(0, 6),
-    ANIMCMD_FRAME(1, 6),
-    ANIMCMD_FRAME(0, 6),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 46),
+    ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
 #endif //P_FAMILY_POOCHYENA
@@ -3717,9 +3715,14 @@ static const union AnimCmd sAnim_Taillow_1[] =
 
 static const union AnimCmd sAnim_Swellow_1[] =
 {
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 18),
-    ANIMCMD_FRAME(0, 11),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
 #endif //P_FAMILY_TAILLOW
@@ -9725,7 +9728,12 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Morpeko);
 
 #if P_FAMILY_CUFANT
 PLACEHOLDER_ANIM_SINGLE_FRAME(Cufant);
-PLACEHOLDER_ANIM_SINGLE_FRAME(Copperajah);
+static const union AnimCmd sAnim_Copperajah_1[] =
+{
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
 
 #if P_GIGANTAMAX_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(CopperajahGigantamax);
@@ -9893,7 +9901,12 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Ceruledge);
 
 #if P_FAMILY_TADBULB
 PLACEHOLDER_ANIM_SINGLE_FRAME(Tadbulb);
-PLACEHOLDER_ANIM_SINGLE_FRAME(Bellibolt);
+static const union AnimCmd sAnim_Bellibolt_1[] =
+{
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
 #endif //P_FAMILY_TADBULB
 
 #if P_FAMILY_WATTREL

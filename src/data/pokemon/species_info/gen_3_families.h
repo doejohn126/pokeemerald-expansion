@@ -2101,7 +2101,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 5,
         .frontAnimFrames = sAnims_Swellow,
-        .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
+        .frontAnimId = ANIM_H_SLIDE_SLOW,
         .backPic = gMonBackPic_Swellow,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 6,
@@ -4743,7 +4743,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_INTIMIDATE, ABILITY_INTIMIDATE },
+        .abilities = { ABILITY_ELECTROMORPHOSIS, ABILITY_ELECTROMORPHOSIS, ABILITY_ELECTROMORPHOSIS },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Manectric"),
         .cryId = CRY_MANECTRIC_MEGA,
@@ -6994,7 +6994,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
     #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_OBLIVIOUS, ABILITY_ANTICIPATION, ABILITY_HYDRATION },
+        .abilities = { ABILITY_ADAPTABILITY, ABILITY_ANTICIPATION, ABILITY_HYDRATION },
     #else
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_NONE, ABILITY_HYDRATION },
     #endif
@@ -7061,7 +7061,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
     #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_OBLIVIOUS, ABILITY_ANTICIPATION, ABILITY_HYDRATION },
+        .abilities = { ABILITY_ADAPTABILITY, ABILITY_ANTICIPATION, ABILITY_HYDRATION },
     #else
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_NONE, ABILITY_HYDRATION },
     #endif
