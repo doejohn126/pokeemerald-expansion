@@ -4140,6 +4140,9 @@ static const u8 sText_FlanneryLastMon[] = _("Yikes... I'm down to my last Pokém
 static const u8 sText_ClayCrit[] = _("Well I'll be! Sure didn't see that coming.\p");
 static const u8 sText_ClayFirstDown[] = _("Impressive! That's some strength\nyou've got!\p");
 static const u8 sText_ClayLast[] = _("No hard feelings, but I'm extremely\nstubborn.\p");
+static const u8 sText_NormanBeforeFirst[] = _("I hope you came prepared {B_PLAYER_NAME},\nbecause I'm highly considered one of\lthe toughest Gym Leaders here.\p");
+static const u8 sText_NormanMegaEvolve[] = _("Kangaskhan Mega Evolve!\pMega Evolving is a great way to turn\nthe tables of a battle.\p");
+static const u8 sText_NormanLast[] = _("Wow I didn't expect this...\nYou're quite the trainer {B_PLAYER_NAME}.\p");
 
 
 
@@ -4375,6 +4378,13 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgLastSwitchIn = sText_ClayLast,
         .msgFirstCriticalHit = sText_ClayCrit,
         .msgFirstDown = sText_ClayFirstDown,
+    },
+    {
+        .trainerId = TRAINER_NORMAN_1,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_NormanLast,
+        .msgMegaEvolution = sText_NormanMegaEvolve,
+        .msgBeforeFirstTurn = sText_NormanBeforeFirst,
     },
 };
 

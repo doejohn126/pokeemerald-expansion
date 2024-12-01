@@ -3865,6 +3865,7 @@ static const struct LevelUpMove sTaurosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_REST),
     LEVEL_UP_MOVE(45, MOVE_SWAGGER),
     LEVEL_UP_MOVE(50, MOVE_THRASH),
+    LEVEL_UP_MOVE(53, MOVE_LASH_OUT),
     LEVEL_UP_MOVE(55, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(60, MOVE_GIGA_IMPACT),
     LEVEL_UP_END
@@ -5471,6 +5472,7 @@ static const struct LevelUpMove sAipomLevelUpLearnset[] = {
 
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sAmbipomLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_TAIL_SLAP),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
@@ -11763,6 +11765,7 @@ static const struct LevelUpMove sWatchogLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_CONFUSE_RAY),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSE_RAY),
     LEVEL_UP_MOVE( 1, MOVE_ROTOTILLER),
+    LEVEL_UP_MOVE( 1, MOVE_DIZZY_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_BITE),

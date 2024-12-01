@@ -437,6 +437,7 @@ MauvilleCity_EventScript_BegunNewMauville::
 MauvilleCity_EventScript_CompletedNewMauville::
 	msgbox MauvilleCity_Text_WattsonThanksTakeTM, MSGBOX_DEFAULT
 	giveitem ITEM_TM_THUNDERBOLT
+	giveitem ITEM_ROTOM_CATALOG
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON
 	msgbox MauvilleCity_Text_WattsonYoungTakeCharge, MSGBOX_DEFAULT
@@ -606,6 +607,7 @@ MauvilleCity_Text_WattsonThanksTakeTM:
 	.string "the right choice asking you!\p"
 	.string "This is my thanks--a TM containing\n"
 	.string "THUNDERBOLT!\p"
+	.string "Oh and another little cool item with it.\p"
 	.string "Go on, you've earned it!$"
 
 MauvilleCity_Text_WattsonYoungTakeCharge:

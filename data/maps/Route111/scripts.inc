@@ -1488,47 +1488,49 @@ MaybeWellMeetAgain::
 	faceplayer
 # 751 "data/maps/Route111/scripts.pory"
 	msgbox ClayOutro
-	return
+# 752 "data/maps/Route111/scripts.pory"
+	release
+	end
 
 
 ClayDeclineFight::
-# 762 "data/maps/Route111/scripts.pory"
+# 764 "data/maps/Route111/scripts.pory"
 	msgbox YoureGonnaNeedIt
-# 763 "data/maps/Route111/scripts.pory"
+# 765 "data/maps/Route111/scripts.pory"
 	release
 	end
 
 
 ClayOutro::
-# 754 "data/maps/Route111/scripts.pory"
+# 756 "data/maps/Route111/scripts.pory"
 	.string "I'm probably gonna visit my daughter at\n"
 	.string "her academy in Unova.\p"
 	.string "You might see me again though cus' this\n"
 	.string "region is growing on me.$"
 
 PrettyGoodKiddo::
-# 767 "data/maps/Route111/scripts.pory"
+# 769 "data/maps/Route111/scripts.pory"
 	.string "You're pretty good kid, as I promised\n"
 	.string "here's your TM.$"
 
 ClayLose::
-# 772 "data/maps/Route111/scripts.pory"
+# 774 "data/maps/Route111/scripts.pory"
 	.string "Man oh man… It feels good to go all out\n"
 	.string "and still be defeated!$"
 
 YoureGonnaNeedIt::
-# 777 "data/maps/Route111/scripts.pory"
+# 779 "data/maps/Route111/scripts.pory"
 	.string "Trust me kid, you're gonna like this TM.\n"
 	.string "Maybe go heal your Pokémon real quick.$"
 
 InterestinPlace::
-# 782 "data/maps/Route111/scripts.pory"
+# 784 "data/maps/Route111/scripts.pory"
 	.string "Hrmph, what an interestin' place. Maybe\n"
 	.string "this Hoenn place ain't that bad after\l"
 	.string "all.$"
 
 IllBe::
-# 788 "data/maps/Route111/scripts.pory"
+# 790 "data/maps/Route111/scripts.pory"
 	.string "Well, I'll be! I don't think I've seen you\n"
 	.string "before but I can tell you're a trainer.\p"
 	.string "I've seen enough young 'uns like you to\n"

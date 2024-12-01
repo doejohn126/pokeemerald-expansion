@@ -749,6 +749,8 @@ script ClayMain {
 script MaybeWellMeetAgain {
     faceplayer
     msgbox(ClayOutro)
+	release
+	end
 }
 
 text ClayOutro {
