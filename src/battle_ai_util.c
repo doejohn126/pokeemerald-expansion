@@ -2371,6 +2371,32 @@ bool32 IsSwitchOutEffect(u32 effect)
     }
 }
 
+static inline bool32 IsMoveSleepClauseTrigger(u32 move)
+{
+    u32 i, effect = gMovesInfo[move].effect;
+
+    // Sleeping effects like Sleep Powder, Yawn, Dark Void, etc.
+    switch (effect)
+    {
+    case EFFECT_SLEEP:
+    case EFFECT_YAWN:
+    case EFFECT_DARK_VOID:
+        return TRUE;
+    }
+
+    // Sleeping effects like G-Max Befuddle, G-Max Snooze, etc.
+    for (i = 0; i < gMovesInfo[move].numAdditionalEffects; i++)
+    {
+        switch (gMovesInfo[move].additionalEffects[i].moveEffect)
+        {
+        case MAX_EFFECT_EFFECT_SPORE_FOES:
+        case MAX_EFFECT_YAWN_FOE:
+            return TRUE;
+        }
+    }
+    return FALSE;
+}
+
 bool32 HasDamagingMove(u32 battlerId)
 {
     u32 i;
@@ -2907,7 +2933,7 @@ bool32 IsBattlerIncapacitated(u32 battler, u32 ability)
 
 bool32 AI_CanPutToSleep(u32 battlerAtk, u32 battlerDef, u32 defAbility, u32 move, u32 partnerMove)
 {
-    if (!CanBeSlept(battlerDef, defAbility)
+    if (!CanBeSlept(battlerDef, defAbility, TRUE)
       || DoesSubstituteBlockMove(battlerAtk, battlerDef, move)
       || PartnerMoveEffectIsStatusSameTarget(BATTLE_PARTNER(battlerAtk), battlerDef, partnerMove))   // shouldn't try to sleep mon that partner is trying to make sleep
         return FALSE;
@@ -3395,6 +3421,13 @@ bool32 PartnerMoveIsSameNoTarget(u32 battlerAtkPartner, u32 move, u32 partnerMov
     if (partnerMove != MOVE_NONE && move == partnerMove)
         return TRUE;
     return FALSE;
+}
+
+bool32 PartnerMoveActivatesSleepClause(u32 partnerMove)
+{
+    if (!IsDoubleBattle() || !FlagGet(B_FLAG_SLEEP_CLAUSE))
+        return FALSE;
+    return IsMoveSleepClauseTrigger(partnerMove);
 }
 
 bool32 ShouldUseWishAromatherapy(u32 battlerAtk, u32 battlerDef, u32 move)
