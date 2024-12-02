@@ -235,10 +235,8 @@ gScriptCmdTable::
     .4byte ScrCmd_checkfollower						@ 0xe8
 	.4byte ScrCmd_updatefollowingmon				@ 0xe9
 	.4byte ScrCmd_ballfollowingmon					@ 0xea
-	.4byte ScrCmd_showitemdesc              			@ 0xeb
-	.4byte ScrCmd_hideitemdesc              			@ 0xec
-    .4byte ScrCmd_pokevial                          @ 0xed //Pokevial Branch
-    .4byte ScrCmd_checkpartylearnknowsfieldmove     @ 0xee // qol_field_moves
+    .4byte ScrCmd_pokevial                          @ 0xeb //Pokevial Branch
+    .4byte ScrCmd_checkpartylearnknowsfieldmove     @ 0xec // qol_field_moves
 
 gScriptCmdTableEnd::
 	.4byte ScrCmd_nop

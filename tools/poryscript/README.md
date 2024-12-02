@@ -92,17 +92,17 @@ It's also a good idea to add `tools/poryscript` to your `.gitignore` before your
 
 2. Update the Makefile with these changes (Note, don't add the `+` symbol at the start of the lines. That's just to show the line is being added.):
 ```diff
-FIX := tools/gbafix/gbafix$(EXE)
-MAPJSON := tools/mapjson/mapjson$(EXE)
-JSONPROC := tools/jsonproc/jsonproc$(EXE)
-+ SCRIPT := tools/poryscript/poryscript$(EXE)
+FIX       := $(TOOLS_DIR)/gbafix/gbafix$(EXE)
+MAPJSON   := $(TOOLS_DIR)/mapjson/mapjson$(EXE)
+JSONPROC  := $(TOOLS_DIR)/jsonproc/jsonproc$(EXE)
++ SCRIPT    := $(TOOLS_DIR)/poryscript/poryscript$(EXE)
 ```
 ```diff
-mostlyclean: tidynonmodern tidymodern
-	...
-	rm -f $(AUTO_GEN_TARGETS)
-	@$(MAKE) clean -C libagbsyscall
-+	rm -f $(patsubst %.pory,%.inc,$(shell find data/ -type f -name '*.pory'))
+include audio_rules.mk
+
++AUTO_GEN_TARGETS += $(patsubst %.pory,%.inc,$(shell find data/ -type f -name '*.pory'))
+
+generated: $(AUTO_GEN_TARGETS)
 ```
 ```diff
 %.s: ;
@@ -112,8 +112,8 @@ mostlyclean: tidynonmodern tidymodern
 + %.pory: ;
 ```
 ```diff
-sound/%.bin: sound/%.aif ; $(AIF) $< $@
-+ data/%.inc: data/%.pory; $(SCRIPT) -i $< -o $@ -fc tools/poryscript/font_config.json
+%.rl:     %      ; $(GFX) $< $@
++ data/%.inc: data/%.pory; $(SCRIPT) -i $< -o $@ -fc tools/poryscript/font_config.json -cc tools/poryscript/command_config.json
 ```
 
 ## Convert Existing Scripts
@@ -519,6 +519,30 @@ MyMovement:
 	step_end
 ```
 
+However, movement can also be *inlined* inside commands similar to text, using the `moves()` operator. This is often much more convenient, and it can help simplify your scripts. Anything that can be used in a `movement` statement can also be used inside `moves()`.
+
+Looking at the previous example, the movement can be inlined like this:
+```
+script MyScript {
+    lock
+    applymovement(2, moves(
+        walk_left
+        walk_up * 5
+        face_down
+    ))
+    waitmovement(0)
+    release
+}
+```
+Note, whitespace doesn't matter. This can also be written all on a single line:
+```
+applymovement(2, moves(walk_left walk_up * 5 face_down))
+
+// You can even use commas to separate each movement command, since
+// that may be easier to read.
+applymovement(2, moves(walk_left, walk_up * 5, face_down))
+```
+
 ## `mart` Statement
 Use `mart` statements to define a list of items for use with the `pokemart` command. Data defined with the `mart` statement is created with local scope by default. It is not neccesary to add `ITEM_NONE` to the end of the list, but if Poryscript encounters it, any items after it will be ignored.
 
@@ -661,7 +685,7 @@ const ASSISTANT_ID = PROF_BIRCH_ID + 1
 const FLAG_GREETED_BIRCH = FLAG_TEMP_2
 
 script ProfBirchScript {
-    applymovement(PROF_BIRCH_ID, BirchMovementData)
+    applymovement(PROF_BIRCH_ID, moves(walk_left * 4, face_down))
     showobject(ASSISTANT_ID)
     setflag(FLAG_GREETED_BIRCH)
 }

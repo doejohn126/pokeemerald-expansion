@@ -104,7 +104,6 @@ void MoveDeleterForgetMove(void);
 void BufferMoveDeleterNicknameAndMove(void);
 void GetNumMovesSelectedMonHas(void);
 void MoveDeleterChooseMoveToForget(void);
-bool32 IsItemFlute(u16 item);
 void ItemUseCB_UsePokevial(u8 taskId, TaskFunc task); //Pokevial Branch
 void InitPartyMenuForPokevialFromField(u8 taskId); //Pokevial Branch
 // Start qol_field_moves
