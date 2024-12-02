@@ -48,11 +48,11 @@ const struct Coords16 sTypeIconPositions[][2] =
     },
     [B_POSITION_PLAYER_RIGHT] =
     {
-        [TRUE] = {156, 96},
+        [TRUE] = {152, 96},
     },
     [B_POSITION_OPPONENT_RIGHT] =
     {
-        [TRUE] = {85, 39},
+        [TRUE] = {88, 39},
     },
 };
 

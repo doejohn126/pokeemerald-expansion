@@ -34,7 +34,6 @@ static const u8 *ItemId_GetPluralName(u16);
 static bool32 DoesItemHavePluralName(u16);
 
 EWRAM_DATA struct BagPocket gBagPockets[POCKETS_COUNT] = {0};
-EWRAM_DATA static u8 sHeaderBoxWindowId = 0;
 //EWRAM_DATA u8 sItemIconSpriteId = 0;
 //EWRAM_DATA u8 sItemIconSpriteId2 = 0;
 
@@ -1022,50 +1021,6 @@ u32 GetItemStatus2Mask(u16 itemId)
         return STATUS2_CONFUSION;
     else
         return 0;
-}
-
-// Item Description Header
-
-static u8 ReformatItemDescription(u16 item, u8 *dest)
-{
-    u8 count = 0;
-    u8 numLines = 1;
-    u8 maxChars = 32;
-    u8 *desc = (u8 *)gItemsInfo[item].description;
-
-    while (*desc != EOS)
-    {
-        if (count >= maxChars)
-        {
-            while (*desc != CHAR_SPACE && *desc != CHAR_NEWLINE)
-            {
-                *dest = *desc;  //finish word
-                dest++;
-                desc++;
-            }
-
-            *dest = CHAR_NEWLINE;
-            count = 0;
-            numLines++;
-            dest++;
-            desc++;
-            continue;
-        }
-
-        *dest = *desc;
-        if (*desc == CHAR_NEWLINE)
-        {
-            *dest = CHAR_SPACE;
-        }
-
-        dest++;
-        desc++;
-        count++;
-    }
-
-    // finish string
-    *dest = EOS;
-    return numLines;
 }
 
 #include "gpu_regs.h"
