@@ -1281,7 +1281,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_GEODUDE_ALOLA"
+                "species": "SPECIES_RELLOR"
               },
               {
                 "min_level": 15,
@@ -1291,7 +1291,7 @@
               {
                 "min_level": 15,
                 "max_level": 20,
-                "species": "SPECIES_GEODUDE_ALOLA"
+                "species": "SPECIES_RELLOR"
               },
               {
                 "min_level": 15,
@@ -1956,6 +1956,36 @@
                 "min_level": 8,
                 "max_level": 11,
                 "species": "SPECIES_WOOBAT"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 30,
+                "species": "SPECIES_RELLOR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 30,
+                "species": "SPECIES_RELLOR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 30,
+                "species": "SPECIES_RELLOR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 30,
+                "species": "SPECIES_RELLOR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 30,
+                "species": "SPECIES_RELLOR"
               }
             ]
           }
