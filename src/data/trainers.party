@@ -5510,7 +5510,7 @@ Gender: Male
 Music: Male
 Items: Hyper Potion / Hyper Potion
 Double Battle: No
-AI: Basic Trainer / Smart Switching
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
 Mugshot: Gray
 
 Blissey
@@ -18818,7 +18818,7 @@ Gender: Male
 Music: Male
 Double Battle: No
 Items: Hyper Potion / Hyper Potion
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Weigh Ability Prediction
 Mugshot: Yellow
 
 Nidoking
