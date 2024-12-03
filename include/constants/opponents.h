@@ -161,7 +161,7 @@
 #define TRAINER_TONY_1                      155
 #define TRAINER_JEROME                      156
 #define TRAINER_MATTHEW                     157
-#define TRAINER_DAVID                       158
+#define TRAINER_DAVID                       158 // Unused
 #define TRAINER_SPENCER                     159
 #define TRAINER_ROLAND                      160
 #define TRAINER_NOLEN                       161
@@ -451,7 +451,7 @@
 #define TRAINER_BETH                        445
 #define TRAINER_TARA                        446
 #define TRAINER_MISSY                       447
-#define TRAINER_ALICE                       448
+#define TRAINER_ALICE                       448 // Unused
 #define TRAINER_JENNY_1                     449
 #define TRAINER_GRACE                       450
 #define TRAINER_TANYA                       451
