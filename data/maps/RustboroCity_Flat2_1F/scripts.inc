@@ -30,9 +30,9 @@ RustboroCity_Flat2_1F_Text_Glameow:
 	.string "GLAMEOW: Ehaheee!$"
 
 RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere:
-	.string "DEVON CORPORATION's workers live in\n"
+	.string "Devon Corporation's workers live in\n"
 	.string "this building.$"
 
 RustboroCity_Flat2_1F_Text_Skitty:
-	.string "DELCATTY: Gyaaaah!$"
+	.string "Delcatty: Gyaaaah!$"
 

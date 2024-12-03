@@ -65,33 +65,33 @@ FortreeCity_House4_EventScript_Wingull::
 	end
 
 FortreeCity_House4_Text_BringsWorldCloserTogether:
-	.string "By being together with POKéMON,\n"
+	.string "By being together with Pokémon,\n"
 	.string "people make more and more friends.\p"
 	.string "And that brings the world closer\n"
 	.string "together. I think it's wonderful!$"
 
 FortreeCity_House4_Text_GoBirdPokemon:
 	.string "There!\n"
-	.string "Go, BIRD POKéMON!$"
+	.string "Go, Bird Pokémon!$"
 
 FortreeCity_House4_Text_AskedWingullToRunErrand:
-	.string "Heheh, I asked my FARFETCH'D to run\n"
+	.string "Heheh, I asked my Farfetch'd to run\n"
 	.string "an errand for me.$"
 
 FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb:
 	.string "Good!\n"
-	.string "Welcome back, FARFETCH'D!\p"
+	.string "Welcome back, Farfetch'd!\p"
 	.string "Huh? What is this?\n"
 	.string "What is it holding?\p"
-	.string "A MENTAL HERB?\n"
+	.string "A Mental Herb?\n"
 	.string "It must have picked it up somewhere.\p"
-	.string "But I'm not a TRAINER, so you can\n"
+	.string "But I'm not a Trainer, so you can\n"
 	.string "have it.$"
 
 FortreeCity_House4_Text_FriendsFarAwayThanksToWingull:
-	.string "Thanks to my FARFETCH'D, I have friends\n"
+	.string "Thanks to my Farfetch'd, I have friends\n"
 	.string "who live far away.$"
 
 FortreeCity_House4_Text_Wingull:
-	.string "FARFETCH'D: Farr!$"
+	.string "Farfetch'd: Farr!$"
 
