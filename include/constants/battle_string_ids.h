@@ -729,8 +729,11 @@
 #define STRINGID_SEEMSWEIRD                           727
 #define STRINGID_WAGGLINGAFINGER                      728
 #define STRINGID_BLOCKEDBYSLEEPCLAUSE                 729
+#define STRINGID_SUPEREFFECTIVETWOFOES                730
+#define STRINGID_NOTVERYEFFECTIVETWOFOES              731
+#define STRINGID_ITDOESNTAFFECTTWOFOES                732
 
-#define BATTLESTRINGS_COUNT                           730
+#define BATTLESTRINGS_COUNT                           733
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,
