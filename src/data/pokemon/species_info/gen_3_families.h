@@ -2197,6 +2197,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 22 : 5,
         .frontAnimFrames = sAnims_Swellow,
         .frontAnimId = ANIM_H_SLIDE_SLOW,
+        .enemyMonElevation = 5,
         .backPic = gMonBackPic_Swellow,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 48) : MON_COORDS_SIZE(56, 56),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 6,
