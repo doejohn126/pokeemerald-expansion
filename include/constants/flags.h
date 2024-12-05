@@ -62,7 +62,7 @@
 #define FLAG_CANDY_JAR       0x30 // Unused Flag
 #define FLAG_TELEPORTER      0x31 // Unused Flag
 #define FLAG_JAYDEN_LAVARIDGE 0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
+#define FLAG_KORRINA         0x33 // Unused Flag
 #define FLAG_UNUSED_0x034    0x34 // Unused Flag
 #define FLAG_UNUSED_0x035    0x35 // Unused Flag
 #define FLAG_UNUSED_0x036    0x36 // Unused Flag

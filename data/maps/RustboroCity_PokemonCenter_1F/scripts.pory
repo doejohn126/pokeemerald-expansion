@@ -108,7 +108,27 @@ script WSkyBattle {
 }
 
 script LetsRematchOnceAgain {
+    goto_if_set(FLAG_BADGE05_GET, TryDoSkybattle3)
     msgbox(BeatNorman)
+    release
+    end
+}
+
+script TryDoSkybattle3 {
+    special(TrySkyBattle)
+    compare(VAR_RESULT, TRUE)
+    goto_if_eq(skykidrematch2)
+    msgbox(WrongMons)
+    release
+    end
+}
+
+script skykidrematch2 {
+    msgbox(NiceBadges)
+    trainerbattle_no_intro(TRAINER_SKY_KID_3, DangIt)
+    msgbox(AlrightYouEarned)
+    giveitem(ITEM_EXP_CANDY_S, 6)
+    giveitem(ITEM_EXP_CANDY_L, 2)
     release
     end
 }

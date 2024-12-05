@@ -368,6 +368,8 @@ const u32 gObjectEventPic_Dawn[] = INCBIN_U32("graphics/object_events/pics/peopl
 const u16 gObjectEventPal_Dawn[] = INCBIN_U16("graphics/object_events/pics/people/dawn.gbapal");
 const u32 gObjectEventPic_Clay[] = INCBIN_U32("graphics/object_events/pics/people/clay.4bpp");
 const u16 gObjectEventPal_Clay[] = INCBIN_U16("graphics/object_events/pics/people/clay.gbapal");
+const u32 gObjectEventPic_Korrina[] = INCBIN_U32("graphics/object_events/pics/people/korrina.4bpp");
+const u16 gObjectEventPal_Korrina[] = INCBIN_U16("graphics/object_events/pics/people/korrina.gbapal");
 
 
 const u32 gObjectEventPic_DeoxysOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/deoxys.4bpp");

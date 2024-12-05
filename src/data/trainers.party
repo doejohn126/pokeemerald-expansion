@@ -2430,27 +2430,65 @@ Numel
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CINDY_2 ===
-Name: Cindy
-Class: Lady
-Pic: Lady
-Gender: Female
-Music: Female
-Items: Full Restore
+=== TRAINER_SKY_KID_3 ===
+Name: sky kid
+Class: Pkmn Trainer 2
+Pic: Tuber M
+Gender: Male
+Music: Male
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Mon Choices
+Mugshot: Red
 
-Wigglytuff @ Nugget
-Level: 44
-IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+Farfetchd
+Level: 54
+Ability: Defiant
+IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+- Dual Wingbeat
+- Swords Dance
+- Slash
+- Poison Jab
 
-Eldegoss @ Nugget
-Level: 44
-IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+Pelipper @ Iron Ball
+Level: 55
+Ability: Drizzle
+IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+- Hurricane
+- Spit Up
+- Fling
+- Surf
 
-Cinccino @ Nugget
-Level: 44
-IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+Talonflame
+Level: 54
+IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+- Acrobatics
+- Flare Blitz
+- U Turn
+- Thief
+
+Vespiquen
+Level: 54
+IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+- Attack Order
+- Defend Order
+- Power Gem
+- Air Slash
+
+Jumpluff
+Level: 54
+IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+- U Turn
+- Sleep Powder
+- Bounce
+- Synthesis
+
+Braviary
+Level: 54
+IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+- Crush Claw
+- Sky Attack
+- Hone Claws
+- Superpower
 
 === TRAINER_BRIANNA ===
 Name: Brianna

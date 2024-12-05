@@ -361,7 +361,7 @@ Route114_EventScript_Kai::
 # 181 "data/maps/Route114/scripts.pory"
 Route114_Text_AllMyMonDoesIsRoarTakeThis:
 # 182 "data/maps/Route114/scripts.pory"
-	.string "All my POKéMON does is ROAR…\n"
+	.string "All my Pokémon does is ROAR…\n"
 # 183 "data/maps/Route114/scripts.pory"
 	.string "No one dares to come near me…\p"
 # 184 "data/maps/Route114/scripts.pory"
@@ -373,9 +373,9 @@ Route114_Text_AllMyMonDoesIsRoarTakeThis:
 # 187 "data/maps/Route114/scripts.pory"
 Route114_Text_ExplainRoar:
 # 188 "data/maps/Route114/scripts.pory"
-	.string "TM05 contains ROAR.\n"
+	.string "TM05 contains Roar.\n"
 # 189 "data/maps/Route114/scripts.pory"
-	.string "A ROAR sends POKéMON scurrying.$"
+	.string "A Roar sends Pokémon scurrying.$"
 # 190 "data/maps/Route114/scripts.pory"
 
 # 191 "data/maps/Route114/scripts.pory"
@@ -387,15 +387,15 @@ Route114_Text_Poochyena:
 # 194 "data/maps/Route114/scripts.pory"
 Route114_Text_MeteorFallsSign:
 # 195 "data/maps/Route114/scripts.pory"
-	.string "METEOR FALLS\n"
+	.string "Meteor Falls\n"
 # 196 "data/maps/Route114/scripts.pory"
-	.string "RUSTBORO CITY THROUGH HERE$"
+	.string "Rustboro City through here$"
 # 197 "data/maps/Route114/scripts.pory"
 
 # 198 "data/maps/Route114/scripts.pory"
 Route114_Text_FossilManiacsHouseSign:
 # 199 "data/maps/Route114/scripts.pory"
-	.string "FOSSIL MANIAC'S HOUSE\n"
+	.string "Fossil Maniac's House\n"
 # 200 "data/maps/Route114/scripts.pory"
 	.string "“Fossils gratefully accepted!”$"
 # 201 "data/maps/Route114/scripts.pory"
@@ -403,7 +403,7 @@ Route114_Text_FossilManiacsHouseSign:
 # 202 "data/maps/Route114/scripts.pory"
 Route114_Text_LanettesHouse:
 # 203 "data/maps/Route114/scripts.pory"
-	.string "LANETTE'S HOUSE$"
+	.string "Lanette's House$"
 
 MayLetsFight::
 # 209 "data/maps/Route114/scripts.pory"

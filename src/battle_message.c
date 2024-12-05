@@ -3861,6 +3861,11 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgMegaEvolution = sText_NormanMegaEvolve,
         .msgBeforeFirstTurn = sText_NormanBeforeFirst,
     },
+    {
+        .trainerId = TRAINER_SKY_KID_3,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_SkyKidLastSwitch,
+    },
 };
 
 static u32 GetEnemyMonCount(u32 firstId, u32 lastId, bool32 onlyAlive)
