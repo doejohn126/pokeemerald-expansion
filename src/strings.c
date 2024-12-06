@@ -1300,6 +1300,16 @@ const u8 gText_PokevialIsEmpty[] =_("The {STR_VAR_1} is empty!\nRefill it by hea
 const u8 gText_YourPkmnWereRestored[] =_("Your Pokémon were restored to full health.{PAUSE_UNTIL_PRESS}");
 //End Pokevial Branch
 
+const u8 gText_Follower[] = _("Follower");
+const u8 gText_FollowerSet[] = _("Set");
+const u8 gText_FollowerReturn[] = _("Return");
+const u8 gText_FollowerUnset[] = _("Unset");
+const u8 gText_FollowerPreferred[] = _("{STR_VAR_1} is now\nyour preferred follower.{PAUSE_UNTIL_PRESS}");
+const u8 gText_FollowerDefaulted[] = _("{STR_VAR_1} is no longer\nthe preferred follower.{PAUSE_UNTIL_PRESS}");
+const u8 gText_FollowerFainted[] = _("Cannot set a fainted Pokémon\nas your preferred follower!{PAUSE_UNTIL_PRESS}");
+const u8 gText_FollowerReturnedToBall[] = _("Returned {STR_VAR_1} to its ball.{PAUSE_UNTIL_PRESS}");
+const u8 gText_DoWhatWithFollower[] = _("Do what with {STR_VAR_1}?");
+
 //tx_randomizer_and_challenges
 const u8 gText_NuzlockeCantThrowPokeBallRoute[]             = _("You have already used your encounter\nfor this area!{PAUSE_UNTIL_PRESS}");
 const u8 gText_NuzlockeCantThrowPokeBallSpeciesClause[]     = _("You have already caught a Pokémon\nin this evolution line!{PAUSE_UNTIL_PRESS}");

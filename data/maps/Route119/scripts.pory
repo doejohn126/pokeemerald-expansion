@@ -618,36 +618,124 @@ Route119_Text_TrainerTipsDecoration:
 
 script KorrinaTrigger1 {
     lock
+	clearflag(FLAG_KORRINA)
+	addobject(44)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
     waitmovement(0)
     applymovement(44, RunToPlayerKorrina)
     waitmovement(0)
     playse(SE_WALL_HIT)
+	waitse
+	msgbox(THUD, MSGBOX_AUTOCLOSE)
+	delay(60)
+	msgbox(SorryBoutThat)
+	applymovement(44, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	playse(SE_PIN)
+	waitse
+	delay(55)
+	msgbox(ItsAMegaRing)
+	trainerbattle_no_intro(TRAINER_KORRINA, KorrinaLose)
+	goto(KorrinaOutro)
     release
     end
 }
 
+script KorrinaOutro {
+	setvar(VAR_KORRINA, 1)
+	msgbox(GiveCloseCombat)
+	giveitem(ITEM_TM52)
+	applymovement(44, KorrinaLeave)
+	waitmovement(0)
+	setflag(FLAG_KORRINA)
+	removeobject(44)
+	release
+	end
+}
+
 script KorrinaTrigger2 {
     lock
+	clearflag(FLAG_KORRINA)
+	addobject(44)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
     waitmovement(0)
     applymovement(44, RunToPlayerKorrina2)
     waitmovement(0)
     playse(SE_WALL_HIT)
+	waitse
+	msgbox(THUD, MSGBOX_AUTOCLOSE)
+	delay(60)
+	msgbox(SorryBoutThat)
+	applymovement(44, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	playse(SE_PIN)
+	waitse
+	delay(55)
+	msgbox(ItsAMegaRing)
+	trainerbattle_no_intro(TRAINER_KORRINA, KorrinaLose)
+	goto(KorrinaOutro)
     release
     end
 }
 
 movement RunToPlayerKorrina {
-    walk_right * 5
-    walk_up * 4
-    walk_right
-    walk_up * 4
+    walk_fast_right * 5
+    walk_fast_up * 4
+    walk_fast_right
+    walk_fast_up * 4
 }
 
 movement RunToPlayerKorrina2 {
-    walk_right * 5
-    walk_up * 4
-    walk_right * 2
-    walk_up * 4
+    walk_fast_right * 5
+    walk_fast_up * 4
+    walk_fast_right * 2
+    walk_fast_up * 4
+}
+
+text KorrinaLose {
+	"Oh! I have been defeated! Alack, alay!"
+}
+
+text GiveCloseCombat {
+	"Wow, you have incredible power!\n"
+	"So you have 5 Gym Badges huh?\p"
+	"Keep at what your doing because I know\n"
+	"you'll be rollin' in those badges soon!\p"
+	"OK, Ima be out, hope to see ya soon!\n"
+	"And take this with you."
+}
+
+text SorryBoutThat {
+	"Woah! sorry about that!\n"
+	"I guess I was pretty careless there.\p"
+	"Hah, I guess I've learned a habit from\n"
+	"my Lucario."
+}
+
+text THUD {
+	"THUDD"
+}
+
+text ItsAMegaRing {
+	"Woah, is that a Mega Ring I see?!\n"
+	"Ah, so people in this region do use\l"
+	"Mega's then!\p"
+	"Woo, well that's amazing!\n"
+	"Hey, let me introduce myself!\p"
+	"I'm Korrina, I run a Gym in Shalour City.\p"
+	"Heh, and a lot people also know me for\n"
+	"knowing a bunch about Mega Pokémon.\p"
+	"That's why I came here.\p"
+	"It was a good opportunity because the\n"
+	"Pokémon League Commitee gave a lot of\l"
+	"Gym Leaders breaks.\p"
+	"Hey, we've got to battle though!\n"
+	"I'm really itching for a fight and I can\l"
+	"tell you're really strong!"
+}
+
+movement KorrinaLeave {
+	walk_fast_down * 4
+	walk_fast_left * 4
+	walk_fast_down * 5
 }

@@ -161,7 +161,7 @@
 #define TRAINER_TONY_1                      155
 #define TRAINER_JEROME                      156
 #define TRAINER_MATTHEW                     157
-#define TRAINER_DAVID                       158 // Unused
+#define TRAINER_KORRINA                     158
 #define TRAINER_SPENCER                     159
 #define TRAINER_ROLAND                      160
 #define TRAINER_NOLEN                       161

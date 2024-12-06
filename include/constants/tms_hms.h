@@ -51,7 +51,10 @@
     F(STEEL_WING) \
     F(SKILL_SWAP) \
     F(SNATCH) \
-    F(OVERHEAT)
+    F(OVERHEAT) \
+    F(STOMPING_TANTRUM) \
+    F(CLOSE_COMBAT)
+
 
 #define FOREACH_HM(F) \
     F(CUT) \

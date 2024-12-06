@@ -1341,6 +1341,42 @@ static const union AnimCmd sAnim_KorrinaEast[] =
     ANIMCMD_JUMP(0),
 };
 
+static const union AnimCmd sAnim_KorrinaSouthFast[] =
+{
+    ANIMCMD_FRAME(3, 6),
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_FRAME(4, 6),
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd sAnim_KorrinaNorthFast[] =
+{
+    ANIMCMD_FRAME(5, 6),
+    ANIMCMD_FRAME(1, 2),
+    ANIMCMD_FRAME(6, 6),
+    ANIMCMD_FRAME(1, 2),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd sAnim_KorrinaWestFast[] =
+{
+    ANIMCMD_FRAME(7, 6),
+    ANIMCMD_FRAME(2, 2),
+    ANIMCMD_FRAME(8, 6),
+    ANIMCMD_FRAME(2, 2),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd sAnim_KorrinaEastFast[] =
+{
+    ANIMCMD_FRAME(7, 6, .hFlip = TRUE),
+    ANIMCMD_FRAME(2, 2, .hFlip = TRUE),
+    ANIMCMD_FRAME(8, 6, .hFlip = TRUE),
+    ANIMCMD_FRAME(2, 2, .hFlip = TRUE),
+    ANIMCMD_JUMP(0),
+};
+
 
 // Though they correspond to facing/walking movements, Rayquaza doesn't have
 // equivalent images aside from flying up. Its other frames aside from the 'normal'
@@ -1537,10 +1573,10 @@ static const union AnimCmd *const sAnimTable_Korrina[] = {
     [ANIM_STD_GO_NORTH] = sAnim_KorrinaNorth,
     [ANIM_STD_GO_WEST] = sAnim_KorrinaWest,
     [ANIM_STD_GO_EAST] = sAnim_KorrinaEast,
-    [ANIM_STD_GO_FAST_SOUTH] = sAnim_GoFastSouth,
-    [ANIM_STD_GO_FAST_NORTH] = sAnim_GoFastNorth,
-    [ANIM_STD_GO_FAST_WEST] = sAnim_GoFastWest,
-    [ANIM_STD_GO_FAST_EAST] = sAnim_GoFastEast,
+    [ANIM_STD_GO_FAST_SOUTH] = sAnim_KorrinaSouthFast,
+    [ANIM_STD_GO_FAST_NORTH] = sAnim_KorrinaNorthFast,
+    [ANIM_STD_GO_FAST_WEST] = sAnim_KorrinaWestFast,
+    [ANIM_STD_GO_FAST_EAST] = sAnim_KorrinaEastFast,
     [ANIM_STD_GO_FASTER_SOUTH] = sAnim_GoFasterSouth,
     [ANIM_STD_GO_FASTER_NORTH] = sAnim_GoFasterNorth,
     [ANIM_STD_GO_FASTER_WEST] = sAnim_GoFasterWest,

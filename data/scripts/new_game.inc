@@ -275,5 +275,6 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_SCIENTIST
 	setflag FLAG_JAYDEN_ROUTE106
 	setflag FLAG_JAYDEN_LAVARIDGE
+	setflag FLAG_KORRINA
 	call EventScript_ResetAllBerries
 	end

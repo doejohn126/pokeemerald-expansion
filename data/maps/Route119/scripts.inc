@@ -1233,100 +1233,248 @@ KorrinaTrigger1::
 # 620 "data/maps/Route119/scripts.pory"
 	lock
 # 621 "data/maps/Route119/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+	clearflag FLAG_KORRINA
 # 622 "data/maps/Route119/scripts.pory"
-	waitmovement 0
+	addobject 44
 # 623 "data/maps/Route119/scripts.pory"
-	applymovement 44, RunToPlayerKorrina
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 # 624 "data/maps/Route119/scripts.pory"
 	waitmovement 0
 # 625 "data/maps/Route119/scripts.pory"
-	playse SE_WALL_HIT
+	applymovement 44, RunToPlayerKorrina
 # 626 "data/maps/Route119/scripts.pory"
+	waitmovement 0
+# 627 "data/maps/Route119/scripts.pory"
+	playse SE_WALL_HIT
+# 628 "data/maps/Route119/scripts.pory"
+	waitse
+# 629 "data/maps/Route119/scripts.pory"
+	msgbox THUD, MSGBOX_AUTOCLOSE
+# 630 "data/maps/Route119/scripts.pory"
+	delay 60
+# 631 "data/maps/Route119/scripts.pory"
+	msgbox SorryBoutThat
+# 632 "data/maps/Route119/scripts.pory"
+	applymovement 44, Common_Movement_ExclamationMark
+# 633 "data/maps/Route119/scripts.pory"
+	waitmovement 0
+# 634 "data/maps/Route119/scripts.pory"
+	playse SE_PIN
+# 635 "data/maps/Route119/scripts.pory"
+	waitse
+# 636 "data/maps/Route119/scripts.pory"
+	delay 55
+# 637 "data/maps/Route119/scripts.pory"
+	msgbox ItsAMegaRing
+# 638 "data/maps/Route119/scripts.pory"
+	trainerbattle_no_intro TRAINER_KORRINA, KorrinaLose
+# 639 "data/maps/Route119/scripts.pory"
+	goto KorrinaOutro
+# 640 "data/maps/Route119/scripts.pory"
+	release
+	end
+
+
+KorrinaOutro::
+# 645 "data/maps/Route119/scripts.pory"
+	setvar VAR_KORRINA, 1
+# 646 "data/maps/Route119/scripts.pory"
+	msgbox GiveCloseCombat
+# 647 "data/maps/Route119/scripts.pory"
+	giveitem ITEM_TM52
+# 648 "data/maps/Route119/scripts.pory"
+	applymovement 44, KorrinaLeave
+# 649 "data/maps/Route119/scripts.pory"
+	waitmovement 0
+# 650 "data/maps/Route119/scripts.pory"
+	setflag FLAG_KORRINA
+# 651 "data/maps/Route119/scripts.pory"
+	removeobject 44
+# 652 "data/maps/Route119/scripts.pory"
 	release
 	end
 
 
 KorrinaTrigger2::
-# 631 "data/maps/Route119/scripts.pory"
+# 657 "data/maps/Route119/scripts.pory"
 	lock
-# 632 "data/maps/Route119/scripts.pory"
+# 658 "data/maps/Route119/scripts.pory"
+	clearflag FLAG_KORRINA
+# 659 "data/maps/Route119/scripts.pory"
+	addobject 44
+# 660 "data/maps/Route119/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
-# 633 "data/maps/Route119/scripts.pory"
+# 661 "data/maps/Route119/scripts.pory"
 	waitmovement 0
-# 634 "data/maps/Route119/scripts.pory"
+# 662 "data/maps/Route119/scripts.pory"
 	applymovement 44, RunToPlayerKorrina2
-# 635 "data/maps/Route119/scripts.pory"
+# 663 "data/maps/Route119/scripts.pory"
 	waitmovement 0
-# 636 "data/maps/Route119/scripts.pory"
+# 664 "data/maps/Route119/scripts.pory"
 	playse SE_WALL_HIT
-# 637 "data/maps/Route119/scripts.pory"
+# 665 "data/maps/Route119/scripts.pory"
+	waitse
+# 666 "data/maps/Route119/scripts.pory"
+	msgbox THUD, MSGBOX_AUTOCLOSE
+# 667 "data/maps/Route119/scripts.pory"
+	delay 60
+# 668 "data/maps/Route119/scripts.pory"
+	msgbox SorryBoutThat
+# 669 "data/maps/Route119/scripts.pory"
+	applymovement 44, Common_Movement_ExclamationMark
+# 670 "data/maps/Route119/scripts.pory"
+	waitmovement 0
+# 671 "data/maps/Route119/scripts.pory"
+	playse SE_PIN
+# 672 "data/maps/Route119/scripts.pory"
+	waitse
+# 673 "data/maps/Route119/scripts.pory"
+	delay 55
+# 674 "data/maps/Route119/scripts.pory"
+	msgbox ItsAMegaRing
+# 675 "data/maps/Route119/scripts.pory"
+	trainerbattle_no_intro TRAINER_KORRINA, KorrinaLose
+# 676 "data/maps/Route119/scripts.pory"
+	goto KorrinaOutro
+# 677 "data/maps/Route119/scripts.pory"
 	release
 	end
 
 
-# 641 "data/maps/Route119/scripts.pory"
+# 681 "data/maps/Route119/scripts.pory"
 RunToPlayerKorrina:
-# 642 "data/maps/Route119/scripts.pory"
-	walk_right
-# 642 "data/maps/Route119/scripts.pory"
-	walk_right
-# 642 "data/maps/Route119/scripts.pory"
-	walk_right
-# 642 "data/maps/Route119/scripts.pory"
-	walk_right
-# 642 "data/maps/Route119/scripts.pory"
-	walk_right
-# 643 "data/maps/Route119/scripts.pory"
-	walk_up
-# 643 "data/maps/Route119/scripts.pory"
-	walk_up
-# 643 "data/maps/Route119/scripts.pory"
-	walk_up
-# 643 "data/maps/Route119/scripts.pory"
-	walk_up
-# 644 "data/maps/Route119/scripts.pory"
-	walk_right
-# 645 "data/maps/Route119/scripts.pory"
-	walk_up
-# 645 "data/maps/Route119/scripts.pory"
-	walk_up
-# 645 "data/maps/Route119/scripts.pory"
-	walk_up
-# 645 "data/maps/Route119/scripts.pory"
-	walk_up
+# 682 "data/maps/Route119/scripts.pory"
+	walk_fast_right
+# 682 "data/maps/Route119/scripts.pory"
+	walk_fast_right
+# 682 "data/maps/Route119/scripts.pory"
+	walk_fast_right
+# 682 "data/maps/Route119/scripts.pory"
+	walk_fast_right
+# 682 "data/maps/Route119/scripts.pory"
+	walk_fast_right
+# 683 "data/maps/Route119/scripts.pory"
+	walk_fast_up
+# 683 "data/maps/Route119/scripts.pory"
+	walk_fast_up
+# 683 "data/maps/Route119/scripts.pory"
+	walk_fast_up
+# 683 "data/maps/Route119/scripts.pory"
+	walk_fast_up
+# 684 "data/maps/Route119/scripts.pory"
+	walk_fast_right
+# 685 "data/maps/Route119/scripts.pory"
+	walk_fast_up
+# 685 "data/maps/Route119/scripts.pory"
+	walk_fast_up
+# 685 "data/maps/Route119/scripts.pory"
+	walk_fast_up
+# 685 "data/maps/Route119/scripts.pory"
+	walk_fast_up
 	step_end
 
-# 648 "data/maps/Route119/scripts.pory"
-RunToPlayerKorrin2:
-# 649 "data/maps/Route119/scripts.pory"
-	walk_right
-# 649 "data/maps/Route119/scripts.pory"
-	walk_right
-# 649 "data/maps/Route119/scripts.pory"
-	walk_right
-# 649 "data/maps/Route119/scripts.pory"
-	walk_right
-# 649 "data/maps/Route119/scripts.pory"
-	walk_right
-# 650 "data/maps/Route119/scripts.pory"
-	walk_up
-# 650 "data/maps/Route119/scripts.pory"
-	walk_up
-# 650 "data/maps/Route119/scripts.pory"
-	walk_up
-# 650 "data/maps/Route119/scripts.pory"
-	walk_up
-# 651 "data/maps/Route119/scripts.pory"
-	walk_right
-# 651 "data/maps/Route119/scripts.pory"
-	walk_right
-# 652 "data/maps/Route119/scripts.pory"
-	walk_up
-# 652 "data/maps/Route119/scripts.pory"
-	walk_up
-# 652 "data/maps/Route119/scripts.pory"
-	walk_up
-# 652 "data/maps/Route119/scripts.pory"
-	walk_up
+# 688 "data/maps/Route119/scripts.pory"
+RunToPlayerKorrina2:
+# 689 "data/maps/Route119/scripts.pory"
+	walk_fast_right
+# 689 "data/maps/Route119/scripts.pory"
+	walk_fast_right
+# 689 "data/maps/Route119/scripts.pory"
+	walk_fast_right
+# 689 "data/maps/Route119/scripts.pory"
+	walk_fast_right
+# 689 "data/maps/Route119/scripts.pory"
+	walk_fast_right
+# 690 "data/maps/Route119/scripts.pory"
+	walk_fast_up
+# 690 "data/maps/Route119/scripts.pory"
+	walk_fast_up
+# 690 "data/maps/Route119/scripts.pory"
+	walk_fast_up
+# 690 "data/maps/Route119/scripts.pory"
+	walk_fast_up
+# 691 "data/maps/Route119/scripts.pory"
+	walk_fast_right
+# 691 "data/maps/Route119/scripts.pory"
+	walk_fast_right
+# 692 "data/maps/Route119/scripts.pory"
+	walk_fast_up
+# 692 "data/maps/Route119/scripts.pory"
+	walk_fast_up
+# 692 "data/maps/Route119/scripts.pory"
+	walk_fast_up
+# 692 "data/maps/Route119/scripts.pory"
+	walk_fast_up
 	step_end
+
+# 737 "data/maps/Route119/scripts.pory"
+KorrinaLeave:
+# 738 "data/maps/Route119/scripts.pory"
+	walk_fast_down
+# 738 "data/maps/Route119/scripts.pory"
+	walk_fast_down
+# 738 "data/maps/Route119/scripts.pory"
+	walk_fast_down
+# 738 "data/maps/Route119/scripts.pory"
+	walk_fast_down
+# 739 "data/maps/Route119/scripts.pory"
+	walk_fast_left
+# 739 "data/maps/Route119/scripts.pory"
+	walk_fast_left
+# 739 "data/maps/Route119/scripts.pory"
+	walk_fast_left
+# 739 "data/maps/Route119/scripts.pory"
+	walk_fast_left
+# 740 "data/maps/Route119/scripts.pory"
+	walk_fast_down
+# 740 "data/maps/Route119/scripts.pory"
+	walk_fast_down
+# 740 "data/maps/Route119/scripts.pory"
+	walk_fast_down
+# 740 "data/maps/Route119/scripts.pory"
+	walk_fast_down
+# 740 "data/maps/Route119/scripts.pory"
+	walk_fast_down
+	step_end
+
+KorrinaLose::
+# 695 "data/maps/Route119/scripts.pory"
+	.string "Oh! I have been defeated! Alack, alay!$"
+
+GiveCloseCombat::
+# 699 "data/maps/Route119/scripts.pory"
+	.string "Wow, you have incredible power!\n"
+	.string "So you have 5 Gym Badges huh?\p"
+	.string "Keep at what your doing because I know\n"
+	.string "you'll be rollin' in those badges soon!\p"
+	.string "OK, Ima be out, hope to see ya soon!\n"
+	.string "And take this with you.$"
+
+SorryBoutThat::
+# 708 "data/maps/Route119/scripts.pory"
+	.string "Woah! sorry about that!\n"
+	.string "I guess I was pretty careless there.\p"
+	.string "Hah, I guess I've learned a habit from\n"
+	.string "my Lucario.$"
+
+THUD::
+# 715 "data/maps/Route119/scripts.pory"
+	.string "THUDD$"
+
+ItsAMegaRing::
+# 719 "data/maps/Route119/scripts.pory"
+	.string "Woah, is that a Mega Ring I see?!\n"
+	.string "Ah, so people in this region do use\l"
+	.string "Mega's then!\p"
+	.string "Woo, well that's amazing!\n"
+	.string "Hey, let me introduce myself!\p"
+	.string "I'm Korrina, I run a Gym in Shalour City.\p"
+	.string "Heh, and a lot people also know me for\n"
+	.string "knowing a bunch about Mega Pokémon.\p"
+	.string "That's why I came here.\p"
+	.string "It was a good opportunity because the\n"
+	.string "Pokémon League Commitee gave a lot of\l"
+	.string "Gym Leaders breaks.\p"
+	.string "Hey, we've got to battle though!\n"
+	.string "I'm really itching for a fight and I can\l"
+	.string "tell you're really strong!$"
