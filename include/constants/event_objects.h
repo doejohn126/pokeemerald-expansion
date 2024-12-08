@@ -248,12 +248,39 @@
 #define OBJ_EVENT_GFX_FANTINA                    244
 #define OBJ_EVENT_GFX_CLAY                       245
 #define OBJ_EVENT_GFX_KORRINA                    246
+#define OBJ_EVENT_GFX_AROMA_LADY                 247
+#define OBJ_EVENT_GFX_BATTLE_GIRL                248
+#define OBJ_EVENT_GFX_BIRD_KEEPER                249
+#define OBJ_EVENT_GFX_BREEDER_F                  250
+#define OBJ_EVENT_GFX_BREEDER_M                  251
+#define OBJ_EVENT_GFX_COOLTRAINER_F              252
+#define OBJ_EVENT_GFX_COOLTRAINER_M              253
+#define OBJ_EVENT_GFX_COUPLE_F                   254
+#define OBJ_EVENT_GFX_COUPLE_M                   255
+#define OBJ_EVENT_GFX_DRAGON_TAMER               256
+#define OBJ_EVENT_GFX_GABBY                      257
+#define OBJ_EVENT_GFX_GUITARIST                  258
+#define OBJ_EVENT_GFX_JR                         259
+#define OBJ_EVENT_GFX_KINDLER                    260
+#define OBJ_EVENT_GFX_LADY                       261
+#define OBJ_EVENT_GFX_PARASOL_LADY               262
+#define OBJ_EVENT_GFX_POKEMANIAC                 263
+#define OBJ_EVENT_GFX_PSYCHIC_F                  264
+#define OBJ_EVENT_GFX_RANGER_F                   265
+#define OBJ_EVENT_GFX_RANGER_M                   266
+#define OBJ_EVENT_GFX_RUIN_MANIAC                267
+#define OBJ_EVENT_GFX_SR                         268
+#define OBJ_EVENT_GFX_SWIMMING_TRIATHLETE_F      269
+#define OBJ_EVENT_GFX_SWIMMING_TRIATHLETE_M      270
+#define OBJ_EVENT_GFX_TWIN_NEW                   271
+#define OBJ_EVENT_GFX_TY                         272
+
 
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        247
+#define NUM_OBJ_EVENT_GFX                        273
 
 
 // These are dynamic object gfx ids.
@@ -457,6 +484,32 @@
 #define OBJ_EVENT_PAL_TAG_TUBER_F                 0x118A
 #define OBJ_EVENT_PAL_TAG_TUBER_M_SWIMMING        0x118B
 #define OBJ_EVENT_PAL_TAG_TUBER_M                 0x118C
+#define OBJ_EVENT_PAL_TAG_AROMA_LADY              0x118D
+#define OBJ_EVENT_PAL_TAG_BATTLE_GIRL             0x118E
+#define OBJ_EVENT_PAL_TAG_BIRD_KEEPER             0x118F
+#define OBJ_EVENT_PAL_TAG_BREEDER_F               0x1190
+#define OBJ_EVENT_PAL_TAG_BREEDER_M               0x1191
+#define OBJ_EVENT_PAL_TAG_COOLTRAINER_F           0x1192
+#define OBJ_EVENT_PAL_TAG_COOLTRAINER_M           0x1193
+#define OBJ_EVENT_PAL_TAG_COUPLE_F                0x1194
+#define OBJ_EVENT_PAL_TAG_COUPLE_M                0x1195
+#define OBJ_EVENT_PAL_TAG_DRAGON_TAMER            0x1196
+#define OBJ_EVENT_PAL_TAG_GABBY                   0x1197
+#define OBJ_EVENT_PAL_TAG_GUITARIST               0x1198
+#define OBJ_EVENT_PAL_TAG_JR                      0x1199
+#define OBJ_EVENT_PAL_TAG_KINDLER                 0x119A
+#define OBJ_EVENT_PAL_TAG_LADY                    0x119B
+#define OBJ_EVENT_PAL_TAG_PARASOL_LADY            0x119C
+#define OBJ_EVENT_PAL_TAG_POKEMANIAC              0x119D
+#define OBJ_EVENT_PAL_TAG_PSYCHIC_F               0x119E
+#define OBJ_EVENT_PAL_TAG_RANGER_F                0x119F
+#define OBJ_EVENT_PAL_TAG_RANGER_M                0x11A0
+#define OBJ_EVENT_PAL_TAG_RUIN_MANIAC             0x11A1
+#define OBJ_EVENT_PAL_TAG_SR                      0x1202
+#define OBJ_EVENT_PAL_TAG_SWIMMING_TRIATHLETE_F   0x1203
+#define OBJ_EVENT_PAL_TAG_SWIMMING_TRIATHLETE_M   0x1204
+#define OBJ_EVENT_PAL_TAG_TWIN                    0x1205
+#define OBJ_EVENT_PAL_TAG_TY                      0x1206
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_EMOTES                  0x8002

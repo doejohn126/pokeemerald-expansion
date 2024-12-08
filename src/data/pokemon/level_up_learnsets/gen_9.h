@@ -5281,6 +5281,7 @@ static const struct LevelUpMove sAmpharosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(51, MOVE_DAZZLING_GLEAM),
     LEVEL_UP_MOVE(57, MOVE_LIGHT_SCREEN),
     LEVEL_UP_MOVE(62, MOVE_THUNDER),
+    LEVEL_UP_MOVE(66, MOVE_THUNDERCLAP),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MAREEP
