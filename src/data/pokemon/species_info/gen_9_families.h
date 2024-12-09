@@ -628,8 +628,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sLechonkLevelUpLearnset,
         .teachableLearnset = sLechonkTeachableLearnset,
         .eggMoveLearnset = sLechonkEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_MALE, 18, SPECIES_OINKOLOGNE_M},
-                                {EVO_LEVEL_FEMALE, 18, SPECIES_OINKOLOGNE_F}),
+        .evolutions = EVOLUTION({EVO_LEVEL_MALE, 17, SPECIES_OINKOLOGNE_M},
+                                {EVO_LEVEL_FEMALE, 17, SPECIES_OINKOLOGNE_F}),
     },
 
     [SPECIES_OINKOLOGNE_M] =
@@ -822,11 +822,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_SPIDOPS] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 79,
+        .baseHP        = 85,
+        .baseAttack    = 85,
         .baseDefense   = 92,
         .baseSpeed     = 35,
-        .baseSpAttack  = 52,
+        .baseSpAttack  = 45,
         .baseSpDefense = 86,
         .types = MON_TYPES(TYPE_BUG, TYPE_FIGHTING),
         .catchRate = 120,
@@ -943,7 +943,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sNymbleLevelUpLearnset,
         .teachableLearnset = sNymbleTeachableLearnset,
         .eggMoveLearnset = sNymbleEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_LOKIX}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_LOKIX}),
     },
 
     [SPECIES_LOKIX] =
@@ -1069,7 +1069,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sPawmiLevelUpLearnset,
         .teachableLearnset = sPawmiTeachableLearnset,
         .eggMoveLearnset = sPawmiEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_PAWMO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_PAWMO}),
     },
 
     [SPECIES_PAWMO] =
@@ -1572,7 +1572,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sSmolivLevelUpLearnset,
         .teachableLearnset = sSmolivTeachableLearnset,
         .eggMoveLearnset = sSmolivEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_DOLLIV}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_DOLLIV}),
     },
 
     [SPECIES_DOLLIV] =
@@ -2159,7 +2159,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_FLAME_BODY },
+        .abilities = { ABILITY_FLASH_FIRE, ABILITY_WEAK_ARMOR, ABILITY_FLAME_BODY },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Charcadet"),
         .cryId = CRY_CHARCADET,
@@ -2223,7 +2223,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = 20,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_WEAK_ARMOR },
+        .abilities = { ABILITY_FLASH_FIRE, ABILITY_WEAK_ARMOR, ABILITY_MEGA_LAUNCHER },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Armarouge"),
         .cryId = CRY_ARMAROUGE,
@@ -2284,7 +2284,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = 20,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_WEAK_ARMOR },
+        .abilities = { ABILITY_FLASH_FIRE, ABILITY_WEAK_ARMOR, ABILITY_SHARPNESS },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Ceruledge"),
         .cryId = CRY_CERULEDGE,
@@ -2643,7 +2643,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sMaschiffLevelUpLearnset,
         .teachableLearnset = sMaschiffTeachableLearnset,
         .eggMoveLearnset = sMaschiffEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_MABOSSTIFF}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MABOSSTIFF}),
     },
 
     [SPECIES_MABOSSTIFF] =
@@ -2769,7 +2769,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sShroodleLevelUpLearnset,
         .teachableLearnset = sShroodleTeachableLearnset,
         .eggMoveLearnset = sShroodleEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_GRAFAIAI}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_GRAFAIAI}),
     },
 
     [SPECIES_GRAFAIAI] =
@@ -3029,10 +3029,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_TOEDSCRUEL] =
     {
         .baseHP        = 80,
-        .baseAttack    = 70,
-        .baseDefense   = 65,
+        .baseAttack    = 60,
+        .baseDefense   = 75,
         .baseSpeed     = 100,
-        .baseSpAttack  = 80,
+        .baseSpAttack  = 90,
         .baseSpDefense = 120,
         .types = MON_TYPES(TYPE_GROUND, TYPE_GRASS),
         .catchRate = 90,
@@ -3093,7 +3093,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_KLAWF
     [SPECIES_KLAWF] =
     {
-        .baseHP        = 70,
+        .baseHP        = 80,
         .baseAttack    = 100,
         .baseDefense   = 115,
         .baseSpeed     = 75,
@@ -3220,11 +3220,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_SCOVILLAIN] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 108,
+        .baseHP        = 75,
+        .baseAttack    = 88,
         .baseDefense   = 65,
         .baseSpeed     = 75,
-        .baseSpAttack  = 108,
+        .baseSpAttack  = 118,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FIRE),
         .catchRate = 75,
@@ -3342,7 +3342,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sRellorLevelUpLearnset,
         .teachableLearnset = sRellorTeachableLearnset,
         .eggMoveLearnset = sRellorEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_OVERWORLD_STEPS, 1000, SPECIES_RABSCA}),
+        .evolutions = EVOLUTION({EVO_OVERWORLD_STEPS, 900, SPECIES_RABSCA}),
     },
 
     [SPECIES_RABSCA] =
@@ -3468,7 +3468,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sFlittleLevelUpLearnset,
         .teachableLearnset = sFlittleTeachableLearnset,
         .eggMoveLearnset = sFlittleEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_ESPATHRA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_ESPATHRA}),
     },
 
     [SPECIES_ESPATHRA] =
@@ -3595,7 +3595,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sTinkatinkLevelUpLearnset,
         .teachableLearnset = sTinkatinkTeachableLearnset,
         .eggMoveLearnset = sTinkatinkEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_TINKATUFF}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_TINKATUFF}),
     },
 
     [SPECIES_TINKATUFF] =
@@ -3658,14 +3658,14 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sTinkatuffLevelUpLearnset,
         .teachableLearnset = sTinkatuffTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_TINKATON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_TINKATON}),
     },
 
     [SPECIES_TINKATON] =
     {
         .baseHP        = 85,
-        .baseAttack    = 75,
-        .baseDefense   = 77,
+        .baseAttack    = 85,
+        .baseDefense   = 87,
         .baseSpeed     = 94,
         .baseSpAttack  = 70,
         .baseSpDefense = 105,
@@ -3784,13 +3784,13 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sWiglettLevelUpLearnset,
         .teachableLearnset = sWiglettTeachableLearnset,
         .eggMoveLearnset = sWiglettEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_WUGTRIO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_WUGTRIO}),
     },
 
     [SPECIES_WUGTRIO] =
     {
         .baseHP        = 35,
-        .baseAttack    = 100,
+        .baseAttack    = 115,
         .baseDefense   = 50,
         .baseSpeed     = 120,
         .baseSpAttack  = 50,
@@ -4164,7 +4164,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sVaroomLevelUpLearnset,
         .teachableLearnset = sVaroomTeachableLearnset,
         .eggMoveLearnset = sVaroomEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_REVAVROOM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_REVAVROOM}),
     },
 
     [SPECIES_REVAVROOM] =
@@ -4614,7 +4614,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_FLAMIGO
     [SPECIES_FLAMIGO] =
     {
-        .baseHP        = 82,
+        .baseHP        = 92,
         .baseAttack    = 115,
         .baseDefense   = 74,
         .baseSpeed     = 90,
@@ -4804,12 +4804,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_VELUZA
     [SPECIES_VELUZA] =
     {
-        .baseHP        = 90,
+        .baseHP        = 95,
         .baseAttack    = 102,
         .baseDefense   = 73,
-        .baseSpeed     = 70,
+        .baseSpeed     = 75,
         .baseSpAttack  = 78,
-        .baseSpDefense = 65,
+        .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_WATER, TYPE_PSYCHIC),
         .catchRate = 100,
         .expYield = 167,
@@ -4934,9 +4934,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_TATSUGIRI
     [SPECIES_TATSUGIRI_CURLY] =
     {
-        .baseHP        = 68,
+        .baseHP        = 78,
         .baseAttack    = 50,
-        .baseDefense   = 60,
+        .baseDefense   = 70,
         .baseSpeed     = 82,
         .baseSpAttack  = 120,
         .baseSpDefense = 95,
@@ -4997,9 +4997,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_TATSUGIRI_DROOPY] =
     {
-        .baseHP        = 68,
+        .baseHP        = 78,
         .baseAttack    = 50,
-        .baseDefense   = 60,
+        .baseDefense   = 70,
         .baseSpeed     = 82,
         .baseSpAttack  = 120,
         .baseSpDefense = 95,
@@ -5059,9 +5059,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_TATSUGIRI_STRETCHY] =
     {
-        .baseHP        = 68,
+        .baseHP        = 78,
         .baseAttack    = 50,
-        .baseDefense   = 60,
+        .baseDefense   = 70,
         .baseSpeed     = 82,
         .baseSpAttack  = 120,
         .baseSpDefense = 95,
@@ -5965,7 +5965,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sFrigibaxLevelUpLearnset,
         .teachableLearnset = sFrigibaxTeachableLearnset,
         .eggMoveLearnset = sFrigibaxEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_ARCTIBAX}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_ARCTIBAX}),
     },
 
     [SPECIES_ARCTIBAX] =
@@ -6027,7 +6027,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sArctibaxLevelUpLearnset,
         .teachableLearnset = sArctibaxTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 54, SPECIES_BAXCALIBUR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_BAXCALIBUR}),
     },
 
     [SPECIES_BAXCALIBUR] =

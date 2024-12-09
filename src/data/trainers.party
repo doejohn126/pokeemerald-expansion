@@ -388,7 +388,7 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Theivul
+Thievul
 Level: 56
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -627,7 +627,7 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
 
-Nideoqueen
+Nidoqueen
 Level: 60
 Ability: Sheer Force
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
@@ -10696,20 +10696,62 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Basic Trainer
+Items: Hyper Potion / Hyper Potion
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
 Mugshot: Blue
 
-Slugma
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Swellow (F)
+Level: 61
+Ability: Aerilate
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Boomburst
+- U Turn
+- Roost
+- Reversal
 
-Pelipper
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Zebstrika (M)
+Level: 61
+Ability: Sap Sipper
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Zippy Zap
+- Charge
+- Thunder Wave
+- Flame Charge
 
-Grovyle
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Arcanine (M)
+Level: 61
+Ability: Intimidate
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Play Rough
+- Extreme Speed
+- Sunny Day
+- Flare Blitz
+
+Baxcalibur (F)
+Level: 61
+Ability: Thermal Exchange
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Dragon Claw
+- Glaive Rush
+- Ice Fang
+- Crunch
+
+Greninja (M)
+Level: 61
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Water Shuriken
+- Night Slash
+- Extrasensory
+- Ice Beam
+
+Sceptile (F) @ Sceptilite
+Level: 62
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Energy Ball
+- Dragon Pulse
+- X Scissor
+- Shed Tail
+
 
 === TRAINER_BRENDAN_ROUTE_103_TREECKO ===
 Name: Brendan
@@ -10786,20 +10828,62 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Basic Trainer
+Items: Hyper Potion / Hyper Potion
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
 Mugshot: Blue
 
-Pelipper
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Swellow (F)
+Level: 61
+Ability: Aerilate
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Boomburst
+- U Turn
+- Roost
+- Reversal
 
-Lombre
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Zebstrika (M)
+Level: 61
+Ability: Sap Sipper
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Zippy Zap
+- Charge
+- Thunder Wave
+- Flame Charge
 
-Combusken
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Tatsugiri (F)
+Level: 61
+Ability: Storm Drain
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Nasty Plot
+- Mirror Coat
+- Dragon Pulse
+- Surf
+
+Baxcalibur (F)
+Level: 61
+Ability: Thermal Exchange
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Dragon Claw
+- Glaive Rush
+- Ice Fang
+- Crunch
+
+Venusaur (M) @ Heat Rock
+Level: 61
+Ability: Chlorophyll
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Sunny Day
+- Sludge Bomb
+- Energy Ball
+- Synthesis
+
+Blaziken (F) @ Blazikenite
+Level: 62
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Blaze Kick
+- U Turn
+- Close Combat
+- Brave Bird
 
 === TRAINER_BRENDAN_ROUTE_103_TORCHIC ===
 Name: Brendan
@@ -10876,20 +10960,62 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Basic Trainer
+Items: Hyper Potion / Hyper Potion
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
 Mugshot: Blue
 
-Lombre
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Swellow (F)
+Level: 61
+Ability: Aerilate
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Boomburst
+- U Turn
+- Roost
+- Reversal
 
-Slugma
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Zebstrika (M)
+Level: 61
+Ability: Sap Sipper
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Zippy Zap
+- Charge
+- Thunder Wave
+- Flame Charge
 
-Marshtomp
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Breloom (F)
+Level: 61
+Ability: Storm Drain
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Mach Punch
+- Seed Bomb
+- Spore
+- Drain Punch
+
+Baxcalibur (M)
+Level: 61
+Ability: Thermal Exchange
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Dragon Claw
+- Glaive Rush
+- Ice Fang
+- Crunch
+
+Skeledirge (M)
+Level: 61
+Ability: Chlorophyll
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Torch Song
+- Will O Wisp
+- Shadow Ball
+- Yawn
+
+Swampert (F) @ Swampertite
+Level: 62
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Earthquake
+- Hammer Arm
+- Surf
+- Rock Slide
 
 === TRAINER_MAY_ROUTE_103_MUDKIP ===
 Name: May
@@ -10966,20 +11092,62 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Basic Trainer
+Items: Hyper Potion / Hyper Potion
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
 Mugshot: Pink
 
-Slugma
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Swellow (F)
+Level: 61
+Ability: Aerilate
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Boomburst
+- U Turn
+- Roost
+- Reversal
 
-Lombre
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Raichu (F)
+Level: 61
+Ability: Static
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Nasty Plot
+- Thunderbolt
+- Surf
+- Electric Terrain
 
-Grovyle
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Rapidash (M)
+Level: 61
+Ability: Reckless
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Megahorn
+- High Horsepower
+- Sunny Day
+- Flare Blitz
+
+Goodra (F)
+Level: 61
+Ability: Sap Sipper
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Surf
+- Dragon Pulse
+- Tearful Look
+- Sludge Bomb
+
+Primarina (F)
+Level: 61
+Ability: Torrent
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Moonblast
+- Sparkling Aria
+- Misty Terrain
+- Ice Beam
+
+Sceptile (M) @ Sceptilite
+Level: 62
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Energy Ball
+- Dragon Pulse
+- X Scissor
+- Shed Tail
 
 === TRAINER_MAY_ROUTE_103_TREECKO ===
 Name: May
@@ -11055,20 +11223,62 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Basic Trainer
+Items: Hyper Potion / Hyper Potion
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
 Mugshot: Pink
 
-Pelipper
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Swellow (F)
+Level: 61
+Ability: Aerilate
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Boomburst
+- U Turn
+- Roost
+- Reversal
 
-Lombre
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Raichu (F)
+Level: 61
+Ability: Static
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Nasty Plot
+- Thunderbolt
+- Surf
+- Electric Terrain
 
-Combusken
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Starmie (M)
+Level: 61
+Ability: Natural Cure
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Hydro Pump
+- Psychic
+- Power Gem
+- Thunderbolt
+
+Goodra (F)
+Level: 61
+Ability: Sap Sipper
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Surf
+- Dragon Pulse
+- Tearful Look
+- Sludge Bomb
+
+Meganium (F)
+Level: 61
+Ability: Triage
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Moonblast
+- Synthesis
+- Leech Seed
+- Petal Dance
+
+Blaziken (M) @ Blazikenite
+Level: 62
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Blaze Kick
+- U Turn
+- Close Combat
+- Brave Bird
 
 === TRAINER_MAY_ROUTE_103_TORCHIC ===
 Name: May
@@ -11144,20 +11354,62 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Basic Trainer
+Items: Hyper Potion / Hyper Potion
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
 Mugshot: Pink
 
-Lombre
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Swellow (F)
+Level: 61
+Ability: Aerilate
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Boomburst
+- U Turn
+- Roost
+- Reversal
 
-Slugma
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Raichu (F)
+Level: 61
+Ability: Static
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Nasty Plot
+- Thunderbolt
+- Surf
+- Electric Terrain
 
-Marshtomp
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Tsareena (F)
+Level: 61
+Ability: Queenly Majesty
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Trop Kick
+- High Jump Kick
+- Teeter Dance
+- Play Rough
+
+Goodra (F)
+Level: 61
+Ability: Sap Sipper
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Surf
+- Dragon Pulse
+- Tearful Look
+- Sludge Bomb
+
+Delphox (F)
+Level: 61
+Ability: Triage
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Mystical Fire
+- Psyshock
+- Shadow Ball
+- Will O Wisp
+
+Swampert (M) @ Swampertite
+Level: 62
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Earthquake
+- Hammer Arm
+- Surf
+- Rock Slide
 
 === TRAINER_ISAAC_1 ===
 Name: Isaac

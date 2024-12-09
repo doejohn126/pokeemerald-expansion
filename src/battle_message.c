@@ -3624,6 +3624,8 @@ static const u8 sText_NormanLast[] = _("Wow I didn't expect this...\nYou're quit
 static const u8 sText_KorrinaLast[] = _("How could it be?! You're pretty good!\p");
 static const u8 sText_KorrinaMega[] = _("Woohoo! Let's get this show on the road\nLucario!\p");
 static const u8 sText_KorrinaBeforeFirst[] = _("Time for Lady Korrina's big appearance!\p");
+static const u8 sText_BrendanMegaEvolve[] = _("Heh, I've been waiting for this moment!\p");
+static const u8 sText_MayMegaEvolve[] = _("I bet you didn't see this coming\n{B_PLAYER_NAME}!\p");
 
 
 
@@ -3878,6 +3880,48 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgLastSwitchIn = sText_KorrinaLast,
         .msgMegaEvolution = sText_KorrinaMega,
         .msgBeforeFirstTurn = sText_KorrinaBeforeFirst,
+    },
+    {
+        .trainerId = TRAINER_BRENDAN_ROUTE_119_TORCHIC,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_Brendan3Last,
+        .msgFirstDown = sText_BrendanFirstDown,
+        .msgMegaEvolution = sText_BrendanMegaEvolve,
+    },
+    {
+        .trainerId = TRAINER_BRENDAN_ROUTE_119_TREECKO,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_Brendan3Last,
+        .msgFirstDown = sText_BrendanFirstDown,
+        .msgMegaEvolution = sText_BrendanMegaEvolve,
+    },
+    {
+        .trainerId = TRAINER_BRENDAN_ROUTE_119_MUDKIP,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_Brendan3Last,
+        .msgFirstDown = sText_BrendanFirstDown,
+        .msgMegaEvolution = sText_BrendanMegaEvolve,
+    },
+    {
+        .trainerId = TRAINER_MAY_ROUTE_119_TORCHIC,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_May3Last,
+        .msgFirstCriticalHit = sText_MayCrit,
+        .msgMegaEvolution = sText_MayMegaEvolve,
+    },
+    {
+        .trainerId = TRAINER_MAY_ROUTE_119_TREECKO,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_May3Last,
+        .msgFirstCriticalHit = sText_MayCrit,
+        .msgMegaEvolution = sText_MayMegaEvolve,
+    },
+    {
+        .trainerId = TRAINER_MAY_ROUTE_119_MUDKIP,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_May3Last,
+        .msgFirstCriticalHit = sText_MayCrit,
+        .msgMegaEvolution = sText_MayMegaEvolve,
     },
 };
 
