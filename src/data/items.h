@@ -1538,7 +1538,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Ability Patch"),
         .pluralName = _("Ability Patches"),
-        .price = (I_PRICE >= GEN_9) ? 30000 : 20,
+        .price = (I_PRICE >= GEN_9) ? 30000 : 30000,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
             "Turns the ability\n"
@@ -13212,7 +13212,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Scroll of Darkness"),
         .pluralName = _("Scrolls of Darkness"),
-        .price = 0,
+        .price = 25000,
         .description = COMPOUND_STRING(
             "A peculiar scroll\n"
             "with secrets of\n"
@@ -13230,7 +13230,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Scroll of Waters"),
         .pluralName = _("Scrolls of Waters"),
-        .price = 0,
+        .price = 25000,
         .description = COMPOUND_STRING(
             "A peculiar scroll\n"
             "with secrets of\n"
@@ -13855,7 +13855,7 @@ const struct Item gItemsInfo[] =
     [ITEM_METAL_ALLOY] =
     {
         .name = _("Metal Alloy"),
-        .price = 6000,
+        .price = 6300,
         .description = COMPOUND_STRING(
             "A peculiar metal\n"
             "that makes certain\n"
