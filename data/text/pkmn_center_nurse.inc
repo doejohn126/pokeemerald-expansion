@@ -71,6 +71,9 @@ gText_TheFlanCap::
 gText_TheNormanCap::
 	.string "The current level cap is 53.$"
 
+gText_TheWinonaCap::
+	.string "The current level cap is 64.$"
+
 gText_UnknownCap::
 	.string "The current level cap is undetermined.$"
 
@@ -79,5 +82,5 @@ gText_TheRoxanneCap::
 
 gText_PkmnCenterChallenge_NoVisitsLeft:: @ tx_difficulty_challenge
     .string "Sorry, but you are playing with\n"
-    .string "the POKéCENTER challenge!\p"
+    .string "the Pokécenter challenge!\p"
     .string "Good luck!{PAUSE_UNTIL_PRESS}$"

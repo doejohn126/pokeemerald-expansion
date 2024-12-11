@@ -14460,7 +14460,7 @@ F_TRAINER_FEMALE |
 #line 5821
             .ability = ABILITY_MIRROR_ARMOR,
 #line 5820
-            .lvl = 64,
+            .lvl = 63,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -14481,7 +14481,7 @@ F_TRAINER_FEMALE |
 #line 5830
             .ability = ABILITY_VOLT_ABSORB,
 #line 5829
-            .lvl = 64,
+            .lvl = 63,
             .nature = NATURE_HARDY,
 #line 5831
             .isShiny = TRUE,
@@ -14504,7 +14504,7 @@ F_TRAINER_FEMALE |
 #line 5840
             .ability = ABILITY_MOXIE,
 #line 5839
-            .lvl = 64,
+            .lvl = 63,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -14523,7 +14523,7 @@ F_TRAINER_FEMALE |
 #line 5849
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 5848
-            .lvl = 64,
+            .lvl = 63,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -14544,7 +14544,7 @@ F_TRAINER_FEMALE |
 #line 5857
             .ability = ABILITY_SERENE_GRACE,
 #line 5856
-            .lvl = 64,
+            .lvl = 63,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -14567,7 +14567,7 @@ F_TRAINER_FEMALE |
 #line 5866
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 5865
-            .lvl = 65,
+            .lvl = 64,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {

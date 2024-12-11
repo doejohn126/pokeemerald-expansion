@@ -3626,9 +3626,9 @@ static const u8 sText_KorrinaMega[] = _("Woohoo! Let's get this show on the road
 static const u8 sText_KorrinaBeforeFirst[] = _("Time for Lady Korrina's big appearance!\p");
 static const u8 sText_BrendanMegaEvolve[] = _("Heh, I've been waiting for this moment!\p");
 static const u8 sText_MayMegaEvolve[] = _("I bet you didn't see this coming\n{B_PLAYER_NAME}!\p");
-static const u8 sText_WinonaBeforeFirst[] = _("You mustn't take my birds for granted\nnow.");
-static const u8 sText_WinonaLast[] = _("How graceful, but our show isn't over\nyet!");
-static const u8 sText_WinonaMegaEvolve[] = _("Altaria, it's time to really take to the\nsky!");
+static const u8 sText_WinonaBeforeFirst[] = _("You mustn't take my birds for granted\nnow.\p");
+static const u8 sText_WinonaLast[] = _("How graceful, but our show isn't over\nyet!\p");
+static const u8 sText_WinonaMegaEvolve[] = _("Altaria, it's time to really take to the\nsky!\p");
 
 
 

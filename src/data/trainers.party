@@ -5817,7 +5817,7 @@ AI: Basic Trainer / Smart Switching / Weigh Ability Prediction / Risky
 Mugshot: Blue
 
 Corviknight (M)
-Level: 64
+Level: 63
 Ability: Mirror Armor
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - U Turn
@@ -5826,7 +5826,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Brave Bird
 
 Kilowattrel (M)
-Level: 64
+Level: 63
 Ability: Volt Absorb
 Shiny: Yes
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
@@ -5836,7 +5836,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Volt Switch
 
 Gyarados (M)
-Level: 64
+Level: 63
 Ability: Moxie
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Dragon Dance
@@ -5845,7 +5845,8 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Crunch
 
 Talonflame (F)
-Level: 64
+Level: 63
+Ability: Flame Body
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Will O Wisp
 - Roost
@@ -5853,7 +5854,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - U Turn
 
 Togekiss (F)
-Level: 64
+Level: 63
 Ability: Serene Grace
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Air Slash
@@ -5862,7 +5863,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Extrasensory
 
 Altaria (F) @ Altarianite
-Level: 65
+Level: 64
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 22 Atk / 22 Spe
 - Earthquake
