@@ -37219,7 +37219,7 @@ F_TRAINER_FEMALE |
 #line 14803
             .ability = ABILITY_SAP_SIPPER,
 #line 14802
-            .lvl = 6166,
+            .lvl = 66,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
