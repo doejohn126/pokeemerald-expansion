@@ -202,10 +202,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_SCEPTILE_MEGA] =
     {
         .baseHP        = 70,
-        .baseAttack    = 110,
+        .baseAttack    = 120,
         .baseDefense   = 75,
         .baseSpeed     = 145,
-        .baseSpAttack  = 145,
+        .baseSpAttack  = 135,
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_GRASS, TYPE_DRAGON),
         .catchRate = 45,

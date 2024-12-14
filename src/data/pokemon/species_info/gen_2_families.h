@@ -4396,7 +4396,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_GRANBULL] =
     {
-        .baseHP        = 90,
+        .baseHP        = 100,
         .baseAttack    = 120,
         .baseDefense   = 75,
         .baseSpeed     = 45,

@@ -53,7 +53,8 @@
     F(SNATCH) \
     F(OVERHEAT) \
     F(STOMPING_TANTRUM) \
-    F(CLOSE_COMBAT)
+    F(CLOSE_COMBAT) \
+    F(DAZZLING_GLEAM) 
 
 
 #define FOREACH_HM(F) \

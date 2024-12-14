@@ -5340,6 +5340,7 @@ static const struct LevelUpMove sAzumarillLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_HYDRO_PUMP),
     LEVEL_UP_MOVE(45, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    LEVEL_UP_MOVE(55, MOVE_LIQUIDATION),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MARILL
@@ -6931,6 +6932,7 @@ static const struct LevelUpMove sGrovyleLevelUpLearnset[] = {
 
 static const struct LevelUpMove sSceptileLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_LEAF_BLADE),
+    LEVEL_UP_MOVE( 1, MOVE_DRAGON_PULSE),
     LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE( 1, MOVE_X_SCISSOR),
@@ -6950,6 +6952,7 @@ static const struct LevelUpMove sSceptileLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SCREECH),
     LEVEL_UP_MOVE(49, MOVE_ENDEAVOR),
     LEVEL_UP_MOVE(56, MOVE_LEAF_STORM),
+    LEVEL_UP_MOVE(60, MOVE_SCALE_SHOT),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TREECKO

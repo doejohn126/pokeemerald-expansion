@@ -238,6 +238,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bugsy;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Fantina;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Clay;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Korrina;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mina;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AromaLady;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BattleGirl;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BirdKeeper;
@@ -554,6 +555,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_SWIMMING_TRIATHLETE_M] =    &gObjectEventGraphicsInfo_SwimmingTriathleteM,
     [OBJ_EVENT_GFX_TWIN_NEW] =                 &gObjectEventGraphicsInfo_TwinNew,
     [OBJ_EVENT_GFX_TY] =                       &gObjectEventGraphicsInfo_Ty,
+    [OBJ_EVENT_GFX_MINA] =                       &gObjectEventGraphicsInfo_Mina,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

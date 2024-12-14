@@ -6226,11 +6226,11 @@ Music: Twins
 Double Battle: Yes
 AI: Basic Trainer / Hp Aware
 
-Spinda
+Audino
 Level: 62
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Heal Pulse
-- Entrainment
+- Skill Swap
 - Misty Terrain
 - Hyper Voice
 
@@ -9506,26 +9506,70 @@ Croconaw
 Level: 54
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ALICE ===
-Name: Alice
-Class: Swimmer F
-Pic: Swimmer F
+=== TRAINER_MINA ===
+Name: Mina
+Class:  Pkmn Trainer 1
+Pic: Mina
 Gender: Female
-Music: Swimmer
+Music: Female
 Double Battle: No
-AI: Basic Trainer
+Items: Max Potion / Hyper Potion
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
+Mugshot: Pink
 
-Goldeen
-Level: 24
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Whimsicott (F)
+Level: 66
+Ability: Prankster
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Moonblast
+- Tailwind
+- Giga Drain
+- Misty Terrain
 
-Wingull
-Level: 24
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Azumarill (F)
+Level: 66
+Ability: Huge Power
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Liquidation
+- Play Rough
+- Ice Punch
+- Aqua Jet
 
-Goldeen
-Level: 24
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Hatterene (F)
+Level: 66
+Ability: Magic Bounce
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Psychic
+- Dazzling Gleam
+- Calm Mind
+- Trick Room
+
+Granbull (M)
+Level: 66
+Ability: Strong Jaw
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Close Combat
+- Play Rough
+- Crunch
+- Fire Fang
+
+Ribombee (F)
+Level: 66
+Ability: Shield Dust
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Quiver Dance
+- Pollen Puff
+- Moonblast
+- Stun Spore
+
+Alcremie (F) @ Fairium Z
+Level: 67
+Ability: Sweet Veil
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Dazzling Gleam
+- Recover
+- Calm Mind
+- Mystical Fire
 
 === TRAINER_JENNY_1 ===
 Name: Jenny
@@ -11240,7 +11284,7 @@ IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 
 Breloom (F)
 Level: 61
-Ability: Storm Drain
+Ability: Effect Spore
 IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Mach Punch
 - Seed Bomb
@@ -11652,7 +11696,7 @@ IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 
 Delphox (F)
 Level: 61
-Ability: Triage
+Ability: Blaze
 IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Mystical Fire
 - Psyshock
@@ -14402,23 +14446,62 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Basic Trainer
+Items: Max Potion / Max Potion
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
+Mugshot: Blue
 
-Tropius
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Swellow (F)
+Level: 66
+Ability: Aerilate
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Boomburst
+- U Turn
+- Roost
+- Heat Wave
 
-Slugma
-Level: 32
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Zebstrika (M)
+Level: 66
+Ability: Sap Sipper
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Zippy Zap
+- Volt Switch
+- Thunder Wave
+- Flame Charge
 
-Pelipper
-Level: 32
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Arcanine (M)
+Level: 66
+Ability: Intimidate
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Play Rough
+- Extreme Speed
+- Morning Sun
+- Flare Blitz
 
-Grovyle
-Level: 34
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Baxcalibur (F)
+Level: 66
+Ability: Thermal Exchange
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Dragon Claw
+- Glaive Rush
+- Icicle Crash
+- Crunch
+
+Greninja (M)
+Level: 66
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Surf
+- Night Slash
+- Extrasensory
+- Ice Beam
+
+Sceptile (F) @ Sceptilite
+Level: 67
+IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
+- Energy Ball
+- Dragon Pulse
+- X Scissor
+- Shed Tail
+
 
 === TRAINER_BRENDAN_LILYCOVE_TREECKO ===
 Name: Brendan
@@ -14427,23 +14510,63 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Basic Trainer
+Items: Max Potion / Max Potion
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
+Mugshot: Blue
 
-Tropius
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Swellow (F)
+Level: 66
+Ability: Aerilate
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Boomburst
+- U Turn
+- Roost
+- Heat Wave
 
-Pelipper
-Level: 32
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Zebstrika (M)
+Level: 66
+Ability: Sap Sipper
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Zippy Zap
+- Volt Switch
+- Thunder Wave
+- Flame Charge
 
-Ludicolo
-Level: 32
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Tatsugiri (F)
+Level: 66
+Ability: Storm Drain
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Nasty Plot
+- Ice Beam
+- Dragon Pulse
+- Surf
 
-Combusken
-Level: 34
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Baxcalibur (F)
+Level: 66
+Ability: Thermal Exchange
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Dragon Claw
+- Glaive Rush
+- Icicle Crash
+- Crunch
+
+Venusaur (M) @ Heat Rock
+Level: 66
+Ability: Chlorophyll
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Sunny Day
+- Sludge Bomb
+- Solar Beam
+- Synthesis
+
+Blaziken (F) @ Blazikenite
+Level: 67
+Ability: Speed Boost
+IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
+- Blaze Kick
+- U Turn
+- Close Combat
+- Brave Bird
 
 === TRAINER_BRENDAN_LILYCOVE_TORCHIC ===
 Name: Brendan
@@ -14452,23 +14575,62 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Basic Trainer
+Items: Max Potion / Max Potion
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
+Mugshot: Blue
 
-Tropius
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Swellow (F)
+Level: 66
+Ability: Aerilate
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Boomburst
+- U Turn
+- Roost
+- Heat Wave
 
-Ludicolo
-Level: 32
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Zebstrika (M)
+Level: 66
+Ability: Sap Sipper
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Zippy Zap
+- Volt Switch
+- Thunder Wave
+- Flame Charge
 
-Slugma
-Level: 32
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Breloom (F)
+Level: 61
+Ability: Technician
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Mach Punch
+- Seed Bomb
+- Spore
+- Drain Punch
 
-Marshtomp
-Level: 34
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Baxcalibur (M)
+Level: 66
+Ability: Thermal Exchange
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Dragon Claw
+- Glaive Rush
+- Icicle Crash
+- Crunch
+
+Skeledirge (M)
+Level: 66
+Ability: Chlorophyll
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Torch Song
+- Will O Wisp
+- Shadow Ball
+- Yawn
+
+Swampert (F) @ Swampertite
+Level: 67
+IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
+- Earthquake
+- Hammer Arm
+- Waterfall
+- Rock Slide
 
 === TRAINER_MAY_LILYCOVE_MUDKIP ===
 Name: May
@@ -14477,23 +14639,62 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Basic Trainer
+Items: Max Potion / Max Potion
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
+Mugshot: Pink
 
-Tropius
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Swellow (F)
+Level: 66
+Ability: Aerilate
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Boomburst
+- U Turn
+- Roost
+- Heat Wave
 
-Slugma
-Level: 32
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Raichu (F)
+Level: 66
+Ability: Static
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Nasty Plot
+- Thunderbolt
+- Surf
+- Electric Terrain
 
-Pelipper
-Level: 32
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Rapidash (M)
+Level: 61
+Ability: Reckless
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Megahorn
+- High Horsepower
+- Sunny Day
+- Flare Blitz
 
-Grovyle
-Level: 34
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Goodra (F)
+Level: 66
+Ability: Gooey
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Surf
+- Dragon Pulse
+- Tearful Look
+- Sludge Bomb
+
+Primarina (F)
+Level: 66
+Ability: Torrent
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Moonblast
+- Sparkling Aria
+- Misty Terrain
+- Ice Beam
+
+Sceptile (M) @ Sceptilite
+Level: 67
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Energy Ball
+- Dragon Pulse
+- X Scissor
+- Shed Tail
 
 === TRAINER_MAY_LILYCOVE_TREECKO ===
 Name: May
@@ -14502,23 +14703,62 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Basic Trainer
+Items: Max Potion / Max Potion
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
+Mugshot: Pink
 
-Tropius
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Swellow (F)
+Level: 66
+Ability: Aerilate
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Boomburst
+- U Turn
+- Roost
+- Heat Wave
 
-Pelipper
-Level: 32
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Raichu (F)
+Level: 66
+Ability: Static
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Nasty Plot
+- Thunderbolt
+- Surf
+- Electric Terrain
 
-Ludicolo
-Level: 32
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Starmie (M)
+Level: 66
+Ability: Natural Cure
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Hydro Pump
+- Psychic
+- Power Gem
+- Thunderbolt
 
-Combusken
-Level: 34
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Goodra (F)
+Level: 66
+Ability: Sap Sipper
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Surf
+- Dragon Pulse
+- Tearful Look
+- Sludge Bomb
+
+Meganium (F)
+Level: 66
+Ability: Triage
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Moonblast
+- Synthesis
+- Leech Seed
+- Petal Dance
+
+Blaziken (M) @ Blazikenite
+Level: 67
+IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
+- Blaze Kick
+- U Turn
+- Close Combat
+- Brave Bird
 
 === TRAINER_MAY_LILYCOVE_TORCHIC ===
 Name: May
@@ -14527,23 +14767,62 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Basic Trainer
+Items: Max Potion / Max Potion
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
+Mugshot: Pink
 
-Tropius
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Swellow (F)
+Level: 66
+Ability: Aerilate
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Boomburst
+- U Turn
+- Roost
+- Heat Wave
 
-Ludicolo
-Level: 32
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Raichu (F)
+Level: 66
+Ability: Static
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Nasty Plot
+- Thunderbolt
+- Surf
+- Electric Terrain
 
-Slugma
-Level: 32
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Tsareena (F)
+Level: 66
+Ability: Queenly Majesty
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Trop Kick
+- High Jump Kick
+- Teeter Dance
+- Play Rough
 
-Marshtomp
-Level: 34
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Goodra (F)
+Level: 66
+Ability: Sap Sipper
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Surf
+- Dragon Pulse
+- Tearful Look
+- Sludge Bomb
+
+Delphox (F)
+Level: 66
+Ability: Magician
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Mystical Fire
+- Psyshock
+- Shadow Ball
+- Will O Wisp
+
+Swampert (M) @ Swampertite
+Level: 67
+IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
+- Earthquake
+- Hammer Arm
+- Surf
+- Rock Slide
 
 === TRAINER_JONAH ===
 Name: Jonah

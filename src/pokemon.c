@@ -5933,6 +5933,8 @@ u16 GetBattleBGM(void)
                 return MUS_DP_VS_GYM_LEADER;
             if (gTrainerBattleOpponent_A == TRAINER_CLAY)
                 return MUS_DP_VS_ELITE_FOUR;
+            if (gTrainerBattleOpponent_A == TRAINER_MINA)
+                return MUS_VS_COLOSSEUM;
             if (gTrainerBattleOpponent_A == TRAINER_KORRINA)
                 return MUS_HG_VS_GYM_LEADER_KANTO;
             return MUS_RG_VS_GYM_LEADER;

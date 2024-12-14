@@ -903,6 +903,7 @@ gSongTable::
 	song mus_vs_iris, 0, 0
 	song mus_vs_gym_leader_remix, 0, 0
 	song mus_vs_champion_nemona, 0, 0
+	song mus_vs_colosseum, 0, 0
 	.align 2
 dummy_song_header:
 	.byte 0, 0, 0, 0

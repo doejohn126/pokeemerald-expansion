@@ -312,7 +312,7 @@ static const u8 sLevelCapTable_Normal[] =
     [LEVEL_CAP_BADGE_3]     = 43,
     [LEVEL_CAP_BADGE_4]     = 49,
     [LEVEL_CAP_BADGE_5]     = 61,
-    [LEVEL_CAP_BADGE_6]     = 42,
+    [LEVEL_CAP_BADGE_6]     = 72,
     [LEVEL_CAP_BADGE_7]     = 46,
     [LEVEL_CAP_BADGE_8]     = 58,
 };
@@ -324,7 +324,7 @@ static const u8 sLevelCapTable_Hard[] =
     [LEVEL_CAP_BADGE_3]     = 39,
     [LEVEL_CAP_BADGE_4]     = 46,
     [LEVEL_CAP_BADGE_5]     = 57,
-    [LEVEL_CAP_BADGE_6]     = 41,
+    [LEVEL_CAP_BADGE_6]     = 68,
     [LEVEL_CAP_BADGE_7]     = 41,
     [LEVEL_CAP_BADGE_8]     = 55,
 };

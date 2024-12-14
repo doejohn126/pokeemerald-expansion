@@ -525,7 +525,7 @@ script JaydenWoodsStartBattle {
     setvar(VAR_JAYDEN_WOODS, 1)
     giveitem(ITEM_POKEVIAL, 1)
     pokevial(VIAL_UP, VIAL_SIZE, 3)
-    msgbox(Pokevial)
+    msgbox(PokevialText)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
     waitmovement(0)
     applymovement(14, JaydenLeave)
@@ -536,7 +536,7 @@ script JaydenWoodsStartBattle {
     end
 }
 
-text Pokevial {
+text PokevialText {
     "A Pokevial should be pretty handy for\n"
     "healing you're Pokémon.\p"
     "Alright though, catch ya later {PLAYER}."

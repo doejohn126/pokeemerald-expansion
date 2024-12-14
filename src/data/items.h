@@ -11175,12 +11175,12 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Stomps around angrily.\n"
             "Stronger after a\n"
-            "failure."), // Todo
+            "failure."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_STOMPING_TANTRUM, // Todo
+        .secondaryId = MOVE_STOMPING_TANTRUM, 
     },
 
     [ITEM_TM52] =
@@ -11190,24 +11190,27 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "A fist attack but\n"
             "lowers the defensive\n"
-            "stats."), // Todo
+            "stats."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_CLOSE_COMBAT, // Todo
+        .secondaryId = MOVE_CLOSE_COMBAT,
     },
 
     [ITEM_TM53] =
     {
         .name = _("TM53"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "Damages foes by\n"
+            "emitting a bright\n"
+            "flash."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_DAZZLING_GLEAM, 
     },
 
     [ITEM_TM54] =

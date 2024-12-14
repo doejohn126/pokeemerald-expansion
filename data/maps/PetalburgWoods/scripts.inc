@@ -1035,7 +1035,7 @@ JaydenWoodsStartBattle::
 # 527 "data/maps/PetalburgWoods/scripts.pory"
 	pokevial VIAL_UP, VIAL_SIZE, 3
 # 528 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox Pokevial
+	msgbox PokevialText
 # 529 "data/maps/PetalburgWoods/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 # 530 "data/maps/PetalburgWoods/scripts.pory"
@@ -1213,7 +1213,7 @@ JaydenHeadDown1:
 	walk_right
 	step_end
 
-Pokevial::
+PokevialText::
 # 539 "data/maps/PetalburgWoods/scripts.pory"
 	.string "A Pokevial should be pretty handy for\n"
 	.string "healing you're Pokémon.\p"

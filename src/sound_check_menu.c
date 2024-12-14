@@ -1595,6 +1595,7 @@ static void DestroyWindow(u8 windowId) // sub_080E9750
     X(MUS_VS_IRIS                     , "MUS-VS-IRIS"                     ) \
     X(MUS_VS_GYM_LEADER_REMIX                     , "MUS-VS-GYM_LEADER_REMIX"                     ) \
     X(MUS_VS_CHAMPION_NEMONA                     , "MUS-VS-NEMONA"                     ) \
+    X(MUS_VS_COLOSSEUM                     , "MUS-VS-COLOSSEUM"                     ) \
 
 #define SOUND_LIST_SE \
     X(SE_STOP                  , "STOP"                     ) \

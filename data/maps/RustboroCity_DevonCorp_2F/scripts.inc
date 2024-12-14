@@ -68,6 +68,10 @@ RustboroCity_DevonCorp_2F_EventScript_FossilScientist::
 	goto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_NoticeClawFossil
 	checkitem ITEM_HELIX_FOSSIL
 	goto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_NoticeHelixFossil
+	checkitem ITEM_DOME_FOSSIL
+	goto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_NoticeDomeFossil
+	checkitem ITEM_OLD_AMBER
+	goto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_NoticeOldAmber
 	release
 	end
 

@@ -6,7 +6,7 @@
 #define TX_RANDOM_STARTER               FALSE
 #define TX_RANDOM_WILD_POKEMON          FALSE
 #define TX_RANDOM_TRAINER               FALSE
-#define TX_RANDOM_STATIC                TRUE
+#define TX_RANDOM_STATIC                FALSE
 #define TX_RANDOM_SIMILAR               TRUE
 #define TX_RANDOM_MAP_BASED             TRUE
 #define TX_RANDOM_INCLUDE_LEGENDARIES   FALSE
@@ -34,7 +34,7 @@
 #define TX_DIFFICULTY_NO_ITEM_PLAYER 0
 #define TX_DIFFICULTY_NO_ITEM_TRAINER 0
 #define TX_DIFFICULTY_NO_EVS 0
-#define TX_DIFFICULTY_SCALING_IVS 0
+#define TX_DIFFICULTY_SCALING_IVS 1
 #define TX_DIFFICULTY_SCALING_EVS 1
 #define TX_DIFFICULTY_PKMN_CENTER 0 //0 no limit, 1 none
 

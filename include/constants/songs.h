@@ -951,10 +951,11 @@
 #define MUS_HG_WIN_MINIGAME               898 // Cleared Wobbuffet Pop!
 #define MUS_VS_IRIS                       899 // Iris
 #define MUS_VS_GYM_LEADER_REMIX           900 // Remix
-#define MUS_VS_CHAMPION_NEMONA             901 // Nemona
+#define MUS_VS_CHAMPION_NEMONA            901 // Nemona
+#define MUS_VS_COLOSSEUM                  902 // Brick Bronze / Colosseum
 
 
-#define HG_MUSIC_END                      MUS_VS_CHAMPION_NEMONA
+#define HG_MUSIC_END                      MUS_VS_COLOSSEUM
 
 #define SONGS_END                         HG_MUSIC_END
 #define END_MUS                           SONGS_END

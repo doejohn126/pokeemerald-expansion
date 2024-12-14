@@ -1288,6 +1288,10 @@ static const struct SpriteFrameImage sPicTable_Bugsy[] = {
     overworld_ascending_frames(gObjectEventPic_Bugsy, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_Mina[] = {
+    overworld_ascending_frames(gObjectEventPic_Mina, 2, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_Fantina[] = {
     overworld_frame(gObjectEventPic_Fantina, 4, 4, 0),
     overworld_frame(gObjectEventPic_Fantina, 4, 4, 1),

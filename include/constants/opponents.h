@@ -451,7 +451,7 @@
 #define TRAINER_BETH                        445
 #define TRAINER_TARA                        446
 #define TRAINER_MISSY                       447
-#define TRAINER_ALICE                       448 // Unused
+#define TRAINER_MINA                        448
 #define TRAINER_JENNY_1                     449
 #define TRAINER_GRACE                       450
 #define TRAINER_TANYA                       451

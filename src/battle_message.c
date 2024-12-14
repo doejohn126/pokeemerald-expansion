@@ -3629,8 +3629,8 @@ static const u8 sText_MayMegaEvolve[] = _("I bet you didn't see this coming\n{B_
 static const u8 sText_WinonaBeforeFirst[] = _("You mustn't take my birds for granted\nnow.\p");
 static const u8 sText_WinonaLast[] = _("How graceful, but our show isn't over\nyet!\p");
 static const u8 sText_WinonaMegaEvolve[] = _("Altaria, it's time to really take to the\nsky!\p");
-
-
+static const u8 sText_MinaLast[] = _("What a great composition!\p");
+static const u8 sText_MinaZMove[] = _("You'll only see Trainers from Alola do\nsomething this epic!\p");
 
 static const struct TrainerSlide sTrainerSlides[] =
 {
@@ -3932,6 +3932,46 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgLastSwitchIn = sText_WinonaLast,
         .msgMegaEvolution = sText_WinonaMegaEvolve,
         .msgBeforeFirstTurn = sText_WinonaBeforeFirst,
+    },
+    {
+        .trainerId = TRAINER_BRENDAN_LILYCOVE_MUDKIP,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_Brendan3Last,
+        .msgFirstDown = sText_BrendanFirstDown,
+    },
+    {
+        .trainerId = TRAINER_BRENDAN_LILYCOVE_TORCHIC,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_Brendan3Last,
+        .msgFirstDown = sText_BrendanFirstDown,
+    },
+    {
+        .trainerId = TRAINER_BRENDAN_LILYCOVE_TREECKO,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_Brendan3Last,
+        .msgFirstDown = sText_BrendanFirstDown,
+    },
+    {
+        .trainerId = TRAINER_MAY_LILYCOVE_MUDKIP,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_May3Last,
+    },
+    {
+        .trainerId = TRAINER_MAY_LILYCOVE_TREECKO,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_May3Last,
+    },
+    {
+        .trainerId = TRAINER_MAY_LILYCOVE_TORCHIC,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_May3Last,
+        .msgFirstCriticalHit = sText_MayCrit,
+    },
+    {
+        .trainerId = TRAINER_MINA,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_MinaLast,
+        .msgZMove = sText_MinaZMove,
     },
 };
 

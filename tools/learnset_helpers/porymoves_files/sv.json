@@ -83366,6 +83366,7 @@
       "MOVE_LUNGE",
       "MOVE_WHIRLPOOL",
       "MOVE_MUDDY_WATER",
+      "MOVE_ICE_BEAM",
       "MOVE_DRAGON_CHEER"
     ],
     "EggMoves": [
