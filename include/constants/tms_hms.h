@@ -54,7 +54,8 @@
     F(OVERHEAT) \
     F(STOMPING_TANTRUM) \
     F(CLOSE_COMBAT) \
-    F(DAZZLING_GLEAM) 
+    F(DAZZLING_GLEAM) \
+    F(LASH_OUT) 
 
 
 #define FOREACH_HM(F) \

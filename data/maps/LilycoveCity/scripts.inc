@@ -1527,60 +1527,76 @@ MinaMain::
 # 767 "data/maps/LilycoveCity/scripts.pory"
 	faceplayer
 # 768 "data/maps/LilycoveCity/scripts.pory"
-	msgbox DidItAgain, MSGBOX_YESNO
+	goto_if_defeated TRAINER_MINA, LookAtTheSea
 # 769 "data/maps/LilycoveCity/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, NoBattle
+	msgbox DidItAgain, MSGBOX_YESNO
 # 770 "data/maps/LilycoveCity/scripts.pory"
-	msgbox Heheh
+	goto_if_eq VAR_RESULT, FALSE, NoBattle
 # 771 "data/maps/LilycoveCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_MINA, MinaLoseText
+	msgbox Heheh
 # 772 "data/maps/LilycoveCity/scripts.pory"
-	msgbox BackToAlola
+	trainerbattle_no_intro TRAINER_MINA, MinaLoseText
 # 773 "data/maps/LilycoveCity/scripts.pory"
-	giveitem ITEM_TM53
+	msgbox BackToAlola
 # 774 "data/maps/LilycoveCity/scripts.pory"
-	applymovement 23, Common_Movement_FaceRight
+	giveitem ITEM_TM53
 # 775 "data/maps/LilycoveCity/scripts.pory"
-	waitmovement 0
+	applymovement 23, Common_Movement_FaceRight
 # 776 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 0
+# 777 "data/maps/LilycoveCity/scripts.pory"
+	release
+	end
+
+
+LookAtTheSea::
+# 782 "data/maps/LilycoveCity/scripts.pory"
+	msgbox ThosePirates
+# 783 "data/maps/LilycoveCity/scripts.pory"
 	release
 	end
 
 
 NoBattle::
-# 781 "data/maps/LilycoveCity/scripts.pory"
+# 788 "data/maps/LilycoveCity/scripts.pory"
 	msgbox LookBack
-# 782 "data/maps/LilycoveCity/scripts.pory"
+# 789 "data/maps/LilycoveCity/scripts.pory"
 	applymovement 23, Common_Movement_FaceRight
-# 783 "data/maps/LilycoveCity/scripts.pory"
+# 790 "data/maps/LilycoveCity/scripts.pory"
 	waitmovement 0
-# 784 "data/maps/LilycoveCity/scripts.pory"
+# 791 "data/maps/LilycoveCity/scripts.pory"
 	release
 	end
 
 
 BackToAlola::
-# 788 "data/maps/LilycoveCity/scripts.pory"
+# 795 "data/maps/LilycoveCity/scripts.pory"
 	.string "Hey, I hope we run into each other\n"
 	.string "again, although I'll probably be in Alola.\p"
 	.string "Here's a cool TM.$"
 
+ThosePirates::
+# 801 "data/maps/LilycoveCity/scripts.pory"
+	.string "This view of the sea is pretty cool even\n"
+	.string "though these pirate looking guys\l"
+	.string "almost ruin the mood.$"
+
 MinaLoseText::
-# 794 "data/maps/LilycoveCity/scripts.pory"
+# 807 "data/maps/LilycoveCity/scripts.pory"
 	.string "Woah! I'm shocked at your strength!$"
 
 Heheh::
-# 798 "data/maps/LilycoveCity/scripts.pory"
+# 811 "data/maps/LilycoveCity/scripts.pory"
 	.string "Heh heh heh... Then here I go! You\n"
 	.string "better not underestimate my Fairy Types!$"
 
 LookBack::
-# 803 "data/maps/LilycoveCity/scripts.pory"
+# 816 "data/maps/LilycoveCity/scripts.pory"
 	.string "No problem, I'll just check out the sea\n"
 	.string "then.$"
 
 DidItAgain::
-# 808 "data/maps/LilycoveCity/scripts.pory"
+# 821 "data/maps/LilycoveCity/scripts.pory"
 	.string "Welp... it seems like I'll be staying here\n"
 	.string "for bit longer because I missed my ship\l"
 	.string "again...\p"

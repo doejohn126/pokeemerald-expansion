@@ -80,6 +80,7 @@ script Fallarbor_ExtraSalesWoman {
 }
 
 mart FallarborSecondMart {
+	ITEM_LINKING_CORD
     ITEM_FIRE_STONE
     ITEM_WATER_STONE
     ITEM_LEAF_STONE

@@ -202,28 +202,16 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Skitty
-Level: 26
+Mr Mime
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Poochyena
-Level: 26
+Umbreon
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zigzagoon
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Lotad
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Seedot
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Taillow
-Level: 26
+Toxtricity
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_PETALBURG_WOODS ===
@@ -493,8 +481,16 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Zubat
-Level: 32
+Sharpedo
+Level: 64
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Houndstone
+Level: 64
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Omastar
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_PYRE_2 ===
@@ -506,8 +502,16 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Carvanha
-Level: 32
+Jellicent
+Level: 64
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Mabosstiff
+Level: 64
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Kingler
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_PYRE_3 ===
@@ -519,12 +523,12 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Poochyena
-Level: 30
+Wailord
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Carvanha
-Level: 30
+Veluza
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_WEATHER_INST_4 ===
@@ -618,8 +622,12 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Hariyama
-Level: 31
+Annihilape
+Level: 64
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Passimian
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHELLY_WEATHER_INSTITUTE ===
@@ -732,8 +740,16 @@ Music: Suspicious
 Double Battle: No
 AI: Basic Trainer
 
-Spoink
-Level: 31
+Grumpig
+Level: 64
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Froslass
+Level: 64
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Hypno
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DAISY ===
@@ -2382,8 +2398,16 @@ Music: Suspicious
 Double Battle: No
 AI: Basic Trainer
 
-Sableye
-Level: 32
+Mismagius
+Level: 65
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Dusclops
+Level: 65
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gourgeist
+Level: 65
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TASHA ===
@@ -2395,8 +2419,16 @@ Music: Suspicious
 Double Battle: No
 AI: Basic Trainer
 
-Shuppet
-Level: 32
+Banette
+Level: 65
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Gengar
+Level: 65
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Doublade
+Level: 65
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_VALERIE_2 ===
@@ -3124,8 +3156,12 @@ Music: Suspicious
 Double Battle: No
 AI: Basic Trainer
 
-Rhyhorn
-Level: 31
+Rhydon
+Level: 64
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Golem Alola
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_CHIMNEY_1 ===
@@ -3976,7 +4012,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Hariyama
-Level: 32
+Level: 65
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Grapploct
+Level: 65
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Spidops
+Level: 65
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_KIRK ===
@@ -4888,16 +4932,16 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Ralts
-Level: 26
+Bronzong
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Ralts
-Level: 26
+Gallade
+Level: 65
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Kirlia
-Level: 26
+Malamar
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSHUA ===
@@ -5063,16 +5107,16 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Wobbuffet
-Level: 26
+Chimecho
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Natu
-Level: 26
+Musharna
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Kadabra
-Level: 26
+Alakazam
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALEXIS ===
@@ -9994,13 +10038,17 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Wobbuffet
-Level: 32
+Wynaut
+Level: 66
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Destiny Bond
 - Safeguard
 - Counter
 - Mirror Coat
+
+Beeheyem
+Level: 65
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_IRENE ===
 Name: Irene
@@ -12467,12 +12515,12 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Wailmer
-Level: 30
+Dondozo
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
-Level: 30
+Toxicroak
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_JAGGED_PASS ===
@@ -13908,12 +13956,12 @@ Music: Girl
 Double Battle: Yes
 AI: Basic Trainer
 
-Delcatty
-Level: 31
+Flapple (M)
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Manectric
-Level: 31
+Dipplin (F)
+Level: 64
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LEA_AND_JED ===
@@ -14488,6 +14536,7 @@ IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 
 Greninja (M)
 Level: 66
+Ability: Protein
 IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Surf
 - Night Slash
@@ -19215,29 +19264,17 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Skitty
-Level: 31
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Mr Mime
+Level: 67
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Mightyena
-Level: 31
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Umbreon
+Level: 67
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zigzagoon
-Level: 31
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-Lotad
-Level: 31
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-Seedot
-Level: 31
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-Taillow
-Level: 31
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Toxtricity
+Level: 67
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GABRIELLE_3 ===
 Name: Gabrielle

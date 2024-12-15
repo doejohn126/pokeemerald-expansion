@@ -765,6 +765,7 @@ LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 script MinaMain {
     lock
     faceplayer
+	goto_if_defeated(TRAINER_MINA, LookAtTheSea)
     msgbox(DidItAgain, MSGBOX_YESNO)
     goto_if_eq(VAR_RESULT, FALSE, NoBattle)
     msgbox(Heheh)
@@ -775,6 +776,12 @@ script MinaMain {
     waitmovement(0)
     release
     end
+}
+
+script LookAtTheSea {
+	msgbox(ThosePirates)
+	release
+	end
 }
 
 script NoBattle {
@@ -789,6 +796,12 @@ text BackToAlola {
     "Hey, I hope we run into each other\n"
     "again, although I'll probably be in Alola.\p"
     "Here's a cool TM."
+}
+
+text ThosePirates {
+	"This view of the sea is pretty cool even\n"
+	"though these pirate looking guys\l"
+	"almost ruin the mood."
 }
 
 text MinaLoseText {
