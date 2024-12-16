@@ -187,7 +187,11 @@ const u8 NuzlockeLUT[] =
     [MAPSEC_DESERT_UNDERPASS] = 0x41,
     [MAPSEC_ALTERING_CAVE_FRLG] = 0x42,
     [MAPSEC_SAFARI_ZONE_AREA5] = 0x43,
-    [MAPSEC_SAFARI_ZONE_AREA6] = 0x44
+    [MAPSEC_SAFARI_ZONE_AREA6] = 0x44,
+    // Extra
+    [MAPSEC_OLDALE_TOWN] = 0x45,
+    [MAPSEC_RUSTBORO_CITY] = 0x46,
+    [MAPSEC_FALLARBOR_TOWN] = 0x47
 };
 
 //tx_randomizer_and_challenges

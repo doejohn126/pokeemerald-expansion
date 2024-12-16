@@ -4970,8 +4970,16 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Solrock
-Level: 31
+Indeedee
+Level: 65
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Noctowl
+Level: 65
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Meowstic (M)
+Level: 66
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CAMERON_2 ===
@@ -4983,13 +4991,17 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Kadabra
-Level: 33
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Indeedee
+Level: 68
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Solrock
-Level: 33
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Noctowl
+Level: 69
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Meowstic (M)
+Level: 69
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CAMERON_3 ===
 Name: Cameron
@@ -10046,7 +10058,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Counter
 - Mirror Coat
 
-Beeheyem
+Beheeyem
 Level: 65
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14536,7 +14548,7 @@ IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 
 Greninja (M)
 Level: 66
-Ability: Protein
+Ability: Protean
 IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Surf
 - Night Slash
