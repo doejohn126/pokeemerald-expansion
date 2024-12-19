@@ -3303,6 +3303,36 @@
               }
             ]
           },
+          "rock_smash_mons": {
+            "encounter_rate": 45,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 35,
+                "species": "SPECIES_PINECO"
+              },
+              {
+                "min_level": 5,
+                "max_level": 35,
+                "species": "SPECIES_PINECO"
+              },
+              {
+                "min_level": 5,
+                "max_level": 35,
+                "species": "SPECIES_PINECO"
+              },
+              {
+                "min_level": 5,
+                "max_level": 35,
+                "species": "SPECIES_PINECO"
+              },
+              {
+                "min_level": 5,
+                "max_level": 35,
+                "species": "SPECIES_PINECO"
+              }
+            ]
+          },
           "fishing_mons": {
             "encounter_rate": 30,
             "mons": [
@@ -3355,36 +3385,6 @@
                 "min_level": 40,
                 "max_level": 45,
                 "species": "SPECIES_RELICANTH"
-              }
-            ]
-          },
-          "rock_smash_mons": {
-            "encounter_rate": 45,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 35,
-                "species": "SPECIES_PINECO"
-              },
-              {
-                "min_level": 5,
-                "max_level": 35,
-                "species": "SPECIES_PINECO"
-              },
-              {
-                "min_level": 5,
-                "max_level": 35,
-                "species": "SPECIES_PINECO"
-              },
-              {
-                "min_level": 5,
-                "max_level": 35,
-                "species": "SPECIES_PINECO"
-              },
-              {
-                "min_level": 5,
-                "max_level": 35,
-                "species": "SPECIES_PINECO"
               }
             ]
           }
@@ -9900,63 +9900,63 @@
             "mons": [
               {
                 "min_level": 27,
-                "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_ONIX"
               },
               {
                 "min_level": 28,
-                "max_level": 28,
+                "max_level": 60,
                 "species": "SPECIES_TORKOAL"
               },
               {
                 "min_level": 28,
-                "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_HEATMOR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "max_level": 60,
+                "species": "SPECIES_DARUMAKA"
               },
               {
                 "min_level": 29,
-                "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_ORICORIO"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_TURTONATOR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_GLIGAR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_STONJOURNER"
               },
               {
                 "min_level": 31,
-                "max_level": 31,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_LARVITAR"
               },
               {
                 "min_level": 32,
-                "max_level": 32,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_ORTHWORM"
               },
               {
                 "min_level": 33,
-                "max_level": 33,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_STEELIX"
               }
             ]
           }
@@ -9969,63 +9969,63 @@
             "mons": [
               {
                 "min_level": 27,
-                "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_ONIX"
               },
               {
                 "min_level": 28,
-                "max_level": 28,
+                "max_level": 60,
                 "species": "SPECIES_TORKOAL"
               },
               {
                 "min_level": 28,
-                "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_HEATMOR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "max_level": 60,
+                "species": "SPECIES_DARUMAKA"
               },
               {
                 "min_level": 29,
-                "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_ORICORIO"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_TURTONATOR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_GLIGAR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_STONJOURNER"
               },
               {
                 "min_level": 31,
-                "max_level": 31,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_LARVITAR"
               },
               {
                 "min_level": 32,
-                "max_level": 32,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_ORTHWORM"
               },
               {
                 "min_level": 33,
-                "max_level": 33,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_STEELIX"
               }
             ]
           }
@@ -10038,63 +10038,63 @@
             "mons": [
               {
                 "min_level": 27,
-                "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_ONIX"
               },
               {
                 "min_level": 28,
-                "max_level": 28,
+                "max_level": 60,
                 "species": "SPECIES_TORKOAL"
               },
               {
                 "min_level": 28,
-                "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_HEATMOR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "max_level": 60,
+                "species": "SPECIES_DARUMAKA"
               },
               {
                 "min_level": 29,
-                "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_ORICORIO"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_TURTONATOR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_GLIGAR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_STONJOURNER"
               },
               {
                 "min_level": 31,
-                "max_level": 31,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_LARVITAR"
               },
               {
                 "min_level": 32,
-                "max_level": 32,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_ORTHWORM"
               },
               {
                 "min_level": 33,
-                "max_level": 33,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_STEELIX"
               }
             ]
           }
@@ -10107,63 +10107,63 @@
             "mons": [
               {
                 "min_level": 27,
-                "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_ONIX"
               },
               {
                 "min_level": 28,
-                "max_level": 28,
+                "max_level": 60,
                 "species": "SPECIES_TORKOAL"
               },
               {
                 "min_level": 28,
-                "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_HEATMOR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "max_level": 60,
+                "species": "SPECIES_DARUMAKA"
               },
               {
                 "min_level": 29,
-                "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_ORICORIO"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_TURTONATOR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_GLIGAR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_STONJOURNER"
               },
               {
                 "min_level": 31,
-                "max_level": 31,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_LARVITAR"
               },
               {
                 "min_level": 32,
-                "max_level": 32,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_ORTHWORM"
               },
               {
                 "min_level": 33,
-                "max_level": 33,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_STEELIX"
               }
             ]
           }
@@ -10176,63 +10176,63 @@
             "mons": [
               {
                 "min_level": 27,
-                "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_ONIX"
               },
               {
                 "min_level": 28,
-                "max_level": 28,
+                "max_level": 60,
                 "species": "SPECIES_TORKOAL"
               },
               {
                 "min_level": 28,
-                "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_HEATMOR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "max_level": 60,
+                "species": "SPECIES_DARUMAKA"
               },
               {
                 "min_level": 29,
-                "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_ORICORIO"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_TURTONATOR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_GLIGAR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_STONJOURNER"
               },
               {
                 "min_level": 31,
-                "max_level": 31,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_LARVITAR"
               },
               {
                 "min_level": 32,
-                "max_level": 32,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_ORTHWORM"
               },
               {
                 "min_level": 33,
-                "max_level": 33,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_STEELIX"
               }
             ]
           }
@@ -10245,63 +10245,63 @@
             "mons": [
               {
                 "min_level": 27,
-                "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_ONIX"
               },
               {
                 "min_level": 28,
-                "max_level": 28,
+                "max_level": 60,
                 "species": "SPECIES_TORKOAL"
               },
               {
                 "min_level": 28,
-                "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_HEATMOR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "max_level": 60,
+                "species": "SPECIES_DARUMAKA"
               },
               {
                 "min_level": 29,
-                "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_ORICORIO"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_TURTONATOR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_GLIGAR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_STONJOURNER"
               },
               {
                 "min_level": 31,
-                "max_level": 31,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_LARVITAR"
               },
               {
                 "min_level": 32,
-                "max_level": 32,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_ORTHWORM"
               },
               {
                 "min_level": 33,
-                "max_level": 33,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_STEELIX"
               }
             ]
           }
@@ -10314,63 +10314,63 @@
             "mons": [
               {
                 "min_level": 27,
-                "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_ONIX"
               },
               {
                 "min_level": 28,
-                "max_level": 28,
+                "max_level": 60,
                 "species": "SPECIES_TORKOAL"
               },
               {
                 "min_level": 28,
-                "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_HEATMOR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "max_level": 60,
+                "species": "SPECIES_DARUMAKA"
               },
               {
                 "min_level": 29,
-                "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_ORICORIO"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_TURTONATOR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_GLIGAR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_STONJOURNER"
               },
               {
                 "min_level": 31,
-                "max_level": 31,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_LARVITAR"
               },
               {
                 "min_level": 32,
-                "max_level": 32,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_ORTHWORM"
               },
               {
                 "min_level": 33,
-                "max_level": 33,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_STEELIX"
               }
             ]
           }
@@ -10383,63 +10383,63 @@
             "mons": [
               {
                 "min_level": 27,
-                "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_ONIX"
               },
               {
                 "min_level": 28,
-                "max_level": 28,
+                "max_level": 60,
                 "species": "SPECIES_TORKOAL"
               },
               {
                 "min_level": 28,
-                "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_HEATMOR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "max_level": 60,
+                "species": "SPECIES_DARUMAKA"
               },
               {
                 "min_level": 29,
-                "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_ORICORIO"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "max_level": 60,
+                "species": "SPECIES_TURTONATOR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_GLIGAR"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_STONJOURNER"
               },
               {
                 "min_level": 31,
-                "max_level": 31,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_LARVITAR"
               },
               {
                 "min_level": 32,
-                "max_level": 32,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_ORTHWORM"
               },
               {
                 "min_level": 33,
-                "max_level": 33,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 60,
+                "species": "SPECIES_STEELIX"
               }
             ]
           }

@@ -9877,10 +9877,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_LUVDISC
     [SPECIES_LUVDISC] =
     {
-        .baseHP        = 43,
+        .baseHP        = 53,
         .baseAttack    = 10,
         .baseDefense   = 55,
-        .baseSpeed     = 97,
+        .baseSpeed     = 127,
         .baseSpAttack  = 135,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_WATER),

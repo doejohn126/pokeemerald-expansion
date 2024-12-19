@@ -55,7 +55,8 @@
     F(STOMPING_TANTRUM) \
     F(CLOSE_COMBAT) \
     F(DAZZLING_GLEAM) \
-    F(LASH_OUT) 
+    F(LASH_OUT) \
+    F(EXPANDING_FORCE) 
 
 
 #define FOREACH_HM(F) \
