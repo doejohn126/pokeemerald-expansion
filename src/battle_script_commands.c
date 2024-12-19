@@ -1737,7 +1737,6 @@ static void AccuracyCheck(bool32 recalcDragonDarts, const u8 *nextInstr, const u
                 {
                     // Smart target to partner if miss
                     gBattlerTarget = BATTLE_PARTNER(battlerDef);
-                    gBattleStruct->moveResultFlags[battlerDef] &= ~MOVE_RESULT_MISSED;
                     AccuracyCheck(TRUE, nextInstr, failInstr, move);
                     return;
                 }
@@ -6553,7 +6552,7 @@ static void Cmd_moveend(void)
                 else
                 {
                     if (gMovesInfo[gCurrentMove].effect == EFFECT_DRAGON_DARTS
-                     && gBattleStruct->moveTarget[gBattlerAttacker] == gBattlerTarget // Haven't already changed targets
+                     && !(gBattleStruct->moveResultFlags[BATTLE_PARTNER(gBattlerTarget)] & MOVE_RESULT_MISSED) // didn't miss the other target
                      && CanTargetPartner(gBattlerAttacker, gBattlerTarget)
                      && !TargetFullyImmuneToCurrMove(gBattlerAttacker, BATTLE_PARTNER(gBattlerTarget)))
                         gBattlerTarget = BATTLE_PARTNER(gBattlerTarget); // Target the partner in doubles for second hit.
