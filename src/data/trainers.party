@@ -5634,7 +5634,7 @@ Ball: Heavy Ball
 - Rock Tomb
 
 === TRAINER_BRAWLY_1 ===
-Name: BRAWLY
+Name: Brawly
 Class: Leader
 Pic: Leader Brawly
 Gender: Male
@@ -10251,22 +10251,39 @@ Espeon
 Level: 54
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_AMY_AND_LIV_3 ===
-Name: Amy & Liv
-Class: Twins
-Pic: Twins
-Gender: Male
-Music: Twins
-Double Battle: Yes
-AI: Basic Trainer
+=== TRAINER_COURTNEY_2 ===
+Name: Courtney
+Class: Magma Admin
+Pic: Courtney
+Gender: Female
+Music: Magma
+Double Battle: No
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
 
-Plusle
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Flareon (F)
+Level: 73
+Ability: Guts
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Temper Flare
+- Dig
+- Frustration
+- Quick Attack
 
-Minun
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Rhyperior 
+Level: 74
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Stone Edge
+- Drill Run
+- Rock Wrecker
+- Hammer Arm
+
+Houndoom (F) @ Houndoominite
+Level: 74
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Flamethrower
+- Nasty Plot
+- Dark Pulse
+- Sludge Bomb
 
 === TRAINER_GINA_AND_MIA_2 ===
 Name: Gina & Mia
@@ -13154,19 +13171,59 @@ Gender: Male
 Music: Magma
 Items: Hyper Potion / Super Potion
 Double Battle: No
-AI: Basic Trainer / Smart Switching
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
 
-Mightyena
-Level: 37
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Magmortar
+Level: 74
+Ability: Flame Body
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Fire Blast
+- Focus Blast
+- Scorching Sands
+- Thunderbolt
 
-Crobat
-Level: 38
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Grimmsnarl
+Level: 74
+Ability: Pickpocket
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Spirit Break
+- Hammer Arm
+- Parting Shot
+- False Surrender
 
-Camerupt
-Level: 39
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Flygon
+Level: 74
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Earthquake
+- Dragon Dance
+- Dragon Claw
+- U Turn
+
+Incineroar
+Level: 75
+Ability: Intimidate
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Cross Chop
+- Darkest Lariat
+- Flare Blitz
+- Swords Dance
+
+Hydreigon
+Level: 75
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Dark Pulse
+- Dragon Pulse
+- Nasty Plot
+- Flamethrower
+
+Camerupt @ Cameruptite
+Level: 75
+Ability: Solid Rock
+IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
+- Eruption
+- Earth Power
+- Flash Cannon
+- Flamethrower
 
 === TRAINER_MAXIE_MT_CHIMNEY ===
 Name: Maxie
@@ -16178,23 +16235,33 @@ Pic: Magma Admin
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
 
-Numel
-Level: 26
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Krookodile
+Level: 73
+Ability: Intimidate
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Crunch
+- Stone Edge
+- Stomping Tantrum
+- Swagger
 
-Mightyena
-Level: 28
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Infernape
+Level: 74
+Ability: Iron Fist
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Acrobatics
+- Close Combat
+- Bulk Up
+- Fire Punch
 
-Zubat
-Level: 30
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-
-Camerupt
-Level: 33
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Pinsir @ Pinsirite
+Level: 74
+IVs: 26 HP / 22 Atk / 26 Def / 22 SpA / 26 SpD / 62 Spe
+- Swords Dance
+- Frustration
+- X Scissor
+- Close Combat
 
 === TRAINER_DARCY ===
 Name: Darcy

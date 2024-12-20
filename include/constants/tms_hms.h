@@ -56,8 +56,9 @@
     F(CLOSE_COMBAT) \
     F(DAZZLING_GLEAM) \
     F(LASH_OUT) \
-    F(EXPANDING_FORCE) 
-
+    F(EXPANDING_FORCE) \
+    F(DARK_PULSE) \
+    F(TRAILBLAZE)
 
 #define FOREACH_HM(F) \
     F(CUT) \

@@ -488,7 +488,7 @@
 #define TRAINER_AMY_AND_LIV_2               482
 #define TRAINER_GINA_AND_MIA_1              483
 #define TRAINER_MIU_AND_YUKI                484
-#define TRAINER_AMY_AND_LIV_3               485 // Unused
+#define TRAINER_COURTNEY_2                  485
 #define TRAINER_GINA_AND_MIA_2              486
 #define TRAINER_AMY_AND_LIV_4               487
 #define TRAINER_AMY_AND_LIV_5               488

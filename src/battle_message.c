@@ -3631,6 +3631,9 @@ static const u8 sText_WinonaLast[] = _("How graceful, but our show isn't over\ny
 static const u8 sText_WinonaMegaEvolve[] = _("Altaria, it's time to really take to the\nsky!\p");
 static const u8 sText_MinaLast[] = _("What a great composition!\p");
 static const u8 sText_MinaZMove[] = _("You'll only see Trainers from Alola do\nsomething this epic!\p");
+static const u8 sText_MaxieLast2[] = _("I don't get how you're so skilled.\p");
+static const u8 sText_MaxieMega[] = _("Fufufu, I hope you realize we aren't\ngiving up on Groudon!\p");
+
 
 static const struct TrainerSlide sTrainerSlides[] =
 {
@@ -3972,6 +3975,12 @@ static const struct TrainerSlide sTrainerSlides[] =
         .isFrontierTrainer = FALSE,
         .msgLastSwitchIn = sText_MinaLast,
         .msgZMove = sText_MinaZMove,
+    },
+    {
+        .trainerId = TRAINER_MAXIE_MAGMA_HIDEOUT,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_MaxieLast2,
+        .msgMegaEvolution = sText_MaxieMega,
     },
 };
 

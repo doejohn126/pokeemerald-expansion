@@ -6,7 +6,7 @@ Gender: Male
 Music: Male
 
 === PARTNER_STEVEN ===
-Name: STEVEN
+Name: Steven
 Class: Rival
 Pic: Steven
 Gender: Male
@@ -43,7 +43,7 @@ EVs: 252 Atk / 252 SpA / 6 SpD
 - Dragon Claw
 
 === PARTNER_DAWN ===
-Name: DAWN
+Name: Dawn
 Class: Rival
 Pic: Dawn
 Gender: Female
@@ -62,7 +62,7 @@ Level: 45
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === PARTNER_BRENDAN_TREECKO ===
-Name: BRENDAN
+Name: Brendan
 Class: Rival
 Pic: Brendan
 Gender: Male
@@ -96,7 +96,7 @@ IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 - Bounce
 
 === PARTNER_BRENDAN_TORCHIC ===
-Name: BRENDAN
+Name: Brendan
 Class: Rival
 Pic: Brendan
 Gender: Male
@@ -130,7 +130,7 @@ IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 - Amnesia
 
 === PARTNER_BRENDAN_MUDKIP ===
-Name: BRENDAN
+Name: Brendan
 Class: Rival
 Pic: Brendan
 Gender: Male
@@ -164,7 +164,7 @@ IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 - Detect
 
 === PARTNER_MAY_TREECKO ===
-Name: MAY
+Name: May
 Class: Rival
 Pic: May
 Gender: Female
@@ -199,7 +199,7 @@ IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 - Bounce
 
 === PARTNER_MAY_TORCHIC ===
-Name: MAY
+Name: May
 Class: Rival
 Pic: May
 Gender: Female
@@ -233,9 +233,9 @@ IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 - Amnesia
 
 === PARTNER_MAY_MUDKIP ===
-Name: BRENDAN
+Name: May
 Class: Rival
-Pic: Brendan
+Pic: May
 Gender: Male
 Music: Male
 Items: Hyper Potion / Hyper Potion
@@ -266,3 +266,36 @@ IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 - Shed Tail
 - Detect
 
+=== PARTNER_JAYDEN ===
+Name: Jayden
+Class: Rival
+Pic: Ruby Sapphire Brendan
+Gender: Male
+Music: Male
+Items: Max Potion / Hyper Potion
+
+Jolteon (F)
+Level: 73
+Ability: Volt Absorb
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Thunderbolt
+- Shadow Ball
+- Volt Switch
+- Alluring Voice
+
+Feraligatr (M)
+Level: 74
+Ability: Strong Jaw
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Crunch
+- Ice Fang
+- Aqua Jet
+- Waterfall
+
+Charizard (M) @ Charizardite X
+Level: 75
+IVs: 26 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 26 Spe
+- Dragon Claw
+- Flare Blitz
+- Air Slash
+- Earthquake

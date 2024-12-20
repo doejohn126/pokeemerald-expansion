@@ -11,6 +11,7 @@
 #define PARTNER_MAY_TREECKO         6
 #define PARTNER_MAY_TORCHIC         7
 #define PARTNER_MAY_MUDKIP          8
+#define PARTNER_JAYDEN              9
 
 
 #endif  // GUARD_CONSTANTS_BATTLE_PARTNERS_H

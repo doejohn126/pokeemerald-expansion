@@ -95,30 +95,30 @@
 #define VAR_POKELOT_RND1                                 0x404B
 #define VAR_POKELOT_RND2                                 0x404C
 #define VAR_POKELOT_PRIZE_PLACE                          0x404D
-#define VAR_SCIENTIST_STARTER                            0x404E // Unused Var
+#define VAR_SCIENTIST_STARTER                            0x404E 
 #define VAR_LOTAD_SIZE_RECORD                            0x404F
 #define VAR_LITTLEROOT_TOWN_STATE                        0x4050
 #define VAR_OLDALE_TOWN_STATE                            0x4051
-#define VAR_STARTER_GEN                                  0x4052 // Unused Var
+#define VAR_STARTER_GEN                                  0x4052 
 #define VAR_LAVARIDGE_TOWN_STATE                         0x4053
 #define VAR_CURRENT_SECRET_BASE                          0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
-#define VAR_SKY_BATTLE                                   0x4055 // Unused Var
-#define VAR_JAYDEN_WOODS                                 0x4056 // Unused Var
+#define VAR_SKY_BATTLE                                   0x4055 
+#define VAR_JAYDEN_WOODS                                 0x4056
 #define VAR_PETALBURG_CITY_STATE                         0x4057
 #define VAR_SLATEPORT_CITY_STATE                         0x4058
-#define VAR_BROCK_FIRST_FIGHT                            0x4059 // Unused Var
+#define VAR_BROCK_FIRST_FIGHT                            0x4059 
 #define VAR_RUSTBORO_CITY_STATE                          0x405A
-#define VAR_JAYDEN_106                                   0x405B // Unused Var
-#define VAR_FOLLOWER_WRONG_WAY                           0x405C // Unused Var
+#define VAR_JAYDEN_106                                   0x405B
+#define VAR_FOLLOWER_WRONG_WAY                           0x405C 
 #define VAR_MOSSDEEP_CITY_STATE                          0x405D
 #define VAR_SOOTOPOLIS_CITY_STATE                        0x405E
-#define VAR_RIVAL_LEAVE_PARTY                            0x405F // Unused Var
+#define VAR_RIVAL_LEAVE_PARTY                            0x405F
 #define VAR_ROUTE101_STATE                               0x4060
-#define VAR_FLY_TOOL_SOURCE                              0x4061 // Unused Var
-#define VAR_JAYDEN_LAVARIDGE                             0x4062 // Unused Var
+#define VAR_FLY_TOOL_SOURCE                              0x4061
+#define VAR_JAYDEN_LAVARIDGE                             0x4062
 #define VAR_ROUTE104_STATE                               0x4063
-#define VAR_KORRINA                                      0x4064 // Unused Var
-#define VAR_ROUTE106_STATE                               0x4065 // Unused Var
+#define VAR_KORRINA                                      0x4064
+#define VAR_MAGMA_ADMINS                                 0x4065
 #define VAR_ROUTE107_STATE                               0x4066 // Unused Var
 #define VAR_ROUTE108_STATE                               0x4067 // Unused Var
 #define VAR_ROUTE109_STATE                               0x4068 // Unused Var

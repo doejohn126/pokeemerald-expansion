@@ -27,7 +27,7 @@
     [PARTNER_STEVEN] =
     {
 #line 9
-        .trainerName = _("STEVEN"),
+        .trainerName = _("Steven"),
 #line 10
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 11
@@ -107,7 +107,7 @@
     [PARTNER_DAWN] =
     {
 #line 46
-        .trainerName = _("DAWN"),
+        .trainerName = _("Dawn"),
 #line 47
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 48
@@ -162,7 +162,7 @@ F_TRAINER_FEMALE |
     [PARTNER_BRENDAN_TREECKO] =
     {
 #line 65
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("Brendan"),
 #line 66
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 67
@@ -240,7 +240,7 @@ F_TRAINER_FEMALE |
     [PARTNER_BRENDAN_TORCHIC] =
     {
 #line 99
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("Brendan"),
 #line 100
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 101
@@ -318,7 +318,7 @@ F_TRAINER_FEMALE |
     [PARTNER_BRENDAN_MUDKIP] =
     {
 #line 133
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("Brendan"),
 #line 134
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 135
@@ -396,7 +396,7 @@ F_TRAINER_FEMALE |
     [PARTNER_MAY_TREECKO] =
     {
 #line 167
-        .trainerName = _("MAY"),
+        .trainerName = _("May"),
 #line 168
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 169
@@ -478,7 +478,7 @@ F_TRAINER_FEMALE |
     [PARTNER_MAY_TORCHIC] =
     {
 #line 202
-        .trainerName = _("MAY"),
+        .trainerName = _("May"),
 #line 203
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 204
@@ -558,11 +558,11 @@ F_TRAINER_FEMALE |
     [PARTNER_MAY_MUDKIP] =
     {
 #line 236
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("May"),
 #line 237
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 238
-        .trainerPic = TRAINER_BACK_PIC_BRENDAN,
+        .trainerPic = TRAINER_BACK_PIC_MAY,
         .encounterMusic_gender = 
 #line 240
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -628,6 +628,88 @@ F_TRAINER_FEMALE |
                 MOVE_X_SCISSOR,
                 MOVE_SHED_TAIL,
                 MOVE_DETECT,
+            },
+            },
+        },
+    },
+#line 269
+    [PARTNER_JAYDEN] =
+    {
+#line 270
+        .trainerName = _("Jayden"),
+#line 271
+        .trainerClass = TRAINER_CLASS_RIVAL,
+#line 272
+        .trainerPic = TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN,
+        .encounterMusic_gender = 
+#line 274
+            TRAINER_ENCOUNTER_MUSIC_MALE,
+#line 275
+        .items = { ITEM_MAX_POTION, ITEM_HYPER_POTION },
+        .partySize = 3,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 277
+            .species = SPECIES_JOLTEON,
+#line 277
+            .gender = TRAINER_MON_FEMALE,
+#line 280
+            .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
+#line 279
+            .ability = ABILITY_VOLT_ABSORB,
+#line 278
+            .lvl = 73,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 281
+                MOVE_THUNDERBOLT,
+                MOVE_SHADOW_BALL,
+                MOVE_VOLT_SWITCH,
+                MOVE_ALLURING_VOICE,
+            },
+            },
+            {
+#line 286
+            .species = SPECIES_FERALIGATR,
+#line 286
+            .gender = TRAINER_MON_MALE,
+#line 289
+            .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
+#line 288
+            .ability = ABILITY_STRONG_JAW,
+#line 287
+            .lvl = 74,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 290
+                MOVE_CRUNCH,
+                MOVE_ICE_FANG,
+                MOVE_AQUA_JET,
+                MOVE_WATERFALL,
+            },
+            },
+            {
+#line 295
+            .species = SPECIES_CHARIZARD,
+#line 295
+            .gender = TRAINER_MON_MALE,
+#line 295
+            .heldItem = ITEM_CHARIZARDITE_X,
+#line 297
+            .iv = TRAINER_PARTY_IVS(26, 25, 25, 26, 25, 25),
+#line 296
+            .lvl = 75,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 298
+                MOVE_DRAGON_CLAW,
+                MOVE_FLARE_BLITZ,
+                MOVE_AIR_SLASH,
+                MOVE_EARTHQUAKE,
             },
             },
         },
