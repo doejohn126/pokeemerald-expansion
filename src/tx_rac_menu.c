@@ -20,6 +20,7 @@
 #include "battle_main.h"
 #include "tx_randomizer_and_challenges.h"
 #include "pokemon.h"
+#include "constants/songs.h"
 
 enum
 {
@@ -981,6 +982,7 @@ void CB2_InitTxRandomizerChallengesMenu(void)
         SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_WIN0_ON | DISPCNT_WIN1_ON | DISPCNT_OBJ_ON | DISPCNT_OBJ_1D_MAP);
         ShowBg(0);
         ShowBg(1);
+        PlayBGM(MUS_RG_NEW_GAME_INTRO);
         gMain.state++;
         break;
     case 2:

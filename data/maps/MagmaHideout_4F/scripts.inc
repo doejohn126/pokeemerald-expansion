@@ -627,163 +627,167 @@ AdminMultiBattle::
 # 321 "data/maps/MagmaHideout_4F/scripts.pory"
 	removeobject 10
 # 322 "data/maps/MagmaHideout_4F/scripts.pory"
+	special HealPlayerParty
+# 323 "data/maps/MagmaHideout_4F/scripts.pory"
 	releaseall
 	end
 
 
 JaydenSetFlagAgin::
-# 327 "data/maps/MagmaHideout_4F/scripts.pory"
-	setflag FLAG_JAYDEN_MAGMA
 # 328 "data/maps/MagmaHideout_4F/scripts.pory"
-	msgbox HahaGroudon
+	setflag FLAG_JAYDEN_MAGMA
 # 329 "data/maps/MagmaHideout_4F/scripts.pory"
+	msgbox HahaGroudon
+# 330 "data/maps/MagmaHideout_4F/scripts.pory"
 	goto EventScript_FieldWhiteOut
 	return
 
 
-# 380 "data/maps/MagmaHideout_4F/scripts.pory"
-WalkABit:
 # 381 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_up
+WalkABit:
 # 382 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_up
+# 383 "data/maps/MagmaHideout_4F/scripts.pory"
 	face_down
 	step_end
 
-# 385 "data/maps/MagmaHideout_4F/scripts.pory"
-JaydenLeaveAgain:
 # 386 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_up
+JaydenLeaveAgain:
 # 387 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_right
-# 387 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_right
-# 387 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_right
-# 387 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_right
-# 388 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_up
 # 388 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_right
+# 388 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_right
+# 388 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_right
+# 389 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_up
 # 389 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_right
+	walk_up
 # 389 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_up
+# 390 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_right
-# 389 "data/maps/MagmaHideout_4F/scripts.pory"
+# 390 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_right
-# 389 "data/maps/MagmaHideout_4F/scripts.pory"
+# 390 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_right
-# 389 "data/maps/MagmaHideout_4F/scripts.pory"
+# 390 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_right
-# 389 "data/maps/MagmaHideout_4F/scripts.pory"
+# 390 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_right
+# 390 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_right
+# 390 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_right
 	step_end
 
-# 392 "data/maps/MagmaHideout_4F/scripts.pory"
+# 393 "data/maps/MagmaHideout_4F/scripts.pory"
 JaydenRunToScene2:
-# 393 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_fast_left
-# 393 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_fast_left
-# 393 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_fast_left
-# 393 "data/maps/MagmaHideout_4F/scripts.pory"
+# 394 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_fast_left
 # 394 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_fast_down
+	walk_fast_left
 # 394 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_fast_down
-# 395 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_fast_left
+# 394 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_fast_left
 # 395 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_fast_left
+	walk_fast_down
 # 395 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_fast_down
+# 396 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_fast_left
 # 396 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_fast_down
+	walk_fast_left
 # 396 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_fast_down
-# 396 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_fast_left
+# 397 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_fast_down
 # 397 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_fast_down
+# 397 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_fast_down
+# 398 "data/maps/MagmaHideout_4F/scripts.pory"
 	face_left
 	step_end
 
-# 400 "data/maps/MagmaHideout_4F/scripts.pory"
+# 401 "data/maps/MagmaHideout_4F/scripts.pory"
 JaydenRunToScene:
-# 401 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_fast_left
-# 401 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_fast_left
-# 401 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_fast_left
-# 401 "data/maps/MagmaHideout_4F/scripts.pory"
+# 402 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_fast_left
 # 402 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_fast_down
+	walk_fast_left
 # 402 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_fast_left
+# 402 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_fast_left
+# 403 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_fast_down
 # 403 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_fast_left
-# 403 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_fast_left
-# 403 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_fast_left
-# 403 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_fast_left
-# 404 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_fast_down
 # 404 "data/maps/MagmaHideout_4F/scripts.pory"
-	walk_fast_down
+	walk_fast_left
 # 404 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_fast_left
+# 404 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_fast_left
+# 404 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_fast_left
+# 405 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_fast_down
 # 405 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_fast_down
+# 405 "data/maps/MagmaHideout_4F/scripts.pory"
+	walk_fast_down
+# 406 "data/maps/MagmaHideout_4F/scripts.pory"
 	face_right
 	step_end
 
-# 408 "data/maps/MagmaHideout_4F/scripts.pory"
-WalkInPlaceQuick:
 # 409 "data/maps/MagmaHideout_4F/scripts.pory"
+WalkInPlaceQuick:
+# 410 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_in_place_fast_up
 	step_end
 
-# 412 "data/maps/MagmaHideout_4F/scripts.pory"
+# 413 "data/maps/MagmaHideout_4F/scripts.pory"
 AdminWalkUp:
-# 413 "data/maps/MagmaHideout_4F/scripts.pory"
+# 414 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_up
-# 413 "data/maps/MagmaHideout_4F/scripts.pory"
+# 414 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_up
-# 413 "data/maps/MagmaHideout_4F/scripts.pory"
+# 414 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_up
-# 413 "data/maps/MagmaHideout_4F/scripts.pory"
+# 414 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_up
-# 413 "data/maps/MagmaHideout_4F/scripts.pory"
+# 414 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_up
-# 413 "data/maps/MagmaHideout_4F/scripts.pory"
+# 414 "data/maps/MagmaHideout_4F/scripts.pory"
 	walk_up
 	step_end
 
 CourtneyLose::
-# 332 "data/maps/MagmaHideout_4F/scripts.pory"
+# 333 "data/maps/MagmaHideout_4F/scripts.pory"
 	.string "Damn, the kid got even better.\n"
 	.string "Hah...$"
 
 TabithaMoreOfThem::
-# 337 "data/maps/MagmaHideout_4F/scripts.pory"
+# 338 "data/maps/MagmaHideout_4F/scripts.pory"
 	.string "Tabitha: Heh, so there's more of them?\n"
 	.string "You kids won't learn will ya?$"
 
 HahaGroudon::
-# 342 "data/maps/MagmaHideout_4F/scripts.pory"
+# 343 "data/maps/MagmaHideout_4F/scripts.pory"
 	.string "Tabitha: Hahah! Perfect, now it's time\n"
 	.string "we see Groudon awake!$"
 
 SeeYaLater::
-# 347 "data/maps/MagmaHideout_4F/scripts.pory"
+# 348 "data/maps/MagmaHideout_4F/scripts.pory"
 	.string "Alright, see ya later {PLAYER}.$"
 
 CourtneyC0onfront0::
-# 351 "data/maps/MagmaHideout_4F/scripts.pory"
+# 352 "data/maps/MagmaHideout_4F/scripts.pory"
 	.string "Courtney: Hahah... exactly!\p"
 	.string "Unfortunately for you, you're not going\n"
 	.string "to interfere without getting through\l"
@@ -792,7 +796,7 @@ CourtneyC0onfront0::
 	.string "A 2v1 doesn't seem doable for you.$"
 
 IGottaGo::
-# 360 "data/maps/MagmaHideout_4F/scripts.pory"
+# 361 "data/maps/MagmaHideout_4F/scripts.pory"
 	.string "Nice, we won! I think there's a\n"
 	.string "legendary up ahead.\p"
 	.string "Hopefully that was the last of Team\n"
@@ -801,12 +805,12 @@ IGottaGo::
 	.string "Here's a cool TM to repay you.$"
 
 IllHealUp::
-# 369 "data/maps/MagmaHideout_4F/scripts.pory"
+# 370 "data/maps/MagmaHideout_4F/scripts.pory"
 	.string "Hey don't worry {PLAYER}, I'll heal your\n"
 	.string "Pokémon before this battle.$"
 
 ImFinallyHere::
-# 374 "data/maps/MagmaHideout_4F/scripts.pory"
+# 375 "data/maps/MagmaHideout_4F/scripts.pory"
 	.string "{PLAYER}, I've been looking for you!\p"
 	.string "I saw you coming here so I decided to\n"
 	.string "follow you to help out.$"

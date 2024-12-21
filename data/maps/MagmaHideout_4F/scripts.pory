@@ -319,6 +319,7 @@ script AdminMultiBattle {
     waitmovement(0)
     setflag(FLAG_JAYDEN_MAGMA)
     removeobject(10)
+	special(HealPlayerParty)
     releaseall
     end
 }

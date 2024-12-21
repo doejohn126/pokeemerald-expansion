@@ -10075,17 +10075,13 @@ Music: Girl
 Double Battle: No
 AI: Basic Trainer
 
-Cherrim
-Level: 28
-IVs: 18 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
 Nidorina
 Level: 27
-IVs: 18 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 17 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wimpod
 Level: 28
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
 === TRAINER_DIANA_2 ===
 Name: Diana
@@ -13933,16 +13929,16 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Swoobat
-Level: 44
+Woobat
+Level: 26
 IVs: 0 HP / 0 Atk / 15 Def / 0 SpA / 0 SpD / 0 Spe
 
 Sneasel
-Level: 44
+Level: 27
 IVs: 0 HP / 15 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Hippowdon
-Level: 44
+Hippopotas
+Level: 26
 IVs: 0 HP / 0 Atk / 15 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TRENT_2 ===
