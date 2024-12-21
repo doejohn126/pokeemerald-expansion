@@ -35123,12 +35123,12 @@ F_TRAINER_FEMALE |
         {
             {
 #line 13932
-            .species = SPECIES_SWOOBAT,
+            .species = SPECIES_WOOBAT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13934
             .iv = TRAINER_PARTY_IVS(0, 0, 15, 0, 0, 0),
 #line 13933
-            .lvl = 44,
+            .lvl = 26,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -35139,18 +35139,18 @@ F_TRAINER_FEMALE |
 #line 13938
             .iv = TRAINER_PARTY_IVS(0, 15, 0, 0, 0, 0),
 #line 13937
-            .lvl = 44,
+            .lvl = 27,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 13940
-            .species = SPECIES_HIPPOWDON,
+            .species = SPECIES_HIPPOPOTAS,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13942
             .iv = TRAINER_PARTY_IVS(0, 0, 15, 0, 0, 0),
 #line 13941
-            .lvl = 44,
+            .lvl = 26,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
