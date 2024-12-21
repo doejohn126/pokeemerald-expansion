@@ -33,7 +33,7 @@ Route117_EventScript_DaycareAcceptEgg::
 
 Route117_EventScript_DaycareReceiveEgg::
 	message Route117_Text_ReceivedEgg
-	playfanfare MUS_DP_LEVEL_UP
+	playfanfare MUS_HG_OBTAIN_EGG
 	waitfanfare
 	waitbuttonpress
 	msgbox Route117_Text_TakeGoodCareOfIt, MSGBOX_DEFAULT

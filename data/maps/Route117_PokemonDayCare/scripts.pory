@@ -19,7 +19,7 @@ script OldTogepiGuy {
     getpartysize
     goto_if_eq(VAR_RESULT, PARTY_SIZE, FullParty)
     message(PlayerGotEgg)
-	playfanfare(MUS_OBTAIN_ITEM)
+	playfanfare(MUS_HG_OBTAIN_EGG)
     waitfanfare
     setflag(FLAG_TOGEPI)
     giveegg(SPECIES_TOGEPI)

@@ -1311,7 +1311,6 @@ static void CB2_NewGameBirchSpeech_ReturnFromTxRandomizerChallengesOptions(void)
     DmaFill32(3, 0, OAM, OAM_SIZE);
     DmaFill16(3, 0, PLTT, PLTT_SIZE);
     ResetPaletteFade();
-    PlayBGM(MUS_RG_NEW_GAME_EXIT);
     LZ77UnCompVram(sBirchSpeechShadowGfx, (u8*)VRAM);
     LZ77UnCompVram(sBirchSpeechBgMap, (u8*)(BG_SCREEN_ADDR(7)));
     LoadPalette(sBirchSpeechBgPals, 0, 64);
@@ -1336,6 +1335,7 @@ static void Task_NewGameBirchSpeech_Init(u8 taskId)
     SetGpuReg(REG_OFFSET_BLDCNT, 0);
     SetGpuReg(REG_OFFSET_BLDALPHA, 0);
     SetGpuReg(REG_OFFSET_BLDY, 0);
+    PlayBGM(MUS_RG_NEW_GAME_EXIT);
 
     LZ77UnCompVram(sBirchSpeechShadowGfx, (void *)VRAM);
     LZ77UnCompVram(sBirchSpeechBgMap, (void *)(BG_SCREEN_ADDR(7)));
