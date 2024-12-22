@@ -33,7 +33,7 @@ OldTogepiGuy::
 # 21 "data/maps/Route117_PokemonDayCare/scripts.pory"
 	message PlayerGotEgg
 # 22 "data/maps/Route117_PokemonDayCare/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	playfanfare MUS_HG_OBTAIN_EGG
 # 23 "data/maps/Route117_PokemonDayCare/scripts.pory"
 	waitfanfare
 # 24 "data/maps/Route117_PokemonDayCare/scripts.pory"

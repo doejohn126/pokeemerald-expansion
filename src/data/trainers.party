@@ -107,8 +107,16 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Poochyena
-Level: 32
+Starmie
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Sandslash Alola
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Persian Alola
+Level: 72
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
@@ -120,12 +128,12 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Zubat
-Level: 31
+Avalugg
+Level: 72
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Carvanha
-Level: 31
+Blastoise
+Level: 72
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
@@ -137,8 +145,16 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Zubat
-Level: 32
+Glalie
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Dragonair
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Slowbro Galar
+Level: 72
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
@@ -150,8 +166,16 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Carvanha
-Level: 32
+Bruxish
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Carracosta
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Arctovish
+Level: 72
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
@@ -334,7 +358,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Gyarados
-Level: 34
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Golduck
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_RUSTURF_TUNNEL ===
@@ -569,8 +597,16 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Carvanha
-Level: 32
+Dewgong
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lumineon
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Muk Alola
+Level: 72
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
@@ -582,8 +618,16 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Zubat
-Level: 32
+Swanna
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Toxapex
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Mr Mime Galar
+Level: 72
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FREDRICK ===
@@ -615,15 +659,60 @@ Gender: Male
 Music: Aqua
 Items: Super Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
 
-Mightyena
-Level: 34
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Machamp @ Damp Rock
+Level: 74
+Ability: Guts
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Cross Chop
+- Bullet Punch
+- Rain Dance
+- Thunder Punch
 
-Golbat
-Level: 34
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Dhelmise
+Level: 74
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Anchor Shot
+- Power Whip
+- Phantom Force
+- Liquidation
+
+Floatzel
+Level: 74
+Ability: Swift Swim
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Wave Crash
+- Liquidation
+- Crunch
+- Ice Punch
+
+Drednaw
+Level: 74
+Ability: Strong Jaw
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Jaw Lock
+- Liquidation
+- Head Smash
+- Ice Fang
+
+Samurott Hisui
+Level: 75
+Ability: Sharpness
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Ceaseless Edge
+- Razor Shell
+- X Scissor
+- Sacred Sword
+
+Sableye @ Sablenite
+Level: 75
+Ability: Prankster
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Foul Play
+- Will O Wisp
+- Recover
+- Shadow Claw
 
 === TRAINER_ZANDER ===
 Name: Zander
@@ -3472,12 +3561,16 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Tentacool
-Level: 33
+Octillery
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wingull
-Level: 33
+Tentacruel
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cloys
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROLAND ===
@@ -3489,8 +3582,12 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Carvanha
-Level: 34
+Sharpedo
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Walrein
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_NOLEN ===
@@ -3695,12 +3792,16 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Tentacool
-Level: 33
+Whiscash
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wailmer
-Level: 33
+Poliwrath
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cramorant
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TONY_2 ===
@@ -4062,12 +4163,12 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Poochyena
-Level: 31
+Arbok
+Level: 72
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
-Level: 31
+Liepard
+Level: 72
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_8 ===
@@ -4079,8 +4180,16 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Carvanha
-Level: 32
+Crawdaunt
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Dragalge
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cryogonal
+Level: 72
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHAWN ===
@@ -9640,8 +9749,12 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Wailmer
-Level: 34
+Lumineon
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Corsola
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRACE ===
@@ -9653,8 +9766,12 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Marill
-Level: 34
+Azumarill
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Seadra
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TANYA ===
@@ -13005,8 +13122,16 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Staryu
-Level: 34
+Bibarel
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Veluza
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Tatsugiri Droopy
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_WEATHER_INST_5 ===
@@ -15370,12 +15495,12 @@ Music: Swimmer
 Double Battle: Yes
 AI: Basic Trainer
 
-Chinchou
-Level: 34
+Lanturn
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Carvanha
-Level: 33
+Pyukumuku
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LILA_AND_ROY_2 ===
@@ -15387,12 +15512,12 @@ Music: Swimmer
 Double Battle: Yes
 AI: Basic Trainer
 
-Chinchou
-Level: 42
+Lanturn
+Level: 77
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Carvanha
-Level: 40
+Pyukumuku
+Level: 77
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LILA_AND_ROY_3 ===
@@ -16722,6 +16847,10 @@ Double Battle: No
 AI: Basic Trainer
 
 Mr Mime
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
+
+Girafarig
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
 

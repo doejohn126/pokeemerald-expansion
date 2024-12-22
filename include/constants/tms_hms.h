@@ -58,7 +58,9 @@
     F(LASH_OUT) \
     F(EXPANDING_FORCE) \
     F(DARK_PULSE) \
-    F(TRAILBLAZE)
+    F(TRAILBLAZE) \
+    F(LIQUIDATION) \
+    F(ICE_SPINNER)
 
 #define FOREACH_HM(F) \
     F(CUT) \
