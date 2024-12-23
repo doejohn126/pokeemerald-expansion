@@ -5938,7 +5938,7 @@ u16 GetBattleBGM(void)
             if (gTrainerBattleOpponent_A == TRAINER_MINA)
                 return MUS_VS_COLOSSEUM;
             if (gTrainerBattleOpponent_A == TRAINER_KORRINA)
-                return MUS_HG_VS_GYM_LEADER_KANTO;
+                return MUS_VS_COLOSSEUM;
             return MUS_RG_VS_GYM_LEADER;
         case TRAINER_CLASS_PKMN_TRAINER_2:
             return MUS_PL_VS_FRONTIER_BRAIN;

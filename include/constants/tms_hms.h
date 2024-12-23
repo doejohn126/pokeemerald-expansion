@@ -60,7 +60,8 @@
     F(DARK_PULSE) \
     F(TRAILBLAZE) \
     F(LIQUIDATION) \
-    F(ICE_SPINNER)
+    F(ICE_SPINNER) \
+    F(DRAIN_PUNCH)
 
 #define FOREACH_HM(F) \
     F(CUT) \
