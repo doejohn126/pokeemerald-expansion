@@ -1753,6 +1753,27 @@ static void MoveSelectionDisplayMoveType(u32 battler)
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_TYPE);
 }
 
+static u8 GetPowerWindowId(u16 power, u16 basePower)
+{
+    if (power > basePower)
+        return B_WIN_MOVE_PWR_POS;
+    else if (power < basePower)
+        return B_WIN_MOVE_PWR_NEG;
+    else
+        return B_WIN_MOVE_PWR;
+}
+
+// Function to determine which window to use for Accuracy
+static u8 GetAccuracyWindowId(u16 accuracy, u16 baseAccuracy)
+{
+    if (accuracy > baseAccuracy)
+        return B_WIN_MOVE_ACC_POS;
+    else if (accuracy < baseAccuracy)
+        return B_WIN_MOVE_ACC_NEG;
+    else
+        return B_WIN_MOVE_ACC;
+}
+
 static void MoveSelectionDisplayMoveDescription(u32 battler)
 {
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct*)(&gBattleResources->bufferA[battler][4]);
@@ -1767,18 +1788,28 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     u8 cat = gMovesInfo[move].category;
     u32 moveEffect = gMovesInfo[move].effect;
 
+    // Calculate dynamic power and accuracy, with adjustment for status moves
     if (B_DYNAMIC_MOVE_DESCRIPTIONS 
         && move != MOVE_NONE && move != 0xFFFF && moveEffect != EFFECT_KNOCK_OFF 
         && moveEffect != EFFECT_BRINE && moveEffect != EFFECT_LOW_KICK)
     {
-        pwr = CalcMoveBasePowerAfterModifiers(move, battlerAtk, battlerDef, moveType, FALSE, atkAbility, 0, holdEffectAtk, gBattleWeather);
-        acc = GetTotalAccuracy(battlerAtk, battlerDef, move, atkAbility, 0, holdEffectAtk, HOLD_EFFECT_NONE);
+        if (gMovesInfo[move].category == DAMAGE_CATEGORY_STATUS) 
+        {
+            // STATUS MOVE: Ignore power, only modify accuracy
+            pwr = 0; // Ensure power remains "0"
+            acc = GetTotalAccuracy(battlerAtk, battlerDef, move, atkAbility, 0, holdEffectAtk, HOLD_EFFECT_NONE);
+        }
+        else 
+        {
+            // NON-STATUS MOVES: Modify both power and accuracy
+            pwr = CalcMoveBasePowerAfterModifiers(move, battlerAtk, battlerDef, moveType, FALSE, atkAbility, 0, holdEffectAtk, gBattleWeather);
+            acc = GetTotalAccuracy(battlerAtk, battlerDef, move, atkAbility, 0, holdEffectAtk, HOLD_EFFECT_NONE);
 
+            if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN && moveEffect == EFFECT_EARTHQUAKE)
+                pwr /= 2;
+        }
         if (acc > 100)
             acc = 100;
-
-        if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN && moveEffect == EFFECT_EARTHQUAKE)
-            pwr /= 2;
     }
     else
     {
@@ -1791,39 +1822,74 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     u8 pwr_desc[7] = _("PWR: ");
     u8 acc_desc[7] = _("ACC: ");
     u8 cat_start[] = _("{CLEAR_TO 0x03}");
-    u8 pwr_start[] = _("{CLEAR_TO 0x38}");
+    u8 pwr_start[] = _("{CLEAR_TO 0x34}");
     u8 acc_start[] = _("{CLEAR_TO 0x6D}");
-    LoadMessageBoxAndBorderGfx();
-    DrawStdWindowFrame(B_WIN_MOVE_DESCRIPTION, FALSE);
-    if (pwr < 2)
-        StringCopy(pwr_num, gText_BattleSwitchWhich5);
-    else
-        ConvertIntToDecimalStringN(pwr_num, pwr, STR_CONV_MODE_LEFT_ALIGN, 3);
-    if (acc < 2)
-        StringCopy(acc_num, gText_BattleSwitchWhich5);
-    else
-        ConvertIntToDecimalStringN(acc_num, acc, STR_CONV_MODE_LEFT_ALIGN, 3);
+
+    // Prepare the main description text for B_WIN_MOVE_DESCRIPTION
     StringCopy(gDisplayedStringBattle, cat_start);
     StringAppend(gDisplayedStringBattle, cat_desc);
     StringAppend(gDisplayedStringBattle, pwr_start);
     StringAppend(gDisplayedStringBattle, pwr_desc);
-    StringAppend(gDisplayedStringBattle, pwr_num);
     StringAppend(gDisplayedStringBattle, acc_start);
     StringAppend(gDisplayedStringBattle, acc_desc);
-    StringAppend(gDisplayedStringBattle, acc_num);
     StringAppend(gDisplayedStringBattle, gText_NewLine);
     if (gMovesInfo[move].effect == EFFECT_PLACEHOLDER)
         StringAppend(gDisplayedStringBattle, gNotDoneYetDescription);
     else
         StringAppend(gDisplayedStringBattle, gMovesInfo[move].description);
-    BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_DESCRIPTION);
 
+    // Draw the main description box with a border
+    LoadMessageBoxAndBorderGfx();
+    DrawStdWindowFrame(B_WIN_MOVE_DESCRIPTION, FALSE);
+    BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_DESCRIPTION);
+    CopyWindowToVram(B_WIN_MOVE_DESCRIPTION, COPYWIN_FULL);
+
+    // Display power
+    if (pwr < 2) // Status move or no power
+    {
+        StringCopy(pwr_num, gText_BattleSwitchWhich5); // Use "-" for no power
+    }
+    else
+    {
+        ConvertIntToDecimalStringN(pwr_num, pwr, STR_CONV_MODE_LEFT_ALIGN, 3);
+    }
+
+    // Display accuracy
+    if (acc < 2) // No accuracy specified
+    {
+        StringCopy(acc_num, gText_BattleSwitchWhich5); // Use "-" for no accuracy
+    }
+    else
+    {
+        ConvertIntToDecimalStringN(acc_num, acc, STR_CONV_MODE_LEFT_ALIGN, 3);
+    }
+
+    // Set colors based on configuration
+    if (B_DYNAMIC_DESCRIPTION_COLORS)
+    {
+        // Dynamic color display logic
+        BattlePutTextOnWindow(pwr_num, GetPowerWindowId(pwr, gMovesInfo[move].power));
+        BattlePutTextOnWindow(acc_num, GetAccuracyWindowId(acc, gMovesInfo[move].accuracy));
+        CopyWindowToVram(GetPowerWindowId(pwr, gMovesInfo[move].power), COPYWIN_GFX);
+        CopyWindowToVram(GetAccuracyWindowId(acc, gMovesInfo[move].accuracy), COPYWIN_GFX);
+    }
+    else
+    {
+        // Neutral color display only
+        FillWindowPixelBuffer(B_WIN_MOVE_PWR, PIXEL_FILL(0));
+        BattlePutTextOnWindow(pwr_num, B_WIN_MOVE_PWR);
+        CopyWindowToVram(B_WIN_MOVE_PWR, COPYWIN_GFX);
+
+        FillWindowPixelBuffer(B_WIN_MOVE_ACC, PIXEL_FILL(0));
+        BattlePutTextOnWindow(acc_num, B_WIN_MOVE_ACC);
+        CopyWindowToVram(B_WIN_MOVE_ACC, COPYWIN_GFX);
+    }
+
+    // Draw the category icon as usual
     if (gCategoryIconSpriteId == 0xFF)
         gCategoryIconSpriteId = CreateSprite(&gSpriteTemplate_CategoryIcons, 38, 64, 1);
 
     StartSpriteAnim(&gSprites[gCategoryIconSpriteId], cat);
-
-    CopyWindowToVram(B_WIN_MOVE_DESCRIPTION, COPYWIN_FULL);
 }
 
 void MoveSelectionCreateCursorAt(u8 cursorPosition, u8 baseTileNum)
