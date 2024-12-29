@@ -11322,12 +11322,15 @@ const struct Item gItemsInfo[] =
     {
         .name = _("TM61"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "User slams the\n"
+            "target with wings and\n"
+            "hits twice in a row."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_DUAL_WINGBEAT,
     },
 
     [ITEM_TM62] =

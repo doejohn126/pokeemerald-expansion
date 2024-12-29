@@ -243,10 +243,38 @@ LavaridgeTown_EventScript_EggWoman::
 	goto_if_eq VAR_RESULT, PARTY_SIZE, LavaridgeTown_EventScript_NoRoomForEgg
 	msgbox LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_LAVARIDGE_EGG
-	playfanfare MUS_OBTAIN_ITEM
+	playfanfare MUS_HG_OBTAIN_EGG
 	message LavaridgeTown_Text_ReceivedTheEgg
 	waitfanfare
-	giveegg SPECIES_WYNAUT
+	random 27
+	goto_if_eq VAR_RESULT, 1, CharmanderEgg
+	goto_if_eq VAR_RESULT, 2, SquirtleEgg
+	goto_if_eq VAR_RESULT, 3, ChikoritaEgg
+	goto_if_eq VAR_RESULT, 4, ChikoritaEgg
+	goto_if_eq VAR_RESULT, 5, CyndaquilEgg
+	goto_if_eq VAR_RESULT, 6, TotodileEgg
+	goto_if_eq VAR_RESULT, 7, TreeckoEgg
+	goto_if_eq VAR_RESULT, 8, TorchicEgg
+	goto_if_eq VAR_RESULT, 9, MudkipEgg
+	goto_if_eq VAR_RESULT, 10, TurtwigEgg
+	goto_if_eq VAR_RESULT, 11, ChimcharEgg
+	goto_if_eq VAR_RESULT, 12, PiplupEgg
+	goto_if_eq VAR_RESULT, 13, SnivyEgg
+	goto_if_eq VAR_RESULT, 14, TepigEgg
+	goto_if_eq VAR_RESULT, 15, OshawottEgg
+	goto_if_eq VAR_RESULT, 16, ChespinEgg
+	goto_if_eq VAR_RESULT, 17, FroakieEgg
+	goto_if_eq VAR_RESULT, 18, FennekinEgg
+	goto_if_eq VAR_RESULT, 19, RowletEgg
+	goto_if_eq VAR_RESULT, 20, LittenEgg
+	goto_if_eq VAR_RESULT, 21, PopplioEgg
+	goto_if_eq VAR_RESULT, 22, GrookeyEgg
+	goto_if_eq VAR_RESULT, 23, ScorbunnyEgg
+	goto_if_eq VAR_RESULT, 24, SobbleEgg
+	goto_if_eq VAR_RESULT, 25, SprigatitoEgg
+	goto_if_eq VAR_RESULT, 26, FuecocoEgg
+	goto_if_eq VAR_RESULT, 27, QuaxlyEgg
+	giveegg SPECIES_BULBASAUR
 	release
 	end
 
@@ -410,6 +438,162 @@ LavaridgeTown_Text_HerbShopSign:
 
 
 `
+
+script CharmanderEgg {
+	giveegg(SPECIES_CHARMANDER)
+	release
+	end
+}
+
+script SquirtleEgg {
+	giveegg(SPECIES_SQUIRTLE)
+	release
+	end
+}
+
+script ChikoritaEgg {
+	giveegg(SPECIES_CHIKORITA)
+	release
+	end
+}
+
+script CyndaquilEgg {
+	giveegg(SPECIES_CYNDAQUIL)
+	release
+	end
+}
+
+script TotodileEgg {
+	giveegg(SPECIES_TOTODILE)
+	release
+	end
+}
+
+script TreeckoEgg {
+	giveegg(SPECIES_TREECKO)
+	release
+	end
+}
+
+script TorchicEgg {
+	giveegg(SPECIES_TORCHIC)
+	release
+	end
+}
+
+script MudkipEgg {
+	giveegg(SPECIES_MUDKIP)
+	release
+	end
+}
+
+script TurtwigEgg {
+	giveegg(SPECIES_TURTWIG)
+	release
+	end
+}
+
+script ChimcharEgg {
+	giveegg(SPECIES_CHIMCHAR)
+	release
+	end
+}
+
+script PiplupEgg {
+	giveegg(SPECIES_PIPLUP)
+	release
+	end
+}
+
+script SnivyEgg {
+	giveegg(SPECIES_SNIVY)
+	release
+	end
+}
+
+script TepigEgg {
+	giveegg(SPECIES_TEPIG)
+	release
+	end
+}
+
+script OshawottEgg {
+	giveegg(SPECIES_OSHAWOTT)
+	release
+	end
+}
+
+script FroakieEgg {
+	giveegg(SPECIES_FROAKIE)
+	release
+	end
+}
+
+script FennekinEgg {
+	giveegg(SPECIES_FENNEKIN)
+	release
+	end
+}
+
+script ChespinEgg {
+	giveegg(SPECIES_CHESPIN)
+	release
+	end
+}
+
+script RowletEgg {
+	giveegg(SPECIES_ROWLET)
+	release
+	end
+}
+
+script LittenEgg {
+	giveegg(SPECIES_LITTEN)
+	release
+	end
+}
+
+script PopplioEgg {
+	giveegg(SPECIES_POPPLIO)
+	release
+	end
+}
+
+script GrookeyEgg {
+	giveegg(SPECIES_GROOKEY)
+	release
+	end
+}
+
+script ScorbunnyEgg {
+	giveegg(SPECIES_SCORBUNNY)
+	release
+	end
+}
+
+script SobbleEgg {
+	giveegg(SPECIES_SOBBLE)
+	release
+	end
+}
+
+script SprigatitoEgg {
+	giveegg(SPECIES_SPRIGATITO)
+	release
+	end
+}
+
+script FuecocoEgg {
+	giveegg(SPECIES_FUECOCO)
+	release
+	end
+}
+
+script QuaxlyEgg {
+	giveegg(SPECIES_QUAXLY)
+	release
+	end
+}
 
 script AbraTeleport {
     lock

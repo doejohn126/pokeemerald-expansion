@@ -332,6 +332,7 @@ Route111_EventScript_BattleWinstrates::
 	call Route111_EventScript_CloseWinstrateDoor
 	msgbox Route111_Text_VickyIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_VICKY, Route111_Text_VickyDefeat
+	giveitem ITEM_TM61
 	msgbox Route111_Text_VickyPostBattle, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_VICKY, Common_Movement_WalkInPlaceFasterUp
@@ -629,7 +630,8 @@ Route111_Text_VickyIntro:
 
 Route111_Text_VickyDefeat:
 	.string "Kwah! You are strong…\n"
-	.string "My granddaughter was right…$"
+	.string "My granddaughter was right…\p"
+	.string "You deserve this TM!$"
 
 Route111_Text_VickyPostBattle:
 	.string "If you're not in any hurry,\n"
