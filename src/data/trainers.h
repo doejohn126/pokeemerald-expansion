@@ -15,7 +15,7 @@
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
 #line 79
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 81
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 82
@@ -34,7 +34,7 @@
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 87
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 89
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 90
@@ -6579,7 +6579,7 @@ F_TRAINER_FEMALE |
 #line 2667
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_MON_CHOICES,
 #line 2668
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_RED,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -8722,7 +8722,7 @@ F_TRAINER_FEMALE |
 #line 3501
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 3502
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_RED,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -13982,7 +13982,7 @@ F_TRAINER_FEMALE |
 #line 5568
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_FORCE_SETUP_FIRST_TURN,
 #line 5569
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PURPLE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
@@ -14102,7 +14102,7 @@ F_TRAINER_FEMALE |
 #line 5619
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 5620
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_GREEN,
         .partySize = 5,
         .party = (const struct TrainerMon[])
@@ -14222,7 +14222,7 @@ F_TRAINER_FEMALE |
 #line 5670
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 5671
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 5,
         .party = (const struct TrainerMon[])
@@ -14340,7 +14340,7 @@ F_TRAINER_FEMALE |
 #line 5721
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 5722
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
@@ -14460,7 +14460,7 @@ F_TRAINER_FEMALE |
 #line 5772
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_MON_CHOICES,
 #line 5773
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_GRAY,
         .partySize = 4,
         .party = (const struct TrainerMon[])
@@ -14570,7 +14570,7 @@ F_TRAINER_FEMALE |
 #line 5818
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_MON_CHOICES,
 #line 5819
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_RED,
         .partySize = 5,
         .party = (const struct TrainerMon[])
@@ -14699,7 +14699,7 @@ F_TRAINER_FEMALE |
 #line 5872
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_MON_CHOICES,
 #line 5873
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_YELLOW,
         .partySize = 5,
         .party = (const struct TrainerMon[])
@@ -14831,7 +14831,7 @@ F_TRAINER_FEMALE |
 #line 5929
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING,
 #line 5930
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_RED,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -14987,7 +14987,7 @@ F_TRAINER_FEMALE |
 #line 5993
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 5994
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_GRAY,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -15135,7 +15135,7 @@ F_TRAINER_FEMALE |
 #line 6055
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION | AI_FLAG_RISKY,
 #line 6056
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -15291,7 +15291,7 @@ F_TRAINER_FEMALE |
 #line 6121
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 6122
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -18950,7 +18950,7 @@ F_TRAINER_FEMALE |
 #line 7547
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 7548
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_YELLOW,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -24404,7 +24404,7 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender = 
 #line 9673
-F_TRAINER_FEMALE | 
+F_TRAINER_FEMALE |
 #line 9674
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 9675
@@ -24683,7 +24683,7 @@ F_TRAINER_FEMALE |
 #line 9778
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 9779
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -25618,7 +25618,7 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender = 
 #line 10138
-F_TRAINER_FEMALE | 
+F_TRAINER_FEMALE |
 #line 10139
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 10140
@@ -28464,7 +28464,7 @@ F_TRAINER_FEMALE |
 #line 11262
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 11263
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
@@ -28502,7 +28502,7 @@ F_TRAINER_FEMALE |
 #line 11277
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 11278
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
@@ -28629,7 +28629,7 @@ F_TRAINER_FEMALE |
 #line 11331
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 11332
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -28777,7 +28777,7 @@ F_TRAINER_FEMALE |
 #line 11394
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
 #line 11395
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
@@ -28815,7 +28815,7 @@ F_TRAINER_FEMALE |
 #line 11409
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 11410
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
@@ -28942,7 +28942,7 @@ F_TRAINER_FEMALE |
 #line 11463
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 11464
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -29094,7 +29094,7 @@ F_TRAINER_FEMALE |
 #line 11526
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 11527
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
@@ -29132,7 +29132,7 @@ F_TRAINER_FEMALE |
 #line 11541
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 11542
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
@@ -29259,7 +29259,7 @@ F_TRAINER_FEMALE |
 #line 11595
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 11596
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -29411,7 +29411,7 @@ F_TRAINER_FEMALE |
 #line 11658
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 11659
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 1,
         .party = (const struct TrainerMon[])
@@ -29451,7 +29451,7 @@ F_TRAINER_FEMALE |
 #line 11673
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 11674
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 5,
         .party = (const struct TrainerMon[])
@@ -29578,7 +29578,7 @@ F_TRAINER_FEMALE |
 #line 11727
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 11728
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -29730,7 +29730,7 @@ F_TRAINER_FEMALE |
 #line 11790
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 11791
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 1,
         .party = (const struct TrainerMon[])
@@ -29770,7 +29770,7 @@ F_TRAINER_FEMALE |
 #line 11805
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 11806
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 5,
         .party = (const struct TrainerMon[])
@@ -29896,7 +29896,7 @@ F_TRAINER_FEMALE |
 #line 11858
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 11859
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -30048,7 +30048,7 @@ F_TRAINER_FEMALE |
 #line 11921
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 11922
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 1,
         .party = (const struct TrainerMon[])
@@ -30088,7 +30088,7 @@ F_TRAINER_FEMALE |
 #line 11936
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 11937
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 5,
         .party = (const struct TrainerMon[])
@@ -30214,7 +30214,7 @@ F_TRAINER_FEMALE |
 #line 11989
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 11990
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -33335,7 +33335,7 @@ F_TRAINER_FEMALE |
 #line 13201
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
 #line 13202
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
@@ -33418,7 +33418,7 @@ F_TRAINER_FEMALE |
 #line 13236
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
 #line 13237
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
@@ -33794,7 +33794,7 @@ F_TRAINER_FEMALE |
 #line 13389
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 13390
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
@@ -33879,7 +33879,7 @@ F_TRAINER_FEMALE |
 #line 13424
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
 #line 13425
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 3,
         .party = (const struct TrainerMon[])
@@ -35730,7 +35730,7 @@ F_TRAINER_FEMALE |
 #line 14154
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 14155
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_GREEN,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -35880,7 +35880,7 @@ F_TRAINER_FEMALE |
 #line 14216
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_MON_CHOICES,
 #line 14217
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_RED,
         .partySize = 5,
         .party = (const struct TrainerMon[])
@@ -37105,7 +37105,7 @@ F_TRAINER_FEMALE |
 #line 14698
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 14699
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_GREEN,
         .partySize = 4,
         .party = (const struct TrainerMon[])
@@ -37627,7 +37627,7 @@ F_TRAINER_FEMALE |
 #line 14925
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 14926
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -37779,7 +37779,7 @@ F_TRAINER_FEMALE |
 #line 14990
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 14991
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -37935,7 +37935,7 @@ F_TRAINER_FEMALE |
 #line 15055
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 15056
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -38089,7 +38089,7 @@ F_TRAINER_FEMALE |
 #line 15119
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 15120
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -38243,7 +38243,7 @@ F_TRAINER_FEMALE |
 #line 15183
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 15184
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -38397,7 +38397,7 @@ F_TRAINER_FEMALE |
 #line 15247
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 15248
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -43637,7 +43637,7 @@ F_TRAINER_FEMALE |
 #line 17295
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 17296
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 3,
         .party = (const struct TrainerMon[])
@@ -43721,7 +43721,7 @@ F_TRAINER_FEMALE |
 #line 17330
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SMART_MON_CHOICES,
 #line 17331
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 3,
         .party = (const struct TrainerMon[])
@@ -50428,7 +50428,7 @@ F_TRAINER_FEMALE |
 #line 20083
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
 #line 20084
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_RED,
         .partySize = 3,
         .party = (const struct TrainerMon[])
@@ -50516,7 +50516,7 @@ F_TRAINER_FEMALE |
 #line 20124
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
 #line 20125
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_GREEN,
         .partySize = 2,
         .party = (const struct TrainerMon[])
@@ -50580,7 +50580,7 @@ F_TRAINER_FEMALE |
 #line 20151
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
 #line 20152
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_YELLOW,
         .partySize = 4,
         .party = (const struct TrainerMon[])
@@ -50688,7 +50688,7 @@ F_TRAINER_FEMALE |
 #line 20198
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
 #line 20199
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_GREEN,
         .partySize = 4,
         .party = (const struct TrainerMon[])
@@ -50790,7 +50790,7 @@ F_TRAINER_FEMALE |
 #line 20241
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
 #line 20242
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_GREEN,
         .partySize = 5,
         .party = (const struct TrainerMon[])
@@ -51029,7 +51029,7 @@ F_TRAINER_FEMALE |
 #line 20344
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
 #line 20345
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_PURPLE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -51180,7 +51180,7 @@ F_TRAINER_FEMALE |
 #line 20407
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING,
 #line 20408
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_GREEN,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -51324,7 +51324,7 @@ F_TRAINER_FEMALE |
 #line 20468
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 20469
-        .mugshotEnabled = TRUE,
+
         .mugshotColor = MUGSHOT_COLOR_YELLOW,
         .partySize = 6,
         .party = (const struct TrainerMon[])
