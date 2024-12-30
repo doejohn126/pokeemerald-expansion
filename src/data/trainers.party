@@ -504,8 +504,16 @@ Music: Magma
 Double Battle: No
 AI: Basic Trainer
 
-Numel
-Level: 32
+Arcanine
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Centiskorch
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Scolipede
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_PYRE_1 ===
@@ -2646,15 +2654,19 @@ Double Battle: No
 AI: Basic Trainer
 
 Mightyena
-Level: 26
+Level: 74
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Mightyena
-Level: 28
+Sableye
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Numel
-Level: 30
+Mandibuzz
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Turtonator
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SKY_KID_3 ===
@@ -6119,8 +6131,9 @@ Music: Female
 Items: Max Potion / Hyper Potion / Hyper Potion / Hyper Potion
 Double Battle: Yes
 AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
+Mugshot: Pink
 
-Indeedee @ Terrain Extender
+Indeedee (F) @ Terrain Extender
 Level: 74
 Ability: Psychic Surge
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
@@ -6129,7 +6142,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - After You
 - Dazzling Gleam
 
-Porygon2
+Porygon2 @ Eviolite
 Level: 74
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Ice Beam
@@ -8362,12 +8375,16 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Staryu
-Level: 33
+Starmie
+Level: 74
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
-Level: 33
+Whiscash
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Samurott
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DEMETRIUS ===
@@ -8512,12 +8529,14 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Wingull
-Level: 26
+Pikachu Cosplay
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Nasty Plot
+- Surf
 
-Staryu
-Level: 34
+Grapploct
+Level: 73
 IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 
 === TRAINER_TALIA ===
@@ -11092,26 +11111,40 @@ Torracat
 Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 20 Spe
 
-=== TRAINER_TABITHA_MOSSDEEP ===
-Name: Tabitha
+=== TRAINER_COURTNEY_MOSSDEEP ===
+Name: Courtney
 Class: Magma Admin
-Pic: Magma Admin
-Gender: Male
+Pic: Courtney
+Gender: Female
 Music: Magma
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
 
-Camerupt
-Level: 36
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Flareon (F)
+Level: 74
+Ability: Guts
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Temper Flare
+- Dig
+- Frustration
+- Yawn
 
-Mightyena
-Level: 38
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Rhyperior 
+Level: 75
+Ability: Solid Rock
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Stone Edge
+- Drill Run
+- Rock Wrecker
+- Hammer Arm
 
-Golbat
-Level: 40
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Houndoom (F) @ Houndoominite
+Level: 75
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Flamethrower
+- Nasty Plot
+- Dark Pulse
+- Sludge Bomb
 
 === TRAINER_EDWIN_2 ===
 Name: Edwin
@@ -12942,18 +12975,17 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Manectric
-Level: 32
+Porygon Z
+Level: 74
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Thunder
-- Thunder Wave
-- Quick Attack
 
-Linoone
-Level: 32
+Drampa
+Level: 73
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Surf
-- Thief
+
+Galvantula
+Level: 73
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_HARRISON ===
 Name: Harrison
@@ -13108,12 +13140,16 @@ Music: Magma
 Double Battle: No
 AI: Basic Trainer
 
-Zubat
-Level: 31
+Morpeko
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Poochyena
-Level: 31
+Ninetales
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bouffalant
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_4 ===
@@ -13125,8 +13161,12 @@ Music: Magma
 Double Battle: No
 AI: Basic Trainer
 
-Baltoy
-Level: 32
+Diggersby
+Level: 74
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Tauros Paldea Blaze
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_5 ===
@@ -13138,8 +13178,12 @@ Music: Magma
 Double Battle: No
 AI: Basic Trainer
 
-Zubat
-Level: 32
+Runerigus
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Chandelure
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_6 ===
@@ -13151,22 +13195,73 @@ Music: Magma
 Double Battle: No
 AI: Basic Trainer
 
-Mightyena
-Level: 32
+Seviper
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SPACE_CENTER_7 ===
-Name: Grunt
+Scrafty
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_TABITHA_MOSSDEEP ===
+Name: Tabitha
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Admin
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
 
-Baltoy
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Krookodile
+Level: 75
+Ability: Intimidate
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Crunch
+- Earthquake
+- Stone Edge
+- Giga Impact
+
+Crobat
+Level: 75
+Ability: Corrosion
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Cross Poison
+- Haze
+- Leech Life
+- Dual Wingbeat
+
+Gastrodon
+Level: 75
+Ability: Storm Drain
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Earth Power
+- Mirror Coat
+- Surf
+- Sludge Bomb
+
+Drapion
+Level: 75
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- X Scissor
+- Crunch
+- Cross Poison
+- Acupressure
+
+Infernape
+Level: 75
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Raging Fury
+- Close Combat
+- Acrobatics
+- U Turn
+
+Pinsir @ Pinsirite
+Level: 76
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Superpower
+- X Scissor
+- Swords Dance
+- Strength
 
 === TRAINER_MACEY ===
 Name: Macey
@@ -15308,16 +15403,16 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Wailmer
-Level: 30
+Araquanid
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
-Level: 31
+Bellibolt
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Sharpedo
-Level: 32
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HENRY ===
@@ -15329,12 +15424,16 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Carvanha
-Level: 31
+Frogadier
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Tentacruel
-Level: 34
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Quaxwell
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROGER ===
@@ -15346,16 +15445,16 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Magikarp
-Level: 15
+Lapras
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Magikarp
-Level: 25
+Pincurchin
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Gyarados
-Level: 35
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALEXA ===
@@ -15403,8 +15502,12 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Machoke
-Level: 34
+Onix
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Poliwrath
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WAYNE ===
@@ -15438,11 +15541,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Swellow
-Level: 32
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Skarmory
-Level: 32
+Crobat
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Togekiss
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_REED ===
@@ -16612,19 +16719,33 @@ Pic: Magma Leader Maxie
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
 
-Mightyena
-Level: 42
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Hydreigon
+Level: 75
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Dark Pulse
+- Dragon Pulse
+- Nasty Plot
+- Flamethrower
 
-Crobat
-Level: 43
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Incineroar
+Level: 75
+Ability: Intimidate
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Fake Out
+- Parting Shot
+- Flare Blitz
+- Darkest Lariat
 
 Camerupt
-Level: 44
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Level: 76
+Ability: Solid Rock
+IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
+- Eruption
+- Earth Power
+- Flash Cannon
+- Flamethrower
 
 === TRAINER_PETE ===
 Name: Pete
@@ -19477,13 +19598,17 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Machoke
-Level: 37
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Onix
+Level: 77
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machoke
-Level: 37
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Poliwrath
+Level: 77
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Tauros Paldea Combat
+Level: 77
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KOJI_3 ===
 Name: Koji
@@ -19494,17 +19619,17 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Makuhita
-Level: 39
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Steelix
+Level: 79
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machoke
-Level: 39
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Poliwrath
+Level: 79
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machoke
-Level: 39
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Tauros Paldea Combat
+Level: 79
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KOJI_4 ===
 Name: Koji

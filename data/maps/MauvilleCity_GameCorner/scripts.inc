@@ -3,14 +3,14 @@ MauvilleCity_GameCorner_MapScripts::
 
     @ Game Corner prices
 	.set TM_DOUBLE_TEAM_COINS, 1500
-	.set TM_PSYCHIC_COINS, 3500
-	.set TM_FLAMETHROWER_COINS, 4000
-	.set TM_THUNDERBOLT_COINS, 4000
-	.set TM_ICE_BEAM_COINS, 4000
-	.set DOLL_COINS, 1000
+	.set TM_PSYCHIC_COINS, 2500
+	.set TM_FLAMETHROWER_COINS, 3000
+	.set TM_THUNDERBOLT_COINS, 3000
+	.set TM_ICE_BEAM_COINS, 3000
+	.set DOLL_COINS, 500
 
-	.set COINS_PRICE_50,  1000
-	.set COINS_PRICE_500, 10000
+	.set COINS_PRICE_50,  500
+	.set COINS_PRICE_500, 5000
 
 MauvilleCity_GameCorner_EventScript_CoinsClerk::
 	lock
@@ -265,8 +265,8 @@ MauvilleCity_GameCorner_EventScript_TMFlamethrower::
 
 MauvilleCity_GameCorner_EventScript_TMThunderbolt::
 	setvar VAR_TEMP_1, 4
-	bufferitemname STR_VAR_1, ITEM_TM_THUNDERBOLT
-	setvar VAR_0x8004, ITEM_TM_THUNDERBOLT
+	bufferitemname STR_VAR_1, ITEM_TM63
+	setvar VAR_0x8004, ITEM_TM63
 	goto MauvilleCity_GameCorner_EventScript_ConfirmTMPrize
 
 MauvilleCity_GameCorner_EventScript_TMIceBeam::
@@ -329,10 +329,10 @@ MauvilleCity_GameCorner_EventScript_BuyTMFlamethrower::
 MauvilleCity_GameCorner_EventScript_BuyTMThunderbolt::
 	checkcoins VAR_TEMP_2
 	goto_if_lt VAR_TEMP_2, TM_THUNDERBOLT_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForTM
-	checkitemspace ITEM_TM_THUNDERBOLT
+	checkitemspace ITEM_TM63
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForTM
 	removecoins TM_THUNDERBOLT_COINS
-	additem ITEM_TM_THUNDERBOLT
+	additem ITEM_TM63
 	updatecoinsbox 1, 1
 	playse SE_SHOP
 	msgbox MauvilleCity_GameCorner_Text_HereYouGo, MSGBOX_DEFAULT

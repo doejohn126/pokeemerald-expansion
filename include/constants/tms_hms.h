@@ -61,7 +61,10 @@
     F(TRAILBLAZE) \
     F(LIQUIDATION) \
     F(ICE_SPINNER) \
-    F(DRAIN_PUNCH)
+    F(DRAIN_PUNCH) \
+    F(DUAL_WINGBEAT) \
+    F(PLAY_ROUGH) \
+    F(SUPERCELL_SLAM)
 
 #define FOREACH_HM(F) \
     F(CUT) \

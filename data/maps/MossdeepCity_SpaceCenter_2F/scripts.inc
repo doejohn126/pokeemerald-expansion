@@ -73,8 +73,8 @@ MossdeepCity_SpaceCenter_2F_EventScript_BattleThreeMagmaGrunts::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_7, MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat
+	msgbox MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_TABITHA_MOSSDEEP, MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat
 	applymovement LOCALID_GRUNT_7, MossdeepCity_SpaceCenter_2F_Movement_Grunt7Defeated
 	waitmovement 0
 	setvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 2
@@ -175,7 +175,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_Grunt5::
 MossdeepCity_SpaceCenter_2F_EventScript_Tabitha::
 	lock
 	faceplayer
-	msgbox MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou, MSGBOX_DEFAULT
+	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro, MSGBOX_DEFAULT
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
@@ -257,7 +257,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_ChoosePartyForMultiBattle::
 	goto MossdeepCity_SpaceCenter_2F_EventScript_ReadyForBattlePrompt
 
 MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle::
-	multi_2_vs_2 TRAINER_MAXIE_MOSSDEEP, MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand, TRAINER_TABITHA_MOSSDEEP, MossdeepCity_SpaceCenter_Text_TabithaDefeat, PARTNER_STEVEN
+	multi_2_vs_2 TRAINER_MAXIE_MOSSDEEP, MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand, TRAINER_COURTNEY_MOSSDEEP, MossdeepCity_SpaceCenter_Text_TabithaDefeat, PARTNER_STEVEN
 	switch VAR_RESULT
 	case 1, MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha
 	fadescreen FADE_TO_BLACK
@@ -408,12 +408,15 @@ MossdeepCity_SpaceCenter_2F_Text_Grunt6Defeat:
 	.string "But!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro:
-	.string "I bet you want to take a break.\n"
-	.string "But I'm not about to let you do that!$"
+	.string "Courtney: Ah it's you again...\p"
+	.string "We came all the way here to get some\n"
+	.string "fuel, and were being intfered with again!\p"
+	.string "Whatever, me and my boss can deal with\n"
+	.string "you at the same time!$"
+
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat:
-	.string "We should've taken a break…\n"
-	.string "That's what we should've done…$"
+	.string "Seems like the kid won again…$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt6PostBattle:
 	.string "Three of us here, and look at the sorry\n"
@@ -428,7 +431,7 @@ MossdeepCity_SpaceCenter_2F_Text_Grunt5PostBattle:
 	.string "at all?$"
 
 MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou:
-	.string "Hehehe!\p"
+	.string "Tabitha: Hehehe!\p"
 	.string "We come all the way here to get some\n"
 	.string "fuel, and we're interfered with again!\p"
 	.string "If you're going to mess with us too,\n"
