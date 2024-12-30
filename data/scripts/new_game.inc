@@ -277,5 +277,6 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_JAYDEN_LAVARIDGE
 	setflag FLAG_KORRINA
 	setflag FLAG_JAYDEN_MAGMA
+	setflag FLAG_JAYDEN_MOSSDEEP
 	call EventScript_ResetAllBerries
 	end

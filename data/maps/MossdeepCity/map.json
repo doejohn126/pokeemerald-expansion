@@ -435,7 +435,7 @@
       "elevation": 0,
       "var": "VAR_JAYDEN_MOSSDEEP",
       "var_value": "0",
-      "script": "NULL"
+      "script": "JaydenExitGymAgain1"
     },
     {
       "type": "trigger",
@@ -444,7 +444,7 @@
       "elevation": 0,
       "var": "VAR_JAYDEN_MOSSDEEP",
       "var_value": "0",
-      "script": "NULL"
+      "script": "JaydenExitGymAgain2"
     },
     {
       "type": "trigger",
@@ -453,7 +453,7 @@
       "elevation": 0,
       "var": "VAR_JAYDEN_MOSSDEEP",
       "var_value": "0",
-      "script": "NULL"
+      "script": "JaydenExitGymAgain1"
     }
   ],
   "bg_events": [

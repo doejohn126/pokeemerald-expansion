@@ -882,37 +882,159 @@ JaydenExitGymAgain1::
 	playse SE_SLIDING_DOOR
 # 446 "data/maps/MossdeepCity/scripts.pory"
 	closedoor 38, 9
-	return
+# 447 "data/maps/MossdeepCity/scripts.pory"
+	applymovement 18, JaydenSeePlayer
+# 448 "data/maps/MossdeepCity/scripts.pory"
+	waitmovement 0
+# 449 "data/maps/MossdeepCity/scripts.pory"
+	closedoor 38, 9
+# 450 "data/maps/MossdeepCity/scripts.pory"
+	waitdooranim
+# 451 "data/maps/MossdeepCity/scripts.pory"
+	playse SE_PIN
+# 452 "data/maps/MossdeepCity/scripts.pory"
+	waitse
+# 453 "data/maps/MossdeepCity/scripts.pory"
+	delay 60
+# 454 "data/maps/MossdeepCity/scripts.pory"
+	msgbox HeyAgainPlayer
+# 455 "data/maps/MossdeepCity/scripts.pory"
+	trainerbattle_no_intro TRAINER_JAYDEN_4, JaydenLoseText
+# 456 "data/maps/MossdeepCity/scripts.pory"
+	msgbox JaydenOutroText
+# 457 "data/maps/MossdeepCity/scripts.pory"
+	setvar VAR_JAYDEN_MOSSDEEP, 1
+# 458 "data/maps/MossdeepCity/scripts.pory"
+	applymovement 18, JaydenDipsYetAgain1
+# 459 "data/maps/MossdeepCity/scripts.pory"
+	waitmovement 0
+# 460 "data/maps/MossdeepCity/scripts.pory"
+	setflag FLAG_JAYDEN_MOSSDEEP
+# 461 "data/maps/MossdeepCity/scripts.pory"
+	removeobject 18
+# 462 "data/maps/MossdeepCity/scripts.pory"
+	releaseall
+	end
 
 
 JaydenExitGymAgain2::
-# 450 "data/maps/MossdeepCity/scripts.pory"
+# 467 "data/maps/MossdeepCity/scripts.pory"
 	lockall
-# 451 "data/maps/MossdeepCity/scripts.pory"
+# 468 "data/maps/MossdeepCity/scripts.pory"
 	opendoor 38, 9
-# 452 "data/maps/MossdeepCity/scripts.pory"
+# 469 "data/maps/MossdeepCity/scripts.pory"
 	clearflag FLAG_JAYDEN_MOSSDEEP
-# 453 "data/maps/MossdeepCity/scripts.pory"
+# 470 "data/maps/MossdeepCity/scripts.pory"
 	addobject 18
-# 454 "data/maps/MossdeepCity/scripts.pory"
+# 471 "data/maps/MossdeepCity/scripts.pory"
 	playse SE_SLIDING_DOOR
-# 455 "data/maps/MossdeepCity/scripts.pory"
+# 472 "data/maps/MossdeepCity/scripts.pory"
 	closedoor 38, 9
-	return
-
-
-JaydenExitGymAgain3::
-# 459 "data/maps/MossdeepCity/scripts.pory"
-	lockall
-# 460 "data/maps/MossdeepCity/scripts.pory"
-	opendoor 38, 9
-# 461 "data/maps/MossdeepCity/scripts.pory"
-	clearflag FLAG_JAYDEN_MOSSDEEP
-# 462 "data/maps/MossdeepCity/scripts.pory"
-	addobject 18
-# 463 "data/maps/MossdeepCity/scripts.pory"
-	playse SE_SLIDING_DOOR
-# 464 "data/maps/MossdeepCity/scripts.pory"
+# 473 "data/maps/MossdeepCity/scripts.pory"
+	applymovement 18, JaydenSeePlayer
+# 474 "data/maps/MossdeepCity/scripts.pory"
+	waitmovement 0
+# 475 "data/maps/MossdeepCity/scripts.pory"
 	closedoor 38, 9
-	return
+# 476 "data/maps/MossdeepCity/scripts.pory"
+	waitdooranim
+# 477 "data/maps/MossdeepCity/scripts.pory"
+	playse SE_PIN
+# 478 "data/maps/MossdeepCity/scripts.pory"
+	waitse
+# 479 "data/maps/MossdeepCity/scripts.pory"
+	delay 60
+# 480 "data/maps/MossdeepCity/scripts.pory"
+	msgbox HeyAgainPlayer
+# 481 "data/maps/MossdeepCity/scripts.pory"
+	trainerbattle_no_intro TRAINER_JAYDEN_4, JaydenLoseText
+# 482 "data/maps/MossdeepCity/scripts.pory"
+	msgbox JaydenOutroText
+# 483 "data/maps/MossdeepCity/scripts.pory"
+	setvar VAR_JAYDEN_MOSSDEEP, 1
+# 484 "data/maps/MossdeepCity/scripts.pory"
+	applymovement 18, JaydenDipsYetAgain2
+# 485 "data/maps/MossdeepCity/scripts.pory"
+	waitmovement 0
+# 486 "data/maps/MossdeepCity/scripts.pory"
+	setflag FLAG_JAYDEN_MOSSDEEP
+# 487 "data/maps/MossdeepCity/scripts.pory"
+	removeobject 18
+# 488 "data/maps/MossdeepCity/scripts.pory"
+	releaseall
+	end
 
+
+# 493 "data/maps/MossdeepCity/scripts.pory"
+JaydenSeePlayer:
+# 494 "data/maps/MossdeepCity/scripts.pory"
+	walk_down
+# 495 "data/maps/MossdeepCity/scripts.pory"
+	face_player
+	step_end
+
+# 498 "data/maps/MossdeepCity/scripts.pory"
+JaydenDipsYetAgain1:
+# 499 "data/maps/MossdeepCity/scripts.pory"
+	walk_down
+# 500 "data/maps/MossdeepCity/scripts.pory"
+	walk_left
+# 500 "data/maps/MossdeepCity/scripts.pory"
+	walk_left
+# 500 "data/maps/MossdeepCity/scripts.pory"
+	walk_left
+# 500 "data/maps/MossdeepCity/scripts.pory"
+	walk_left
+# 501 "data/maps/MossdeepCity/scripts.pory"
+	walk_down
+# 501 "data/maps/MossdeepCity/scripts.pory"
+	walk_down
+# 501 "data/maps/MossdeepCity/scripts.pory"
+	walk_down
+# 501 "data/maps/MossdeepCity/scripts.pory"
+	walk_down
+# 501 "data/maps/MossdeepCity/scripts.pory"
+	walk_down
+	step_end
+
+# 504 "data/maps/MossdeepCity/scripts.pory"
+JaydenDipsYetAgain2:
+# 505 "data/maps/MossdeepCity/scripts.pory"
+	walk_left
+# 505 "data/maps/MossdeepCity/scripts.pory"
+	walk_left
+# 505 "data/maps/MossdeepCity/scripts.pory"
+	walk_left
+# 505 "data/maps/MossdeepCity/scripts.pory"
+	walk_left
+# 505 "data/maps/MossdeepCity/scripts.pory"
+	walk_left
+# 506 "data/maps/MossdeepCity/scripts.pory"
+	walk_down
+# 506 "data/maps/MossdeepCity/scripts.pory"
+	walk_down
+# 506 "data/maps/MossdeepCity/scripts.pory"
+	walk_down
+# 506 "data/maps/MossdeepCity/scripts.pory"
+	walk_down
+# 506 "data/maps/MossdeepCity/scripts.pory"
+	walk_down
+	step_end
+
+JaydenLoseText::
+# 509 "data/maps/MossdeepCity/scripts.pory"
+	.string "Woah, not many people manage to outdo\n"
+	.string "my Mega Charizard.$"
+
+HeyAgainPlayer::
+# 514 "data/maps/MossdeepCity/scripts.pory"
+	.string "Hey {PLAYER}! Good to see you again\n"
+	.string "since our Multi Battle.\p"
+	.string "I just lost to the gym right here.\n"
+	.string "How about we battle so we can train for\l"
+	.string "it because of how tough it is?$"
+
+JaydenOutroText::
+# 522 "data/maps/MossdeepCity/scripts.pory"
+	.string "Wow you've gotten pretty tough!\n"
+	.string "I'ma train more so I'll catch you later.$"

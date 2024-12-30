@@ -3642,7 +3642,10 @@ static const u8 sText_MinaLast[] = _("What a great composition!\p");
 static const u8 sText_MinaZMove[] = _("You'll only see Trainers from Alola do\nsomething this epic!\p");
 static const u8 sText_MaxieLast2[] = _("I don't get how you're so skilled.\p");
 static const u8 sText_MaxieMega[] = _("Fufufu, I hope you realize we aren't\ngiving up on Groudon!\p");
-
+static const u8 sText_JaydenMega[] = _("Hehehe, I've been waiting for this\nmoment!\p");
+static const u8 sText_TateAndLizaLast[] = _("Tate: Good job beating our strategy.\nLiza: But things get worse from here!\p");
+static const u8 sText_TateAndLizaBeforeFirst[] = _("Tate: Can you even..\nLiza: Handle our antics?\p");
+static const u8 sText_TateNLizaMegaEvolve[] = _("Tate: Fufufu... say it Liza!\nLiza: Gardevoir, Mega Evolve!\p");
 
 static const struct TrainerSlide sTrainerSlides[] =
 {
@@ -3990,6 +3993,19 @@ static const struct TrainerSlide sTrainerSlides[] =
         .isFrontierTrainer = FALSE,
         .msgLastSwitchIn = sText_MaxieLast2,
         .msgMegaEvolution = sText_MaxieMega,
+    },
+    {
+        .trainerId = TRAINER_JAYDEN_4,
+        .isFrontierTrainer = FALSE,
+        .msgMegaEvolution = sText_JaydenMega,
+        .msgFirstDown = sText_Jayden2FirstDown,
+    },
+    {
+        .trainerId = TRAINER_TATE_AND_LIZA_1,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_TateAndLizaLast,
+        .msgMegaEvolution = sText_TateNLizaMegaEvolve,
+        .msgBeforeFirstTurn = sText_TateAndLizaBeforeFirst,
     },
 };
 

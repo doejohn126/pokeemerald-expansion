@@ -5022,8 +5022,16 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Kirlia
-Level: 36
+Exeggutor
+Level: 73
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Xatu
+Level: 73
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Espathra
+Level: 73
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_VIRGIL ===
@@ -5035,8 +5043,16 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Ralts
-Level: 36
+Gallade
+Level: 73
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Slowking
+Level: 73
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Noctowl
+Level: 73
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BLAKE ===
@@ -5048,8 +5064,16 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Girafarig
-Level: 36
+Farigiraf
+Level: 73
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Reuniclus
+Level: 73
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Hypno
+Level: 73
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_WILLIAM ===
@@ -5209,8 +5233,13 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Kirlia
-Level: 36
+Gardevoir
+Level: 73
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Darmanitan
+Level: 73
+Ability: Zen Mode
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SAMANTHA ===
@@ -5222,8 +5251,16 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Xatu
-Level: 36
+Gothitelle
+Level: 73
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Beheeyem
+Level: 73
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Meowstic
+Level: 73
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MAURA ===
@@ -5235,8 +5272,16 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Kadabra
-Level: 36
+Musharna
+Level: 73
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Jynx
+Level: 73
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Raichu Alola
+Level: 73
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_KAYLA ===
@@ -6071,41 +6116,63 @@ Class: Leader
 Pic: Leader Tate And Liza
 Gender: Male
 Music: Female
-Items: Hyper Potion / Hyper Potion / Hyper Potion / Hyper Potion
+Items: Max Potion / Hyper Potion / Hyper Potion / Hyper Potion
 Double Battle: Yes
-AI: Basic Trainer
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
 
-Claydol
-Level: 41
+Indeedee @ Terrain Extender
+Level: 74
+Ability: Psychic Surge
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Earthquake
-- Ancient Power
-- Psychic
-- Light Screen
-
-Xatu
-Level: 41
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Psychic
-- Sunny Day
-- Confuse Ray
 - Calm Mind
+- Expanding Force
+- After You
+- Dazzling Gleam
+
+Porygon2
+Level: 74
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Ice Beam
+- Recover
+- Trick Room
+- Foul Play
 
 Lunatone @ Sitrus Berry
-Level: 42
+Level: 75
+Ball: Moon Ball
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Light Screen
-- Psychic
+- Shadow Ball
+- Psyshock
 - Hypnosis
 - Calm Mind
 
 Solrock @ Sitrus Berry
-Level: 42
+Level: 75
+Ball: Repeat Ball
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Rock Slide
+- Flare Blitz
 - Sunny Day
-- Solar Beam
-- Psychic
-- Flamethrower
+- Morning Sun
+
+Gallade
+Level: 75
+Ability: Sharpness
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Sacred Sword
+- Psycho Cut
+- Night Slash
+- Solar Blade
+
+Gardevoir @ Gardevoirite
+Level: 75
+Ball: Dream Ball
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+EVs: 22 SpA / 22 Spe
+- Expanding Force
+- Hyper Voice
+- Calm Mind
+- Psychic Terrain
 
 === TRAINER_JUAN_1 ===
 Name: Juan
@@ -12840,8 +12907,16 @@ Music: Suspicious
 Double Battle: No
 AI: Basic Trainer
 
-Meditite
-Level: 36
+Rabsca
+Level: 73
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Polteageist
+Level: 73
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Slowbro Galar
+Level: 73
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_LEONARDO ===
@@ -12949,8 +13024,16 @@ Music: Rich
 Double Battle: No
 AI: Basic Trainer
 
-Spoink
-Level: 36
+Mr Rime
+Level: 73
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Alakazam
+Level: 73
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Bronzong
+Level: 73
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_KATHLEEN ===
@@ -12962,8 +13045,16 @@ Music: Suspicious
 Double Battle: No
 AI: Basic Trainer
 
-Kadabra
-Level: 36
+Hatterene
+Level: 73
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Malamar
+Level: 73
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Chimecho
+Level: 73
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_CLIFFORD ===
@@ -12975,8 +13066,16 @@ Music: Rich
 Double Battle: No
 AI: Basic Trainer
 
-Girafarig
-Level: 36
+Oranguru
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Sigilyph
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Indeedee (M)
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_NICHOLAS ===
@@ -12989,7 +13088,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Wobbuffet
-Level: 36
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Orbeetle
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Armarouge
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_3 ===
@@ -13070,8 +13177,16 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Natu
-Level: 36
+Grumpig
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Swoobat
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Oricorio Pau
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRENDAN_RUSTBORO_TREECKO ===
@@ -14027,20 +14142,68 @@ Naclstack
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LUCAS_2 ===
-Name: Lucas
-Class: Hiker
-Pic: Hiker
+=== TRAINER_JAYDEN_4 ===
+Name: Jayden
+Class: Rival
+Pic: RS Brendan
 Gender: Male
-Music: Hiker
+Music: Male
 Double Battle: No
-AI: Basic Trainer
+Items: Max Potion
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
+Mugshot: Green
 
-Wailmer
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Splash
-- Water Gun
+Jolteon (F)
+Level: 75
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Thunderbolt
+- Calm Mind
+- Shadow Ball
+- Thunder Wave
+
+Gliscor (M) @ Toxic Orb
+Level: 74
+Ability: Poison Heal
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Poison Jab
+- Dual Wingbeat
+- U Turn
+- Earthquake
+
+Lilligant (F)
+Level: 74
+Ability: Seed Sower
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Giga Drain
+- Quiver Dance
+- Alluring Voice
+- Teeter Dance
+
+Cyclizar (F)
+Level: 74
+Ability: Regenerator
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Shed Tail
+- Dragon Claw
+- U Turn
+- Shift Gear
+
+Feraligatr (M)
+Level: 75
+Ability: Strong Jaw
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Crunch
+- Ice Fang
+- Liquidation
+- Screech
+
+Charizard (M) @ Charizardite X
+Level: 75
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Dragon Claw
+- Flare Blitz
+- Fly
+- Earthquake
 
 === TRAINER_SKY_KID_2 ===
 Name: sky kid

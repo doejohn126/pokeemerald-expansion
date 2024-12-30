@@ -444,6 +444,23 @@ script JaydenExitGymAgain1 {
 	addobject(18)
 	playse(SE_SLIDING_DOOR)
 	closedoor(38, 9)
+    applymovement(18, JaydenSeePlayer)
+    waitmovement(0)
+	closedoor(38, 9)
+    waitdooranim
+	playse(SE_PIN)
+	waitse
+	delay(60)
+    msgbox(HeyAgainPlayer)
+    trainerbattle_no_intro(TRAINER_JAYDEN_4, JaydenLoseText)
+    msgbox(JaydenOutroText)
+    setvar(VAR_JAYDEN_MOSSDEEP, 1)
+    applymovement(18, JaydenDipsYetAgain1)
+    waitmovement(0)
+    setflag(FLAG_JAYDEN_MOSSDEEP)
+    removeobject(18)
+    releaseall
+    end
 }
 
 script JaydenExitGymAgain2 {
@@ -453,13 +470,56 @@ script JaydenExitGymAgain2 {
 	addobject(18)
 	playse(SE_SLIDING_DOOR)
 	closedoor(38, 9)
+    applymovement(18, JaydenSeePlayer)
+    waitmovement(0)
+	closedoor(38, 9)
+    waitdooranim
+	playse(SE_PIN)
+	waitse
+	delay(60)
+    msgbox(HeyAgainPlayer)
+    trainerbattle_no_intro(TRAINER_JAYDEN_4, JaydenLoseText)
+    msgbox(JaydenOutroText)
+    setvar(VAR_JAYDEN_MOSSDEEP, 1)
+    applymovement(18, JaydenDipsYetAgain2)
+    waitmovement(0)
+    setflag(FLAG_JAYDEN_MOSSDEEP)
+    removeobject(18)
+    releaseall
+    end
 }
 
-script JaydenExitGymAgain3 {
-	lockall
-	opendoor(38, 9)
-	clearflag(FLAG_JAYDEN_MOSSDEEP)
-	addobject(18)
-	playse(SE_SLIDING_DOOR)
-	closedoor(38, 9)
+
+movement JaydenSeePlayer {
+    walk_down
+    face_player
+}
+
+movement JaydenDipsYetAgain1 {
+    walk_down
+    walk_left * 4
+    walk_down * 5
+}
+
+movement JaydenDipsYetAgain2 {
+    walk_left * 5
+    walk_down * 5
+}
+
+text JaydenLoseText {
+    "Woah, not many people manage to outdo\n"
+    "my Mega Charizard."
+}
+
+text HeyAgainPlayer {
+    "Hey {PLAYER}! Good to see you again\n"
+    "since our Multi Battle.\p"
+    "I just lost to the gym right here.\n"
+    "How about we battle so we can train for\l"
+    "it because of how tough it is?"
+}
+
+text JaydenOutroText {
+    "Wow you've gotten pretty tough!\n"
+    "I'ma train more so I'll catch you later."
 }

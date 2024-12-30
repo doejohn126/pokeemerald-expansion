@@ -636,7 +636,7 @@
 #define TRAINER_ALAN                        630
 #define TRAINER_CLARK                       631
 #define TRAINER_ERIC                        632
-#define TRAINER_LUCAS_2                     633 // Unused
+#define TRAINER_JAYDEN_4                    633
 #define TRAINER_SKY_KID_2                   634
 #define TRAINER_MIKE_2                      635
 #define TRAINER_TRENT_2                     636

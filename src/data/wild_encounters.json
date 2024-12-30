@@ -8828,7 +8828,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_QWILFISH"
               },
               {
                 "min_level": 10,
@@ -8838,7 +8838,7 @@
               {
                 "min_level": 15,
                 "max_level": 25,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_BUIZEL"
               },
               {
                 "min_level": 25,
