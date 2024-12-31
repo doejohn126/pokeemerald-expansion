@@ -51,93 +51,89 @@ LavaridgeTown_Mart_Pokemart:
 # 26 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.2byte ITEM_X_SPEED
 # 27 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	.2byte ITEM_NONE
+	pokemartlistend
 # 28 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	release
+
 # 29 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	end
-# 30 "data/maps/LavaridgeTown_Mart/scripts.pory"
-
-# 31 "data/maps/LavaridgeTown_Mart/scripts.pory"
 LavaridgeTown_Mart_EventScript_ExpertM::
-# 32 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 30 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	msgbox LavaridgeTown_Mart_Text_XSpeedFirstStrike, MSGBOX_NPC
+# 31 "data/maps/LavaridgeTown_Mart/scripts.pory"
+	end
+# 32 "data/maps/LavaridgeTown_Mart/scripts.pory"
+
 # 33 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	end
-# 34 "data/maps/LavaridgeTown_Mart/scripts.pory"
-
-# 35 "data/maps/LavaridgeTown_Mart/scripts.pory"
 LavaridgeTown_Mart_EventScript_OldWoman::
-# 36 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 34 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	msgbox LavaridgeTown_Mart_Text_LocalSpecialtyOnMtChimney, MSGBOX_NPC
-# 37 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 35 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	end
-# 38 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 36 "data/maps/LavaridgeTown_Mart/scripts.pory"
 
-# 39 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 37 "data/maps/LavaridgeTown_Mart/scripts.pory"
 LavaridgeTown_Mart_Text_XSpeedFirstStrike:
-# 40 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 38 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.string "Use X Speed to add to a Pokémon's\n"
-# 41 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 39 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.string "Speed in battle.\p"
-# 42 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 40 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.string "That will help it get in the first\n"
-# 43 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 41 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.string "strike--a decided advantage!$"
-# 44 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 42 "data/maps/LavaridgeTown_Mart/scripts.pory"
 
-# 45 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 43 "data/maps/LavaridgeTown_Mart/scripts.pory"
 LavaridgeTown_Mart_Text_LocalSpecialtyOnMtChimney:
-# 46 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 44 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.string "On Mt. Chimney's peak, there's a local\n"
-# 47 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 45 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.string "specialty that you can buy only there.\p"
-# 48 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 46 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.string "Give it to a Pokémon--it will be elated.$"
 
 Lavaridge_ExtraSalesWoman::
-# 54 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 52 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	lock
-# 55 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 53 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	faceplayer
-# 56 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 54 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	message gText_HowMayIServeYou
-# 57 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 55 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	waitmessage
-# 58 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 56 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	pokemart LavaridgeSecondMart
-# 59 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 57 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	msgbox gText_PleaseComeAgain
-# 60 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 58 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 64 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 62 "data/maps/LavaridgeTown_Mart/scripts.pory"
 LavaridgeSecondMart:
-# 65 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 63 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.2byte ITEM_SCEPTILITE
-# 66 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 64 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.2byte ITEM_BLAZIKENITE
-# 67 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 65 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.2byte ITEM_SWAMPERTITE
-# 68 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 66 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.2byte ITEM_CHARIZARDITE_Y
-# 69 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 67 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.2byte ITEM_CHARIZARDITE_X
-# 70 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 68 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.2byte ITEM_VENUSAURITE
-# 71 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 69 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.2byte ITEM_BLASTOISINITE
-# 72 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 70 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.2byte ITEM_RAZOR_FANG
-# 73 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 71 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.2byte ITEM_REAPER_CLOTH
-# 74 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 72 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.2byte ITEM_PROTECTOR
-# 75 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 73 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.2byte ITEM_ELECTIRIZER
-# 76 "data/maps/LavaridgeTown_Mart/scripts.pory"
+# 74 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.2byte ITEM_MAGMARIZER
 	.2byte ITEM_NONE

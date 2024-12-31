@@ -4403,6 +4403,7 @@ static const struct LevelUpMove sAerodactylLevelUpLearnset[] = {
     LEVEL_UP_MOVE(50, MOVE_AGILITY),
     LEVEL_UP_MOVE(55, MOVE_HYPER_BEAM),
     LEVEL_UP_MOVE(60, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(64, MOVE_HEAD_SMASH),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_AERODACTYL

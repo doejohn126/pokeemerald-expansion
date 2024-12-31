@@ -64,7 +64,13 @@
     F(DRAIN_PUNCH) \
     F(DUAL_WINGBEAT) \
     F(PLAY_ROUGH) \
-    F(SUPERCELL_SLAM)
+    F(SUPERCELL_SLAM) \
+    F(FOCUS_BLAST) \
+    F(ROOST) \
+    F(SUBSTITUTE) \
+    F(DRACO_METEOR) \
+    F(EARTH_POWER) \
+    F(U_TURN)
 
 #define FOREACH_HM(F) \
     F(CUT) \

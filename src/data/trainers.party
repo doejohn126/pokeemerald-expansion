@@ -13205,7 +13205,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TABITHA_MOSSDEEP ===
 Name: Tabitha
-Class: Team Magma
+Class: Magma Admin
 Pic: Magma Admin
 Gender: Male
 Music: Magma
@@ -16738,7 +16738,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Flare Blitz
 - Darkest Lariat
 
-Camerupt
+Camerupt @ Cameruptite
 Level: 76
 Ability: Solid Rock
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe

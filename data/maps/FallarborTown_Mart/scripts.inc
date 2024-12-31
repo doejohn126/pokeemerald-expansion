@@ -55,169 +55,165 @@ FallarborTown_Mart_Pokemart:
 # 28 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_GUARD_SPEC
 # 29 "data/maps/FallarborTown_Mart/scripts.pory"
-	.2byte ITEM_NONE
+	pokemartlistend
 # 30 "data/maps/FallarborTown_Mart/scripts.pory"
-	release
+
 # 31 "data/maps/FallarborTown_Mart/scripts.pory"
-	end
-# 32 "data/maps/FallarborTown_Mart/scripts.pory"
-
-# 33 "data/maps/FallarborTown_Mart/scripts.pory"
 FallarborTown_Mart_EventScript_Woman::
-# 34 "data/maps/FallarborTown_Mart/scripts.pory"
+# 32 "data/maps/FallarborTown_Mart/scripts.pory"
 	msgbox FallarborTown_Mart_Text_DecidingSkittyEvolve, MSGBOX_NPC
+# 33 "data/maps/FallarborTown_Mart/scripts.pory"
+	end
+# 34 "data/maps/FallarborTown_Mart/scripts.pory"
+
 # 35 "data/maps/FallarborTown_Mart/scripts.pory"
-	end
-# 36 "data/maps/FallarborTown_Mart/scripts.pory"
-
-# 37 "data/maps/FallarborTown_Mart/scripts.pory"
 FallarborTown_Mart_EventScript_PokefanM::
-# 38 "data/maps/FallarborTown_Mart/scripts.pory"
+# 36 "data/maps/FallarborTown_Mart/scripts.pory"
 	msgbox FallarborTown_Mart_Text_SellNuggetIFound, MSGBOX_NPC
+# 37 "data/maps/FallarborTown_Mart/scripts.pory"
+	end
+# 38 "data/maps/FallarborTown_Mart/scripts.pory"
+
 # 39 "data/maps/FallarborTown_Mart/scripts.pory"
-	end
-# 40 "data/maps/FallarborTown_Mart/scripts.pory"
-
-# 41 "data/maps/FallarborTown_Mart/scripts.pory"
 FallarborTown_Mart_EventScript_Skitty::
-# 42 "data/maps/FallarborTown_Mart/scripts.pory"
+# 40 "data/maps/FallarborTown_Mart/scripts.pory"
 	lock
-# 43 "data/maps/FallarborTown_Mart/scripts.pory"
+# 41 "data/maps/FallarborTown_Mart/scripts.pory"
 	faceplayer
-# 44 "data/maps/FallarborTown_Mart/scripts.pory"
+# 42 "data/maps/FallarborTown_Mart/scripts.pory"
 	waitse
-# 45 "data/maps/FallarborTown_Mart/scripts.pory"
+# 43 "data/maps/FallarborTown_Mart/scripts.pory"
 	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
-# 46 "data/maps/FallarborTown_Mart/scripts.pory"
+# 44 "data/maps/FallarborTown_Mart/scripts.pory"
 	msgbox FallarborTown_Mart_Text_Skitty, MSGBOX_DEFAULT
-# 47 "data/maps/FallarborTown_Mart/scripts.pory"
+# 45 "data/maps/FallarborTown_Mart/scripts.pory"
 	waitmoncry
-# 48 "data/maps/FallarborTown_Mart/scripts.pory"
+# 46 "data/maps/FallarborTown_Mart/scripts.pory"
 	release
-# 49 "data/maps/FallarborTown_Mart/scripts.pory"
+# 47 "data/maps/FallarborTown_Mart/scripts.pory"
 	end
-# 50 "data/maps/FallarborTown_Mart/scripts.pory"
+# 48 "data/maps/FallarborTown_Mart/scripts.pory"
 
-# 51 "data/maps/FallarborTown_Mart/scripts.pory"
+# 49 "data/maps/FallarborTown_Mart/scripts.pory"
 FallarborTown_Mart_Text_DecidingSkittyEvolve:
-# 52 "data/maps/FallarborTown_Mart/scripts.pory"
+# 50 "data/maps/FallarborTown_Mart/scripts.pory"
 	.string "I'm having a hard time deciding if I\n"
-# 53 "data/maps/FallarborTown_Mart/scripts.pory"
+# 51 "data/maps/FallarborTown_Mart/scripts.pory"
 	.string "should make my Skitty evolve or not.\p"
-# 54 "data/maps/FallarborTown_Mart/scripts.pory"
+# 52 "data/maps/FallarborTown_Mart/scripts.pory"
 	.string "I only have to use this Moon Stone,\n"
-# 55 "data/maps/FallarborTown_Mart/scripts.pory"
+# 53 "data/maps/FallarborTown_Mart/scripts.pory"
 	.string "but it's so hard to decide…\p"
-# 56 "data/maps/FallarborTown_Mart/scripts.pory"
+# 54 "data/maps/FallarborTown_Mart/scripts.pory"
 	.string "If I make it evolve, it will become\n"
-# 57 "data/maps/FallarborTown_Mart/scripts.pory"
+# 55 "data/maps/FallarborTown_Mart/scripts.pory"
 	.string "much stronger.\p"
-# 58 "data/maps/FallarborTown_Mart/scripts.pory"
+# 56 "data/maps/FallarborTown_Mart/scripts.pory"
 	.string "But it will look so different, too.$"
-# 59 "data/maps/FallarborTown_Mart/scripts.pory"
+# 57 "data/maps/FallarborTown_Mart/scripts.pory"
 
-# 60 "data/maps/FallarborTown_Mart/scripts.pory"
+# 58 "data/maps/FallarborTown_Mart/scripts.pory"
 FallarborTown_Mart_Text_Skitty:
-# 61 "data/maps/FallarborTown_Mart/scripts.pory"
+# 59 "data/maps/FallarborTown_Mart/scripts.pory"
 	.string "Skitty: Miyao?$"
-# 62 "data/maps/FallarborTown_Mart/scripts.pory"
+# 60 "data/maps/FallarborTown_Mart/scripts.pory"
 
-# 63 "data/maps/FallarborTown_Mart/scripts.pory"
+# 61 "data/maps/FallarborTown_Mart/scripts.pory"
 FallarborTown_Mart_Text_SellNuggetIFound:
-# 64 "data/maps/FallarborTown_Mart/scripts.pory"
+# 62 "data/maps/FallarborTown_Mart/scripts.pory"
 	.string "This Nugget I found here…\n"
-# 65 "data/maps/FallarborTown_Mart/scripts.pory"
+# 63 "data/maps/FallarborTown_Mart/scripts.pory"
 	.string "I suppose I'll have to sell it, seeing\l"
-# 66 "data/maps/FallarborTown_Mart/scripts.pory"
+# 64 "data/maps/FallarborTown_Mart/scripts.pory"
 	.string "as how it has no other use.$"
 
 Fallarbor_ExtraSalesWoman::
-# 72 "data/maps/FallarborTown_Mart/scripts.pory"
+# 70 "data/maps/FallarborTown_Mart/scripts.pory"
 	lock
-# 73 "data/maps/FallarborTown_Mart/scripts.pory"
+# 71 "data/maps/FallarborTown_Mart/scripts.pory"
 	faceplayer
-# 74 "data/maps/FallarborTown_Mart/scripts.pory"
+# 72 "data/maps/FallarborTown_Mart/scripts.pory"
 	message gText_HowMayIServeYou
-# 75 "data/maps/FallarborTown_Mart/scripts.pory"
+# 73 "data/maps/FallarborTown_Mart/scripts.pory"
 	waitmessage
-# 76 "data/maps/FallarborTown_Mart/scripts.pory"
+# 74 "data/maps/FallarborTown_Mart/scripts.pory"
 	pokemart FallarborSecondMart
-# 77 "data/maps/FallarborTown_Mart/scripts.pory"
+# 75 "data/maps/FallarborTown_Mart/scripts.pory"
 	msgbox gText_PleaseComeAgain
-# 78 "data/maps/FallarborTown_Mart/scripts.pory"
+# 76 "data/maps/FallarborTown_Mart/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 82 "data/maps/FallarborTown_Mart/scripts.pory"
+# 80 "data/maps/FallarborTown_Mart/scripts.pory"
 FallarborSecondMart:
-# 83 "data/maps/FallarborTown_Mart/scripts.pory"
+# 81 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_LINKING_CORD
-# 84 "data/maps/FallarborTown_Mart/scripts.pory"
+# 82 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_FIRE_STONE
-# 85 "data/maps/FallarborTown_Mart/scripts.pory"
+# 83 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_WATER_STONE
-# 86 "data/maps/FallarborTown_Mart/scripts.pory"
+# 84 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_LEAF_STONE
-# 87 "data/maps/FallarborTown_Mart/scripts.pory"
+# 85 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_THUNDER_STONE
-# 88 "data/maps/FallarborTown_Mart/scripts.pory"
+# 86 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_MOON_STONE
-# 89 "data/maps/FallarborTown_Mart/scripts.pory"
+# 87 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_SUN_STONE
-# 90 "data/maps/FallarborTown_Mart/scripts.pory"
+# 88 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_SHINY_STONE
-# 91 "data/maps/FallarborTown_Mart/scripts.pory"
+# 89 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_DUSK_STONE
-# 92 "data/maps/FallarborTown_Mart/scripts.pory"
+# 90 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_DAWN_STONE
-# 93 "data/maps/FallarborTown_Mart/scripts.pory"
+# 91 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_ICE_STONE
-# 94 "data/maps/FallarborTown_Mart/scripts.pory"
+# 92 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_DEEP_SEA_SCALE
-# 95 "data/maps/FallarborTown_Mart/scripts.pory"
+# 93 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_DEEP_SEA_TOOTH
-# 96 "data/maps/FallarborTown_Mart/scripts.pory"
+# 94 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_DRAGON_SCALE
-# 97 "data/maps/FallarborTown_Mart/scripts.pory"
+# 95 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_UP_GRADE
-# 98 "data/maps/FallarborTown_Mart/scripts.pory"
+# 96 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_KINGS_ROCK
-# 99 "data/maps/FallarborTown_Mart/scripts.pory"
+# 97 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_METAL_COAT
-# 100 "data/maps/FallarborTown_Mart/scripts.pory"
+# 98 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_OVAL_STONE
-# 101 "data/maps/FallarborTown_Mart/scripts.pory"
+# 99 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_PRISM_SCALE
-# 102 "data/maps/FallarborTown_Mart/scripts.pory"
+# 100 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_RAZOR_CLAW
-# 103 "data/maps/FallarborTown_Mart/scripts.pory"
+# 101 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_SACHET
-# 104 "data/maps/FallarborTown_Mart/scripts.pory"
+# 102 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_WHIPPED_DREAM
-# 105 "data/maps/FallarborTown_Mart/scripts.pory"
+# 103 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_AUSPICIOUS_ARMOR
-# 106 "data/maps/FallarborTown_Mart/scripts.pory"
+# 104 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_BLACK_AUGURITE
-# 107 "data/maps/FallarborTown_Mart/scripts.pory"
+# 105 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_CHIPPED_POT
-# 108 "data/maps/FallarborTown_Mart/scripts.pory"
+# 106 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_CRACKED_POT
-# 109 "data/maps/FallarborTown_Mart/scripts.pory"
+# 107 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_GALARICA_CUFF
-# 110 "data/maps/FallarborTown_Mart/scripts.pory"
+# 108 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_GALARICA_WREATH
-# 111 "data/maps/FallarborTown_Mart/scripts.pory"
+# 109 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_MALICIOUS_ARMOR
-# 112 "data/maps/FallarborTown_Mart/scripts.pory"
+# 110 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_MASTERPIECE_TEACUP
-# 113 "data/maps/FallarborTown_Mart/scripts.pory"
+# 111 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_SWEET_APPLE
-# 114 "data/maps/FallarborTown_Mart/scripts.pory"
+# 112 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_TART_APPLE
-# 115 "data/maps/FallarborTown_Mart/scripts.pory"
+# 113 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_SYRUPY_APPLE
-# 116 "data/maps/FallarborTown_Mart/scripts.pory"
+# 114 "data/maps/FallarborTown_Mart/scripts.pory"
 	.2byte ITEM_UNREMARKABLE_TEACUP
 	.2byte ITEM_NONE

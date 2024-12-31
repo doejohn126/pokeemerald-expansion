@@ -1709,6 +1709,7 @@
       "MOVE_ATTRACT",
       "MOVE_THIEF",
       "MOVE_ROUND",
+      "MOVE_FOCUS_BLAST",
       "MOVE_STEEL_WING",
       "MOVE_GIGA_IMPACT",
       "MOVE_FLY",
