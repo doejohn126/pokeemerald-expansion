@@ -3657,8 +3657,16 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Gyarados
-Level: 34
+Arctozolt
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Empoleon
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Octillery
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DEAN ===
@@ -3670,16 +3678,16 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Carvanha
-Level: 31
+Pelipper
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wingull
-Level: 31
+Kabutops
+Level: 72
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Carvanha
-Level: 31
+Crawdaunt
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RODNEY ===
@@ -8417,8 +8425,16 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Staryu
-Level: 35
+Floatzel
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Swampert
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pyukumuku
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PABLO_1 ===
@@ -8430,12 +8446,16 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Staryu
-Level: 33
+Huntail
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
-Level: 33
+Gastrodon East
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Eelektrik
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHASE ===
@@ -8448,12 +8468,16 @@ Double Battle: No
 AI: Basic Trainer
 
 Wingull
-Level: 26
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
-Level: 34
+Dondozo
+Level: 74
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+
+Mr Mime Galar
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ISAIAH_2 ===
 Name: Isaiah
@@ -8516,8 +8540,16 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Staryu
-Level: 34
+Wailord
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Basculin
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Clodsire
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DONNY ===
@@ -8561,8 +8593,20 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
+Relicanth
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 Staryu
-Level: 35
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Vanillite
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Basculin White Striped
+Level: 74
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALLISON ===
@@ -8574,12 +8618,16 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Wingull
-Level: 27
+Blastoise
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
-Level: 33
+Delibird
+Level: 73
+IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
+
+Shellder
+Level: 74
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 
 === TRAINER_KATELYN_2 ===
@@ -8591,9 +8639,21 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Staryu
-Level: 39
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Relicanth
+Level: 77
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Starmie
+Level: 77
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Vanillish
+Level: 77
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Basculin White Striped
+Level: 78
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KATELYN_3 ===
 Name: Katelyn
@@ -8604,9 +8664,21 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Staryu
-Level: 42
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Relicanth
+Level: 79
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Starmie
+Level: 79
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Vanillish
+Level: 79
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Basculegion
+Level: 80
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KATELYN_4 ===
 Name: Katelyn
@@ -8617,9 +8689,21 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
+Relicanth
+Level: 83
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 Starmie
-Level: 45
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Level: 83
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Vanilluxe
+Level: 83
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Basculegion
+Level: 84
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KATELYN_5 ===
 Name: Katelyn
@@ -9935,12 +10019,16 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Marill
-Level: 33
+Simipour
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Spheal
-Level: 33
+Sealeo
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Frosmoth
+Level: 72
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRENDA ===
@@ -9952,8 +10040,16 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Goldeen
-Level: 34
+Seaking
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Palpitoad
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Barraskewda
+Level: 74
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KATIE ===
@@ -10021,12 +10117,12 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Luvdisc
-Level: 33
+Alomomola
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Luvdisc
-Level: 33
+Wugtrio
+Level: 72
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DEBRA ===
@@ -10103,7 +10199,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Seaking
-Level: 35
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Tatsugiri Stretchy
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Seaking
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JENNY_2 ===
@@ -10115,8 +10219,12 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Wailmer
-Level: 38
+Lumineon
+Level: 77
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Corsola
+Level: 77
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JENNY_3 ===
@@ -10182,7 +10290,6 @@ AI: Basic Trainer
 Quagsire
 Level: 42
 IVs: 0 HP / 0 Atk / 20 Def / 0 SpA / 0 SpD / 0 Spe
-
 
 Stunfisk
 Level: 42
@@ -12961,8 +13068,16 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
+Eiscue
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Wishiwashi
+Level: 72
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 Carvanha
-Level: 34
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ATHENA ===
@@ -12996,8 +13111,16 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Tentacruel
-Level: 35
+Quagsire
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lanturn
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Dracovish
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_CHIMNEY_2 ===
@@ -13030,8 +13153,12 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Sharpedo
-Level: 34
+Jellicent
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bruxish
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TERRY ===
@@ -15467,12 +15594,21 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Gloom
-Level: 34
+Salazzle
+Level: 74
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Azumarill
-Level: 34
+Level: 74
+Ability: Huge Power
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Gogoat
+Level: 74
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Honchkrow
+Level: 75
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RUBEN ===
@@ -15485,12 +15621,20 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Shiftry
-Level: 34
+Scizor
+Level: 74
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Nosepass
-Level: 34
+Probopass
+Level: 74
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Avalugg Hisui
+Level: 74
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Farigiraf
+Level: 75
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_KOJI_1 ===
@@ -15519,16 +15663,16 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Tentacool
-Level: 31
+Qwilfish
+Level: 74
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
-Level: 31
+Golisopod
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wailmer
-Level: 36
+Dewgong
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_AIDAN ===
@@ -15561,12 +15705,16 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Spheal
-Level: 33
+Feraligatr
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Sharpedo
-Level: 33
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Kingdra
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TISHA ===
@@ -15579,7 +15727,23 @@ Double Battle: No
 AI: Basic Trainer
 
 Chinchou
-Level: 34
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Totodile
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Marill
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Mudkip
+Level: 73
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Tirtouga
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TORI_AND_TIA ===
@@ -15840,11 +16004,11 @@ Double Battle: Yes
 AI: Basic Trainer
 
 Lanturn
-Level: 45
+Level: 79
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Carvanha
-Level: 43
+Pyukumuku
+Level: 79
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LILA_AND_ROY_4 ===
@@ -19518,13 +19682,17 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Staryu
-Level: 37
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Huntail
+Level: 77
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
-Level: 37
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Gastrodon East
+Level: 77
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Eelektross
+Level: 77
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PABLO_3 ===
 Name: Pablo
@@ -19535,17 +19703,17 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Wingull
-Level: 39
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Huntail
+Level: 79
+IVs: 22 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
-Level: 39
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Gastrodon East
+Level: 79
+IVs: 22 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
-Level: 39
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Eelektross
+Level: 79
+IVs: 22 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PABLO_4 ===
 Name: Pablo
