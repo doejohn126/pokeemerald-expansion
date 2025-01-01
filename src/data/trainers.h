@@ -4893,7 +4893,7 @@ F_TRAINER_FEMALE |
 #line 2023
         .doubleBattle = FALSE,
 #line 2024
-        .aiFlags = AI_FLAG_BASIC_TRAINER,
+        .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
