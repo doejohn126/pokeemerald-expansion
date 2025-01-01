@@ -71,7 +71,9 @@
     F(DRACO_METEOR) \
     F(EARTH_POWER) \
     F(U_TURN) \
-    F(ALLURING_VOICE)
+    F(ALLURING_VOICE) \
+    F(FLIP_TURN) \
+    F(TERA_BLAST)
 
 #define FOREACH_HM(F) \
     F(CUT) \

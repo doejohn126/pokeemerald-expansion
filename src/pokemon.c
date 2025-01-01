@@ -5941,6 +5941,8 @@ u16 GetBattleBGM(void)
             return MUS_RG_VS_GYM_LEADER;
         case TRAINER_CLASS_PKMN_TRAINER_2:
             return MUS_PL_VS_FRONTIER_BRAIN;
+        case TRAINER_CLASS_TOP_CHAMPION:
+            return MUS_VS_CHAMPION_NEMONA;
         default:
             return MUS_VS_TRAINER;
         }

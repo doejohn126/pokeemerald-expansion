@@ -169,7 +169,7 @@
 #define TRAINER_BARRY                       163
 #define TRAINER_DEAN                        164
 #define TRAINER_RODNEY                      165
-#define TRAINER_RICHARD                     166 // unused
+#define TRAINER_GEETA                       166
 #define TRAINER_HERMAN                      167
 #define TRAINER_SANTIAGO                    168
 #define TRAINER_GILBERT                     169

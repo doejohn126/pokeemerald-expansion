@@ -74,6 +74,15 @@ gText_TheNormanCap::
 gText_TheWinonaCap::
 	.string "The current level cap is 64.$"
 
+gText_TheTateLizaCap::
+	.string "The current level cap is 75.$"
+
+gText_TheJuanCap::
+	.string "The current level cap is 83.$"
+
+gText_TheLeagueCap::
+	.string "The current level cap is 91.$"
+
 gText_UnknownCap::
 	.string "The current level cap is undetermined.$"
 

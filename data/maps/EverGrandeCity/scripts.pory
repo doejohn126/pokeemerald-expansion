@@ -1,0 +1,126 @@
+raw `
+EverGrandeCity_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, EverGrandeCity_OnTransition
+	.byte 0
+
+EverGrandeCity_OnTransition:
+	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
+	end
+
+EverGrandeCity_EventScript_VictoryRoadSign::
+	msgbox EverGrandeCity_Text_EnteringVictoryRoad, MSGBOX_SIGN
+	end
+
+EverGrandeCity_EventScript_CitySign::
+	msgbox EverGrandeCity_Text_CitySign, MSGBOX_SIGN
+	end
+
+EverGrandeCity_EventScript_PokemonLeagueSign::
+	msgbox EverGrandeCity_Text_EnteringPokemonLeague, MSGBOX_SIGN
+	end
+
+EverGrandeCity_EventScript_SetVisitedEverGrande::
+	setflag FLAG_VISITED_EVER_GRANDE_CITY
+	setvar VAR_TEMP_1, 1
+	end
+
+EverGrandeCity_Text_EnteringVictoryRoad:
+	.string "Entering Victory Road$"
+
+EverGrandeCity_Text_EnteringPokemonLeague:
+	.string "Entering Pokémon League\n"
+	.string "Center Gate$"
+
+EverGrandeCity_Text_CitySign:
+	.string "Ever Grande City\p"
+	.string "“The paradise of flowers, the sea,\n"
+	.string "and Pokémon.”$"
+
+
+`
+
+script GeetaMain {
+    lock
+    faceplayer
+    goto_if_defeated(TRAINER_GEETA, GoodLuck)
+    msgbox(GeetaPardonMe, MSGBOX_YESNO)
+    goto_if_eq(VAR_RESULT, NO, GeetaAwwMan)
+    msgbox(GiveItUrAll)
+    trainerbattle_no_intro(TRAINER_GEETA, GeetaLoseText)
+    msgbox(AmazingPower)
+    giveitem(ITEM_TERA_ORB)
+    msgbox(ItShouldHelp)
+    release
+    end
+}
+
+script GoodLuck {
+    msgbox(BecomeChamp)
+    release
+    end
+}
+
+script GeetaAwwMan {
+    msgbox(HowUnfortunate)
+    release
+    end
+}
+
+text BecomeChamp {
+    "I hope we meet again especially if you\n"
+    "become a Champion like me!"
+}
+
+text ItShouldHelp {
+    "This Tera Orb should be very useful\n"
+    "going forward but do keep in mind...\p"
+    "You cant Tera and Mega Evolve in the\n"
+    "same battle and you need to charge\l"
+    "your Orb using a Pokévial or at the\n"
+    "Pokémon Center.\p"
+    "Anyways though, good luck at the\n"
+    "Pokémon League trainer and don't\l"
+    "to charge your Tera Orb!"
+}
+
+text AmazingPower {
+    "Wow, your talent really impressed me!\p"
+    "This was my first real time battling\n"
+    "someone like this outside my region.\p"
+    "Sorry for my rambling. But here's my\n"
+    "reward, It's our main gimmick here in\l"
+    "Paldea!"
+}
+
+text GeetaLoseText {
+    "Such overwhelming power… Such amazing\n"
+    "skill…"
+}
+
+text GiveItUrAll {
+    "Great! I want to see the true measure\n"
+    "of your talent!"
+}
+
+text HowUnfortunate {
+    "Oh my, are you certain?\p"
+    "Well it is quite unfortunate I wont be\n"
+    "able to see your talent."
+}
+
+text GeetaPardonMe {
+    "Pardon me. Hello there trainer.\n"
+    "I was just taking a little vacation\l"
+    "around this region.\p"
+    "I see you must be going for the\n"
+    "Champion title knowing this is the\l"
+    "Victory Road.\p"
+    "Oh, but I've gotten ahead of myself.\p"
+    "I am Geeta, chairwoman of the Pokémon\n"
+    "League in the Paldea Region.\p"
+    "So you're {PLAYER}? Well I'm very\n"
+    "interested in seeing your talent.\p"
+    "I'm aware that you guys don't use\n"
+    "Terastallization so I have a reward you\l"
+    "might like if you beat me."
+}

@@ -253,7 +253,7 @@ RustboroCity_DevonCorp_2F_EventScript_ReceiveOmanyte::
 
 RustboroCity_DevonCorp_2F_EventScript_ReceiveKabuto::
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_KABUTO
-	givemon SPECIES_OMANYTE, 20
+	givemon SPECIES_KABUTO, 20
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, RustboroCity_DevonCorp_2F_EventScript_ReceiveKabutoParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, RustboroCity_DevonCorp_2F_EventScript_ReceiveKabutoPC
 	goto Common_EventScript_NoMoreRoomForPokemon
@@ -261,7 +261,7 @@ RustboroCity_DevonCorp_2F_EventScript_ReceiveKabuto::
 
 RustboroCity_DevonCorp_2F_EventScript_ReceiveAerodactyl::
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_AERODACTYL
-	givemon SPECIES_OMANYTE, 20
+	givemon SPECIES_AERODACTYL, 20
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, RustboroCity_DevonCorp_2F_EventScript_ReceiveAerodactylParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, RustboroCity_DevonCorp_2F_EventScript_ReceiveKabutoPC
 	goto Common_EventScript_NoMoreRoomForPokemon

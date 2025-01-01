@@ -88,6 +88,9 @@ bool32 CanTerastallize(u32 battler)
     if (HasTrainerUsedGimmick(battler, GIMMICK_TERA))
         return FALSE;
 
+    if (HasTrainerUsedGimmick(battler, GIMMICK_MEGA))
+        return FALSE;
+
     // Check if AI battler is intended to Terastallize.
     if (!ShouldTrainerBattlerUseGimmick(battler, GIMMICK_TERA))
         return FALSE;

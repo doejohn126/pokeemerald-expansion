@@ -317,8 +317,8 @@ static const u8 sLevelCapTable_Normal[] =
     [LEVEL_CAP_BADGE_4]     = 49,
     [LEVEL_CAP_BADGE_5]     = 61,
     [LEVEL_CAP_BADGE_6]     = 72,
-    [LEVEL_CAP_BADGE_7]     = 46,
-    [LEVEL_CAP_BADGE_8]     = 58,
+    [LEVEL_CAP_BADGE_7]     = 81,
+    [LEVEL_CAP_BADGE_8]     = 89,
 };
 static const u8 sLevelCapTable_Hard[] = 
 {
@@ -329,8 +329,8 @@ static const u8 sLevelCapTable_Hard[] =
     [LEVEL_CAP_BADGE_4]     = 46,
     [LEVEL_CAP_BADGE_5]     = 57,
     [LEVEL_CAP_BADGE_6]     = 68,
-    [LEVEL_CAP_BADGE_7]     = 41,
-    [LEVEL_CAP_BADGE_8]     = 55,
+    [LEVEL_CAP_BADGE_7]     = 78,
+    [LEVEL_CAP_BADGE_8]     = 86,
 };
 #define TX_CHALLENGE_LEVEL_CAP_DEBUG 0
 u8 GetCurrentPartyLevelCap(void)

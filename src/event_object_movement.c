@@ -600,6 +600,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Twin,                  OBJ_EVENT_PAL_TAG_TWIN},
     {gObjectEventPal_Ty,                    OBJ_EVENT_PAL_TAG_TY},
     {gObjectEventPal_Mina,                  OBJ_EVENT_PAL_TAG_MINA},
+    {gObjectEventPal_Geeta,                 OBJ_EVENT_PAL_TAG_GEETA},
 #endif //OW_FOLLOWERS_POKEBALLS
     {gObjectEventPal_Substitute,            OBJ_EVENT_PAL_TAG_SUBSTITUTE},
     {gObjectEventPaletteEmotes,             OBJ_EVENT_PAL_TAG_EMOTES},

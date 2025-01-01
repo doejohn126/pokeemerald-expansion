@@ -3652,7 +3652,13 @@ static const u8 sText_MaxieMegaEvolve[] = _("Maxie: Heh, we aren't done yet.\p")
 static const u8 sText_ArchieIntro[] = _("I should've dealt with you a long time\nago.\p");
 static const u8 sText_ArchieLast2[] = _("What! I can't believe this is happening!\p");
 static const u8 sText_ArchieMega[] = _("Hah! Bet you didn't see this coming!\p");
-
+static const u8 sText_JuanBeforeFirst[] = _("Fufufu, watch how my elegant water\ntypes make a splash.\p");
+static const u8 sText_JuanMegaEvolve[] = _("Blastoise, let's see your elegance!\p");
+static const u8 sText_JuanLast[] = _("You are quite a strong trainer indeed!\p");
+static const u8 sText_GeetaBeforeFirst[] = _("I do hope you can defeat me so you can\nhave a greater shot at the Pokémon\lLeague.\p");
+static const u8 sText_GeetaLast[] = _("Heh! Hahahahahaha! Don't think you've\nwon just yet!\p");
+static const u8 sText_WallyBeforeFirst[] = _("Hey {PLAYER}, I bet you didn't expect\nme to improve this much!\p");
+static const u8 sText_WallyLast2[] = _("Let's wrap this up! You haven't won yet!\p");
 
 
 static const struct TrainerSlide sTrainerSlides[] =
@@ -4026,6 +4032,25 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgBeforeFirstTurn = sText_ArchieIntro,
         .msgLastSwitchIn = sText_ArchieLast2,
         .msgMegaEvolution = sText_ArchieMega,
+    },
+    {
+        .trainerId = TRAINER_JUAN_1,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_JuanLast,
+        .msgMegaEvolution = sText_JuanMegaEvolve,
+        .msgBeforeFirstTurn = sText_JuanBeforeFirst,
+    },
+    {
+        .trainerId = TRAINER_GEETA,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_GeetaLast,
+        .msgBeforeFirstTurn = sText_GeetaBeforeFirst,
+    },
+    {
+        .trainerId = TRAINER_WALLY_VR_1,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_WallyLast2,
+        .msgBeforeFirstTurn = sText_WallyBeforeFirst,
     },
 };
 

@@ -8152,6 +8152,8 @@ void UsePokevial(u8 taskId)
     maxHP = GetMonData(mon, MON_DATA_MAX_HP);
 
     PlaySE(SE_USE_ITEM);
+    if (B_FLAG_TERA_ORB_CHARGED != 0 && CheckBagHasItem(ITEM_TERA_ORB, 1))
+        FlagSet(B_FLAG_TERA_ORB_CHARGED);
     HealMonFromSlotId();
     SetPartyMonAilmentGfx(mon, &sPartyMenuBoxes[gPartyMenu.slotId]);
     if (gSprites[sPartyMenuBoxes[gPartyMenu.slotId].statusSpriteId].invisible)

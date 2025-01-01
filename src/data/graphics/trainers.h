@@ -304,6 +304,9 @@ const u32 gTrainerPalette_Courtney[] = INCBIN_U32("graphics/trainers/front_pics/
 const u32 gTrainerFrontPic_Mina[] = INCBIN_U32("graphics/trainers/front_pics/mina.4bpp.lz");
 const u32 gTrainerPalette_Mina[] = INCBIN_U32("graphics/trainers/front_pics/mina.gbapal.lz");
 
+const u32 gTrainerFrontPic_Geeta[] = INCBIN_U32("graphics/trainers/front_pics/geeta.4bpp.lz");
+const u32 gTrainerPalette_Geeta[] = INCBIN_U32("graphics/trainers/front_pics/geeta.gbapal.lz");
+
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");
 const u8 gTrainerBackPic_Red[] = INCBIN_U8("graphics/trainers/back_pics/red.4bpp");
@@ -434,6 +437,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_CLAY, gTrainerFrontPic_Clay, gTrainerPalette_Clay),
     TRAINER_SPRITE(TRAINER_PIC_KORRINA, gTrainerFrontPic_Korrina, gTrainerPalette_Korrina),
     TRAINER_SPRITE(TRAINER_PIC_MINA, gTrainerFrontPic_Mina, gTrainerPalette_Mina),
+    TRAINER_SPRITE(TRAINER_PIC_GEETA, gTrainerFrontPic_Geeta, gTrainerPalette_Geeta),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

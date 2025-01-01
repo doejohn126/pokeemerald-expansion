@@ -164,6 +164,21 @@ BrawlyLevelCap::
    release
    end
 
+TateLizaLevelCap::
+   msgbox gText_TheTateLizaCap, MSGBOX_DEFAULT
+   release
+   end
+
+JuanLevelCap::
+   msgbox gText_TheJuanCap, MSGBOX_DEFAULT
+   release
+   end
+
+LeagueLevelCap::
+   msgbox gText_TheLeagueCap, MSGBOX_DEFAULT
+   release
+   end
+
 UnknownLevelCap::
    msgbox gText_UnknownCap, MSGBOX_DEFAULT
    release
@@ -181,7 +196,9 @@ Common_EventScript_ExtraThingsReceptionist::
    end
 
 Common_EventScript_LevelCap::
-   goto_if_set FLAG_BADGE06_GET, UnknownLevelCap
+   goto_if_set FLAG_BADGE08_GET, LeagueLevelCap
+   goto_if_set FLAG_BADGE07_GET, JuanLevelCap
+   goto_if_set FLAG_BADGE06_GET, TateLizaLevelCap
    goto_if_set FLAG_BADGE05_GET, WinonaLevelCap
    goto_if_set FLAG_BADGE04_GET, NormanLevelCap
    goto_if_set FLAG_BADGE03_GET, FlanLevelCap

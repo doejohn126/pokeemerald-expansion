@@ -2021,7 +2021,7 @@ Gender: Male
 Music: Cool
 Items: Full Restore
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Smart Switching
 
 Dodrio
 Level: 42
@@ -2381,10 +2381,22 @@ Gender: Female
 Music: Cool
 Items: Full Restore
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Smart Switching
 
-Roselia
-Level: 45
+Dodrio
+Level: 81
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Whiscash
+Level: 81
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Ferrothorn
+Level: 81
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Vikavolt
+Level: 81
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SHANNON ===
@@ -2760,21 +2772,21 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Luvdisc @ Nugget
-Level: 39
+Floatzel (F) @ Nugget
+Level: 80
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Attract
-- Sweet Kiss
-- Flail
-- Water Pulse
+- Wave Crash
+- Ice Fang
+- Flip Turn
 
-Luvdisc @ Nugget
-Level: 39
+Swanna @ Nugget
+Level: 79
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Attract
-- Safeguard
-- Take Down
-- Water Pulse
+
+Bruxish @ Nugget
+Level: 79
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_2 ===
 Name: Grunt
@@ -2872,7 +2884,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Seaking @ Nugget
-Level: 40
+Level: 80
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Feraligatr @ Nugget
+Level: 79
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Simipour @ Nugget
+Level: 80
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_NAOMI ===
@@ -3047,8 +3067,16 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Goldeen
-Level: 40
+Lumineon
+Level: 78
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Gorebyss
+Level: 79
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Primarina
+Level: 79
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BRIDGET ===
@@ -3060,8 +3088,16 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Azumarill
-Level: 40
+Barraskewda
+Level: 80
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Jellicent (F)
+Level: 80
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Corsola
+Level: 79
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_OLIVIA ===
@@ -3073,28 +3109,17 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Clamperl
-Level: 35
+Quaquaval
+Level: 79
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Iron Defense
-- Whirlpool
-- Rain Dance
-- Water Pulse
 
-Corphish
-Level: 37
+Quagsire
+Level: 80
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Taunt
-- Crabhammer
-- Water Pulse
 
-Lombre
-Level: 39
+Crawdaunt
+Level: 79
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Uproar
-- Fury Swipes
-- Fake Out
-- Water Pulse
 
 === TRAINER_TIFFANY ===
 Name: Tiffany
@@ -3105,12 +3130,16 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Carvanha
-Level: 39
+Cloyster
+Level: 80
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Sharpedo
-Level: 39
+Level: 79
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Huntail
+Level: 80
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_JESSICA_2 ===
@@ -3859,26 +3888,71 @@ Inteleon
 Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_RICHARD ===
-Name: Richard
-Class: Swimmer M
-Pic: Swimmer M
-Gender: Male
-Music: Swimmer
+=== TRAINER_GEETA ===
+Name: Geeta
+Class: Top Champion
+Pic: Geeta
+Gender: Female
+Music: Female
+Items: Max Potion / Full Restore
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
+Mugshot: Purple
 
-Pelipper
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Glimmora (M)
+Level: 83
+Ability: Toxic Debris
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Stealth Rock
+- Mortal Spin
+- Power Gem
+- Earth Power
 
-Pelipper
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Espathra (F)
+Level: 82
+Ability: Speed Boost
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Dazzling Gleam
+- Stored Power
+- Lumina Crash
+- Calm Mind
 
-Pelipper
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Serperior (F)
+Level: 83
+Ability: Contrary
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Leaf Storm
+- Draco Meteor
+- Light Screen
+- Reflect
+
+Cetitan (F)
+Level: 82
+Ability: Thick Fat
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Ice Spinner
+- Earthquake
+- Ice Shard
+- Liquidation
+
+Dragapult (F)
+Level: 83
+Ability: Clear Body
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Dragon Darts
+- U Turn
+- Shadow Ball
+- Sucker Punch
+
+Kingambit (M)
+Level: 84
+Ability: Supreme Overlord
+Tera Type: Fairy
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Kowtow Cleave
+- Tera Blast
+- Iron Head
+- Swords Dance
 
 === TRAINER_HERMAN ===
 Name: Herman
@@ -6397,49 +6471,65 @@ Class: Leader
 Pic: Leader Juan
 Gender: Male
 Music: Male
-Items: Hyper Potion / Hyper Potion
+Items: Max Potion / Full Restore / Max Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
+Mugshot: Blue
 
-Luvdisc
-Level: 41
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Water Pulse
-- Attract
-- Sweet Kiss
-- Flail
-
-Whiscash
-Level: 41
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rain Dance
-- Water Pulse
-- Amnesia
-- Earthquake
-
-Sealeo
-Level: 43
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Encore
-- Body Slam
-- Aurora Beam
-- Water Pulse
-
-Crawdaunt
-Level: 43
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Water Pulse
-- Crabhammer
-- Taunt
-- Leer
-
-Kingdra @ Chesto Berry
-Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Water Pulse
-- Double Team
+Politoed (M) @ Damp Rock
+Level: 82
+Ability: Drizzle
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Surf
 - Ice Beam
+- Flip Turn
+- Encore
+
+Ludicolo (M)
+Level: 82
+Ability: Swift Swim
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Giga Drain
+- Hydro Pump
+- Ice Beam
+- Rain Dance
+
+Empoleon (M)
+Level: 82
+Ability: Competitive
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Surf
+- Ice Beam
+- Grass Knot
+- Roost
+
+Lapras (F)
+Level: 82
+Ability: Water Absorb
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Sparkling Aria
+- Freeze Dry
+- Rain Dance
+- Sing
+
+Kingdra (F) @ Lum Berry
+Level: 83
+Ability: Swift Swim
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Hydro Pump
+- Double Team
+- Draco Meteor
 - Rest
+
+Blastoise (M) @ Blastoisinite
+Level: 83
+Ball: Dive Ball
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+EVs: 22 Def / 22 SpA
+- Aura Sphere
+- Water Pulse
+- Dark Pulse
+- Shell Smash
 
 === TRAINER_JERRY_1 ===
 Name: Jerry
@@ -7059,16 +7149,17 @@ Music: Twins
 Double Battle: No
 AI: Basic Trainer
 
-Azurill @ Oran Berry
-Level: 35
+Gastrodon @ Oran Berry
+Level: 79
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Marill @ Oran Berry
-Level: 37
+Toxapex @ Oran Berry
+Level: 80
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Azumarill @ Oran Berry
-Level: 39
+Level: 80
+Ability: Huge Power
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ISABEL_1 ===
@@ -11224,21 +11315,17 @@ Music: Twins
 Double Battle: No
 AI: Basic Trainer
 
-Feebas @ Oran Berry
-Level: 39
+Milotic @ Oran Berry
+Level: 79
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Flail
-- Water Pulse
-- Return
-- Attract
 
-Feebas @ Oran Berry
-Level: 39
+Wishiwashi @ Oran Berry
+Level: 79
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Flail
-- Water Pulse
-- Return
-- Attract
+
+Palafin @ Oran Berry
+Level: 79
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_JAZMYN ===
 Name: Jazmyn
@@ -11628,47 +11715,61 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
+Mugshot: Green
 
-Altaria
-Level: 44
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Aerial Ace
-- Safeguard
-- Dragon Breath
-- Dragon Dance
+Garchomp (M)
+Level: 83
+Ability: Rough Skin
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Stealth Rock
+- Dragon Tail
+- Earthquake
+- Crunch
 
-Delcatty
-Level: 43
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Sing
-- Assist
-- Charm
-- Feint Attack
+Azumarill (F)
+Level: 83
+Ability: Huge Power
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Aqua Jet
+- Play Rough
+- Liquidation
+- Superpower
 
-Roselia
-Level: 44
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Magical Leaf
+Roserade (F)
+Level: 83
+Ability: Poison Point
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Sludge Bomb
 - Leech Seed
-- Giga Drain
-- Toxic
+- Grass Knot
+- Dazzling Gleam
 
-Magneton
-Level: 41
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Supersonic
+Magnezone
+Level: 82
+Ability: Sturdy
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Flash Cannon
 - Thunderbolt
-- Tri Attack
-- Screech
+- Light Screen
+- Volt Switch
 
-Gardevoir
-Level: 45
+Talonflame (M)
+Level: 83
+Ability: Flame Body
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Brave Bird
+- Will O Wisp
+- U Turn
+- Flare Blitz
+
+Gallade @ Galladite
+Level: 84
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Team
-- Calm Mind
-- Psychic
-- Future Sight
+- Psycho Cut
+- Sacred Sword
+- Leaf Blade
+- Swords Dance
 
 === TRAINER_BRENDAN_ROUTE_103_MUDKIP ===
 Name: Brendan
@@ -14276,8 +14377,16 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Luvdisc
-Level: 40
+Alomomola
+Level: 78
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Tatsugiri
+Level: 79
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Lanturn
+Level: 79
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_CRISSY ===
@@ -14289,12 +14398,16 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Goldeen
-Level: 39
+Clawitzer
+Level: 80
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Wailmer
-Level: 39
+Wailord
+Level: 79
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Luvdisc
+Level: 79
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RICK ===

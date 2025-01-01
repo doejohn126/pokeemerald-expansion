@@ -10909,6 +10909,10 @@ bool32 CanMegaEvolve(u32 battler)
     if (HasTrainerUsedGimmick(battler, GIMMICK_MEGA))
         return FALSE;
 
+    // Sorry u can only one gimmick
+    if (HasTrainerUsedGimmick(battler, GIMMICK_TERA))
+        return FALSE;
+
     // Check if battler has another gimmick active.
     if (GetActiveGimmick(battler) != GIMMICK_NONE)
         return FALSE;
