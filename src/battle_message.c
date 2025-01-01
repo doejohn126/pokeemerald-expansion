@@ -3649,6 +3649,10 @@ static const u8 sText_TateAndLizaLast[] = _("Tate: Good job beating our strategy
 static const u8 sText_TateAndLizaBeforeFirst[] = _("Tate: Can you even..\nLiza: Handle our antics?\p");
 static const u8 sText_TateNLizaMegaEvolve[] = _("Tate: Fufufu... say it Liza!\nLiza: Gardevoir, Mega Evolve!\p");
 static const u8 sText_MaxieMegaEvolve[] = _("Maxie: Heh, we aren't done yet.\p");
+static const u8 sText_ArchieIntro[] = _("I should've dealt with you a long time\nago.\p");
+static const u8 sText_ArchieLast2[] = _("What! I can't believe this is happening!\p");
+static const u8 sText_ArchieMega[] = _("Hah! Bet you didn't see this coming!\p");
+
 
 
 static const struct TrainerSlide sTrainerSlides[] =
@@ -4015,6 +4019,13 @@ static const struct TrainerSlide sTrainerSlides[] =
         .trainerId = TRAINER_MAXIE_MOSSDEEP,
         .isFrontierTrainer = FALSE,
         .msgMegaEvolution = sText_MaxieMegaEvolve,
+    },
+    {
+        .trainerId = TRAINER_ARCHIE,
+        .isFrontierTrainer = FALSE,
+        .msgBeforeFirstTurn = sText_ArchieIntro,
+        .msgLastSwitchIn = sText_ArchieLast2,
+        .msgMegaEvolution = sText_ArchieMega,
     },
 };
 

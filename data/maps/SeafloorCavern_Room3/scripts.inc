@@ -12,7 +12,7 @@ SeafloorCavern_Room3_EventScript_Grunt5::
 	end
 
 SeafloorCavern_Room3_Text_ShellyIntro:
-	.string "Ahahahaha!\p"
+	.string "Shelly: Ahahahaha!\p"
 	.string "How did you manage to get here without\n"
 	.string "a submarine?\l"
 	.string "What an impressive child!\p"
