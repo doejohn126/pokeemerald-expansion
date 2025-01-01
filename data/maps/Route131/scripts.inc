@@ -15,11 +15,6 @@ Route131_EventScript_CheckSetAbnormalWeather::
 	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
 	return
 
-Route131_EventScript_Richard::
-	trainerbattle_single TRAINER_RICHARD, Route131_Text_RichardIntro, Route131_Text_RichardDefeat
-	msgbox Route131_Text_RichardPostBattle, MSGBOX_AUTOCLOSE
-	end
-
 Route131_EventScript_Herman::
 	trainerbattle_single TRAINER_HERMAN, Route131_Text_HermanIntro, Route131_Text_HermanDefeat
 	msgbox Route131_Text_HermanPostBattle, MSGBOX_AUTOCLOSE

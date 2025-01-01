@@ -70,7 +70,8 @@
     F(SUBSTITUTE) \
     F(DRACO_METEOR) \
     F(EARTH_POWER) \
-    F(U_TURN)
+    F(U_TURN) \
+    F(ALLURING_VOICE)
 
 #define FOREACH_HM(F) \
     F(CUT) \

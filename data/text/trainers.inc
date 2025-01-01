@@ -4368,22 +4368,6 @@ Route130_Text_SantiagoPostBattle:
 	.string "Swimming and battling like this…\n"
 	.string "I'm one happy guy…$"
 
-Route131_Text_RichardIntro:
-	.string "The sea is teeming with Pokémon.\n"
-	.string "It's not easy swimming, I tell you.$"
-
-Route131_Text_RichardDefeat:
-	.string "Pokémon raised by Trainers are\n"
-	.string "seriously tough…$"
-
-Route131_Text_RichardPostBattle:
-	.string "Gasp… Gasp…\n"
-	.string "I'm wiped out…\p"
-	.string "The going's easy. It's the leaving\n"
-	.string "that's the hard part.\p"
-	.string "Will I have any energy left to make\n"
-	.string "the return trip?$"
-
 Route131_Text_HermanIntro:
 	.string "The sea… The sea… The sea…\n"
 	.string "The sea as far as these eyes can see!\l"
