@@ -73,7 +73,8 @@
     F(U_TURN) \
     F(ALLURING_VOICE) \
     F(FLIP_TURN) \
-    F(TERA_BLAST)
+    F(TERA_BLAST) \
+    F(SNOWSCAPE) 
 
 #define FOREACH_HM(F) \
     F(CUT) \

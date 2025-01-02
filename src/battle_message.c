@@ -3659,6 +3659,7 @@ static const u8 sText_GeetaBeforeFirst[] = _("I do hope you can defeat me so you
 static const u8 sText_GeetaLast[] = _("Heh! Hahahahahaha! Don't think you've\nwon just yet!\p");
 static const u8 sText_WallyBeforeFirst[] = _("Hey {PLAYER}, I bet you didn't expect\nme to improve this much!\p");
 static const u8 sText_WallyLast2[] = _("Let's wrap this up! You haven't won yet!\p");
+static const u8 sText_DawnLast[] = _("Wow, now you're pretty tough!\p");
 
 
 static const struct TrainerSlide sTrainerSlides[] =
@@ -4051,6 +4052,11 @@ static const struct TrainerSlide sTrainerSlides[] =
         .isFrontierTrainer = FALSE,
         .msgLastSwitchIn = sText_WallyLast2,
         .msgBeforeFirstTurn = sText_WallyBeforeFirst,
+    },
+    {
+        .trainerId = TRAINER_DAWN,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_DawnLast,
     },
 };
 

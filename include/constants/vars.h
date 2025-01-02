@@ -120,8 +120,8 @@
 #define VAR_KORRINA                                      0x4064
 #define VAR_MAGMA_ADMINS                                 0x4065
 #define VAR_JAYDEN_MOSSDEEP                              0x4066
-#define VAR_ROUTE108_STATE                               0x4067 // Unused Var
-#define VAR_ROUTE109_STATE                               0x4068 // Unused Var
+#define VAR_DAWN                                         0x4067
+#define VAR_DAWN_LEAVE_PARTY                             0x4068
 #define VAR_ROUTE110_STATE                               0x4069
 #define VAR_ROUTE111_STATE                               0x406A // Unused Var
 #define VAR_ROUTE112_STATE                               0x406B // Unused Var

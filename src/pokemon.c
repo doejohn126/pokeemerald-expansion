@@ -5919,6 +5919,8 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_RIVAL:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
                 return MUS_VS_RIVAL;
+            if (gTrainerBattleOpponent_A == TRAINER_DAWN)
+                return MUS_DP_VS_TRAINER;
             if (!StringCompare(GetTrainerNameFromId(gTrainerBattleOpponent_A), gText_BattleWallyName))
                 return MUS_VS_RIVAL;
             return MUS_VS_RIVAL;

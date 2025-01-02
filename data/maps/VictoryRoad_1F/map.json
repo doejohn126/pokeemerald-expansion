@@ -130,6 +130,19 @@
       "trainer_sight_or_berry_tree_id": "2",
       "script": "VictoryRoad_1F_EventScript_Quincy",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DAWN",
+      "x": 3,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_DAWN"
     }
   ],
   "warp_events": [
@@ -187,6 +200,60 @@
       "var": "VAR_VICTORY_ROAD_1F_STATE",
       "var_value": "0",
       "script": "VictoryRoad_1F_EventScript_WallyBattleTrigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_DAWN",
+      "var_value": "0",
+      "script": "DawnApproachPlayer2"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_DAWN",
+      "var_value": "0",
+      "script": "DawnApproachPlayer1"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_DAWN",
+      "var_value": "0",
+      "script": "DawnApproachPlayer3"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 40,
+      "elevation": 0,
+      "var": "VAR_FOLLOWER_WRONG_WAY",
+      "var_value": "1",
+      "script": "FollowerWrongWay2"
+    },
+    {
+      "type": "trigger",
+      "x": 38,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_DAWN_LEAVE_PARTY",
+      "var_value": "0",
+      "script": "DawnLeaveParty"
+    },
+    {
+      "type": "trigger",
+      "x": 39,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_DAWN_LEAVE_PARTY",
+      "var_value": "0",
+      "script": "DawnLeaveParty"
     }
   ],
   "bg_events": [

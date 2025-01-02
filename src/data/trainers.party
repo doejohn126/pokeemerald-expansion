@@ -1032,16 +1032,25 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Medicham
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Psychic
+Mantine
+Level: 83
+Ability: Water Absorb
+IVs: 26 HP / 0 Atk / 0 Def / 26 SpA / 0 SpD / 0 Spe
+- Surf
 
-Claydol
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Skill Swap
-- Earthquake
+Ursaluna Bloodmoon
+Level: 83
+IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
+- Metronome
+
+Diggersby
+Level: 83
+Ability: Huge Power
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Hammer Arm
+- Swords Dance
+- Stomping Tantrum
+- Giga Impact
 
 === TRAINER_VIOLET ===
 Name: Violet
@@ -1965,12 +1974,23 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Cacturne
-Level: 43
+Togedemaru
+Level: 85
+Ability: Sturdy
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Reversal
 
-Pelipper
-Level: 43
+Rabsca
+Level: 85
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Bug Buzz
+- Psychic
+- Speed Swap
+- Revival Blessing
+
+Bibarel
+Level: 85
+Ability: Simple
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ALBERT ===
@@ -1983,13 +2003,23 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Magneton
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Archeops
+Level: 85
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 22 Spe
+- Earthquake
 
-Muk
-Level: 43
+Aegislash
+Level: 85
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Kings Shield
+- Shadow Sneak
+- Sacred Sword
+- Iron Head
+
+Alcremie
+Level: 85
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Decorate
 
 === TRAINER_SAMUEL ===
 Name: Samuel
@@ -2002,16 +2032,39 @@ Double Battle: No
 AI: Basic Trainer
 
 Swellow
-Level: 42
+Level: 82
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Boomburst
+- Quick Guard
+- Brave Bird
+- Endeavor
 
-Mawile
-Level: 42
+Rillaboom
+Level: 82
+Ability: Grassy Surge
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Grassy Glide
+- Fake Out
+- Noble Roar
+- Focus Punch
 
-Kadabra
-Level: 42
+Boltund
+Level: 82
+Ability: Strong Jaw
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Crunch
+- Wild Charge
+- Fire Fang
+- Psychic Fangs
+
+Dubwool
+Level: 82
+Ability: Fluffy
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Cotton Guard
+- Guard Split
+- Double Edge
+- Swords Dance
 
 === TRAINER_VITO ===
 Name: Vito
@@ -2023,21 +2076,46 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer / Smart Switching
 
-Dodrio
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Dugtrio
+Level: 84
+Ability: Arena Trap
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Earthquake
+- Sucker Punch
 
-Kadabra
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Lurantis
+Level: 84
+Ability: Contrary
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Superpower
+- Leaf Blade
+- X Scissor
+- Dual Chop
 
-Electrode
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Lucario
+Level: 84
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Heal Pulse
+- Meteor Mash
+- Aura Sphere
+- Copycat
 
-Shiftry
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Perrserker
+Level: 84
+Ability: Steely Spirit
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Iron Head
+- Crunch
+- Shadow Claw
+- Screech
+
+Alakazam @ Alakazite
+Level: 84
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 22 Spe
+- Psychic
+- Ally Switch
+- Recover
+- Dazzling Gleam
 
 === TRAINER_OWEN ===
 Name: Owen
@@ -2049,17 +2127,38 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Kecleon
-Level: 42
+Delcatty
+Level: 83
+Ability: Cute Charm
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Fake Out
+- Sing
+- Double Edge
+- Simple Beam
 
-Graveler
-Level: 42
+Conkeldurr
+Level: 83
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Focus Punch
+- Leer
+- Bulk Up
 
-Wailord
-Level: 42
+Hitmonchan
+Level: 83
+Ability: Iron Fist
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Focus Punch
+- Agility
+- Thunder Punch
+- Bulk Up
+
+Gengar
+Level: 83
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Perish Song
+- Mean Look
+- Curse
+- Shadow Ball
 
 === TRAINER_WILTON_2 ===
 Name: Wilton
@@ -2409,9 +2508,45 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Claydol
-Level: 45
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Furret
+Level: 82
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Follow Me
+- Agility
+- Baton Pass
+- Super Fang
+
+Dugtrio Alola
+Level: 82
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Stomping Tantrum
+- Night Slash
+- Swords Dance
+- Stone Edge
+
+Copperajah
+Level: 82
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Heavy Slam
+- High Horsepower
+- Body Press
+- Heat Crash
+
+Electivire
+Level: 82
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Close Combat
+- Supercell Slam
+- Knock Off
+- Giga Impact
+
+Chimecho
+Level: 82
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Heal Pulse
+- Safeguard
+- Dazzling Gleam
+- Expanding Force
 
 === TRAINER_MICHELLE ===
 Name: Michelle
@@ -2421,19 +2556,41 @@ Gender: Female
 Music: Cool
 Items: Full Restore
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Smart Mon Choices
 
 Torkoal
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Level: 83
+Ability: Drought
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Eruption
+- Amnesia
+- Heat Wave
+- Body Press
 
-Medicham
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Gothitelle
+Level: 82
+Ability: Shadow Tag
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Trick Room
+- Fake Tears
+- Psychic
+- Mirror Coat
 
-Ludicolo
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Greedent
+Level: 82
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Stockpile
+- Body Slam
+- Counter
+- Swords Dance
+
+Gigalith
+Level: 82
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Stone Edge
+- Explosion
+- Stomping Tantrum
+- Body Press
 
 === TRAINER_CAROLINE ===
 Name: Caroline
@@ -2446,11 +2603,27 @@ Double Battle: No
 AI: Basic Trainer
 
 Skarmory
-Level: 43
+Level: 83
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Sableye
-Level: 43
+Decidueye Hisui
+Level: 83
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Triple Arrows
+- Brave Bird
+- Feather Dance
+- Leaf Blade
+
+Spiritomb
+Level: 83
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Rotom Fan
+Level: 83
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Lycanroc Dusk
+Level: 84
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_JULIE ===
@@ -3902,7 +4075,7 @@ Mugshot: Purple
 Glimmora (M)
 Level: 83
 Ability: Toxic Debris
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Stealth Rock
 - Mortal Spin
 - Power Gem
@@ -3911,7 +4084,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 Espathra (F)
 Level: 82
 Ability: Speed Boost
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Dazzling Gleam
 - Stored Power
 - Lumina Crash
@@ -3920,7 +4093,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 Serperior (F)
 Level: 83
 Ability: Contrary
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Leaf Storm
 - Draco Meteor
 - Light Screen
@@ -3929,7 +4102,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 Cetitan (F)
 Level: 82
 Ability: Thick Fat
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Ice Spinner
 - Earthquake
 - Ice Shard
@@ -3938,7 +4111,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 Dragapult (F)
 Level: 83
 Ability: Clear Body
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Dragon Darts
 - U Turn
 - Shadow Ball
@@ -7628,17 +7801,27 @@ Slaking
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Attract
-- Ice Beam
-- Thunderbolt
-- Flamethrower
+- Body Slam
+- Counter
+- Encore
 
-Dusclops
-Level: 43
+Reuniclus
+Level: 85
+Ability: Magic Guard
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Skill Swap
-- Protect
-- Will O Wisp
-- Toxic
+- Future Sight
+- Pain Split
+- Light Screen
+
+Dudunsparce
+Level: 85
+Ability: Serene Grace
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Hyper Drill
+- Drill Run
+- Coil
+- Breaking Swipe
 
 === TRAINER_KATELYNN ===
 Name: Katelynn
@@ -7650,21 +7833,29 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Gardevoir
-Level: 43
+Farigiraf
+Level: 85
+Ability: Armor Tail
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Skill Swap
-- Psychic
-- Thunderbolt
-- Calm Mind
+- Power Swap
+- Double Edge
 
 Slaking
-Level: 43
+Level: 85
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Earthquake
-- Shadow Ball
-- Aerial Ace
-- Brick Break
+- Hammer Arm
+- Body Slam
+- Slack Off
+- Ice Punch
+
+Audino @ Audinite
+Level: 85
+Ability: Healer
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Skill Swap
+- Protect
+- Will O Wisp
+- Toxic
 
 === TRAINER_JAYLEN ===
 Name: Jaylen
@@ -9519,17 +9710,24 @@ Music: Cool
 Items: Full Restore
 Double Battle: No
 
-Claydol
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Skill Swap
-- Earthquake
+Lapras
+Level: 83
+IVs: 26 HP / 0 Atk / 0 Def / 26 SpA / 0 SpD / 0 Spe
+- Surf
 
-Lanturn
-Level: 43
+Snorlax
+Level: 83
+IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
+- Metronome
+
+Passimian
+Level: 83
+Ability: Receiver
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Thunderbolt
-- Earthquake
+- Coaching
+- Chilling Water
+- Close Combat
+- Dynamic Punch
 
 === TRAINER_JANI ===
 Name: Jani
@@ -12622,23 +12820,31 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Smart Mon Choices
 
-Lunatone
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Explosion
-- Reflect
-- Light Screen
-- Psychic
+Sceptile
+Level: 83
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Leaf Storm
+- Quick Guard
+- Endeavor
+- Shed Tail
 
-Solrock
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Explosion
-- Reflect
-- Light Screen
-- Shadow Ball
+Arctozolt
+Level: 82
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Freeze Dry
+- Bolt Beak
+- Snowscape
+- Blizzard
+
+Beedrill @ Beedrillite
+Level: 83
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Poison Jab
+- Leaf Blade
+- Fell Stinger
+- Roost
 
 === TRAINER_ISAAC_2 ===
 Name: Isaac
@@ -12813,15 +13019,32 @@ Gender: Female
 Music: Cool
 Items: Full Restore
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Smart Mon Choices
 
-Sableye
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Seaking
+Level: 83
+Ability: Lightning Rod
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Soak
+- Fishious Rend
 
-Absol
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Frosmoth
+Level: 82
+Ability: Ice Scales
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Aurora Veil
+- Snowscape
+- Blizzard
+- Bug Buzz
+
+Klefki
+Level: 82
+Ability: Prankster
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Reflect
+- Light Screen
+- Dazzling Gleam
+- Thunder Wave
 
 === TRAINER_GARRISON ===
 Name: Garrison
@@ -21231,3 +21454,66 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Smart Strike
 - X Scissor
 
+=== TRAINER_DAWN ===
+Name: Dawn
+Class: Rival
+Pic: Dawn
+Gender: Female
+Music: Female
+Double Battle: No
+Items: Full Restore
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
+Mugshot: Pink
+
+Clefable (F)
+Level: 83
+Ability: Magic Guard
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Moonblast
+- Metronome
+- Thunderbolt
+- Flamethrower
+
+Leafeon (F)
+Level: 83
+Ability: Leaf Guard
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Leaf Blade
+- X Scissor
+- Knock Off
+- Substitute
+
+Typhlosion (F)
+Level: 83
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Eruption
+- Flamethrower
+- Extrasensory
+- Scorching Sands
+
+Mamoswine (M)
+Level: 83
+Ability: Thick Fat
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Earthquake
+- Trailblaze
+- Icicle Spear
+- Rock Slide
+
+Empoleon (M)
+Level: 85
+Ability: Competitive
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Ice Beam
+- Hydro Pump
+- Flash Cannon
+- Stealth Rock
+
+Lopunny (F) @ Lopunnite
+Level: 85
+Happiness: 240
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Fake Out
+- Return
+- High Jump Kick
+- Triple Axel

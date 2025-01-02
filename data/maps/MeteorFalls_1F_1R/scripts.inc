@@ -685,117 +685,119 @@ RivalLeaveParty2::
 # 348 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	waitmovement 0
 # 349 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setflag FLAG_RIVAL_114
+	destroyfollower
 # 350 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	removeobject OBJ_EVENT_ID_FOLLOW_ME
+	setflag FLAG_RIVAL_114
 # 351 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setvar VAR_FOLLOWER_WRONG_WAY, 0
+	removeobject OBJ_EVENT_ID_FOLLOW_ME
 # 352 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setvar VAR_RIVAL_LEAVE_PARTY, 1
+	setvar VAR_FOLLOWER_WRONG_WAY, 0
 # 353 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	setvar VAR_RIVAL_LEAVE_PARTY, 1
+# 354 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	release
 	end
 
 
 BrendanLeaveParty2::
-# 358 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	msgbox ImaHeadOut
 # 359 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOW_ME, RivalLeave2
+	msgbox ImaHeadOut
 # 360 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_FOLLOW_ME, RivalLeave2
 # 361 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	destroyfollower
+	waitmovement 0
 # 362 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	removeobject OBJ_EVENT_ID_FOLLOW_ME
+	destroyfollower
 # 363 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setvar VAR_FOLLOWER_WRONG_WAY, 0
+	removeobject OBJ_EVENT_ID_FOLLOW_ME
 # 364 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setvar VAR_RIVAL_LEAVE_PARTY, 1
+	setvar VAR_FOLLOWER_WRONG_WAY, 0
 # 365 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	setvar VAR_RIVAL_LEAVE_PARTY, 1
+# 366 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	release
 	end
 
 
 BrendanLeaveParty1::
-# 370 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	msgbox ImaHeadOut
 # 371 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOW_ME, RivalLeave1
+	msgbox ImaHeadOut
 # 372 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_FOLLOW_ME, RivalLeave1
 # 373 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	destroyfollower
+	waitmovement 0
 # 374 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	removeobject OBJ_EVENT_ID_FOLLOW_ME
+	destroyfollower
 # 375 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setvar VAR_FOLLOWER_WRONG_WAY, 0
+	removeobject OBJ_EVENT_ID_FOLLOW_ME
 # 376 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setvar VAR_RIVAL_LEAVE_PARTY, 1
+	setvar VAR_FOLLOWER_WRONG_WAY, 0
 # 377 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	setvar VAR_RIVAL_LEAVE_PARTY, 1
+# 378 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	release
 	end
 
 
-# 394 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-RivalLeave2:
 # 395 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+RivalLeave2:
+# 396 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	walk_down
-# 396 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	walk_left
-# 396 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	walk_left
-# 396 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	walk_left
-# 396 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	walk_left
-# 396 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	walk_left
-# 396 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	walk_left
-# 396 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 397 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	walk_left
 # 397 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	walk_up
-# 398 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	walk_left
+# 397 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	walk_left
+# 397 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	walk_left
+# 397 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	walk_left
+# 397 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	walk_left
+# 397 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	walk_left
 # 398 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	walk_up
+# 399 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	walk_left
+# 399 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	walk_left
 	step_end
 
-# 401 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-RivalLeave1:
 # 402 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+RivalLeave1:
+# 403 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	walk_up
-# 403 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 404 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	walk_left
-# 403 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 404 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	walk_left
-# 403 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 404 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	walk_left
-# 403 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 404 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	walk_left
-# 403 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 404 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	walk_left
-# 403 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 404 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	walk_left
-# 403 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 404 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	walk_left
-# 403 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 404 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	walk_left
-# 403 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 404 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	walk_left
 	step_end
 
 AwwWelp::
-# 381 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 382 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	.string "Aw okay this is where I leave.\n"
 	.string "I uh, wish we could do this more often.\p"
 	.string "You might see me in Lavaridge Town\n"
 	.string "later though so I'll see you then.$"
 
 ImaHeadOut::
-# 388 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+# 389 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	.string "Alright {PLAYER} I'm heading out now.\n"
 	.string "You might see me later in Lavaridge.\p"
 	.string "Anyways though, take care.$"

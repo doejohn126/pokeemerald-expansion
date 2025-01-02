@@ -346,6 +346,7 @@ script RivalLeaveParty2 {
     msgbox(AwwWelp)
     applymovement(OBJ_EVENT_ID_FOLLOW_ME, RivalLeave2)
     waitmovement(0)
+	destroyfollower
     setflag(FLAG_RIVAL_114)
     removeobject(OBJ_EVENT_ID_FOLLOW_ME)
     setvar(VAR_FOLLOWER_WRONG_WAY, 0)

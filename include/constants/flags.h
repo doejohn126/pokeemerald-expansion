@@ -66,7 +66,7 @@
 #define FLAG_JAYDEN_MAGMA    0x34 // Unused Flag
 #define FLAG_TABITHA_COURTNEY 0x35 // Unused Flag
 #define FLAG_JAYDEN_MOSSDEEP    0x36 // Unused Flag
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
+#define FLAG_DAWN            0x37 // Unused Flag
 #define FLAG_UNUSED_0x038    0x38 // Unused Flag
 #define FLAG_UNUSED_0x039    0x39 // Unused Flag
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag

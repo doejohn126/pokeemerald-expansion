@@ -49,17 +49,32 @@ Pic: Dawn
 Gender: Female
 Music: Female
 
-Empoleon (F)
-Level: 45
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
 Clefable (F)
-Level: 45
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Level: 84
+Ability: Magic Guard
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Moonblast
+- Metronome
+- Thunderbolt
+- Flamethrower
 
-Piloswine (M)
-Level: 45
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Empoleon (M)
+Level: 85
+Ability: Competitive
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Ice Beam
+- Hydro Pump
+- Flash Cannon
+- Stealth Rock
+
+Lopunny (F) @ Lopunnite
+Level: 86
+Happiness: 240
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Fake Out
+- Return
+- High Jump Kick
+- Triple Axel
 
 === PARTNER_BRENDAN_TREECKO ===
 Name: Brendan
