@@ -2636,17 +2636,25 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Sandslash
-Level: 42
+Zoroark
+Level: 84
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Ninetales
-Level: 42
+Torterra
+Level: 84
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Tropius
-Level: 42
+Armarouge
+Level: 83
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Comfey
+Level: 84
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Grassy Terrain
+- Floral Healing
+- Dazzling Gleam
+- Sweet Kiss
 
 === TRAINER_BROOKE_2 ===
 Name: Brooke
@@ -7798,7 +7806,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Slaking
-Level: 43
+Level: 85
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Attract
 - Body Slam
