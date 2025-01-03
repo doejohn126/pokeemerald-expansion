@@ -3660,6 +3660,14 @@ static const u8 sText_GeetaLast[] = _("Heh! Hahahahahaha! Don't think you've\nwo
 static const u8 sText_WallyBeforeFirst[] = _("Hey {PLAYER}, I bet you didn't expect\nme to improve this much!\p");
 static const u8 sText_WallyLast2[] = _("Let's wrap this up! You haven't won yet!\p");
 static const u8 sText_DawnLast[] = _("Wow, now you're pretty tough!\p");
+static const u8 sText_Jayden3FirstDown[] = _("Heh, I've forgotten how good you've got.\p");
+static const u8 sText_JaydenBeforeFirst[] = _("I'm not holding back anymore!\p");
+static const u8 sText_SidneyLast[] = _("Heh, not bad kid.\p");
+static const u8 sText_PhoebeLast[] = _("Hah, you're pretty good!\p");
+static const u8 sText_GlaciaLast[] = _("Such dedication. Too bad we're not done\nyet.\p");
+static const u8 sText_DrakeLast[] = _("Very talented indeed...\p");
+static const u8 sText_WallaceLast[] = _("I'm in shock on how amazing you are.\nYou still haven't won yet though!\p");
+static const u8 sText_WallaceBeforeFirst[] = _("I want us to make this the most\nexciting battle we've ever had!\p");
 
 
 static const struct TrainerSlide sTrainerSlides[] =
@@ -4057,6 +4065,38 @@ static const struct TrainerSlide sTrainerSlides[] =
         .trainerId = TRAINER_DAWN,
         .isFrontierTrainer = FALSE,
         .msgLastSwitchIn = sText_DawnLast,
+    },
+    {
+        .trainerId = TRAINER_JAYDEN_4,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_Jayden3FirstDown,
+        .msgBeforeFirstTurn = sText_JaydenBeforeFirst,
+    },
+    {
+        .trainerId = TRAINER_SIDNEY,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_SidneyLast,
+    },
+    {
+        .trainerId = TRAINER_PHOEBE,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_PhoebeLast,
+    },
+    {
+        .trainerId = TRAINER_GLACIA,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_GlaciaLast,
+    },
+    {
+        .trainerId = TRAINER_DRAKE,
+        .isFrontierTrainer = FALSE,
+        .msgLastSwitchIn = sText_DrakeLast,
+    },
+    {
+        .trainerId = TRAINER_WALLACE,
+        .isFrontierTrainer = FALSE,
+        .msgBeforeFirstTurn = sText_WallaceBeforeFirst,
+        .msgLastSwitchIn = sText_WallaceLast,
     },
 };
 

@@ -39,6 +39,43 @@ EverGrandeCity_Text_CitySign:
 
 `
 
+script JaydenFinalMainFight1 {
+    lock
+    applymovement(2, JaydenApproachYetAgain1)
+    waitmovement(0)
+    msgbox(WellHereWeGo)
+    trainerbattle_no_intro(TRAINER_JAYDEN_5, JaydenLose)
+    msgbox(ScotMan)
+    applymovement(2, JaydenHeadOut1)
+    waitmovement(0)
+    setvar(VAR_JAYDEN_EVERGRANDE, 1)
+    setflag(FLAG_JAYDEN_EVERGRANDE)
+    removeobject(2)
+    playse(SE_EXIT)
+    waitse
+    release
+    end
+}
+
+script JaydenFinalMainFight2 {
+    lock
+    addobject(2)
+    applymovement(2, JaydenApproachYetAgain2)
+    waitmovement(0)
+    msgbox(WellHereWeGo)
+    trainerbattle_no_intro(TRAINER_JAYDEN_5, JaydenLose)
+    msgbox(ScotMan)
+    applymovement(2, JaydenHeadOut2)
+    waitmovement(0)
+    setvar(VAR_JAYDEN_EVERGRANDE, 1)
+    setflag(FLAG_JAYDEN_EVERGRANDE)
+    removeobject(2)
+    playse(SE_EXIT)
+    waitse
+    release
+    end
+}
+
 script GeetaMain {
     lock
     faceplayer
@@ -64,6 +101,55 @@ script GeetaAwwMan {
     msgbox(HowUnfortunate)
     release
     end
+}
+
+movement JaydenApproachYetAgain1 {
+    walk_down * 6
+    walk_left * 4
+}
+
+movement JaydenHeadOut1 {
+    walk_down
+    walk_left * 3
+    walk_up * 2
+}
+
+movement JaydenApproachYetAgain2 {
+    walk_down * 7
+    walk_left * 4
+}
+
+movement JaydenHeadOut2 {
+    walk_up
+    walk_left * 3
+    walk_up
+}
+
+text ScotMan {
+   "After I lost in the League, a guy named\n" 
+   "Scot told me I had potential in a place\l"
+   "called the Battle Frontier.\p"
+   "So I think that's what I'll put the rest\n"
+   "of my time in going forward.\p"
+   "But hey, next time we see each other, I\n"
+   "want you to be the Champion you hear?\p"
+   "Well, until then my friend..."
+}
+
+text JaydenLose {
+    "Y'know {PLAYER}, this battle had me\n"
+    "thinking back to our battle in the woods."
+    "I honestly think you can become the\n"
+    "Champion."
+}
+
+text WellHereWeGo {
+    "Hey {PLAYER}, good to see you again.\n"
+    ".................................\p"
+    "I just battled in the Pokémon League...\n"
+    "And I lost...\p"
+    "I know you're going to head in there so..\n"
+    "We need to have one last battle!"
 }
 
 text BecomeChamp {

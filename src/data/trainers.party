@@ -6036,48 +6036,61 @@ Gender: Male
 Music: Elite Four
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer / Force Setup First Turn
-Mugshot: Purple
+AI: Basic Trainer / Force Setup First Turn / Smart Switching / Weigh Ability Prediction
+Mugshot: Red
 
-Mightyena
-Level: 46
+Muk Alola (M)
+Level: 86
+Ability: Poison Touch
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Roar
-- Double Edge
-- Sand Attack
-- Crunch
+- Substitute
+- Poison Jab
+- Lash Out
+- Ice Punch
 
-Shiftry
-Level: 48
+Honchkrow (M)
+Level: 86
+Ability: Moxie
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Torment
-- Double Team
-- Swagger
-- Extrasensory
+- Superpower
+- Brave Bird
+- Sucker Punch
+- Pursuit
 
-Cacturne
-Level: 46
+Weavile
+Level: 86
+Ability: Pressure
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Leech Seed
-- Feint Attack
-- Needle Arm
-- Cotton Spore
-
-Crawdaunt
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Surf
 - Swords Dance
-- Strength
-- Facade
+- Triple Axel
+- Night Slash
+- Low Kick
 
-Absol @ Sitrus Berry
-Level: 49
+Zoroark
+Level: 86
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Night Daze
+- Nasty Plot
+- U Turn
+- Sludge Bomb
+
+Meowscarada (F)
+Level: 87
+Ability: Protean
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Flower Trick
+- Night Slash
+- U Turn
+- Play Rough
+
+Absol @ Absolite
+Level: 87
+Ability: Justified
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Rock Slide
 - Swords Dance
-- Slash
+- Sucker Punch
+- Play Rough
+- Pursuit
 
 === TRAINER_PHOEBE ===
 Name: Phoebe
@@ -6087,48 +6100,60 @@ Gender: Female
 Music: Elite Four
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer
-Mugshot: Green
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
+Mugshot: Pink
 
-Dusclops
-Level: 48
+Mimikyu (M)
+Level: 87
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Punch
-- Confuse Ray
-- Curse
-- Protect
+- Swords Dance
+- Shadow Claw
+- Play Rough
+- Shadow Sneak
 
-Banette
-Level: 49
+Golurk (M)
+Level: 86
+Ability: No Guard
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Grudge
-- Will O Wisp
-- Feint Attack
-
-Sableye
-Level: 50
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Double Team
-- Night Shade
-- Feint Attack
-
-Banette
-Level: 49
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Psychic
-- Thunderbolt
-- Facade
-
-Dusclops @ Sitrus Berry
-Level: 51
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Ball
-- Ice Beam
-- Rock Slide
+- Dynamic Punch
 - Earthquake
+- Poltergeist
+- Ice Punch
+
+Skeledirge (F)
+Level: 86
+Ability: Unaware
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Torch Song
+- Will O Wisp
+- Hex
+- Slack Off
+
+Mismagius (F)
+Level: 87
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Moonblast
+- Shadow Ball
+- Power Gem
+- Calm Mind
+
+Dusknoir (M)
+Level: 87
+Ability: Hustle
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Shadow Sneak
+- Shadow Punch
+- Thunder Punch
+- Payback
+
+Banette (F) @ Banettite
+Level: 88
+Ability: Cursed Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Sucker Punch
+- Shadow Claw
+- Shadow Sneak
+- Play Rough
 
 === TRAINER_GLACIA ===
 Name: Glacia
@@ -6138,48 +6163,62 @@ Gender: Female
 Music: Elite Four
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer
-Mugshot: Pink
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
+Mugshot: Cyan
 
-Sealeo
-Level: 50
+Ninetales Alola @ Icy Rock
+Level: 87
+Ability: Snow Warning
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Encore
-- Body Slam
-- Hail
-- Ice Ball
-
-Glalie
-Level: 50
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Light Screen
-- Crunch
-- Icy Wind
-- Ice Beam
-
-Sealeo
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Attract
-- Double Edge
-- Hail
+- Aurora Veil
+- Moonblast
 - Blizzard
+- Freeze Dry
 
-Glalie
-Level: 52
+Glaceon @ Icy Rock
+Level: 87
+Ability: Snow Cloak
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Blizzard
+- Shadow Ball
+- Alluring Voice
+- Snowscape
+
+Mamoswine (M)
+Level: 87
+Ability: Thick Fat
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Icicle Crash
+- Earthquake
+- Body Press
+- Stone Edge
+
+Froslass
+Level: 87
+Ability: Snow Cloak
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Shadow Ball
-- Explosion
-- Hail
-- Ice Beam
+- Psychic
+- Snowscape
+- Blizzard
 
-Walrein @ Sitrus Berry
-Level: 53
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Walrein (F)
+Level: 88
+Ability: Ice Body
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Surf
-- Body Slam
-- Ice Beam
-- Sheer Cold
+- Slack Off
+- Snowscape
+- Blizzard
+
+Glalie (M) @ Sitrus Berry
+Level: 88
+Ability: Ice Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Double Edge
+- Explosion
+- Crunch
+- Earthquake
 
 === TRAINER_DRAKE ===
 Name: Drake
@@ -6189,47 +6228,61 @@ Gender: Male
 Music: Elite Four
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer
-Mugshot: Blue
+AI: Smart Trainer
+Mugshot: Gray
 
-Shelgon
-Level: 52
+Dragalge
+Level: 88
+Ability: Adaptability
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Rock Tomb
-- Dragon Claw
-- Protect
-- Double Edge
+- Toxic Spikes
+- Sludge Bomb
+- Flip Turn
+- Dragon Pulse
 
-Altaria
-Level: 54
+Noivern
+Level: 88
+Ability: Infiltrator
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Edge
-- Dragon Breath
-- Dragon Dance
-- Aerial Ace
-
-Kingdra
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Smokescreen
-- Dragon Dance
-- Surf
-- Body Slam
-
-Flygon
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Air Slash
+- Draco Meteor
 - Flamethrower
+- U Turn
+
+Kommo O
+Level: 88
+Ability: Soundproof
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Clangorous Soul
+- Clanging Scales
+- Aura Sphere
+- Boomburst
+
+Garchomp
+Level: 88
+Ability: Rough Skin
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Stone Edge
 - Crunch
-- Dragon Breath
+- Dragon Claw
 - Earthquake
 
-Salamence @ Sitrus Berry
-Level: 55
+Hydrapple
+Level: 88
+Ability: Regenerator
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Fickle Beam
+- Energy Ball
+- Pollen Puff
+- Nasty Plot
+
+Salamence @ Salamencite
+Level: 89
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
+- Dragon Dance
+- Double Edge
 - Dragon Claw
-- Rock Slide
 - Crunch
 
 === TRAINER_ROXANNE_1 ===
@@ -8050,56 +8103,68 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer
-Mugshot: Yellow
+AI: Smart Trainer
+Mugshot: Blue
 
-Wailord
-Level: 57
+Wailord @ Damp Rock
+Level: 89
+Ability: Drizzle
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rain Dance
+EVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Heavy Slam
 - Water Spout
-- Double Edge
-- Blizzard
-
-Tentacruel
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Toxic
-- Hydro Pump
-- Sludge Bomb
+- Earthquake
 - Ice Beam
 
-Ludicolo
-Level: 56
+Primarina (F) @ Assault Vest
+Level: 90
+Ability: Torrent
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Surf
-- Leech Seed
-- Double Team
+EVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Sparkling Aria
+- Moonblast
+- Psychic Noise
+- Flip Turn
 
-Whiscash
-Level: 56
+Whiscash (M) @ Rindo Berry
+Level: 90
+Ability: Adaptability
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Liquidation
 - Earthquake
-- Surf
-- Amnesia
-- Hyper Beam
+- Dragon Dance
+- Belch
 
-Gyarados
-Level: 56
+Latios @ Soul Dew
+Level: 91
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Thunder
+- Draco Meteor
+- Luster Purge
+- Aura Sphere
+
+Gyarados (M) @ Gyaradosite
+Level: 91
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Dragon Dance
 - Earthquake
-- Hyper Beam
-- Surf
+- Crunch
+- Waterfall
 
-Milotic @ Sitrus Berry
-Level: 58
+Milotic (F) @ Leftovers
+Level: 91
+Shiny: Yes
+Ability: Marvel Scale
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Recover
-- Surf
+- Scald
 - Ice Beam
-- Toxic
+- Rain Dance
 
 === TRAINER_ANDREW ===
 Name: Andrew
@@ -21525,3 +21590,66 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Return
 - High Jump Kick
 - Triple Axel
+
+=== TRAINER_JAYDEN_5 ===
+Name: Jayden
+Class: Rival
+Pic: RS Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+Items: Full Restore
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
+Mugshot: Green
+
+Jolteon (F)
+Level: 86
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Thunderbolt
+- Calm Mind
+- Shadow Ball
+- Thunder Wave
+
+Gliscor (M) @ Toxic Orb
+Level: 86
+Ability: Poison Heal
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Poison Jab
+- Dual Wingbeat
+- U Turn
+- Earthquake
+
+Lilligant (F)
+Level: 86
+Ability: Seed Sower
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Giga Drain
+- Quiver Dance
+- Alluring Voice
+- Sleep Powder
+
+Cyclizar (F)
+Level: 86
+Ability: Regenerator
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Shed Tail
+- Dragon Claw
+- U Turn
+- Double Edge
+
+Feraligatr (M)
+Level: 87
+Ability: Strong Jaw
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Crunch
+- Ice Fang
+- Liquidation
+- Screech
+
+Charizard (M) @ Charizardite X
+Level: 87
+IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 2629 Spe
+- Dragon Claw
+- Flare Blitz
+- Fly
+- Earthquake

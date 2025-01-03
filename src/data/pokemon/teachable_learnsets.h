@@ -17808,6 +17808,7 @@ static const u16 sBanetteTeachableLearnset[] = {
     MOVE_FLASH,
     MOVE_HYPER_BEAM,
     MOVE_LASH_OUT,
+    MOVE_PLAY_ROUGH,
     MOVE_PROTECT,
     MOVE_PSYCHIC,
     MOVE_RAIN_DANCE,
