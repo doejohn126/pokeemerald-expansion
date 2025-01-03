@@ -15109,7 +15109,7 @@ F_TRAINER_FEMALE |
 #line 6039
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_FORCE_SETUP_FIRST_TURN | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 6040
-        .mugshotColor = MUGSHOT_COLOR_PURPLE,
+        .mugshotColor = MUGSHOT_COLOR_RED,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -15259,7 +15259,7 @@ F_TRAINER_FEMALE |
 #line 6103
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 6104
-        .mugshotColor = MUGSHOT_COLOR_GREEN,
+        .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -15410,7 +15410,7 @@ F_TRAINER_FEMALE |
 #line 6166
         .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
 #line 6167
-        .mugshotColor = MUGSHOT_COLOR_PINK,
+        .mugshotColor = MUGSHOT_COLOR_CYAN,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -15526,7 +15526,7 @@ F_TRAINER_FEMALE |
 #line 6214
             .gender = TRAINER_MON_MALE,
 #line 6214
-            .heldItem = ITEM_SITRUS_BERRY,
+            .heldItem = ITEM_GLALITITE,
 #line 6217
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 6216
@@ -15564,7 +15564,7 @@ F_TRAINER_FEMALE |
 #line 6231
         .aiFlags = AI_FLAG_SMART_TRAINER,
 #line 6232
-        .mugshotColor = MUGSHOT_COLOR_BLUE,
+        .mugshotColor = MUGSHOT_COLOR_GRAY,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -20288,7 +20288,7 @@ F_TRAINER_FEMALE |
 #line 8106
         .aiFlags = AI_FLAG_SMART_TRAINER,
 #line 8107
-        .mugshotColor = MUGSHOT_COLOR_YELLOW,
+        .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
