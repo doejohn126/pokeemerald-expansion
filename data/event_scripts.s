@@ -1364,3 +1364,4 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
     .include "data/scripts/qol_field_move_scripts.inc" @ qol_field_moves 
+	.include "data/scripts/dexnav.inc"

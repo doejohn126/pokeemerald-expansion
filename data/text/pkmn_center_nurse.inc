@@ -83,6 +83,9 @@ gText_TheJuanCap::
 gText_TheLeagueCap::
 	.string "The current level cap is 91.$"
 
+gText_NoCap::
+	.string "Since you're the Champion, there is no\nLevel Cap, congratulations!$"
+
 gText_UnknownCap::
 	.string "The current level cap is undetermined.$"
 

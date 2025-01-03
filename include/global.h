@@ -209,10 +209,11 @@ struct SaveBlock3
     struct Time fakeRTC;
 #endif
     u8 followerIndex;
-#if OW_SHOW_ITEM_DESCRIPTIONS == OW_ITEM_DESCRIPTIONS_FIRST_TIME
-    u8 itemFlags[ITEM_FLAGS_COUNT];
+#if USE_DEXNAV_SEARCH_LEVELS == TRUE
+    u8 dexNavSearchLevels[NUM_SPECIES];
 #endif
-};
+    u8 dexNavChain;
+}; /* max size 1624 bytes */
 
 extern struct SaveBlock3 *gSaveBlock3Ptr;
 
@@ -1206,6 +1207,9 @@ struct SaveBlock1
                u8 registeredItemLastSelected:4; //max 16 items
                u8 registeredItemListCount:4;
                struct RegisteredItemSlot registeredItems[REGISTERED_ITEMS_MAX];
+#if OW_SHOW_ITEM_DESCRIPTIONS == OW_ITEM_DESCRIPTIONS_FIRST_TIME
+        u8 itemFlags[ITEM_FLAGS_COUNT];
+#endif
     // sizeof: 0x3???
 };
 

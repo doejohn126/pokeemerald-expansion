@@ -838,7 +838,12 @@ RustboroCity_EventScript_MayEncounter::
 	setflag FLAG_MET_RIVAL_RUSTBORO
 	msgbox RustboroCity_Text_MayHiLetsRegister, MSGBOX_DEFAULT
 	closemessage
-	delay 30
+	setflag FLAG_SYS_DEXNAV_GET
+	message YouGotDexnav
+	playfanfare MUS_OBTAIN_TMHM
+	waitmessage
+	waitfanfare
+	delay 40
 	playfanfare MUS_REGISTER_MATCH_CALL
 	msgbox RustboroCity_Text_RegisteredMay, MSGBOX_DEFAULT
 	waitfanfare
@@ -906,7 +911,12 @@ RustboroCity_EventScript_BrendanEncounter::
 	setflag FLAG_MET_RIVAL_RUSTBORO
 	msgbox RustboroCity_Text_BrendanHiLetsRegister, MSGBOX_DEFAULT
 	closemessage
-	delay 30
+	setflag FLAG_SYS_DEXNAV_GET
+	message YouGotDexnav
+	playfanfare MUS_OBTAIN_TMHM
+	waitmessage
+	waitfanfare
+	delay 40
 	playfanfare MUS_REGISTER_MATCH_CALL
 	msgbox RustboroCity_Text_RegisteredBrendan, MSGBOX_DEFAULT
 	waitfanfare
@@ -1140,7 +1150,8 @@ RustboroCity_Text_MayHiLetsRegister:
 	.string "on your Pokénav!\p"
 	.string "Let's register each other so we can\n"
 	.string "contact one another anytime!\p"
-	.string "… … … … … …$"
+	.string "Wait but before that my dad told me to\n"
+	.string "give this tool, It's called a DexNav!\p"
 
 RustboroCity_Text_RegisteredMay:
 	.string "Registered May\n"
@@ -1187,7 +1198,9 @@ RustboroCity_Text_BrendanHiLetsRegister:
 	.string "on your Pokénav! Cool!\p"
 	.string "Let's register each other so we can\n"
 	.string "get in touch anytime!\p"
-	.string "… … … … … …$"
+	.string "Wait though, dad wanted me to give you\n"
+	.string "this. I often use it to search for\l"
+	.string "new Pokémon.$"
 
 RustboroCity_Text_RegisteredBrendan:
 	.string "Registered Brendan\n"
@@ -1258,6 +1271,9 @@ RustboroCity_Text_TrainersSchoolSign:
 	.string "Pokémon Trainer's School\p"
 	.string "“We'll teach you anything about\n"
 	.string "Pokémon!”$"
+
+YouGotDexnav:
+	.string "{PLAYER} has obtained the DexNav."
 
 RustboroCity_Text_CuttersHouse:
 	.string "Cutter's House$"

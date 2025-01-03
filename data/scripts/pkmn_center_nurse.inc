@@ -179,6 +179,11 @@ LeagueLevelCap::
    release
    end
 
+NoLevelCap::
+	msgbox gText_NoCap, MSGBOX_DEFAULT
+	release
+	end
+
 UnknownLevelCap::
    msgbox gText_UnknownCap, MSGBOX_DEFAULT
    release
@@ -196,6 +201,7 @@ Common_EventScript_ExtraThingsReceptionist::
    end
 
 Common_EventScript_LevelCap::
+   goto_if_set FLAG_IS_CHAMPION, NoLevelCap
    goto_if_set FLAG_BADGE08_GET, LeagueLevelCap
    goto_if_set FLAG_BADGE07_GET, JuanLevelCap
    goto_if_set FLAG_BADGE06_GET, TateLizaLevelCap
