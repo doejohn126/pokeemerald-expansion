@@ -524,7 +524,6 @@ script JaydenWoodsStartBattle {
     msgbox(TimeToSearch)
     setvar(VAR_JAYDEN_WOODS, 1)
     giveitem(ITEM_POKEVIAL, 1)
-    pokevial(VIAL_UP, VIAL_SIZE, 3)
     msgbox(PokevialText)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
     waitmovement(0)
@@ -532,6 +531,7 @@ script JaydenWoodsStartBattle {
     waitmovement(0)
     setflag(FLAG_JAYDEN_PETALBURG_WOODS)
     removeobject(14)
+    pokevial(VIAL_UP, VIAL_SIZE, 3)
     release
     end
 }
