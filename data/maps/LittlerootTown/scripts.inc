@@ -2351,7 +2351,7 @@ WaitUp::
 
 AlrightThx::
 # 1107 "data/maps/LittlerootTown/scripts.pory"
-	.string "Alright then, Thank you {PLAYER}!$"
+	.string "Alright then, thank you {PLAYER}!$"
 
 GoodChoice::
 # 1111 "data/maps/LittlerootTown/scripts.pory"

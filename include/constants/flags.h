@@ -68,7 +68,7 @@
 #define FLAG_JAYDEN_MOSSDEEP    0x36 // Unused Flag
 #define FLAG_DAWN            0x37 // Unused Flag
 #define FLAG_JAYDEN_EVERGRANDE 0x38 // Unused Flag
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
+#define FLAG_NEW_POKE_RIDER  0x39 // Unused Flag
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag
