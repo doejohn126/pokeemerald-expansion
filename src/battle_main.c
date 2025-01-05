@@ -2104,7 +2104,8 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 {
     u8 retVal;
     s32 i, j;
-    u8 monsCount = gTrainers[trainerNum].partySize;
+    enum DifficultyLevel difficulty = GetTrainerDifficultyLevel(trainerNum);
+    u8 monsCount = gTrainers[difficulty][trainerNum].partySize;
     if (trainerNum == TRAINER_SECRET_BASE)
         return 0;
     retVal = CreateNPCTrainerPartyFromTrainer(party, GetTrainerStructFromId(trainerNum), firstTrainer, gBattleTypeFlags);

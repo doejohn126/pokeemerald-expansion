@@ -1019,40 +1019,31 @@ const u16 gMoveWeatherChangeStringIds[] =
 
 const u16 gWeatherEndsStringIds[B_MSG_WEATHER_END_COUNT] =
 {
-    [B_MSG_WEATHER_END_RAIN] = STRINGID_RAINSTOPPED,
-    [B_MSG_WEATHER_END_SANDSTORM] = STRINGID_SANDSTORMSUBSIDED,
-    [B_MSG_WEATHER_END_SUN] = STRINGID_SUNLIGHTFADED,
-    [B_MSG_WEATHER_END_HAIL] = STRINGID_HAILSTOPPED,
+    [B_MSG_WEATHER_END_RAIN]         = STRINGID_RAINSTOPPED,
+    [B_MSG_WEATHER_END_SUN]          = STRINGID_SUNLIGHTFADED,
+    [B_MSG_WEATHER_END_SANDSTORM]    = STRINGID_SANDSTORMSUBSIDED,
+    [B_MSG_WEATHER_END_HAIL]         = STRINGID_HAILSTOPPED,
+    [B_MSG_WEATHER_END_SNOW]         = STRINGID_SNOWSTOPPED,
+    [B_MSG_WEATHER_END_FOG]          = STRINGID_FOGLIFTED,
     [B_MSG_WEATHER_END_STRONG_WINDS] = STRINGID_STRONGWINDSDISSIPATED,
-    [B_MSG_WEATHER_END_SNOW] = STRINGID_SNOWSTOPPED,
-    [B_MSG_WEATHER_END_FOG] = STRINGID_FOGLIFTED,
 };
 
-const u16 gSandStormHailSnowContinuesStringIds[] =
+const u16 gWeatherTurnStringIds[] =
 {
-    [B_MSG_SANDSTORM] = STRINGID_SANDSTORMRAGES,
-    [B_MSG_HAIL]      = STRINGID_HAILCONTINUES,
-    [B_MSG_SNOW]      = STRINGID_SNOWCONTINUES,
+    [B_MSG_WEATHER_TURN_RAIN]         = STRINGID_RAINCONTINUES,
+    [B_MSG_WEATHER_TURN_DOWNPOUR]     = STRINGID_DOWNPOURCONTINUES,
+    [B_MSG_WEATHER_TURN_SUN]          = STRINGID_SUNLIGHTSTRONG,
+    [B_MSG_WEATHER_TURN_SANDSTORM]    = STRINGID_SANDSTORMRAGES,
+    [B_MSG_WEATHER_TURN_HAIL]         = STRINGID_HAILCONTINUES,
+    [B_MSG_WEATHER_TURN_SNOW]         = STRINGID_SNOWCONTINUES,
+    [B_MSG_WEATHER_TURN_FOG]          = STRINGID_FOGISDEEP,
+    [B_MSG_WEATHER_TURN_STRONG_WINDS] = STRINGID_MYSTERIOUSAIRCURRENTBLOWSON,
 };
 
 const u16 gSandStormHailDmgStringIds[] =
 {
     [B_MSG_SANDSTORM] = STRINGID_PKMNBUFFETEDBYSANDSTORM,
     [B_MSG_HAIL]      = STRINGID_PKMNPELTEDBYHAIL
-};
-
-const u16 gSandStormHailSnowEndStringIds[] =
-{
-    [B_MSG_SANDSTORM] = STRINGID_SANDSTORMSUBSIDED,
-    [B_MSG_HAIL]      = STRINGID_HAILSTOPPED,
-    [B_MSG_SNOW]      = STRINGID_SNOWSTOPPED,
-};
-
-const u16 gRainContinuesStringIds[] =
-{
-    [B_MSG_RAIN_CONTINUES]     = STRINGID_RAINCONTINUES,
-    [B_MSG_DOWNPOUR_CONTINUES] = STRINGID_DOWNPOURCONTINUES,
-    [B_MSG_RAIN_STOPPED]       = STRINGID_RAINSTOPPED
 };
 
 const u16 gProtectLikeUsedStringIds[] =
@@ -3670,433 +3661,448 @@ static const u8 sText_WallaceLast[] = _("I'm in shock on how amazing you are.\nY
 static const u8 sText_WallaceBeforeFirst[] = _("I want us to make this the most\nexciting battle we've ever had!\p");
 
 
-static const struct TrainerSlide sTrainerSlides[] =
+static const struct TrainerSlide sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT] =
 {
+    [DIFFICULTY_NORMAL] =
+    {
+        {
+            .trainerId = TRAINER_MAY_ROUTE_103_MUDKIP,
+            .isFrontierTrainer = FALSE,
+            .msgLastLowHp = sText_May1stBattleHpLow,
+            .msgFirstCriticalHit = sText_May1stBattleCrit,
+            .msgBeforeFirstTurn = sText_May1stBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_MAY_ROUTE_103_TREECKO,
+            .isFrontierTrainer = FALSE,
+            .msgLastLowHp = sText_May1stBattleHpLow,
+            .msgFirstCriticalHit = sText_May1stBattleCrit,
+            .msgBeforeFirstTurn = sText_May1stBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_MAY_ROUTE_103_TORCHIC,
+            .isFrontierTrainer = FALSE,
+            .msgLastLowHp = sText_May1stBattleHpLow,
+            .msgFirstCriticalHit = sText_May1stBattleCrit,
+            .msgBeforeFirstTurn = sText_May1stBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_BRENDAN_ROUTE_103_TORCHIC,
+            .isFrontierTrainer = FALSE,
+            .msgLastLowHp = sText_Brendan1stBattleHpLow,
+            .msgFirstCriticalHit = sText_Brendan1stBattleCrit,
+            .msgBeforeFirstTurn = sText_Brendan1stBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_BRENDAN_ROUTE_103_TREECKO,
+            .isFrontierTrainer = FALSE,
+            .msgLastLowHp = sText_Brendan1stBattleHpLow,
+            .msgFirstCriticalHit = sText_Brendan1stBattleCrit,
+            .msgBeforeFirstTurn = sText_Brendan1stBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_BRENDAN_ROUTE_103_MUDKIP,
+            .isFrontierTrainer = FALSE,
+            .msgLastLowHp = sText_Brendan1stBattleHpLow,
+            .msgFirstCriticalHit = sText_Brendan1stBattleCrit,
+            .msgBeforeFirstTurn = sText_Brendan1stBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_ROXANNE_1,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_RoxanneLastMon,
+            .msgFirstCriticalHit = sText_RoxanneCrit,
+            .msgFirstDown = sText_RoxanneFirstDown,
+        },
+        {
+            .trainerId = TRAINER_JAYDEN,
+            .isFrontierTrainer = FALSE,
+            .msgLastLowHp = sText_JaydenLastLow,
+            .msgFirstCriticalHit = sText_JaydenCrit,
+            .msgFirstDown = sText_JaydenFirstDown,
+        },
+        {
+            .trainerId = TRAINER_BROCK,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_BrockLast,
+            .msgFirstCriticalHit = sText_BrockCrit,
+            .msgBeforeFirstTurn = sText_BrockBeforeTurn,
+        },
+        {
+            .trainerId = TRAINER_SKY_KID,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_SkyKidLastSwitch,
+        },
+        {
+            .trainerId = TRAINER_MAY_RUSTBORO_MUDKIP,
+            .isFrontierTrainer = FALSE,
+            .msgLastLowHp = sText_May2ndBattleHpLow,
+            .msgFirstCriticalHit = sText_May2ndBattleCrit,
+            .msgBeforeFirstTurn = sText_May2ndBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_MAY_RUSTBORO_TORCHIC,
+            .isFrontierTrainer = FALSE,
+            .msgLastLowHp = sText_May2ndBattleHpLow,
+            .msgFirstCriticalHit = sText_May2ndBattleCrit,
+            .msgBeforeFirstTurn = sText_May2ndBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_MAY_RUSTBORO_TREECKO,
+            .isFrontierTrainer = FALSE,
+            .msgLastLowHp = sText_May2ndBattleHpLow,
+            .msgFirstCriticalHit = sText_May2ndBattleCrit,
+            .msgBeforeFirstTurn = sText_May2ndBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_BRENDAN_RUSTBORO_MUDKIP,
+            .isFrontierTrainer = FALSE,
+            .msgLastLowHp = sText_Brendan2ndBattleHpLow,
+            .msgFirstCriticalHit = sText_Brendan2ndBattleCrit,
+            .msgBeforeFirstTurn = sText_Brendan2ndBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_BRENDAN_RUSTBORO_TORCHIC,
+            .isFrontierTrainer = FALSE,
+            .msgLastLowHp = sText_Brendan2ndBattleHpLow,
+            .msgFirstCriticalHit = sText_Brendan2ndBattleCrit,
+            .msgBeforeFirstTurn = sText_Brendan2ndBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_BRENDAN_RUSTBORO_TREECKO,
+            .isFrontierTrainer = FALSE,
+            .msgLastLowHp = sText_Brendan2ndBattleHpLow,
+            .msgFirstCriticalHit = sText_Brendan2ndBattleCrit,
+            .msgBeforeFirstTurn = sText_Brendan2ndBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_BRAWLY_1,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_BrawlyLastSwitch,
+            .msgFirstCriticalHit = sText_BrawlyCrit,
+            .msgBeforeFirstTurn = sText_BrawlyIntro,
+        },
+        {
+            .trainerId = TRAINER_JAYDEN_2,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_JaydenLastMon,
+            .msgFirstCriticalHit = sText_Jayden2Crit,
+            .msgFirstDown = sText_Jayden2FirstDown,
+        },
+        {
+                .trainerId = TRAINER_BUGSY,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_BugsyLast,
+            .msgFirstCriticalHit = sText_BugsyCrit,
+            .msgBeforeFirstTurn = sText_BugsyBeforeTurn,
+        },
+        {
+            .trainerId = TRAINER_ARCHIE_MUSEUM,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_ArchieLast,
+            .msgFirstDown = sText_ArchieFirstDown,
+        },
+        {
+            .trainerId = TRAINER_BRENDAN_ROUTE_110_TORCHIC,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_Brendan3Last,
+            .msgFirstDown = sText_BrendanFirstDown,
+            .msgBeforeFirstTurn = sText_Brendan3rdBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_BRENDAN_ROUTE_110_TREECKO,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_Brendan3Last,
+            .msgFirstDown = sText_BrendanFirstDown,
+            .msgBeforeFirstTurn = sText_Brendan3rdBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_BRENDAN_ROUTE_110_MUDKIP,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_Brendan3Last,
+            .msgFirstDown = sText_BrendanFirstDown,
+            .msgBeforeFirstTurn = sText_Brendan3rdBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_MAY_ROUTE_110_TORCHIC,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_May3Last,
+            .msgFirstCriticalHit = sText_MayCrit,
+            .msgBeforeFirstTurn = sText_May3rdBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_MAY_ROUTE_110_TREECKO,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_May3Last,
+            .msgFirstCriticalHit = sText_MayCrit,
+            .msgBeforeFirstTurn = sText_May3rdBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_MAY_ROUTE_110_MUDKIP,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_May3Last,
+            .msgFirstCriticalHit = sText_MayCrit,
+            .msgBeforeFirstTurn = sText_May3rdBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_WALLY_MAUVILLE,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_WallyLast,
+            .msgFirstCriticalHit = sText_WallyCrit,
+            .msgBeforeFirstTurn = sText_WallyBattleIntro,
+        },
+        {
+            .trainerId = TRAINER_WATTSON_1,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_WattsonLast,
+            .msgFirstCriticalHit = sText_WattsonCrit,
+        },
+        {
+            .trainerId = TRAINER_SKY_KID_2,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_SkyKidLastSwitch,
+        },
+        {
+            .trainerId = TRAINER_FANTINA,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_FantinaLast,
+            .msgFirstCriticalHit = sText_FantinaCrit,
+            .msgLastLowHp = sText_FantinaLow,
+            .msgPlayerMonUnaffected = sText_FantinaUnaffected,
+        },
+        {
+            .trainerId = TRAINER_MAXIE_MT_CHIMNEY,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_MaxieLast,
+            .msgBeforeFirstTurn = sText_MaxieStartMessage,
+        },
+        {
+            .trainerId = TRAINER_JAYDEN_3,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_JaydenLastMon3,
+            .msgFirstCriticalHit = sText_JaydenCrit,
+            .msgFirstDown = sText_Jayden2FirstDown,
+        },
+        {
+            .trainerId = TRAINER_FLANNERY_1,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_FlanneryLastMon,
+            .msgBeforeFirstTurn = sText_FlanneryBeforeTurn,
+        },
+        {
+            .trainerId = TRAINER_CLAY,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_ClayLast,
+            .msgFirstCriticalHit = sText_ClayCrit,
+            .msgFirstDown = sText_ClayFirstDown,
+        },
+        {
+            .trainerId = TRAINER_NORMAN_1,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_NormanLast,
+            .msgMegaEvolution = sText_NormanMegaEvolve,
+            .msgBeforeFirstTurn = sText_NormanBeforeFirst,
+        },
+        {
+            .trainerId = TRAINER_SKY_KID_3,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_SkyKidLastSwitch,
+        },
+        {
+            .trainerId = TRAINER_KORRINA,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_KorrinaLast,
+            .msgMegaEvolution = sText_KorrinaMega,
+            .msgBeforeFirstTurn = sText_KorrinaBeforeFirst,
+        },
+        {
+            .trainerId = TRAINER_BRENDAN_ROUTE_119_TORCHIC,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_Brendan3Last,
+            .msgFirstDown = sText_BrendanFirstDown,
+            .msgMegaEvolution = sText_BrendanMegaEvolve,
+        },
+        {
+            .trainerId = TRAINER_BRENDAN_ROUTE_119_TREECKO,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_Brendan3Last,
+            .msgFirstDown = sText_BrendanFirstDown,
+            .msgMegaEvolution = sText_BrendanMegaEvolve,
+        },
+        {
+            .trainerId = TRAINER_BRENDAN_ROUTE_119_MUDKIP,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_Brendan3Last,
+            .msgFirstDown = sText_BrendanFirstDown,
+            .msgMegaEvolution = sText_BrendanMegaEvolve,
+        },
+        {
+            .trainerId = TRAINER_MAY_ROUTE_119_TORCHIC,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_May3Last,
+            .msgFirstCriticalHit = sText_MayCrit,
+            .msgMegaEvolution = sText_MayMegaEvolve,
+        },
+        {
+            .trainerId = TRAINER_MAY_ROUTE_119_TREECKO,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_May3Last,
+            .msgFirstCriticalHit = sText_MayCrit,
+            .msgMegaEvolution = sText_MayMegaEvolve,
+        },
+        {
+            .trainerId = TRAINER_MAY_ROUTE_119_MUDKIP,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_May3Last,
+            .msgFirstCriticalHit = sText_MayCrit,
+            .msgMegaEvolution = sText_MayMegaEvolve,
+        },
+        {
+            .trainerId = TRAINER_WINONA_1,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_WinonaLast,
+            .msgMegaEvolution = sText_WinonaMegaEvolve,
+            .msgBeforeFirstTurn = sText_WinonaBeforeFirst,
+        },
+        {
+            .trainerId = TRAINER_BRENDAN_LILYCOVE_MUDKIP,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_Brendan3Last,
+            .msgFirstDown = sText_BrendanFirstDown,
+        },
+        {
+            .trainerId = TRAINER_BRENDAN_LILYCOVE_TORCHIC,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_Brendan3Last,
+            .msgFirstDown = sText_BrendanFirstDown,
+        },
+        {
+            .trainerId = TRAINER_BRENDAN_LILYCOVE_TREECKO,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_Brendan3Last,
+            .msgFirstDown = sText_BrendanFirstDown,
+        },
+        {
+            .trainerId = TRAINER_MAY_LILYCOVE_MUDKIP,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_May3Last,
+        },
+        {
+            .trainerId = TRAINER_MAY_LILYCOVE_TREECKO,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_May3Last,
+        },
+        {
+            .trainerId = TRAINER_MAY_LILYCOVE_TORCHIC,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_May3Last,
+            .msgFirstCriticalHit = sText_MayCrit,
+        },
+        {
+            .trainerId = TRAINER_MINA,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_MinaLast,
+            .msgZMove = sText_MinaZMove,
+        },
+        {
+            .trainerId = TRAINER_MAXIE_MAGMA_HIDEOUT,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_MaxieLast2,
+            .msgMegaEvolution = sText_MaxieMega,
+        },
+        {
+            .trainerId = TRAINER_JAYDEN_4,
+            .isFrontierTrainer = FALSE,
+            .msgMegaEvolution = sText_JaydenMega,
+            .msgFirstDown = sText_Jayden2FirstDown,
+        },
+        {
+            .trainerId = TRAINER_TATE_AND_LIZA_1,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_TateAndLizaLast,
+            .msgMegaEvolution = sText_TateNLizaMegaEvolve,
+            .msgBeforeFirstTurn = sText_TateAndLizaBeforeFirst,
+        },
+        {
+            .trainerId = TRAINER_MAXIE_MOSSDEEP,
+            .isFrontierTrainer = FALSE,
+            .msgMegaEvolution = sText_MaxieMegaEvolve,
+        },
+        {
+            .trainerId = TRAINER_ARCHIE,
+            .isFrontierTrainer = FALSE,
+            .msgBeforeFirstTurn = sText_ArchieIntro,
+            .msgLastSwitchIn = sText_ArchieLast2,
+            .msgMegaEvolution = sText_ArchieMega,
+        },
+        {
+            .trainerId = TRAINER_JUAN_1,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_JuanLast,
+            .msgMegaEvolution = sText_JuanMegaEvolve,
+            .msgBeforeFirstTurn = sText_JuanBeforeFirst,
+        },
+        {
+            .trainerId = TRAINER_GEETA,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_GeetaLast,
+            .msgBeforeFirstTurn = sText_GeetaBeforeFirst,
+        },
+        {
+            .trainerId = TRAINER_WALLY_VR_1,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_WallyLast2,
+            .msgBeforeFirstTurn = sText_WallyBeforeFirst,
+        },
+        {
+            .trainerId = TRAINER_DAWN,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_DawnLast,
+        },
+        {
+            .trainerId = TRAINER_JAYDEN_4,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_Jayden3FirstDown,
+            .msgBeforeFirstTurn = sText_JaydenBeforeFirst,
+        },
+        {
+            .trainerId = TRAINER_SIDNEY,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_SidneyLast,
+        },
+        {
+            .trainerId = TRAINER_PHOEBE,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_PhoebeLast,
+        },
+        {
+            .trainerId = TRAINER_GLACIA,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_GlaciaLast,
+        },
+        {
+            .trainerId = TRAINER_DRAKE,
+            .isFrontierTrainer = FALSE,
+            .msgLastSwitchIn = sText_DrakeLast,
+        },
+        {
+            .trainerId = TRAINER_WALLACE,
+            .isFrontierTrainer = FALSE,
+            .msgBeforeFirstTurn = sText_WallaceBeforeFirst,
+            .msgLastSwitchIn = sText_WallaceLast,
+        },
+    },
+    [DIFFICULTY_WEENIE_HUT_JR] =
+    {
+    },
+    [DIFFICULTY_EASY] =
+    {
+    },
+    [DIFFICULTY_HARD] =
+    {
+    },
+    [DIFFICULTY_INSANE] =
     {
-        .trainerId = TRAINER_MAY_ROUTE_103_MUDKIP,
-        .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sText_May1stBattleHpLow,
-        .msgFirstCriticalHit = sText_May1stBattleCrit,
-        .msgBeforeFirstTurn = sText_May1stBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_MAY_ROUTE_103_TREECKO,
-        .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sText_May1stBattleHpLow,
-        .msgFirstCriticalHit = sText_May1stBattleCrit,
-        .msgBeforeFirstTurn = sText_May1stBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_MAY_ROUTE_103_TORCHIC,
-        .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sText_May1stBattleHpLow,
-        .msgFirstCriticalHit = sText_May1stBattleCrit,
-        .msgBeforeFirstTurn = sText_May1stBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_BRENDAN_ROUTE_103_TORCHIC,
-        .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sText_Brendan1stBattleHpLow,
-        .msgFirstCriticalHit = sText_Brendan1stBattleCrit,
-        .msgBeforeFirstTurn = sText_Brendan1stBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_BRENDAN_ROUTE_103_TREECKO,
-        .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sText_Brendan1stBattleHpLow,
-        .msgFirstCriticalHit = sText_Brendan1stBattleCrit,
-        .msgBeforeFirstTurn = sText_Brendan1stBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_BRENDAN_ROUTE_103_MUDKIP,
-        .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sText_Brendan1stBattleHpLow,
-        .msgFirstCriticalHit = sText_Brendan1stBattleCrit,
-        .msgBeforeFirstTurn = sText_Brendan1stBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_ROXANNE_1,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_RoxanneLastMon,
-        .msgFirstCriticalHit = sText_RoxanneCrit,
-        .msgFirstDown = sText_RoxanneFirstDown,
-    },
-    {
-        .trainerId = TRAINER_JAYDEN,
-        .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sText_JaydenLastLow,
-        .msgFirstCriticalHit = sText_JaydenCrit,
-        .msgFirstDown = sText_JaydenFirstDown,
-    },
-    {
-        .trainerId = TRAINER_BROCK,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_BrockLast,
-        .msgFirstCriticalHit = sText_BrockCrit,
-        .msgBeforeFirstTurn = sText_BrockBeforeTurn,
-    },
-    {
-        .trainerId = TRAINER_SKY_KID,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_SkyKidLastSwitch,
-    },
-    {
-        .trainerId = TRAINER_MAY_RUSTBORO_MUDKIP,
-        .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sText_May2ndBattleHpLow,
-        .msgFirstCriticalHit = sText_May2ndBattleCrit,
-        .msgBeforeFirstTurn = sText_May2ndBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_MAY_RUSTBORO_TORCHIC,
-        .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sText_May2ndBattleHpLow,
-        .msgFirstCriticalHit = sText_May2ndBattleCrit,
-        .msgBeforeFirstTurn = sText_May2ndBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_MAY_RUSTBORO_TREECKO,
-        .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sText_May2ndBattleHpLow,
-        .msgFirstCriticalHit = sText_May2ndBattleCrit,
-        .msgBeforeFirstTurn = sText_May2ndBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_BRENDAN_RUSTBORO_MUDKIP,
-        .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sText_Brendan2ndBattleHpLow,
-        .msgFirstCriticalHit = sText_Brendan2ndBattleCrit,
-        .msgBeforeFirstTurn = sText_Brendan2ndBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_BRENDAN_RUSTBORO_TORCHIC,
-        .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sText_Brendan2ndBattleHpLow,
-        .msgFirstCriticalHit = sText_Brendan2ndBattleCrit,
-        .msgBeforeFirstTurn = sText_Brendan2ndBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_BRENDAN_RUSTBORO_TREECKO,
-        .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sText_Brendan2ndBattleHpLow,
-        .msgFirstCriticalHit = sText_Brendan2ndBattleCrit,
-        .msgBeforeFirstTurn = sText_Brendan2ndBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_BRAWLY_1,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_BrawlyLastSwitch,
-        .msgFirstCriticalHit = sText_BrawlyCrit,
-        .msgBeforeFirstTurn = sText_BrawlyIntro,
-    },
-    {
-        .trainerId = TRAINER_JAYDEN_2,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_JaydenLastMon,
-        .msgFirstCriticalHit = sText_Jayden2Crit,
-        .msgFirstDown = sText_Jayden2FirstDown,
-    },
-    {
-        .trainerId = TRAINER_BUGSY,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_BugsyLast,
-        .msgFirstCriticalHit = sText_BugsyCrit,
-        .msgBeforeFirstTurn = sText_BugsyBeforeTurn,
-    },
-    {
-        .trainerId = TRAINER_ARCHIE_MUSEUM,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_ArchieLast,
-        .msgFirstDown = sText_ArchieFirstDown,
-    },
-    {
-        .trainerId = TRAINER_BRENDAN_ROUTE_110_TORCHIC,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_Brendan3Last,
-        .msgFirstDown = sText_BrendanFirstDown,
-        .msgBeforeFirstTurn = sText_Brendan3rdBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_BRENDAN_ROUTE_110_TREECKO,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_Brendan3Last,
-        .msgFirstDown = sText_BrendanFirstDown,
-        .msgBeforeFirstTurn = sText_Brendan3rdBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_BRENDAN_ROUTE_110_MUDKIP,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_Brendan3Last,
-        .msgFirstDown = sText_BrendanFirstDown,
-        .msgBeforeFirstTurn = sText_Brendan3rdBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_MAY_ROUTE_110_TORCHIC,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_May3Last,
-        .msgFirstCriticalHit = sText_MayCrit,
-        .msgBeforeFirstTurn = sText_May3rdBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_MAY_ROUTE_110_TREECKO,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_May3Last,
-        .msgFirstCriticalHit = sText_MayCrit,
-        .msgBeforeFirstTurn = sText_May3rdBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_MAY_ROUTE_110_MUDKIP,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_May3Last,
-        .msgFirstCriticalHit = sText_MayCrit,
-        .msgBeforeFirstTurn = sText_May3rdBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_WALLY_MAUVILLE,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_WallyLast,
-        .msgFirstCriticalHit = sText_WallyCrit,
-        .msgBeforeFirstTurn = sText_WallyBattleIntro,
-    },
-    {
-        .trainerId = TRAINER_WATTSON_1,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_WattsonLast,
-        .msgFirstCriticalHit = sText_WattsonCrit,
-    },
-    {
-        .trainerId = TRAINER_SKY_KID_2,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_SkyKidLastSwitch,
-    },
-    {
-        .trainerId = TRAINER_FANTINA,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_FantinaLast,
-        .msgFirstCriticalHit = sText_FantinaCrit,
-        .msgLastLowHp = sText_FantinaLow,
-        .msgPlayerMonUnaffected = sText_FantinaUnaffected,
-    },
-    {
-        .trainerId = TRAINER_MAXIE_MT_CHIMNEY,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_MaxieLast,
-        .msgBeforeFirstTurn = sText_MaxieStartMessage,
-    },
-    {
-        .trainerId = TRAINER_JAYDEN_3,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_JaydenLastMon3,
-        .msgFirstCriticalHit = sText_JaydenCrit,
-        .msgFirstDown = sText_Jayden2FirstDown,
-    },
-    {
-        .trainerId = TRAINER_FLANNERY_1,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_FlanneryLastMon,
-        .msgBeforeFirstTurn = sText_FlanneryBeforeTurn,
-    },
-    {
-        .trainerId = TRAINER_CLAY,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_ClayLast,
-        .msgFirstCriticalHit = sText_ClayCrit,
-        .msgFirstDown = sText_ClayFirstDown,
-    },
-    {
-        .trainerId = TRAINER_NORMAN_1,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_NormanLast,
-        .msgMegaEvolution = sText_NormanMegaEvolve,
-        .msgBeforeFirstTurn = sText_NormanBeforeFirst,
-    },
-    {
-        .trainerId = TRAINER_SKY_KID_3,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_SkyKidLastSwitch,
-    },
-    {
-        .trainerId = TRAINER_KORRINA,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_KorrinaLast,
-        .msgMegaEvolution = sText_KorrinaMega,
-        .msgBeforeFirstTurn = sText_KorrinaBeforeFirst,
-    },
-    {
-        .trainerId = TRAINER_BRENDAN_ROUTE_119_TORCHIC,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_Brendan3Last,
-        .msgFirstDown = sText_BrendanFirstDown,
-        .msgMegaEvolution = sText_BrendanMegaEvolve,
-    },
-    {
-        .trainerId = TRAINER_BRENDAN_ROUTE_119_TREECKO,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_Brendan3Last,
-        .msgFirstDown = sText_BrendanFirstDown,
-        .msgMegaEvolution = sText_BrendanMegaEvolve,
-    },
-    {
-        .trainerId = TRAINER_BRENDAN_ROUTE_119_MUDKIP,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_Brendan3Last,
-        .msgFirstDown = sText_BrendanFirstDown,
-        .msgMegaEvolution = sText_BrendanMegaEvolve,
-    },
-    {
-        .trainerId = TRAINER_MAY_ROUTE_119_TORCHIC,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_May3Last,
-        .msgFirstCriticalHit = sText_MayCrit,
-        .msgMegaEvolution = sText_MayMegaEvolve,
-    },
-    {
-        .trainerId = TRAINER_MAY_ROUTE_119_TREECKO,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_May3Last,
-        .msgFirstCriticalHit = sText_MayCrit,
-        .msgMegaEvolution = sText_MayMegaEvolve,
-    },
-    {
-        .trainerId = TRAINER_MAY_ROUTE_119_MUDKIP,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_May3Last,
-        .msgFirstCriticalHit = sText_MayCrit,
-        .msgMegaEvolution = sText_MayMegaEvolve,
-    },
-    {
-        .trainerId = TRAINER_WINONA_1,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_WinonaLast,
-        .msgMegaEvolution = sText_WinonaMegaEvolve,
-        .msgBeforeFirstTurn = sText_WinonaBeforeFirst,
-    },
-    {
-        .trainerId = TRAINER_BRENDAN_LILYCOVE_MUDKIP,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_Brendan3Last,
-        .msgFirstDown = sText_BrendanFirstDown,
-    },
-    {
-        .trainerId = TRAINER_BRENDAN_LILYCOVE_TORCHIC,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_Brendan3Last,
-        .msgFirstDown = sText_BrendanFirstDown,
-    },
-    {
-        .trainerId = TRAINER_BRENDAN_LILYCOVE_TREECKO,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_Brendan3Last,
-        .msgFirstDown = sText_BrendanFirstDown,
-    },
-    {
-        .trainerId = TRAINER_MAY_LILYCOVE_MUDKIP,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_May3Last,
-    },
-    {
-        .trainerId = TRAINER_MAY_LILYCOVE_TREECKO,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_May3Last,
-    },
-    {
-        .trainerId = TRAINER_MAY_LILYCOVE_TORCHIC,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_May3Last,
-        .msgFirstCriticalHit = sText_MayCrit,
-    },
-    {
-        .trainerId = TRAINER_MINA,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_MinaLast,
-        .msgZMove = sText_MinaZMove,
-    },
-    {
-        .trainerId = TRAINER_MAXIE_MAGMA_HIDEOUT,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_MaxieLast2,
-        .msgMegaEvolution = sText_MaxieMega,
-    },
-    {
-        .trainerId = TRAINER_JAYDEN_4,
-        .isFrontierTrainer = FALSE,
-        .msgMegaEvolution = sText_JaydenMega,
-        .msgFirstDown = sText_Jayden2FirstDown,
-    },
-    {
-        .trainerId = TRAINER_TATE_AND_LIZA_1,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_TateAndLizaLast,
-        .msgMegaEvolution = sText_TateNLizaMegaEvolve,
-        .msgBeforeFirstTurn = sText_TateAndLizaBeforeFirst,
-    },
-    {
-        .trainerId = TRAINER_MAXIE_MOSSDEEP,
-        .isFrontierTrainer = FALSE,
-        .msgMegaEvolution = sText_MaxieMegaEvolve,
-    },
-    {
-        .trainerId = TRAINER_ARCHIE,
-        .isFrontierTrainer = FALSE,
-        .msgBeforeFirstTurn = sText_ArchieIntro,
-        .msgLastSwitchIn = sText_ArchieLast2,
-        .msgMegaEvolution = sText_ArchieMega,
-    },
-    {
-        .trainerId = TRAINER_JUAN_1,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_JuanLast,
-        .msgMegaEvolution = sText_JuanMegaEvolve,
-        .msgBeforeFirstTurn = sText_JuanBeforeFirst,
-    },
-    {
-        .trainerId = TRAINER_GEETA,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_GeetaLast,
-        .msgBeforeFirstTurn = sText_GeetaBeforeFirst,
-    },
-    {
-        .trainerId = TRAINER_WALLY_VR_1,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_WallyLast2,
-        .msgBeforeFirstTurn = sText_WallyBeforeFirst,
-    },
-    {
-        .trainerId = TRAINER_DAWN,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_DawnLast,
-    },
-    {
-        .trainerId = TRAINER_JAYDEN_4,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_Jayden3FirstDown,
-        .msgBeforeFirstTurn = sText_JaydenBeforeFirst,
-    },
-    {
-        .trainerId = TRAINER_SIDNEY,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_SidneyLast,
-    },
-    {
-        .trainerId = TRAINER_PHOEBE,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_PhoebeLast,
-    },
-    {
-        .trainerId = TRAINER_GLACIA,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_GlaciaLast,
-    },
-    {
-        .trainerId = TRAINER_DRAKE,
-        .isFrontierTrainer = FALSE,
-        .msgLastSwitchIn = sText_DrakeLast,
-    },
-    {
-        .trainerId = TRAINER_WALLACE,
-        .isFrontierTrainer = FALSE,
-        .msgBeforeFirstTurn = sText_WallaceBeforeFirst,
-        .msgLastSwitchIn = sText_WallaceLast,
     },
 };
 
@@ -4174,118 +4180,120 @@ u32 ShouldDoTrainerSlide(u32 battler, u32 which)
         trainerId = gTrainerBattleOpponent_A;
     }
 
+    enum DifficultyLevel difficulty = GetTrainerDifficultyLevel(trainerId);
+
     for (i = 0; i < ARRAY_COUNT(sTrainerSlides); i++)
     {
-        if (trainerId == sTrainerSlides[i].trainerId
-            && (((gBattleTypeFlags & BATTLE_TYPE_FRONTIER) && sTrainerSlides[i].isFrontierTrainer)
-                || (!(gBattleTypeFlags & BATTLE_TYPE_FRONTIER) && !sTrainerSlides[i].isFrontierTrainer)))
+        if (trainerId == sTrainerSlides[difficulty]->trainerId
+            && (((gBattleTypeFlags & BATTLE_TYPE_FRONTIER) && sTrainerSlides[difficulty]->isFrontierTrainer)
+                || (!(gBattleTypeFlags & BATTLE_TYPE_FRONTIER) && !sTrainerSlides[difficulty]->isFrontierTrainer)))
         {
             gBattleScripting.battler = battler;
             switch (which)
             {
             case TRAINER_SLIDE_LAST_SWITCHIN:
-                if (sTrainerSlides[i].msgLastSwitchIn != NULL && !CanBattlerSwitch(battler))
+                if (sTrainerSlides[difficulty]->msgLastSwitchIn != NULL && !CanBattlerSwitch(battler))
                 {
-                    gBattleStruct->trainerSlideMsg = sTrainerSlides[i].msgLastSwitchIn;
+                    gBattleStruct->trainerSlideMsg = sTrainerSlides[difficulty]->msgLastSwitchIn;
                     return retValue;
                 }
                 break;
             case TRAINER_SLIDE_LAST_LOW_HP:
-                if (sTrainerSlides[i].msgLastLowHp != NULL
+                if (sTrainerSlides[difficulty]->msgLastLowHp != NULL
                     && GetEnemyMonCount(firstId, lastId, TRUE) == 1
                     && BattlerHPPercentage(battler, LESS_THAN_OR_EQUAL, 4)
                     && !gBattleStruct->trainerSlideLowHpMsgDone)
                 {
                     gBattleStruct->trainerSlideLowHpMsgDone = TRUE;
-                    gBattleStruct->trainerSlideMsg = sTrainerSlides[i].msgLastLowHp;
+                    gBattleStruct->trainerSlideMsg = sTrainerSlides[difficulty]->msgLastLowHp;
                     return retValue;
                 }
                 break;
             case TRAINER_SLIDE_FIRST_DOWN:
-                if (sTrainerSlides[i].msgFirstDown != NULL && GetEnemyMonCount(firstId, lastId, TRUE) == GetEnemyMonCount(firstId, lastId, FALSE) - 1)
+                if (sTrainerSlides[difficulty]->msgFirstDown != NULL && GetEnemyMonCount(firstId, lastId, TRUE) == GetEnemyMonCount(firstId, lastId, FALSE) - 1)
                 {
-                    gBattleStruct->trainerSlideMsg = sTrainerSlides[i].msgFirstDown;
+                    gBattleStruct->trainerSlideMsg = sTrainerSlides[difficulty]->msgFirstDown;
                     return retValue;
                 }
                 break;
             case TRAINER_SLIDE_LAST_HALF_HP:
-                if (sTrainerSlides[i].msgLastHalfHp != NULL
+                if (sTrainerSlides[difficulty]->msgLastHalfHp != NULL
                  && GetEnemyMonCount(firstId, lastId, TRUE) == GetEnemyMonCount(firstId, lastId, FALSE) - 1
                  && BattlerHPPercentage(battler, LESS_THAN_OR_EQUAL, 2) && BattlerHPPercentage(battler, GREATER_THAN, 4)
                  && !gBattleStruct->trainerSlideHalfHpMsgDone)
                 {
                     gBattleStruct->trainerSlideHalfHpMsgDone = TRUE;
-                    gBattleStruct->trainerSlideMsg = sTrainerSlides[i].msgLastHalfHp;
+                    gBattleStruct->trainerSlideMsg = sTrainerSlides[difficulty]->msgLastHalfHp;
                     return TRUE;
                 }
                 break;
             case TRAINER_SLIDE_FIRST_CRITICAL_HIT:
-                if (sTrainerSlides[i].msgFirstCriticalHit != NULL && gBattleStruct->trainerSlideFirstCriticalHitMsgState == 1)
+                if (sTrainerSlides[difficulty]->msgFirstCriticalHit != NULL && gBattleStruct->trainerSlideFirstCriticalHitMsgState == 1)
                 {
                     gBattleStruct->trainerSlideFirstCriticalHitMsgState = 2;
-                    gBattleStruct->trainerSlideMsg = sTrainerSlides[i].msgFirstCriticalHit;
+                    gBattleStruct->trainerSlideMsg = sTrainerSlides[difficulty]->msgFirstCriticalHit;
                     return TRUE;
                 }
                 break;
             case TRAINER_SLIDE_FIRST_SUPER_EFFECTIVE_HIT:
-                if (sTrainerSlides[i].msgFirstSuperEffectiveHit != NULL
+                if (sTrainerSlides[difficulty]->msgFirstSuperEffectiveHit != NULL
                     && gBattleStruct->trainerSlideFirstSuperEffectiveHitMsgState == 1
                     && gBattleMons[battler].hp)
                 {
                     gBattleStruct->trainerSlideFirstSuperEffectiveHitMsgState = 2;
-                    gBattleStruct->trainerSlideMsg = sTrainerSlides[i].msgFirstSuperEffectiveHit;
+                    gBattleStruct->trainerSlideMsg = sTrainerSlides[difficulty]->msgFirstSuperEffectiveHit;
                     return TRUE;
                 }
                 break;
             case TRAINER_SLIDE_FIRST_STAB_MOVE:
-                if (sTrainerSlides[i].msgFirstSTABMove != NULL
+                if (sTrainerSlides[difficulty]->msgFirstSTABMove != NULL
                  && gBattleStruct->trainerSlideFirstSTABMoveMsgState == 1
                  && GetEnemyMonCount(firstId, lastId, TRUE) == GetEnemyMonCount(firstId, lastId, FALSE))
                 {
                     gBattleStruct->trainerSlideFirstSTABMoveMsgState = 2;
-                    gBattleStruct->trainerSlideMsg = sTrainerSlides[i].msgFirstSTABMove;
+                    gBattleStruct->trainerSlideMsg = sTrainerSlides[difficulty]->msgFirstSTABMove;
                     return TRUE;
                 }
                 break;
             case TRAINER_SLIDE_PLAYER_MON_UNAFFECTED:
-                if (sTrainerSlides[i].msgPlayerMonUnaffected != NULL
+                if (sTrainerSlides[difficulty]->msgPlayerMonUnaffected != NULL
                  && gBattleStruct->trainerSlidePlayerMonUnaffectedMsgState == 1
                  && GetEnemyMonCount(firstId, lastId, TRUE) == GetEnemyMonCount(firstId, lastId, FALSE))
                 {
                     gBattleStruct->trainerSlidePlayerMonUnaffectedMsgState = 2;
-                    gBattleStruct->trainerSlideMsg = sTrainerSlides[i].msgPlayerMonUnaffected;
+                    gBattleStruct->trainerSlideMsg = sTrainerSlides[difficulty]->msgPlayerMonUnaffected;
                     return TRUE;
                 }
                 break;
             case TRAINER_SLIDE_MEGA_EVOLUTION:
-                if (sTrainerSlides[i].msgMegaEvolution != NULL && !gBattleStruct->trainerSlideMegaEvolutionMsgDone)
+                if (sTrainerSlides[difficulty]->msgMegaEvolution != NULL && !gBattleStruct->trainerSlideMegaEvolutionMsgDone)
                 {
                     gBattleStruct->trainerSlideMegaEvolutionMsgDone = TRUE;
-                    gBattleStruct->trainerSlideMsg = sTrainerSlides[i].msgMegaEvolution;
+                    gBattleStruct->trainerSlideMsg = sTrainerSlides[difficulty]->msgMegaEvolution;
                     return TRUE;
                 }
                 break;
             case TRAINER_SLIDE_Z_MOVE:
-                if (sTrainerSlides[i].msgZMove != NULL && !gBattleStruct->trainerSlideZMoveMsgDone)
+                if (sTrainerSlides[difficulty]->msgZMove != NULL && !gBattleStruct->trainerSlideZMoveMsgDone)
                 {
                     gBattleStruct->trainerSlideZMoveMsgDone = TRUE;
-                    gBattleStruct->trainerSlideMsg = sTrainerSlides[i].msgZMove;
+                    gBattleStruct->trainerSlideMsg = sTrainerSlides[difficulty]->msgZMove;
                     return TRUE;
                 }
                 break;
             case TRAINER_SLIDE_BEFORE_FIRST_TURN:
-                if (sTrainerSlides[i].msgBeforeFirstTurn != NULL && !gBattleStruct->trainerSlideBeforeFirstTurnMsgDone)
+                if (sTrainerSlides[difficulty]->msgBeforeFirstTurn != NULL && !gBattleStruct->trainerSlideBeforeFirstTurnMsgDone)
                 {
                     gBattleStruct->trainerSlideBeforeFirstTurnMsgDone = TRUE;
-                    gBattleStruct->trainerSlideMsg = sTrainerSlides[i].msgBeforeFirstTurn;
+                    gBattleStruct->trainerSlideMsg = sTrainerSlides[difficulty]->msgBeforeFirstTurn;
                     return TRUE;
                 }
                 break;
             case TRAINER_SLIDE_DYNAMAX:
-                if (sTrainerSlides[i].msgDynamax != NULL && !gBattleStruct->trainerSlideDynamaxMsgDone)
+                if (sTrainerSlides[difficulty]->msgDynamax != NULL && !gBattleStruct->trainerSlideDynamaxMsgDone)
                 {
                     gBattleStruct->trainerSlideDynamaxMsgDone = TRUE;
-                    gBattleStruct->trainerSlideMsg = sTrainerSlides[i].msgDynamax;
+                    gBattleStruct->trainerSlideMsg = sTrainerSlides[difficulty]->msgDynamax;
                     return TRUE;
                 }
                 break;

@@ -1033,21 +1033,21 @@ JaydenWoodsStartBattle::
 # 526 "data/maps/PetalburgWoods/scripts.pory"
 	giveitem ITEM_POKEVIAL, 1
 # 527 "data/maps/PetalburgWoods/scripts.pory"
-	pokevial VIAL_UP, VIAL_SIZE, 3
-# 528 "data/maps/PetalburgWoods/scripts.pory"
 	msgbox PokevialText
-# 529 "data/maps/PetalburgWoods/scripts.pory"
+# 528 "data/maps/PetalburgWoods/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+# 529 "data/maps/PetalburgWoods/scripts.pory"
+	waitmovement 0
 # 530 "data/maps/PetalburgWoods/scripts.pory"
-	waitmovement 0
-# 531 "data/maps/PetalburgWoods/scripts.pory"
 	applymovement 14, JaydenLeave
-# 532 "data/maps/PetalburgWoods/scripts.pory"
+# 531 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
-# 533 "data/maps/PetalburgWoods/scripts.pory"
+# 532 "data/maps/PetalburgWoods/scripts.pory"
 	setflag FLAG_JAYDEN_PETALBURG_WOODS
-# 534 "data/maps/PetalburgWoods/scripts.pory"
+# 533 "data/maps/PetalburgWoods/scripts.pory"
 	removeobject 14
+# 534 "data/maps/PetalburgWoods/scripts.pory"
+	pokevial VIAL_UP, VIAL_SIZE, 3
 # 535 "data/maps/PetalburgWoods/scripts.pory"
 	release
 	end

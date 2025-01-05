@@ -1078,7 +1078,20 @@ script StarterRegion {
             setvar(VAR_STARTER_GEN, 9)         
     }
     msgbox(GoodChoice)
-    waitmessage
+    dynmultichoice(0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, "Weenie Hut Jr", "Easy", "Normal", "Hard", "Insane")
+    switch(var(VAR_RESULT)){
+        case 0:
+            setdifficulty(DIFFICULTY_WEENIE_HUT_JR)
+        case 1:
+            setdifficulty(DIFFICULTY_EASY)
+        case 2: 
+            setdifficulty(DIFFICULTY_NORMAL)
+        case 3:
+            setdifficulty(DIFFICULTY_HARD)
+        case 4:
+            setdifficulty(DIFFICULTY_INSANE)       
+    }
+	msgbox(AlrightThx)
     applymovement(9, ScientistLeave)
     waitmovement(0)
     setflag(FLAG_SCIENTIST)
@@ -1091,8 +1104,15 @@ text WaitUp {
 	"Hey! Wait up {PLAYER}!"
 }
 
+text AlrightThx {
+	"Alright then, thank you {PLAYER}!"
+}
+
 text GoodChoice {
-    "Good choice! Okay, thank you {PLAYER}."
+    "Good choice! Now I have one more\n"
+	"question real quick.\p"
+	"What difficulty would you like to play\n"
+	"on for this game?"
 }
 
 text WhatStarter {

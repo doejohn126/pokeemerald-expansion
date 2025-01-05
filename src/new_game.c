@@ -48,6 +48,7 @@
 #include "constants/items.h"
 #include "tx_randomizer_and_challenges.h"
 #include "tx_registered_items_menu.h"
+#include "difficulty.h"
 
 extern const u8 EventScript_ResetAllMapFlags[];
 
@@ -214,6 +215,7 @@ void NewGameInitData(void)
     memset(&gSaveBlock2Ptr->follower, 0, sizeof(gSaveBlock2Ptr->follower));
     //memset(&gSaveBlock2Ptr->itemFlags, 0, sizeof(gSaveBlock2Ptr->itemFlags));
     gSaveBlock3Ptr->followerIndex = OW_FOLLOWER_NOT_SET;
+    SetCurrentDifficultyLevel(DIFFICULTY_NORMAL);
     ResetItemFlags();
     ResetDexNav();
 }

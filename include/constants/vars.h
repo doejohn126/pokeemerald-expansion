@@ -126,7 +126,7 @@
 #define VAR_JAYDEN_EVERGRANDE                            0x406A 
 #define VAR_DEXNAV_MON                                   0x406B 
 #define VAR_DEXNAV_STEP                                  0x406C
-#define VAR_ROUTE114_STATE                               0x406D // Unused Var
+#define VAR_DIFFICULTY                                   0x406D 
 #define VAR_ROUTE115_STATE                               0x406E // Unused Var
 #define VAR_ROUTE116_STATE                               0x406F
 #define VAR_ROUTE117_STATE                               0x4070 // Unused Var

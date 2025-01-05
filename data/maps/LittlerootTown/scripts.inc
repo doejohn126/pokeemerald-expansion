@@ -2128,16 +2128,31 @@ StarterRegion_1:
 # 1080 "data/maps/LittlerootTown/scripts.pory"
 	msgbox GoodChoice
 # 1081 "data/maps/LittlerootTown/scripts.pory"
-	waitmessage
+	dynmultichoice 0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, StarterRegion_Text_9, StarterRegion_Text_10, StarterRegion_Text_11, StarterRegion_Text_12, StarterRegion_Text_13
 # 1082 "data/maps/LittlerootTown/scripts.pory"
-	applymovement 9, ScientistLeave
+	switch VAR_RESULT
 # 1083 "data/maps/LittlerootTown/scripts.pory"
-	waitmovement 0
-# 1084 "data/maps/LittlerootTown/scripts.pory"
-	setflag FLAG_SCIENTIST
+	case 0, StarterRegion_14
 # 1085 "data/maps/LittlerootTown/scripts.pory"
+	case 1, StarterRegion_15
+# 1087 "data/maps/LittlerootTown/scripts.pory"
+	case 2, StarterRegion_16
+# 1089 "data/maps/LittlerootTown/scripts.pory"
+	case 3, StarterRegion_17
+# 1091 "data/maps/LittlerootTown/scripts.pory"
+	case 4, StarterRegion_18
+StarterRegion_12:
+# 1094 "data/maps/LittlerootTown/scripts.pory"
+	msgbox AlrightThx
+# 1095 "data/maps/LittlerootTown/scripts.pory"
+	applymovement 9, ScientistLeave
+# 1096 "data/maps/LittlerootTown/scripts.pory"
+	waitmovement 0
+# 1097 "data/maps/LittlerootTown/scripts.pory"
+	setflag FLAG_SCIENTIST
+# 1098 "data/maps/LittlerootTown/scripts.pory"
 	removeobject 9
-# 1086 "data/maps/LittlerootTown/scripts.pory"
+# 1099 "data/maps/LittlerootTown/scripts.pory"
 	releaseall
 	end
 
@@ -2186,66 +2201,91 @@ StarterRegion_11:
 	setvar VAR_STARTER_GEN, 9
 	goto StarterRegion_1
 
+StarterRegion_14:
+# 1084 "data/maps/LittlerootTown/scripts.pory"
+	setdifficulty DIFFICULTY_WEENIE_HUT_JR
+	goto StarterRegion_12
 
-# 1105 "data/maps/LittlerootTown/scripts.pory"
+StarterRegion_15:
+# 1086 "data/maps/LittlerootTown/scripts.pory"
+	setdifficulty DIFFICULTY_EASY
+	goto StarterRegion_12
+
+StarterRegion_16:
+# 1088 "data/maps/LittlerootTown/scripts.pory"
+	setdifficulty DIFFICULTY_NORMAL
+	goto StarterRegion_12
+
+StarterRegion_17:
+# 1090 "data/maps/LittlerootTown/scripts.pory"
+	setdifficulty DIFFICULTY_HARD
+	goto StarterRegion_12
+
+StarterRegion_18:
+# 1092 "data/maps/LittlerootTown/scripts.pory"
+	setdifficulty DIFFICULTY_INSANE
+	goto StarterRegion_12
+
+
+# 1125 "data/maps/LittlerootTown/scripts.pory"
 ScientistLeave:
-# 1106 "data/maps/LittlerootTown/scripts.pory"
+# 1126 "data/maps/LittlerootTown/scripts.pory"
 	walk_down
-# 1106 "data/maps/LittlerootTown/scripts.pory"
+# 1126 "data/maps/LittlerootTown/scripts.pory"
 	walk_down
-# 1106 "data/maps/LittlerootTown/scripts.pory"
+# 1126 "data/maps/LittlerootTown/scripts.pory"
 	walk_down
-# 1106 "data/maps/LittlerootTown/scripts.pory"
+# 1126 "data/maps/LittlerootTown/scripts.pory"
 	walk_down
-# 1106 "data/maps/LittlerootTown/scripts.pory"
+# 1126 "data/maps/LittlerootTown/scripts.pory"
 	walk_down
-# 1106 "data/maps/LittlerootTown/scripts.pory"
+# 1126 "data/maps/LittlerootTown/scripts.pory"
 	walk_down
-# 1106 "data/maps/LittlerootTown/scripts.pory"
+# 1126 "data/maps/LittlerootTown/scripts.pory"
 	walk_down
 	step_end
 
-# 1109 "data/maps/LittlerootTown/scripts.pory"
+# 1129 "data/maps/LittlerootTown/scripts.pory"
 FaceScientist:
-# 1110 "data/maps/LittlerootTown/scripts.pory"
+# 1130 "data/maps/LittlerootTown/scripts.pory"
 	face_right
 	step_end
 
-# 1113 "data/maps/LittlerootTown/scripts.pory"
+# 1133 "data/maps/LittlerootTown/scripts.pory"
 ScientistWalk2:
-# 1114 "data/maps/LittlerootTown/scripts.pory"
+# 1134 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1114 "data/maps/LittlerootTown/scripts.pory"
+# 1134 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1114 "data/maps/LittlerootTown/scripts.pory"
+# 1134 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1114 "data/maps/LittlerootTown/scripts.pory"
+# 1134 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1114 "data/maps/LittlerootTown/scripts.pory"
+# 1134 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1114 "data/maps/LittlerootTown/scripts.pory"
+# 1134 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1115 "data/maps/LittlerootTown/scripts.pory"
+# 1135 "data/maps/LittlerootTown/scripts.pory"
 	face_left
 	step_end
 
-# 1118 "data/maps/LittlerootTown/scripts.pory"
+# 1138 "data/maps/LittlerootTown/scripts.pory"
 ScientistWalk1:
-# 1119 "data/maps/LittlerootTown/scripts.pory"
+# 1139 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1119 "data/maps/LittlerootTown/scripts.pory"
+# 1139 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1119 "data/maps/LittlerootTown/scripts.pory"
+# 1139 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1119 "data/maps/LittlerootTown/scripts.pory"
+# 1139 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
-# 1119 "data/maps/LittlerootTown/scripts.pory"
+# 1139 "data/maps/LittlerootTown/scripts.pory"
 	walk_up
 	step_end
 
-# 1122 "data/maps/LittlerootTown/scripts.pory"
+# 1142 "data/maps/LittlerootTown/scripts.pory"
 PlayerPeerDown:
-# 1123 "data/maps/LittlerootTown/scripts.pory"
+# 1143 "data/maps/LittlerootTown/scripts.pory"
 	face_down
 	step_end
 
@@ -2285,16 +2325,43 @@ StarterRegion_Text_8:
 # 1059 "data/maps/LittlerootTown/scripts.pory"
 	.string "Paldea$"
 
+StarterRegion_Text_9:
+# 1081 "data/maps/LittlerootTown/scripts.pory"
+	.string "Weenie Hut Jr$"
+
+StarterRegion_Text_10:
+# 1081 "data/maps/LittlerootTown/scripts.pory"
+	.string "Easy$"
+
+StarterRegion_Text_11:
+# 1081 "data/maps/LittlerootTown/scripts.pory"
+	.string "Normal$"
+
+StarterRegion_Text_12:
+# 1081 "data/maps/LittlerootTown/scripts.pory"
+	.string "Hard$"
+
+StarterRegion_Text_13:
+# 1081 "data/maps/LittlerootTown/scripts.pory"
+	.string "Insane$"
+
 WaitUp::
-# 1090 "data/maps/LittlerootTown/scripts.pory"
+# 1103 "data/maps/LittlerootTown/scripts.pory"
 	.string "Hey! Wait up {PLAYER}!$"
 
+AlrightThx::
+# 1107 "data/maps/LittlerootTown/scripts.pory"
+	.string "Alright then, Thank you {PLAYER}!$"
+
 GoodChoice::
-# 1094 "data/maps/LittlerootTown/scripts.pory"
-	.string "Good choice! Okay, thank you {PLAYER}.$"
+# 1111 "data/maps/LittlerootTown/scripts.pory"
+	.string "Good choice! Now I have one more\n"
+	.string "question real quick.\p"
+	.string "What difficulty would you like to play\n"
+	.string "on for this game?$"
 
 WhatStarter::
-# 1098 "data/maps/LittlerootTown/scripts.pory"
+# 1118 "data/maps/LittlerootTown/scripts.pory"
 	.string "Hey there! I'm the Professor's aid. He\n"
 	.string "told me to ask you what region you\l"
 	.string "wanted your starter to be from.\p"

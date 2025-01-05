@@ -31,11 +31,11 @@
 #include "item_icon.h"
 #include "item_use.h"
 #include "test_runner.h"
+#include "tx_randomizer_and_challenges.h"
 #include "constants/battle_anim.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
 #include "constants/items.h"
-#include "tx_randomizer_and_challenges.h"
 #include "caps.h"
 
 

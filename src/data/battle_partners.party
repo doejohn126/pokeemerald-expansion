@@ -4,6 +4,7 @@ Class: Pkmn Trainer 1
 Pic: Brendan
 Gender: Male
 Music: Male
+Difficulty: Normal
 
 === PARTNER_STEVEN ===
 Name: Steven
@@ -11,6 +12,7 @@ Class: Rival
 Pic: Steven
 Gender: Male
 Music: Male
+Difficulty: Normal
 
 Skarmory
 Impish Nature
@@ -48,6 +50,7 @@ Class: Rival
 Pic: Dawn
 Gender: Female
 Music: Female
+Difficulty: Normal
 
 Clefable (F)
 Level: 84
@@ -83,6 +86,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Items: Hyper Potion / Hyper Potion
+Difficulty: Normal
 
 
 Swellow (F)
@@ -117,6 +121,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Items: Hyper Potion / Hyper Potion
+Difficulty: Normal
 
 
 Swellow (F)
@@ -151,6 +156,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Items: Hyper Potion / Hyper Potion
+Difficulty: Normal
 
 
 Swellow (F)
@@ -185,6 +191,7 @@ Pic: May
 Gender: Female
 Music: Female
 Items: Hyper Potion / Hyper Potion
+Difficulty: Normal
 
 
 Swellow (F)
@@ -220,6 +227,7 @@ Pic: May
 Gender: Female
 Music: Female
 Items: Hyper Potion / Hyper Potion
+Difficulty: Normal
 
 
 Swellow (F)
@@ -254,6 +262,7 @@ Pic: May
 Gender: Male
 Music: Male
 Items: Hyper Potion / Hyper Potion
+Difficulty: Normal
 
 
 Swellow (F)
@@ -288,6 +297,7 @@ Pic: Ruby Sapphire Brendan
 Gender: Male
 Music: Male
 Items: Max Potion / Hyper Potion
+Difficulty: Normal
 
 Jolteon (F)
 Level: 73

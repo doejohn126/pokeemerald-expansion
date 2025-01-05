@@ -12056,6 +12056,21 @@ Treecko (F)
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_BRENDAN_ROUTE_103_MUDKIP ===
+Name: Brendan
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+Mugshot: Blue
+Difficulty: Insane
+
+Treecko (F)
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_BRENDAN_ROUTE_110_MUDKIP ===
 Name: Brendan
 Class: Rival
@@ -12186,6 +12201,21 @@ Mugshot: Blue
 
 Torchic (F)
 Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_BRENDAN_ROUTE_103_TREECKO ===
+Name: Brendan
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Force Setup First Turn
+Mugshot: Blue
+Difficulty: Insane
+
+Torchic (F)
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRENDAN_ROUTE_110_TREECKO ===
@@ -12320,6 +12350,21 @@ Mudkip (F)
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_BRENDAN_ROUTE_103_TORCHIC ===
+Name: Brendan
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+Mugshot: Blue
+Difficulty: Insane
+
+Mudkip (F)
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_BRENDAN_ROUTE_110_TORCHIC ===
 Name: Brendan
 Class: Rival
@@ -12450,6 +12495,21 @@ Mugshot: Pink
 
 Treecko (M)
 Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_MAY_ROUTE_103_MUDKIP ===
+Name: May
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Basic Trainer
+Mugshot: Pink
+Difficulty: Insane
+
+Treecko (M)
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MAY_ROUTE_110_MUDKIP ===
@@ -12584,6 +12644,21 @@ Torchic (M)
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_MAY_ROUTE_103_TREECKO ===
+Name: May
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Basic Trainer
+Mugshot: Pink
+Difficulty: Insane
+
+Torchic (M)
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_MAY_ROUTE_110_TREECKO ===
 Name: May
 Class: Rival
@@ -12713,6 +12788,21 @@ Mugshot: Pink
 
 Mudkip (M)
 Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_MAY_ROUTE_103_TORCHIC ===
+Name: May
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Basic Trainer
+Mugshot: Pink
+Difficulty: Insane
+
+Mudkip (M)
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MAY_ROUTE_110_TORCHIC ===

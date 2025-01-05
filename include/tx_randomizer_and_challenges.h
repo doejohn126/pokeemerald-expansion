@@ -1,5 +1,5 @@
-#ifndef GUARD_DIFFICULTY_H
-#define GUARD_DIFFICULTY_H
+#ifndef GUARD_RANDOMIZER_H
+#define GUARD_RANDOMIZER_H
 //tx_randomizer_and_challenges
 
 // default options set by the dev
@@ -73,7 +73,7 @@ u8 NuzlockeFlagClear(u16 mapsec);
 void NuzlockeDeletePartyMon(u8 position);
 void NuzlockeDeleteFaintedPartyPokemon(void);
 u8 GetMaxPartySize(void);
-u8 GetCurrentPartyLevelCap(void);
+u16 GetCurrentPartyLevelCap(void);
 u8 GetCurrentTrainerIVs(void);
 u8 GetCurrentTrainerEVs(void);
 
@@ -90,4 +90,4 @@ extern struct tx_challenges_OptionsMenu *sChallengesOptions;
 
 #define TX_NUZLOCKE_CEMETERY_ICON_GRAY TRUE
 
-#endif // GUARD_DIFFICULTY_H
+#endif // GUARD_RANDOMIZER_H

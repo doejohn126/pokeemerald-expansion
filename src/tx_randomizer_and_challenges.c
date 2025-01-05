@@ -333,7 +333,7 @@ static const u8 sLevelCapTable_Hard[] =
     [LEVEL_CAP_BADGE_8]     = 86,
 };
 #define TX_CHALLENGE_LEVEL_CAP_DEBUG 0
-u8 GetCurrentPartyLevelCap(void)
+u16 GetCurrentPartyLevelCap(void)
 {
     u8 badgeCount = GetCurrentBadgeCount();
 
