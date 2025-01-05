@@ -1039,7 +1039,7 @@ JaydenWoodsStartBattle::
 # 529 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
 # 530 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement 14, JaydenLeave
+	applymovement 14, JaydenLeaveForFirstTime
 # 531 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
 # 532 "data/maps/PetalburgWoods/scripts.pory"
@@ -1054,7 +1054,7 @@ JaydenWoodsStartBattle::
 
 
 # 568 "data/maps/PetalburgWoods/scripts.pory"
-JaydenLeave:
+JaydenLeaveForFirstTime:
 # 569 "data/maps/PetalburgWoods/scripts.pory"
 	walk_up
 # 569 "data/maps/PetalburgWoods/scripts.pory"

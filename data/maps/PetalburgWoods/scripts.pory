@@ -527,7 +527,7 @@ script JaydenWoodsStartBattle {
     msgbox(PokevialText)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
     waitmovement(0)
-    applymovement(14, JaydenLeave)
+    applymovement(14, JaydenLeaveForFirstTime)
     waitmovement(0)
     setflag(FLAG_JAYDEN_PETALBURG_WOODS)
     removeobject(14)
@@ -565,7 +565,7 @@ text JaydenBattle1Lose {
     "Oh wow, well that didn't end well for me."
 }
 
-movement JaydenLeave {
+movement JaydenLeaveForFirstTime {
     walk_up * 8
 }
 

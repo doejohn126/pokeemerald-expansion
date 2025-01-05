@@ -15751,7 +15751,7 @@ F_TRAINER_FEMALE |
 #line 6310
                 MOVE_LEER,
                 MOVE_PAYBACK,
-                MOVE_SCARY_FACE,
+                MOVE_BULLDOZE,
                 MOVE_ROCK_TOMB,
             },
             },
