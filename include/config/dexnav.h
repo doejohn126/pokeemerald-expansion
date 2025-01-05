@@ -27,7 +27,7 @@
 //// SEARCH PROBABILITIES
 // See https://bulbapedia.bulbagarden.net/wiki/DexNav#Benefits
 // Chance of encountering egg move at search levels
-#define SEARCHLEVEL0_MOVECHANCE         0
+#define SEARCHLEVEL0_MOVECHANCE         1
 #define SEARCHLEVEL5_MOVECHANCE         21
 #define SEARCHLEVEL10_MOVECHANCE        46
 #define SEARCHLEVEL25_MOVECHANCE        58
@@ -48,7 +48,7 @@
 #define SEARCHLEVEL50_ITEM              6
 #define SEARCHLEVEL100_ITEM             12
 // Chance of encountering one star potential
-#define SEARCHLEVEL0_ONESTAR            0
+#define SEARCHLEVEL0_ONESTAR            1
 #define SEARCHLEVEL5_ONESTAR            14
 #define SEARCHLEVEL10_ONESTAR           17
 #define SEARCHLEVEL25_ONESTAR           17
