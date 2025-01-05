@@ -7724,6 +7724,38 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
+AI: Check Bad Move
+Difficulty: Weenie Hut Jr
+
+Poochyena
+Level: 5
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+
+=== TRAINER_CALVIN_1 ===
+Name: Calvin
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+Difficulty: Easy
+
+Starly
+Level: 4
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+
+Poochyena
+Level: 4
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+
+=== TRAINER_CALVIN_1 ===
+Name: Calvin
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
 AI: Basic Trainer
 
 Starly
@@ -7733,6 +7765,60 @@ IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 Poochyena
 Level: 5
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+
+=== TRAINER_CALVIN_1 ===
+Name: Calvin
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Hard
+
+Starly
+Level: 6
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+
+Poochyena
+Level: 6
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+
+=== TRAINER_CALVIN_1 ===
+Name: Calvin
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Insane
+
+Zigzagoon
+Level: 6
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+- Charm
+- Tickle
+- Extreme Speed
+- Simple Beam
+
+Poochyena
+Level: 6
+Ability: Rattled
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+- Covet 
+- Poison Fang
+- Howl
+- Tackle
+
+Starly
+Level: 6
+Ability: Reckless
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+- Feather Dance
+- Quick Attack
+- Double Edge
+- Sand Attack
 
 === TRAINER_BILLY ===
 Name: Billy
@@ -8060,6 +8146,42 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
+AI: Check Bad Move
+Difficulty: Weenie Hut Jr
+
+Bunnelby
+Level: 4
+IVs: 0 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Taillow
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 5 SpD / 0 Spe
+
+=== TRAINER_ALLEN ===
+Name: Allen
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Easy
+
+Bunnelby
+Level: 4
+IVs: 0 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Taillow
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 5 SpD / 0 Spe
+
+=== TRAINER_ALLEN ===
+Name: Allen
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
 AI: Basic Trainer
 
 Lechonk
@@ -8073,6 +8195,71 @@ IVs: 0 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Taillow
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 5 SpD / 0 Spe
+
+=== TRAINER_ALLEN ===
+Name: Allen
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Hard
+
+Lechonk
+Level: 6
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bunnelby
+Level: 6
+IVs: 0 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Taillow
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 5 SpD / 0 Spe
+
+=== TRAINER_ALLEN ===
+Name: Allen
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Insane
+
+Lechonk
+Level: 7
+Ability: Thick Fat
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Disarming Voice
+- Stockpile
+- Spit Up
+- Swallow
+
+Bunnelby
+Level: 7
+Ability: Huge Power
+IVs: 0 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rollout
+- Tackle
+- Leer
+- Laser Focus
+
+Taillow
+Level: 7
+Ability: Guts
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 5 SpD / 0 Spe
+- Boomburst
+
+Patrat
+Level: 7
+Ability: Analytic
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 5 SpD / 0 Spe
+- Assurance
+- Iron Tail
+- Bullet Seed
+- Revenge
 
 === TRAINER_TIMMY ===
 Name: Timmy
@@ -14571,15 +14758,108 @@ Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
+AI: Check Bad Move
+Difficulty: Weenie Hut Jr
+
+Zigzagoon
+Level: 4
+IVs: 0 HP / 0 Atk / 5 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bounsweet
+Level: 4
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_TIANA ===
+Name: Tiana
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+Difficulty: Easy
+
+Zigzagoon
+Level: 5
+IVs: 0 HP / 0 Atk / 5 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bounsweet
+Level: 5
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_TIANA ===
+Name: Tiana
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
 AI: Basic Trainer
 
 Zigzagoon
 Level: 6
 IVs: 0 HP / 0 Atk / 5 Def / 0 SpA / 0 SpD / 0 Spe
 
-Bounsweet
+Bellsprout
 Level: 6
 IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_TIANA ===
+Name: Tiana
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Hard
+
+Zigzagoon
+Level: 6
+IVs: 0 HP / 0 Atk / 5 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cleffa
+Level: 6
+IVs: 0 HP / 0 Atk / 5 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bellsprout
+Level: 7
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_TIANA ===
+Name: Tiana
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Insane
+
+Zigzagoon Galar
+Level: 8
+IVs: 0 HP / 0 Atk / 5 Def / 0 SpA / 0 SpD / 0 Spe
+- Lick
+- Extreme Speed
+- Tickle
+- Simple Beam
+
+Clefairy
+Level: 8
+Ability: Magic Guard
+IVs: 0 HP / 0 Atk / 5 Def / 0 SpA / 0 SpD / 0 Spe
+- Copycat
+- Charm
+- Dazzling Gleam
+- Thunder Wave
+
+Bellsprout
+Level: 8
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Strength Sap
+- Ingrain
+- Vine Whip
+- Venoshock
 
 === TRAINER_HALEY_1 ===
 Name: Haley
@@ -14803,6 +15083,24 @@ Pic: Bug Catcher
 Gender: Male
 Music: Male
 Double Battle: No
+AI: Check Bad Move
+Difficulty: Weenie Hut Jr
+
+Wurmple
+Level: 4
+IVs: 10 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Kricketot
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 10 Spe
+
+=== TRAINER_RICK ===
+Name: Rick
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Double Battle: No
 AI: Basic Trainer
 
 Wurmple
@@ -14812,6 +15110,65 @@ IVs: 10 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Kricketot
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 10 Spe
+
+=== TRAINER_RICK ===
+Name: Rick
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Hard
+
+Wurmple
+Level: 6
+IVs: 10 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Kricketot
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 10 Spe
+
+Scatterbug
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 10 Spe
+
+=== TRAINER_RICK ===
+Name: Rick
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Insane
+
+Wurmple
+Level: 6
+IVs: 10 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Kricketot
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 10 Spe
+- Lunge
+- Growl
+- Tackle
+
+Metapod
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 10 Spe
+- Iron Defense
+- Electroweb
+- Tackle
+- String Shot
+
+Nymble
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 10 Spe
+- Counter
+- Skitter Smack
+- Astonish
+- Leer
 
 === TRAINER_LYLE ===
 Name: Lyle
