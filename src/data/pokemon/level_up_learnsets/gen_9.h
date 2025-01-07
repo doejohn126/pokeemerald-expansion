@@ -2987,6 +2987,7 @@ static const struct LevelUpMove sTyrogueLevelUpLearnset[] = {
 
 static const struct LevelUpMove sHitmonleeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_BRICK_BREAK),
+    LEVEL_UP_MOVE( 0, MOVE_ROLLING_KICK),
     LEVEL_UP_MOVE( 1, MOVE_FAKE_OUT),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
@@ -3034,6 +3035,7 @@ static const struct LevelUpMove sHitmonchanLevelUpLearnset[] = {
 static const struct LevelUpMove sHitmontopLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_TRIPLE_KICK),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_ROLLING_KICK),
     LEVEL_UP_MOVE( 1, MOVE_FEINT),
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
@@ -6656,6 +6658,7 @@ static const struct LevelUpMove sWyrdeerLevelUpLearnset[] = {
 #if P_FAMILY_SMEARGLE
 static const struct LevelUpMove sSmeargleLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SKETCH),
+    LEVEL_UP_MOVE(1, MOVE_DOODLE),
     LEVEL_UP_MOVE(11, MOVE_SKETCH),
     LEVEL_UP_MOVE(21, MOVE_SKETCH),
     LEVEL_UP_MOVE(31, MOVE_SKETCH),

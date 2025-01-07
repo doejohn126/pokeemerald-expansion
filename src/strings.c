@@ -1317,5 +1317,5 @@ const u8 gText_NuzlockeCantThrowPokeBallSpeciesClause[]     = _("You have alread
 const u8 gText_NuzlockeCantThrowPokeBallAlreadyCaught[]     = _("You have already caught this Pokémon!{PAUSE_UNTIL_PRESS}");
 const u8 gText_OneTypeChallengeCantThrowPokeBall[]          = _("One Type Challenge active, capture\nblocked!{PAUSE_UNTIL_PRESS}");
 const u8 gText_BattleRules_NoItems_Player[]                 = _("Competitive rules!\nNo items in battle!{PAUSE_UNTIL_PRESS}");
-const u8 gText_Relearn[] = _("{START_BUTTON} RELEARN"); // future note: don't decap this, because it mimics the summary screen BG graphics which will not get decapped
-const u8 gText_Rename[] = _("RENAME");
+const u8 gText_Relearn[] = _("{START_BUTTON} Relearn"); // future note: don't decap this, because it mimics the summary screen BG graphics which will not get decapped
+const u8 gText_Rename[] = _("Rename");
