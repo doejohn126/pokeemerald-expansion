@@ -1,5 +1,5 @@
 /*
-Trainers and their parties defined with Competetive Syntax.
+Trainers and their parties defined with Competitive Syntax.
 Compatible with Pokemon Showdown exports.
 https://github.com/smogon/pokemon-showdown/blob/master/sim/TEAMS.md
 
@@ -6298,6 +6298,7 @@ Mugshot: Gray
 
 Amaura (F)
 Level: 15
+Ability: Refrigerate
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Round
 - Growl
@@ -6310,6 +6311,158 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Leer
 - Payback
 - Bulldoze
+- Rock Tomb
+
+Anorith (F)
+Level: 16
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Fury Cutter
+- Defense Curl
+- Water Gun
+- Rock Tomb
+
+Nosepass (M) @ Oran Berry
+Level: 17
+Ability: Sturdy
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+EVs: 10 Atk / 10 Def
+Ball: Heavy Ball
+- Block
+- Harden
+- Spark
+- Rock Tomb
+
+=== TRAINER_ROXANNE_1 ===
+Name: Roxanne
+Class: Leader
+Pic: Leader Roxanne
+Gender: Female
+Music: Female
+Items: Potion / Potion
+Double Battle: No
+AI: Basic Trainer / Smart Mon Choices
+Mugshot: Gray
+Difficulty: Hard
+
+Roggenrola (F) @ Custap Berry
+Level: 15
+Ability: Sturdy
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Stealth Rock
+- Bulldoze
+- Harden
+- Rock Tomb
+
+Aron (F) @ Oran Berry
+Level: 15
+Ability: Sturdy
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Roar
+- Headbutt
+- Metal Claw
+- Rock Tomb
+
+Amaura (F) @ Chople Berry
+Level: 15
+Ability: Refrigerate
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Round
+- Growl
+- Ancient Power
+- Rock Tomb
+
+Larvitar (M) @ Passho Berry
+Level: 16
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Iron Defense
+- Bite
+- Bulldoze
+- Rock Tomb
+
+Anorith (F) @ Oran Berry
+Level: 16
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Fury Cutter
+- Defense Curl
+- Water Gun
+- Rock Tomb
+
+Nosepass (M) @ Berry Juice
+Level: 17
+Ability: Sturdy
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+EVs: 10 Atk / 10 Def
+Ball: Heavy Ball
+- Ice Punch
+- Sandstorm
+- Spark
+- Rock Tomb
+
+=== TRAINER_ROXANNE_1 ===
+Name: Roxanne
+Class: Leader
+Pic: Leader Roxanne
+Gender: Female
+Music: Female
+Items: Potion / Potion
+Double Battle: No
+AI: Basic Trainer / Smart Mon Choices
+Mugshot: Gray
+Difficulty: Weenie Hut Jr
+
+Roggenrola (F)
+Level: 15
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Harden
+- Mud Slap
+- Sand Attack
+- Rock Tomb
+
+Larvitar (M)
+Level: 15
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Leer
+- Payback
+- Scary Face
+- Rock Tomb
+
+Nosepass (M)
+Level: 17
+Ability: Sturdy
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+EVs: 10 Atk / 10 Def
+Ball: Heavy Ball
+- Block
+- Harden
+- Spark
+- Rock Tomb
+
+=== TRAINER_ROXANNE_1 ===
+Name: Roxanne
+Class: Leader
+Pic: Leader Roxanne
+Gender: Female
+Music: Female
+Items: Potion / Potion
+Double Battle: No
+AI: Basic Trainer / Smart Mon Choices
+Mugshot: Gray
+Difficulty: Easy
+
+Roggenrola (F)
+Level: 15
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Harden
+- Mud Slap
+- Sand Attack
+- Rock Tomb
+
+Larvitar (M)
+Level: 15
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Leer
+- Payback
+- Scary Face
 - Rock Tomb
 
 Anorith (F)
@@ -7827,6 +7980,42 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
+AI: Check Bad Move
+Difficulty: Weenie Hut Jr
+
+Bidoof
+Level: 6
+IVs: 0 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Seedot
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 5 SpD / 0 Spe
+
+=== TRAINER_BILLY ===
+Name: Billy
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+Difficulty: Easy
+
+Bidoof
+Level: 7
+IVs: 0 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Seedot
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 5 SpD / 0 Spe
+
+=== TRAINER_BILLY ===
+Name: Billy
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
 AI: Basic Trainer
 
 Bidoof
@@ -7840,6 +8029,65 @@ IVs: 0 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 5 Spe
 Seedot
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 5 SpD / 0 Spe
+
+=== TRAINER_BILLY ===
+Name: Billy
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Hard
+
+Bidoof
+Level: 8
+IVs: 0 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pikachu
+Level: 8
+IVs: 0 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 5 Spe
+
+Seedot
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 5 SpD / 0 Spe
+
+=== TRAINER_BILLY ===
+Name: Billy
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Insane
+
+Bidoof
+Level: 9
+Ability: Simple
+IVs: 0 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Defense Curl
+- Skull Bash
+- Rollout
+- Aqua Tail
+
+Pikachu
+Level: 9
+Ability: Static
+IVs: 0 HP / 5 Atk / 0 Def / 0 SpA / 0 SpD / 5 Spe
+- Sweet Kiss
+- Fake Out
+- Nasty Plot
+- Thunder Shock
+
+Seedot
+Level: 9
+Ability: Pickpocket
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 5 SpD / 0 Spe
+- Harden
+- Growth
+- Night Slash
+- Leech Seed
 
 === TRAINER_JOSH ===
 Name: Josh
@@ -17280,6 +17528,46 @@ Pic: Fisherman
 Gender: Male
 Music: Hiker
 Double Battle: No
+AI: Check Bad Move
+Difficulty: Weenie Hut Jr
+
+Magikarp
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 5 Spe
+
+Psyduck
+Level: 7
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DARIAN ===
+Name: Darian
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+Difficulty: Easy
+
+Magikarp
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 5 Spe
+
+Finneon
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 5 Spe
+
+Psyduck
+Level: 7
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DARIAN ===
+Name: Darian
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Double Battle: No
 AI: Basic Trainer
 
 Magikarp
@@ -17293,6 +17581,71 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 5 Spe
 Psyduck
 Level: 9
 IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DARIAN ===
+Name: Darian
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Hard
+
+Magikarp
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 5 Spe
+
+Finneon
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 5 Spe
+
+Psyduck
+Level: 9
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DARIAN ===
+Name: Darian
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Insane
+
+Magikarp
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 5 Spe
+- Bounce
+- Hydro Pump
+
+Finneon
+Level: 9
+Ability: Storm Drain
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 5 Spe
+- Aurora Beam
+- Confuse Ray
+- Aqua Tail
+- Agility
+
+Psyduck
+Level: 9
+Ability: Cloud Nine
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Psybeam
+- Water Pulse
+- Clear Smog
+- Hypnosis
+
+Piplup
+Level: 10
+Ability: Competitive
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 5 Spe
+- Roost
+- Chilling Water
+- Power Trip
+- Yawn
 
 === TRAINER_HAILEY ===
 Name: Hailey
