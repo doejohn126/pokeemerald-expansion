@@ -2425,6 +2425,9 @@ extern const u8 gText_BasePointsResetToZero[];
 extern const u8 gText_AM[];
 extern const u8 gText_PM[];
 
+extern const u8 gText_AshQty[];
+
+
 //Start Pokevial Branch
 extern const u8 gText_PokevialHasDoses[];
 extern const u8 gText_PokevialIsEmpty[];

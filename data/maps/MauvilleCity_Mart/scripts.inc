@@ -124,4 +124,6 @@ Mauville_ExtraSalesWoman::
 MauvilleSecondMart:
 # 68 "data/maps/MauvilleCity_Mart/scripts.pory"
 	.2byte ITEM_ABILITY_CAPSULE
+# 69 "data/maps/MauvilleCity_Mart/scripts.pory"
+	.2byte ITEM_THICK_CLUB
 	.2byte ITEM_NONE

@@ -66,4 +66,5 @@ script Mauville_ExtraSalesWoman {
 
 mart MauvilleSecondMart {
     ITEM_ABILITY_CAPSULE
+	ITEM_THICK_CLUB
 }
