@@ -11653,7 +11653,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SHAWN] =
     {
 #line 4687
-        .trainerName = _("SHAWN"),
+        .trainerName = _("Shawn"),
 #line 4688
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 4689
