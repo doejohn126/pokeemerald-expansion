@@ -1,1 +1,48 @@
-mapscripts GiratinasRoom_MapScripts {}
+raw `
+GiratinasRoom_MapScripts::
+	.byte 0
+
+`
+
+script GiratinaMain {
+    lockall
+    faceplayer
+    setflag(FLAG_GIRATINA)
+    playmoncry(SPECIES_GIRATINA, CRY_MODE_ENCOUNTER)
+    waitmoncry
+    setwildbattle(SPECIES_GIRATINA, 90)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+		goto(Won_or_Caught_Gira)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_WON){
+		goto(Won_or_Caught_Gira)
+	}
+	else{
+		goto(RanAway)
+	}
+}
+
+script Won_or_Caught_Gira {
+    fadescreen(FADE_TO_BLACK)
+    removeobject(1)
+    fadescreen(FADE_FROM_BLACK)
+    msgbox("Giratina has been sealed.")
+    releaseall
+    end
+}
+
+script RanAway {
+    playmoncry(SPECIES_GIRATINA, CRY_MODE_ENCOUNTER)
+    msgbox("Ayeuhhhh!!!")
+    delay(25)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(1)
+	fadescreen(FADE_FROM_BLACK)
+    msgbox("Giratina fled...")
+    releaseall
+    end
+}
