@@ -4410,6 +4410,16 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_GIRATINAS_ROOM",
+      "name": "GiratinasRoom_Layout",
+      "width": 30,
+      "height": 45,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_DistortionWorld",
+      "border_filepath": "data/layouts/GiratinasRoom/border.bin",
+      "blockdata_filepath": "data/layouts/GiratinasRoom/map.bin"
     }
   ]
 }

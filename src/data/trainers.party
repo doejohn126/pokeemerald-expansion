@@ -269,6 +269,47 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
+AI: Check Bad Move
+Difficulty: Weenie Hut Jr
+
+Binacle
+Level: 8
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+
+Dratini (M)
+Level: 9
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+
+=== TRAINER_GRUNT_PETALBURG_WOODS ===
+Name: Grunt
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
+Difficulty: Easy
+
+Binacle
+Level: 9
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+
+Venonat (F)
+Level: 10
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+
+Dratini (M)
+Level: 10
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+
+
+=== TRAINER_GRUNT_PETALBURG_WOODS ===
+Name: Grunt
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
 AI: Basic Trainer
 
 Staryu
@@ -294,6 +335,77 @@ IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 - Thunder Wave
 - Wrap
 - Leer
+
+=== TRAINER_GRUNT_PETALBURG_WOODS ===
+Name: Grunt
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Hard
+
+Staryu
+Level: 11
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+- Water Gun
+- Confuse Ray
+- Harden
+- Rapid Spin
+
+Venonat (F)
+Level: 11
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+- Confusion
+- Disable
+- Struggle Bug
+- Supersonic
+
+Dratini (M)
+Level: 11
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+- Twister
+- Thunder Wave
+- Wrap
+- Leer
+
+=== TRAINER_GRUNT_PETALBURG_WOODS ===
+Name: Grunt
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Basic Trainer / Smart Mon Choices
+Difficulty: Insane
+
+Staryu @ Oran Berry
+Level: 11
+Ability: Natural Cure
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+- Water Pulse
+- Confuse Ray
+- Minimize
+- Rapid Spin
+
+Venonat (F) @ Salac Berry
+Level: 12
+Ability: Tinted Lens
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+- Psybeam
+- Baton Pass
+- Bug Bite
+- Morning Sun
+
+Dratini (M) @ Oran Berry
+Level: 12
+Ability: Shed Skin
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+- Dragon Rage
+- Thunder Wave
+- Wrap
+- Aqua Jet
 
 === TRAINER_MARCEL ===
 Name: Marcel
@@ -22236,7 +22348,35 @@ Gender: Male
 Music: Male
 Double Battle: No
 Items: Potion
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Check Viability
+Mugshot: Green
+Difficulty: Easy
+
+Eevee (F)
+Level: 11
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Covet
+- Sand Attack
+- Quick Attack
+- Tail Whip
+
+Totodile (M)
+Level: 11
+IVs: 10 HP / 11 Atk / 10 Def / 11 SpA / 10 SpD / 10 Spe
+- Water Gun
+- Bite
+- Leer
+- Scratch
+
+=== TRAINER_JAYDEN ===
+Name: Jayden
+Class: Rival
+Pic: RS Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+Items: Potion
+AI: Basic Trainer
 Mugshot: Green
 
 Eevee (F)
