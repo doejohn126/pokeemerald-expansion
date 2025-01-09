@@ -1790,7 +1790,7 @@ Level: 45
 Ability: Cute Charm
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Teeter Dance
-- Headbutt
+- Dizzy Punch
 - Mach Punch
 - Flatter
 
@@ -2556,7 +2556,7 @@ Gender: Female
 Music: Cool
 Items: Full Restore
 Double Battle: No
-AI: Basic Trainer / Smart Mon Choices
+AI: Basic Trainer / Smart Mon Choices / Will Suicide
 
 Torkoal
 Level: 83
@@ -2929,6 +2929,40 @@ Gender: Female
 Music: Female
 Items: Full Restore
 Double Battle: No
+AI: Check Bad Move
+Difficulty: Weenie Hut Jr
+
+Minccino @ Nugget
+Level: 7
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CINDY_1 ===
+Name: Cindy
+Class: Lady
+Pic: Lady
+Gender: Female
+Music: Female
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+Difficulty: Easy
+
+Igglybuff @ Nugget
+Level: 7
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Minccino @ Nugget
+Level: 8
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CINDY_1 ===
+Name: Cindy
+Class: Lady
+Pic: Lady
+Gender: Female
+Music: Female
+Items: Full Restore
+Double Battle: No
 AI: Basic Trainer
 
 Igglybuff @ Nugget
@@ -2942,6 +2976,76 @@ IVs: 0 HP / 0 Atk / 0 Def / 5 SpA / 0 SpD / 0 Spe
 Minccino @ Nugget
 Level: 9
 IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CINDY_1 ===
+Name: Cindy
+Class: Lady
+Pic: Lady
+Gender: Female
+Music: Female
+Items: Full Restore
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Hard
+
+Igglybuff @ Nugget
+Level: 9
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gossifleur @ Nugget
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 5 SpA / 0 SpD / 0 Spe
+
+Minccino @ Nugget
+Level: 10
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CINDY_1 ===
+Name: Cindy
+Class: Lady
+Pic: Lady
+Gender: Female
+Music: Female
+Items: Full Restore
+Double Battle: Yes
+AI: Basic Trainer
+Difficulty: Insane
+
+Jigglypuff @ Nugget
+Level: 10
+Ability: Friend Guard
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Sing
+- Sweet Kiss
+- Covet
+- Disable
+
+Bulbasaur @ Nugget
+Level: 10
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Sleep Powder
+- Leech Seed
+- Razor Leaf
+- Growth
+
+Gossifleur @ Nugget
+Level: 10
+Ability: Cotton Down
+IVs: 0 HP / 0 Atk / 0 Def / 5 SpA / 0 SpD / 0 Spe
+- Sing
+- Growth
+- Leafage
+- Helping Hand
+
+Minccino @ Nugget
+Level: 10
+Ability: Technician
+IVs: 5 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Echoed Voice
+- Sing
+- Helping Hand
+- Pound
+
 
 === TRAINER_DAPHNE ===
 Name: Daphne
@@ -10331,6 +10435,7 @@ Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Double Battle: No
+AI: Will Suicide
 
 Koffing
 Level: 32
@@ -15492,6 +15597,62 @@ Pic: Bug Catcher
 Gender: Male
 Music: Male
 Double Battle: No
+AI: Check Bad Move
+Difficulty: Weenie Hut Jr
+
+Wurmple
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Caterpie
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Weedle
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ledyba
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_LYLE ===
+Name: Lyle
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Easy
+
+Wurmple
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pineco
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Caterpie
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Weedle
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ledyba
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_LYLE ===
+Name: Lyle
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Double Battle: No
 AI: Basic Trainer
 
 Wurmple
@@ -15513,6 +15674,88 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Ledyba
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_LYLE ===
+Name: Lyle
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Hard
+
+Wurmple
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pineco
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Caterpie
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Kakuna
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Harden
+- Poison Sting
+- String Shot
+
+Ledyba
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_LYLE ===
+Name: Lyle
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer / Will Suicide
+Difficulty: Insane
+
+Beautifly (M)
+Level: 11
+Ability: Rivalry
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Gust
+- Bug Bite
+- Psybeam
+- String Shot
+
+Pineco
+Level: 11
+Ability: Sturdy
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Self Destruct
+- Bug Bite
+
+Butterfree
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Confusion
+- Gust
+- Supersonic
+- Flash
+
+Beedrill
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bug Bite
+- Twineedle
+- Sludge
+
+Yanma
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Uproar
+- Air Cutter
+- Double Team
+- Whirlwind
 
 === TRAINER_JOSE ===
 Name: Jose

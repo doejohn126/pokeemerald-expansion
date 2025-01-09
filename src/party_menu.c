@@ -4987,7 +4987,11 @@ void ItemUseCB_Medicine(u8 taskId, TaskFunc task)
     bool8 canHeal, cannotUse;
     u32 oldStatus = GetMonData(mon, MON_DATA_STATUS);
 
-    if (NotUsingHPEVItemOnShedinja(mon, item) == FALSE)
+    if (IsMultiBattle() == TRUE && (gPartyMenu.slotId == 1 || gPartyMenu.slotId == 4 || gPartyMenu.slotId == 5))
+    {
+        cannotUse = TRUE;
+    }
+    else if (NotUsingHPEVItemOnShedinja(mon, item) == FALSE)
     {
         cannotUse = TRUE;
     }
