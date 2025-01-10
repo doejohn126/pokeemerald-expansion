@@ -22350,6 +22350,22 @@ Double Battle: No
 Items: Potion
 AI: Check Bad Move / Check Viability
 Mugshot: Green
+Difficulty: Weenie Hut Jr
+
+Totodile (M)
+Level: 11
+IVs: 10 HP / 11 Atk / 10 Def / 11 SpA / 10 SpD / 10 Spe
+
+=== TRAINER_JAYDEN ===
+Name: Jayden
+Class: Rival
+Pic: RS Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+Items: Potion
+AI: Check Bad Move / Check Viability
+Mugshot: Green
 Difficulty: Easy
 
 Eevee (F)
@@ -22394,6 +22410,90 @@ IVs: 10 HP / 11 Atk / 10 Def / 11 SpA / 10 SpD / 10 Spe
 - Bite
 - Leer
 - Scratch
+
+=== TRAINER_JAYDEN ===
+Name: Jayden
+Class: Rival
+Pic: RS Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+Items: Potion
+AI: Basic Trainer
+Mugshot: Green
+Difficulty: Hard
+
+Eevee (F)
+Level: 13
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Covet
+- Sand Attack
+- Quick Attack
+- Tail Whip
+
+Charmander (M)
+Level: 12
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Dragon Breath
+- Ember
+- Smokescreen
+- Growl
+
+Totodile (M)
+Level: 13
+IVs: 10 HP / 11 Atk / 10 Def / 11 SpA / 10 SpD / 10 Spe
+- Water Gun
+- Bite
+- Leer
+- Scratch
+
+=== TRAINER_JAYDEN ===
+Name: Jayden
+Class: Rival
+Pic: RS Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+Items: Potion
+AI: Basic Trainer
+Mugshot: Green
+Difficulty: Insane
+
+Eevee (F) @ Chople Berry
+Level: 13
+Ability: Adaptability
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Covet
+- Take Down
+- Quick Attack
+- Trailblaze
+
+Gligar (M) @ Expert Belt
+Level: 12
+Ability: Hyper Cutter
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Knock Off
+- Poison Tail
+- Aerial Ace
+- Bulldoze
+
+Charmander (M) @ Wise Glasses
+Level: 13
+Ability: Dragons Maw
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Dragon Breath
+- Ember
+- Ancient Power
+- Metal Claw
+
+Totodile (M) @ Oran Berry
+Level: 14
+Ability: Strong Jaw
+IVs: 10 HP / 11 Atk / 10 Def / 11 SpA / 10 SpD / 10 Spe
+- Water Gun
+- Bite
+- Aqua Jet
+- Aerial Ace
 
 === TRAINER_BROCK ===
 Name: Brock
