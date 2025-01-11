@@ -69,7 +69,7 @@
 #include "data/tx_random_data.h"
 #include "constants/party_menu.h" //tx_randomizer_and_challenges
 
-#define FRIENDSHIP_EVO_THRESHOLD ((P_FRIENDSHIP_EVO_THRESHOLD >= GEN_8) ? 150 : 220)
+#define FRIENDSHIP_EVO_THRESHOLD ((P_FRIENDSHIP_EVO_THRESHOLD >= GEN_8) ? 140 : 220)
 
 struct SpeciesItem
 {
