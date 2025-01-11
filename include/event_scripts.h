@@ -406,6 +406,7 @@ extern const u8 EventScript_UseFlash[];
 extern const u8 EventScript_UseCut[];
 extern const u8 EventScript_UseRockSmash[];
 extern const u8 EventScript_UseDig[];
+extern const u8 EventScript_UseCutGrass[];
 
 //Start qol_field_moves
 extern const u8 EventScript_CutTreeDown[];
