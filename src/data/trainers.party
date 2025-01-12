@@ -10004,12 +10004,20 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Altaria
-Level: 37
+Exeggutor Alola
+Level: 83
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Altaria
-Level: 37
+Level: 83
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Druddigon
+Level: 83
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Dragapult
+Level: 83
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_NICOLAS_2 ===
@@ -10021,13 +10029,21 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Altaria
-Level: 41
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Exeggutor Alola
+Level: 88
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Altaria
-Level: 41
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Level: 88
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Druddigon
+Level: 88
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Dragapult
+Level: 88
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_NICOLAS_3 ===
 Name: Nicolas

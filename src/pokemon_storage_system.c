@@ -10347,6 +10347,7 @@ u16 GetFirstBoxPokemon(void) // @Kurausukun
     }
     return IN_BOX_COUNT * TOTAL_BOXES_COUNT; // none found
 }
+
 void MoveFirstBoxPokemon(void) // @Kurausukun
 {
     u16 position = GetFirstBoxPokemon();

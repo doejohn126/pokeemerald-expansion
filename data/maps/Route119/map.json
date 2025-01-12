@@ -782,8 +782,8 @@
     },
     {
       "type": "trigger",
-      "x": 29,
-      "y": 105,
+      "x": 31,
+      "y": 103,
       "elevation": 0,
       "var": "VAR_KORRINA",
       "var_value": "0",
@@ -791,8 +791,8 @@
     },
     {
       "type": "trigger",
-      "x": 29,
-      "y": 104,
+      "x": 30,
+      "y": 103,
       "elevation": 0,
       "var": "VAR_KORRINA",
       "var_value": "0",
