@@ -343,7 +343,7 @@ static const u16* const sDexPalettes[HGSS_COLOR_COUNT][HGSS_PAL_TYPE_COUNT] =
                          sSizeScreenSilhouette_inverted_Pal},
 };
 
-#define HGSS_COLOR_MODE HGSS_DARKEST
+//#define HGSS_COLOR_MODE HGSS_DARKEST
 #define SCROLLING_MON_X 146
 #define HGSS_DECAPPED TRUE
 #define HGSS_HIDE_UNSEEN_EVOLUTION_NAMES FALSE
@@ -2437,12 +2437,24 @@ static void Task_ClosePokedex(u8 taskId)
 
 static void LoadPokedexBgPalette(bool8 isSearchResults)
 {
-    if (isSearchResults == TRUE)
-        LoadPalette(sDexPalettes[HGSS_COLOR_MODE][HGSS_SEARCH_RESULTS_PAL] + 1, BG_PLTT_ID(0) + 1, PLTT_SIZEOF(6 * 16 - 1));
-    else if (!IsNationalPokedexEnabled())
-        LoadPalette(sDexPalettes[HGSS_COLOR_MODE][HGSS_DEFAULT_PAL] + 1, BG_PLTT_ID(0) + 1, PLTT_SIZEOF(6 * 16 - 1));
+    if (gSaveBlock2Ptr->optionsHGSSPokedexTheme == 0)
+    {
+        if (isSearchResults == TRUE)
+            LoadPalette(sDexPalettes[HGSS_DARKEST][HGSS_SEARCH_RESULTS_PAL] + 1, BG_PLTT_ID(0) + 1, PLTT_SIZEOF(6 * 16 - 1));
+        else if (!IsNationalPokedexEnabled())
+            LoadPalette(sDexPalettes[HGSS_DARKEST][HGSS_DEFAULT_PAL] + 1, BG_PLTT_ID(0) + 1, PLTT_SIZEOF(6 * 16 - 1));
+        else
+            LoadPalette(sDexPalettes[HGSS_DARKEST][HGSS_NATIONAL_PAL] + 1, BG_PLTT_ID(0) + 1, PLTT_SIZEOF(6 * 16 - 1));
+    }
     else
-        LoadPalette(sDexPalettes[HGSS_COLOR_MODE][HGSS_NATIONAL_PAL] + 1, BG_PLTT_ID(0) + 1, PLTT_SIZEOF(6 * 16 - 1));
+    {
+        if (isSearchResults == TRUE)
+            LoadPalette(sDexPalettes[HGSS_CLASSIC][HGSS_SEARCH_RESULTS_PAL] + 1, BG_PLTT_ID(0) + 1, PLTT_SIZEOF(6 * 16 - 1));
+        else if (!IsNationalPokedexEnabled())
+            LoadPalette(sDexPalettes[HGSS_CLASSIC][HGSS_DEFAULT_PAL] + 1, BG_PLTT_ID(0) + 1, PLTT_SIZEOF(6 * 16 - 1));
+        else
+            LoadPalette(sDexPalettes[HGSS_CLASSIC][HGSS_NATIONAL_PAL] + 1, BG_PLTT_ID(0) + 1, PLTT_SIZEOF(6 * 16 - 1));
+    }
         
     LoadPalette(GetOverworldTextboxPalettePtr(), 0xF0, 32);
 }
@@ -2500,11 +2512,16 @@ static bool8 LoadPokedexListPage(u8 page)
         FreeAllSpritePalettes();
         gReservedSpritePaletteCount = 8;
         LoadCompressedSpriteSheet(&sInterfaceSpriteSheet[HGSS_DECAPPED]);
-        LoadSpritePalette(&sInterfaceSpritePalette[HGSS_COLOR_MODE]);
-        if (HGSS_COLOR_MODE == HGSS_DARKEST)
+        if (gSaveBlock2Ptr->optionsHGSSPokedexTheme == 0)
+        {
+            LoadSpritePalette(&sInterfaceSpritePalette[HGSS_DARKEST]);
             LoadSpritePalettes(sStatBarSpritePalDark);
+        }
         else
+        {
+            LoadSpritePalette(&sInterfaceSpritePalette[HGSS_CLASSIC]);
             LoadSpritePalettes(sStatBarSpritePal);
+        }
         CreateInterfaceSprites(page);
         gMain.state++;
         break;
@@ -4326,11 +4343,17 @@ static void Task_HandleCaughtMonPageInput(u8 taskId)
     // Flicker caught screen color
     else if (++gTasks[taskId].tPalTimer & 16)
     {
-        LoadPalette(sDexPalettes[HGSS_COLOR_MODE][HGSS_DEFAULT_PAL] + 1, BG_PLTT_ID(3) + 1, PLTT_SIZEOF(7));
+        if (gSaveBlock2Ptr->optionsHGSSPokedexTheme == 0)
+            LoadPalette(sDexPalettes[HGSS_DARKEST][HGSS_DEFAULT_PAL] + 1, BG_PLTT_ID(3) + 1, PLTT_SIZEOF(7));
+        else
+            LoadPalette(sDexPalettes[HGSS_CLASSIC][HGSS_DEFAULT_PAL] + 1, BG_PLTT_ID(3) + 1, PLTT_SIZEOF(7));
     }
     else
     {
-        LoadPalette(sDexPalettes[HGSS_COLOR_MODE][HGSS_DEFAULT_PAL] + 1, BG_PLTT_ID(3) + 1, PLTT_SIZEOF(7));
+        if (gSaveBlock2Ptr->optionsHGSSPokedexTheme == 0)
+            LoadPalette(sDexPalettes[HGSS_DARKEST][HGSS_DEFAULT_PAL] + 1, BG_PLTT_ID(3) + 1, PLTT_SIZEOF(7));
+        else
+            LoadPalette(sDexPalettes[HGSS_CLASSIC][HGSS_DEFAULT_PAL] + 1, BG_PLTT_ID(3) + 1, PLTT_SIZEOF(7));
     }
 }
 
@@ -4543,7 +4566,7 @@ static void PrintMonInfo(u32 num, u32 value, u32 owned, u32 newEntry)
         value = num;
     ConvertIntToDecimalStringN(StringCopy(str, gText_NumberClear01), value, STR_CONV_MODE_LEADING_ZEROS, digitCount);
 
-    if (HGSS_COLOR_MODE != HGSS_DARKEST)
+    if (!gSaveBlock2Ptr->optionsHGSSPokedexTheme == 0)
         PrintInfoScreenTextWhite(str, 123, 17);
     else
         PrintInfoScreenText(str, 123, 17);
@@ -4554,7 +4577,7 @@ static void PrintMonInfo(u32 num, u32 value, u32 owned, u32 newEntry)
     else
         name = sText_TenDashes;
 
-    if (HGSS_COLOR_MODE != HGSS_DARKEST)
+    if (!gSaveBlock2Ptr->optionsHGSSPokedexTheme == 0)
         PrintInfoScreenTextWhite(name, 139 + (6 * digitCount), 17);
     else
         PrintInfoScreenText(name, 139 + (6 * digitCount), 17);
@@ -5317,7 +5340,7 @@ static void PrintStatsScreen_Moves_Top(u8 taskId)
     ConvertIntToDecimalStringN(gStringVar2, movesTotal, STR_CONV_MODE_RIGHT_ALIGN, 3);
     StringExpandPlaceholders(gStringVar1, sText_Stats_MoveSelectedMax);
 
-    if (HGSS_COLOR_MODE != HGSS_DARKEST)
+    if (!gSaveBlock2Ptr->optionsHGSSPokedexTheme == 0)
         PrintStatsScreenTextSmallWhite(WIN_STATS_MOVES_TOP, gStringVar1, moves_x-1, moves_y+1);
     else 
         PrintStatsScreenTextSmall(WIN_STATS_MOVES_TOP, gStringVar1, moves_x-1, moves_y+1);
@@ -5994,7 +6017,7 @@ static void PrintStatsScreen_Abilities(u8 taskId)
     {
         ability0 = sPokedexView->sPokemonStats.ability0;
 
-        if (HGSS_COLOR_MODE != HGSS_DARKEST)
+        if (!gSaveBlock2Ptr->optionsHGSSPokedexTheme == 0)
             PrintStatsScreenTextSmallWhite(WIN_STATS_ABILITIES, gAbilitiesInfo[ability0].name, abilities_x, abilities_y);
         else
             PrintStatsScreenTextSmall(WIN_STATS_ABILITIES, gAbilitiesInfo[ability0].name, abilities_x, abilities_y);
@@ -6004,7 +6027,7 @@ static void PrintStatsScreen_Abilities(u8 taskId)
         ability1 = sPokedexView->sPokemonStats.ability1;
         if (ability1 != ABILITY_NONE && ability1 != ability0)
         {
-            if (HGSS_COLOR_MODE != HGSS_DARKEST)
+            if (!gSaveBlock2Ptr->optionsHGSSPokedexTheme == 0)
                 PrintStatsScreenTextSmallWhite(WIN_STATS_ABILITIES, gAbilitiesInfo[ability1].name, abilities_x, abilities_y + 30);
             else
                 PrintStatsScreenTextSmall(WIN_STATS_ABILITIES, gAbilitiesInfo[ability1].name, abilities_x, abilities_y + 30);
@@ -6016,7 +6039,7 @@ static void PrintStatsScreen_Abilities(u8 taskId)
     {
         abilityHidden = sPokedexView->sPokemonStats.abilityHidden;
 
-        if (HGSS_COLOR_MODE != HGSS_DARKEST)
+        if (!gSaveBlock2Ptr->optionsHGSSPokedexTheme == 0)
             PrintStatsScreenTextSmallWhite(WIN_STATS_ABILITIES, gAbilitiesInfo[abilityHidden].name, abilities_x, abilities_y);
         else
             PrintStatsScreenTextSmall(WIN_STATS_ABILITIES, gAbilitiesInfo[abilityHidden].name, abilities_x, abilities_y);
@@ -7428,7 +7451,10 @@ static void Task_LoadSizeScreen(u8 taskId)
         gSprites[spriteId].oam.priority = 0;
         gSprites[spriteId].y2 = GetTrainerOffsetFromNationalDexNumber(sPokedexListItem->dexNum);
         SetOamMatrix(1, GetTrainerScaleFromNationalDexNumber(sPokedexListItem->dexNum), 0, 0, GetTrainerScaleFromNationalDexNumber(sPokedexListItem->dexNum));
-        LoadPalette(sDexPalettes[HGSS_COLOR_MODE][HGSS_SILHOUETTE_PAL], OBJ_PLTT_ID2(gSprites[spriteId].oam.paletteNum), PLTT_SIZE_4BPP);
+        if (gSaveBlock2Ptr->optionsHGSSPokedexTheme == 0)
+            LoadPalette(sDexPalettes[HGSS_DARKEST][HGSS_SILHOUETTE_PAL], OBJ_PLTT_ID2(gSprites[spriteId].oam.paletteNum), PLTT_SIZE_4BPP);
+        else
+            LoadPalette(sDexPalettes[HGSS_CLASSIC][HGSS_SILHOUETTE_PAL], OBJ_PLTT_ID2(gSprites[spriteId].oam.paletteNum), PLTT_SIZE_4BPP);
         gTasks[taskId].tTrainerSpriteId = spriteId;
         gMain.state++;
         break;
@@ -7439,7 +7465,10 @@ static void Task_LoadSizeScreen(u8 taskId)
         gSprites[spriteId].oam.priority = 0;
         gSprites[spriteId].y2 = GetPokemonOffsetFromNationalDexNumber(sPokedexListItem->dexNum);
         SetOamMatrix(2, GetPokemonScaleFromNationalDexNumber(sPokedexListItem->dexNum), 0, 0, GetPokemonScaleFromNationalDexNumber(sPokedexListItem->dexNum));
-        LoadPalette(sDexPalettes[HGSS_COLOR_MODE][HGSS_SILHOUETTE_PAL], OBJ_PLTT_ID2(gSprites[spriteId].oam.paletteNum), PLTT_SIZE_4BPP);
+        if (gSaveBlock2Ptr->optionsHGSSPokedexTheme == 0)
+            LoadPalette(sDexPalettes[HGSS_DARKEST][HGSS_SILHOUETTE_PAL], OBJ_PLTT_ID2(gSprites[spriteId].oam.paletteNum), PLTT_SIZE_4BPP);
+        else
+            LoadPalette(sDexPalettes[HGSS_CLASSIC][HGSS_SILHOUETTE_PAL], OBJ_PLTT_ID2(gSprites[spriteId].oam.paletteNum), PLTT_SIZE_4BPP);
         gTasks[taskId].tMonSpriteId = spriteId;
         CopyWindowToVram(WIN_INFO, COPYWIN_FULL);
         CopyBgTilemapBufferToVram(1);
@@ -7902,7 +7931,7 @@ static void PrintSearchText(const u8 *str, u32 x, u32 y)
 
     color[0] = TEXT_COLOR_TRANSPARENT;
 
-    if (HGSS_COLOR_MODE != HGSS_DARKEST)
+    if (!gSaveBlock2Ptr->optionsHGSSPokedexTheme == 0)
     {
         color[1] = TEXT_DYNAMIC_COLOR_6;
         color[2] = TEXT_COLOR_DARK_GRAY;
@@ -7968,15 +7997,21 @@ static void Task_LoadSearchMenu(u8 taskId)
                 CopyToBgTilemapBuffer(3, sPokedexPlusHGSS_ScreenSearchHoenn_Tilemap, 0, 0);
             else
                 CopyToBgTilemapBuffer(3, sPokedexPlusHGSS_ScreenSearchNational_Tilemap, 0, 0);
-            LoadPalette(sDexPalettes[HGSS_COLOR_MODE][HGSS_SEARCH_MENU_PAL] + 1, BG_PLTT_ID(0) + 1, PLTT_SIZEOF(4 * 16 - 1));
+            if (gSaveBlock2Ptr->optionsHGSSPokedexTheme == 0)
+                LoadPalette(sDexPalettes[HGSS_DARKEST][HGSS_SEARCH_MENU_PAL] + 1, BG_PLTT_ID(0) + 1, PLTT_SIZEOF(4 * 16 - 1));
+            else
+                LoadPalette(sDexPalettes[HGSS_CLASSIC][HGSS_SEARCH_MENU_PAL] + 1, BG_PLTT_ID(0) + 1, PLTT_SIZEOF(4 * 16 - 1));
             gMain.state = 1;
         }
         break;
     case 1:
         LoadCompressedSpriteSheet(&sInterfaceSpriteSheet[HGSS_DECAPPED]);
-        LoadSpritePalette(&sInterfaceSpritePalette[HGSS_COLOR_MODE]);
+        if (gSaveBlock2Ptr->optionsHGSSPokedexTheme == 0)
+            LoadSpritePalette(&sInterfaceSpritePalette[HGSS_DARKEST]);
+        else
+            LoadSpritePalette(&sInterfaceSpritePalette[HGSS_CLASSIC]);
 
-        if (HGSS_COLOR_MODE != HGSS_DARKEST)
+        if (!gSaveBlock2Ptr->optionsHGSSPokedexTheme == 0)
             LoadSpritePalettes(sStatBarSpritePal);
         else
             LoadSpritePalettes(sStatBarSpritePalDark);
