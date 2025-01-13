@@ -211,7 +211,8 @@ u8 FldEff_UseSurfTool(void)
 {
     CreateTask(Task_SurfToolFieldEffect, 0);
     Overworld_ClearSavedMusic();
-    Overworld_ChangeMusicTo(MUS_SURF);
+    if (gSaveBlock2Ptr->optionsDisableBikeAndSurfMus == 0)
+        Overworld_ChangeMusicTo(MUS_SURF);
     return FALSE;
 }
 
