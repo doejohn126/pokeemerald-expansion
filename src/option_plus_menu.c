@@ -23,6 +23,7 @@ enum
 {
     MENU_MAIN,
     MENU_CUSTOM,
+    MENU_PADDING,
     MENU_COUNT,
 };
 
@@ -42,6 +43,8 @@ enum
 
 enum
 {
+    MENUITEM_CUSTOM_FILLER,
+    MENUITEM_CUSTOM_FILLER2,
     MENUITEM_CUSTOM_FONT,
     MENUITEM_CUSTOM_MATCHCALL,
     MENUITEM_CUSTOM_CANCEL,
@@ -176,6 +179,8 @@ static void DrawChoices_BattleScene(int selection, int y);
 static void DrawChoices_BattleStyle(int selection, int y);
 static void DrawChoices_Sound(int selection, int y);
 static void DrawChoices_ButtonMode(int selection, int y);
+static void DrawChoices_Filler(int selection, int y);
+static void DrawChoices_Filler2(int selection, int y);
 static void DrawChoices_Font(int selection, int y);
 static void DrawChoices_FrameType(int selection, int y);
 static void DrawChoices_MatchCall(int selection, int y);
@@ -222,7 +227,7 @@ struct // MENU_MAIN
     int (*processInput)(int selection);
 } static const sItemFunctionsMain[MENUITEM_MAIN_COUNT] =
 {
-    [MENUITEM_MAIN_TEXTSPEED]    = {DrawChoices_TextSpeed,   ProcessInput_Options_Four},
+    [MENUITEM_MAIN_TEXTSPEED]    = {DrawChoices_TextSpeed,   ProcessInput_Options_Three},
     [MENUITEM_MAIN_BATTLESCENE]  = {DrawChoices_BattleScene, ProcessInput_Options_Two},
     [MENUITEM_MAIN_BATTLESTYLE]  = {DrawChoices_BattleStyle, ProcessInput_Options_Two},
     [MENUITEM_MAIN_SOUND]        = {DrawChoices_Sound,       ProcessInput_Options_Two},
@@ -238,11 +243,16 @@ struct // MENU_CUSTOM
     int (*processInput)(int selection);
 } static const sItemFunctionsCustom[MENUITEM_CUSTOM_COUNT] =
 {
+    [MENUITEM_CUSTOM_FILLER]       = {DrawChoices_Filler,        ProcessInput_Options_Two}, 
+    [MENUITEM_CUSTOM_FILLER2]      = {DrawChoices_Filler2,        ProcessInput_Options_Two}, 
     [MENUITEM_CUSTOM_FONT]         = {DrawChoices_Font,        ProcessInput_Options_Two}, 
     [MENUITEM_CUSTOM_MATCHCALL]    = {DrawChoices_MatchCall,   ProcessInput_Options_Two},
     [MENUITEM_CUSTOM_CANCEL]       = {NULL, NULL},
 };
 
+
+static const u8 sText_Todo[]      = _("TODO OPTIONS");
+static const u8 sText_Todo2[]  = _("TODO OPTIONS 2");
 // Menu left side option names text
 static const u8 *const sOptionMenuItemsNamesMain[MENUITEM_MAIN_COUNT] =
 {
@@ -258,6 +268,8 @@ static const u8 *const sOptionMenuItemsNamesMain[MENUITEM_MAIN_COUNT] =
 
 static const u8 *const sOptionMenuItemsNamesCustom[MENUITEM_CUSTOM_COUNT] =
 {
+    [MENUITEM_CUSTOM_FILLER]      = sText_Todo,
+    [MENUITEM_CUSTOM_FILLER2]     = sText_Todo2,
     [MENUITEM_CUSTOM_FONT]        = gText_Font,
     [MENUITEM_CUSTOM_MATCHCALL]   = gText_OptionMatchCalls,
     [MENUITEM_CUSTOM_CANCEL]      = gText_OptionMenuSave,
@@ -295,6 +307,8 @@ static bool8 CheckConditions(int selection)
     case MENU_CUSTOM:
         switch(selection)
         {
+        case MENUITEM_CUSTOM_FILLER:          return TRUE;
+        case MENUITEM_CUSTOM_FILLER2:         return TRUE;
         case MENUITEM_CUSTOM_FONT:            return TRUE;
         case MENUITEM_CUSTOM_MATCHCALL:       return TRUE;
         case MENUITEM_CUSTOM_CANCEL:          return TRUE;
@@ -321,7 +335,8 @@ static const u8 sText_Desc_ButtonMode_LA[]      = _("The L button acts as anothe
 static const u8 sText_Desc_FrameType[]          = _("Choose the frame surrounding the\nwindows.");
 static const u8 sText_Desc_SurfOff[]            = _("Disables the Surf and Bike theme\nwhen doing said actions.");
 static const u8 sText_Desc_SurfOn[]             = _("Enables the Surf and Bike theme\nwhen doing said actions.");
-static const u8 *const sOptionMenuItemDescriptionsMain[MENUITEM_MAIN_COUNT][4] =
+static const u8 sText_Desc_ComingSoon[]             = _("These options will come soon.");
+static const u8 *const sOptionMenuItemDescriptionsMain[MENUITEM_MAIN_COUNT][3] =
 {
     [MENUITEM_MAIN_TEXTSPEED]   = {sText_Desc_TextSpeed,            sText_Empty,                sText_Empty},
     [MENUITEM_MAIN_BATTLESCENE] = {sText_Desc_BattleScene_On,       sText_Desc_BattleScene_Off, sText_Empty},
@@ -339,8 +354,10 @@ static const u8 sText_Desc_BikeOn[]             = _("Enables the Bike theme when
 static const u8 sText_Desc_FontType[]           = _("Choose the font design.");
 static const u8 sText_Desc_OverworldCallsOn[]   = _("Trainers will be able to call you,\noffering info.");
 static const u8 sText_Desc_OverworldCallsOff[]  = _("You will not receive calls.\nSpecial events will still occur.");
-static const u8 *const sOptionMenuItemDescriptionsCustom[MENUITEM_CUSTOM_COUNT][3] =
+static const u8 *const sOptionMenuItemDescriptionsCustom[MENUITEM_CUSTOM_COUNT][2] =
 {
+    [MENUITEM_CUSTOM_FILLER]        = {sText_Desc_ComingSoon,           sText_Desc_ComingSoon},
+    [MENUITEM_CUSTOM_FILLER2]        = {sText_Desc_ComingSoon,           sText_Desc_ComingSoon},
     [MENUITEM_CUSTOM_FONT]        = {sText_Desc_FontType,           sText_Desc_FontType},
     [MENUITEM_CUSTOM_MATCHCALL]   = {sText_Desc_OverworldCallsOn,   sText_Desc_OverworldCallsOff},
     [MENUITEM_CUSTOM_CANCEL]      = {sText_Desc_Save,               sText_Empty},
@@ -364,6 +381,8 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledMain[MENUITEM_MAIN_COU
 static const u8 sText_Desc_Disabled_BattleHPBar[]   = _("Only active if xyz.");
 static const u8 *const sOptionMenuItemDescriptionsDisabledCustom[MENUITEM_CUSTOM_COUNT] =
 {
+    [MENUITEM_CUSTOM_FILLER]        = sText_Empty,
+    [MENUITEM_CUSTOM_FILLER2]        = sText_Empty,
     [MENUITEM_CUSTOM_FONT]        = sText_Empty,
     [MENUITEM_CUSTOM_MATCHCALL]   = sText_Empty,
     [MENUITEM_CUSTOM_CANCEL]      = sText_Empty,
@@ -668,6 +687,8 @@ void CB2_InitOptionPlusMenu(void)
         sOptions->sel[MENUITEM_MAIN_BUTTONMODE]  = gSaveBlock2Ptr->optionsButtonMode;
         sOptions->sel[MENUITEM_MAIN_FRAMETYPE]   = gSaveBlock2Ptr->optionsWindowFrameType;
         
+        sOptions->sel_custom[MENUITEM_CUSTOM_FILLER]        = gSaveBlock2Ptr->optionsFiller;
+        sOptions->sel_custom[MENUITEM_CUSTOM_FILLER2]        = gSaveBlock2Ptr->optionsFiller2;
         sOptions->sel_custom[MENUITEM_CUSTOM_FONT]        = gSaveBlock2Ptr->optionsCurrentFont;
         sOptions->sel_custom[MENUITEM_CUSTOM_MATCHCALL]   = gSaveBlock2Ptr->optionsDisableMatchCall;
 
@@ -744,7 +765,7 @@ static void Task_OptionMenuFadeIn(u8 taskId)
 static void Task_OptionMenuProcessInput(u8 taskId)
 {
     //int i = 0;
-    //u8 optionsToDraw = min(OPTIONS_ON_SCREEN , MenuItemCount());
+    u8 optionsToDraw = min(OPTIONS_ON_SCREEN, MenuItemCount());
     if (JOY_NEW(A_BUTTON))
     {
         if (sOptions->menuCursor[sOptions->submenu] == MenuItemCancel())
@@ -767,9 +788,9 @@ static void Task_OptionMenuProcessInput(u8 taskId)
         {
             if (--sOptions->menuCursor[sOptions->submenu] < 0) // Scroll all the way to the bottom.
             {
-                sOptions->visibleCursor[sOptions->submenu] = sOptions->menuCursor[sOptions->submenu] = 1;
+                sOptions->visibleCursor[sOptions->submenu] = sOptions->menuCursor[sOptions->submenu] = optionsToDraw-2;
                 ScrollAll(0);
-                sOptions->visibleCursor[sOptions->submenu] = 2;
+                sOptions->visibleCursor[sOptions->submenu] = optionsToDraw-1;
                 sOptions->menuCursor[sOptions->submenu] = MenuItemCount() - 1;
             }
             else
@@ -782,7 +803,7 @@ static void Task_OptionMenuProcessInput(u8 taskId)
     }
     else if (JOY_NEW(DPAD_DOWN))
     {
-        if (sOptions->visibleCursor[sOptions->submenu] == 1) // don't advance visible cursor until scrolled to the bottom
+        if (sOptions->visibleCursor[sOptions->submenu] == optionsToDraw-2) // don't advance visible cursor until scrolled to the bottom
         {
             if (++sOptions->menuCursor[sOptions->submenu] == MenuItemCount() - 1)
                 sOptions->visibleCursor[sOptions->submenu]++;
@@ -793,8 +814,8 @@ static void Task_OptionMenuProcessInput(u8 taskId)
         {
             if (++sOptions->menuCursor[sOptions->submenu] >= MenuItemCount()-1) // Scroll all the way to the top.
             {
-                sOptions->visibleCursor[sOptions->submenu] = 1;
-                sOptions->menuCursor[sOptions->submenu] = 0;
+                sOptions->visibleCursor[sOptions->submenu] = optionsToDraw-2;
+                sOptions->menuCursor[sOptions->submenu] = MenuItemCount() - optionsToDraw-1;
                 ScrollAll(1);
                 sOptions->visibleCursor[sOptions->submenu] = sOptions->menuCursor[sOptions->submenu] = 0;
             }
@@ -845,7 +866,7 @@ static void Task_OptionMenuProcessInput(u8 taskId)
     }
     else if (JOY_NEW(R_BUTTON))
     {
-        if (sOptions->submenu != MENU_CUSTOM - 1)
+        if (sOptions->submenu != MENU_CUSTOM)
             sOptions->submenu++;
 
         DrawTopBarText();
@@ -875,6 +896,8 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsButtonMode       = sOptions->sel[MENUITEM_MAIN_BUTTONMODE];
     gSaveBlock2Ptr->optionsWindowFrameType  = sOptions->sel[MENUITEM_MAIN_FRAMETYPE];
 
+    gSaveBlock2Ptr->optionsFiller      = sOptions->sel_custom[MENUITEM_CUSTOM_FILLER];
+    gSaveBlock2Ptr->optionsFiller2      = sOptions->sel_custom[MENUITEM_CUSTOM_FILLER2];
     gSaveBlock2Ptr->optionsCurrentFont      = sOptions->sel_custom[MENUITEM_CUSTOM_FONT];
     gSaveBlock2Ptr->optionsDisableMatchCall = sOptions->sel_custom[MENUITEM_CUSTOM_MATCHCALL];
 
@@ -1009,7 +1032,7 @@ static int ProcessInput_Options_Three(int selection)
     return XOptions_ProcessInput(3, selection);
 }
 
-static int ProcessInput_Options_Four(int selection)
+static int UNUSED ProcessInput_Options_Four(int selection)
 {
     return XOptions_ProcessInput(4, selection);
 }
@@ -1066,7 +1089,7 @@ static void DrawOptionMenuChoice(const u8 *text, u8 x, u8 y, u8 style, bool8 act
     DrawRightSideChoiceText(text, x, y+1, choosen, active);
 }
 
-static void DrawChoices_Options_Three(const u8 *const *const strings, int selection, int y, bool8 active)
+static void UNUSED DrawChoices_Options_Three(const u8 *const *const strings, int selection, int y, bool8 active)
 {
     static const u8 choiceOrders[][3] =
     {
@@ -1121,7 +1144,13 @@ static const u8 *const sTextSpeedStrings[] = {gText_TextSpeedSlow, gText_TextSpe
 static void DrawChoices_TextSpeed(int selection, int y)
 {
     bool8 active = CheckConditions(MENUITEM_MAIN_TEXTSPEED);
-    DrawChoices_Options_Three(sTextSpeedStrings, selection, y, active);
+    u8 styles[3] = {0};
+    int xMid = GetMiddleX(gText_TextSpeedSlow, gText_TextSpeedMid, gText_TextSpeedFast);
+    styles[selection] = 1;
+
+    DrawOptionMenuChoice(gText_TextSpeedSlow, 104, y, styles[0], active);
+    DrawOptionMenuChoice(gText_TextSpeedMid, xMid, y, styles[1], active);
+    DrawOptionMenuChoice(gText_TextSpeedFast, GetStringRightAlignXOffset(1, gText_ButtonTypeLEqualsA, 198), y, styles[2], active);
 }
 
 static void DrawChoices_BattleScene(int selection, int y)
@@ -1169,7 +1198,7 @@ static void DrawChoices_ButtonMode(int selection, int y)
 static void DrawChoices_FrameType(int selection, int y)
 {
     bool8 active = CheckConditions(MENUITEM_MAIN_FRAMETYPE);
-    u8 text[16];
+    u8 text[16] = {EOS};
     u8 n = selection + 1;
     u16 i;
 
@@ -1196,6 +1225,26 @@ static void DrawChoices_FrameType(int selection, int y)
 
     DrawOptionMenuChoice(gText_FrameType, 104, y, 0, active);
     DrawOptionMenuChoice(text, 128, y, 1, active);
+}
+
+static void DrawChoices_Filler(int selection, int y)
+{
+    bool8 active = CheckConditions(MENUITEM_CUSTOM_FILLER);
+    u8 styles[2] = {0};
+    styles[selection] = 1;
+
+    DrawOptionMenuChoice(gText_BattleSceneOn, 104, y, styles[0], active);
+    DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(1, gText_BattleSceneOff, 198), y, styles[1], active);
+}
+
+static void DrawChoices_Filler2(int selection, int y)
+{
+    bool8 active = CheckConditions(MENUITEM_CUSTOM_FILLER2);
+    u8 styles[2] = {0};
+    styles[selection] = 1;
+
+    DrawOptionMenuChoice(gText_BattleSceneOn, 104, y, styles[0], active);
+    DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(1, gText_BattleSceneOff, 198), y, styles[1], active);
 }
 
 static void DrawChoices_BikeSurf(int selection, int y)
