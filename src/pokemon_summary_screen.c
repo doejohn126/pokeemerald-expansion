@@ -2497,7 +2497,7 @@ static void Task_HandleInputCantForgetHMsMoves(u8 taskId)
 
 u8 GetMoveSlotToReplace(void)
 {
-    if (BW_SUMMARY_SCREEN)
+    if (!gSaveBlock2Ptr->optionsSummaryScreen == 0)
         return GetMoveSlotToReplace_BW();
     else
         return sMoveSlotToReplace;
@@ -4215,7 +4215,7 @@ static void SpriteCB_Pokemon(struct Sprite *sprite)
 // Normally destroys itself but it can be interrupted before the animation starts
 void SummaryScreen_SetAnimDelayTaskId(u8 taskId)
 {
-    if (BW_SUMMARY_SCREEN)
+    if (!gSaveBlock2Ptr->optionsSummaryScreen == 0)
         SummaryScreen_SetAnimDelayTaskId_BW(taskId);
     else
         sAnimDelayTaskId = taskId;

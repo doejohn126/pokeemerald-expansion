@@ -44,7 +44,7 @@ enum
 enum
 {
     MENUITEM_CUSTOM_POKEDEXTHEME,
-    MENUITEM_CUSTOM_FILLER2,
+    MENUITEM_CUSTOM_SUMMARYTYPE,
     MENUITEM_CUSTOM_FONT,
     MENUITEM_CUSTOM_MATCHCALL,
     MENUITEM_CUSTOM_CANCEL,
@@ -180,7 +180,7 @@ static void DrawChoices_BattleStyle(int selection, int y);
 static void DrawChoices_Sound(int selection, int y);
 static void DrawChoices_ButtonMode(int selection, int y);
 static void DrawChoices_PokedexTheme(int selection, int y);
-static void DrawChoices_Filler2(int selection, int y);
+static void DrawChoices_SummaryScreen(int selection, int y);
 static void DrawChoices_Font(int selection, int y);
 static void DrawChoices_FrameType(int selection, int y);
 static void DrawChoices_MatchCall(int selection, int y);
@@ -244,7 +244,7 @@ struct // MENU_CUSTOM
 } static const sItemFunctionsCustom[MENUITEM_CUSTOM_COUNT] =
 {
     [MENUITEM_CUSTOM_POKEDEXTHEME] = {DrawChoices_PokedexTheme,        ProcessInput_Options_Two}, 
-    [MENUITEM_CUSTOM_FILLER2]      = {DrawChoices_Filler2,        ProcessInput_Options_Two}, 
+    [MENUITEM_CUSTOM_SUMMARYTYPE]     = {DrawChoices_SummaryScreen,        ProcessInput_Options_Two}, 
     [MENUITEM_CUSTOM_FONT]         = {DrawChoices_Font,        ProcessInput_Options_Two}, 
     [MENUITEM_CUSTOM_MATCHCALL]    = {DrawChoices_MatchCall,   ProcessInput_Options_Two},
     [MENUITEM_CUSTOM_CANCEL]       = {NULL, NULL},
@@ -252,7 +252,7 @@ struct // MENU_CUSTOM
 
 
 static const u8 sText_DexTheme[]      = _("Pokédex Theme");
-static const u8 sText_Todo2[]  = _("TODO OPTIONS 2");
+static const u8 sText_MoveSkip[]  = _("Summary Screen");
 // Menu left side option names text
 static const u8 *const sOptionMenuItemsNamesMain[MENUITEM_MAIN_COUNT] =
 {
@@ -269,7 +269,7 @@ static const u8 *const sOptionMenuItemsNamesMain[MENUITEM_MAIN_COUNT] =
 static const u8 *const sOptionMenuItemsNamesCustom[MENUITEM_CUSTOM_COUNT] =
 {
     [MENUITEM_CUSTOM_POKEDEXTHEME]      = sText_DexTheme,
-    [MENUITEM_CUSTOM_FILLER2]     = sText_Todo2,
+    [MENUITEM_CUSTOM_SUMMARYTYPE]     = sText_MoveSkip,
     [MENUITEM_CUSTOM_FONT]        = gText_Font,
     [MENUITEM_CUSTOM_MATCHCALL]   = gText_OptionMatchCalls,
     [MENUITEM_CUSTOM_CANCEL]      = gText_OptionMenuSave,
@@ -308,7 +308,7 @@ static bool8 CheckConditions(int selection)
         switch(selection)
         {
         case MENUITEM_CUSTOM_POKEDEXTHEME:          return TRUE;
-        case MENUITEM_CUSTOM_FILLER2:         return TRUE;
+        case MENUITEM_CUSTOM_SUMMARYTYPE:         return TRUE;
         case MENUITEM_CUSTOM_FONT:            return TRUE;
         case MENUITEM_CUSTOM_MATCHCALL:       return TRUE;
         case MENUITEM_CUSTOM_CANCEL:          return TRUE;
@@ -356,10 +356,11 @@ static const u8 sText_Desc_OverworldCallsOn[]   = _("Trainers will be able to ca
 static const u8 sText_Desc_OverworldCallsOff[]  = _("You will not receive calls.\nSpecial events will still occur.");
 static const u8 sText_Desc_DarkMode[]  = _("This enables dark mode in the Pokédex\ninterface.");
 static const u8 sText_Desc_LightMode[]  = _("This enables light mode in the Pokédex\ninterface, like seen in HGSS.");
+static const u8 sText_Desc_SkipMove[]  = _("Choose the summary screen design.");
 static const u8 *const sOptionMenuItemDescriptionsCustom[MENUITEM_CUSTOM_COUNT][2] =
 {
     [MENUITEM_CUSTOM_POKEDEXTHEME]        = {sText_Desc_DarkMode,           sText_Desc_LightMode},
-    [MENUITEM_CUSTOM_FILLER2]        = {sText_Desc_ComingSoon,           sText_Desc_ComingSoon},
+    [MENUITEM_CUSTOM_SUMMARYTYPE]    = {sText_Desc_SkipMove,           sText_Desc_SkipMove},
     [MENUITEM_CUSTOM_FONT]        = {sText_Desc_FontType,           sText_Desc_FontType},
     [MENUITEM_CUSTOM_MATCHCALL]   = {sText_Desc_OverworldCallsOn,   sText_Desc_OverworldCallsOff},
     [MENUITEM_CUSTOM_CANCEL]      = {sText_Desc_Save,               sText_Empty},
@@ -384,7 +385,7 @@ static const u8 sText_Desc_Disabled_BattleHPBar[]   = _("Only active if xyz.");
 static const u8 *const sOptionMenuItemDescriptionsDisabledCustom[MENUITEM_CUSTOM_COUNT] =
 {
     [MENUITEM_CUSTOM_POKEDEXTHEME]        = sText_Empty,
-    [MENUITEM_CUSTOM_FILLER2]        = sText_Empty,
+    [MENUITEM_CUSTOM_SUMMARYTYPE]        = sText_Empty,
     [MENUITEM_CUSTOM_FONT]        = sText_Empty,
     [MENUITEM_CUSTOM_MATCHCALL]   = sText_Empty,
     [MENUITEM_CUSTOM_CANCEL]      = sText_Empty,
@@ -690,7 +691,7 @@ void CB2_InitOptionPlusMenu(void)
         sOptions->sel[MENUITEM_MAIN_FRAMETYPE]   = gSaveBlock2Ptr->optionsWindowFrameType;
         
         sOptions->sel_custom[MENUITEM_CUSTOM_POKEDEXTHEME]        = gSaveBlock2Ptr->optionsHGSSPokedexTheme;
-        sOptions->sel_custom[MENUITEM_CUSTOM_FILLER2]        = gSaveBlock2Ptr->optionsFiller2;
+        sOptions->sel_custom[MENUITEM_CUSTOM_SUMMARYTYPE]        = gSaveBlock2Ptr->optionsSummaryScreen;
         sOptions->sel_custom[MENUITEM_CUSTOM_FONT]        = gSaveBlock2Ptr->optionsCurrentFont;
         sOptions->sel_custom[MENUITEM_CUSTOM_MATCHCALL]   = gSaveBlock2Ptr->optionsDisableMatchCall;
 
@@ -899,7 +900,7 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsWindowFrameType  = sOptions->sel[MENUITEM_MAIN_FRAMETYPE];
 
     gSaveBlock2Ptr->optionsHGSSPokedexTheme      = sOptions->sel_custom[MENUITEM_CUSTOM_POKEDEXTHEME];
-    gSaveBlock2Ptr->optionsFiller2      = sOptions->sel_custom[MENUITEM_CUSTOM_FILLER2];
+    gSaveBlock2Ptr->optionsSummaryScreen      = sOptions->sel_custom[MENUITEM_CUSTOM_SUMMARYTYPE];
     gSaveBlock2Ptr->optionsCurrentFont      = sOptions->sel_custom[MENUITEM_CUSTOM_FONT];
     gSaveBlock2Ptr->optionsDisableMatchCall = sOptions->sel_custom[MENUITEM_CUSTOM_MATCHCALL];
 
@@ -1242,14 +1243,17 @@ static void DrawChoices_PokedexTheme(int selection, int y)
     DrawOptionMenuChoice(sText_Light, GetStringRightAlignXOffset(1, gText_BattleSceneOff, 198), y, styles[1], active);
 }
 
-static void DrawChoices_Filler2(int selection, int y)
+static const u8 sText_RSE[]      = _("RSE");
+static const u8 sText_BW[]      = _("BW");
+
+static void DrawChoices_SummaryScreen(int selection, int y)
 {
-    bool8 active = CheckConditions(MENUITEM_CUSTOM_FILLER2);
+    bool8 active = CheckConditions(MENUITEM_CUSTOM_SUMMARYTYPE);
     u8 styles[2] = {0};
     styles[selection] = 1;
 
-    DrawOptionMenuChoice(gText_BattleSceneOn, 104, y, styles[0], active);
-    DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(1, gText_BattleSceneOff, 198), y, styles[1], active);
+    DrawOptionMenuChoice(sText_RSE, 104, y, styles[0], active);
+    DrawOptionMenuChoice(sText_BW, GetStringRightAlignXOffset(1, gText_BattleSceneOff, 198), y, styles[1], active);
 }
 
 static void DrawChoices_BikeSurf(int selection, int y)

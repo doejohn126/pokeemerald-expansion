@@ -3843,14 +3843,14 @@ static void Task_ChangeScreen(u8 taskId)
         FreePokeStorageData();
         if (mode == SUMMARY_MODE_NORMAL && boxMons == &sSavedMovingMon.box)
         {
-            if (BW_SUMMARY_SCREEN)
+            if (!gSaveBlock2Ptr->optionsSummaryScreen == 0)
                 ShowPokemonSummaryScreenHandleDeoxys_BW(mode, boxMons, monIndex, maxMonIndex, CB2_ReturnToPokeStorage);
             else
                 ShowPokemonSummaryScreenHandleDeoxys(mode, boxMons, monIndex, maxMonIndex, CB2_ReturnToPokeStorage);
         }
         else
         {            
-            if (BW_SUMMARY_SCREEN)
+            if (!gSaveBlock2Ptr->optionsSummaryScreen == 0)
                 ShowPokemonSummaryScreen_BW(mode, boxMons, monIndex, maxMonIndex, CB2_ReturnToPokeStorage);
             else
                 ShowPokemonSummaryScreen(mode, boxMons, monIndex, maxMonIndex, CB2_ReturnToPokeStorage);

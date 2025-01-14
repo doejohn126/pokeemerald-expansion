@@ -576,7 +576,7 @@ struct SaveBlock2
              u16 optionsDisableMatchCall:1; //tx_optionsPlus
              u16 optionsCurrentFont:1;  //tx_optionsPlus
              u16 optionsHGSSPokedexTheme:1;
-             u16 optionsFiller2:1; // Temporary
+             u16 optionsSummaryScreen:1; // Temporary
              //u16 padding1:4;
              //u16 padding2;
     /*0x18*/ struct Pokedex pokedex;
