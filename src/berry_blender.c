@@ -858,18 +858,18 @@ static const s16 sBerrySpriteData[][5] =
 static const u8 sOpponentBerrySets[NUM_NPC_BERRIES * 2][3] =
 {
     // These sets are used if the player chose one of the 5 NPC berries
-    {ITEM_TO_BERRY(ITEM_ASPEAR_BERRY) - 1, ITEM_TO_BERRY(ITEM_RAWST_BERRY) - 1,  ITEM_TO_BERRY(ITEM_PECHA_BERRY) - 1},   // player chose Cheri Berry
+    {ITEM_TO_BERRY(ITEM_ENIGMA_BERRY) - 1, ITEM_TO_BERRY(ITEM_RAWST_BERRY) - 1,  ITEM_TO_BERRY(ITEM_PECHA_BERRY) - 1},   // player chose Cheri Berry
     {ITEM_TO_BERRY(ITEM_CHERI_BERRY) - 1,  ITEM_TO_BERRY(ITEM_ASPEAR_BERRY) - 1, ITEM_TO_BERRY(ITEM_RAWST_BERRY) - 1},   // player chose Chesto Berry
     {ITEM_TO_BERRY(ITEM_CHESTO_BERRY) - 1, ITEM_TO_BERRY(ITEM_CHERI_BERRY) - 1,  ITEM_TO_BERRY(ITEM_ASPEAR_BERRY) - 1},  // player chose Pecha Berry
     {ITEM_TO_BERRY(ITEM_PECHA_BERRY) - 1,  ITEM_TO_BERRY(ITEM_CHESTO_BERRY) - 1, ITEM_TO_BERRY(ITEM_CHERI_BERRY) - 1},   // player chose Rawst Berry
     {ITEM_TO_BERRY(ITEM_RAWST_BERRY) - 1,  ITEM_TO_BERRY(ITEM_PECHA_BERRY) - 1,  ITEM_TO_BERRY(ITEM_CHESTO_BERRY) - 1},  // player chose Aspear Berry
 
     // These sets are used if the player chose a different berry (set is selected by player's berry % 5)
-    {ITEM_TO_BERRY(ITEM_CHERI_BERRY) - 1,  ITEM_TO_BERRY(ITEM_PECHA_BERRY) - 1,  ITEM_TO_BERRY(ITEM_RAWST_BERRY) - 1},   // player chose Leppa, Figy, ...
-    {ITEM_TO_BERRY(ITEM_CHESTO_BERRY) - 1, ITEM_TO_BERRY(ITEM_RAWST_BERRY) - 1,  ITEM_TO_BERRY(ITEM_ASPEAR_BERRY) - 1},  // player chose Oran, Wiki, ...
-    {ITEM_TO_BERRY(ITEM_PECHA_BERRY) - 1,  ITEM_TO_BERRY(ITEM_ASPEAR_BERRY) - 1, ITEM_TO_BERRY(ITEM_CHERI_BERRY) - 1},   // player chose Persim, Mago, ...
-    {ITEM_TO_BERRY(ITEM_RAWST_BERRY) - 1,  ITEM_TO_BERRY(ITEM_CHERI_BERRY) - 1,  ITEM_TO_BERRY(ITEM_CHESTO_BERRY) - 1},  // player chose Lum, Aguav, ...
-    {ITEM_TO_BERRY(ITEM_ASPEAR_BERRY) - 1, ITEM_TO_BERRY(ITEM_CHESTO_BERRY) - 1, ITEM_TO_BERRY(ITEM_PECHA_BERRY) - 1},   // player chose Sitrus, Iapapa, ...
+    {ITEM_TO_BERRY(ITEM_CHERI_BERRY) - 1,  ITEM_TO_BERRY(ITEM_DURIN_BERRY) - 1,  ITEM_TO_BERRY(ITEM_LIECHI_BERRY) - 1},   // player chose Leppa, Figy, ...
+    {ITEM_TO_BERRY(ITEM_CHESTO_BERRY) - 1, ITEM_TO_BERRY(ITEM_OCCA_BERRY) - 1,  ITEM_TO_BERRY(ITEM_PAYAPA_BERRY) - 1},  // player chose Oran, Wiki, ...
+    {ITEM_TO_BERRY(ITEM_PECHA_BERRY) - 1,  ITEM_TO_BERRY(ITEM_YACHE_BERRY) - 1, ITEM_TO_BERRY(ITEM_KEE_BERRY) - 1},   // player chose Persim, Mago, ...
+    {ITEM_TO_BERRY(ITEM_RAWST_BERRY) - 1,  ITEM_TO_BERRY(ITEM_CORNN_BERRY) - 1,  ITEM_TO_BERRY(ITEM_CUSTAP_BERRY) - 1},  // player chose Lum, Aguav, ...
+    {ITEM_TO_BERRY(ITEM_ASPEAR_BERRY) - 1, ITEM_TO_BERRY(ITEM_CHARTI_BERRY) - 1, ITEM_TO_BERRY(ITEM_STARF_BERRY) - 1},   // player chose Sitrus, Iapapa, ...
 };
 
 // Berry master's berries follow the same rules as above, but instead of explicitly listing
@@ -878,7 +878,7 @@ static const u8 sBerryMasterBerries[] = {
     ITEM_TO_BERRY(ITEM_SPELON_BERRY) - 1,
     ITEM_TO_BERRY(ITEM_PAMTRE_BERRY) - 1,
     ITEM_TO_BERRY(ITEM_WATMEL_BERRY) - 1,
-    ITEM_TO_BERRY(ITEM_DURIN_BERRY) - 1,
+    ITEM_TO_BERRY(ITEM_ROSELI_BERRY) - 1,
     ITEM_TO_BERRY(ITEM_BELUE_BERRY) - 1
 };
 

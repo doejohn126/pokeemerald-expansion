@@ -416,6 +416,7 @@ static const u16 sFavorLadyAcceptedItems_Shiny[] =
     ITEM_BRIGHT_POWDER,
     ITEM_LUXURY_BALL,
     ITEM_PREMIER_BALL,
+    ITEM_SHINY_STONE,
     ITEM_NONE
 };
 
