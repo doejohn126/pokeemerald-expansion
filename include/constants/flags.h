@@ -70,8 +70,8 @@
 #define FLAG_JAYDEN_EVERGRANDE 0x38 // Unused Flag
 #define FLAG_NEW_POKE_RIDER  0x39 // Unused Flag
 #define FLAG_GIRATINA        0x3A // Unused Flag
-#define FLAG_UNUSED_0x03B    0x3B // Unused Flag
-#define FLAG_UNUSED_0x03C    0x3C // Unused Flag
+#define FLAG_TALKED_TO_OLD_DUDE    0x3B // Unused Flag
+#define FLAG_RECEIVED_KUBFU    0x3C // Unused Flag
 #define FLAG_UNUSED_0x03D    0x3D // Unused Flag
 #define FLAG_UNUSED_0x03E    0x3E // Unused Flag
 #define FLAG_UNUSED_0x03F    0x3F // Unused Flag

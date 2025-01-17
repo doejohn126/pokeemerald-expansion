@@ -1,0 +1,256 @@
+raw `
+MossdeepCity_GameCorner_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, MossdeepCity_GameCorner_1F_OnFrame
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, MossdeepCity_GameCorner_1F_OnWarp
+	map_script MAP_SCRIPT_ON_LOAD, CableClub_OnLoad
+	.byte 0
+
+MossdeepCity_GameCorner_1F_OnWarp:
+	map_script_2 VAR_CABLE_CLUB_STATE, USING_MINIGAME, CableClub_EventScript_CheckTurnAttendant
+	.2byte 0
+
+MossdeepCity_GameCorner_1F_OnFrame:
+	map_script_2 VAR_CABLE_CLUB_STATE, USING_MINIGAME, CableClub_EventScript_ExitMinigameRoom
+	.2byte 0
+
+@ Script is redundant, the label in the goto also does lock and faceplayer
+MossdeepCity_GameCorner_1F_EventScript_InfoMan::
+	lock
+	faceplayer
+	goto MossdeepCity_GameCorner_1F_EventScript_InfoMan2
+	release
+	end
+
+@ Script is redundant, the label in the goto also does lock and faceplayer
+MossdeepCity_GameCorner_1F_EventScript_OldMan::
+	lock
+	faceplayer
+	goto MossdeepCity_GameCorner_1F_EventScript_OldMan2
+	release
+	end
+
+
+@ Everything below is leftover from RS
+@ The house that was here in RS was moved to Sootopolis and replaced by the Game Corner
+@ The text below is unused and duplicated in its replacement in Sootopolis City
+@ And the BG Door event was moved inaccessibly into a wall
+
+RS_MysteryEventsHouse_EventScript_Door::
+	msgbox RS_MysteryEventsHouse_Text_DoorIsLocked, MSGBOX_SIGN
+	end
+
+RS_MysteryEventsHouse_Text_OldManGreeting:
+	.string "When I was young, I traveled the world\n"
+	.string "as a Pokémon Trainer.\p"
+	.string "Now that I've become an old buzzard,\n"
+	.string "my only amusement is watching young\l"
+	.string "Trainers battle.$"
+
+RS_MysteryEventsHouse_Text_DoorIsLocked:
+	.string "The door appears to be locked.$"
+
+RS_MysteryEventsHouse_Text_ChallengeVisitingTrainer:
+	.string "A Trainer named {STR_VAR_1} is\n"
+	.string "visiting my home.\p"
+	.string "Would you like to challenge\n"
+	.string "{STR_VAR_1}?$"
+
+RS_MysteryEventsHouse_Text_YouWontBattle:
+	.string "You won't battle? I'm disappointed\n"
+	.string "that I can't see you battle…$"
+
+RS_MysteryEventsHouse_Text_KeepItToA3On3:
+	.string "Oh, good, good!\p"
+	.string "But my house isn't all that sturdy.\p"
+	.string "Could I ask you to keep it down to\n"
+	.string "a 3-on-3 match?$"
+
+RS_MysteryEventsHouse_Text_SaveYourProgress:
+	.string "Before you two battle, you should\n"
+	.string "save your progress.$"
+
+RS_MysteryEventsHouse_Text_HopeToSeeAGoodMatch:
+	.string "I hope to see a good match!$"
+
+RS_MysteryEventsHouse_Text_BattleTie:
+	.string "So, it became a standoff.\p"
+	.string "It was a brilliant match in which\n"
+	.string "neither side conceded a step!$"
+
+RS_MysteryEventsHouse_Text_BattleWon:
+	.string "That was superlative!\p"
+	.string "Why, it was like seeing myself in\n"
+	.string "my youth again!$"
+
+RS_MysteryEventsHouse_Text_BattleLost:
+	.string "Ah, too bad for you!\p"
+	.string "But it was a good match.\n"
+	.string "I hope you can win next time.$"
+
+`
+
+script KubfuGuyMain {
+    lock
+    faceplayer
+    goto_if_set(FLAG_RECEIVED_KUBFU, UrshifuBroken)
+    goto_if_defeated(TRAINER_TATE_AND_LIZA_1, GiveTheKubfu)
+    goto_if_set(FLAG_TALKED_TO_OLD_DUDE, GoOnNow)
+    msgbox(BeatThoseKids, MSGBOX_YESNO)
+    goto_if_eq(VAR_RESULT, NO, NoGymThen)
+    msgbox(GreatToHear)
+    setflag(FLAG_TALKED_TO_OLD_DUDE)
+    release
+    end
+}
+
+script Urshifu {
+    lock
+    faceplayer
+    playmoncry(SPECIES_URSHIFU, CRY_MODE_NORMAL) 
+    waitmoncry
+    release
+    end
+}
+
+script UrshifuBroken {
+    msgbox(Hahaha)
+    release
+    end
+}
+
+script NoGymThen {
+    msgbox(YouWontShowUp)
+    release
+    end
+}
+
+script GoOnNow {
+    msgbox(WhatUDoing)
+    release
+    end
+}
+
+script GiveTheKubfu {
+    goto_if_set(FLAG_TALKED_TO_OLD_DUDE, ReallyGiveKubfu)
+    msgbox(DontGetOld)
+    release
+    end
+}
+
+script ReallyGiveKubfu {
+    msgbox(YouDidIt)
+    givemon(SPECIES_KUBFU, 10)
+    goto_if_eq(VAR_RESULT, MON_GIVEN_TO_PARTY, PutInParty)
+    goto_if_eq(VAR_RESULT, MON_GIVEN_TO_PC, PutInPC)
+    goto(Common_EventScript_NoMoreRoomForPokemon)
+    end
+}
+
+script PutInParty {
+    call(KubfuFanFare)
+    specialvar(VAR_RESULT, IsNuzlockeNicknamingActive)
+    goto_if_eq(VAR_RESULT, TRUE, PutInPartyNuzlocke)
+    msgbox(gText_NicknameThisPokemon, MSGBOX_YESNO)
+    goto_if_eq(VAR_RESULT, NO, HaveFunWithKubfu)
+    call(Common_EventScript_GetGiftMonPartySlot)
+    call(Common_EventScript_NameReceivedPartyMon)
+    goto(HaveFunWithKubfu)
+}
+
+script PutInPartyNuzlocke {
+    call(Common_EventScript_GetGiftMonPartySlot)
+    call(Common_EventScript_NameReceivedPartyMon)
+    goto(HaveFunWithKubfu)
+}
+
+script KubfuFanFare {
+    playfanfare(MUS_OBTAIN_ITEM)
+    message(RecievedKubfu)
+    waitmessage
+    waitfanfare
+    bufferspeciesname(STR_VAR_1, SPECIES_KUBFU)
+    return
+}
+
+script PutInPC {
+    call(KubfuFanFare)
+    specialvar(VAR_RESULT, IsNuzlockeNicknamingActive)
+    goto_if_eq(VAR_RESULT, TRUE, PutInPCNuzlocke)
+    msgbox(gText_NicknameThisPokemon, MSGBOX_YESNO)
+    goto_if_eq(VAR_RESULT, NO, SendKubfuToPc)
+    call(Common_EventScript_NameReceivedPartyMon)
+    goto(SendKubfuToPc)
+}
+
+script PutInPCNuzlocke {
+    call(Common_EventScript_NameReceivedPartyMon)
+    goto(SendKubfuToPc)
+}
+
+script SendKubfuToPc {
+    call(Common_EventScript_TransferredToPC)
+    goto(HaveFunWithKubfu)
+}
+
+script HaveFunWithKubfu {
+    msgbox(TakeCareOfHim)
+    setflag(FLAG_RECEIVED_KUBFU)
+    release
+    end
+}
+
+text RecievedKubfu {
+    "{PLAYER} received the Kubfu!"
+}
+
+text TakeCareOfHim {
+    "Please really take care of Kubfu.\p"
+    "He will be a good member on your team so\n"
+    "I trust you with it."
+}
+
+text Hahaha {
+    "Hahaha, you'll find out how good your\n"
+    "Urshifu will be and thank me later."
+}
+
+text YouDidIt {
+    "Oh well would you look at that!\n"
+    "If my eyes don't deceive me that's the\l"
+    "Mind Badge!\p"
+    "You know I never back down from\n"
+    "promises so take good care of Kubfu.\p"
+    "And don't thank me, thank Mustard and\n"
+    "Honey for helping me meet Kubfu in the\l"
+    "first place!"
+}
+
+text YouWontShowUp {
+    "So I'm assuming you won't be attending\n"
+    "that nearby Gym then."
+}
+
+text WhatUDoing {
+    "What're talking to me now for?\n"
+    "Get a move on, I know you can do it!"
+}
+
+text DontGetOld {
+    "Man once you get old, life just gets\n"
+    "harder man..."
+}
+
+text BeatThoseKids {
+    "Hello there young one, you like Pokémon\n"
+    "battles don't you?"
+}
+
+text GreatToHear {
+    "That's amazing to hear, hey I'll tell you\n"
+    "what.\p"
+    "I'm good friends with the owner's of the\n"
+    "Master Dojo in the Isle of Armor.\p"
+    "If you bring back the Mind Badge from\n"
+    "the Gym over here, I'll give you a really\l"
+    "valuable Pokémon they gave me."
+}
