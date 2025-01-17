@@ -6252,7 +6252,7 @@ Gender: Male
 Music: Elite Four
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer / Force Setup First Turn / Smart Switching / Weigh Ability Prediction
+AI: Basic Trainer / Force Setup First Turn / Smart Switching / Weigh Ability Prediction / Predict Switch
 Mugshot: Red
 
 Muk Alola (M)
@@ -6316,7 +6316,7 @@ Gender: Female
 Music: Elite Four
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction / Predict Switch
 Mugshot: Pink
 
 Mimikyu (M)
@@ -6379,7 +6379,7 @@ Gender: Female
 Music: Elite Four
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer / Smart Switching / Weigh Ability Prediction
+AI: Basic Trainer / Smart Switching / Weigh Ability Prediction / Predict Switch
 Mugshot: Cyan
 
 Ninetales Alola @ Icy Rock
@@ -6444,7 +6444,7 @@ Gender: Male
 Music: Elite Four
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Predict Switch
 Mugshot: Gray
 
 Dragalge
@@ -8821,7 +8821,7 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Predict Switch
 Mugshot: Blue
 
 Wailord @ Damp Rock

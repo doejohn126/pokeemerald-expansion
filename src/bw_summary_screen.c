@@ -4882,14 +4882,24 @@ static void SetMonTypeIcons(void)
 
 static void SetMoveTypeIcons(void)
 {
-    u8 i;
+    u32 i;
     struct PokeSummary *summary = &sMonSummaryScreen->summary;
+    struct Pokemon *mon = &sMonSummaryScreen->currentMon;
+    u32 type;
+
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
         if (summary->moves[i] != MOVE_NONE)
-            SetTypeSpritePosAndPal(GetMoveType(summary->moves[i]), 8, 16 + (i * 28), i + SPRITE_ARR_ID_TYPE);
+        {
+            type = GetMoveType(summary->moves[i]);
+            if (P_SHOW_DYNAMIC_TYPES)
+                type = CheckDynamicMoveType(mon, summary->moves[i], 0);
+            SetTypeSpritePosAndPal(type, 8, 16 + (i * 28), i + SPRITE_ARR_ID_TYPE);
+        }
         else
+        {
             SetSpriteInvisibility(i + SPRITE_ARR_ID_TYPE, TRUE);
+        }
     }
 }
 
@@ -4908,6 +4918,12 @@ static void SetContestMoveTypeIcons(void)
 
 static void SetNewMoveTypeIcon(void)
 {
+    u32 type = GetMoveType(sMonSummaryScreen->newMove);
+    struct Pokemon *mon = &sMonSummaryScreen->currentMon;
+
+    if (P_SHOW_DYNAMIC_TYPES)
+        type = CheckDynamicMoveType(mon, sMonSummaryScreen->newMove, 0);
+
     if (sMonSummaryScreen->newMove == MOVE_NONE)
     {
         SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 4, TRUE);
@@ -4915,9 +4931,13 @@ static void SetNewMoveTypeIcon(void)
     else
     {
         if (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES)
-            SetTypeSpritePosAndPal(GetMoveType(sMonSummaryScreen->newMove), 8, 128, SPRITE_ARR_ID_TYPE + 4);
+        {
+            SetTypeSpritePosAndPal(type, 8, 128, SPRITE_ARR_ID_TYPE + 4);
+        }
         else
+        {
             SetTypeSpritePosAndPal(NUMBER_OF_MON_TYPES + GetMoveContestCategory(sMonSummaryScreen->newMove), 8, 128, SPRITE_ARR_ID_TYPE + 4);
+        }
     }
 }
 

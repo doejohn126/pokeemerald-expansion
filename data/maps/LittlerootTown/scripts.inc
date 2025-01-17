@@ -1803,7 +1803,7 @@ LittlerootTown_EventScript_GiveRunningShoes::
 # 902 "data/maps/LittlerootTown/scripts.pory"
 	msgbox LittlerootTown_Text_WearTheseRunningShoes, MSGBOX_DEFAULT
 # 903 "data/maps/LittlerootTown/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	playfanfare MUS_DP_OBTAIN_KEY_ITEM
 # 904 "data/maps/LittlerootTown/scripts.pory"
 	message LittlerootTown_Text_SwitchShoesWithRunningShoes
 # 905 "data/maps/LittlerootTown/scripts.pory"

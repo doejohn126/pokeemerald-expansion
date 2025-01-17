@@ -15645,7 +15645,7 @@ F_TRAINER_FEMALE |
 #line 6254
         .doubleBattle = FALSE,
 #line 6255
-        .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_FORCE_SETUP_FIRST_TURN | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
+        .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_FORCE_SETUP_FIRST_TURN | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION | AI_FLAG_PREDICT_SWITCH,
 #line 6256
         .mugshotColor = MUGSHOT_COLOR_RED,
         .partySize = 6,
@@ -15795,7 +15795,7 @@ F_TRAINER_FEMALE |
 #line 6318
         .doubleBattle = FALSE,
 #line 6319
-        .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
+        .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION | AI_FLAG_PREDICT_SWITCH,
 #line 6320
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 6,
@@ -15946,7 +15946,7 @@ F_TRAINER_FEMALE |
 #line 6381
         .doubleBattle = FALSE,
 #line 6382
-        .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION,
+        .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_SWITCHING | AI_FLAG_WEIGH_ABILITY_PREDICTION | AI_FLAG_PREDICT_SWITCH,
 #line 6383
         .mugshotColor = MUGSHOT_COLOR_CYAN,
         .partySize = 6,
@@ -16100,7 +16100,7 @@ F_TRAINER_FEMALE |
 #line 6446
         .doubleBattle = FALSE,
 #line 6447
-        .aiFlags = AI_FLAG_SMART_TRAINER,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREDICT_SWITCH,
 #line 6448
         .mugshotColor = MUGSHOT_COLOR_GRAY,
         .partySize = 6,
@@ -22031,7 +22031,7 @@ F_TRAINER_FEMALE |
 #line 8823
         .doubleBattle = FALSE,
 #line 8824
-        .aiFlags = AI_FLAG_SMART_TRAINER,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREDICT_SWITCH,
 #line 8825
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 6,

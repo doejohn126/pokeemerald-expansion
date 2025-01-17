@@ -925,7 +925,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_Mightyena,
         .iconSprite = gMonIcon_Mightyena,
         .iconPalIndex = 2,
-        SHADOW(-2, 6, SHADOW_SIZE_L)
+        SHADOW(-2, 4, SHADOW_SIZE_L)
         FOOTPRINT(Mightyena)
         OVERWORLD(
             sPicTable_Mightyena,
@@ -2200,13 +2200,13 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .enemyMonElevation = 5,
         .backPic = gMonBackPic_Swellow,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 48) : MON_COORDS_SIZE(56, 56),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 6,
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 12 : 6,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
         .palette = gMonPalette_Swellow,
         .shinyPalette = gMonShinyPalette_Swellow,
         .iconSprite = gMonIcon_Swellow,
         .iconPalIndex = 2,
-        SHADOW(-7, 7, SHADOW_SIZE_M)
+        SHADOW(-4, 6, SHADOW_SIZE_M)
         FOOTPRINT(Swellow)
         OVERWORLD(
             sPicTable_Swellow,

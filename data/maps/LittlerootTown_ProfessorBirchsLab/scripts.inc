@@ -206,7 +206,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_UpgradeToNationalDex::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone, MSGBOX_DEFAULT
-	playfanfare MUS_OBTAIN_ITEM
+	playfanfare MUS_DP_OBTAIN_KEY_ITEM
 	message LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational
 	waitmessage
 	waitfanfare
@@ -602,7 +602,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_BrendanGivePokeBalls::
 	return
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex::
-	playfanfare MUS_OBTAIN_ITEM
+	playfanfare MUS_DP_OBTAIN_KEY_ITEM
 	message LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex
 	waitfanfare
 	setflag FLAG_SYS_POKEDEX_GET
