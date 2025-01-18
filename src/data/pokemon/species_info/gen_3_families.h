@@ -2194,10 +2194,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Swellow,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 22 : 5,
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 0 : 5,
         .frontAnimFrames = sAnims_Swellow,
         .frontAnimId = ANIM_H_SLIDE_SLOW,
-        .enemyMonElevation = 5,
+        .enemyMonElevation = 7,
         .backPic = gMonBackPic_Swellow,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 48) : MON_COORDS_SIZE(56, 56),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 12 : 6,
@@ -2206,7 +2206,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_Swellow,
         .iconSprite = gMonIcon_Swellow,
         .iconPalIndex = 2,
-        SHADOW(-4, 6, SHADOW_SIZE_M)
+        SHADOW(-5, 14, SHADOW_SIZE_M)
         FOOTPRINT(Swellow)
         OVERWORLD(
             sPicTable_Swellow,
@@ -3278,7 +3278,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_Nincada,
         .iconSprite = gMonIcon_Nincada,
         .iconPalIndex = 1,
-        SHADOW(2, -3, SHADOW_SIZE_M)
+        SHADOW(2, 6, SHADOW_SIZE_M)
         FOOTPRINT(Nincada)
         OVERWORLD(
             sPicTable_Nincada,
@@ -6816,7 +6816,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sSwabluLevelUpLearnset,
         .teachableLearnset = sSwabluTeachableLearnset,
         .eggMoveLearnset = sSwabluEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_ALTARIA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_ALTARIA}),
     },
 
     [SPECIES_ALTARIA] =
