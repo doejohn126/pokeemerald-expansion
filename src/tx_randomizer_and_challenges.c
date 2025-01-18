@@ -384,7 +384,7 @@ u8 GetCurrentTrainerIVs(void)
     switch (gSaveBlock1Ptr->tx_Challenges_TrainerScalingIVs)
     {
     case 1:     return sIV_Table[badgeCount];
-    default:    return MAX_PER_STAT_IVS;
+    default:    return USE_RANDOM_IVS;
     }
 }
 u8 GetCurrentTrainerEVs(void)
