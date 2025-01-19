@@ -1926,7 +1926,7 @@
 	.else
 		.set setScript, FALSE
 	.endif
-    .byte 0xe5
+    .byte SCR_OP_SETFOLLOWER
     .byte \localId
     .2byte \flags
 	.byte setScript
@@ -1942,27 +1942,27 @@
     
     @ Remove the following NPC (assumes there will only ever be one).
     .macro destroyfollower
-    .byte 0xe6
+    .byte SCR_OP_DESTROYFOLLOWER
     .endm
     
     @ Makes the player and follower face one another.
     .macro facefollower
-    .byte 0xe7
+    .byte SCR_OP_FACEFOLLOWER
     .endm
     
     @ Checks if you have a follower. returns the result to VAR_RESULT.
     .macro checkfollower
-    .byte 0xe8
+    .byte SCR_OP_CHECKFOLLOWER
     .endm
 
 	@ Updates Pokemon follower.
 	.macro updatefollowingmon
-    .byte 0xe9
+    .byte SCR_OP_UPDATEFOLLOWINGMON
     .endm
 
 	@ Returns Pokemon follower to ball.
 	.macro ballfollowingmon
-	.byte 0xea
+	.byte SCR_OP_BALLFOLLOWINGMON
 	delay 16
 	.endm
 
@@ -2409,7 +2409,7 @@
     @ When parameter is empty, it assumes VIAL_SIZE.
     @ When amount is empty, it assumes 1.
 	.macro pokevial mode:req, parameter=VIAL_SIZE, amount=1
-	.byte 0xec
+	.byte SCR_OP_POKEVIAL
     .byte \mode
     .byte \parameter
     .byte \amount
@@ -2468,7 +2468,7 @@
 	@ (zero-indexed) slot number of the first Pokemon that knows the move. If not, VAR_RESULT is set to PARTY_SIZE.
 	@ VAR_0x8004 is also set to this Pokemon's species.
 	.macro checkpartylearnknowsfieldmove tmhm:req
-	.byte 0xed
+	.byte SCR_OP_CHECKPARTYLEARNKNOWSFIELDMOVE
 	.2byte \tmhm
 	.endm
 
