@@ -838,7 +838,7 @@ RustboroCity_EventScript_MayEncounter::
 	setflag FLAG_MET_RIVAL_RUSTBORO
 	msgbox RustboroCity_Text_MayHiLetsRegister, MSGBOX_DEFAULT
 	closemessage
-	setflag FLAG_SYS_DEXNAV_GET
+	setflag DN_FLAG_DEXNAV_GET
 	message YouGotDexnav
 	playfanfare MUS_OBTAIN_TMHM
 	waitmessage
@@ -911,7 +911,7 @@ RustboroCity_EventScript_BrendanEncounter::
 	setflag FLAG_MET_RIVAL_RUSTBORO
 	msgbox RustboroCity_Text_BrendanHiLetsRegister, MSGBOX_DEFAULT
 	closemessage
-	setflag FLAG_SYS_DEXNAV_GET
+	setflag DN_FLAG_DEXNAV_GET
 	message YouGotDexnav
 	playfanfare MUS_OBTAIN_TMHM
 	waitmessage
@@ -1273,7 +1273,7 @@ RustboroCity_Text_TrainersSchoolSign:
 	.string "Pokémon!”$"
 
 YouGotDexnav:
-	.string "{PLAYER} has obtained the DexNav."
+	.string "{PLAYER} has obtained the DexNav.$"
 
 RustboroCity_Text_CuttersHouse:
 	.string "Cutter's House$"
