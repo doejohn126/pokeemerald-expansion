@@ -1154,7 +1154,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_PAWMOT] =
     {
-        .baseHP        = 70,
+        .baseHP        = 80,
         .baseAttack    = 115,
         .baseDefense   = 70,
         .baseSpeed     = 105,
