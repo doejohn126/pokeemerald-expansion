@@ -77,7 +77,13 @@
     F(SNOWSCAPE) \
     F(VOLT_SWITCH) \
     F(SCALE_SHOT) \
-    F(ROCK_BLAST)
+    F(ROCK_BLAST) \
+    F(POISON_JAB) \
+    F(HEAT_WAVE) \
+    F(FALSE_SWIPE) \
+    F(GIGA_IMPACT) \
+    F(ENERGY_BALL) \
+    F(SEED_BOMB)
 
 #define FOREACH_HM(F) \
     F(CUT) \
