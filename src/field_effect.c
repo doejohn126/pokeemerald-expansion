@@ -38,6 +38,7 @@
 #include "constants/rgb.h"
 #include "constants/songs.h"
 #include "qol_field_moves.h" // qol_field_moves
+#include "constants/map_types.h"
 
 #define subsprite_table(ptr) {.subsprites = ptr, .subspriteCount = (sizeof ptr) / (sizeof(struct Subsprite))}
 
