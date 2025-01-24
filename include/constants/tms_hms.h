@@ -83,7 +83,8 @@
     F(FALSE_SWIPE) \
     F(GIGA_IMPACT) \
     F(ENERGY_BALL) \
-    F(SEED_BOMB)
+    F(SEED_BOMB) \
+    F(IRON_HEAD)
 
 #define FOREACH_HM(F) \
     F(CUT) \
