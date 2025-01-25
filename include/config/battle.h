@@ -298,7 +298,6 @@
 
 // Pokémon battle sprite settings
 #define B_ENEMY_MON_SHADOW_STYLE        GEN_LATEST // In Gen4+, all enemy Pokemon will have a shadow drawn beneath them.
-                                              // Currently Gen4+ shadows don't properly work with Trainerslides
 
 //  Battle UI settings
 #define B_MOVE_REARRANGEMENT_IN_BATTLE  GEN_3  //  In Gen 4+ move slots cannot be rearranged in battle
