@@ -9490,7 +9490,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
     #if P_UPDATED_ABILITIES >= GEN_6
-        .abilities = { ABILITY_LEVITATE, ABILITY_HUSTLE, ABILITY_FRISK },
+        .abilities = { ABILITY_LEVITATE, ABILITY_HUSTLE, ABILITY_LEVITATE },
     #else
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
     #endif
@@ -10522,8 +10522,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_WALREIN] =
     {
-        .baseHP        = 110,
-        .baseAttack    = 80,
+        .baseHP        = 130,
+        .baseAttack    = 60,
         .baseDefense   = 90,
         .baseSpeed     = 65,
         .baseSpAttack  = 105,
