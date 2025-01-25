@@ -2179,7 +2179,7 @@ static bool32 ShouldUseItem(u32 battler)
             break;
         case EFFECT_ITEM_SET_MIST:
             battlerSide = GetBattlerSide(battler);
-            if (gDisableStructs[battler].isFirstTurn && gSideTimers[battlerSide].mistTimer == 0)
+            if (gDisableStructs[battler].isFirstTurn && !(gSideStatuses[battlerSide] & SIDE_STATUS_MIST))
                 shouldUse = TRUE;
             break;
         case EFFECT_ITEM_REVIVE:
