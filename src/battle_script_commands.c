@@ -7041,7 +7041,7 @@ static void Cmd_moveend(void)
                 gBattleStruct->pledgeMove = FALSE;
             if (GetActiveGimmick(gBattlerAttacker) == GIMMICK_Z_MOVE)
                 SetActiveGimmick(gBattlerAttacker, GIMMICK_NONE);
-            if (B_CHARGE <= GEN_8 || moveType == TYPE_ELECTRIC)
+            if (B_CHARGE >= GEN_9 && moveType == TYPE_ELECTRIC && (IsBattlerTurnDamaged(gBattlerTarget) || !MoveResultHasEffect(gBattlerTarget)))
                 gStatuses3[gBattlerAttacker] &= ~(STATUS3_CHARGED_UP);
             memset(gQueuedStatBoosts, 0, sizeof(gQueuedStatBoosts));
             ClearDamageCalcResults();
@@ -8347,9 +8347,9 @@ static void Cmd_getmoneyreward(void)
 
     if (gBattleOutcome == B_OUTCOME_WON)
     {
-        money = GetTrainerMoneyToGive(gTrainerBattleOpponent_A);
+        money = GetTrainerMoneyToGive(TRAINER_BATTLE_PARAM.opponentA);
         if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
-            money += GetTrainerMoneyToGive(gTrainerBattleOpponent_B);
+            money += GetTrainerMoneyToGive(TRAINER_BATTLE_PARAM.opponentB);
         AddMoney(&gSaveBlock1Ptr->money, money);
     }
     else

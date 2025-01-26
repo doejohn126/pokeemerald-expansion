@@ -865,7 +865,7 @@ void SetHillTrainerFlag(void)
 
     for (i = 0; i < HILL_TRAINERS_PER_FLOOR; i++)
     {
-        if (gSaveBlock2Ptr->frontier.trainerIds[i] == gTrainerBattleOpponent_A)
+        if (gSaveBlock2Ptr->frontier.trainerIds[i] == TRAINER_BATTLE_PARAM.opponentA)
         {
             gSaveBlock2Ptr->frontier.trainerFlags |= 1u << (trainerIndexStart + i);
             break;
@@ -876,7 +876,7 @@ void SetHillTrainerFlag(void)
     {
         for (i = 0; i < HILL_TRAINERS_PER_FLOOR; i++)
         {
-            if (gSaveBlock2Ptr->frontier.trainerIds[i] == gTrainerBattleOpponent_B)
+            if (gSaveBlock2Ptr->frontier.trainerIds[i] == TRAINER_BATTLE_PARAM.opponentB)
             {
                 gSaveBlock2Ptr->frontier.trainerFlags |= 1u << (trainerIndexStart + i);
                 break;
@@ -923,14 +923,14 @@ static void CreateNPCTrainerHillParty(u16 trainerId, u8 firstMonId)
 void FillHillTrainerParty(void)
 {
     ZeroEnemyPartyMons();
-    CreateNPCTrainerHillParty(gTrainerBattleOpponent_A, 0);
+    CreateNPCTrainerHillParty(TRAINER_BATTLE_PARAM.opponentA, 0);
 }
 
 void FillHillTrainersParties(void)
 {
     ZeroEnemyPartyMons();
-    CreateNPCTrainerHillParty(gTrainerBattleOpponent_A, 0);
-    CreateNPCTrainerHillParty(gTrainerBattleOpponent_B, PARTY_SIZE / 2);
+    CreateNPCTrainerHillParty(TRAINER_BATTLE_PARAM.opponentA, 0);
+    CreateNPCTrainerHillParty(TRAINER_BATTLE_PARAM.opponentB, PARTY_SIZE / 2);
 }
 
 // This function is unused, but my best guess is
