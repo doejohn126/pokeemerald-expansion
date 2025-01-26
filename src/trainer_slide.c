@@ -750,7 +750,7 @@ static bool32 IsSlideInitalizedOrPlayed(enum TrainerSlideType slideId)
     return FALSE;
 }
 
-void TryInitalizeFirstSTABMoveTrainerSlide(u32 battlerDef, u32 battlerAtk, u32 moveType)
+void TryInitializeFirstSTABMoveTrainerSlide(u32 battlerDef, u32 battlerAtk, u32 moveType)
 {
     enum TrainerSlideType slideId = TRAINER_SLIDE_PLAYER_LANDS_FIRST_STAB_MOVE;
 
@@ -766,7 +766,7 @@ void TryInitalizeFirstSTABMoveTrainerSlide(u32 battlerDef, u32 battlerAtk, u32 m
     InitalizeTrainerSlide(slideId);
 }
 
-void TryInitalizeTrainerSlidePlayerLandsFirstCriticalHit(u32 target)
+void TryInitializeTrainerSlidePlayerLandsFirstCriticalHit(u32 target)
 {
     enum TrainerSlideType slideId = TRAINER_SLIDE_PLAYER_LANDS_FIRST_CRITICAL_HIT;
 
@@ -779,7 +779,7 @@ void TryInitalizeTrainerSlidePlayerLandsFirstCriticalHit(u32 target)
     InitalizeTrainerSlide(slideId);
 }
 
-void TryInitalizeTrainerSlideEnemyLandsFirstCriticalHit(u32 target)
+void TryInitializeTrainerSlideEnemyLandsFirstCriticalHit(u32 target)
 {
     enum TrainerSlideType slideId = TRAINER_SLIDE_ENEMY_LANDS_FIRST_CRITICAL_HIT;
 
@@ -792,7 +792,7 @@ void TryInitalizeTrainerSlideEnemyLandsFirstCriticalHit(u32 target)
     InitalizeTrainerSlide(slideId);
 }
 
-void TryInitalizeTrainerSlidePlayerLandsFirstSuperEffectiveHit(u32 target)
+void TryInitializeTrainerSlidePlayerLandsFirstSuperEffectiveHit(u32 target)
 {
     enum TrainerSlideType slideId = TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT;
 
@@ -805,7 +805,7 @@ void TryInitalizeTrainerSlidePlayerLandsFirstSuperEffectiveHit(u32 target)
     InitalizeTrainerSlide(slideId);
 }
 
-void TryInitalizeTrainerSlideEnemyMonUnaffected(u32 target)
+void TryInitializeTrainerSlideEnemyMonUnaffected(u32 target)
 {
     enum TrainerSlideType slideId = TRAINER_SLIDE_ENEMY_MON_UNAFFECTED;
 

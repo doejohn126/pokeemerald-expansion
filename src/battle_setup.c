@@ -55,6 +55,7 @@
 #include "pokedex.h" //tx_randomizer_and_challenges
 #include "constants/region_map_sections.h" //tx_randomizer_and_challenges
 #include "data/tx_random_data.h"
+#include "wild_encounter.h"
 
 enum {
     TRANSITION_TYPE_NORMAL,
@@ -643,7 +644,11 @@ u8 BattleSetup_GetTerrainId(void)
     u16 tileBehavior;
     s16 x, y;
 
-    PlayerGetDestCoords(&x, &y);
+    if (I_FISHING_ENVIRONMENT >= GEN_4 && gIsFishingEncounter)
+        GetXYCoordsOneStepInFrontOfPlayer(&x, &y);
+    else
+        PlayerGetDestCoords(&x, &y);
+
     tileBehavior = MapGridGetMetatileBehaviorAt(x, y);
 
     if (MetatileBehavior_IsTallGrass(tileBehavior))
