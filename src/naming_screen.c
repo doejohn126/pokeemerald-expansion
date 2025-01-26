@@ -2173,7 +2173,7 @@ static const struct NamingScreenTemplate sCodeScreenTemplate =
     .title = sText_EnterCode,
 };
 
-static const struct NamingScreenTemplate sCodeScreenTemplate = 
+static const struct NamingScreenTemplate sMystergyGiftScreenTemplate = 
 {
     .copyExistingString = FALSE,
     .maxChars = MYSTERY_GIFT_CODE_LENGTH,

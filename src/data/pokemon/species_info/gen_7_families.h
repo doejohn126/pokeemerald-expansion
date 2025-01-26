@@ -4170,7 +4170,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_PYUKUMUKU
     [SPECIES_PYUKUMUKU] =
     {
-        .baseHP        = 55,
+        .baseHP        = 65,
         .baseAttack    = 60,
         .baseDefense   = 130,
         .baseSpeed     = 5,

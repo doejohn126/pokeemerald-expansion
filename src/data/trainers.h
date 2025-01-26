@@ -32376,10 +32376,10 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 12850
-                MOVE_INCINERATE,
-                MOVE_SNARL,
-                MOVE_YAWN,
+                MOVE_WATER_PULSE,
                 MOVE_ROUND,
+                MOVE_LICK,
+                MOVE_ROCK_TOMB,
             },
             },
             {

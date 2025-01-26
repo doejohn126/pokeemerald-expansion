@@ -1204,7 +1204,7 @@ void BattleSetup_StartTrainerBattle(void)
     else {
         if (gSaveBlock2Ptr->follower.battlePartner) {
             gBattleTypeFlags = (BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TRAINER);
-            gTrainerBattleOpponent_B = 0xFFFF;
+            TRAINER_BATTLE_PARAM.opponentB = 0xFFFF;
         }
         else {
             gBattleTypeFlags = (BATTLE_TYPE_TRAINER);
@@ -1302,7 +1302,7 @@ static void CB2_EndTrainerBattle(void)
     if (gSaveBlock2Ptr->follower.battlePartner)
         LoadLastThreeMons();
 
-    if (RAINER_BATTLE_PARAM.opponentA == TRAINER_SECRET_BASE)
+    if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_SECRET_BASE)
     {
         DowngradeBadPoison();
         SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
