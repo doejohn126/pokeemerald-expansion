@@ -4322,6 +4322,10 @@ u32 CanAbilityAbsorbMove(u32 battlerAtk, u32 battlerDef, u32 abilityDef, u32 mov
         if (moveType == TYPE_FIRE)
             effect = MOVE_ABSORBED_BY_STAT_INCREASE_ABILITY;
         break;
+    case ABILITY_WATER_COMPACTION:
+        if (moveType == TYPE_WATER)
+            effect = MOVE_ABSORBED_BY_STAT_INCREASE_ABILITY;
+        break;
     case ABILITY_WIND_RIDER:
         if (IsWindMove(move) && !(GetBattlerMoveTargetType(battlerAtk, move) & MOVE_TARGET_USER))
             effect = MOVE_ABSORBED_BY_STAT_INCREASE_ABILITY;
@@ -5535,6 +5539,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                     statId = STAT_ATK;
                     break;
                 case ABILITY_WELL_BAKED_BODY:
+                case ABILITY_WATER_COMPACTION:
                     statAmount = 2;
                     statId = STAT_DEF;
                     break;
@@ -5642,7 +5647,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
-        case ABILITY_WATER_COMPACTION:
+        /*case ABILITY_WATER_COMPACTION:
             if (MoveResultHasEffect(battler)
              && IsBattlerTurnDamaged(gBattlerTarget)
              && IsBattlerAlive(battler)
@@ -5655,7 +5660,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 gBattlescriptCurrInstr = BattleScript_TargetAbilityStatRaiseRet;
                 effect++;
             }
-            break;
+            break;*/
         case ABILITY_STAMINA:
             if (MoveResultHasEffect(battler)
              && gBattlerAttacker != gBattlerTarget

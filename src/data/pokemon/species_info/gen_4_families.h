@@ -3340,7 +3340,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_LOPUNNY] =
     {
         .baseHP        = 65,
-        .baseAttack    = 76,
+        .baseAttack    = 86,
         .baseDefense   = 84,
         .baseSpeed     = 105,
         .baseSpAttack  = 54,
