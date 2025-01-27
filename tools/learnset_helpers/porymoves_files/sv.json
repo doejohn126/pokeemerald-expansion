@@ -8903,6 +8903,7 @@
       "MOVE_ENDEAVOR",
       "MOVE_COACHING",
       "MOVE_THROAT_CHOP",
+      "MOVE_TRIPLE_AXEL",
       "MOVE_UPPER_HAND"
     ],
     "EggMoves": [],
@@ -27905,6 +27906,7 @@
       "MOVE_PAIN_SPLIT",
       "MOVE_PSYCH_UP",
       "MOVE_EXPANDING_FORCE",
+      "MOVE_TRIPLE_AXEL",
       "MOVE_UPPER_HAND"
     ],
     "EggMoves": [
@@ -82840,6 +82842,7 @@
       "MOVE_ENDEAVOR",
       "MOVE_FEATHER_DANCE",
       "MOVE_THROAT_CHOP",
+      "MOVE_TRIPLE_AXEL",
       "MOVE_UPPER_HAND"
     ],
     "EggMoves": [

@@ -4631,6 +4631,7 @@ static const struct LevelUpMove sArticunoGalarLevelUpLearnset[] = {
 #if P_FAMILY_ZAPDOS
 static const struct LevelUpMove sZapdosLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PECK),
+    LEVEL_UP_MOVE( 1, MOVE_BOLT_BEAK),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_WAVE),
     LEVEL_UP_MOVE( 5, MOVE_THUNDER_SHOCK),
     LEVEL_UP_MOVE(10, MOVE_LIGHT_SCREEN),
@@ -17366,7 +17367,7 @@ static const struct LevelUpMove sLycanrocMidnightLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_BITE),
     LEVEL_UP_MOVE(24, MOVE_ROCK_TOMB),
     LEVEL_UP_MOVE(30, MOVE_ROAR),
-    LEVEL_UP_MOVE(36, MOVE_ROCK_SLIDE),
+    LEVEL_UP_MOVE(36, MOVE_STONE_AXE),
     LEVEL_UP_MOVE(42, MOVE_CRUNCH),
     LEVEL_UP_MOVE(48, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE(54, MOVE_STEALTH_ROCK),

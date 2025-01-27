@@ -84,7 +84,9 @@
     F(GIGA_IMPACT) \
     F(ENERGY_BALL) \
     F(SEED_BOMB) \
-    F(IRON_HEAD)
+    F(IRON_HEAD) \
+    F(ACROBATICS) \
+    F(TRIPLE_AXEL)
 
 #define FOREACH_HM(F) \
     F(CUT) \
