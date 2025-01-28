@@ -16814,7 +16814,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Electric bursts goes\n"
             "crazy and land a critical hit."),
         .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_8 ? 80 : 50,
+        .power = B_UPDATED_MOVE_DATA >= GEN_8 ? 75 : 50,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
         .pp = B_UPDATED_MOVE_DATA >= GEN_8 ? 5 : 15,
