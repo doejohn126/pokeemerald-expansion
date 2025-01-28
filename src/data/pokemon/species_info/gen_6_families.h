@@ -618,6 +618,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sGreninjaLevelUpLearnset,
         .teachableLearnset = sGreninjaTeachableLearnset,
         .formSpeciesIdTable = sGreninjaFormSpeciesIdTable,
+        .formChangeTable = sGreninjaBattleBondFormChangeTable,
     },
 
     [SPECIES_GRENINJA_BATTLE_BOND] =
