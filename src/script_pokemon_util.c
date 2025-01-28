@@ -187,6 +187,17 @@ void CreateScriptedDoubleWildMon(u16 species1, u8 level1, u16 item1, u16 species
     u8 heldItem1[2];
     u8 heldItem2[2];
 
+    if (gSaveBlock1Ptr->tx_Random_Static)
+    {
+        species1 = GetSpeciesRandomSeeded(species1, TX_RANDOM_T_STATIC, 0);
+        species2 = GetSpeciesRandomSeeded(species2, TX_RANDOM_T_STATIC, 0);
+    }
+    if (gSaveBlock1Ptr->tx_Random_Items)
+    {
+        item1 = RandomItemId(item1);
+        item2 = RandomItemId(item2);
+    }
+
     ZeroEnemyPartyMons();
 
     if (OW_SYNCHRONIZE_NATURE > GEN_3)
