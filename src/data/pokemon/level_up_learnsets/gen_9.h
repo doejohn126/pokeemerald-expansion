@@ -21657,6 +21657,7 @@ static const struct LevelUpMove sRevavroomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(46, MOVE_GEAR_GRIND),
     LEVEL_UP_MOVE(52, MOVE_SPIN_OUT),
     LEVEL_UP_MOVE(58, MOVE_GUNK_SHOT),
+    LEVEL_UP_MOVE(65, MOVE_NOXIOUS_TORQUE),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_VAROOM
