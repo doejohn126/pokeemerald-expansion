@@ -401,7 +401,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon that changes forms does not gain
 {
     u16 capturedHP, finalHP;
     GIVEN {
-        PLAYER(SPECIES_GRENINJA_BATTLE_BOND) { Ability(ABILITY_BATTLE_BOND); HP(100); Speed(100); }
+        PLAYER(SPECIES_GRENINJA) { Ability(ABILITY_BATTLE_BOND); HP(100); Speed(100); }
         OPPONENT(SPECIES_CATERPIE) { HP(1); Speed(1000); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(10); }
     } WHEN {

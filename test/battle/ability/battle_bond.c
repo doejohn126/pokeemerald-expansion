@@ -37,7 +37,7 @@ SINGLE_BATTLE_TEST("Battle Bond transforms player's Greninja - Singles")
     PARAMETRIZE {monsCountPlayer = 2; monsCountOpponent = 2; }
 
     GIVEN {
-        PLAYER(SPECIES_GRENINJA_BATTLE_BOND);
+        PLAYER(SPECIES_GRENINJA) { Ability(ABILITY_BATTLE_BOND) };
         if (monsCountPlayer == 2) {
             PLAYER(SPECIES_WOBBUFFET);
         }
@@ -69,7 +69,7 @@ SINGLE_BATTLE_TEST("Battle Bond transforms player's Greninja - Singles")
         if (monsCountOpponent != 1) {
             EXPECT(player->species == SPECIES_GRENINJA_ASH);
         } else {
-            EXPECT(player->species == SPECIES_GRENINJA_BATTLE_BOND);
+            EXPECT(player->species == SPECIES_GRENINJA);
         }
     }
 }
@@ -84,7 +84,7 @@ SINGLE_BATTLE_TEST("Battle Bond transforms opponent's Greninja - Singles")
     PARAMETRIZE {monsCountPlayer = 2; monsCountOpponent = 2; }
 
     GIVEN {
-        OPPONENT(SPECIES_GRENINJA_BATTLE_BOND);
+        OPPONENT(SPECIES_GRENINJA) { Ability(ABILITY_BATTLE_BOND) };
         if (monsCountOpponent == 2) {
             OPPONENT(SPECIES_WOBBUFFET);
         }
@@ -116,7 +116,7 @@ SINGLE_BATTLE_TEST("Battle Bond transforms opponent's Greninja - Singles")
         if (monsCountPlayer != 1) {
             EXPECT(opponent->species == SPECIES_GRENINJA_ASH);
         } else {
-            EXPECT(opponent->species == SPECIES_GRENINJA_BATTLE_BOND);
+            EXPECT(opponent->species == SPECIES_GRENINJA);
         }
     }
 }
@@ -131,7 +131,7 @@ DOUBLE_BATTLE_TEST("Battle Bond transforms player's Greninja when fainting its A
     PARAMETRIZE {monsCountPlayer = 3; monsCountOpponent = 3; }
 
     GIVEN {
-        PLAYER(SPECIES_GRENINJA_BATTLE_BOND);
+        PLAYER(SPECIES_GRENINJA) { Ability(ABILITY_BATTLE_BOND) };
         PLAYER(SPECIES_WOBBUFFET) { HP(1); }
         if (monsCountPlayer == 3) {
             PLAYER(SPECIES_WOBBUFFET);
