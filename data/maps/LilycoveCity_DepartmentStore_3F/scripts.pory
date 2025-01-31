@@ -1,0 +1,213 @@
+raw `
+LilycoveCity_DepartmentStore_3F_MapScripts::
+	.byte 0
+
+LilycoveCity_DepartmentStore_3F_EventScript_ClerkLeft::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart LilycoveCity_DepartmentStore_3F_Pokemart_Vitamins
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+LilycoveCity_DepartmentStore_3F_Pokemart_Vitamins:
+	.2byte ITEM_PROTEIN
+	.2byte ITEM_CALCIUM
+	.2byte ITEM_IRON
+	.2byte ITEM_ZINC
+	.2byte ITEM_CARBOS
+	.2byte ITEM_HP_UP
+	pokemartlistend
+
+LilycoveCity_DepartmentStore_3F_EventScript_ClerkRight::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart LilycoveCity_DepartmentStore_3F_Pokemart_StatBoosters
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+LilycoveCity_DepartmentStore_3F_Pokemart_StatBoosters:
+	.2byte ITEM_X_SPEED
+	.2byte ITEM_X_SP_ATK
+	.2byte ITEM_X_ATTACK
+	.2byte ITEM_X_DEFENSE
+	.2byte ITEM_DIRE_HIT
+	.2byte ITEM_GUARD_SPEC
+	.2byte ITEM_X_ACCURACY
+	pokemartlistend
+
+LilycoveCity_DepartmentStore_3F_EventScript_TriathleteM::
+	msgbox LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon, MSGBOX_NPC
+	end
+
+LilycoveCity_DepartmentStore_3F_EventScript_PokefanM::
+	msgbox LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance, MSGBOX_NPC
+	end
+
+LilycoveCity_DepartmentStore_3F_EventScript_Woman::
+	msgbox LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon, MSGBOX_NPC
+	end
+
+LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon:
+	.string "For quickly toughening up Pokémon,\n"
+	.string "items are the best.\p"
+	.string "Protein boosts Attack,\n"
+	.string "and Calcium raises Sp. Atk.$"
+
+LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance:
+	.string "I want my Pokémon to have more\n"
+	.string "endurance.\p"
+	.string "I'm trying to decide whether to raise\n"
+	.string "Defense with Iron, or Sp. Def with Zinc.$"
+
+LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon:
+	.string "I gave a Carbos to my Pokémon,\n"
+	.string "and its Speed went up.$"
+
+
+`
+
+script Lilycove_ExtraSalesWoman3 {
+    lock
+    faceplayer
+    message(gText_HowMayIServeYou)
+    waitmessage
+    pokemart(LilycoveSecondMart3)
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+}
+
+script Lilycove_ExtraSalesWoman4 {
+    lock
+    faceplayer
+    message(gText_HowMayIServeYou)
+    waitmessage
+    pokemart(LilycoveSecondMart4)
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+}
+
+mart LilycoveSecondMart3 {
+    ITEM_ABILITY_SHIELD
+    ITEM_ABSORB_BULB
+    ITEM_ADRENALINE_ORB
+    ITEM_AIR_BALLOON
+    ITEM_AMULET_COIN
+    ITEM_ASSAULT_VEST
+    ITEM_BIG_ROOT
+    ITEM_BINDING_BAND
+    ITEM_BLACK_BELT
+    ITEM_BLACK_GLASSES
+    ITEM_BLACK_SLUDGE
+    ITEM_BLUNDER_POLICY
+    ITEM_BRIGHT_POWDER
+    ITEM_BUG_GEM
+    ITEM_CELL_BATTERY
+    ITEM_CHARCOAL
+    ITEM_CHOICE_BAND
+    ITEM_CHOICE_SPECS
+    ITEM_CHOICE_SCARF
+    ITEM_CLEANSE_TAG
+    ITEM_COVERT_CLOAK
+    ITEM_DAMP_ROCK
+    ITEM_DARK_GEM
+    ITEM_DRAGON_GEM
+    ITEM_EJECT_BUTTON
+    ITEM_EJECT_PACK
+    ITEM_EXPERT_BELT
+    ITEM_FIGHTING_GEM
+    ITEM_FIRE_GEM
+    ITEM_FLAME_ORB
+    ITEM_FLOAT_STONE
+    ITEM_FLYING_GEM
+    ITEM_FOCUS_BAND
+    ITEM_FOCUS_SASH
+    ITEM_GHOST_GEM
+    ITEM_GRASS_GEM
+    ITEM_GRASSY_SEED
+    ITEM_GRIP_CLAW
+    ITEM_GROUND_GEM
+    ITEM_HARD_STONE
+    ITEM_HEAT_ROCK
+    ITEM_ICE_GEM
+    ITEM_ICY_ROCK
+    ITEM_IRON_BALL
+    ITEM_LAGGING_TAIL
+    ITEM_LEEK
+    ITEM_LEFTOVERS
+    ITEM_LIFE_ORB
+    ITEM_LIGHT_CLAY
+    ITEM_LOADED_DICE
+    ITEM_LUCKY_EGG
+    ITEM_LUCKY_PUNCH
+    ITEM_LUMINOUS_MOSS
+    ITEM_MAGNET
+    ITEM_MENTAL_HERB
+    ITEM_METAL_POWDER
+    ITEM_METRONOME
+    ITEM_MIRACLE_SEED
+    ITEM_MISTY_SEED
+    ITEM_MUSCLE_BAND
+    ITEM_MYSTIC_WATER
+    ITEM_NEVER_MELT_ICE
+    ITEM_NORMAL_GEM
+    ITEM_POISON_GEM
+    ITEM_POWER_HERB
+    ITEM_PROTECTIVE_PADS
+    ITEM_PSYCHIC_GEM
+    ITEM_PSYCHIC_SEED
+    ITEM_QUICK_CLAW
+    ITEM_RED_CARD
+    ITEM_RING_TARGET
+    ITEM_ROCK_GEM
+    ITEM_ROCKY_HELMET
+    ITEM_ROOM_SERVICE
+    ITEM_SAFETY_GOGGLES
+    ITEM_SCOPE_LENS
+    ITEM_SHARP_BEAK
+    ITEM_SHED_SHELL
+    ITEM_SHELL_BELL
+    ITEM_SILK_SCARF
+    ITEM_SILVER_POWDER
+    ITEM_SMOKE_BALL
+    ITEM_SMOOTH_ROCK
+    ITEM_SNOWBALL
+    ITEM_SOFT_SAND
+    ITEM_SOOTHE_BELL
+    ITEM_SPELL_TAG
+    ITEM_STEEL_GEM
+    ITEM_STICKY_BARB
+    ITEM_TERRAIN_EXTENDER
+    ITEM_THROAT_SPRAY
+    ITEM_TOXIC_ORB
+    ITEM_TWISTED_SPOON
+    ITEM_UTILITY_UMBRELLA
+    ITEM_WEAKNESS_POLICY
+    ITEM_WHITE_HERB
+    ITEM_WIDE_LENS
+    ITEM_ZOOM_LENS
+}
+
+mart LilycoveSecondMart4 {
+    ITEM_DESTINY_KNOT
+    ITEM_EVIOLITE
+    ITEM_EVERSTONE
+    ITEM_POWER_ANKLET
+    ITEM_POWER_BAND
+    ITEM_POWER_LENS
+    ITEM_POWER_BELT
+    ITEM_POWER_BRACER
+    ITEM_POWER_WEIGHT
+    ITEM_MACHO_BRACE
+    ITEM_LIGHT_BALL
+    ITEM_MIRROR_HERB
+}
