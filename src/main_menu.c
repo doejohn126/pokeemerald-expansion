@@ -39,6 +39,8 @@
 #include "window.h"
 #include "mystery_gift_menu.h"
 #include "tx_randomizer_and_challenges.h"
+#include "ui_main_menu.h"
+#include "main_menu.h"
 
 /*
  * Main menu state machine
@@ -226,7 +228,7 @@ static void Task_NewGameBirchSpeech_WaitForWhatsYourNameToPrint(u8);
 static void Task_NewGameBirchSpeech_WaitPressBeforeNameChoice(u8);
 static void Task_NewGameBirchSpeech_StartNamingScreen(u8);
 static void CB2_NewGameBirchSpeech_ReturnFromNamingScreen(void);
-static void CB2_NewGameBirchSpeech_ReturnFromTxRandomizerChallengesOptions(void);
+void CB2_NewGameBirchSpeech_ReturnFromTxRandomizerChallengesOptions(void);
 static void Task_NewGameBirchSpeech_CreateNameYesNo(u8);
 static void Task_NewGameBirchSpeech_ProcessNameYesNoMenu(u8);
 void CreateYesNoMenuParameterized(u8, u8, u16, u16, u8, u8);
@@ -595,16 +597,12 @@ static u32 InitMainMenu(bool8 returningFromOptionsMenu)
     DmaFill16(3, 0, (void *)(PLTT + 2), PLTT_SIZE - 2);
 
     ResetPaletteFade();
-    LoadPalette(sMainMenuBgPal, BG_PLTT_ID(0), PLTT_SIZE_4BPP);
+    //LoadPalette(sMainMenuBgPal, BG_PLTT_ID(0), PLTT_SIZE_4BPP);
     LoadPalette(sMainMenuTextPal, BG_PLTT_ID(15), PLTT_SIZE_4BPP);
     ScanlineEffect_Stop();
     ResetTasks();
     ResetSpriteData();
     FreeAllSpritePalettes();
-    if (returningFromOptionsMenu)
-        BeginNormalPaletteFade(PALETTES_ALL, 0, 0x10, 0, RGB_BLACK); // fade to black
-    else
-        BeginNormalPaletteFade(PALETTES_ALL, 0, 0x10, 0, RGB_WHITEALPHA); // fade to white
     ResetBgsAndClearDma3BusyFlags(0);
     InitBgsFromTemplates(0, sMainMenuBgTemplates, ARRAY_COUNT(sMainMenuBgTemplates));
     ChangeBgX(0, 0, BG_COORD_SET);
@@ -762,6 +760,9 @@ static void Task_DisplayMainMenu(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
     u16 palette;
+
+    gTasks[taskId].func = Task_OpenMainMenu;
+    return;
 
     if (!gPaletteFade.active)
     {
@@ -1286,7 +1287,7 @@ static void HighlightSelectedMainMenuItem(u8 menuType, u8 selectedMenuItem, s16 
 #define tBrendanSpriteId data[10]
 #define tMaySpriteId data[11]
 
-static void CB2_NewGameBirchSpeech_ReturnFromTxRandomizerChallengesOptions(void)
+void CB2_NewGameBirchSpeech_ReturnFromTxRandomizerChallengesOptions(void)
 {
     u8 taskId;
     //u8 spriteId;
