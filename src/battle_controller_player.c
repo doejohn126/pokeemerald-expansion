@@ -1764,7 +1764,6 @@ static u8 GetPowerWindowId(u16 power, u16 basePower)
         return B_WIN_MOVE_PWR;
 }
 
-// Function to determine which window to use for Accuracy
 static u8 GetAccuracyWindowId(u16 accuracy, u16 baseAccuracy)
 {
     if (accuracy > baseAccuracy)
@@ -1781,34 +1780,42 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     u32 move = moveInfo->moves[gMoveSelectionCursor[battler]];
     u16 pwr = 0;
     u16 acc = 0;
-    u32 battlerAtk = battler;
-    u32 battlerDef = BATTLE_OPPOSITE(battlerAtk);
-    u32 moveType = gMovesInfo[move].type;
-    u32 atkAbility = GetBattlerAbility(battlerAtk);
-    u32 holdEffectAtk = GetBattlerHoldEffect(battlerAtk, TRUE);
-    u8 cat = gMovesInfo[move].category;
+    u32 atkAbility = GetBattlerAbility(battler);
+    u32 holdEffectAtk = GetBattlerHoldEffect(battler, TRUE);
+    //u8 cat = gMovesInfo[move].category;
     u32 moveEffect = gMovesInfo[move].effect;
 
-    // Calculate dynamic power and accuracy, with adjustment for status moves
-    if (B_DYNAMIC_MOVE_DESCRIPTIONS 
+    // Initialize DamageCalculationData struct
+    struct DamageCalculationData damageCalcData = {
+        .battlerAtk = battler,
+        .battlerDef = BATTLE_OPPOSITE(battler),
+        .move = move,
+        .moveType = gMovesInfo[move].type,
+        .isCrit = FALSE,  // Not relevant for this calculation
+        .randomFactor = 0, // Unused in this context
+        .updateFlags = 0, // No special flags needed
+        .padding = 0  // Zero padding for safety
+    };
+
+    if (B_DYNAMIC_MOVE_INFO
         && move != MOVE_NONE && move != 0xFFFF && moveEffect != EFFECT_KNOCK_OFF 
         && moveEffect != EFFECT_BRINE && moveEffect != EFFECT_LOW_KICK)
     {
         if (gMovesInfo[move].category == DAMAGE_CATEGORY_STATUS) 
         {
-            // STATUS MOVE: Ignore power, only modify accuracy
-            pwr = 0; // Ensure power remains "0"
-            acc = GetTotalAccuracy(battlerAtk, battlerDef, move, atkAbility, 0, holdEffectAtk, HOLD_EFFECT_NONE);
+            pwr = 0;
         }
         else 
         {
             // NON-STATUS MOVES: Modify both power and accuracy
-            pwr = CalcMoveBasePowerAfterModifiers(move, battlerAtk, battlerDef, moveType, FALSE, atkAbility, 0, holdEffectAtk, gBattleWeather);
-            acc = GetTotalAccuracy(battlerAtk, battlerDef, move, atkAbility, 0, holdEffectAtk, HOLD_EFFECT_NONE);
+            pwr = CalcMoveBasePowerAfterModifiers(&damageCalcData, atkAbility, 0, holdEffectAtk, gBattleWeather);
 
             if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN && moveEffect == EFFECT_EARTHQUAKE)
                 pwr /= 2;
         }
+
+        acc = GetTotalAccuracy(damageCalcData.battlerAtk, damageCalcData.battlerDef, damageCalcData.move, atkAbility, 0, holdEffectAtk, HOLD_EFFECT_NONE);
+
         if (acc > 100)
             acc = 100;
     }
@@ -1866,7 +1873,7 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     }
 
     // Set colors based on configuration
-    if (B_DYNAMIC_DESCRIPTION_COLORS)
+    if (B_DYNAMIC_MOVE_INFO_COLORS)
     {
         // Dynamic color display logic
         BattlePutTextOnWindow(pwr_num, GetPowerWindowId(pwr, gMovesInfo[move].power));
