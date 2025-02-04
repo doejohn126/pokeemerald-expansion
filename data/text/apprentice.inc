@@ -561,7 +561,7 @@ gText_ApprenticePleaseTeach13::
 	.string "I decided I'll battle Pokémon and\n"
 	.string "toughen myself up.\p"
 	.string "You're {PLAYER}{KUN}, aren't you?\n"
-	.string "The Pokémon League CHAMP?\p"
+	.string "The Pokémon League Champ?\p"
 	.string "Listen, can I get you to give me\n"
 	.string "advice?$"
 
