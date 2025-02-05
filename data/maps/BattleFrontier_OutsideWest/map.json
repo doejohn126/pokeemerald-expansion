@@ -331,6 +331,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BattleFrontier_OutsideWest_EventScript_PokefanF",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_PSYCHIC_M",
+      "x": 34,
+      "y": 41,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MagicDoorsGuy",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -416,6 +429,34 @@
       "y": 41,
       "elevation": 0,
       "dest_map": "MAP_GIRATINAS_ROOM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 38,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_SOUTHERN_ISLAND_EXTERIOR",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 39,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_FARAWAY_ISLAND_ENTRANCE",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 40,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_NAVEL_ROCK_EXTERIOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 36,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_BIRTH_ISLAND_EXTERIOR",
       "dest_warp_id": "0"
     }
   ],

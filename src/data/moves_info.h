@@ -18842,7 +18842,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 100 : 95,
         .type = TYPE_FAIRY,
         .accuracy = 80,
-        .pp = 5,
+        .pp = 10,
         .target = MOVE_TARGET_BOTH,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,

@@ -55,6 +55,13 @@
       "elevation": 3,
       "dest_map": "MAP_FARAWAY_ISLAND_INTERIOR",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 13,
+      "y": 32,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
+      "dest_warp_id": "13"
     }
   ],
   "coord_events": [

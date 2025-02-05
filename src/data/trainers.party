@@ -3302,8 +3302,16 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Roselia @ Nugget
-Level: 45
+Roserade @ Nugget
+Level: 88
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Gogoat @ Nugget
+Level: 87
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Sunflora @ Nugget
+Level: 87
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_CINDY_3 ===
@@ -3701,8 +3709,17 @@ Double Battle: No
 AI: Basic Trainer
 
 Azumarill @ Nugget
-Level: 45
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 87
+Ability: Huge Power
+IVs: 0 HP / 20 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Furfrou Star @ Nugget
+Level: 87
+IVs: 0 HP / 20 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Kangaskhan @ Nugget
+Level: 88
+IVs: 0 HP / 20 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WINSTON_2 ===
 Name: Winston
@@ -6128,13 +6145,17 @@ Music: Rich
 Double Battle: No
 AI: Basic Trainer
 
-Manectric
-Level: 44
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Arcanine Hisui
+Level: 87
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 20 Spe
 
-Manectric
-Level: 44
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Zebstrika
+Level: 87
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 20 Spe
+
+Durant
+Level: 87
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 20 Spe
 
 === TRAINER_THOMAS ===
 Name: Thomas
@@ -6145,8 +6166,17 @@ Music: Rich
 Double Battle: No
 AI: Basic Trainer
 
-Zangoose
-Level: 45
+Zangoose @ Toxic Orb
+Level: 87
+Ability: Toxic Boost
+IVs: 0 HP / 20 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Braviary
+Level: 87
+IVs: 0 HP / 20 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Farigiraf
+Level: 87
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WALTER_2 ===
@@ -7653,53 +7683,21 @@ Music: Twins
 Double Battle: No
 AI: Basic Trainer
 
-Skitty @ Oran Berry
-Level: 22
+Meowscarada
+Level: 87
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
 
-Skitty @ Oran Berry
-Level: 36
+Delcatty
+Level: 87
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
 
-Skitty @ Oran Berry
-Level: 40
+Liepard
+Level: 86
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
 
-Skitty @ Oran Berry
-Level: 12
+Meowstic
+Level: 87
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
-
-Skitty @ Oran Berry
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
-
-Delcatty @ Oran Berry
-Level: 42
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
 
 === TRAINER_MIGUEL_2 ===
 Name: Miguel
@@ -12162,12 +12160,16 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Tentacruel
-Level: 44
+Floatzel
+Level: 88
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machoke
-Level: 44
+Machamp
+Level: 87
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bellibolt
+Level: 87
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LEONARD ===
@@ -12179,16 +12181,16 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Machop
-Level: 43
+Qwilfish
+Level: 87
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Pelipper
-Level: 43
+Level: 88
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machoke
-Level: 43
+Golisopod
+Level: 87
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DUNCAN ===
@@ -16459,13 +16461,21 @@ Music: Girl
 Double Battle: Yes
 AI: Basic Trainer
 
-Luvdisc
-Level: 45
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tauros
+Level: 87
+IVs: 25 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Luvdisc
-Level: 45
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Miltank
+Level: 87
+IVs: 25 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Aromatisse (F)
+Level: 87
+IVs: 25 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Slurpuff (M)
+Level: 87
+IVs: 25 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KIRA_AND_DAN_1 ===
 Name: Kira & Dan
