@@ -1022,10 +1022,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 3,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(0, 27),
-            ANIMCMD_FRAME(1, 6),
-            ANIMCMD_FRAME(0, 6),
-            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(1, 56),
             ANIMCMD_FRAME(0, 6),
         ),
         .frontAnimId = ANIM_V_SHAKE,
@@ -1037,7 +1034,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_Mightyena,
         .iconSprite = gMonIcon_Mightyena,
         .iconPalIndex = 2,
-        SHADOW(-2, 4, SHADOW_SIZE_L)
+        SHADOW(-2, 0, SHADOW_SIZE_L)
         FOOTPRINT(Mightyena)
         OVERWORLD(
             gObjectEventPic_Mightyena,
