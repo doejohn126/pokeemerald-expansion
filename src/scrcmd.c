@@ -2050,7 +2050,7 @@ bool8 ScrCmd_vmessage(struct ScriptContext *ctx)
 bool8 ScrCmd_bufferspeciesname(struct ScriptContext *ctx)
 {
     u8 stringVarIndex = ScriptReadByte(ctx);
-    u16 species = VarGet(ScriptReadHalfword(ctx)) & OBJ_EVENT_GFX_SPECIES_MASK; // ignore possible shiny / form bits
+    u16 species = VarGet(ScriptReadHalfword(ctx)) & OBJ_EVENT_MON_SPECIES_MASK; // ignore possible shiny / form bits
 
     Script_RequestEffects(SCREFF_V1);
 
@@ -3064,14 +3064,14 @@ bool8 ScrCmd_updatefollowingmon(struct ScriptContext *ctx)
 bool8 ScrCmd_ballfollowingmon(struct ScriptContext *ctx)
 {
     u16 species;
-    bool8 shiny;
-    u8 form;
+    bool32 shiny;
+    bool32 female;
 
     if (OW_POKEMON_OBJECT_EVENTS == FALSE
      || OW_FOLLOWERS_ENABLED == FALSE
-     || !GetFollowerInfo(&species, &form, &shiny)
-     || SpeciesToGraphicsInfo(species, form) == NULL
-     || (gMapHeader.mapType == MAP_TYPE_INDOOR && SpeciesToGraphicsInfo(species, form)->oam->size > ST_OAM_SIZE_2)
+     || !GetFollowerInfo(&species, &shiny, &female)
+     || SpeciesToGraphicsInfo(species, shiny, female) == NULL
+     || (gMapHeader.mapType == MAP_TYPE_INDOOR && SpeciesToGraphicsInfo(species, shiny, female)->oam->size > ST_OAM_SIZE_2)
      || FlagGet(FLAG_TEMP_HIDE_FOLLOWER)
      || gSaveBlock2Ptr->follower.inProgress
      || !FlagGet(FLAG_SYS_POKEMON_GET))
