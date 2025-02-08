@@ -2024,16 +2024,21 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Sableye
-Level: 44
+Spiritomb
+Level: 90
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Medicham
-Level: 44
+Greninja
+Level: 90
+Ability: Battle Bond
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Sharpedo
-Level: 44
+Iron Treads
+Level: 90
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Turtonator
+Level: 90
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_LEROY ===
@@ -2046,12 +2051,24 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Mawile
-Level: 46
+Tinkaton
+Level: 90
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Sandy Shocks
+Level: 90
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Starmie
-Level: 46
+Level: 90
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Surf
+- Psychic
+- Ice Beam
+- Thunder
+
+Archaludon
+Level: 90
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_WILTON_1 ===
@@ -2532,12 +2549,21 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Lairon
-Level: 45
+Electivire
+Level: 90
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Manectric
-Level: 45
+Magmortar
+Level: 90
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Luvdisc
+Level: 90
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 31 Spe
+- Hydro Pump
+
+Scream Tail
+Level: 90
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BROOKE_1 ===
@@ -2869,12 +2895,16 @@ Music: Suspicious
 Double Battle: No
 AI: Basic Trainer
 
-Banette
-Level: 41
+Dusknoir
+Level: 81
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Lunatone
-Level: 41
+Sinistcha
+Level: 81
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Musharna
+Level: 81
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KINDRA ===
@@ -4798,12 +4828,16 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Makuhita
-Level: 26
+Electivire
+Level: 51
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Machoke
-Level: 26
+Flamigo
+Level: 51
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Decidueye Hisui
+Level: 51
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_DAISUKE ===
@@ -5341,7 +5375,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Kecleon
-Level: 24
+Level: 44
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pupitar
+Level: 44
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Weezing
+Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ETHAN_1 ===
@@ -5810,12 +5852,16 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Kadabra
-Level: 41
+Alakazam
+Level: 81
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Solrock
-Level: 41
+Reuniclus
+Level: 81
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Typhlosion Hisui
+Level: 81
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CAMERON_1 ===
@@ -6018,12 +6064,16 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Kirlia
-Level: 41
+Rapidash Galar
+Level: 82
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Xatu
-Level: 41
+Gardevoir
+Level: 82
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ribombee
+Level: 82
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JACKI_1 ===
@@ -7258,8 +7308,16 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Ralts
-Level: 17
+Axew
+Level: 30
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+Watchog
+Level: 30
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+Orbeetle
+Level: 30
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_PAUL ===
@@ -7271,16 +7329,16 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Numel
-Level: 15
+Snover
+Level: 30
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Oddish
-Level: 15
+Bramblin
+Level: 30
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Wingull
-Level: 15
+Chimecho
+Level: 30
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_JERRY_2 ===
@@ -7389,12 +7447,16 @@ Music: Girl
 Double Battle: No
 AI: Basic Trainer
 
-Shroomish
-Level: 16
+Haunter
+Level: 30
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Beautifly
-Level: 16
+Cacnea
+Level: 30
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+Mothim
+Level: 30
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_KAREN_2 ===
@@ -8661,12 +8723,16 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Zigzagoon
-Level: 14
+Joltik
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zigzagoon
-Level: 16
+Porygon
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Golett
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALLEN ===
@@ -10322,16 +10388,16 @@ Music: Cool
 Double Battle: No
 AI: Basic Trainer
 
-Swellow
-Level: 36
+Toucannon
+Level: 74
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Pelipper
-Level: 36
+Dragonite
+Level: 74
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Xatu
-Level: 36
+Kilowattrel
+Level: 74
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHESTER ===
@@ -10785,8 +10851,16 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Meditite
-Level: 27
+Gallade
+Level: 52
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Hitmontop
+Level: 51
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Bewear
+Level: 51
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_PAULA ===
@@ -10798,8 +10872,16 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Breloom
-Level: 27
+Granbull
+Level: 51
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Toxicroak
+Level: 51
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Lopunny
+Level: 51
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_CYNDY_2 ===
@@ -11706,12 +11788,16 @@ Music: Girl
 Double Battle: No
 AI: Basic Trainer
 
-Skitty
-Level: 23
+Amoonguss
+Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Swablu
-Level: 23
+Altaria
+Level: 45
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cradily
+Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DIANA_1 ===
@@ -14155,7 +14241,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Cacturne
-Level: 39
+Level: 74
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Drampa
+Level: 74
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Venusaur
+Level: 74
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_JACKSON_2 ===
@@ -14288,12 +14382,16 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Swablu
-Level: 38
+Exeggutor Alola
+Level: 74
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Roselia
-Level: 38
+Ninetales Alola
+Level: 74
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Greedent
+Level: 74
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_CATHERINE_2 ===
@@ -15560,8 +15658,16 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Oddish
-Level: 16
+Fidough
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Staravia
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Servine
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROBIN ===
@@ -15574,15 +15680,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Skitty
-Level: 14
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Shroomish
-Level: 14
+Poltchageist
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Marill
-Level: 14
+Pyukumuku
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ANDREA ===
@@ -16154,16 +16260,16 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Geodude
-Level: 22
+Coalossal
+Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nosepass
-Level: 22
+Probopass
+Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Graveler
-Level: 22
+Clefable
+Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CLARK ===
@@ -18946,7 +19052,7 @@ Level: 51
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Kilowattrel
-Level: 25
+Level: 51
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_CAMRON ===
@@ -22264,8 +22370,16 @@ Gender: Female
 Music: Intense
 Double Battle: No
 
-Chimecho
-Level: 41
+Slowbro
+Level: 81
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gothitelle
+Level: 81
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Oricorio Pau
+Level: 81
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALVARO ===
@@ -22276,12 +22390,16 @@ Gender: Male
 Music: Intense
 Double Battle: No
 
-Banette
-Level: 41
+Espeon
+Level: 82
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Kadabra
-Level: 41
+Houndstone
+Level: 82
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Armarouge
+Level: 82
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_EVERETT ===
@@ -22293,7 +22411,15 @@ Music: Rich
 Double Battle: No
 
 Wobbuffet
-Level: 41
+Level: 82
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lilligant Hisui
+Level: 81
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Delphox
+Level: 82
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_COURTNEY ===
