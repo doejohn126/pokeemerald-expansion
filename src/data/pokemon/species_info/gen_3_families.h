@@ -1034,7 +1034,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_Mightyena,
         .iconSprite = gMonIcon_Mightyena,
         .iconPalIndex = 2,
-        SHADOW(-2, 0, SHADOW_SIZE_L)
+        SHADOW(-2, 8, SHADOW_SIZE_L)
         FOOTPRINT(Mightyena)
         OVERWORLD(
             gObjectEventPic_Mightyena,

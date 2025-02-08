@@ -3063,7 +3063,7 @@ bool8 ScrCmd_updatefollowingmon(struct ScriptContext *ctx)
 
 bool8 ScrCmd_ballfollowingmon(struct ScriptContext *ctx)
 {
-    u16 species;
+    u32 species;
     bool32 shiny;
     bool32 female;
 
