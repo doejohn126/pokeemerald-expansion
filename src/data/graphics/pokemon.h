@@ -2046,7 +2046,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_ALOLAN_FORMS
-    const u32 gMonFrontPic_DiglettAlola[] = INCBIN_U32("graphics/pokemon/diglett/alola/front.4bpp.lz");
+    const u32 gMonFrontPic_DiglettAlola[] = INCBIN_U32("graphics/pokemon/diglett/alola/anim_front.4bpp.lz");
     const u32 gMonPalette_DiglettAlola[] = INCBIN_U32("graphics/pokemon/diglett/alola/normal.gbapal.lz");
     const u32 gMonBackPic_DiglettAlola[] = INCBIN_U32("graphics/pokemon/diglett/alola/back.4bpp.lz");
     const u32 gMonShinyPalette_DiglettAlola[] = INCBIN_U32("graphics/pokemon/diglett/alola/shiny.gbapal.lz");
@@ -17248,7 +17248,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Runerigus[] = INCBIN_U32("graphics/pokemon/runerigus/front.4bpp.lz");
+    const u32 gMonFrontPic_Runerigus[] = INCBIN_U32("graphics/pokemon/runerigus/anim_front.4bpp.lz");
     const u32 gMonPalette_Runerigus[] = INCBIN_U32("graphics/pokemon/runerigus/normal.gbapal.lz");
     const u32 gMonBackPic_Runerigus[] = INCBIN_U32("graphics/pokemon/runerigus/back.4bpp.lz");
     const u32 gMonShinyPalette_Runerigus[] = INCBIN_U32("graphics/pokemon/runerigus/shiny.gbapal.lz");

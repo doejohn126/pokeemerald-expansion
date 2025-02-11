@@ -5180,6 +5180,18 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_ILLUMINATE:
+            if (!gSpecialStatuses[battler].switchInAbilityDone && CompareStat(battler, STAT_ACC, MAX_STAT_STAGE, CMP_LESS_THAN)
+                 && !(gBattleStruct->illuminateBoost[GetBattlerSide(battler)] & (1u << gBattlerPartyIndexes[battler])))
+            {
+                gBattleScripting.savedBattler = gBattlerAttacker;
+                gBattlerAttacker = battler;
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                SET_STATCHANGER(STAT_ACC, 1, FALSE);
+                BattleScriptPushCursorAndCallback(BattleScript_BattlerAbilityStatRaiseOnSwitchIn);
+                effect++;
+            }
+            break;
         case ABILITY_WIND_RIDER:
             if (!gSpecialStatuses[battler].switchInAbilityDone
              && CompareStat(battler, STAT_ATK, MAX_STAT_STAGE, CMP_LESS_THAN)
@@ -6749,6 +6761,8 @@ u32 IsAbilityPreventingEscape(u32 battler)
 {
     u32 id;
     if (B_GHOSTS_ESCAPE >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
+        return 0;
+    if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
         return 0;
     if ((id = IsAbilityOnOpposingSide(battler, ABILITY_SHADOW_TAG))
         && (B_SHADOW_TAG_ESCAPE >= GEN_4 && GetBattlerAbility(battler) != ABILITY_SHADOW_TAG))
@@ -10293,6 +10307,7 @@ static inline uq4_12_t GetDefenderAbilitiesModifier(u32 move, u32 moveType, u32 
         if (IsBattlerAtMaxHp(battlerDef))
             return UQ_4_12(0.5);
         break;
+    case ABILITY_ANTICIPATION:
     case ABILITY_FILTER:
     case ABILITY_SOLID_ROCK:
     case ABILITY_PRISM_ARMOR:
