@@ -18061,7 +18061,7 @@ F_TRAINER_FEMALE |
             .moves = {
 #line 7252
                 MOVE_SURF,
-                MOVE_ICE_BEAM,
+                MOVE_FLASH_CANNON,
                 MOVE_GRASS_KNOT,
                 MOVE_ROOST,
             },
