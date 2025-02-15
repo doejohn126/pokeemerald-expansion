@@ -73,6 +73,14 @@
               9
             ]
           }
+        },
+        {
+          "type": "hidden_mons",
+          "encounter_rates": [
+            33,
+            33,
+            34
+          ]
         }
       ],
       "encounters": [
@@ -7673,7 +7681,7 @@
               {
                 "min_level": 14,
                 "max_level": 36,
-                "species": "SPECIES_CLEFAIRY"
+                "species": "SPECIES_BAGON"
               },
               {
                 "min_level": 16,
@@ -7794,6 +7802,26 @@
                 "min_level": 40,
                 "max_level": 45,
                 "species": "SPECIES_BARBOACH"
+              }
+            ]
+          },
+          "hidden_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 40,
+                "species": "SPECIES_CLEFAIRY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 40,
+                "species": "SPECIES_CLEFAIRY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 40,
+                "species": "SPECIES_CLEFAIRY"
               }
             ]
           }
