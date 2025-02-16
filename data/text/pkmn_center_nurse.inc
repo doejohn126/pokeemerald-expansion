@@ -142,7 +142,7 @@ gText_BeastBall::
 
 ThereYouGo::
     .string "There you go.\n"
-    .string "Your Ball has been changed$"
+    .string "Your Ball has been changed!$"
 
 gText_TheWattsonCap::
 	.string "The current level cap is 29.$"
