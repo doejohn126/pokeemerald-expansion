@@ -696,19 +696,19 @@ static void DoMoveRelearnerMain(void)
                 switch (gOriginSummaryScreenPage)
                 {
                 case PSS_PAGE_BATTLE_MOVES:
-                    if (BW_SUMMARY_SCREEN)
+                    if (!gSaveBlock2Ptr->optionsSummaryScreen == 0)
                         ShowPokemonSummaryScreen_BW(SUMMARY_MODE_RELEARNER_BATTLE, gPlayerParty, sMoveRelearnerStruct->partyMon, gPlayerPartyCount - 1, gInitialSummaryScreenCallback);
                     else    
                         ShowPokemonSummaryScreen(SUMMARY_MODE_RELEARNER_BATTLE, gPlayerParty, sMoveRelearnerStruct->partyMon, gPlayerPartyCount - 1, gInitialSummaryScreenCallback);
                     break;
                 case PSS_PAGE_CONTEST_MOVES:
-                    if (BW_SUMMARY_SCREEN)
+                   if (!gSaveBlock2Ptr->optionsSummaryScreen == 0)
                         ShowPokemonSummaryScreen_BW(SUMMARY_MODE_RELEARNER_CONTEST, gPlayerParty, sMoveRelearnerStruct->partyMon, gPlayerPartyCount - 1, gInitialSummaryScreenCallback);
                     else
                         ShowPokemonSummaryScreen(SUMMARY_MODE_RELEARNER_CONTEST, gPlayerParty, sMoveRelearnerStruct->partyMon, gPlayerPartyCount - 1, gInitialSummaryScreenCallback);
                     break;
                 default:
-                    if (BW_SUMMARY_SCREEN)
+                    if (!gSaveBlock2Ptr->optionsSummaryScreen == 0)
                         ShowPokemonSummaryScreen_BW(SUMMARY_MODE_NORMAL, gPlayerParty, sMoveRelearnerStruct->partyMon, gPlayerPartyCount - 1, gInitialSummaryScreenCallback);
                     else
                         ShowPokemonSummaryScreen(SUMMARY_MODE_NORMAL, gPlayerParty, sMoveRelearnerStruct->partyMon, gPlayerPartyCount - 1, gInitialSummaryScreenCallback);
