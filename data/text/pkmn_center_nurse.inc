@@ -59,6 +59,91 @@ gText_MysteryGiftOption::
 gText_LevelCap::
     .string "My Level Cap$"
 
+gText_ChangeBall::
+    .string "Change Pokéball$"
+
+gText_WhatBall::
+    .string "OK. Pick your Ball.$"
+
+gText_PokeBall::
+    .string "Poké Ball$"
+
+gText_GreatBall::
+    .string "Great Ball$"
+
+gText_UltraBall::
+    .string "Ultra Ball$"
+
+gText_SafariBall::
+    .string "Safari Ball$"
+
+gText_FastBall::
+    .string "Fast Ball$"
+
+gText_LevelBall::
+    .string "Level Ball$"
+
+gText_LureBall::
+    .string "Lure Ball$"
+
+gText_HeavyBall::
+    .string "Heavy Ball$"
+
+gText_LoveBall::
+    .string "Love Ball$"
+
+gText_FriendBall::
+    .string "Friend Ball$"
+
+gText_MoonBall::
+    .string "Moon Ball$"
+
+gText_SportBall::
+    .string "Sport Ball$"
+
+gText_NetBall::
+    .string "Net Ball$"
+
+gText_DiveBall::
+    .string "Dive Ball$"
+
+gText_NestBall::
+    .string "Nest Ball$"
+
+gText_RepeatBall::
+    .string "Repeat Ball$"
+
+gText_TimerBall::
+    .string "Timer Ball$"
+
+gText_LuxuryBall::
+    .string "Luxury Ball$"
+
+gText_PremierBall::
+    .string "Premier Ball$"
+
+gText_DuskBall::
+    .string "Dusk Ball$"
+
+gText_HealBall::
+    .string "Heal Ball$"
+
+gText_QuickBall::
+    .string "Quick Ball$"
+
+gText_ParkBall::
+    .string "Park Ball$"
+
+gText_DreamBall::
+    .string "Dream Ball$"
+
+gText_BeastBall::
+    .string "Beast Ball$"
+
+ThereYouGo::
+    .string "There you go.\n"
+    .string "Your Ball has been changed$"
+
 gText_TheWattsonCap::
 	.string "The current level cap is 29.$"
 

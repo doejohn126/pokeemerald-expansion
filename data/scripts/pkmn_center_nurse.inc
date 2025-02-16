@@ -195,9 +195,10 @@ Common_EventScript_ExtraThingsReceptionist::
    lock
    faceplayer
    msgbox gText_DoYouNeedSomething, MSGBOX_DEFAULT
-   dynmultichoice 0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, gText_MysteryGiftOption, gText_LevelCap
+   dynmultichoice 0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, gText_MysteryGiftOption, gText_LevelCap, gText_ChangeBall
    call_if_eq VAR_RESULT, 0, Common_EventScript_MysteryGift
    call_if_eq VAR_RESULT, 1, Common_EventScript_LevelCap
+   call_if_eq VAR_RESULT, 2, Common_EventScript_ChangeBall
    release
    end
 
@@ -214,6 +215,186 @@ Common_EventScript_LevelCap::
    msgbox gText_TheRoxanneCap, MSGBOX_DEFAULT
    release
    end
+
+Common_EventScript_ChangeBall::
+	msgbox gText_WhatBall, MSGBOX_DEFAULT
+	dynmultichoice 0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, gText_PokeBall, gText_GreatBall, gText_UltraBall, gText_SafariBall, gText_FastBall, gText_LevelBall, gText_LureBall, gText_HeavyBall, gText_LoveBall, gText_FriendBall, gText_MoonBall, gText_SportBall, gText_NetBall, gText_DiveBall, gText_NestBall, gText_RepeatBall, gText_TimerBall, gText_LuxuryBall, gText_PremierBall, gText_DuskBall, gText_HealBall, gText_QuickBall, gText_ParkBall, gText_DreamBall, gText_BeastBall
+	call_if_eq VAR_RESULT, 0, ChangeToPokeball
+	call_if_eq VAR_RESULT, 1, ChangeToGreatBall
+	call_if_eq VAR_RESULT, 2, ChangeToUltraBall
+	call_if_eq VAR_RESULT, 3, ChangeToSafariBall
+	call_if_eq VAR_RESULT, 4, ChangeToFastBall
+	call_if_eq VAR_RESULT, 5, ChangeToLevelBall
+	call_if_eq VAR_RESULT, 6, ChangeToLureBall
+	call_if_eq VAR_RESULT, 7, ChangeToHeavyBall
+	call_if_eq VAR_RESULT, 8, ChangeToLoveBall
+	call_if_eq VAR_RESULT, 9, ChangeToFriendBall
+	call_if_eq VAR_RESULT, 10, ChangeToMoonBall
+	call_if_eq VAR_RESULT, 11, ChangeToSportBall
+	call_if_eq VAR_RESULT, 12, ChangeToNetBall
+	call_if_eq VAR_RESULT, 13, ChangeToDiveBall
+	call_if_eq VAR_RESULT, 14, ChangeToNestBall
+	call_if_eq VAR_RESULT, 15, ChangeToRepeatBall
+	call_if_eq VAR_RESULT, 16, ChangeToTimerBall
+	call_if_eq VAR_RESULT, 17, ChangeToLuxuryBall
+	call_if_eq VAR_RESULT, 18, ChangeToPremierBall
+	call_if_eq VAR_RESULT, 19, ChangeToDuskBall
+	call_if_eq VAR_RESULT, 20, ChangeToHealBall
+	call_if_eq VAR_RESULT, 21, ChangeToQuickBall
+	call_if_eq VAR_RESULT, 22, ChangeToParkBall
+	call_if_eq VAR_RESULT, 23, ChangeToDreamBall
+	call_if_eq VAR_RESULT, 24, ChangeToBeastBall
+
+ChangeToPokeball::
+	SetMonBall ITEM_POKE_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToGreatBall::
+	SetMonBall ITEM_GREAT_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToUltraBall::
+	SetMonBall ITEM_ULTRA_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToSafariBall::
+	SetMonBall ITEM_SAFARI_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToFastBall::
+	SetMonBall ITEM_FAST_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToLevelBall::
+	SetMonBall ITEM_LEVEL_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToLureBall::
+	SetMonBall ITEM_LURE_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToHeavyBall::
+	SetMonBall ITEM_HEAVY_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToLoveBall::
+	SetMonBall ITEM_LOVE_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToFriendBall::
+	SetMonBall ITEM_FRIEND_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToMoonBall::
+	SetMonBall ITEM_MOON_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToSportBall::
+	SetMonBall ITEM_SPORT_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToNetBall::
+	SetMonBall ITEM_NET_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToDiveBall::
+	SetMonBall ITEM_DIVE_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToNestBall::
+	SetMonBall ITEM_NEST_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToRepeatBall::
+	SetMonBall ITEM_REPEAT_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToTimerBall::
+	SetMonBall ITEM_TIMER_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToLuxuryBall::
+	SetMonBall ITEM_LUXURY_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToPremierBall::
+	SetMonBall ITEM_PREMIER_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToDuskBall::
+	SetMonBall ITEM_DUSK_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToHealBall::
+	SetMonBall ITEM_HEAL_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToQuickBall::
+	SetMonBall ITEM_QUICK_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToParkBall::
+	SetMonBall ITEM_PARK_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToDreamBall::
+	SetMonBall ITEM_DREAM_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
+ChangeToBeastBall::
+	SetMonBall ITEM_BEAST_BALL
+	msgbox ThereYouGo, MSGBOX_DEFAULT
+	release
+	end
+
 
 EventScript_PkmnCenterNurse_PkmnCenterChallenge_NoVisits:: @ tx_randomizer_and_challenges
     message gText_PkmnCenterChallenge_NoVisitsLeft

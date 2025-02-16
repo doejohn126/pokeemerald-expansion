@@ -4411,3 +4411,9 @@ void GetCodeFeedback(void)
     else
         gSpecialVar_Result = 0;
 }
+
+void SetMonBall(void)
+{
+    u16 ballId = VarGet(VAR_TEMP_1);
+    SetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_POKEBALL, &ballId);
+}
