@@ -562,7 +562,7 @@ static u8 GetWonderTradeOT(u8 *name)
         {
             name[i] = maleWTNames[selectedName][i];
         }
-        name[PLAYER_NAME_LENGTH] = EOS;
+        name[8] = EOS;
     }
     else                    // female OT selected
     {
@@ -571,7 +571,7 @@ static u8 GetWonderTradeOT(u8 *name)
         {
             name[i] = femaleWTNames[selectedName][i];
         }
-        name[PLAYER_NAME_LENGTH] = EOS;
+        name[8] = EOS;
     }
     return randGender;
 }
@@ -588,7 +588,7 @@ void CreateWonderTradePokemon(void)
     u8 abilityNum;
 #endif
     u8 monName[POKEMON_NAME_LENGTH + 1];
-    u8 otName[PLAYER_NAME_LENGTH + 1];
+    u8 otName[PLAYER_NAME_LENGTH + 2];
     u8 genderOT = GetWonderTradeOT(otName);
     u8 metLocation = METLOC_IN_GAME_TRADE;
     struct WonderTrade sWonderTrades[] =
