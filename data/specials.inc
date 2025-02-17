@@ -579,3 +579,4 @@ gSpecials::
 	def_special EnterCode
 	def_special GetCodeFeedback
 	def_special SetMonBall
+	def_special CreateWonderTradePokemon

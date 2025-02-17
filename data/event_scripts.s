@@ -1290,6 +1290,13 @@ MysteryGift_Text_CurrentlyUnavailable:
 	.string "Please try again later.\p"
 	.string "Thank you!$"
 
+WonderTrade_Text_CurrentlyUnavailable:
+	.string "I'm sorry, but the Wonder Trade System\n"
+	.string "is currently unavailable.\p"
+	.string "Wonder Trade is not allowed on\n"
+	.string "Nuzlockes.\p"
+	.string "Thank you!$"
+
 MysteryGift_Text_PleaseVisitAgain:
 	.string "Please visit again!$"
 
@@ -1310,6 +1317,26 @@ MysteryGift_Text_RedeemedText:
 
 MysteryGift_Text_ReceivedGiftMon:
 	.string "{PLAYER} received a {STR_VAR_1}!$"
+
+EventScript_DoWonderTrade::
+	specialvar VAR_RESULT, IsNuzlockeChallengeActivated
+	goto_if_eq VAR_RESULT, TRUE, WonderTrade_EventScript_CurrentlyUnavailable
+	getpartysize
+	goto_if_eq VAR_RESULT, 0, EventScript_End
+	special ChoosePartyMon
+	waitstate
+	goto_if_ge VAR_0x8004, PARTY_SIZE, EventScript_End
+	copyvar VAR_0x8005, VAR_0x8004
+	special CreateWonderTradePokemon
+	special DoInGameTradeScene
+	waitstate
+EventScript_End:
+	end
+
+WonderTrade_EventScript_CurrentlyUnavailable::
+	msgbox WonderTrade_EventScript_CurrentlyUnavailable, MSGBOX_DEFAULT
+	releaseall
+	end
 
 	.include "data/scripts/pc_transfer.inc"
 	.include "data/scripts/questionnaire.inc"

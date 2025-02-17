@@ -11727,12 +11727,15 @@ const struct Item gItemsInfo[] =
     {
         .name = _("TM88"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "Increases allies'\n"
+            "critical hit ratio,\n"
+            "especially if Dragons."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_DRAGON_CHEER,
     },
 
     [ITEM_TM89] =

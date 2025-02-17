@@ -195,10 +195,11 @@ Common_EventScript_ExtraThingsReceptionist::
    lock
    faceplayer
    msgbox gText_DoYouNeedSomething, MSGBOX_DEFAULT
-   dynmultichoice 0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, gText_MysteryGiftOption, gText_LevelCap, gText_ChangeBall
+   dynmultichoice 0, 0, FALSE, 4, 0, DYN_MULTICHOICE_CB_NONE, gText_MysteryGiftOption, gText_LevelCap, gText_ChangeBall, gText_WonderTrade
    call_if_eq VAR_RESULT, 0, Common_EventScript_MysteryGift
    call_if_eq VAR_RESULT, 1, Common_EventScript_LevelCap
    call_if_eq VAR_RESULT, 2, Common_EventScript_ChangeBall
+   call_if_eq VAR_RESULT, 3, EventScript_DoWonderTrade
    release
    end
 

@@ -88,7 +88,8 @@
     F(ACROBATICS) \
     F(TRIPLE_AXEL) \
     F(TRICK_ROOM) \
-    F(OUTRAGE)
+    F(OUTRAGE) \
+    F(DRAGON_CHEER)
 
 #define FOREACH_HM(F) \
     F(CUT) \

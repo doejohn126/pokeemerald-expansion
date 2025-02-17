@@ -10070,19 +10070,19 @@ Double Battle: No
 AI: Basic Trainer
 
 Exeggutor Alola
-Level: 83
+Level: 87
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Altaria
-Level: 83
+Level: 87
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Druddigon
-Level: 83
+Level: 87
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Dragapult
-Level: 83
+Level: 87
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_NICOLAS_2 ===
@@ -17781,21 +17781,40 @@ Music: Intense
 Double Battle: Yes
 AI: Basic Trainer
 
-Medicham
-Level: 39
+Medicham (F) @ Medichamite
+Level: 88
+Ability: Pure Power
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Psychic
+- Zen Headbutt
 - Fire Punch
-- Psych Up
+- High Jump Kick
 - Protect
 
-Hariyama
-Level: 39
+Hawlucha (M)
+Level: 88
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Focus Punch
-- Rock Tomb
-- Rest
-- Belly Drum
+- Flying Press
+- Acrobatics
+- Roost
+- Taunt
+
+Annihilape (M)
+Level: 88
+Ability: Defiant
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Rage Fist
+- Close Combat
+- Stomping Tantrum
+- Ice Punch
+
+Bronzong
+Level: 88
+Ability: Levitate
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Gyro Ball
+- Explosion
+- Gravity
+- Skill Swap
 
 === TRAINER_JOHN_AND_JAY_2 ===
 Name: John & Jay

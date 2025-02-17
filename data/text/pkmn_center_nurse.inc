@@ -62,6 +62,9 @@ gText_LevelCap::
 gText_ChangeBall::
     .string "Change Pokéball$"
 
+gText_WonderTrade::
+    .string "Wonder Trade$"
+
 gText_WhatBall::
     .string "OK. Pick your Ball.$"
 
