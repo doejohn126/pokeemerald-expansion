@@ -76,6 +76,7 @@ static const struct LevelUpMove sCharmanderLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 4, MOVE_EMBER),
     LEVEL_UP_MOVE( 8, MOVE_SMOKESCREEN),
+    LEVEL_UP_MOVE( 10, MOVE_METAL_CLAW),
     LEVEL_UP_MOVE(12, MOVE_DRAGON_BREATH),
     LEVEL_UP_MOVE(17, MOVE_FIRE_FANG),
     LEVEL_UP_MOVE(20, MOVE_SLASH),
@@ -2731,6 +2732,7 @@ static const struct LevelUpMove sSteelixLevelUpLearnset[] = {
     LEVEL_UP_MOVE(52, MOVE_STONE_EDGE),
     LEVEL_UP_MOVE(56, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(60, MOVE_MAGNET_RISE),
+    LEVEL_UP_MOVE(64, MOVE_BODY_PRESS),
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -4054,6 +4056,7 @@ static const struct LevelUpMove sMagikarpLevelUpLearnset[] = {
 static const struct LevelUpMove sGyaradosLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_BITE),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_BOUNCE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_TWISTER),
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -7284,6 +7287,7 @@ static const struct LevelUpMove sMightyenaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FIRE_FANG),
     LEVEL_UP_MOVE( 1, MOVE_ICE_FANG),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_FANG),
+    LEVEL_UP_MOVE( 1, MOVE_PSYCHIC_FANGS),
     LEVEL_UP_MOVE( 1, MOVE_THIEF),
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_BITE),
