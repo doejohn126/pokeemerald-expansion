@@ -19741,37 +19741,59 @@ Double Battle: Yes
 AI: Smart Trainer / Predict Switch
 Mugshot: Gray
 
-Golem
-Level: 32
+Gigalith (M) @ Smooth Rock
+Level: 92
+Ability: Sand Stream
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Protect
-- Rollout
-- Magnitude
-- Explosion
-
-Kabuto @ Sitrus Berry
-Level: 35
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Swords Dance
-- Ice Beam
-- Surf
 - Rock Slide
-
-Onix
-Level: 35
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Iron Tail
+- Heavy Slam
 - Explosion
-- Roar
-- Rock Slide
 
-Nosepass @ Sitrus Berry
-Level: 37
+Aurorus (F)
+Level: 93
+Ability: Refrigerate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Double Team
-- Explosion
+- Hyper Voice
+- Freeze Dry
+- Power Gem
+- Light Screen
+
+Armaldo (F)
+Level: 93
+Ability: Skill Link
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Pin Missile
+- Rock Blast
 - Protect
+- Knock Off
+
+Stonjourner (F)
+Level: 92
+Ability: Power Spot
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
+- Heat Crash
+- High Horsepower
+- Superpower
+
+Probopass (M) @ Sitrus Berry
+Level: 94
+Ability: Thermal Exchange
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Earth Power
+- Power Gem
+- Wide Guard
+- Thunder Wave
+
+Tyranitar (M) @ Tyranitarite
+Level: 94
+Ability: Sand Stream
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rock Slide
+- Crunch
+- Dragon Dance
+- Stomping Tantrum
 
 === TRAINER_ROXANNE_3 ===
 Name: Roxanne
@@ -19783,45 +19805,59 @@ Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Basic Trainer
 
-Omanyte
-Level: 37
+Gigalith (M) @ Smooth Rock
+Level: 94
+Ability: Sand Stream
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Protect
-- Ice Beam
 - Rock Slide
-- Surf
+- Heavy Slam
+- Explosion
 
-Golem
-Level: 37
+Aurorus (F) @ Throat Spray
+Level: 95
+Ability: Refrigerate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hyper Voice
+- Freeze Dry
+- Power Gem
+- Light Screen
+
+Armaldo (F) @ Kings Rock
+Level: 95
+Ability: Skill Link
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Pin Missile
+- Rock Blast
 - Protect
-- Rollout
-- Magnitude
-- Explosion
+- Knock Off
 
-Kabutops @ Sitrus Berry
-Level: 40
+Stonjourner (F) @ Focus Sash
+Level: 94
+Ability: Power Spot
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Swords Dance
-- Ice Beam
-- Surf
 - Rock Slide
+- Heat Crash
+- High Horsepower
+- Superpower
 
-Onix
-Level: 40
+Probopass (M) @ Air Balloon
+Level: 95
+Ability: Thermal Exchange
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Iron Tail
-- Explosion
-- Roar
-- Rock Slide
+- Earth Power
+- Power Gem
+- Wide Guard
+- Thunder Wave
 
-Nosepass @ Sitrus Berry
-Level: 42
+Tyranitar (M) @ Tyranitarite
+Level: 96
+Ability: Sand Stream
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Double Team
-- Explosion
-- Protect
 - Rock Slide
+- Crunch
+- Dragon Dance
+- Stomping Tantrum
 
 === TRAINER_ROXANNE_4 ===
 Name: Roxanne
@@ -19939,39 +19975,62 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Basic Trainer
-
-Machamp @ Sitrus Berry
-Level: 33
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Karate Chop
-- Rock Slide
-- Focus Punch
-- Bulk Up
-
-Meditite
-Level: 33
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Light Screen
-- Reflect
-- Focus Punch
+AI: Smart Trainer / Predict Switch
+Mugshot: Red
 
 Hitmontop
-Level: 35
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Pursuit
-- Counter
-- Protect
-- Triple Kick
-
-Hariyama @ Sitrus Berry
-Level: 37
+Level: 93
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fake Out
-- Focus Punch
-- Belly Drum
-- Earthquake
+- Close Combat
+- Sucker Punch
+- Wide Guard
+
+Samurott (M)
+Level: 93
+Ability: Sharpness
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Sacred Sword
+- X Scissor
+- Razor Shell
+- Swords Dance
+
+Sneasler (F)
+Level: 92
+Ability: Poison Touch
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dire Claw
+- Close Combat
+- U Turn
+- Fake Out
+
+Medicham (F)
+Level: 93
+Ability: Pure Power
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dire Claw
+- Close Combat
+- U Turn
+- Fake Out
+
+Hariyama (M) @ Flame Orb
+Level: 94
+Ability: Guts
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fake Out
+- Close Combat
+- Rock Slide
+- Detect
+
+Blaziken (M) @ Blazikenite
+Level: 94
+Ability: Speed Boost
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flare Blitz
+- Close Combat
+- Rock Slide
+- Protect
 
 === TRAINER_BRAWLY_3 ===
 Name: Brawly
@@ -20131,38 +20190,59 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Basic Trainer
+AI: Smart Trainer / Predict Switch
+Mugshot: Yellow
 
-Mareep
-Level: 36
+Luxray
+Level: 92
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder
+- Crunch
+- Zing Zap
+- Play Rough
+- Volt Switch
+
+Raichu Alola
+Level: 92
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fake Out
+- Encore
+- Thunderbolt
+- Psychic
+
+Pawmot
+Level: 93
+Ability: Iron Fist
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Double Shock
+- Close Combat
+- Ice Punch
+- Revival Blessing
+
+Rotom Wash
+Level: 93
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hydro Pump
+- Thunderbolt
+- Will O Wisp
 - Protect
-- Thunder Wave
-- Light Screen
 
-Electrode
-Level: 36
+Magnezone @ Sitrus Berry
+Level: 93
+Ability: Analytic
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rollout
-- Thunder
-- Explosion
-- Rain Dance
+- Thunderbolt
+- Flash Cannon
+- Magnet Rise
+- Volt Switch
 
-Magneton @ Sitrus Berry
-Level: 38
+Manectric @ Manectite
+Level: 94
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Supersonic
-- Protect
-- Thunder
-- Rain Dance
-
-Manectric @ Sitrus Berry
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bite
-- Thunder Wave
-- Thunder
+- Flamethrower
+- Snarl
+- Thunderbolt
 - Protect
 
 === TRAINER_WATTSON_3 ===

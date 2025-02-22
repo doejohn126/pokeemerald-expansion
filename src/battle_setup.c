@@ -923,14 +923,12 @@ static void CB2_EndFirstBattle(void)
 
 static void TryUpdateGymLeaderRematchFromWild(void)
 {
-    if (GetGameStat(GAME_STAT_WILD_BATTLES) % 1 == 0)
-        UpdateGymLeaderRematch();
+    UpdateGymLeaderRematch();
 }
 
 static void TryUpdateGymLeaderRematchFromTrainer(void)
 {
-    if (GetGameStat(GAME_STAT_TRAINER_BATTLES) % 1 == 0)
-        UpdateGymLeaderRematch();
+    UpdateGymLeaderRematch();
 }
 
 static u16 GetTrainerAFlag(void)

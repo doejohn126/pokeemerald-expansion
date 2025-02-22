@@ -11967,6 +11967,7 @@ static const struct LevelUpMove sSamurottLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_MEGAHORN),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_SMART_STRIKE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
     LEVEL_UP_MOVE( 1, MOVE_SOAK),
@@ -11979,6 +11980,7 @@ static const struct LevelUpMove sSamurottLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_ENCORE),
     LEVEL_UP_MOVE(46, MOVE_AQUA_TAIL),
     LEVEL_UP_MOVE(51, MOVE_RETALIATE),
+    LEVEL_UP_MOVE(56, MOVE_SACRED_SWORD),
     LEVEL_UP_MOVE(58, MOVE_SWORDS_DANCE),
     LEVEL_UP_MOVE(63, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
@@ -11988,6 +11990,7 @@ static const struct LevelUpMove sSamurottLevelUpLearnset[] = {
 static const struct LevelUpMove sSamurottHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_CEASELESS_EDGE),
     LEVEL_UP_MOVE( 1, MOVE_SLASH),
+    LEVEL_UP_MOVE( 1, MOVE_SMART_STRIKE),
     LEVEL_UP_MOVE( 1, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_MEGAHORN),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
@@ -12002,6 +12005,7 @@ static const struct LevelUpMove sSamurottHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_ENCORE),
     LEVEL_UP_MOVE(46, MOVE_AQUA_TAIL),
     LEVEL_UP_MOVE(51, MOVE_RETALIATE),
+    LEVEL_UP_MOVE(56, MOVE_SACRED_SWORD),
     LEVEL_UP_MOVE(58, MOVE_SWORDS_DANCE),
     LEVEL_UP_MOVE(63, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
@@ -16271,6 +16275,7 @@ static const struct LevelUpMove sTyruntLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sTyrantrumLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_SCALE_SHOT),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_ROAR),
@@ -16313,6 +16318,7 @@ static const struct LevelUpMove sAmauraLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sAurorusLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_POWER_GEM),
     LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_ENCORE),
