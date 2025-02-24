@@ -732,6 +732,8 @@ static void ClearAllTrainerRematchStates(void)
 
     if (!CheckBagHasItem(ITEM_VS_SEEKER, 1))
         return;
+    if (REMATCH_ROXANNE || REMATCH_BRAWLY || REMATCH_WATTSON || REMATCH_FLANNERY || REMATCH_NORMAN || REMATCH_WINONA || REMATCH_TATE_AND_LIZA || REMATCH_JUAN)
+        return;
 
     for (i = 0; i < ARRAY_COUNT(gSaveBlock1Ptr->trainerRematches); i++)
         gSaveBlock1Ptr->trainerRematches[i] = 0;

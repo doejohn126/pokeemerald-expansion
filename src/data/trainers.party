@@ -19803,7 +19803,8 @@ Gender: Female
 Music: Female
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Basic Trainer
+AI: Smart Trainer / Predict Switch
+Mugshot: Gray
 
 Gigalith (M) @ Smooth Rock
 Level: 94
@@ -20009,9 +20010,9 @@ Medicham (F)
 Level: 93
 Ability: Pure Power
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Dire Claw
+- Zen Headbutt
 - Close Combat
-- U Turn
+- Ice Punch
 - Fake Out
 
 Hariyama (M) @ Flame Orb
@@ -20040,39 +20041,62 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Basic Trainer
+AI: Smart Trainer / Predict Switch
+Mugshot: Red
 
-Machamp @ Sitrus Berry
-Level: 38
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Karate Chop
-- Rock Slide
-- Focus Punch
-- Bulk Up
-
-Medicham
-Level: 38
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Light Screen
-- Reflect
-- Focus Punch
-
-Hitmontop
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Pursuit
-- Counter
-- Protect
-- Triple Kick
-
-Hariyama @ Sitrus Berry
-Level: 42
+Hitmontop @ Sitrus Berry
+Level: 94
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fake Out
-- Focus Punch
-- Belly Drum
-- Earthquake
+- Close Combat
+- Sucker Punch
+- Wide Guard
+
+Samurott (M) @ Life Orb
+Level: 95
+Ability: Sharpness
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Sacred Sword
+- X Scissor
+- Razor Shell
+- Swords Dance
+
+Sneasler (F) @ Focus Sash
+Level: 94
+Ability: Poison Touch
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dire Claw
+- Close Combat
+- U Turn
+- Fake Out
+
+Medicham (F) @ Choice Scarf
+Level: 95
+Ability: Pure Power
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Zen Headbutt
+- Close Combat
+- Ice Punch
+- Trick
+
+Hariyama (M) @ Flame Orb
+Level: 95
+Ability: Guts
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fake Out
+- Close Combat
+- Rock Slide
+- Detect
+
+Blaziken (M) @ Blazikenite
+Level: 96
+Ability: Speed Boost
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flare Blitz
+- Close Combat
+- Rock Slide
+- Protect
 
 === TRAINER_BRAWLY_4 ===
 Name: Brawly
@@ -20253,46 +20277,59 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Basic Trainer
+AI: Smart Trainer / Predict Switch
+Mugshot: Yellow
 
-Pikachu
-Level: 39
+Luxray @ Electric Gem
+Level: 92
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder
-- Slam
-- Rain Dance
-- Shock Wave
+- Crunch
+- Zing Zap
+- Play Rough
+- Volt Switch
 
-Flaaffy
-Level: 41
+Raichu Alola @ Focus Sash
+Level: 92
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder
+- Fake Out
+- Encore
+- Thunderbolt
+- Psychic
+
+Pawmot @ Life Orb
+Level: 93
+Ability: Iron Fist
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Double Shock
+- Close Combat
+- Ice Punch
+- Revival Blessing
+
+Rotom Wash @ Sitrus Berry
+Level: 93
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hydro Pump
+- Thunderbolt
+- Will O Wisp
 - Protect
-- Thunder Wave
-- Light Screen
 
-Electrode
-Level: 41
+Magnezone @ Air Balloon
+Level: 93
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rollout
-- Thunder
-- Explosion
-- Rain Dance
+- Thunderbolt
+- Flash Cannon
+- Magnet Rise
+- Volt Switch
 
-Magneton @ Sitrus Berry
-Level: 43
+Manectric @ Manectite
+Level: 94
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Supersonic
-- Protect
-- Thunder
-- Rain Dance
-
-Manectric @ Sitrus Berry
-Level: 45
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bite
-- Thunder Wave
-- Thunder
+- Flamethrower
+- Snarl
+- Thunderbolt
 - Protect
 
 === TRAINER_WATTSON_4 ===
@@ -20411,39 +20448,63 @@ Gender: Female
 Music: Female
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Basic Trainer
+AI: Smart Trainer / Predict Switch
+Mugshot: Red
 
-Magcargo @ White Herb
-Level: 38
+Torkoal (M) @ Heat Rock
+Level: 94
+Ability: Drought
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Attract
-- Light Screen
-- Rock Slide
-
-Ponyta
-Level: 36
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Attract
+- Burning Jealousy
 - Solar Beam
-- Bounce
+- Body Press
+- Protect
 
-Camerupt @ White Herb
-Level: 38
+Cherrim (F)
+Level: 93
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Morning Sun
+- Nature Power
+- Solar Blade
 - Overheat
-- Sunny Day
-- Earthquake
-- Attract
 
-Torkoal @ White Herb
-Level: 40
+Volcarona (F)
+Level: 93
+Ability: Flame Body
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
+- Quiver Dance
+- Heat Wave
+- Giga Drain
+- Bug Buzz
+
+Cinderace (M) @ Heat Rock
+Level: 93
+Ability: Libero
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Pyro Ball
+- U Turn
+- Court Change
 - Sunny Day
-- Explosion
-- Attract
+
+Armarouge (M)
+Level: 93
+Ability: Mega Launcher
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psyshock
+- Armor Cannon
+- Aura Sphere
+- Calm Mind
+
+Charizard (F) @ Charizardite Y
+Level: 94
+Ability: Solar Power
+Ball: Heal Ball
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 5 Atk / 25 SpA / 25 Spe
+- Heat Wave
+- Overheat
+- Air Slash
+- Solar Beam
 
 === TRAINER_FLANNERY_3 ===
 Name: Flannery
@@ -20455,45 +20516,60 @@ Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Basic Trainer
 
-Growlithe
-Level: 41
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Helping Hand
-- Flamethrower
-- Roar
-- Sunny Day
-
-Magcargo @ White Herb
-Level: 43
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Attract
-- Light Screen
-- Rock Slide
-
-Ponyta
-Level: 41
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Attract
+Torkoal (M) @ Heat Rock
+Level: 96
+Ability: Drought
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Burning Jealousy
 - Solar Beam
+- Body Press
+- Protect
+
+Cherrim (F) @ Grass Gem
+Level: 95
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Morning Sun
+- Nature Power
+- Solar Blade
+- Overheat
+
+Volcarona (F) @ Sitrus Berry
+Level: 95
+Ability: Flame Body
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Quiver Dance
+- Heat Wave
+- Giga Drain
+- Bug Buzz
+
+Cinderace (M) @ Life Orb
+Level: 95
+Ability: Libero
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Pyro Ball
+- U Turn
 - Bounce
+- Sucker Punch
 
-Camerupt @ White Herb
-Level: 43
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Sunny Day
-- Earthquake
-- Attract
+Armarouge (M) @ Fire Gem
+Level: 95
+Ability: Mega Launcher
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Psyshock
+- Armor Cannon
+- Aura Sphere
+- Calm Mind
 
-Torkoal @ White Herb
-Level: 45
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Charizard (F) @ Charizardite Y
+Level: 96
+Ability: Solar Power
+Ball: Heal Ball
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+EVs: 5 Atk / 25 SpA / 25 Spe
+- Heat Wave
 - Overheat
-- Sunny Day
-- Explosion
-- Attract
+- Air Slash
+- Solar Beam
 
 === TRAINER_FLANNERY_4 ===
 Name: Flannery
@@ -20619,39 +20695,62 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Basic Trainer
+AI: Smart Trainer / Predict Switch
+Mugshot: Gray
 
-Chansey
-Level: 42
+Blissey
+Level: 94
+Ability: Healer
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Light Screen
-- Sing
+- Soft Boiled
+- Toxic
 - Skill Swap
-- Focus Punch
+- Seismic Toss
 
 Slaking @ Sitrus Berry
-Level: 42
+Level: 95
+Happiness: 250
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Blizzard
-- Shadow Ball
-- Double Edge
-- Fire Blast
+- Return
+- Counter
+- Yawn
+- Sucker Punch
 
-Spinda
-Level: 43
+Ursaluna
+Level: 94
+Ability: Guts
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Teeter Dance
-- Skill Swap
 - Facade
-- Hypnosis
+- Headlong Rush
+- Hammer Arm
+- Swords Dance
 
-Slaking @ Sitrus Berry
-Level: 45
+Exploud
+Level: 94
+Ability: Punk Rock
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Flamethrower
-- Thunderbolt
-- Shadow Ball
+- Boomburst
+- Overdrive
+- Fire Blast
+- Psychic Noise
+
+Staraptor
+Level: 94
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Double Edge
+- Close Combat
+- Brave Bird
+- U Turn
+
+Kangaskhan @ Kangaskhanite
+Level: 95
+Ball: Timer Ball
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 25 Atk / 5 SpA / 20 Spe
+- Facade
+- Power Up Punch
+- Crunch
+- Fake Out
 
 === TRAINER_NORMAN_3 ===
 Name: Norman
@@ -21537,55 +21636,60 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer / Predict Switch
+Mugshot: Gray
 
-Skarmory
-Level: 77
+Skarmory @ Rocky Helmet
+Level: 96
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Toxic
-- Aerial Ace
+- Stealth Rock
+- Roost
 - Spikes
-- Steel Wing
+- Brave Bird
 
-Claydol
-Level: 75
+Gholdengo @ Air Balloon
+Level: 95
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Reflect
-- Light Screen
-- Ancient Power
-- Earthquake
+- Shadow Ball
+- Make It Rain
+- Nasty Plot
+- Recover
 
-Aggron
-Level: 76
+Goodra Hisui @ Choice Specs
+Level: 95
+Ability: Gooey
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder
-- Earthquake
-- Solar Beam
-- Dragon Claw
+- Flash Cannon
+- Draco Meteor
+- Thunderbolt
+- Flamethrower
 
-Cradily
-Level: 76
+Cradily @ Leftovers
+Level: 95
+Ability: Storm Drain
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Giga Drain
 - Ancient Power
-- Ingrain
-- Confuse Ray
+- Leech Seed
+- Toxic
 
-Armaldo
-Level: 76
+Diancie @ Sitrus Berry
+Level: 95
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Water Pulse
-- Ancient Power
-- Aerial Ace
-- Slash
+- Diamond Storm
+- Body Press
+- Moonblast
+- Earth Power
 
-Metagross @ Sitrus Berry
-Level: 78
+Metagross @ Metagrossite
+Level: 96
+Ball: Heavy Ball
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
-- Psychic
+- Psychic Fangs
 - Meteor Mash
-- Shadow Ball
+- Ice Punch
 
 === TRAINER_ANABEL ===
 Name: Anabel
