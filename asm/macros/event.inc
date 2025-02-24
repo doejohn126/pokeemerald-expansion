@@ -1877,61 +1877,60 @@
 	_dynmultichoice \left, \top, \ignoreBPress, \maxBeforeScroll, \shouldSort, \initialSelected, \callbacks, NULL
 	.endm
 
+@ Follow Me
+
 	@ Sets an NPC up to follow the player.
 	@ If you want to specify a battle partner without specifying a custom script, you can set the script parameter to 0.
-    .macro setfollower localId:req, flags:req, script, battlePartner
+    .macro setfollower localId:req, flags:req, script=0, battlePartner=0
 	checkfollower
 	goto_if_eq VAR_RESULT, TRUE, 1f
 	ballfollowingmon
-	.ifnb \script
-		.if \script == 0
-			.set setScript, FALSE
-		.else
-			loadword 0, \script
-			.set setScript, TRUE
-		.endif
-	.else
+    callnative ScriptSetFollower
+	.if \script == 0
 		.set setScript, FALSE
+    .else
+		.set setScript, TRUE
 	.endif
-    .byte SCR_OP_SETFOLLOWER
     .byte \localId
     .2byte \flags
 	.byte setScript
-	.ifb \battlePartner
-		.set battlePartner, 0
-		.2byte battlePartner
-	.else
-		.2byte \battlePartner
-	.endif
+	.2byte \battlePartner
+	.4byte \script
 	updatefollowingmon
 	1:
     .endm
     
     @ Remove the following NPC (assumes there will only ever be one).
     .macro destroyfollower
-    .byte SCR_OP_DESTROYFOLLOWER
+    callnative ScriptDestroyFollower
     .endm
     
     @ Makes the player and follower face one another.
     .macro facefollower
-    .byte SCR_OP_FACEFOLLOWER
+    callnative ScriptFaceFollower
     .endm
     
     @ Checks if you have a follower. returns the result to VAR_RESULT.
     .macro checkfollower
-    .byte SCR_OP_CHECKFOLLOWER
+    callnative ScriptCheckFollower
     .endm
 
 	@ Updates Pokemon follower.
 	.macro updatefollowingmon
-    .byte SCR_OP_UPDATEFOLLOWINGMON
+    callnative ScriptUpdateFollowingMon
     .endm
 
 	@ Returns Pokemon follower to ball.
 	.macro ballfollowingmon
-	.byte SCR_OP_BALLFOLLOWINGMON
+    callnative ScriptBallFollowingMon
 	delay 16
 	.endm
+
+    @ Changes the battle partner of the existing follower.
+    .macro changefollowerbattler battlePartner:req
+    callnative ScriptChangeFollowerBattlePartner
+    .2byte \battlePartner
+    .endm
 
 
 @ Supplementary

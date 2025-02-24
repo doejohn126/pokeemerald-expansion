@@ -278,7 +278,7 @@ script BrendanJoinParty1 {
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
     waitmovement(0)
     msgbox(NglPrettyGood)
-    setfollower(30, FOLLOWER_ALL, BrendanChatRandom, PARTNER_BRENDAN_TREECKO)
+    setfollower(30, FOLLOW_ME_FLAG_ALL, BrendanChatRandom, PARTNER_BRENDAN_TREECKO)
     setvar(VAR_FOLLOWER_WRONG_WAY, 1)
     release
     end
@@ -298,7 +298,7 @@ script BrendanJoinParty2 {
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
     waitmovement(0)
     msgbox(NglPrettyGood)
-    setfollower(30, FOLLOWER_ALL, BrendanChatRandom, PARTNER_BRENDAN_TORCHIC)
+    setfollower(30, FOLLOW_ME_FLAG_ALL, BrendanChatRandom, PARTNER_BRENDAN_TORCHIC)
     setvar(VAR_FOLLOWER_WRONG_WAY, 1)
     release
     end
@@ -318,7 +318,7 @@ script BrendanJoinParty3 {
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
     waitmovement(0)
     msgbox(NglPrettyGood)
-    setfollower(30, FOLLOWER_ALL, BrendanChatRandom, PARTNER_BRENDAN_MUDKIP)
+    setfollower(30, FOLLOW_ME_FLAG_ALL, BrendanChatRandom, PARTNER_BRENDAN_MUDKIP)
     setvar(VAR_FOLLOWER_WRONG_WAY, 1)
     release
     end
@@ -380,7 +380,7 @@ script MayJoinParty1 {
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
     waitmovement(0)
     msgbox(NiceJob)
-    setfollower(30, FOLLOWER_ALL, MayChatRandom, PARTNER_MAY_TREECKO)
+    setfollower(30, FOLLOW_ME_FLAG_ALL, MayChatRandom, PARTNER_MAY_TREECKO)
     setvar(VAR_FOLLOWER_WRONG_WAY, 1)
     release
     end
@@ -400,7 +400,7 @@ script MayJoinParty2 {
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
     waitmovement(0)
     msgbox(NiceJob)
-    setfollower(30, FOLLOWER_ALL, MayChatRandom, PARTNER_MAY_TORCHIC)
+    setfollower(30, FOLLOW_ME_FLAG_ALL, MayChatRandom, PARTNER_MAY_TORCHIC)
     setvar(VAR_FOLLOWER_WRONG_WAY, 1)
     release
     end
@@ -420,7 +420,7 @@ script MayJoinParty3 {
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
     waitmovement(0)
     msgbox(NiceJob)
-    setfollower(30, FOLLOWER_ALL, MayChatRandom, PARTNER_MAY_MUDKIP)
+    setfollower(30, FOLLOW_ME_FLAG_ALL, MayChatRandom, PARTNER_MAY_MUDKIP)
     setvar(VAR_FOLLOWER_WRONG_WAY, 1)
     release
     end

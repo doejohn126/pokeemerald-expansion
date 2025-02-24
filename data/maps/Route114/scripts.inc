@@ -546,7 +546,7 @@ BrendanJoinParty1::
 # 280 "data/maps/Route114/scripts.pory"
 	msgbox NglPrettyGood
 # 281 "data/maps/Route114/scripts.pory"
-	setfollower 30, FOLLOWER_ALL, BrendanChatRandom, PARTNER_BRENDAN_TREECKO
+	setfollower 30, FOLLOW_ME_FLAG_ALL, BrendanChatRandom, PARTNER_BRENDAN_TREECKO
 # 282 "data/maps/Route114/scripts.pory"
 	setvar VAR_FOLLOWER_WRONG_WAY, 1
 # 283 "data/maps/Route114/scripts.pory"
@@ -582,7 +582,7 @@ BrendanJoinParty2::
 # 300 "data/maps/Route114/scripts.pory"
 	msgbox NglPrettyGood
 # 301 "data/maps/Route114/scripts.pory"
-	setfollower 30, FOLLOWER_ALL, BrendanChatRandom, PARTNER_BRENDAN_TORCHIC
+	setfollower 30, FOLLOW_ME_FLAG_ALL, BrendanChatRandom, PARTNER_BRENDAN_TORCHIC
 # 302 "data/maps/Route114/scripts.pory"
 	setvar VAR_FOLLOWER_WRONG_WAY, 1
 # 303 "data/maps/Route114/scripts.pory"
@@ -618,7 +618,7 @@ BrendanJoinParty3::
 # 320 "data/maps/Route114/scripts.pory"
 	msgbox NglPrettyGood
 # 321 "data/maps/Route114/scripts.pory"
-	setfollower 30, FOLLOWER_ALL, BrendanChatRandom, PARTNER_BRENDAN_MUDKIP
+	setfollower 30, FOLLOW_ME_FLAG_ALL, BrendanChatRandom, PARTNER_BRENDAN_MUDKIP
 # 322 "data/maps/Route114/scripts.pory"
 	setvar VAR_FOLLOWER_WRONG_WAY, 1
 # 323 "data/maps/Route114/scripts.pory"
@@ -718,7 +718,7 @@ MayJoinParty1::
 # 382 "data/maps/Route114/scripts.pory"
 	msgbox NiceJob
 # 383 "data/maps/Route114/scripts.pory"
-	setfollower 30, FOLLOWER_ALL, MayChatRandom, PARTNER_MAY_TREECKO
+	setfollower 30, FOLLOW_ME_FLAG_ALL, MayChatRandom, PARTNER_MAY_TREECKO
 # 384 "data/maps/Route114/scripts.pory"
 	setvar VAR_FOLLOWER_WRONG_WAY, 1
 # 385 "data/maps/Route114/scripts.pory"
@@ -754,7 +754,7 @@ MayJoinParty2::
 # 402 "data/maps/Route114/scripts.pory"
 	msgbox NiceJob
 # 403 "data/maps/Route114/scripts.pory"
-	setfollower 30, FOLLOWER_ALL, MayChatRandom, PARTNER_MAY_TORCHIC
+	setfollower 30, FOLLOW_ME_FLAG_ALL, MayChatRandom, PARTNER_MAY_TORCHIC
 # 404 "data/maps/Route114/scripts.pory"
 	setvar VAR_FOLLOWER_WRONG_WAY, 1
 # 405 "data/maps/Route114/scripts.pory"
@@ -790,7 +790,7 @@ MayJoinParty3::
 # 422 "data/maps/Route114/scripts.pory"
 	msgbox NiceJob
 # 423 "data/maps/Route114/scripts.pory"
-	setfollower 30, FOLLOWER_ALL, MayChatRandom, PARTNER_MAY_MUDKIP
+	setfollower 30, FOLLOW_ME_FLAG_ALL, MayChatRandom, PARTNER_MAY_MUDKIP
 # 424 "data/maps/Route114/scripts.pory"
 	setvar VAR_FOLLOWER_WRONG_WAY, 1
 # 425 "data/maps/Route114/scripts.pory"

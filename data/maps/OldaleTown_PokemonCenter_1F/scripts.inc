@@ -137,7 +137,7 @@ DawnFollowMeTest::
 # 72 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 	waitmessage
 # 73 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	setfollower 6, FOLLOWER_FLAG_ALL_NO_RUN, 0, PARTNER_DAWN
+	setfollower 6, FOLLOW_ME_FLAG_CAN_LEAVE_ROUTE, 0, PARTNER_DAWN
 # 74 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 	release
 	end
