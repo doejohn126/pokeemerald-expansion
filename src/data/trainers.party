@@ -12281,22 +12281,26 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DUNCAN ===
 Name: Duncan
-Class: Sailor
-Pic: Sailor
+Class: Dragon Tamer
+Pic: Dragon Tamer
 Gender: Male
-Music: Male
+Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Barraskewda
+Dracozolt
 Level: 55
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Aggron
+Zweilous
 Level: 55
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Seismitoad
+Kingdra
+Level: 55
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ampharos
 Level: 55
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -18472,20 +18476,24 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LAWRENCE ===
 Name: Lawrence
-Class: Camper
-Pic: Camper
+Class: Dragon Tamer
+Pic: Dragon Tamer
 Gender: Male
-Music: Male
+Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Exeggcute
+Shelgon
 Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
+IVs: 0 HP / 18 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Toedscruel
+Fraxure
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 18 SpD / 0 Spe
+
+Servine
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 18 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WYATT ===
 Name: Wyatt
@@ -23069,14 +23077,6 @@ IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 - Air Slash
 - Thunderbolt
 - Calm Mind
-
-Lampent (M)
-Level: 38
-IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-- Shadow Ball
-- Will O Wisp
-- Heat Wave
-- Energy Ball
 
 Haunter (F)
 Level: 38

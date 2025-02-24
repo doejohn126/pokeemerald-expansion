@@ -54,18 +54,18 @@ AbandonedShip_Corridors_B1F_EventScript_Duncan::
 	end
 
 AbandonedShip_Corridors_B1F_Text_DuncanIntro:
-	.string "When we go out to sea, we Sailors\n"
-	.string "always bring our Pokémon.\l"
+	.string "When we go out to sea, we Dragon Tamers\n"
+	.string "must always bring our Pokémon.\l"
 	.string "How about a quick battle?$"
 
 AbandonedShip_Corridors_B1F_Text_DuncanDefeat:
-	.string "Whoops, I'm sunk!$"
+	.string "Pretty good, dude!$"
 
 AbandonedShip_Corridors_B1F_Text_DuncanPostBattle:
 	.string "The ship's bottom has sunk into the\n"
 	.string "depths.\p"
 	.string "If a Pokémon knew how to go underwater,\n"
-	.string "we might make some progress…$"
+	.string "we could make some progress…$"
 
 AbandonedShip_Corridors_B1F_Text_YayItsAShip:
 	.string "Yay!\n"

@@ -1762,15 +1762,16 @@ Route113_Text_SophiePostBattle:
 	.string "Zzz!$"
 
 Route113_Text_LawrenceIntro:
-	.string "Were you maybe in the middle\n"
-	.string "of gathering volcanic ashes?$"
+	.string "Man, out of all places, I thought this\n"
+	.string "Route would have some Dragons...$"
 
 Route113_Text_LawrenceDefeat:
 	.string "Ehehe.\n"
-	.string "We got beaten cleanly.$"
+	.string "My Dragons have fallen.$"
 
 Route113_Text_LawrencePostBattle:
-	.string "I ought to hide under the ashes, too.$"
+	.string "I ought to check the seas or something.\n"
+	.string "I don't even know at this point.$"
 
 Route113_Text_WyattIntro:
 	.string "Y-you want to battle with me?\n"
