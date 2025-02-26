@@ -496,8 +496,6 @@ void HandleInputChooseTarget(u32 battler)
                 case B_POSITION_PLAYER_RIGHT:
                     if (battler != gMultiUsePlayerCursor)
                         i++;
-                    else if (moveTarget & MOVE_TARGET_USER_OR_SELECTED)
-                        i++;
                     break;
                 case B_POSITION_OPPONENT_LEFT:
                 case B_POSITION_OPPONENT_RIGHT:
@@ -506,7 +504,8 @@ void HandleInputChooseTarget(u32 battler)
                 }
 
                 if (gAbsentBattlerFlags & (1u << gMultiUsePlayerCursor)
-                 || !CanTargetBattler(battler, gMultiUsePlayerCursor, move))
+                 || !CanTargetBattler(battler, gMultiUsePlayerCursor, move)
+                 || (moveTarget & MOVE_TARGET_OPPONENT && GetBattlerSide(gMultiUsePlayerCursor) == B_SIDE_PLAYER))
                     i = 0;
             } while (i == 0);
         }
@@ -546,8 +545,6 @@ void HandleInputChooseTarget(u32 battler)
                 case B_POSITION_PLAYER_RIGHT:
                     if (battler != gMultiUsePlayerCursor)
                         i++;
-                    else if (moveTarget & MOVE_TARGET_USER_OR_SELECTED)
-                        i++;
                     break;
                 case B_POSITION_OPPONENT_LEFT:
                 case B_POSITION_OPPONENT_RIGHT:
@@ -556,7 +553,8 @@ void HandleInputChooseTarget(u32 battler)
                 }
 
                 if (gAbsentBattlerFlags & (1u << gMultiUsePlayerCursor)
-                 || !CanTargetBattler(battler, gMultiUsePlayerCursor, move))
+                 || !CanTargetBattler(battler, gMultiUsePlayerCursor, move)
+                 || (moveTarget & MOVE_TARGET_OPPONENT && GetBattlerSide(gMultiUsePlayerCursor) == B_SIDE_PLAYER))
                     i = 0;
             } while (i == 0);
         }
@@ -691,12 +689,7 @@ void HandleInputChooseMove(u32 battler)
         else
             gMultiUsePlayerCursor = GetOpposingSideBattler(battler);
 
-        if (!gBattleResources->bufferA[battler][1]) // not a double battle
-        {
-            if (moveTarget & MOVE_TARGET_USER_OR_SELECTED && !gBattleResources->bufferA[battler][2])
-                canSelectTarget = 1;
-        }
-        else // double battle
+        if (gBattleResources->bufferA[battler][1]) // a double battle
         {
             if (!(moveTarget & (MOVE_TARGET_RANDOM | MOVE_TARGET_BOTH | MOVE_TARGET_DEPENDS | MOVE_TARGET_FOES_AND_ALLY | MOVE_TARGET_OPPONENTS_FIELD | MOVE_TARGET_USER | MOVE_TARGET_ALLY)))
                 canSelectTarget = 1; // either selected or user
@@ -707,7 +700,7 @@ void HandleInputChooseMove(u32 battler)
             {
                 canSelectTarget = 0;
             }
-            else if (!(moveTarget & (MOVE_TARGET_USER | MOVE_TARGET_USER_OR_SELECTED)) && CountAliveMonsInBattle(BATTLE_ALIVE_EXCEPT_BATTLER, battler) <= 1)
+            else if (!(moveTarget & MOVE_TARGET_USER) && CountAliveMonsInBattle(BATTLE_ALIVE_EXCEPT_BATTLER, battler) <= 1)
             {
                 gMultiUsePlayerCursor = GetDefaultMoveTarget(battler);
                 canSelectTarget = 0;
@@ -750,7 +743,7 @@ void HandleInputChooseMove(u32 battler)
         case 1:
             gBattlerControllerFuncs[battler] = HandleInputChooseTarget;
 
-            if (moveTarget & (MOVE_TARGET_USER | MOVE_TARGET_USER_OR_SELECTED))
+            if (moveTarget & MOVE_TARGET_USER)
                 gMultiUsePlayerCursor = battler;
             else if (gAbsentBattlerFlags & (1u << GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)))
                 gMultiUsePlayerCursor = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);

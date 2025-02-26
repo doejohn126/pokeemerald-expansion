@@ -6375,6 +6375,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         }
         break;
     case ABILITYEFFECT_IMMUNITY:
+        gBattleStruct->bypassMoldBreakerChecks = TRUE;
         for (battler = 0; battler < gBattlersCount; battler++)
         {
             switch (GetBattlerAbility(battler))
@@ -6466,6 +6467,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 return effect;
             }
         }
+        gBattleStruct->bypassMoldBreakerChecks = FALSE;
         break;
     case ABILITYEFFECT_SYNCHRONIZE:
         if (gLastUsedAbility == ABILITY_SYNCHRONIZE && (gHitMarker & HITMARKER_SYNCHRONISE_EFFECT))
@@ -6705,7 +6707,9 @@ u32 GetBattlerAbility(u32 battler)
             && gBattleMons[battler].ability == ABILITY_COMATOSE)
                 return ABILITY_NONE;
 
-        if (noAbilityShield && CanBreakThroughAbility(gBattlerAttacker, battler, gBattleMons[gBattlerAttacker].ability))
+        if (!gBattleStruct->bypassMoldBreakerChecks
+         && noAbilityShield
+         && CanBreakThroughAbility(gBattlerAttacker, battler, gBattleMons[gBattlerAttacker].ability))
             return ABILITY_NONE;
 
         return gBattleMons[battler].ability;
@@ -6719,7 +6723,9 @@ u32 GetBattlerAbility(u32 battler)
      && noAbilityShield)
         return ABILITY_NONE;
 
-    if (noAbilityShield && CanBreakThroughAbility(gBattlerAttacker, battler, gBattleMons[gBattlerAttacker].ability))
+    if (!gBattleStruct->bypassMoldBreakerChecks
+     && noAbilityShield
+     && CanBreakThroughAbility(gBattlerAttacker, battler, gBattleMons[gBattlerAttacker].ability))
         return ABILITY_NONE;
 
     return gBattleMons[battler].ability;
@@ -8554,6 +8560,7 @@ u32 GetBattleMoveTarget(u16 move, u8 setTarget)
     switch (moveTarget)
     {
     case MOVE_TARGET_SELECTED:
+    case MOVE_TARGET_OPPONENT:
         side = BATTLE_OPPOSITE(GetBattlerSide(gBattlerAttacker));
         if (IsAffectedByFollowMe(gBattlerAttacker, side, move))
         {
@@ -8613,7 +8620,6 @@ u32 GetBattleMoveTarget(u16 move, u8 setTarget)
         else
             targetBattler = GetOpposingSideBattler(gBattlerAttacker);
         break;
-    case MOVE_TARGET_USER_OR_SELECTED:
     case MOVE_TARGET_USER:
     default:
         targetBattler = gBattlerAttacker;
@@ -8752,7 +8758,7 @@ u32 GetBattlerHoldEffectInternal(u32 battler, bool32 checkNegating, bool32 check
             return HOLD_EFFECT_NONE;
         if (gFieldStatuses & STATUS_FIELD_MAGIC_ROOM)
             return HOLD_EFFECT_NONE;
-        if (checkAbility && GetBattlerAbility(battler) == ABILITY_KLUTZ)
+        if (checkAbility && GetBattlerAbility(battler) == ABILITY_KLUTZ && !(gStatuses3[battler] & STATUS3_GASTRO_ACID))
             return HOLD_EFFECT_NONE;
     }
 
@@ -8964,7 +8970,7 @@ u32 GetMoveTargetCount(struct DamageCalculationData *damageCalcData)
     case MOVE_TARGET_DEPENDS:
     case MOVE_TARGET_SELECTED:
     case MOVE_TARGET_RANDOM:
-    case MOVE_TARGET_USER_OR_SELECTED:
+    case MOVE_TARGET_OPPONENT:
         return IsBattlerAlive(battlerDef);
     case MOVE_TARGET_USER:
         return IsBattlerAlive(battlerAtk);
@@ -11583,8 +11589,12 @@ bool32 CanStealItem(u32 battlerStealing, u32 battlerItem, u16 item)
         return FALSE;
     }
 
+    // It's supposed to pop before trying to steal but this also works
+    if (ItemId_GetHoldEffect(item) == HOLD_EFFECT_AIR_BALLOON)
+        return FALSE;
+
     if (!CanBattlerGetOrLoseItem(battlerItem, item)      // Battler with item cannot have it stolen
-      ||!CanBattlerGetOrLoseItem(battlerStealing, item)) // Stealer cannot take the item
+     || !CanBattlerGetOrLoseItem(battlerStealing, item)) // Stealer cannot take the item
         return FALSE;
 
     return TRUE;
