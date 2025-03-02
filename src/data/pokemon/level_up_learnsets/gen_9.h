@@ -558,7 +558,7 @@ static const struct LevelUpMove sRaichuLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_TEAM),
     LEVEL_UP_MOVE( 1, MOVE_LIGHT_SCREEN),
-    LEVEL_UP_MOVE( 5, MOVE_THUNDERBOLT),
+    LEVEL_UP_MOVE( 1, MOVE_THUNDERBOLT),
     LEVEL_UP_END
 };
 
@@ -584,7 +584,7 @@ static const struct LevelUpMove sRaichuAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_PLAY_NICE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
-    LEVEL_UP_MOVE( 5, MOVE_THUNDERBOLT),
+    LEVEL_UP_MOVE( 1, MOVE_THUNDERBOLT),
     LEVEL_UP_END
 };
 #endif //P_ALOLAN_FORMS
@@ -1010,7 +1010,7 @@ static const struct LevelUpMove sWigglytuffLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE( 1, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
-    LEVEL_UP_MOVE( 5, MOVE_PLAY_ROUGH),
+    LEVEL_UP_MOVE( 1, MOVE_PLAY_ROUGH),
     LEVEL_UP_MOVE( 40, MOVE_DAZZLING_GLEAM),
     LEVEL_UP_END
 };
@@ -2617,7 +2617,7 @@ static const struct LevelUpMove sCloysterLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 5, MOVE_RAZOR_SHELL),
+    LEVEL_UP_MOVE( 1, MOVE_RAZOR_SHELL),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SHELLDER
@@ -12931,7 +12931,7 @@ static const struct LevelUpMove sLilligantHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_MEGA_DRAIN),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
-    LEVEL_UP_MOVE( 5, MOVE_AXE_KICK),
+    LEVEL_UP_MOVE( 1, MOVE_AXE_KICK),
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
@@ -14222,7 +14222,7 @@ static const struct LevelUpMove sEelektrossLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GASTRO_ACID),
     LEVEL_UP_MOVE( 1, MOVE_DISCHARGE),
     LEVEL_UP_MOVE( 1, MOVE_COIL),
-    LEVEL_UP_MOVE( 5, MOVE_WILD_CHARGE),
+    LEVEL_UP_MOVE( 1, MOVE_WILD_CHARGE),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TYNAMO
@@ -15747,7 +15747,7 @@ static const struct LevelUpMove sFlorgesLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE( 1, MOVE_GRASSY_TERRAIN),
     LEVEL_UP_MOVE( 1, MOVE_MISTY_TERRAIN),
-    LEVEL_UP_MOVE( 5, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE( 1, MOVE_MOONBLAST),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FLABEBE

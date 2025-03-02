@@ -986,10 +986,10 @@ static const struct InGameTrade sIngameTrades[] =
 {
     [INGAME_TRADE_SEEDOT] =
     {
-        .nickname = _("Dots"),
-        .species = SPECIES_SEEDOT,
-        .ivs = {5, 4, 5, 4, 4, 4},
-        .abilityNum = 1,
+        .nickname = _("Lils"),
+        .species = SPECIES_PETILIL,
+        .ivs = {12, 11, 13, 12, 11, 12},
+        .abilityNum = 0,
         .otId = 38726,
         .conditions = {30, 5, 5, 5, 5},
         .personality = 0x84,
@@ -1018,10 +1018,10 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_HORSEA] =
     {
-        .nickname = _("Seasor"),
-        .species = SPECIES_HORSEA,
-        .ivs = {5, 4, 4, 4, 5, 4},
-        .abilityNum = 0,
+        .nickname = _("Dreeps"),
+        .species = SPECIES_DREEPY,
+        .ivs = {22, 21, 20, 22, 21, 22},
+        .abilityNum = 1,
         .otId = 46285,
         .conditions = {5, 5, 5, 5, 30},
         .personality = 0x7F,

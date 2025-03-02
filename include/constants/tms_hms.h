@@ -89,7 +89,8 @@
     F(TRIPLE_AXEL) \
     F(TRICK_ROOM) \
     F(OUTRAGE) \
-    F(DRAGON_CHEER)
+    F(DRAGON_CHEER) \
+    F(UPPER_HAND)
 
 #define FOREACH_HM(F) \
     F(CUT) \

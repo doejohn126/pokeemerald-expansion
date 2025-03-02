@@ -31383,7 +31383,8 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER",
-      "MOVE_ALLURING_VOICE"
+      "MOVE_ALLURING_VOICE",      
+      "MOVE_DAZZLING_GLEAM"
     ],
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
@@ -32522,7 +32523,8 @@
       "MOVE_SCALE_SHOT",
       "MOVE_PSYCH_UP",
       "MOVE_ENDEAVOR",
-      "MOVE_WHIRLPOOL"
+      "MOVE_WHIRLPOOL",
+      "MOVE_DAZZLING_GLEAM"
     ],
     "EggMoves": [
       "MOVE_SUPERSONIC",
