@@ -245,6 +245,7 @@
 #define B_MOVE_DESCRIPTION_BUTTON   L_BUTTON // If set to a button other than B_LAST_USED_BALL_BUTTON, pressing this button will open the move description menu
 #define B_DYNAMIC_MOVE_INFO         TRUE // If set to TRUE, battle move info will show the real base power and accuracy of moves after ability, stat or item modifier.
 #define B_DYNAMIC_MOVE_INFO_COLORS  TRUE // If set to TRUE, battle move info will have its color change depending on how the power or accuracy is modified.
+#define B_SHOW_USELESS_Z_MOVE_INFO  TRUE // If set to TRUE, Z-moves without additional effects like newer gen status moves will say "no additional effect"
 
 // Catching settings
 #define B_SEMI_INVULNERABLE_CATCH       GEN_LATEST // In Gen4+, you cannot throw a ball against a Pokemon that is in a semi-invulnerable state (dig/fly/etc)
