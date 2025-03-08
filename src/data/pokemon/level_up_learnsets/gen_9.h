@@ -18765,6 +18765,7 @@ static const struct LevelUpMove sThwackeyLevelUpLearnset[] = {
 static const struct LevelUpMove sRillaboomLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_DRUM_BEATING),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
+    LEVEL_UP_MOVE( 1, MOVE_GRASSY_GLIDE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_TAUNT),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_HIT),
