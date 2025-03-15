@@ -90,7 +90,8 @@
     F(TRICK_ROOM) \
     F(OUTRAGE) \
     F(DRAGON_CHEER) \
-    F(UPPER_HAND)
+    F(UPPER_HAND) \
+    F(BODY_PRESS)
 
 #define FOREACH_HM(F) \
     F(CUT) \

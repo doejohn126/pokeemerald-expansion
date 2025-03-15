@@ -25,34 +25,33 @@ MoveTutor_Text_SwaggerTaught:
 	.string "on without the swagger.$"
 
 MoveTutor_Text_RolloutTeach:
-	.string "Did you know that you can go from\n"
-	.string "here a long way in that direction\l"
-	.string "without changing direction?\p"
-	.string "I might even be able to roll\n"
-	.string "that way.\p"
-	.string "Do you think your Pokémon will\n"
-	.string "want to roll, too?\p"
-	.string "I can teach one the move Rollout\n"
-	.string "if you'd like.$"
+	.string "Did you know that if you seriously put\n"
+	.string "in the effort, you could really just\l"
+	.string "crush someone?\p"
+	.string "Like maybe even break some bones? No?\p"
+	.string "Well I bet your Pokémon would want to\n"
+	.string "try this.\p"
+	.string "Ok, for real though are you trying to\n"
+	.string "learn Heavy Slam?$"
 
 MoveTutor_Text_RolloutDeclined:
 	.string "You don't need to be shy about it.\n"
-	.string "Let's roll!$"
+	.string "Let's SLAM!$"
 
 MoveTutor_Text_RolloutWhichMon:
 	.string "Ehehe, sure thing! It'd be great if\n"
 	.string "the Pokémon looked like me.$"
 
 MoveTutor_Text_RolloutTaught:
-	.string "Rolling around in the grass makes me\n"
-	.string "happy. Come on, let's roll!$"
+	.string "Slaming around in the grass makes me\n"
+	.string "happy. Come on, let's SLAM!$"
 
 MoveTutor_Text_FuryCutterTeach:
-	.string "There's a move that gets stronger\n"
-	.string "when you keep using it in a row.\p"
+	.string "There's a move that slashes\n"
+	.string "with your claws like scissors.\p"
 	.string "It's a Bug-type move, and it is\n"
 	.string "wickedly cool.\p"
-	.string "It's called Fury Cutter.\n"
+	.string "It's called X-Scissor.\n"
 	.string "Want me to teach it to a Pokémon?$"
 
 MoveTutor_Text_FuryCutterDeclined:
@@ -63,21 +62,21 @@ MoveTutor_Text_FuryCutterWhichMon:
 	.string "Show me which Pokémon I should teach.$"
 
 MoveTutor_Text_FuryCutterTaught:
-	.string "I get a thrill watching to see if\n"
-	.string "the move keeps hitting in succession!$"
+	.string "I get a thrill watching to see the\n"
+	.string "amazing damage come in!$"
 
 MoveTutor_MimicTeach:
 	.string "Ah, young one!\p"
 	.string "I am also a young one, but I mimic\n"
 	.string "the styles and speech of the elderly\l"
 	.string "folks of this town.\p"
-	.string "What do you say, young one?\n"
-	.string "Would you agree to it if I were to\l"
-	.string "offer to teach the move Mimic?$"
+	.string "But I don't actually teach mimic you\n"
+	.string "see. Because that move is disgraceful.\p"
+	.string "How about you learn Will-O-Wisp?$"
 
 MoveTutor_MimicDeclined:
-	.string "Oh, boo! I wanted to teach Mimic\n"
-	.string "to your Pokémon!$"
+	.string "Oh, boo! I wanted to teach\n"
+	.string "Will-O-Wisp to your Pokémon!$"
 
 MoveTutor_Text_MimicWhichMon:
 	.string "Fwofwo! And so I shall!\n"
@@ -85,7 +84,7 @@ MoveTutor_Text_MimicWhichMon:
 	.string "you wish me to teach.$"
 
 MoveTutor_Text_MimicTaught:
-	.string "Mimic is a move of great depth.\p"
+	.string "Will-O-Wisp is a move of great depth.\p"
 	.string "Could you execute it to perfection\n"
 	.string "as well as me…?$"
 
@@ -116,8 +115,8 @@ MoveTutor_Text_MetronomeTaught:
 	.string "use it, too?$"
 
 MoveTutor_Text_SleepTalkTeach:
-	.string "Humph! My wife relies on Hidden\n"
-	.string "Power to stay awake.\p"
+	.string "Humph! My wife relies on Body\n"
+	.string "Press to stay awake.\p"
 	.string "She should just take a nap like I do,\n"
 	.string "and Sleep Talk.\p"
 	.string "I can teach your Pokémon how to\n"
@@ -125,7 +124,7 @@ MoveTutor_Text_SleepTalkTeach:
 
 MoveTutor_Text_SleepTalkDeclined:
 	.string "Oh, fine, fine. You want to stay awake\n"
-	.string "with Hidden Power, too…$"
+	.string "with Body Press, too…$"
 
 MoveTutor_Text_SleepTalkWhichMon:
 	.string "Ah, an appreciative child!\n"
@@ -146,17 +145,17 @@ MoveTutor_Text_SubstituteTeach:
 	.string "Of course it's not possible.\n"
 	.string "Giggle…\p"
 	.string "I know! Would you be interested in\n"
-	.string "having a Pokémon learn Substitute?$"
+	.string "having a Pokémon learn Psychic Noise?$"
 
 MoveTutor_Text_SubstituteDeclined:
 	.string "Oh, no?\p"
-	.string "A Pokémon can make a copy of\n"
-	.string "itself using it, you know.$"
+	.string "A Pokémon can prevent the\n"
+	.string "target from healing, you know.$"
 
 MoveTutor_Text_SubstituteWhichMon:
 	.string "Giggle…\n"
 	.string "Which Pokémon do you want me to\l"
-	.string "teach Substitute?$"
+	.string "teach Psychic Noise?$"
 
 MoveTutor_Text_SubstituteTaught:
 	.string "We human beings should enjoy our\n"
@@ -174,7 +173,7 @@ MoveTutor_Text_DynamicPunchTeach:
 	.string "What, don't look at me that way!\n"
 	.string "I'm only hitting the ground!\p"
 	.string "Or do you want me to teach your\n"
-	.string "Pokémon DynamicPunch?$"
+	.string "Pokémon Coaching?$"
 
 MoveTutor_Text_DynamicPunchDeclined:
 	.string "Darn! You're even making fun of me?\n"
@@ -186,7 +185,7 @@ MoveTutor_Text_DynamicPunchWhichMon:
 
 MoveTutor_Text_DynamicPunchTaught:
 	.string "I want you to win at the Mossdeep Gym\n"
-	.string "using that DynamicPunch!$"
+	.string "using that Coaching move!$"
 
 MoveTutor_Text_DoubleEdgeTeach:
 	.string "Sigh…\p"
