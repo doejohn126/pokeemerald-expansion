@@ -469,7 +469,7 @@ DawnApproachPlayer1::
 # 238 "data/maps/VictoryRoad_1F/scripts.pory"
 	msgbox LetsGo
 # 239 "data/maps/VictoryRoad_1F/scripts.pory"
-	setfollower 10, FOLLOW_ME_FLAG_ALL, DawnChat, PARTNER_DAWN
+	setfollower 10, FOLLOW_ME_FLAG_ALL_NO_FRAME, DawnChat, PARTNER_DAWN
 # 240 "data/maps/VictoryRoad_1F/scripts.pory"
 	release
 	end
@@ -503,7 +503,7 @@ DawnApproachPlayer2::
 # 257 "data/maps/VictoryRoad_1F/scripts.pory"
 	msgbox LetsGo
 # 258 "data/maps/VictoryRoad_1F/scripts.pory"
-	setfollower 10, FOLLOW_ME_FLAG_ALL, DawnChat, PARTNER_DAWN
+	setfollower 10, FOLLOW_ME_FLAG_ALL_NO_FRAME, DawnChat, PARTNER_DAWN
 # 259 "data/maps/VictoryRoad_1F/scripts.pory"
 	release
 	end
@@ -571,7 +571,7 @@ DawnApproachPlayer3::
 # 299 "data/maps/VictoryRoad_1F/scripts.pory"
 	msgbox LetsGo
 # 300 "data/maps/VictoryRoad_1F/scripts.pory"
-	setfollower 10, FOLLOW_ME_FLAG_ALL, DawnChat, PARTNER_DAWN
+	setfollower 10, FOLLOW_ME_FLAG_ALL_NO_FRAME, DawnChat, PARTNER_DAWN
 # 301 "data/maps/VictoryRoad_1F/scripts.pory"
 	release
 	end
