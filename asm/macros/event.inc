@@ -1922,7 +1922,7 @@
 
 	@ Returns Pokemon follower to ball.
 	.macro ballfollowingmon
-    callnative ScriptBallFollowingMon
+	callnative ScriptBallFollowingMon
 	delay 16
 	.endm
 

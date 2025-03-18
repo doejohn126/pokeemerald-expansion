@@ -351,7 +351,7 @@ static void DoStandardWildBattle(bool32 isDouble)
     {
         gBattleTypeFlags |= BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER | BATTLE_TYPE_DOUBLE;
     }
-    if (isDouble)
+    else if (isDouble)
         gBattleTypeFlags |= BATTLE_TYPE_DOUBLE;
     if (InBattlePyramid())
     {
@@ -1156,11 +1156,6 @@ void SetTrainerFacingDirection(void)
 u8 GetTrainerBattleMode(void)
 {
     return TRAINER_BATTLE_PARAM.mode;
-}
-
-bool8 GetFollowerPartner(void)
-{
-    return gSaveBlock2Ptr->follower.battlePartner;
 }
 
 bool8 GetTrainerFlag(void)
