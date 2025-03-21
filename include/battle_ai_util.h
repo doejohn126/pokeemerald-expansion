@@ -28,6 +28,13 @@ enum AIPivot
     SHOULD_PIVOT,
 };
 
+static inline bool32 IsMoveUnusable(u32 moveIndex, u32 move, u32 moveLimitations)
+{
+    return move == MOVE_NONE
+        || move == MOVE_UNAVAILABLE
+        || moveLimitations & 1u << moveIndex;
+}
+
 bool32 AI_IsFaster(u32 battlerAi, u32 battlerDef, u32 move);
 bool32 AI_IsSlower(u32 battlerAi, u32 battlerDef, u32 move);
 bool32 AI_RandLessThan(u32 val);
@@ -92,7 +99,7 @@ u32 AI_GetBattlerAbility(u32 battler);
 
 // stat stage checks
 bool32 AnyStatIsRaised(u32 battlerId);
-bool32 ShouldLowerStat(u32 battlerAtk, u32 battlerDef, u32 battlerAbility, u32 stat);
+bool32 ShouldLowerStat(u32 battlerAtk, u32 battlerDef, u32 abilityDef, u32 stat);
 bool32 BattlerStatCanRise(u32 battler, u32 battlerAbility, u32 stat);
 bool32 AreBattlersStatsMaxed(u32 battler);
 u32 CountPositiveStatStages(u32 battlerId);
