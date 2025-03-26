@@ -87,6 +87,7 @@ static void MoveSelectionDisplayPpNumber(u32 battler);
 static void MoveSelectionDisplayPpString(u32 battler);
 static void MoveSelectionDisplayMoveType(u32 battler);
 static void MoveSelectionDisplayMoveNames(u32 battler);
+static void TryMoveSelectionDisplayMoveDescription(u32 battler);
 static void MoveSelectionDisplayMoveDescription(u32 battler);
 static void SwitchIn_HandleSoundAndEnd(u32 battler);
 static void WaitForMonSelection(u32 battler);
@@ -787,8 +788,7 @@ void HandleInputChooseMove(u32 battler)
             MoveSelectionCreateCursorAt(gMoveSelectionCursor[battler], 0);
             MoveSelectionDisplayPpNumber(battler);
             MoveSelectionDisplayMoveType(battler);
-            if (gBattleStruct->descriptionSubmenu)
-                MoveSelectionDisplayMoveDescription(battler);
+            TryMoveSelectionDisplayMoveDescription(battler);
             TryChangeZTrigger(battler, gMoveSelectionCursor[battler]);
         }
     }
@@ -803,8 +803,7 @@ void HandleInputChooseMove(u32 battler)
             MoveSelectionCreateCursorAt(gMoveSelectionCursor[battler], 0);
             MoveSelectionDisplayPpNumber(battler);
             MoveSelectionDisplayMoveType(battler);
-            if (gBattleStruct->descriptionSubmenu)
-                MoveSelectionDisplayMoveDescription(battler);
+            TryMoveSelectionDisplayMoveDescription(battler);
             TryChangeZTrigger(battler, gMoveSelectionCursor[battler]);
         }
     }
@@ -818,8 +817,7 @@ void HandleInputChooseMove(u32 battler)
             MoveSelectionCreateCursorAt(gMoveSelectionCursor[battler], 0);
             MoveSelectionDisplayPpNumber(battler);
             MoveSelectionDisplayMoveType(battler);
-            if (gBattleStruct->descriptionSubmenu)
-                MoveSelectionDisplayMoveDescription(battler);
+            TryMoveSelectionDisplayMoveDescription(battler);
             TryChangeZTrigger(battler, gMoveSelectionCursor[battler]);
         }
     }
@@ -834,8 +832,7 @@ void HandleInputChooseMove(u32 battler)
             MoveSelectionCreateCursorAt(gMoveSelectionCursor[battler], 0);
             MoveSelectionDisplayPpNumber(battler);
             MoveSelectionDisplayMoveType(battler);
-            if (gBattleStruct->descriptionSubmenu)
-                MoveSelectionDisplayMoveDescription(battler);
+            TryMoveSelectionDisplayMoveDescription(battler);
             TryChangeZTrigger(battler, gMoveSelectionCursor[battler]);
         }
     }
@@ -877,7 +874,7 @@ void HandleInputChooseMove(u32 battler)
     else if (JOY_NEW(B_MOVE_DESCRIPTION_BUTTON))
     {
         gBattleStruct->descriptionSubmenu = TRUE;
-        MoveSelectionDisplayMoveDescription(battler);
+        TryMoveSelectionDisplayMoveDescription(battler);
     }
     else if (JOY_NEW(START_BUTTON))
     {
@@ -1764,6 +1761,14 @@ static u8 GetAccuracyWindowId(u16 accuracy, u16 baseAccuracy)
         return B_WIN_MOVE_ACC_NEG;
     else
         return B_WIN_MOVE_ACC;
+}
+static void TryMoveSelectionDisplayMoveDescription(u32 battler)
+{
+    if (!B_SHOW_MOVE_DESCRIPTION)
+        return;
+
+    if (gBattleStruct->descriptionSubmenu)
+        MoveSelectionDisplayMoveDescription(battler);
 }
 
 static void MoveSelectionDisplayMoveDescription(u32 battler)
