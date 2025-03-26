@@ -1410,3 +1410,4 @@ void ScriptChangeFollowerBattlePartner(struct ScriptContext *ctx)
     if (gSaveBlock2Ptr->follower.inProgress)
         gSaveBlock2Ptr->follower.battlePartner = newBattlePartner;
 }
+
