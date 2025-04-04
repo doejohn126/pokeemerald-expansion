@@ -467,7 +467,6 @@
 #define STRINGID_FRISKACTIVATES                       465
 #define STRINGID_UNNERVEENTERS                        466
 #define STRINGID_HARVESTBERRY                         467
-#define STRINGID_LASTABILITYRAISEDSTAT                468
 #define STRINGID_MAGICBOUNCEACTIVATES                 469
 #define STRINGID_PROTEANTYPECHANGE                    470
 #define STRINGID_SYMBIOSISITEMPASS                    471
