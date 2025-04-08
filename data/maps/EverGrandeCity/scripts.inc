@@ -275,7 +275,7 @@ ScotMan::
 JaydenLose::
 # 139 "data/maps/EverGrandeCity/scripts.pory"
 	.string "Y'know {PLAYER}, this battle had me\n"
-	.string "thinking back to our battle in the woods."
+	.string "thinking back to our battle in the woods.\p"
 	.string "I honestly think you can become the\n"
 	.string "Champion.$"
 

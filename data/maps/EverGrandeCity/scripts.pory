@@ -138,7 +138,7 @@ text ScotMan {
 
 text JaydenLose {
     "Y'know {PLAYER}, this battle had me\n"
-    "thinking back to our battle in the woods."
+    "thinking back to our battle in the woods.\p"
     "I honestly think you can become the\n"
     "Champion."
 }

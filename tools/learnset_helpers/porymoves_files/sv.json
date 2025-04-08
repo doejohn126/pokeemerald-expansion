@@ -1085,7 +1085,9 @@
   "PIDGEOT": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_HEAT_WAVE"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -1113,7 +1115,9 @@
   "FEAROW": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_DUAL_WINGBEAT"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },

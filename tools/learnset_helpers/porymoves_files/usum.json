@@ -1850,6 +1850,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
+      "MOVE_HEAT_WAVE",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [

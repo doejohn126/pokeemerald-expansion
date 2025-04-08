@@ -6423,7 +6423,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 90,
         .baseSpAttack  = 100,
         .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 75 : 90,
-        .types = MON_TYPES(TYPE_BUG, TYPE_POISON),
+        .types = MON_TYPES(TYPE_BUG, TYPE_PSYCHIC),
         .catchRate = 75,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 158 : 138,
         .evYield_Speed = 1,
@@ -8001,7 +8001,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPoliwagLevelUpLearnset,
         .teachableLearnset = sPoliwagTeachableLearnset,
         .eggMoveLearnset = sPoliwagEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_POLIWHIRL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_POLIWHIRL}),
     },
 
     [SPECIES_POLIWHIRL] =
@@ -14204,7 +14204,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sRhyhornLevelUpLearnset,
         .teachableLearnset = sRhyhornTeachableLearnset,
         .eggMoveLearnset = sRhyhornEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_RHYDON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_RHYDON}),
     },
 
     [SPECIES_RHYDON] =
@@ -14971,7 +14971,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sHorseaLevelUpLearnset,
         .teachableLearnset = sHorseaTeachableLearnset,
         .eggMoveLearnset = sHorseaEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_SEADRA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 29, SPECIES_SEADRA}),
     },
 
     [SPECIES_SEADRA] =

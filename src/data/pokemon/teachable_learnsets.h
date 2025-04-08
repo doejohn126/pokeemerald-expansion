@@ -947,6 +947,7 @@ static const u16 sFearowTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DUAL_WINGBEAT,
     MOVE_ENDURE,
     MOVE_FACADE,
     MOVE_FALSE_SWIPE,
