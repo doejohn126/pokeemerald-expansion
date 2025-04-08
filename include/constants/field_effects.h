@@ -82,6 +82,7 @@
 #define FLDEFF_USE_TELEPORT_TOOL         76
 // End qol_field_moves
 #define FLDEFF_CAVE_DUST                 77
+#define FLDEFF_DEFOG                     78
 
 #define FLDEFFOBJ_SHADOW_S              0
 #define FLDEFFOBJ_SHADOW_M              1

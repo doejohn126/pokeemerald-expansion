@@ -87,6 +87,7 @@ gFieldEffectScriptPointers::
 @ End qol_field_moves
 
 	.4byte gFieldEffectScript_CaveDust                  @ FLDEFF_CAVE_DUST
+	.4byte gFieldEffectScript_Defog                     @ FLDEFF_DEFOG
     
 gFieldEffectScript_ExclamationMarkIcon1::
 	field_eff_callnative FldEff_ExclamationMarkIcon
@@ -405,3 +406,7 @@ gFieldEffectScript_UseTeleportTool::
 gFieldEffectScript_CaveDust::
 	field_eff_loadfadedpal_callnative gSpritePalette_CaveDust FldEff_CaveDust
 	field_eff_end
+
+gFieldEffectScript_Defog::
+    field_eff_callnative FldEff_Defog
+    field_eff_end
