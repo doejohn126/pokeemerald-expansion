@@ -1741,7 +1741,7 @@ static void MoveSelectionDisplayMoveType(u32 battler)
     txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
     u32 move = moveInfo->moves[gMoveSelectionCursor[battler]];
     u32 type = GetMoveType(move);
-    u32 effect = GetMoveEffect(move);
+    enum BattleMoveEffects effect = GetMoveEffect(move);
 
     if (effect == EFFECT_TERA_BLAST)
     {
@@ -1813,7 +1813,7 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     u16 pwr = 0;
     u16 acc = 0;
     u32 atkAbility = GetBattlerAbility(battler);
-    u32 holdEffectAtk = GetBattlerHoldEffect(battler, TRUE);
+    enum holdEffectAtk = GetBattlerHoldEffect(battler, TRUE);
     //u8 cat = gMovesInfo[move].category;
     u32 moveEffect = GetMoveEffect(move);
 

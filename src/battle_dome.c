@@ -3937,7 +3937,7 @@ static bool32 IsDomeHealingMove(u32 move)
     }
 }
 
-static bool32 IsDomeDefensiveMoveEffect(u32 effect)
+static bool32 IsDomeDefensiveMoveEffect(enum BattleMoveEffects effect)
 {
     switch(effect)
     {
@@ -3969,7 +3969,7 @@ static bool32 IsDomeDefensiveMoveEffect(u32 effect)
     }
 }
 
-static bool32 IsDomeRiskyMoveEffect(u32 effect)
+static bool32 IsDomeRiskyMoveEffect(enum BattleMoveEffects effect)
 {
     switch(effect)
     {
@@ -4080,7 +4080,7 @@ static bool32 IsDomeRareMove(u32 move)
     return TRUE;
 }
 
-static bool32 IsDomeComboMoveEffect(u32 effect)
+static bool32 IsDomeComboMoveEffect(enum BattleMoveEffects effect)
 {
     switch(effect)
     {
@@ -4337,7 +4337,7 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
                     move = gSaveBlock2Ptr->frontier.domePlayerPartyData[i].moves[j];
                 else
                     move = gFacilityTrainerMons[DOME_MONS[trainerTourneyId][i]].moves[j];
-                u32 effect = GetMoveEffect(move);
+                enum BattleMoveEffects effect = GetMoveEffect(move);
                 u32 accuracy = GetMoveAccuracy(move);
 
                 switch (k)
