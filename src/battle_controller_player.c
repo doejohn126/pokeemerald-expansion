@@ -1813,7 +1813,7 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     u16 pwr = 0;
     u16 acc = 0;
     u32 atkAbility = GetBattlerAbility(battler);
-    enum holdEffectAtk = GetBattlerHoldEffect(battler, TRUE);
+    enum ItemHoldEffect holdEffectAtk = GetBattlerHoldEffect(battler, TRUE);
     //u8 cat = gMovesInfo[move].category;
     u32 moveEffect = GetMoveEffect(move);
 
