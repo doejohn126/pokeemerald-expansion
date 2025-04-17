@@ -4054,8 +4054,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         case ABILITY_EMBODY_ASPECT_HEARTHFLAME_MASK:
         case ABILITY_EMBODY_ASPECT_WELLSPRING_MASK:
         case ABILITY_EMBODY_ASPECT_CORNERSTONE_MASK:
-            if (!gSpecialStatuses[battler].switchInAbilityDone
-             && !(gBattleStruct->embodyAspectBoost[GetBattlerSide(battler)] & (1u << gBattlerPartyIndexes[battler])))
+            if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
                 u32 stat;
 
@@ -4074,7 +4073,6 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 gBattleScripting.savedBattler = gBattlerAttacker;
                 gBattlerAttacker = battler;
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
-                gBattleStruct->embodyAspectBoost[GetBattlerSide(battler)] |= 1u << gBattlerPartyIndexes[battler];
                 SET_STATCHANGER(stat, 1, FALSE);
                 BattleScriptPushCursorAndCallback(BattleScript_BattlerAbilityStatRaiseOnSwitchIn);
                 effect++;
@@ -4759,6 +4757,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         case ABILITY_ILLUSION:
             if (gBattleStruct->illusion[gBattlerTarget].on && !gBattleStruct->illusion[gBattlerTarget].broken && IsBattlerTurnDamaged(gBattlerTarget))
             {
+                gBattleScripting.battler = gBattlerTarget;
                 BattleScriptPushCursor();
                 gBattlescriptCurrInstr = BattleScript_IllusionOff;
                 effect++;
@@ -9767,7 +9766,8 @@ bool32 DoesSpeciesUseHoldItemToChangeForm(u16 species, u16 heldItemId)
 
     for (i = 0; formChanges != NULL && formChanges[i].method != FORM_CHANGE_TERMINATOR; i++)
     {
-        switch (formChanges[i].method)
+        enum FormChanges method = formChanges[i].method;
+        switch (method)
         {
         case FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM:
         case FORM_CHANGE_BATTLE_PRIMAL_REVERSION:
@@ -9776,6 +9776,8 @@ bool32 DoesSpeciesUseHoldItemToChangeForm(u16 species, u16 heldItemId)
         case FORM_CHANGE_BEGIN_BATTLE:
             if (formChanges[i].param1 == heldItemId)
                 return TRUE;
+            break;
+        default:
             break;
         }
     }
@@ -9904,7 +9906,7 @@ bool32 IsBattlerInTeraForm(u32 battler)
 }
 
 // Returns SPECIES_NONE if no form change is possible
-u16 GetBattleFormChangeTargetSpecies(u32 battler, u16 method)
+u16 GetBattleFormChangeTargetSpecies(u32 battler, enum FormChanges method)
 {
     u32 i;
     u32 species = gBattleMons[battler].species;
@@ -10003,6 +10005,8 @@ u16 GetBattleFormChangeTargetSpecies(u32 battler, u16 method)
                     && (formChanges[i].param2 == ABILITY_NONE || formChanges[i].param2 == GetBattlerAbility(battler)))
                     targetSpecies = formChanges[i].targetSpecies;
                 break;
+            default:
+                break;
             }
         }
     }
@@ -10010,7 +10014,7 @@ u16 GetBattleFormChangeTargetSpecies(u32 battler, u16 method)
     return targetSpecies;
 }
 
-bool32 CanBattlerFormChange(u32 battler, u16 method)
+bool32 CanBattlerFormChange(u32 battler, enum FormChanges method)
 {
     // Can't change form if transformed.
     if (gBattleMons[battler].status2 & STATUS2_TRANSFORMED
@@ -10027,7 +10031,7 @@ bool32 CanBattlerFormChange(u32 battler, u16 method)
     return DoesSpeciesHaveFormChangeMethod(gBattleMons[battler].species, method);
 }
 
-bool32 TryBattleFormChange(u32 battler, u32 method)
+bool32 TryBattleFormChange(u32 battler, enum FormChanges method)
 {
     u32 monId = gBattlerPartyIndexes[battler];
     u32 side = GetBattlerSide(battler);
@@ -10160,19 +10164,12 @@ bool32 SetIllusionMon(struct Pokemon *mon, u32 battler)
 {
     struct Pokemon *party, *partnerMon;
     s32 i, id;
-    u8 side, partyCount;
 
     gBattleStruct->illusion[battler].set = 1;
     if (GetMonAbility(mon) != ABILITY_ILLUSION)
         return FALSE;
 
     party = GetBattlerParty(battler);
-    side = GetBattlerSide(battler);
-    partyCount = side == B_SIDE_PLAYER ? gPlayerPartyCount : gEnemyPartyCount;
-
-    // If this pokemon is last in the party, ignore Illusion.
-    if (&party[partyCount - 1] == mon)
-        return FALSE;
 
     if (IsBattlerAlive(BATTLE_PARTNER(battler)))
         partnerMon = &party[gBattlerPartyIndexes[BATTLE_PARTNER(battler)]];
@@ -10185,15 +10182,21 @@ bool32 SetIllusionMon(struct Pokemon *mon, u32 battler)
         id = i;
         if (GetMonData(&party[id], MON_DATA_SANITY_HAS_SPECIES)
             && GetMonData(&party[id], MON_DATA_HP)
-            && !GetMonData(&party[id], MON_DATA_IS_EGG)
-            && &party[id] != mon
-            && &party[id] != partnerMon)
+            && !GetMonData(&party[id], MON_DATA_IS_EGG))
         {
-            gBattleStruct->illusion[battler].on = 1;
-            gBattleStruct->illusion[battler].broken = 0;
-            gBattleStruct->illusion[battler].partyId = id;
-            gBattleStruct->illusion[battler].mon = &party[id];
-            return TRUE;
+            if (&party[id] != mon && &party[id] != partnerMon)
+            {
+                gBattleStruct->illusion[battler].on = 1;
+                gBattleStruct->illusion[battler].broken = 0;
+                gBattleStruct->illusion[battler].partyId = id;
+                gBattleStruct->illusion[battler].mon = &party[id];
+                return TRUE;
+            }
+            else if (&party[id] == mon)
+            {
+                // If this pokemon is last in the party, ignore Illusion.
+                return FALSE;
+            }
         }
     }
 
