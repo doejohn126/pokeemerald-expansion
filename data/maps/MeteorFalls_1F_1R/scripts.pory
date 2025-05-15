@@ -324,14 +324,14 @@ MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney:
 
 script RivalLeaveParty1 {
     lock
-    facefollower
+    facefollowernpc
     checkplayergender
     goto_if_eq(VAR_RESULT, FEMALE, BrendanLeaveParty1)
     msgbox(AwwWelp)
-    applymovement(OBJ_EVENT_ID_FOLLOW_ME, RivalLeave1)
+    applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, RivalLeave1)
     waitmovement(0)
     setflag(FLAG_RIVAL_114)
-    removeobject(OBJ_EVENT_ID_FOLLOW_ME)
+    removeobject(OBJ_EVENT_ID_NPC_FOLLOWER)
     setvar(VAR_FOLLOWER_WRONG_WAY, 0)
     setvar(VAR_RIVAL_LEAVE_PARTY, 1)
     release
@@ -340,15 +340,15 @@ script RivalLeaveParty1 {
 
 script RivalLeaveParty2 {
     lock
-    facefollower
+    facefollowernpc
     checkplayergender
     goto_if_eq(VAR_RESULT, FEMALE, BrendanLeaveParty2)
     msgbox(AwwWelp)
-    applymovement(OBJ_EVENT_ID_FOLLOW_ME, RivalLeave2)
+    applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, RivalLeave2)
     waitmovement(0)
-	destroyfollower
+	destroyfollowernpc
     setflag(FLAG_RIVAL_114)
-    removeobject(OBJ_EVENT_ID_FOLLOW_ME)
+    removeobject(OBJ_EVENT_ID_NPC_FOLLOWER)
     setvar(VAR_FOLLOWER_WRONG_WAY, 0)
     setvar(VAR_RIVAL_LEAVE_PARTY, 1)
     release
@@ -357,10 +357,10 @@ script RivalLeaveParty2 {
 
 script BrendanLeaveParty2 {
     msgbox(ImaHeadOut)
-    applymovement(OBJ_EVENT_ID_FOLLOW_ME, RivalLeave2)
+    applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, RivalLeave2)
     waitmovement(0)
-	destroyfollower
-    removeobject(OBJ_EVENT_ID_FOLLOW_ME)
+	destroyfollowernpc
+    removeobject(OBJ_EVENT_ID_NPC_FOLLOWER)
     setvar(VAR_FOLLOWER_WRONG_WAY, 0)
     setvar(VAR_RIVAL_LEAVE_PARTY, 1)
     release
@@ -369,10 +369,10 @@ script BrendanLeaveParty2 {
 
 script BrendanLeaveParty1 {
     msgbox(ImaHeadOut)
-    applymovement(OBJ_EVENT_ID_FOLLOW_ME, RivalLeave1)
+    applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, RivalLeave1)
     waitmovement(0)
-	destroyfollower
-    removeobject(OBJ_EVENT_ID_FOLLOW_ME)
+	destroyfollowernpc
+    removeobject(OBJ_EVENT_ID_NPC_FOLLOWER)
     setvar(VAR_FOLLOWER_WRONG_WAY, 0)
     setvar(VAR_RIVAL_LEAVE_PARTY, 1)
     release

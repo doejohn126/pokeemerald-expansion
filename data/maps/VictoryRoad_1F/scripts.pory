@@ -236,7 +236,7 @@ script DawnApproachPlayer1 {
     setvar(VAR_FOLLOWER_WRONG_WAY, 1)
     setvar(VAR_DAWN, 1)
     msgbox(LetsGo)
-    setfollower(10, FOLLOW_ME_FLAG_ALL_NO_FRAME, DawnChat, PARTNER_DAWN)
+    setfollowernpc(10, FOLLOW_ME_FLAG_ALL_NO_FRAME, DawnChat, PARTNER_DAWN)
     release
     end
 }
@@ -255,7 +255,7 @@ script DawnApproachPlayer2 {
     setvar(VAR_FOLLOWER_WRONG_WAY, 1)
     setvar(VAR_DAWN, 1)
     msgbox(LetsGo)
-    setfollower(10, FOLLOW_ME_FLAG_ALL_NO_FRAME, DawnChat, PARTNER_DAWN)
+    setfollowernpc(10, FOLLOW_ME_FLAG_ALL_NO_FRAME, DawnChat, PARTNER_DAWN)
     release
     end
 }
@@ -297,7 +297,7 @@ script DawnApproachPlayer3 {
     setvar(VAR_FOLLOWER_WRONG_WAY, 1)
     setvar(VAR_DAWN, 1)
     msgbox(LetsGo)
-    setfollower(10, FOLLOW_ME_FLAG_ALL_NO_FRAME, DawnChat, PARTNER_DAWN)
+    setfollowernpc(10, FOLLOW_ME_FLAG_ALL_NO_FRAME, DawnChat, PARTNER_DAWN)
     release
     end
 }
@@ -314,13 +314,13 @@ script FollowerWrongWay2 {
 
 script DawnLeaveParty {
     lock
-    facefollower
+    facefollowernpc
     msgbox(ThxImaGo)
-    applymovement(OBJ_EVENT_ID_FOLLOW_ME, DawnLeave)
+    applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, DawnLeave)
     waitmovement(0)
-    destroyfollower
+    destroyfollowernpc
     setflag(FLAG_DAWN)
-    removeobject(OBJ_EVENT_ID_FOLLOW_ME)
+    removeobject(OBJ_EVENT_ID_NPC_FOLLOWER)
     setvar(VAR_FOLLOWER_WRONG_WAY, 0)
     setvar(VAR_DAWN_LEAVE_PARTY, 1)
     release

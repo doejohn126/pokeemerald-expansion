@@ -645,7 +645,7 @@ RivalLeaveParty1::
 # 326 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	lock
 # 327 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	facefollower
+	facefollowernpc
 # 328 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	checkplayergender
 # 329 "data/maps/MeteorFalls_1F_1R/scripts.pory"
@@ -653,13 +653,13 @@ RivalLeaveParty1::
 # 330 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	msgbox AwwWelp
 # 331 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOW_ME, RivalLeave1
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, RivalLeave1
 # 332 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	waitmovement 0
 # 333 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	setflag FLAG_RIVAL_114
 # 334 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	removeobject OBJ_EVENT_ID_FOLLOW_ME
+	removeobject OBJ_EVENT_ID_NPC_FOLLOWER
 # 335 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	setvar VAR_FOLLOWER_WRONG_WAY, 0
 # 336 "data/maps/MeteorFalls_1F_1R/scripts.pory"
@@ -673,7 +673,7 @@ RivalLeaveParty2::
 # 342 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	lock
 # 343 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	facefollower
+	facefollowernpc
 # 344 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	checkplayergender
 # 345 "data/maps/MeteorFalls_1F_1R/scripts.pory"
@@ -681,15 +681,15 @@ RivalLeaveParty2::
 # 346 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	msgbox AwwWelp
 # 347 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOW_ME, RivalLeave2
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, RivalLeave2
 # 348 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	waitmovement 0
 # 349 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	destroyfollower
+	destroyfollowernpc
 # 350 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	setflag FLAG_RIVAL_114
 # 351 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	removeobject OBJ_EVENT_ID_FOLLOW_ME
+	removeobject OBJ_EVENT_ID_NPC_FOLLOWER
 # 352 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	setvar VAR_FOLLOWER_WRONG_WAY, 0
 # 353 "data/maps/MeteorFalls_1F_1R/scripts.pory"
@@ -703,13 +703,13 @@ BrendanLeaveParty2::
 # 359 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	msgbox ImaHeadOut
 # 360 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOW_ME, RivalLeave2
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, RivalLeave2
 # 361 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	waitmovement 0
 # 362 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	destroyfollower
+	destroyfollowernpc
 # 363 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	removeobject OBJ_EVENT_ID_FOLLOW_ME
+	removeobject OBJ_EVENT_ID_NPC_FOLLOWER
 # 364 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	setvar VAR_FOLLOWER_WRONG_WAY, 0
 # 365 "data/maps/MeteorFalls_1F_1R/scripts.pory"
@@ -723,13 +723,13 @@ BrendanLeaveParty1::
 # 371 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	msgbox ImaHeadOut
 # 372 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOW_ME, RivalLeave1
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, RivalLeave1
 # 373 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	waitmovement 0
 # 374 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	destroyfollower
+	destroyfollowernpc
 # 375 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	removeobject OBJ_EVENT_ID_FOLLOW_ME
+	removeobject OBJ_EVENT_ID_NPC_FOLLOWER
 # 376 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	setvar VAR_FOLLOWER_WRONG_WAY, 0
 # 377 "data/maps/MeteorFalls_1F_1R/scripts.pory"

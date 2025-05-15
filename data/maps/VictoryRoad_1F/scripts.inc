@@ -469,7 +469,7 @@ DawnApproachPlayer1::
 # 238 "data/maps/VictoryRoad_1F/scripts.pory"
 	msgbox LetsGo
 # 239 "data/maps/VictoryRoad_1F/scripts.pory"
-	setfollower 10, FOLLOW_ME_FLAG_ALL_NO_FRAME, DawnChat, PARTNER_DAWN
+	setfollowernpc 10, FOLLOW_ME_FLAG_ALL_NO_FRAME, DawnChat, PARTNER_DAWN
 # 240 "data/maps/VictoryRoad_1F/scripts.pory"
 	release
 	end
@@ -503,7 +503,7 @@ DawnApproachPlayer2::
 # 257 "data/maps/VictoryRoad_1F/scripts.pory"
 	msgbox LetsGo
 # 258 "data/maps/VictoryRoad_1F/scripts.pory"
-	setfollower 10, FOLLOW_ME_FLAG_ALL_NO_FRAME, DawnChat, PARTNER_DAWN
+	setfollowernpc 10, FOLLOW_ME_FLAG_ALL_NO_FRAME, DawnChat, PARTNER_DAWN
 # 259 "data/maps/VictoryRoad_1F/scripts.pory"
 	release
 	end
@@ -571,7 +571,7 @@ DawnApproachPlayer3::
 # 299 "data/maps/VictoryRoad_1F/scripts.pory"
 	msgbox LetsGo
 # 300 "data/maps/VictoryRoad_1F/scripts.pory"
-	setfollower 10, FOLLOW_ME_FLAG_ALL_NO_FRAME, DawnChat, PARTNER_DAWN
+	setfollowernpc 10, FOLLOW_ME_FLAG_ALL_NO_FRAME, DawnChat, PARTNER_DAWN
 # 301 "data/maps/VictoryRoad_1F/scripts.pory"
 	release
 	end
@@ -597,19 +597,19 @@ DawnLeaveParty::
 # 316 "data/maps/VictoryRoad_1F/scripts.pory"
 	lock
 # 317 "data/maps/VictoryRoad_1F/scripts.pory"
-	facefollower
+	facefollowernpc
 # 318 "data/maps/VictoryRoad_1F/scripts.pory"
 	msgbox ThxImaGo
 # 319 "data/maps/VictoryRoad_1F/scripts.pory"
-	applymovement OBJ_EVENT_ID_FOLLOW_ME, DawnLeave
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, DawnLeave
 # 320 "data/maps/VictoryRoad_1F/scripts.pory"
 	waitmovement 0
 # 321 "data/maps/VictoryRoad_1F/scripts.pory"
-	destroyfollower
+	destroyfollowernpc
 # 322 "data/maps/VictoryRoad_1F/scripts.pory"
 	setflag FLAG_DAWN
 # 323 "data/maps/VictoryRoad_1F/scripts.pory"
-	removeobject OBJ_EVENT_ID_FOLLOW_ME
+	removeobject OBJ_EVENT_ID_NPC_FOLLOWER
 # 324 "data/maps/VictoryRoad_1F/scripts.pory"
 	setvar VAR_FOLLOWER_WRONG_WAY, 0
 # 325 "data/maps/VictoryRoad_1F/scripts.pory"

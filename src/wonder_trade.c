@@ -626,7 +626,7 @@ void CreateWonderTradePokemon(void)
             return;
         for (i = 0; evolutions[i].method != EVOLUTIONS_END; i++)
         {
-            if (evolutions[i].method == EVO_TRADE_ITEM && Random() % 100 < 50)
+            if (evolutions[i].method == EVO_TRADE && IF_HOLD_ITEM && Random() % 100 < 50)
             {
                 // 30% chance for the in coming Pokémon to hold the item they need to evolve if they need one
                 if (Random() % 100 <= 29)
@@ -703,8 +703,8 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
     u16 rndAlcrememeEvoChance = Random() % 9;
     u16 currentMap = ((gSaveBlock1Ptr->location.mapGroup) << 8 | gSaveBlock1Ptr->location.mapNum);
     u16 partnerHeldItem = GetMonData(mon, MON_DATA_HELD_ITEM);
-    u16 playerSpecies = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES);
-    u16 partnerHoldEffect = ItemId_GetHoldEffect(partnerHeldItem);
+    //u16 playerSpecies = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES);
+    //u16 partnerHoldEffect = ItemId_GetHoldEffect(partnerHeldItem);
 
     // partnerSpecies-specific exceptions.
     if (partnerSpecies == SPECIES_NINCADA && partnerLevel >= 20)
@@ -765,18 +765,18 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
             return (targetSpecies == 0) ? partnerSpecies : targetSpecies;
         switch (evolutions[i].method)
         {
-        case EVO_FRIENDSHIP:
-            if ((partnerSpecies == SPECIES_PICHU || partnerSpecies == SPECIES_CLEFFA || partnerSpecies == SPECIES_IGGLYBUFF
-              || partnerSpecies == SPECIES_TOGEPI || partnerSpecies == SPECIES_AZURILL || partnerSpecies == SPECIES_BUDEW
-              || partnerSpecies == SPECIES_BUNEARY || partnerSpecies == SPECIES_SWOOBAT || partnerSpecies == SPECIES_SWADLOON)
-              && partnerLevel >= 16)
-                targetSpecies = evolutions[i].targetSpecies;
-            else if (partnerSpecies == SPECIES_MEOWTH_ALOLA && partnerLevel >= 28)
-                targetSpecies = evolutions[i].targetSpecies;
-            else if ((partnerSpecies == SPECIES_GOLBAT || partnerSpecies == SPECIES_CHANSEY
-                   || partnerSpecies == SPECIES_MUNCHLAX) && partnerLevel >= 35)
-                targetSpecies = evolutions[i].targetSpecies;
-            break;
+        //case IF_MIN_FRIENDSHIP:
+        ///    if ((partnerSpecies == SPECIES_PICHU || partnerSpecies == SPECIES_CLEFFA || partnerSpecies == SPECIES_IGGLYBUFF
+       //       || partnerSpecies == SPECIES_TOGEPI || partnerSpecies == SPECIES_AZURILL || partnerSpecies == SPECIES_BUDEW
+        //      || partnerSpecies == SPECIES_BUNEARY || partnerSpecies == SPECIES_SWOOBAT || partnerSpecies == SPECIES_SWADLOON)
+        //      && partnerLevel >= 16)
+        //        targetSpecies = evolutions[i].targetSpecies;
+        //    else if (partnerSpecies == SPECIES_MEOWTH_ALOLA && partnerLevel >= 28)
+        //        targetSpecies = evolutions[i].targetSpecies;
+        //    else if ((partnerSpecies == SPECIES_GOLBAT || partnerSpecies == SPECIES_CHANSEY
+        //           || partnerSpecies == SPECIES_MUNCHLAX) && partnerLevel >= 35)
+        //        targetSpecies = evolutions[i].targetSpecies;
+        //    break;
         case EVO_LEVEL:
             if (partnerSpecies == SPECIES_SLOWPOKE && partnerLevel >= 37)
             {
@@ -803,36 +803,36 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
                 targetSpecies = evolutions[i].targetSpecies;
             }
             break;
-        case EVO_LEVEL_ATK_GT_DEF:
+        case IF_ATK_GT_DEF:
             if (evolutions[i].param <= partnerLevel)
             {
                 if (GetMonData(mon, MON_DATA_ATK, 0) > GetMonData(mon, MON_DATA_DEF, 0))
                     targetSpecies = evolutions[i].targetSpecies;
             }
             break;
-        case EVO_LEVEL_ATK_EQ_DEF:
+        case IF_ATK_EQ_DEF:
             if (evolutions[i].param <= partnerLevel)
             {
                 if (GetMonData(mon, MON_DATA_ATK, 0) == GetMonData(mon, MON_DATA_DEF, 0))
                     targetSpecies = evolutions[i].targetSpecies;
             }
             break;
-        case EVO_LEVEL_ATK_LT_DEF:
+        case IF_ATK_LT_DEF:
             if (evolutions[i].param <= partnerLevel)
             {
                 if (GetMonData(mon, MON_DATA_ATK, 0) < GetMonData(mon, MON_DATA_DEF, 0))
                     targetSpecies = evolutions[i].targetSpecies;
             }
             break;
-        case EVO_LEVEL_SILCOON:
+        case IF_PID_UPPER_MODULO_10_GT:
             if (evolutions[i].param <= partnerLevel && (upperPersonality % 10) <= 4)
                 targetSpecies = evolutions[i].targetSpecies;
             break;
-        case EVO_LEVEL_CASCOON:
+        case IF_PID_UPPER_MODULO_10_LT:
             if (evolutions[i].param <= partnerLevel && (upperPersonality % 10) > 4)
                 targetSpecies = evolutions[i].targetSpecies;
             break;
-        case EVO_BEAUTY:
+        case IF_MIN_BEAUTY:
             if (partnerLevel >= 30)
                 targetSpecies = evolutions[i].targetSpecies;
             break;
@@ -922,19 +922,17 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
                     targetSpecies = SPECIES_SLOWKING_GALAR;
             }
             break;
-        case EVO_ITEM_FEMALE:
+        case IF_GENDER:
             if (GetMonGender(mon) == MON_FEMALE && partnerSpecies == SPECIES_SNORUNT && partnerLevel >= 35)
                 targetSpecies = evolutions[i].targetSpecies;
-            break;
-        case EVO_ITEM_MALE:
-            if (GetMonGender(mon) == MON_MALE && partnerSpecies == SPECIES_KIRLIA && partnerLevel >= 35)
+            else if (GetMonGender(mon) == MON_MALE && partnerSpecies == SPECIES_KIRLIA && partnerLevel >= 35)
                 targetSpecies = evolutions[i].targetSpecies;
             break;
-        case EVO_MOVE:
+        case IF_KNOWS_MOVE:
             if (MonKnowsMove(mon, evolutions[i].param))
                 targetSpecies = evolutions[i].targetSpecies;
             break;
-        case EVO_FRIENDSHIP_MOVE_TYPE:
+        case IF_KNOWS_MOVE_TYPE:
             for (j = 0; j < MAX_MON_MOVES; j++)
             {
                 if (gMovesInfo[GetMonData(mon, MON_DATA_MOVE1 + j, NULL)].type == evolutions[i].param)
@@ -944,7 +942,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
                 }
             }
             break;
-        case EVO_LEVEL_DARK_TYPE_MON_IN_PARTY:
+        case IF_TYPE_IN_PARTY:
             if (evolutions[i].param <= partnerLevel)
             {
                 for (j = 0; j < PARTY_SIZE; j++)
@@ -959,20 +957,23 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
                 }
             }
             break;
-        case EVO_LEVEL_RAIN:
+        case IF_WEATHER:
             j = GetCurrentWeather();
             if (j == WEATHER_RAIN || j == WEATHER_RAIN_THUNDERSTORM || j == WEATHER_DOWNPOUR)
                 targetSpecies = evolutions[i].targetSpecies;
+            
+            if (evolutions[i].param <= partnerLevel && (j == WEATHER_FOG_HORIZONTAL || j == WEATHER_FOG_DIAGONAL))
+                targetSpecies = evolutions[i].targetSpecies;
             break;
-        case EVO_MAPSEC:
+        case IF_IN_MAPSEC:
             if (gMapHeader.regionMapSectionId == evolutions[i].param)
                 targetSpecies = evolutions[i].targetSpecies;
             break;
-        case EVO_SPECIFIC_MAP:
+        case IF_IN_MAP:
             if (currentMap == evolutions[i].param)
                 targetSpecies = evolutions[i].targetSpecies;
             break;
-        case EVO_SPECIFIC_MON_IN_PARTY:
+        case IF_SPECIES_IN_PARTY:
             for (j = 0; j < PARTY_SIZE; j++)
             {
                 if (GetMonData(&gPlayerParty[j], MON_DATA_SPECIES) == evolutions[i].param)
@@ -982,24 +983,19 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
         case EVO_TRADE:
             targetSpecies = evolutions[i].targetSpecies;
             break;
-        case EVO_TRADE_ITEM:
-            if (evolutions[i].param == partnerHeldItem)
-            {
-                partnerHeldItem = ITEM_NONE;
-                SetMonData(mon, MON_DATA_HELD_ITEM, &partnerHeldItem);
-                targetSpecies = evolutions[i].targetSpecies;
-            }
-            break;
-        case EVO_TRADE_SPECIFIC_MON:
-            if (evolutions[i].param == playerSpecies && partnerHoldEffect != HOLD_EFFECT_PREVENT_EVOLVE)
-                targetSpecies = evolutions[i].targetSpecies;
-            break;
-        case EVO_LEVEL_FOG:
-            j = GetCurrentWeather();
-            if (evolutions[i].param <= partnerLevel && (j == WEATHER_FOG_HORIZONTAL || j == WEATHER_FOG_DIAGONAL))
-                targetSpecies = evolutions[i].targetSpecies;
-            break;
-        case EVO_LEVEL_NATURE_AMPED:
+        //case EVO_TRADE || IF_HOLD_ITEM:
+        //    if (evolutions[i].param == partnerHeldItem)
+        //    {
+        //        partnerHeldItem = ITEM_NONE;
+        //        SetMonData(mon, MON_DATA_HELD_ITEM, &partnerHeldItem);
+        //        targetSpecies = evolutions[i].targetSpecies;
+        //    }
+       //     break;
+        //case EVO_TRADE || IF_SPECIES_IN_PARTY:
+         //   if (evolutions[i].param == playerSpecies && partnerHoldEffect != HOLD_EFFECT_PREVENT_EVOLVE)
+         //       targetSpecies = evolutions[i].targetSpecies;
+        //    break;
+        case IF_AMPED_NATURE:
             if (evolutions[i].param <= partnerLevel)
             {
                 u8 nature = GetNature(mon);
@@ -1023,7 +1019,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
                 }
             }
             break;
-        case EVO_LEVEL_NATURE_LOW_KEY:
+        case IF_LOW_KEY_NATURE:
             if (evolutions[i].param <= partnerLevel)
             {
                 u8 nature = GetNature(mon);
@@ -1046,7 +1042,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
                 }
             }
             break;
-        case EVO_ITEM_HOLD:
+        case IF_HOLD_ITEM:
             if (partnerHeldItem == evolutions[i].param)
             {
                 partnerHeldItem = 0;

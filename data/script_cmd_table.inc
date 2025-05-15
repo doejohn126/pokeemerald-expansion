@@ -252,7 +252,6 @@ gScriptCmdTable::
 	script_cmd_table_entry SCR_OP_DYNMULTICHOICE                ScrCmd_dynmultichoice,              requests_effects=1  @ 0xe3
 	script_cmd_table_entry SCR_OP_DYNMULTIPUSH                  ScrCmd_dynmultipush,                requests_effects=1  @ 0xe4
 	script_cmd_table_entry SCR_OP_UPDATEFOLLOWINGMON           ScrCmd_updatefollowingmon,          requests_effects=1  @ 0xe5
-	script_cmd_table_entry SCR_OP_BALLFOLLOWINGMON             ScrCmd_ballfollowingmon,            requests_effects=1  @ 0xe6
 	script_cmd_table_entry SCR_OP_POKEVIAL                     ScrCmd_pokevial,                    requests_effects=1  @ 0xe7
 	script_cmd_table_entry SCR_OP_CHECKPARTYLEARNKNOWSFIELDMOVE ScrCmd_checkpartylearnknowsfieldmove,  requests_effects=1  @ 0xe8
 

@@ -955,272 +955,264 @@ JaydenWalkToPlr1::
 # 482 "data/maps/PetalburgWoods/scripts.pory"
 	lock
 # 483 "data/maps/PetalburgWoods/scripts.pory"
-	ballfollowingmon
-# 484 "data/maps/PetalburgWoods/scripts.pory"
 	applymovement 14, JaydenHeadDown1
-# 485 "data/maps/PetalburgWoods/scripts.pory"
+# 484 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
-# 486 "data/maps/PetalburgWoods/scripts.pory"
+# 485 "data/maps/PetalburgWoods/scripts.pory"
 	goto JaydenWoodsStartBattle
 	return
 
 
 JaydenWalkToPlr2::
-# 491 "data/maps/PetalburgWoods/scripts.pory"
+# 490 "data/maps/PetalburgWoods/scripts.pory"
 	lock
-# 492 "data/maps/PetalburgWoods/scripts.pory"
-	ballfollowingmon
-# 493 "data/maps/PetalburgWoods/scripts.pory"
+# 491 "data/maps/PetalburgWoods/scripts.pory"
 	applymovement 14, JaydenHeadDown2
-# 494 "data/maps/PetalburgWoods/scripts.pory"
+# 492 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
-# 495 "data/maps/PetalburgWoods/scripts.pory"
+# 493 "data/maps/PetalburgWoods/scripts.pory"
 	goto JaydenWoodsStartBattle
 	return
 
 
 JaydenWalkToPlr3::
-# 499 "data/maps/PetalburgWoods/scripts.pory"
+# 497 "data/maps/PetalburgWoods/scripts.pory"
 	lock
-# 500 "data/maps/PetalburgWoods/scripts.pory"
-	ballfollowingmon
-# 501 "data/maps/PetalburgWoods/scripts.pory"
+# 498 "data/maps/PetalburgWoods/scripts.pory"
 	addobject 14
-# 502 "data/maps/PetalburgWoods/scripts.pory"
+# 499 "data/maps/PetalburgWoods/scripts.pory"
 	applymovement 14, JaydenHeadDown3
-# 503 "data/maps/PetalburgWoods/scripts.pory"
+# 500 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
-# 504 "data/maps/PetalburgWoods/scripts.pory"
+# 501 "data/maps/PetalburgWoods/scripts.pory"
 	goto JaydenWoodsStartBattle
 	return
 
 
 JaydenWalkToPlr4::
-# 508 "data/maps/PetalburgWoods/scripts.pory"
+# 505 "data/maps/PetalburgWoods/scripts.pory"
 	lock
-# 509 "data/maps/PetalburgWoods/scripts.pory"
-	ballfollowingmon
-# 510 "data/maps/PetalburgWoods/scripts.pory"
+# 506 "data/maps/PetalburgWoods/scripts.pory"
 	addobject 14
-# 511 "data/maps/PetalburgWoods/scripts.pory"
+# 507 "data/maps/PetalburgWoods/scripts.pory"
 	applymovement 14, JaydenHeadDown4
-# 512 "data/maps/PetalburgWoods/scripts.pory"
+# 508 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
-# 513 "data/maps/PetalburgWoods/scripts.pory"
+# 509 "data/maps/PetalburgWoods/scripts.pory"
 	goto JaydenWoodsStartBattle
 	return
 
 
 JaydenWoodsStartBattle::
-# 517 "data/maps/PetalburgWoods/scripts.pory"
+# 513 "data/maps/PetalburgWoods/scripts.pory"
 	playse SE_PIN
-# 518 "data/maps/PetalburgWoods/scripts.pory"
+# 514 "data/maps/PetalburgWoods/scripts.pory"
 	applymovement 14, Common_Movement_ExclamationMark
-# 519 "data/maps/PetalburgWoods/scripts.pory"
+# 515 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
-# 520 "data/maps/PetalburgWoods/scripts.pory"
+# 516 "data/maps/PetalburgWoods/scripts.pory"
 	applymovement 14, Common_Movement_Delay48
-# 521 "data/maps/PetalburgWoods/scripts.pory"
+# 517 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
-# 522 "data/maps/PetalburgWoods/scripts.pory"
+# 518 "data/maps/PetalburgWoods/scripts.pory"
 	msgbox ImJayden
-# 523 "data/maps/PetalburgWoods/scripts.pory"
+# 519 "data/maps/PetalburgWoods/scripts.pory"
 	trainerbattle_no_intro TRAINER_JAYDEN, JaydenBattle1Lose
-# 524 "data/maps/PetalburgWoods/scripts.pory"
+# 520 "data/maps/PetalburgWoods/scripts.pory"
 	msgbox TimeToSearch
-# 525 "data/maps/PetalburgWoods/scripts.pory"
+# 521 "data/maps/PetalburgWoods/scripts.pory"
 	setvar VAR_JAYDEN_WOODS, 1
-# 526 "data/maps/PetalburgWoods/scripts.pory"
+# 522 "data/maps/PetalburgWoods/scripts.pory"
 	giveitem ITEM_POKEVIAL, 1
-# 527 "data/maps/PetalburgWoods/scripts.pory"
+# 523 "data/maps/PetalburgWoods/scripts.pory"
 	msgbox PokevialText
-# 528 "data/maps/PetalburgWoods/scripts.pory"
+# 524 "data/maps/PetalburgWoods/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
-# 529 "data/maps/PetalburgWoods/scripts.pory"
+# 525 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
-# 530 "data/maps/PetalburgWoods/scripts.pory"
+# 526 "data/maps/PetalburgWoods/scripts.pory"
 	applymovement 14, JaydenLeaveForFirstTime
-# 531 "data/maps/PetalburgWoods/scripts.pory"
+# 527 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
-# 532 "data/maps/PetalburgWoods/scripts.pory"
+# 528 "data/maps/PetalburgWoods/scripts.pory"
 	setflag FLAG_JAYDEN_PETALBURG_WOODS
-# 533 "data/maps/PetalburgWoods/scripts.pory"
+# 529 "data/maps/PetalburgWoods/scripts.pory"
 	removeobject 14
-# 534 "data/maps/PetalburgWoods/scripts.pory"
+# 530 "data/maps/PetalburgWoods/scripts.pory"
 	pokevial VIAL_UP, VIAL_SIZE, 3
-# 535 "data/maps/PetalburgWoods/scripts.pory"
+# 531 "data/maps/PetalburgWoods/scripts.pory"
 	release
 	end
 
 
-# 568 "data/maps/PetalburgWoods/scripts.pory"
+# 564 "data/maps/PetalburgWoods/scripts.pory"
 JaydenLeaveForFirstTime:
-# 569 "data/maps/PetalburgWoods/scripts.pory"
+# 565 "data/maps/PetalburgWoods/scripts.pory"
 	walk_up
-# 569 "data/maps/PetalburgWoods/scripts.pory"
+# 565 "data/maps/PetalburgWoods/scripts.pory"
 	walk_up
-# 569 "data/maps/PetalburgWoods/scripts.pory"
+# 565 "data/maps/PetalburgWoods/scripts.pory"
 	walk_up
-# 569 "data/maps/PetalburgWoods/scripts.pory"
+# 565 "data/maps/PetalburgWoods/scripts.pory"
 	walk_up
-# 569 "data/maps/PetalburgWoods/scripts.pory"
+# 565 "data/maps/PetalburgWoods/scripts.pory"
 	walk_up
-# 569 "data/maps/PetalburgWoods/scripts.pory"
+# 565 "data/maps/PetalburgWoods/scripts.pory"
 	walk_up
-# 569 "data/maps/PetalburgWoods/scripts.pory"
+# 565 "data/maps/PetalburgWoods/scripts.pory"
 	walk_up
-# 569 "data/maps/PetalburgWoods/scripts.pory"
+# 565 "data/maps/PetalburgWoods/scripts.pory"
 	walk_up
 	step_end
 
-# 572 "data/maps/PetalburgWoods/scripts.pory"
+# 568 "data/maps/PetalburgWoods/scripts.pory"
 JaydenHeadDown4:
-# 573 "data/maps/PetalburgWoods/scripts.pory"
+# 569 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
-# 573 "data/maps/PetalburgWoods/scripts.pory"
+# 569 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
-# 573 "data/maps/PetalburgWoods/scripts.pory"
+# 569 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
-# 573 "data/maps/PetalburgWoods/scripts.pory"
+# 569 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
-# 573 "data/maps/PetalburgWoods/scripts.pory"
+# 569 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
-# 573 "data/maps/PetalburgWoods/scripts.pory"
+# 569 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
+# 570 "data/maps/PetalburgWoods/scripts.pory"
+	delay_16
+# 571 "data/maps/PetalburgWoods/scripts.pory"
+	delay_16
+# 572 "data/maps/PetalburgWoods/scripts.pory"
+	face_up
+# 573 "data/maps/PetalburgWoods/scripts.pory"
+	delay_16
 # 574 "data/maps/PetalburgWoods/scripts.pory"
 	delay_16
 # 575 "data/maps/PetalburgWoods/scripts.pory"
 	delay_16
 # 576 "data/maps/PetalburgWoods/scripts.pory"
-	face_up
+	delay_16
 # 577 "data/maps/PetalburgWoods/scripts.pory"
-	delay_16
+	walk_down
+# 577 "data/maps/PetalburgWoods/scripts.pory"
+	walk_down
+# 577 "data/maps/PetalburgWoods/scripts.pory"
+	walk_down
 # 578 "data/maps/PetalburgWoods/scripts.pory"
-	delay_16
-# 579 "data/maps/PetalburgWoods/scripts.pory"
-	delay_16
-# 580 "data/maps/PetalburgWoods/scripts.pory"
-	delay_16
-# 581 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
-# 581 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
-# 581 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
-# 582 "data/maps/PetalburgWoods/scripts.pory"
 	walk_right
 	step_end
 
-# 585 "data/maps/PetalburgWoods/scripts.pory"
+# 581 "data/maps/PetalburgWoods/scripts.pory"
 JaydenHeadDown3:
-# 586 "data/maps/PetalburgWoods/scripts.pory"
+# 582 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
-# 586 "data/maps/PetalburgWoods/scripts.pory"
+# 582 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
-# 586 "data/maps/PetalburgWoods/scripts.pory"
+# 582 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
-# 586 "data/maps/PetalburgWoods/scripts.pory"
+# 582 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
-# 586 "data/maps/PetalburgWoods/scripts.pory"
+# 582 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
+# 583 "data/maps/PetalburgWoods/scripts.pory"
+	delay_16
+# 584 "data/maps/PetalburgWoods/scripts.pory"
+	delay_16
+# 585 "data/maps/PetalburgWoods/scripts.pory"
+	face_up
+# 586 "data/maps/PetalburgWoods/scripts.pory"
+	delay_16
 # 587 "data/maps/PetalburgWoods/scripts.pory"
 	delay_16
 # 588 "data/maps/PetalburgWoods/scripts.pory"
 	delay_16
 # 589 "data/maps/PetalburgWoods/scripts.pory"
-	face_up
+	delay_16
 # 590 "data/maps/PetalburgWoods/scripts.pory"
-	delay_16
+	walk_down
+# 590 "data/maps/PetalburgWoods/scripts.pory"
+	walk_down
+# 590 "data/maps/PetalburgWoods/scripts.pory"
+	walk_down
 # 591 "data/maps/PetalburgWoods/scripts.pory"
-	delay_16
-# 592 "data/maps/PetalburgWoods/scripts.pory"
-	delay_16
-# 593 "data/maps/PetalburgWoods/scripts.pory"
-	delay_16
-# 594 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
-# 594 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
-# 594 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
-# 595 "data/maps/PetalburgWoods/scripts.pory"
 	walk_right
 	step_end
 
-# 598 "data/maps/PetalburgWoods/scripts.pory"
+# 594 "data/maps/PetalburgWoods/scripts.pory"
 JaydenHeadDown2:
-# 599 "data/maps/PetalburgWoods/scripts.pory"
+# 595 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
-# 599 "data/maps/PetalburgWoods/scripts.pory"
+# 595 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
-# 599 "data/maps/PetalburgWoods/scripts.pory"
+# 595 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
-# 599 "data/maps/PetalburgWoods/scripts.pory"
+# 595 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
+# 596 "data/maps/PetalburgWoods/scripts.pory"
+	delay_16
+# 597 "data/maps/PetalburgWoods/scripts.pory"
+	delay_16
+# 598 "data/maps/PetalburgWoods/scripts.pory"
+	face_up
+# 599 "data/maps/PetalburgWoods/scripts.pory"
+	delay_16
 # 600 "data/maps/PetalburgWoods/scripts.pory"
 	delay_16
 # 601 "data/maps/PetalburgWoods/scripts.pory"
 	delay_16
 # 602 "data/maps/PetalburgWoods/scripts.pory"
-	face_up
+	delay_16
 # 603 "data/maps/PetalburgWoods/scripts.pory"
-	delay_16
+	walk_down
+# 603 "data/maps/PetalburgWoods/scripts.pory"
+	walk_down
+# 603 "data/maps/PetalburgWoods/scripts.pory"
+	walk_down
 # 604 "data/maps/PetalburgWoods/scripts.pory"
-	delay_16
-# 605 "data/maps/PetalburgWoods/scripts.pory"
-	delay_16
-# 606 "data/maps/PetalburgWoods/scripts.pory"
-	delay_16
-# 607 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
-# 607 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
-# 607 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
-# 608 "data/maps/PetalburgWoods/scripts.pory"
 	walk_right
 	step_end
 
-# 611 "data/maps/PetalburgWoods/scripts.pory"
+# 607 "data/maps/PetalburgWoods/scripts.pory"
 JaydenHeadDown1:
-# 612 "data/maps/PetalburgWoods/scripts.pory"
+# 608 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
-# 612 "data/maps/PetalburgWoods/scripts.pory"
+# 608 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
-# 612 "data/maps/PetalburgWoods/scripts.pory"
+# 608 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
-# 612 "data/maps/PetalburgWoods/scripts.pory"
+# 608 "data/maps/PetalburgWoods/scripts.pory"
 	walk_down
+# 609 "data/maps/PetalburgWoods/scripts.pory"
+	delay_16
+# 610 "data/maps/PetalburgWoods/scripts.pory"
+	delay_16
+# 611 "data/maps/PetalburgWoods/scripts.pory"
+	face_up
+# 612 "data/maps/PetalburgWoods/scripts.pory"
+	delay_16
 # 613 "data/maps/PetalburgWoods/scripts.pory"
 	delay_16
 # 614 "data/maps/PetalburgWoods/scripts.pory"
 	delay_16
 # 615 "data/maps/PetalburgWoods/scripts.pory"
-	face_up
+	delay_16
 # 616 "data/maps/PetalburgWoods/scripts.pory"
-	delay_16
+	walk_down
+# 616 "data/maps/PetalburgWoods/scripts.pory"
+	walk_down
 # 617 "data/maps/PetalburgWoods/scripts.pory"
-	delay_16
-# 618 "data/maps/PetalburgWoods/scripts.pory"
-	delay_16
-# 619 "data/maps/PetalburgWoods/scripts.pory"
-	delay_16
-# 620 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
-# 620 "data/maps/PetalburgWoods/scripts.pory"
-	walk_down
-# 621 "data/maps/PetalburgWoods/scripts.pory"
 	walk_right
 	step_end
 
 PokevialText::
-# 539 "data/maps/PetalburgWoods/scripts.pory"
+# 535 "data/maps/PetalburgWoods/scripts.pory"
 	.string "A Pokevial should be pretty handy for\n"
 	.string "healing you're Pokémon.\p"
 	.string "Alright though, catch ya later {PLAYER}.$"
 
 TimeToSearch::
-# 545 "data/maps/PetalburgWoods/scripts.pory"
+# 541 "data/maps/PetalburgWoods/scripts.pory"
 	.string "Good luck on your gym battle when you\n"
 	.string "get there.\p"
 	.string "Right now I'm going to still look for\n"
@@ -1229,7 +1221,7 @@ TimeToSearch::
 	.string "Oh and you should have this!$"
 
 ImJayden::
-# 554 "data/maps/PetalburgWoods/scripts.pory"
+# 550 "data/maps/PetalburgWoods/scripts.pory"
 	.string "Wow... I could sworn I just saw one of\n"
 	.string "those Team Aqua members just pass by.\p"
 	.string "Well besides that, I'm Jayden!\n"
@@ -1239,5 +1231,5 @@ ImJayden::
 	.string "Plus this Shuckle hunting gets tiring.$"
 
 JaydenBattle1Lose::
-# 564 "data/maps/PetalburgWoods/scripts.pory"
+# 560 "data/maps/PetalburgWoods/scripts.pory"
 	.string "Oh wow, well that didn't end well for me.$"

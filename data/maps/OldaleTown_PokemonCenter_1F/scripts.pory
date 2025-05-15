@@ -70,7 +70,7 @@ script DawnFollowMeTest {
 	faceplayer
 	msgbox(YoullSeeMeLater)
 	waitmessage
-	setfollower(6, FOLLOW_ME_FLAG_CAN_LEAVE_ROUTE, 0, PARTNER_DAWN)
+	setfollowernpc(6, FOLLOWER_NPC_FLAG_CAN_LEAVE_ROUTE, 0, PARTNER_DAWN)
 	release
 	end
 }

@@ -7804,26 +7804,6 @@
                 "species": "SPECIES_BARBOACH"
               }
             ]
-          },
-          "hidden_mons": {
-            "encounter_rate": 0,
-            "mons": [
-              {
-                "min_level": 20,
-                "max_level": 40,
-                "species": "SPECIES_CLEFAIRY"
-              },
-              {
-                "min_level": 20,
-                "max_level": 40,
-                "species": "SPECIES_CLEFAIRY"
-              },
-              {
-                "min_level": 20,
-                "max_level": 40,
-                "species": "SPECIES_CLEFAIRY"
-              }
-            ]
           }
         },
         {
